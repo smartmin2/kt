@@ -8,6 +8,21 @@ $colors_font:#00aace;
 $white:#fff;
 $black:#221e1f;
 $navy:#2a3d72;
+$red:#d06062;
+$green:#207245;
+
+$gray100:#f9fafd;
+$gray200:#bcbfc7;
+$gray300:#bfc2c8;
+$gray400:#8c8c8c;
+$gray500:#616366;
+
+$font_color:#141f40;
+$font_color_20:rgba(20, 31, 64, 0.2);
+$font_color_50:rgba(20, 31, 64, 0.5);
+$font_color_80:rgba(20, 31, 64, 0.8);
+
+
 
 // text input box : width, height
 @mixin input_box($width, $height) {
@@ -68,4 +83,9 @@ $navy:#2a3d72;
     @keyframes #{$animation_name} {
         @content;
     }
+}
+
+
+@mixin border($color) {
+    border:1px solid $color;
 }

@@ -1,0 +1,160 @@
+@import "func.scss";
+
+.wrapper {
+  background-color: $colors_background;
+  width: 1920px;
+  height: 100%;
+  @include flex_center();
+}
+
+/********************* login **********************/
+
+.login-wrap {
+  width: 1000px;
+  margin: 0 auto;
+
+  .login-box {
+    width: 1000px;
+    height: 630px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    background-color: $white;
+    display: flex;
+
+    .login-main {
+      width: 450px;
+      padding: 102px 40px 88px 40px;
+      text-align: center;
+
+      img {
+        padding: 0 49px;
+        margin-bottom: 71px;
+      }
+      input {
+        margin-bottom: 12px;
+      }
+      span {
+        letter-spacing: -0.35px;
+      }
+
+      .input-wrap {
+        position: relative;
+
+        .btn-clear {
+          position: absolute;
+          right: 16px;
+          top: 12px;
+          display: none;
+        }
+      }
+      .prevention {
+        display: flex;
+
+        .pre-img {
+          width: 180px;
+          height: 50px;
+          background-color: #000;
+        }
+
+        .pre-icon {
+          margin: 0 10px 0 8px;
+          flex-flow: column;
+          display: flex;
+        }
+
+        .pre-input {
+          width: 154px;
+        }
+      }
+
+      .btn-ell-blue {
+        margin-bottom: 20px;
+        margin-top: 22px;
+      }
+
+      .login-option {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .checkbox {
+          display: flex;
+        }
+
+        .new-account {
+          color: $colors_font;
+          text-decoration: underline;
+        }
+
+        .new-account::after {
+          content: "";
+          position: absolute;
+          width: 16px;
+          height: 16px;
+          background: url(../assets/ic_arrow_hyperlink_right.svg) no-repeat center center/cover;
+          margin-top: 3px;
+        }
+      }
+    }
+
+    .login-img {
+      position: relative;
+
+      .img-text {
+        position: absolute;
+        bottom: 110px;
+        left: 100px;
+        text-align: center;
+
+        p:first-child {
+          font-size: 24px;
+          color: $white;
+          font-weight: 500;
+          margin-bottom: 12px;
+        }
+
+        p:last-child {
+          font-size: 15px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .login-footer {
+    text-align: left;
+
+    ul {
+      display: flex;
+      gap: 10px;
+      margin-top: 28px;
+
+      li {
+        margin-right: 10px;
+        font-size: 13px;
+        color: $font_color;
+        cursor: pointer;
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          background-color: $gray300;
+          margin-left: 10px;
+          margin-top: 5px;
+        }
+
+        &:last-child:after {
+          width: 0;
+        }
+      }
+    }
+
+    .address {
+      color: $gray500;
+      font-size: 13px;
+      margin-top: 16px;
+    }
+  }
+}

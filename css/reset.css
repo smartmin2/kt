@@ -3,6 +3,13 @@
    License: none (public domain)
 */
 
+@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Thin.otf) format("opentype"); font-style: normal; font-weight: 100; } 
+@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Light.otf) format("opentype"); font-style: normal; font-weight: 300; } 
+@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Regular.otf) format("opentype"); font-style: normal; font-weight: 400; } 
+@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Medium.otf) format("opentype"); font-style: normal; font-weight: 500; } 
+@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Bold.otf) format("opentype"); font-style: normal; font-weight: 700; } 
+@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Black.otf) format("opentype"); font-style: normal; font-weight: 900; } 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -29,9 +36,8 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
+html { line-height: 1.5; -webkit-text-size-adjust: 100%; -moz-tab-size: 4; tab-size: 4; font-family: "Noto Sans KR", sans-serif; height: 100%; } 
+body { margin: 0; line-height: inherit; font-size: 14px; height: 100%; } 
 ol, ul {
 	list-style: none;
 }
@@ -51,10 +57,48 @@ button {
 	all: unset; 
 	cursor: pointer;
 }
+button,
+input,
+optgroup,
+select,
+textarea { font-family: inherit; font-size: 100%; line-height: inherit; color: inherit; margin: 0; padding: 0; } 
+strong { font-weight: bolder; } 
+small { font-size: 80%; } 
+hr { height: 0; color: inherit; border-top-width: 1px; } 
+a { color: inherit; text-decoration: inherit; outline: none; } 
+a:hover,
+a:active { text-decoration: none; color: initial; background-color: transparent; } 
+button,
+select { text-transform: none; cursor: pointer; -webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; } 
+input:focus,
+select:focus { outline: none; } 
+img,
+video { max-width: 100%; height: auto; } 
+[hidden] { display: none; } 
 
-input[type="text"], input[type="password"] { border: none; outline: none;}
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand { display: none; } 
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] { -webkit-appearance: button; background-color: transparent; background-image: none; } 
+:-moz-focusring { outline: auto; } 
+:-moz-ui-invalid { box-shadow: none; } 
+progress { vertical-align: baseline; } 
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button { height: auto; } 
+[type="search"] { -webkit-appearance: textfield; outline-offset: -2px; } 
+::-webkit-search-decoration { -webkit-appearance: none; } 
+::-webkit-file-upload-button { -webkit-appearance: button; font: inherit; } 
+summary { display: list-item; } 
+button,
+[role="button"] { cursor: pointer; } 
+:disabled { cursor: default; } 
+
+input[type="text"], input[type="password"] { border: inherit; outline: none;}
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { font-size: 14px; letter-spacing: -0.35px; text-align: left; color: rgba(188, 191, 199, 0.83); }
 input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder { font-size: 14px; letter-spacing: -0.35px; text-align: left; color: rgba(188, 191, 199, 0.83); }
 input[type="text"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder { font-size: 14px; letter-spacing: -0.35px; text-align: left; color: rgba(188, 191, 199, 0.83); }
 input[type="text"]::placeholder, input[type="password"]::placeholder { font-size: 14px; letter-spacing: -0.35px; text-align: left; color: rgba(188, 191, 199, 0.83); }
-input[type="radio"]{display: none;}
+input[type="radio"],input[type="checkbox"]{display: none;}

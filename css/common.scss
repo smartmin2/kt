@@ -3,16 +3,94 @@
 * {
   box-sizing: border-box;
 }
-/* a-style */
-a {
-  color: inherit;
-  text-decoration: none;
-  outline: none;
-}
 
 body {
   background-color: $colors_background;
   max-width: 1920px;
+}
+:root {
+  -webkit-tap-highlight-color: transparent;
+  text-size-adjust: 100%;
+  cursor: default;
+  overflow-wrap: break-word;
+}
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="text"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder {
+  opacity: 1;
+  color: $font_color_50;
+}
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 48px;
+  border: 1px solid $gray200;
+  border-radius: 4px;
+  background-color: $white;
+  padding: 0 16px;
+  padding-right: 48px;
+  color: $font_color_80;
+
+  &::placeholder {
+    opacity: 1;
+    color: $font_color_50;
+  }
+  &:focus {
+    border: 1px solid $font_color;
+  }
+  &.error {
+    border: 1px solid $font_color;
+    background: url(../assets/c_ic_login_warning.svg) no-repeat 96% center;
+  }
+
+  &:disabled {
+    background-color: var($gray100);
+    border: 1px solid var($gray200);
+    color: $font_color_20;
+  }
+  &:disabled::placeholder {
+    color: $font_color_20;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+
+  & + label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $font_color;
+    cursor: pointer;
+  }
+  & + label > .ico {
+    background: url(../assets/ic_checkbox_default.svg) no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  &:checked + label > .ico {
+    background: url(../assets/ic_checkbox_selected.svg) no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  &:checked:disabled + label > .ico {
+    background: url(../assets/ic_checkbox_selected_disabled.svg) no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
+  &:disabled + label > .ico {
+    background: url(../assets/ic_checkbox_disabled.svg) no-repeat center/cover;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+  }
 }
 
 input[type="checkbox"] {
@@ -54,8 +132,8 @@ input[type="checkbox"] {
 select {
   appearance: none;
   border: none;
-  
-  cursor: pointer;    
+
+  cursor: pointer;
   font-size: 14px;
   letter-spacing: -0.35px;
   text-align: left;
@@ -79,15 +157,17 @@ select {
   }
 }
 
-select:focus { outline: none; }
+select:focus {
+  outline: none;
+}
 
 select {
   width: 100%;
   height: 100%;
 }
 
-@include keyframe (fadeIn) {
-  from {  
+@include keyframe(fadeIn) {
+  from {
     opacity: 0;
   }
   to {
@@ -95,8 +175,8 @@ select {
   }
 }
 
-@include keyframe (fadeOut) {
-  from {  
+@include keyframe(fadeOut) {
+  from {
     opacity: 1;
   }
   to {
@@ -104,12 +184,12 @@ select {
   }
 }
 
-.modal{
-  @include animation (0s, 1s, fadeIn);
+.modal {
+  @include animation(0s, 1s, fadeIn);
 }
 
-.table_view_count{
-  @include input_box(100px,38px);
+.table_view_count {
+  @include input_box(100px, 38px);
 }
 
 .common_box {
@@ -117,8 +197,6 @@ select {
   box-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
-
-
 
 .header_wrapper {
   display: flex;
@@ -129,10 +207,9 @@ select {
   padding: 0 160px;
   background-color: $colors_main;
 
-  
   .header_logo {
     img {
-      content: url("../assets/logo.png");
+      content: url(../assets/logo.png);
     }
   }
 
@@ -159,7 +236,7 @@ select {
       }
     }
   }
-  
+
   .header_buttons {
     display: flex;
     gap: 6px;
@@ -198,7 +275,7 @@ button.menu_button {
   align-items: center;
   gap: 10px;
   font-size: 13px;
-  font-weight: bold;  
+  font-weight: bold;
   color: #2a3d72;
 }
 
@@ -206,19 +283,19 @@ button.menu_button {
   padding: 0 160px;
 }
 
-.sub_menu_wrapper { 
- border-right: 1px solid #e6e8ea;
- width: 240px;
- 
- .sub_menu_title {  
-   padding: 30px;
-   display: flex;
-   align-items: center;
-   gap: 15px;
-   font-size: 22px;
-   font-weight: bold;  
-   color: #00aace;
- }
+.sub_menu_wrapper {
+  border-right: 1px solid #e6e8ea;
+  width: 240px;
+
+  .sub_menu_title {
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #00aace;
+  }
 
   ul.sub_menu {
     li {
@@ -242,17 +319,16 @@ button.menu_button {
   }
 }
 
-
 .contents_wrapper {
   flex: 1;
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
-  
-  .content_title {  
+
+  .content_title {
     font-size: 18px;
-    font-weight: bold;    
+    font-weight: bold;
     color: #2a3d72;
   }
 }
@@ -271,31 +347,31 @@ button.menu_button {
 
 table.jb-table {
   width: 100%;
-  thead {    
+  thead {
     height: 30px;
     border-radius: 8px;
     background-color: #f1f7ff;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: -0.33px;
-    color: #586a9b;    
-    
-    tr {            
-      th { 
-        vertical-align : middle;
+    color: #586a9b;
+
+    tr {
+      th {
+        vertical-align: middle;
       }
     }
   }
   tbody {
-    tr {      
-      height: 50px;      
+    tr {
+      height: 50px;
       border-bottom: 1px solid #dcdfe4;
       td {
         padding: 0 15px;
-        vertical-align : middle;
+        vertical-align: middle;
         text-align: center;
-        font-size: 14px;        
-        letter-spacing: -0.35px;        
+        font-size: 14px;
+        letter-spacing: -0.35px;
         color: #282a3f;
       }
     }
@@ -305,7 +381,7 @@ table.jb-table {
 button.btn_excel {
   padding: 0 10px;
   height: 38px;
-  @include excel_button();  
+  @include excel_button();
 }
 
 button.btn_register {
@@ -316,35 +392,35 @@ button.btn_register {
 
 button.btn_common {
   width: 100px;
-  height: 38px;   
+  height: 38px;
   border-radius: 4px;
   background-color: $colors_main;
-  font-size: 14px;    
+  font-size: 14px;
   letter-spacing: -0.35px;
   text-align: center;
-  color: #fff;  
+  color: #fff;
 }
 
 ul.pagination {
-  @include flex_center;  
+  @include flex_center;
   height: 32px;
   font-size: 13px;
-  font-weight: 500;  
+  font-weight: 500;
   letter-spacing: -0.33px;
   text-align: center;
   color: #556076;
 
-  li a {         
+  li a {
     @include flex_center;
     width: 32px;
-    height: 32px;            
+    height: 32px;
     border-radius: 32px;
 
     &.active {
       background-color: $colors_main;
       color: white;
       border-radius: 32px;
-    }    
+    }
   }
 }
 
@@ -352,49 +428,90 @@ ul.pagination {
   display: flex;
   width: 300px;
   height: 38px;
-  border-radius: 4px;  
-  
-  span{
+  border-radius: 4px;
+
+  span {
     @include flex_center;
 
     width: 20px;
   }
-  input[type="date"]{
-    flex:1;
+  input[type="date"] {
+    flex: 1;
   }
 }
 
-input[type="date"]{
+input[type="date"] {
   position: relative;
-  height:100%;
-  padding-left: 16px ;  
+  height: 100%;
+  padding-left: 16px;
   border-radius: 4px;
   border: solid 1px #bcbfc7;
   background-color: #fff;
-  font-size: 14px;  
+  font-size: 14px;
   letter-spacing: -0.35px;
   text-align: left;
   color: rgba(20, 31, 64, 0.83);
 }
 
 input[type="date"]::-webkit-clear-button,
-input[type="date"]::-webkit-inner-spin-button { 
-    display: none;
-} 
-input[type="date"]::-webkit-calendar-picker-indicator { 
-    background: transparent;
-    z-index: 1;
-} 
+input[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background: transparent;
+  z-index: 1;
+}
 
-.input_date_group input:after{
+.input_date_group input:after {
   position: absolute;
-  top:50%;
-  right:10px;  
+  top: 50%;
+  right: 10px;
   width: 16px;
-  height:16px;
+  height: 16px;
 
-  content: url('../assets/ico-input-date.png');  
+  content: url("../assets/ico-input-date.png");
   transform: translateY(-50%);
   z-index: 0;
 }
 
+.red {
+  color: $red;
+}
+
+/* button */
+.btn-refresh {
+  background: url(../assets/reset.webp) no-repeat center/cover;
+  width: 22px;
+  height: 22px;
+  margin-bottom: 4px;
+}
+.btn-speaker {
+  background: url(../assets/speaker.webp) no-repeat center/cover;
+  width: 22px;
+  height: 22px;
+}
+.btn-ell-blue {
+  width: 100%;
+  height: 52px;
+  border-radius: 26px;
+  background-color: $navy;
+  color: $white;
+  font-size: 16px;
+  font-weight: 500;
+}
+.btn-clear {
+  width:24px;
+  height: 24px;
+  background: url(../assets/c_ic_login_delete.svg) no-repeat center;
+  cursor: pointer;
+}
+
+/* icon */
+.ic-id {
+  background: url(../assets/login_id_normal.svg) no-repeat 96% center;
+  padding-right: 48px;
+}
+.ic-pw {
+  background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 96% center;
+  padding-right: 48px;
+}
