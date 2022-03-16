@@ -127,9 +127,13 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
 .btn-clear { width: 24px; height: 24px; background: url(../assets/c_ic_login_delete.svg) no-repeat center; cursor: pointer; }
 
 /*********** icon ***********/
-.ic-id { background: url(../assets/login_id_normal.svg) no-repeat 96% center; padding-right: 48px; }
+.ic-id { background: url(../assets/login_id_normal.svg) no-repeat 95% center; padding-right: 48px; }
 
-.ic-pw { background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 96% center; padding-right: 48px; }
+.ic-id:disabled { background: url(../assets/login_id_disabled.svg) no-repeat 95% center; padding-right: 48px; }
+
+.ic-pw { background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 95% center; padding-right: 48px; }
+
+.ic-pw:disabled { background: url(../assets/ic_login_passwoard_disabled.svg) no-repeat 95% center; padding-right: 48px; }
 
 /*********** components ***********/
 .components-wrapper { padding: 20px; }
@@ -138,12 +142,16 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
 .components-wrapper article { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
 .components-wrapper span { display: inline-block; width: 20px; height: 20px; }
 .components-wrapper input, .components-wrapper button, .components-wrapper select { max-width: 300px; }
-.components-wrapper .selectBox { width: 300px; position: relative; }
-.components-wrapper .label { width: 100%; text-align: left; border: 1px solid #2a3d72; height: 38px; border-radius: 4px; padding: 0 48px 0 16px; color: rgba(20, 31, 64, 0.8); background: #fff url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center; }
-.components-wrapper .optionList { width: 100%; border: 1px solid #2a3d72; background-color: #fff; border-radius: 4px; height: 190px; overflow-y: auto; position: absolute; top: 46px; display: none; }
-.components-wrapper .optionItem { padding: 8px 16px 10px 16px; }
-.components-wrapper .optionItem:hover { background-color: rgba(27, 192, 218, 0.1); color: #00aace; font-weight: 600; }
-.components-wrapper .optionList::-webkit-scrollbar { width: 2px; }
-.components-wrapper .optionList::-webkit-scrollbar-thumb { background-color: rgba(20, 31, 64, 0.5); -webkit-box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5); box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5); border-radius: 100px; }
+
+.selectBox { width: 300px; position: relative; }
+.selectBox .label { width: 100%; text-align: left; border: 1px solid #2a3d72; height: 38px; border-radius: 4px; padding: 0 48px 0 16px; color: rgba(20, 31, 64, 0.8); background: #fff url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center; }
+.selectBox .optionList { width: 100%; border: 1px solid #2a3d72; background-color: #fff; border-radius: 4px; height: 190px; overflow-y: auto; position: absolute; top: 46px; display: none; }
+.selectBox .optionList::-webkit-scrollbar { width: 2px; }
+.selectBox .optionList::-webkit-scrollbar-thumb { background-color: rgba(20, 31, 64, 0.5); -webkit-box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5); box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5); border-radius: 100px; }
+.selectBox .optionList .optionItem { padding: 8px 16px 10px 16px; }
+.selectBox .optionList .optionItem:hover { background-color: rgba(27, 192, 218, 0.1); color: #00aace; font-weight: 600; }
+
+.input-wrap { position: relative; }
+.input-wrap .btn-clear { position: absolute; right: 16px; top: 12px; display: none; }
 
 /*# sourceMappingURL=common.css.map */

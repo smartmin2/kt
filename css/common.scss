@@ -508,13 +508,22 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 /*********** icon ***********/
 .ic-id {
-  background: url(../assets/login_id_normal.svg) no-repeat 96% center;
+  background: url(../assets/login_id_normal.svg) no-repeat 95% center;
+  padding-right: 48px;
+}
+.ic-id:disabled {
+  background: url(../assets/login_id_disabled.svg) no-repeat 95% center;
   padding-right: 48px;
 }
 .ic-pw {
-  background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 96% center;
+  background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 95% center;
   padding-right: 48px;
 }
+.ic-pw:disabled {
+  background: url(../assets/ic_login_passwoard_disabled.svg) no-repeat 95% center;
+  padding-right: 48px;
+}
+
 
 /*********** components ***********/
 .components-wrapper{
@@ -544,10 +553,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     max-width: 300px;
   }
   
-  .selectBox {
-    width: 300px;
-    position: relative;
-  }
+}
+
+.selectBox {
+  width: 300px;
+  position: relative;
+
   .label {
     width: 100%;
     text-align: left;
@@ -568,23 +579,37 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     position: absolute;
     top: 46px;
     display: none;
-  }
-  .optionItem {
-    padding: 8px 16px 10px 16px;
-  }
-  .optionItem:hover {
-    background-color: $colors_main_10;
-    color: $colors_font;
-    font-weight: 600;
-  }
 
-  .optionList::-webkit-scrollbar {
-    width: 2px;
-  }
+    &::-webkit-scrollbar {
+      width: 2px;
+    }
 
-  .optionList::-webkit-scrollbar-thumb {
-    background-color: $font_color_50;
-    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-    border-radius: 100px;
+    &::-webkit-scrollbar-thumb {
+      background-color: $font_color_50;
+      box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+      border-radius: 100px;
+    }
+
+    .optionItem {
+      padding: 8px 16px 10px 16px;
+
+      &:hover {
+        background-color: $colors_main_10;
+        color: $colors_font;
+        font-weight: 600;
+      }
+    }
+  
+  }
+}
+
+.input-wrap {
+  position: relative;
+
+  .btn-clear {
+    position: absolute;
+    right: 16px;
+    top: 12px;
+    display: none;
   }
 }

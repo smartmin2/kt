@@ -7,8 +7,6 @@
 .login-wrap .login-box .login-main img { padding: 0 49px; margin-bottom: 71px; }
 .login-wrap .login-box .login-main input { margin-bottom: 12px; }
 .login-wrap .login-box .login-main span { letter-spacing: -0.35px; }
-.login-wrap .login-box .login-main .input-wrap { position: relative; }
-.login-wrap .login-box .login-main .input-wrap .btn-clear { position: absolute; right: 16px; top: 12px; display: none; }
 .login-wrap .login-box .login-main .prevention { display: -webkit-box; display: -ms-flexbox; display: flex; }
 .login-wrap .login-box .login-main .prevention .pre-img { width: 180px; height: 50px; background-color: #000; }
 .login-wrap .login-box .login-main .prevention .pre-icon { margin: 0 10px 0 8px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; display: -webkit-box; display: -ms-flexbox; display: flex; }
