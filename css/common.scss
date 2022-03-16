@@ -543,11 +543,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   select {
     max-width: 300px;
   }
-  #select {
-    width: 100%;
-    height: 50px;
-    border: 1px solid #ddd;
-  }
+  
   .selectBox {
     width: 300px;
     position: relative;
@@ -556,12 +552,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     width: 100%;
     text-align: left;
     border: 1px solid $navy;
-    background-color: $white;
     height: 38px;
     border-radius: 4px;
     padding: 0 48px 0 16px;
     color: $font_color_80;
-    background: url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center;
+    background: $white url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center;
   }
   .optionList {
     width: 100%;
