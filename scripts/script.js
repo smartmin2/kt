@@ -46,4 +46,14 @@ $(document).click(function (e) {
   }
 
   // <<--------- input ------------
+
+
+  $(".label").click(function () {
+    const select = $(this);
+
+    // 드롭다운 열기
+    select.next(".optionList").slideDown(100);
+
+   
+  });
 });
