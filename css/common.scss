@@ -14,6 +14,7 @@ body {
   cursor: default;
   overflow-wrap: break-word;
 }
+
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder,
 input[type="text"]:-ms-input-placeholder,
@@ -34,6 +35,9 @@ input[type="password"] {
   padding-right: 48px;
   color: $font_color_80;
 
+  &:hover{    
+    border: 1px solid $gray400;
+  }
   &::placeholder {
     opacity: 1;
     color: $font_color_50;
@@ -41,9 +45,10 @@ input[type="password"] {
   &:focus {
     border: 1px solid $font_color;
   }
+ 
   &.error {
-    border: 1px solid $font_color;
-    background: url(../assets/c_ic_login_warning.svg) no-repeat 96% center;
+    border: 1px solid $red;
+  
   }
 
   &:disabled {
@@ -130,7 +135,7 @@ input[type="checkbox"] {
 }
 
 select {
-  appearance: none;  
+  appearance: none;
 
   cursor: pointer;
   font-size: 14px;
@@ -498,9 +503,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
+  padding: 0 12px;
+
+  @include text_overflow;
 }
 .btn-clear {
-  width:24px;
+  width: 24px;
   height: 24px;
   background: url(../assets/c_ic_login_delete.svg) no-repeat center;
   cursor: pointer;
@@ -510,6 +518,10 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .ic-id {
   background: url(../assets/login_id_normal.svg) no-repeat 95% center;
   padding-right: 48px;
+   &.error {
+    border: 1px solid $red;
+    background: $white url(../assets/c_ic_login_warning.svg) no-repeat 96% center;
+  }
 }
 .ic-id:disabled {
   background: url(../assets/login_id_disabled.svg) no-repeat 95% center;
@@ -518,16 +530,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .ic-pw {
   background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 95% center;
   padding-right: 48px;
+  &.error {
+    border: 1px solid $red;
+    background: $white url(../assets/c_ic_login_warning.svg) no-repeat 96% center;
+  }
 }
 .ic-pw:disabled {
   background: url(../assets/ic_login_passwoard_disabled.svg) no-repeat 95% center;
   padding-right: 48px;
 }
 
-
 /*********** components ***********/
-.components-wrapper{
-  padding:20px;
+
+/* components html*/
+.components-wrapper {
+  padding: 20px;
 
   h1 {
     font-size: 22px;
@@ -552,22 +569,38 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   select {
     max-width: 300px;
   }
-  
 }
 
+/* 셀렉트 */
 .selectBox {
   width: 300px;
   position: relative;
 
+  &.disable .label{
+    border: 1px solid $colors_line;
+    color:$font_color_20;
+    background: $gray100  url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat 96% center;;
+    &:hover{
+      border: 1px solid $colors_line;
+    }
+  }
   .label {
     width: 100%;
     text-align: left;
-    border: 1px solid $navy;
+    border: 1px solid $colors_line;
     height: 38px;
     border-radius: 4px;
     padding: 0 48px 0 16px;
     color: $font_color_80;
     background: $white url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center;
+    @include text_overflow;
+
+    &:hover{
+      border: 1px solid $gray400;
+    }
+    &.active{
+      border: 1px solid $navy;
+    }
   }
   .optionList {
     width: 100%;
@@ -580,29 +613,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     top: 46px;
     display: none;
 
-    &::-webkit-scrollbar {
-      width: 2px;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: $font_color_50;
-      box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
-      border-radius: 100px;
-    }
+    @include scrollbar;
 
     .optionItem {
       padding: 8px 16px 10px 16px;
-
+      @include text_overflow;
       &:hover {
         background-color: $colors_main_10;
         color: $colors_font;
         font-weight: 600;
       }
     }
-  
   }
 }
 
+/* X버튼 생성 텍스트 인풋 */
 .input-wrap {
   position: relative;
 

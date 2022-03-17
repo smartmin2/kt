@@ -38,8 +38,8 @@ $(function () {
 });
 
 $(document).click(function (e) {
-  var LayerPopup = $(".input-wrap");
-  if (LayerPopup.has(e.target).length === 0) {
+  const inputWrap = $(".input-wrap");
+  if (inputWrap.has(e.target).length === 0) {
     const btnClear = $(this).find(".btn-clear");
     btnClear.hide();
     $(this).find("input").css("background-size", "inherit");
@@ -47,30 +47,41 @@ $(document).click(function (e) {
 
   // <<--------- input ------------
 
-    // --------- select ------------>>
+   
+  
+});
+
+ // --------- select ------------>>
 
   /* 셀렉트박스 보이게 하기 */
 
   $("body").on("click", ".label", function () {
-    $(".optionList").toggle();
+    if($(".selectBox").hasClass("disable")){
+      $(".optionList").slideUp();
+      $(".label").removeClass("active");
+    }else{
+      $(".optionList").slideToggle();
+      $(".label").toggleClass("active");
+    }
+    
   });
 
   /* 셀렉트 박스 옵션 선택 */
   $("body").on("click", "ul li", function () {
-    var text = $(this).html();
+    const text = $(this).html();
     $(".label").html(text);
-    $("ul").toggle();
+    $(".optionList").slideToggle();
+    $(".label").removeClass("active");
   });
 
   /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
   $("body").on("click", function (e) {
-    if ($("ul").css("display") == "block") {
+    if ($(".optionList").css("display") == "block") {
       if ($(".selectBox").has(e.target).length == 0) {
-        $("ul").hide();
+        $(".optionList").hide();
+        $(".label").removeClass("active");
       }
     }
   });
 
   // <<--------- select ------------
-  
-});

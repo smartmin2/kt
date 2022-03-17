@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body { background-color: #f2f7ff; max-width: 1920px; }
@@ -7,12 +8,13 @@ body { background-color: #f2f7ff; max-width: 1920px; }
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="text"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 
 input[type="text"], input[type="password"] { width: 100%; height: 48px; border: 1px solid #bcbfc7; border-radius: 4px; background-color: #fff; padding: 0 16px; padding-right: 48px; color: rgba(20, 31, 64, 0.8); }
+input[type="text"]:hover, input[type="password"]:hover { border: 1px solid #8c8c8c; }
 input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 input[type="text"]::-ms-input-placeholder, input[type="password"]::-ms-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 input[type="text"]::placeholder, input[type="password"]::placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 input[type="text"]:focus, input[type="password"]:focus { border: 1px solid #141f40; }
-input[type="text"].error, input[type="password"].error { border: 1px solid #141f40; background: url(../assets/c_ic_login_warning.svg) no-repeat 96% center; }
+input[type="text"].error, input[type="password"].error { border: 1px solid #d06062; }
 input[type="text"]:disabled, input[type="password"]:disabled { background-color: #f9fafd; border: 1px solid #bcbfc7; color: rgba(20, 31, 64, 0.2); }
 input[type="text"]:disabled::-webkit-input-placeholder, input[type="password"]:disabled::-webkit-input-placeholder { color: rgba(20, 31, 64, 0.2); }
 input[type="text"]:disabled:-ms-input-placeholder, input[type="password"]:disabled:-ms-input-placeholder { color: rgba(20, 31, 64, 0.2); }
@@ -122,20 +124,23 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
 
 .btn-speaker { background: url(../assets/speaker.webp) no-repeat center/cover; width: 22px; height: 22px; }
 
-.btn-ell-blue { width: 100%; height: 52px; border-radius: 26px; background-color: #2a3d72; color: #fff; font-size: 16px; font-weight: 500; text-align: center; }
+.btn-ell-blue { width: 100%; height: 52px; border-radius: 26px; background-color: #2a3d72; color: #fff; font-size: 16px; font-weight: 500; text-align: center; padding: 0 12px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 
 .btn-clear { width: 24px; height: 24px; background: url(../assets/c_ic_login_delete.svg) no-repeat center; cursor: pointer; }
 
 /*********** icon ***********/
 .ic-id { background: url(../assets/login_id_normal.svg) no-repeat 95% center; padding-right: 48px; }
+.ic-id.error { border: 1px solid #d06062; background: #fff url(../assets/c_ic_login_warning.svg) no-repeat 96% center; }
 
 .ic-id:disabled { background: url(../assets/login_id_disabled.svg) no-repeat 95% center; padding-right: 48px; }
 
 .ic-pw { background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 95% center; padding-right: 48px; }
+.ic-pw.error { border: 1px solid #d06062; background: #fff url(../assets/c_ic_login_warning.svg) no-repeat 96% center; }
 
 .ic-pw:disabled { background: url(../assets/ic_login_passwoard_disabled.svg) no-repeat 95% center; padding-right: 48px; }
 
 /*********** components ***********/
+/* components html*/
 .components-wrapper { padding: 20px; }
 .components-wrapper h1 { font-size: 22px; font-weight: 700; margin-bottom: 20px; }
 .components-wrapper section { margin-bottom: 40px; }
@@ -143,14 +148,20 @@ input[type="date"]::-webkit-calendar-picker-indicator { background: transparent;
 .components-wrapper span { display: inline-block; width: 20px; height: 20px; }
 .components-wrapper input, .components-wrapper button, .components-wrapper select { max-width: 300px; }
 
+/* 셀렉트 */
 .selectBox { width: 300px; position: relative; }
-.selectBox .label { width: 100%; text-align: left; border: 1px solid #2a3d72; height: 38px; border-radius: 4px; padding: 0 48px 0 16px; color: rgba(20, 31, 64, 0.8); background: #fff url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center; }
+.selectBox.disable .label { border: 1px solid #bcbfc7; color: rgba(20, 31, 64, 0.2); background: #f9fafd url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat 96% center; }
+.selectBox.disable .label:hover { border: 1px solid #bcbfc7; }
+.selectBox .label { width: 100%; text-align: left; border: 1px solid #bcbfc7; height: 38px; border-radius: 4px; padding: 0 48px 0 16px; color: rgba(20, 31, 64, 0.8); background: #fff url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.selectBox .label:hover { border: 1px solid #8c8c8c; }
+.selectBox .label.active { border: 1px solid #2a3d72; }
 .selectBox .optionList { width: 100%; border: 1px solid #2a3d72; background-color: #fff; border-radius: 4px; height: 190px; overflow-y: auto; position: absolute; top: 46px; display: none; }
-.selectBox .optionList::-webkit-scrollbar { width: 2px; }
-.selectBox .optionList::-webkit-scrollbar-thumb { background-color: rgba(20, 31, 64, 0.5); -webkit-box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5); box-shadow: inset 2px 2px 5px 0 rgba(255, 255, 255, 0.5); border-radius: 100px; }
-.selectBox .optionList .optionItem { padding: 8px 16px 10px 16px; }
+.selectBox .optionList::-webkit-scrollbar { width: 2px; border-radius: 1px; }
+.selectBox .optionList::-webkit-scrollbar-thumb { background-color: rgba(20, 31, 64, 0.5); border-radius: 1px; }
+.selectBox .optionList .optionItem { padding: 8px 16px 10px 16px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
 .selectBox .optionList .optionItem:hover { background-color: rgba(27, 192, 218, 0.1); color: #00aace; font-weight: 600; }
 
+/* X버튼 생성 텍스트 인풋 */
 .input-wrap { position: relative; }
 .input-wrap .btn-clear { position: absolute; right: 16px; top: 12px; display: none; }
 
