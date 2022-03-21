@@ -2,6 +2,8 @@ $(function () {
   // --------- input ------------>>
 
   $("input").focusin("input", function () {
+    $(".btn-clear").hide();
+    $("input").css("background-size", "inherit");
     const btnClear = $(this).parent(".input-wrap").find(".btn-clear");
     if ($(this).val() == "") {
       btnClear.hide();
@@ -11,12 +13,6 @@ $(function () {
       $(this).css("background-size", "0%");
     }
   });
-
-  // $("input").focusout("input", function () {
-  //   const btnClear = $(this).parent(".input-wrap").find(".btn-clear");
-  //   btnClear.hide();
-  //   $(this).css("background-size", "inherit");
-  // });
 
   $("input").on("input", function () {
     const btnClear = $(this).parent(".input-wrap").find(".btn-clear");
@@ -29,6 +25,7 @@ $(function () {
     }
   });
 
+  /* X버튼 클릭시 내용 지우기*/
   $(".btn-clear").on("click", function () {
     $(this).parent(".input-wrap").find("input").val("");
     const btnClear = $(this).parent(".input-wrap").find(".btn-clear");
@@ -37,6 +34,7 @@ $(function () {
   });
 });
 
+/* 다른 곳 클릭 시 X버튼 숨기기 */
 $(document).click(function (e) {
   const inputWrap = $(".input-wrap");
   if (inputWrap.has(e.target).length === 0) {

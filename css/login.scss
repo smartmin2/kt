@@ -1,15 +1,21 @@
 @import "func.scss";
 
 .wrapper {
-    background-color: $colors_background;
-    width: 1920px;
-    height: 100%;
-    @include flex_center();
-  }
-  
+  background-color: $colors_background;
+  height: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
 
 /********************* login **********************/
-
+.login-wrapper {
+  @include flex_center();
+}
 .login-wrap {
   width: 1000px;
   margin: 0 auto;
@@ -17,7 +23,7 @@
   .ic-id {
     background: url(../assets/login_id_normal.svg) no-repeat 95% center;
     padding-right: 48px;
-     &.error {
+    &.error {
       border: 1px solid $red;
       background: $white url(../assets/c_ic_login_warning.svg) no-repeat 96% center;
     }
@@ -26,7 +32,7 @@
       padding-right: 48px;
     }
   }
-  
+
   .ic-pw {
     background: url(../assets/ic_login_passwoard_normal.svg) no-repeat 95% center;
     padding-right: 48px;
@@ -39,10 +45,10 @@
       padding-right: 48px;
     }
   }
-   /* X버튼 생성 텍스트 인풋 */
-   .input-wrap {
+  /* X버튼 생성 텍스트 인풋 */
+  .input-wrap {
     position: relative;
-  
+
     .btn-clear {
       position: absolute;
       right: 16px;
@@ -250,10 +256,11 @@
   }
 
   .login-footer {
-    text-align: left;
+    text-align: center;
 
     ul {
       display: flex;
+      justify-content: center;
       gap: 10px;
       margin-top: 28px;
 
@@ -285,62 +292,354 @@
       margin-top: 16px;
     }
   }
-  
 }
+
+/********************* header **********************/
+
+.container {
+  width: 1600px;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+  height: 70px;
+  padding: 0 160px;
+  background-color: $colors_main;
+
+  @include space_between();
+
+  .nav {
+    display: flex;
+    gap: 32px;
+    li {
+      a {
+        font-size: 16px;
+        color: $white;
+      }
+    }
+
+    &-sub {
+      @include flex_center;
+      
+      display: none;
+      gap: 32px;
+
+      position: absolute;
+      top: 70px;
+      left: 0;
+
+      width: 100%;
+      padding:10px 0;
+      background-color: $colors_font;
+    }
+  }
+
+  .btn-wrap {
+    @include flex_center();
+    gap: 6px;
+  }
+}
+
+/********************* main **********************/
+
+.main {
+  padding: 42px 0 28px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  &-box {
+    width: 100%;
+    padding: 20px 33px 0px 32px;
+    border-radius: 14px;
+    background-color: $white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+
+    .favorite {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+
+      padding: 28px 0;
+
+      div {
+        width: 120px;
+        height: 120px;
+        background: url(../assets/c_bg_favorite_add.svg) no-repeat center center/cover;
+        font-size: 18px;
+        font-weight: 500;
+        color: $navy;
+
+        @include flex_center();
+
+        &.default {
+          border: none;
+          background: url(../assets/c_bg_favorite_default.svg) no-repeat center center/cover;
+        }
+      }
+    }
+
+    .notice {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 0 20px 0;
+
+      &-box {
+        width: 100%;
+        padding: 16px 24px 12px;
+        border-radius: 14px;
+        background-color: $blue200;
+
+        div {
+          color: $font_color;
+        }
+      }
+      &-tit {
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      &-date {
+        text-align: right;
+        margin-top: 8px;
+      }
+    }
+
+    .table {
+      padding: 24px 0 10px 0;
+      width: 100%;
+      &-ach {
+        td {
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+      &-intro {
+        td {
+          &:first-child {
+            text-align: left;
+          }
+        }
+      }
+    }
+
+    .status {
+      padding: 18px 0 20px 0;
+
+      &-box {
+        position: relative;
+        width: 100%;
+        height: 64px;
+        border-radius: 14px;
+        background-color: $blue200;
+
+        @include flex_center;
+
+        .btn-wrap {
+          position: absolute;
+          right: 24px;
+
+          button {
+            display: block;
+          }
+        }
+      }
+
+      &-txt {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+
+        font-size: 16px;
+        font-weight: 500;
+        color: $navy;
+      }
+    }
+  }
+
+  &-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: $navy;
+
+    display: flex;
+    align-items: center;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    &.sb {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    height: 50px;
+  }
+}
+
 /* 셀렉트 */
 .selectBox {
-    width: 300px;
-    position: relative;
-  
-    &.disable .label{
+  width: 300px;
+  position: relative;
+
+  &.disable .label {
+    border: 1px solid $colors_line;
+    color: $font_color_20;
+    background: $gray100 url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat 96% center;
+    &:hover {
       border: 1px solid $colors_line;
-      color:$font_color_20;
-      background: $gray100  url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat 96% center;;
-      &:hover{
-        border: 1px solid $colors_line;
-      }
     }
-    .label {
-      width: 100%;
-      text-align: left;
-      border: 1px solid $colors_line;
-      height: 38px;
-      border-radius: 4px;
-      padding: 0 48px 0 16px;
-      color: $font_color_80;
-      background: $white url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center;
-      @include text_overflow;
-  
-      &:hover{
-        border: 1px solid $gray400;
-      }
-      &.active{
-        border: 1px solid $navy;
-      }
+  }
+  .label {
+    width: 100%;
+    text-align: left;
+    border: 1px solid $colors_line;
+    height: 38px;
+    border-radius: 4px;
+    padding: 0 48px 0 16px;
+    color: $font_color_80;
+    background: $white url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center;
+    @include text_overflow;
+
+    &:hover {
+      border: 1px solid $gray400;
     }
-    .optionList {
-      width: 100%;
+    &.active {
       border: 1px solid $navy;
-      background-color: $white;
-      border-radius: 4px;
-      height: 190px;
-      overflow-y: auto;
-      position: absolute;
-      top: 46px;
-      display: none;
-  
-      @include scrollbar;
-  
-      .optionItem {
-        padding: 8px 16px 10px 16px;
-        @include text_overflow;
-        &:hover {
-          background-color: $colors_main_10;
-          color: $colors_font;
-          font-weight: 600;
+    }
+  }
+  .optionList {
+    width: 100%;
+    border: 1px solid $navy;
+    background-color: $white;
+    border-radius: 4px;
+    height: 190px;
+    overflow-y: auto;
+    position: absolute;
+    top: 46px;
+    display: none;
+
+    @include scrollbar;
+
+    .optionItem {
+      padding: 8px 16px 10px 16px;
+      @include text_overflow;
+      &:hover {
+        background-color: $colors_main_10;
+        color: $colors_font;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+/* 버튼 */
+
+.btn-rec-blue {
+  height: 26px;
+  padding: 0 8px;
+  border-radius: 5px;
+  background-color: $blue100;
+
+  color: $white;
+  font-size: 13px;
+
+  @include flex_center();
+}
+.btn-rec-green {
+  border-radius: 5px;
+  border: solid 1px $green;
+  background-color: $white;
+  padding: 7px 10px 8px 12px;
+
+  @include flex_center;
+  gap: 9px;
+
+  color: $green;
+  font-size: 14px;
+  font-weight: normal;
+}
+.ell-blue {
+  border-radius: 12px;
+  background-color: $font_color;
+  padding: 2px 8px;
+  color: $white;
+  font-size: 14px;
+  font-weight: normal;
+}
+.btn-up {
+  background: url(../assets/ic_dropdown_arrow_up_default.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+}
+.btn-down {
+  background: url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+}
+.btn-download {
+  width: 20px;
+  height: 20px;
+  background: url(../assets/c_ic_list_download.svg) no-repeat center;
+}
+/* 공통 */
+.w2 {
+  width: 795px;
+}
+
+.table-wrap {
+  width: 100%;
+  table {
+    width: 100%;
+    thead {
+      height: 30px;
+
+      th {
+        background-color: #f1f7ff;
+        vertical-align: middle;
+        font-size: 13px;
+        font-weight: bold;
+        color: $navy;
+
+        &:first-child {
+          border-top-left-radius: 10px;
+          border-bottom-left-radius: 10px;
+        }
+        &:last-child {
+          border-top-right-radius: 10px;
+          border-bottom-right-radius: 10px;
+        }
+      }
+    }
+    tbody {
+      tr {
+        border-bottom: 1px solid $gray600;
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+      td {
+        text-align: center;
+        color: $navy;
+        height: 40px;
+        vertical-align: middle;
+
+        &:first-child {
+          padding: 0 20px;
         }
       }
     }
   }
-  
- 
+}

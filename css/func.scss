@@ -16,11 +16,15 @@ $gray200: #bcbfc7;
 $gray300: #bfc2c8;
 $gray400: #8c8c8c;
 $gray500: #616366;
+$gray600: #e6e8ea;
 
 $font_color: #141f40;
 $font_color_20: rgba(20, 31, 64, 0.2);
 $font_color_50: rgba(20, 31, 64, 0.5);
 $font_color_80: rgba(20, 31, 64, 0.8);
+
+$blue100:#04a3bb;
+$blue200:#f1f7ff;
 
 // text input box : width, height
 @mixin input_box($width, $height) {
@@ -35,6 +39,12 @@ $font_color_80: rgba(20, 31, 64, 0.8);
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin space_between() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 @mixin excel_button() {
