@@ -4,7 +4,7 @@
 @font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Light.otf) format("opentype"); font-style: normal; font-weight: 300; } 
 @font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Regular.otf) format("opentype"); font-style: normal; font-weight: 400; } 
 @font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Medium.otf) format("opentype"); font-style: normal; font-weight: 500; } 
-@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Bold.otf) format("opentype"); font-style: bold; font-weight: 700; } 
+@font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Bold.otf) format("opentype"); font-style: normal; font-weight: 700; } 
 @font-face { font-family: "Noto Sans KR"; src: url(../font/NotoSansKR-Black.otf) format("opentype"); font-style: normal; font-weight: 900; } 
 
 *,

@@ -1,4 +1,5 @@
 $colors_line: #bcbfc7;
+$colors_box: #f1f7ff;
 $colors_background: #f2f7ff;
 $colors_main: #1bc1db;
 $colors_main_10: rgba(27, 192, 218, 0.1);
@@ -56,7 +57,7 @@ $bg_black: rgba(0,0,0,0.1);
   border: solid 1px #207245;
   background-color: #fff;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 300;
   color: #207245;
   @include flex_center();
   gap: 10px;
