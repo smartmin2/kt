@@ -381,6 +381,10 @@
           border: none;
           background: url(../assets/c_bg_favorite_default.svg) no-repeat center center/cover;
         }
+      
+      }
+      &-box{
+        cursor: pointer;
       }
     }
 

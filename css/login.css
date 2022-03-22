@@ -76,6 +76,7 @@
 .main-box .favorite { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 28px; padding: 28px 0; }
 .main-box .favorite div { width: 120px; height: 120px; background: url(../assets/c_bg_favorite_add.svg) no-repeat center center/cover; font-size: 18px; font-weight: 500; color: #2a3d72; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .main-box .favorite div.default { border: none; background: url(../assets/c_bg_favorite_default.svg) no-repeat center center/cover; }
+.main-box .favorite-box { cursor: pointer; }
 .main-box .notice { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; padding: 16px 0 20px 0; }
 .main-box .notice-box { width: 100%; padding: 16px 24px 12px; border-radius: 14px; background-color: #f1f7ff; }
 .main-box .notice-box div { color: #141f40; }

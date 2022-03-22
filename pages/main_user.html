@@ -42,13 +42,13 @@
       <div class="container">
         <main class="main">
           <div class="main-box w2">
-            <div class="main-title">자주 찾는 메뉴<button class="modal-open btn-more"></button></div>
+            <div class="main-title">자주 찾는 메뉴<button class="btn-more"></button></div>
             <div class="favorite">
               <div class="favorite-box default">소재가공</div>
-              <div class="favorite-box"></div>
-              <div class="favorite-box"></div>
-              <div class="favorite-box"></div>
-              <div class="favorite-box"></div>
+              <div class="favorite-box modal-open"></div>
+              <div class="favorite-box modal-open"></div>
+              <div class="favorite-box modal-open"></div>
+              <div class="favorite-box modal-open"></div>
             </div>
           </div>
           <div class="main-box w2">
@@ -351,7 +351,7 @@
                     <input type="checkbox" name="ck" id="ck21" /> <label for="ck21"><span class="ico"></span>영업진행현황 관리</label>
                   </li>
                   <li>
-                    <input type="checkbox" name="ck" id="ck22" /> <label for="ck22" ><span class="ico"></span>영업권관리 영업사별 조회</label>
+                    <input type="checkbox" name="ck" id="ck22" /> <label for="ck22"><span class="ico"></span>영업권관리 영업사별 조회</label>
                   </li>
                   <li>
                     <input type="checkbox" name="ck" id="ck23" /> <label for="ck23"><span class="ico"></span>연간광고주 현황</label>
@@ -414,9 +414,9 @@
         confirm("로그아웃 하시겠습니까?");
       });
 
-      $(".chk-label").click(function(){
+      $(".chk-label").click(function () {
         $(this).next(".chk-sel-ck").slideToggle();
-      })
+      });
     </script>
   </body>
 </html>
