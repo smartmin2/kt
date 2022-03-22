@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/login.css" />
+
+    <style>
+      .modal-name {
+        width: 1360px;
+        height: 760px;
+        padding: 20px 32px;
+        display: none;
+      }
+      .modal-open {
+        border-radius: 5px;
+  border: solid 1px #207245;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 300;
+  color: #207245;
+      }
+    </style>
   </head>
   <body>
     <div class="components-wrapper">
@@ -61,6 +78,20 @@
 
         </article>
       </section>
+
+      <section>
+        <h1>모달</h1>
+        <button class="modal-open">모달오픈</button>
+      </section>
+      
+      <div id="modal-background"></div>
+      <div class="modal-con common-box modal-name">  
+        <div class="modal-top">
+          <div class="box-title">자주 찾는 메뉴 설정</div>
+          <div class="ic-modal-close close"></div>
+        </div>                    
+      </div>
+
     </div>
     <script src="../scripts/jquery-3.6.0.min.js"></script>
     <script src="../scripts/script.js"></script>
