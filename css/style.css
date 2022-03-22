@@ -353,11 +353,7 @@
 }
 
 .modal-main .modal-body-content .menu-item-body .menu-title input[type="checkbox"] + label {
-  font-weight: 500;
-}
-
-.modal-main .modal-body-content .menu-item-body .menu-title input[type="checkbox"]:checked + label {
-  font-weight: bold;
+  font-weight: 300;
 }
 
 .modal-main .modal-body-content .menu-item-body .sub-menu-title {
@@ -377,10 +373,6 @@
 
 .modal-main .modal-body-content .menu-item-body .sub-menu-title input[type="checkbox"] + label {
   font-weight: 300;
-}
-
-.modal-main .modal-body-content .menu-item-body .sub-menu-title input[type="checkbox"]:checked + label {
-  font-weight: 500;
 }
 
 .modal-main .modal-bottom {
