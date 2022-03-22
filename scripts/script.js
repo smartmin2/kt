@@ -118,7 +118,7 @@ function addRow(table, tbData, isCheckbox) {
 $(".fa-menu-box, .modal-open").on('click',function(){
   $("#modal-background").fadeIn(300);
   $(".modal-con")
-    .css("display", "flex")
+    .css("display", "block")
     .hide()
     .fadeIn();  
   $('body').css('overflow', 'hidden');
