@@ -375,9 +375,10 @@ body{
         width: 120px;
         height: 120px;
         background: url(../assets/c_bg_favorite_add.svg) no-repeat center center/cover;
-        font-size: 18px;
+        font-size: 15px;
         font-weight: 500;
         color: $navy;
+        text-align: center;
 
         @include flex_center();
 
@@ -589,7 +590,6 @@ body{
     top: 46px;
     display: none;
 
-    @include scrollbar;
 
     .optionItem {
       padding: 8px 16px 10px 16px;
