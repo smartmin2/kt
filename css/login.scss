@@ -610,16 +610,13 @@ body{
       height: 48px;
       padding: 14px 10px;
       font-size: 14px;
-      font-weight: 500;
       color: $font_color;
 
       display: flex;
       align-items: center;
       gap: 10px;
 
-      input[type="checkbox"]:checked + label {
-        font-weight: bold;
-      }
+    
     }
   }
 
@@ -649,9 +646,7 @@ body{
       align-items: center;
       gap: 10px;
 
-      input[type="checkbox"]:checked + label {
-        font-weight: 500;
-      }
+     
     }
   }
 }
