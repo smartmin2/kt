@@ -1,10 +1,14 @@
 @import "func.scss";
 
+body{
+  margin:0 auto;
+}
+
 .wrapper {
   background-color: $colors_background;
   height: 100%;
-  max-width: 1920px;
   margin: 0 auto;
+  min-width: 1920px;
 }
 
 .container {
@@ -381,9 +385,8 @@
           border: none;
           background: url(../assets/c_bg_favorite_default.svg) no-repeat center center/cover;
         }
-      
       }
-      &-box{
+      &-box {
         cursor: pointer;
       }
     }
@@ -540,7 +543,7 @@
   &-btn {
     @include flex_center;
     gap: 10px;
-    padding-top: 24px ;
+    padding-top: 24px;
   }
 }
 

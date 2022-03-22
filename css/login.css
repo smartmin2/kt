@@ -1,5 +1,7 @@
 @charset "UTF-8";
-.wrapper { background-color: #f2f7ff; height: 100%; max-width: 1920px; margin: 0 auto; }
+body { margin: 0 auto; }
+
+.wrapper { background-color: #f2f7ff; height: 100%; margin: 0 auto; min-width: 1920px; }
 
 .container { width: 1600px; margin: 0 auto; }
 
