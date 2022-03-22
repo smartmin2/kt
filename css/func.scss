@@ -11,6 +11,8 @@ $navy: #2a3d72;
 $red: #d06062;
 $green: #207245;
 
+$black100: #282a3f;
+
 $gray100: #f9fafd;
 $gray200: #bcbfc7;
 $gray300: #bfc2c8;
@@ -25,6 +27,8 @@ $font_color_80: rgba(20, 31, 64, 0.8);
 
 $blue100:#04a3bb;
 $blue200:#f1f7ff;
+
+$bg_black: rgba(0,0,0,0.1);
 
 // text input box : width, height
 @mixin input_box($width, $height) {
