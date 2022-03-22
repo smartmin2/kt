@@ -6,7 +6,8 @@
 
 body {
   background-color: $colors_background;
-  max-width: 1920px;
+  min-width: 1920px;
+  overflow: overlay;
 }
 :root {
   -webkit-tap-highlight-color: transparent;
@@ -158,6 +159,10 @@ select {
   width: 24px; height: 24px; 
   // background-image: url(../assets/c_ic_title_arrow_right.png); 
   // background-position: center left; background-repeat: no-repeat; background-size: 11px;
+}
+.ic-arrow-d {
+  content: url("../assets/c_ic_dropdown_arrow_down_default.svg");
+  width: 20px; height: 20px; 
 }
 .ic-modal-close {
   content: url("../assets/c_ic_popup_delete.svg");

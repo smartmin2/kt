@@ -105,6 +105,12 @@
       }
     }
     .item-content{
+      &.graph1{
+        height: 230px; 
+      }
+      &.graph2{
+        height: 230px;         
+      }
       .graph3{
         height: 152px; 
       }
@@ -167,9 +173,89 @@
   
     @include scrollbar('H');
 
-    .modal-content {
-      width: 2540px;
+    &-content {
+      width: 3800px;
       height: 100%;
+      padding-top: 32px;
+      display: flex;
+      gap: 20px;
+      
+      .menu-item {   
+        display: flex;
+        flex-direction: column;   
+        width: 240px;
+        
+        &:nth-child(2) {
+          width: 480px;
+        }        
+        &:nth-child(5) {
+          width: 480px;
+        }        
+        &:nth-child(9) {
+          width: 480px;
+        }
+        &:nth-child(10) {
+          width: 480px;
+        }                
+
+        &-top {
+          @include flex_center;
+          height: 30px;       
+          border-radius: 10px;   
+          background-color: $colors_box;
+
+          font-size: 13px;
+          font-weight: bold;            
+          color: $navy;
+        } 
+        &-body {   
+          &.double {
+            display: flex;
+          }       
+          .menu-box {
+            flex: 1;
+          }
+          .menu-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 10px;
+            height: 48px;
+            font-size: 14px;
+            font-weight: 500;            
+            color: #141f40;   
+            
+            input[type="checkbox"] {
+              & + label {
+                font-weight: 500;            
+              }
+              &:checked + label {
+                font-weight: bold;            
+              }
+            }
+          }
+          .sub-menu-title {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding-left: 40px;
+            height: 34px;
+            font-size: 12px;
+            font-weight: 500;            
+            color: #434c66;
+            input[type="checkbox"] {
+              & + label {
+                font-weight: 300;            
+              }
+              &:checked + label {
+                font-weight: 500;            
+              }
+            }
+          }
+
+          
+        }
+      }      
     }
   }
   .modal-bottom {

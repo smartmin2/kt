@@ -107,9 +107,7 @@ $bg_black: rgba(0,0,0,0.1);
   overflow-x: scroll;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
-    @if $direction == 'H' {
-    height: 6px;
-    } @else { width: 6px; }
+    @if $direction == 'H' { height: 6px; } @else { width: 6px; }
     display: inline;
   }
 
@@ -118,9 +116,7 @@ $bg_black: rgba(0,0,0,0.1);
   }
 
   &::-webkit-scrollbar-thumb {
-    @if $direction == 'H' {
-      height: 6px;
-      } @else { width: 6px; }
+    @if $direction == 'H' { height: 6px; } @else { width: 6px; }
     border-radius: 6px;
     background: #b6bdc1;
   }
