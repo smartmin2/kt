@@ -1,10 +1,14 @@
 @import "func.scss";
 
+body{
+  margin:0 auto;
+}
+
 .wrapper {
   background-color: $colors_background;
   height: 100%;
-  max-width: 1920px;
   margin: 0 auto;
+  min-width: 1920px;
 }
 
 .container {
@@ -321,7 +325,7 @@
 
     &-sub {
       @include flex_center;
-      
+
       display: none;
       gap: 32px;
 
@@ -330,7 +334,7 @@
       left: 0;
 
       width: 100%;
-      padding:10px 0;
+      padding: 10px 0;
       background-color: $colors_font;
     }
   }
@@ -381,6 +385,9 @@
           border: none;
           background: url(../assets/c_bg_favorite_default.svg) no-repeat center center/cover;
         }
+      }
+      &-box {
+        cursor: pointer;
       }
     }
 
@@ -486,6 +493,57 @@
   &-content {
     width: 100%;
     height: 50px;
+    padding: 20px 32px 25px;
+  }
+}
+
+/* modal */
+
+.modal-favorite {
+  width: 1360px;
+  height: 760px;
+  padding: 20px 32px 25px;
+  background-color: $white;
+  border-radius: 14px;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  flex-flow: column;
+  .modal-top {
+    @include space_between;
+  }
+  &-cont {
+    padding-bottom: 23px;
+    height: 624px;
+    overflow: overlay;
+    margin-top: 32px;
+  }
+  &-tit {
+    display: flex;
+    gap: 32px;
+
+    > li {
+      &:nth-child(2) .favorite-label {
+        width: 480px;
+      }
+      .favorite-label {
+        // position: relative;
+        @include flex_center;
+        width: 240px;
+        height: 30px;
+        border-radius: 10px;
+        background-color: $colors_box;
+        font-size: 13px;
+        font-weight: bold;
+        color: $font_color;
+      }
+      .chk-sel-box {
+        display: flex;
+      }
+    }
+  }
+  &-btn {
+    @include flex_center;
+    gap: 10px;
+    padding-top: 24px;
   }
 }
 
@@ -545,6 +603,53 @@
   }
 }
 
+.chk-sel {
+  .chk-box {
+    li {
+      width: 240px;
+      height: 48px;
+      padding: 14px 10px;
+      font-size: 14px;
+      color: $font_color;
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+    
+    }
+  }
+
+  .chk-label {
+    width: 240px;
+    height: 48px;
+    padding: 14px 10px;
+    font-size: 14px;
+    font-weight: 500;
+    color: $font_color;
+    &::before {
+      content: url(../assets/c_ic_dropdown_arrow_down_default.svg);
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+  }
+  &-ck {
+    > li {
+      width: 240px;
+      height: 34px;
+      padding-left: 40px;
+      font-size: 12px;
+      font-weight: normal;
+      color: $black200;
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+     
+    }
+  }
+}
 /* 버튼 */
 
 .btn-rec-blue {
@@ -571,6 +676,28 @@
   font-size: 14px;
   font-weight: normal;
 }
+.btn-rec-agree {
+  @include flex_center;
+  width: 100px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: $colors_main;
+
+  font-size: 14px;
+  color: $white;
+}
+.btn-rec-line {
+  @include flex_center;
+  width: 100px;
+  height: 38px;
+  border-radius: 4px;
+  border: solid 1px $gray200;
+
+  font-size: 14px;
+  font-weight: normal;
+  color: $black100;
+}
+
 .ell-blue {
   border-radius: 12px;
   background-color: $font_color;
@@ -593,6 +720,12 @@
   width: 20px;
   height: 20px;
   background: url(../assets/c_ic_list_download.svg) no-repeat center;
+}
+
+.btn-more {
+  width: 24px;
+  height: 24px;
+  background: url(../assets/c_ic_title_arrow_right.svg) no-repeat center;
 }
 /* 공통 */
 .w2 {
