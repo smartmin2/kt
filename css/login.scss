@@ -499,17 +499,15 @@
   background-color: $white;
   border-radius: 14px;
   box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
-  display: block;
- flex-flow: column;
+  flex-flow: column;
   .modal-top {
     @include space_between;
   }
   &-cont {
-    padding: 32px 0 23px 0;
-   
+    padding-bottom: 23px;
     height: 624px;
     overflow: overlay;
-  
+    margin-top: 32px;
   }
   &-tit {
     display: flex;
@@ -536,10 +534,9 @@
     }
   }
   &-btn {
-    
     @include flex_center;
     gap: 10px;
-    padding:24px 0;
+    padding-top: 24px ;
   }
 }
 
