@@ -121,7 +121,8 @@
 .chk-sel .chk-box li input[type="checkbox"]:checked + label { font-weight: bold; }
 .chk-sel .chk-label { width: 240px; height: 48px; padding: 14px 10px; font-size: 14px; font-weight: 500; color: #141f40; }
 .chk-sel .chk-label::before { content: url(../assets/c_ic_dropdown_arrow_down_default.svg); margin-right: 10px; vertical-align: middle; }
-.chk-sel-ck > li { width: 240px; height: 34px; padding-left: 40px; font-size: 12px; font-weight: 500; color: #434c66; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
+.chk-sel-ck > li { width: 240px; height: 34px; padding-left: 40px; font-size: 12px; font-weight: normal; color: #434c66; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
+.chk-sel-ck > li input[type="checkbox"]:checked + label { font-weight: 500; }
 
 /* 버튼 */
 .btn-rec-blue { height: 26px; padding: 0 8px; border-radius: 5px; background-color: #04a3bb; color: #fff; font-size: 13px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }

@@ -635,12 +635,16 @@
       height: 34px;
       padding-left: 40px;
       font-size: 12px;
-      font-weight: 500;
+      font-weight: normal;
       color: $black200;
 
       display: flex;
       align-items: center;
       gap: 10px;
+
+      input[type="checkbox"]:checked + label {
+        font-weight: 500;
+      }
     }
   }
 }
