@@ -95,17 +95,17 @@ select {
   @include animation(0s, 1s, fadeIn);
 }
 
-.table_view_count {
+.table-view-count {
   @include input_box(100px, 38px);
 }
 
-.common_box {
-  border-radius: 20px;
+.common-box {
+  border-radius: 14px;
   box-shadow: 0px 4px 12px 0 rgba(0, 0, 0, 0.05);
   background-color: #fff;
 }
 
-.header_wrapper {
+.header-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -114,19 +114,19 @@ select {
   padding: 0 160px;
   background-color: $colors_main;
 
-  .header_logo {
+  .header-logo {
     img {
       content: url(../assets/logo.png);
     }
   }
 
-  ul.main_menu {
+  ul.main-menu {
     display: flex;
     align-items: center;
     gap: 30px;
 
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 300;
     text-align: center;
     color: #fff;
 
@@ -144,34 +144,43 @@ select {
     }
   }
 
-  .header_buttons {
+  .header-buttons {
     display: flex;
     gap: 6px;
   }
 }
 
-.img_home {
+.img-home {
   content: url("../assets/home.png");
 }
-.ico_arrow_r {
-  content: url("../assets/ico-arrow-r.png");
+.ic-arrow-r {
+  content: url("../assets/c_ic_title_arrow_right.png");
+  width: 24px; height: 24px; 
+  // background-image: url(../assets/c_ic_title_arrow_right.png); 
+  // background-position: center left; background-repeat: no-repeat; background-size: 11px;
 }
-.img_round_nav {
+.ic-modal-close {
+  content: url("../assets/c_ic_popup_delete.svg");
+  width: 24px; height: 24px; 
+  cursor: pointer;
+}
+.img-round-nav {
   content: url("../assets/round-nav.png");
 }
 
-.common_body {
+.common-body {
   display: flex;
   justify-content: space-between;
 }
 
-button.menu_button {
+button.menu-button {
   height: 26px;
   border-radius: 5px;
   background-color: #04a3bb;
   padding: 0 10px;
 
   font-size: 13px;
+  font-weight: 300;
   color: #fff;
 }
 
@@ -190,11 +199,11 @@ button.menu_button {
   padding: 0 160px;
 }
 
-.sub_menu_wrapper {
+.sub-menu-wrapper {
   border-right: 1px solid #e6e8ea;
   width: 240px;
 
-  .sub_menu_title {
+  .sub-menu-title {
     padding: 30px;
     display: flex;
     align-items: center;
@@ -204,7 +213,7 @@ button.menu_button {
     color: #00aace;
   }
 
-  ul.sub_menu {
+  ul.sub-menu {
     li {
       height: 46px;
       padding: 0 30px;
@@ -226,21 +235,21 @@ button.menu_button {
   }
 }
 
-.contents_wrapper {
+.contents-wrapper {
   flex: 1;
   padding: 30px;
   display: flex;
   flex-direction: column;
   gap: 30px;
 
-  .content_title {
+  .content-title {
     font-size: 18px;
     font-weight: bold;
     color: #2a3d72;
   }
 }
 
-.footer_wrapper {
+.footer-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -257,7 +266,7 @@ table.jb-table {
   thead {
     height: 30px;
     border-radius: 8px;
-    background-color: #f1f7ff;
+    background-color: $colors_box;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: -0.33px;
@@ -271,7 +280,7 @@ table.jb-table {
   }
   tbody {
     tr {
-      height: 50px;
+      height: 40px;
       border-bottom: 1px solid #dcdfe4;
       td {
         padding: 0 15px;
@@ -281,23 +290,26 @@ table.jb-table {
         letter-spacing: -0.35px;
         color: #282a3f;
       }
+      &:last-child {
+        border-bottom: none;
+      }
     }
   }
 }
 
-button.btn_excel {
+button.btn-excel {
   padding: 0 10px;
   height: 38px;
   @include excel_button();
 }
 
-button.btn_register {
+button.btn-register {
   padding: 0 25px;
   height: 38px;
   @include register_button();
 }
 
-button.btn_common {
+button.btn-common {
   width: 100px;
   height: 38px;
   border-radius: 4px;
@@ -331,7 +343,7 @@ ul.pagination {
   }
 }
 
-.input_date_group {
+.input-date-group {
   display: flex;
   width: 300px;
   height: 38px;
@@ -369,7 +381,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   z-index: 1;
 }
 
-.input_date_group input:after {
+.input-date-group input:after {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -416,7 +428,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   background: url(../assets/c_ic_login_delete.svg) no-repeat center;
   cursor: pointer;
 }
-
+.btn-download {
+  width: 20px;
+  height: 20px;
+  background: url(../assets/c_ic_list_download.svg) no-repeat center;
+}
 /*********** icon ***********/
 
 
@@ -453,3 +469,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 
+#modal-background{
+  display:none;
+  position:fixed; 
+  width:100%; height:100%;
+  top:0; left:0; 
+  background:rgba(0,0,0,0.3);
+}
+.modal-con{
+  display:none;
+  position:fixed;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  background:#fff;
+}

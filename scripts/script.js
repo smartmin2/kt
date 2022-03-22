@@ -83,3 +83,50 @@ $(document).click(function (e) {
   });
 
   // <<--------- select ------------
+
+//------------------ Table --------------------------
+// Add Table data(tableClass or tableBodyClass, arrData, is Checkbox?)
+function addRow(table, tbData, isCheckbox) {    
+  var tr = document.createElement("tr");
+
+  if (isCheckbox) {
+    var input = document.createElement("input");
+    var ckTD=document.createElement("td");
+
+    input.setAttribute("type","checkbox");
+    input.setAttribute("class","table_body_check");
+    ckTD.appendChild(input);
+    tr.appendChild(ckTD);
+  }
+  
+  tbData.map((cell,i) => {        
+    var newTD = document.createElement("td"); 
+    if (cell == 'attach')
+    {      
+      var attach = document.createElement("button");
+      attach.setAttribute("class","btn-download");      
+      newTD.appendChild(attach);
+    }
+    else newTD.innerText = cell;
+    
+    tr.appendChild(newTD);    
+  });  
+  table.appendChild(tr); 
+}
+//--------------------------------------------------------
+//------------------ Modal --------------------------
+$(".fa-menu-box").on('click',function(){
+  $("#modal-background").fadeIn(300);
+  $(".modal-con")
+    .css("display", "flex")
+    .hide()
+    .fadeIn();  
+  $('body').css('overflow', 'hidden');
+});
+
+$("#modal-background, .close").on('click',function(){
+  $("#modal-background").fadeOut(300);
+  $(".modal-con").fadeOut(300);  
+  $('body').css('overflow', 'overlay');
+});
+//--------------------------------------------------------
