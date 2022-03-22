@@ -164,23 +164,8 @@
   .modal-body {
     width: 100%;
     flex: 1;
-    
-    overflow-x: scroll;
-    scroll-behavior: smooth;
-    &::-webkit-scrollbar {
-      height: 6px;
-      display: inline;
-    }
   
-    &::-webkit-scrollbar-track {
-      background: transparent;
-    }
-  
-    &::-webkit-scrollbar-thumb {
-      height: 6px;
-      border-radius: 6px;
-      background: #b6bdc1;
-    }
+    @include scrollbar('H');
 
     .modal-content {
       width: 2540px;
