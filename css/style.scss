@@ -60,6 +60,43 @@
       height: 38px;
       display: flex;
       justify-content: space-between;
+
+      .legend-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        .legend-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 14px;
+          font-weight: bold;          
+          color: #141f40;
+
+          .legend-color {
+            width: 12px;
+            height: 12px;            
+            border-radius: 4px;
+          }
+
+          &:nth-child(1) {
+            .legend-color {
+              background-color: #9adde8;
+            }
+          }
+          &:nth-child(2) {
+            .legend-color {
+              background-color: #c6acff;
+            }
+          }
+          &:nth-child(3) {
+            .legend-color {
+              background-color: #fdb60e;
+            }
+          }
+        }
+      }
     }
 
     // .item-top .title {
@@ -79,6 +116,7 @@
     .item-content.notice {
       display: flex;
       gap: 10px;
+      cursor: pointer;
 
       .notice-box {
         flex: 1;     

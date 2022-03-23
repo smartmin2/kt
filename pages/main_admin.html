@@ -33,7 +33,7 @@
     <div class="admin-main">
       <div class="item common-box">
         <div class="item-top">
-          <div class="box-title">자주 찾는 메뉴<div class="ic-arrow-r"></div></div>               
+          <div class="box-title">자주 찾는 메뉴<div class="ic-arrow-r modal-open"></div></div>               
         </div>
         <div class="item-content fa-menu">
           <div class="fa-menu-box selected">소재가공</div>
@@ -45,7 +45,7 @@
       </div>
       <div class="item common-box">
         <div class="item-top">
-          <div class="box-title">공지사항<div class="ico-arrow-r"></div></div>               
+          <div class="box-title">공지사항<div class="ic-arrow-r"></div></div>               
         </div>
         <div class="item-content notice">
           <div class="notice-box">
@@ -74,7 +74,18 @@
       </div>
       <div class="item common-box">
         <div class="item-top">
-          <div class="box-title">인벤토리 사용량 추이</div>               
+          <div class="box-title">인벤토리 사용량 추이</div>   
+          <ul class="legend-box">
+            <li class="legend-item">
+              <div class="legend-color"></div>전체
+            </li>            
+            <li class="legend-item">
+              <div class="legend-color"></div>사용
+            </li>            
+            <li class="legend-item">
+              <div class="legend-color"></div>사용률
+            </li>            
+          </ul>            
         </div>
         <div class="item-content graph2">
           <canvas id="myChart2" width="100" height="50"></canvas>          
@@ -131,7 +142,7 @@
       </div>
       <div class="item common-box">
         <div class="item-top">
-          <div class="box-title">요구사항<div class="ico-arrow-r"></div></div>               
+          <div class="box-title">요구사항<div class="ic-arrow-r"></div></div>               
         </div>
         <div class="item-content">
           <table class="jb-table table3">		
@@ -156,7 +167,18 @@
       </div>
       <div class="item common-box">
         <div class="item-top">
-          <div class="box-title">매출현황<div class="ic-arrow-r"></div></div>               
+          <div class="box-title">매출현황<div class="ic-arrow-r"></div></div>
+          <ul class="legend-box">
+            <li class="legend-item">
+              <div class="legend-color"></div>VOD
+            </li>            
+            <li class="legend-item">
+              <div class="legend-color"></div>LiveAD
+            </li>            
+            <li class="legend-item">
+              <div class="legend-color"></div>매출
+            </li>            
+          </ul>                    
         </div>
         <div class="item-content">
           <div class="graph3">
@@ -896,6 +918,8 @@
   <script src="../scripts/chart.min.js"></script>  
   <script src="../scripts/script.js"></script>
   <script>
+
+    //Table
     const arrTable1 = Array(5).fill(["디즈니_킹스맨: 퍼스트 에이전트_논T_22년 2","나스미디어","총 12건 / 승인 0건 / 미승인 12건"]);    
 	  const arrTable2 = Array(5).fill(["디즈니_킹스맨: 퍼스트 에이전트_논T_22년 2","50%","50%","100%"]);    
     const arrTable3 = Array(5).fill(["요구사항 내용이 표시됩니다. 요구사항 내용이 표시됩니다.","홍길동","KTDS","박담당"]);    
@@ -908,6 +932,14 @@
     arrTable2.map(data => addRow(table2, data, false));    
     arrTable3.map(data => addRow(table3, data, false));    
     arrTable5.map(data => addRow(table5, data, false));   
+    
+    $('.notice-box').on('click',function(){
+      location.href = '#';
+    });
+    $('.box-title .ic-arrow-r').on('click',function(){      
+      if ($(this).hasClass('modal-open') != false)
+        location.href = '#';
+    });
     
     // 차트
     var options = {
@@ -925,10 +957,25 @@
                   max: 50,
                   stepSize : 10,
                   fontSize : 10,					                                
-                },                    
+                },  
+            title: {
+              display: false,
+              align: 'end',                         
+              text: '단위(백만)'
+            },                       
           },
         },
-        plugins: { legend: false },
+        // plugins: { legend: false },
+        plugins: {
+            legend: {
+                display: false,
+                position: 'top',                
+                align: 'end',
+                labels: {
+                  boxWidth: 0,
+                }
+            }
+        },
         maintainAspectRatio: false
     };
     var ctx1 = document.getElementById('myChart1').getContext('2d');
@@ -937,7 +984,7 @@
         data: {
             labels: ['전일', '당일'],
             datasets: [{
-                label: '# of Votes',
+                label: '단위(백만)',
                 data: [22, 42],
                 backgroundColor: [                    
                     '#9adde8',
@@ -953,7 +1000,7 @@
     let chartData2 = {        
         labels: ['2021-03', '2021-04', '2021-05','2021-06', '2021-07', '2021-08','2021-09', '2021-10', '2021-11','2021-12', '2022-01', '2022-02','2022-03', '2022-04', '2022-05','2022-06'],
         datasets: [
-            {
+            {              
                 label: '전체',
                 yAxisID: 'y-left',
                 data: [1400, 250, 200, 100, 100, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0],
@@ -992,6 +1039,16 @@
         ]
     }
     let chartOptions2 = {
+      plugins: {
+            legend: {
+                display: false,
+                position: 'top',                
+                align: 'end',
+                labels: {
+                  boxWidth: 14,
+                }
+            }
+        },
         maintainAspectRatio: false,
         responsive:true,        
         scales: {
@@ -1008,7 +1065,12 @@
                   max: 1500,
                   stepSize : 500,
                   fontSize : 10,					              
-                },            
+                },    
+                title: {
+                  display: false,
+                  align: 'end',                         
+                  text: '단위(백만)'
+                },        
             },
             'y-right': {
                 type: 'linear',
@@ -1019,6 +1081,11 @@
                   stepSize : 6,
                   fontSize : 10,					
                 },
+                title: {
+                  display: false,
+                  align: 'end',                         
+                  text: '단위(℃)'
+                },    
             },
             'y-line': {
                 display:false
@@ -1069,6 +1136,16 @@
     }
 
 let chartOptions3 = {
+  plugins: {
+            legend: {
+                display: false,
+                position: 'top',                
+                align: 'end',
+                labels: {
+                  boxWidth: 14,
+                }
+            }
+        },
     maintainAspectRatio: false,
     responsive:true,   
     scales: {
