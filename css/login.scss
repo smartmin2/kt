@@ -1,7 +1,7 @@
 @import "func.scss";
 
-body{
-  margin:0 auto;
+body {
+  margin: 0 auto;
 }
 
 .wrapper {
@@ -221,7 +221,6 @@ body{
 
         .new-account {
           color: $font_color;
-
         }
 
         .new-account::after {
@@ -346,12 +345,14 @@ body{
 }
 
 /********************* main **********************/
-
-.main {
+.user-main{
   padding: 42px 0 28px 0;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+}
+.main {
+  
 
   &-box {
     width: 100%;
@@ -400,6 +401,7 @@ body{
 
       &-box {
         width: 100%;
+        height: 140px;
         padding: 16px 24px 12px;
         border-radius: 14px;
         background-color: $blue200;
@@ -411,6 +413,11 @@ body{
       &-tit {
         font-weight: bold;
         margin-bottom: 10px;
+      }
+      &-desc {
+        height: 53px;
+        line-height: 1.21;
+        @include line_clamp(3);
       }
       &-date {
         text-align: right;
@@ -444,9 +451,10 @@ body{
         position: relative;
         width: 100%;
         height: 64px;
+        padding: 0 50px;
         border-radius: 14px;
         background-color: $blue200;
-
+        // @include text_overflow;
         @include flex_center;
 
         .btn-wrap {
@@ -462,12 +470,16 @@ body{
       &-txt {
         display: flex;
         align-items: center;
-        justify-content: center;
         gap: 10px;
 
         font-size: 16px;
         font-weight: 500;
         color: $navy;
+        overflow: hidden;
+
+        &-tit {
+          @include text_overflow;
+        }
       }
     }
   }
@@ -516,6 +528,9 @@ body{
     height: 624px;
     overflow: overlay;
     margin-top: 32px;
+
+    @include scrollbar("H");
+    @include scrollbar("V");
   }
   &-tit {
     display: flex;
@@ -590,7 +605,6 @@ body{
     top: 46px;
     display: none;
 
-
     .optionItem {
       padding: 8px 16px 10px 16px;
       @include text_overflow;
@@ -615,8 +629,6 @@ body{
       display: flex;
       align-items: center;
       gap: 10px;
-
-    
     }
   }
 
@@ -645,8 +657,6 @@ body{
       display: flex;
       align-items: center;
       gap: 10px;
-
-     
     }
   }
 }
@@ -705,6 +715,7 @@ body{
   color: $white;
   font-size: 14px;
   font-weight: normal;
+  white-space: nowrap;
 }
 .btn-up {
   background: url(../assets/ic_dropdown_arrow_up_default.svg) no-repeat center;

@@ -128,3 +128,12 @@ $bg_black: rgba(0,0,0,0.1);
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+
+@mixin line_clamp($num){
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: $num;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
