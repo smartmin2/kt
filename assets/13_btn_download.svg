@@ -1,0 +1,20 @@
+<svg data-name="13_btn_download" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="qzqrcs944a">
+            <path data-name="사각형 108" style="stroke:#00aace;fill:transparent" d="M0 0h17.372v20.581H0z"/>
+        </clipPath>
+    </defs>
+    <path data-name="사각형 110" style="fill:none" d="M0 0h24v24H0z"/>
+    <g data-name="그룹 51">
+        <path data-name="선 3" transform="translate(11.686 10.058)" style="stroke-miterlimit:10;stroke-linecap:round;fill:none;stroke:#00aace" d="M0 0v4.465"/>
+        <path data-name="선 4" transform="translate(9.454 12.291)" style="stroke-miterlimit:10;stroke-linecap:round;fill:none;stroke:#00aace" d="M0 0h4.465"/>
+        <g data-name="그룹 49">
+            <g data-name="그룹 48" style="clip-path:url(#qzqrcs944a)" transform="translate(3 2)">
+                <path data-name="패스 142" d="M12.8 10.291a4.117 4.117 0 1 1-4.114-4.116 4.116 4.116 0 0 1 4.114 4.116z" style="stroke-miterlimit:10;stroke-linecap:round;stroke:#00aace;fill:transparent"/>
+                <path data-name="패스 143" d="M16.872 4.436v12.489a3.157 3.157 0 0 1-3.157 3.157H3.657A3.157 3.157 0 0 1 .5 16.925V3.657A3.156 3.156 0 0 1 3.657.5h9.82" style="stroke-linejoin:round;stroke-linecap:round;stroke:#00aace;fill:transparent"/>
+                <path data-name="패스 144" d="M16.872 4.436h-3.4V.5z" style="stroke:#00aace"/>
+                <path data-name="패스 145" d="M16.872 4.436h-3.4V.5z" style="fill:#00aace;stroke-linejoin:round;stroke-linecap:round;stroke:#00aace"/>
+            </g>
+        </g>
+    </g>
+</svg>
