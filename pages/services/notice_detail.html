@@ -1,121 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/style.css">
-  <title>공지사항</title>
-</head>
-<body>
-  <div class="header-wrapper">
-    <div class="header-logo">
-        <img>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>공지사항</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu">
+          <li>소재</li>
+          <li>캠페인관리</li>
+          <li>영업</li>
+          <li>카테고리</li>
+          <li>인벤토리</li>
+          <li>정산</li>
+          <li>편성</li>
+          <li>리포트</li>
+          <li>통계</li>
+          <li>서비스관리</li>
+        </ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="header-sub-menubar">
+        <ul class="submenu1">
+          <li>OTV 소재가공</li>
+          <li>OTV</li>
+        </ul>
+        <ul class="submenu2">
+          <li></li>
+        </ul>
+        <ul class="submenu3">
+          <li></li>
+        </ul>
+        <ul class="submenu4">
+          <li></li>
+        </ul>
+        <ul class="submenu5">
+          <li></li>
+        </ul>
+        <ul class="submenu6">
+          <li></li>
+        </ul>
+        <ul class="submenu7">
+          <li></li>
+        </ul>
+        <ul class="submenu8">
+          <li></li>
+        </ul>
+        <ul class="submenu9">
+          <li></li>
+        </ul>
+        <ul class="submenu10">
+          <li></li>
+        </ul>
+      </div>
     </div>
-    <ul class="main-menu">
-        <li>소재</li>
-        <li>캠페인관리</li>        
-        <li>영업</li>
-        <li>카테고리</li>
-        <li>인벤토리</li>
-        <li>정산</li>
-        <li>편성</li>        
-        <li>리포트</li>
-        <li>통계</li>
-        <li>서비스관리</li>
-    </ul>
-    <div class="header-button">
-        <button class="menu-button">로그아웃</button>
-        <button class="menu-button">정보수정</button>
-    </div>
-  </div> 
-  <div class="location">
+    <!-- <div class="location">
     <img class="img-home" src="" alt="">
     <span>홈</span>
     <img class="ic-arrow-r" src="" alt="">
     <span>서비스관리</span>
-    <!-- <img class="img_round_nav" src="" alt=""> -->
     <img class="ic-arrow-r" src="" alt="">
     <span>공지사항</span>
-    <!-- <img class="img_round_nav" src="" alt=""> -->
-  </div>
-  <div class="main notice-detail">
+  </div> -->
+    <div class="main notice-detail">
       <div class="common-box common-body">
-          <div class="sub-menu-wrapper">
-            <div class="sub-menu-title">
-                <img src="../../assets/common.png" alt="">서비스관리
-            </div>
-            <ul class="sub-menu">
-              <li>회원관리</li>
-              <li>OTV 관리</li>
-              <li>타겟분석</li>
-              <li>설정</li>
-              <li class="active">공지사항</li>
-              <li>게시판</li>              
-              <li>요구사항 관리</li>
-              <li>OTV</li>
-              <li>양방향</li>
-              <li>단가관리</li>
-            </ul>
-          </div>
-          <div class="contents-wrapper">
-            <div class="content-title">공지사항</div>
-            <div class="content-body">
-              <form action="" method="post">
-                <div class="setting-table">
-                  <div class="row">
-                    <div class="setting-table-title">작성자</div>
-                    <div class="setting-table-content">
-                      관리자
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="setting-table-title">제목</div>
-                    <div class="setting-table-content">
-                      <input type="text" value=""  placeholder="제목을 입력해주세요."/>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="setting-table-title">첨부파일</div>
-                    <div class="setting-table-content">
-                      
-                    </div>
-                  </div>
-                  <div class="row setting-table-editor">
-                    <div class="setting-table-title">본문</div>
-                    <div class="setting-table-content">
-                      <textarea name="" id="" rows="15" placeholder="내용을 입력해주세요."></textarea>
-                    </div>
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title">서비스관리</div>
+          <ul class="sub-menu">
+            <li>회원관리</li>
+            <li>OTV 관리</li>
+            <li>타겟분석</li>
+            <li>설정</li>
+            <li class="active">공지사항</li>
+            <li>게시판</li>
+            <li>요구사항 관리</li>
+            <li>OTV</li>
+            <li>양방향</li>
+            <li>단가관리</li>
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">공지사항</div>
+          <div class="content-body">
+            <form action="" method="post">
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">작성자</div>
+                  <div class="setting-table-content">관리자</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">제목</div>
+                  <div class="setting-table-content">OTV Live TV AD 상품소개서_21</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">첨부파일</div>
+                  <div class="setting-table-content">
+                    <div class="att-txt ic-att">Eventwinner.pdf</div>
                   </div>
                 </div>
-                <div class="submit-btn-group">
-                  <button type="button" class="btn-common">
-                      목록
-                  </button>
-                  <button type="button" class="btn-common">
-                      저장
-                  </button>
-                  <button type="button" class="btn-common">
-                      삭제
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div class="setting-table">
-              <div class="row">
-                <div class="setting-table-title">이전글</div>
-                <div class="setting-table-content">
-                  <a href="">[안내]안내 사항입니다.</a>
+                <div class="row setting-table-editor">
+                  <div class="setting-table-title">본문</div>
+                  <div class="setting-table-content">
+                    <textarea name="" id="" rows="15" placeholder="내용을 입력해주세요."></textarea>
+                  </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="setting-table-title">다음글</div>
-                <div class="setting-table-content">
-                  <a href="">개인정보보호법 시행에 따른 정보제공 동의 절차 안내(첨부수정)</a>
-                </div>
+              <div class="submit-btn-group">
+                <button type="button" class="btn-common">목록</button>
+                <button type="button" class="btn-common">저장</button>
+                <button type="button" class="btn-common">삭제</button>
+              </div>
+            </form>
+          </div>
+          <div class="setting-table">
+            <div class="row">
+              <div class="setting-table-title">이전글</div>
+              <div class="setting-table-content">
+                <a href="">[안내]안내 사항입니다.</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">다음글</div>
+              <div class="setting-table-content">
+                <a href="">개인정보보호법 시행에 따른 정보제공 동의 절차 안내(첨부수정)</a>
               </div>
             </div>
           </div>
+        </div>
       </div>
   </div>  
   <div class="footer-wrapper">
