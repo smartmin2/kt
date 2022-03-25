@@ -31,6 +31,8 @@ $font_color_80: rgba(20, 31, 64, 0.8);
 $blue100:#04a3bb;
 $blue200:#f1f7ff;
 $blue300: #0ea4bc;
+$blue400: #f8fbff;
+$blue500: #35497b;
 
 $bg_black: rgba(0,0,0,0.1);
 
@@ -112,7 +114,7 @@ $bg_black: rgba(0,0,0,0.1);
 }
 
 @mixin scrollbar($direction) {
-  overflow-x: scroll;
+  overflow-x: auto;
   scroll-behavior: smooth;
   &::-webkit-scrollbar {
     @if $direction == 'H' { height: 6px; } @else { width: 6px; }

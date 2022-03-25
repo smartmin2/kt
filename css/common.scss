@@ -80,7 +80,7 @@ select {
   &.disable .label {
     border: 1px solid $colors_line;
     color: $font_color_20;
-    background: $gray100 url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat 96% center;
+    background: $gray100 url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat right 12px center;
     &:hover {
       border: 1px solid $colors_line;
     }
@@ -91,9 +91,9 @@ select {
     border: 1px solid $colors_line;
     height: 38px;
     border-radius: 4px;
-    padding: 0 48px 0 16px;
+    padding: 0 34px 0 16px;
     color: $font_color_80;
-    background: $white url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center;
+    background: $white url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat right 12px center;
     @include text_overflow;
 
     &:hover {
@@ -113,10 +113,11 @@ select {
     position: absolute;
     top: 46px;
     display: none;
+    @include scrollbar("V");
 
 
     .optionItem {
-      padding: 8px 16px 10px 16px;
+      padding: 8px 16px;
       @include text_overflow;
       &:hover {
         background-color: $colors_main_10;
@@ -320,6 +321,7 @@ button.menu-button {
          background-color: $colors_main_light;
          border-right: 4px solid $colors_main;
          color: $colors_font;
+         font-weight: bold;
        }
      }
    }
@@ -335,13 +337,13 @@ button.menu-button {
   .content-title {  
     font-size: 18px;
     font-weight: bold;    
-    color: $navy;
+    color: $blue500;
   }  
 
   .content-sub-title {
     font-size: 16px;
     font-weight: bold;        
-    color: #35497b;
+    color: $blue500;
   }  
 }
 

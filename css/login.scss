@@ -504,8 +504,8 @@ body {
         background-color: $colors_box;
         font-size: 14px;
         color: $navy;
-        &:hover{
-          background-color:$blue300;
+        &:hover {
+          background-color: $blue400;
         }
 
         .notice-box-title {
@@ -554,7 +554,7 @@ body {
   align-items: center;
   width: 120px;
   height: 120px;
-  padding:10px;
+  padding: 10px;
   border-radius: 14px;
   border: solid 2px $colors_box;
   font-size: 15px;
@@ -567,18 +567,18 @@ body {
 .fa-menu-box.selected {
   background-image: url(../assets/c_bg_favorite_default.png);
   border: none;
-  &:hover{
+  &:hover {
     border: solid 2px $colors_box;
-    background-color: $blue300;
-    background-image:none;
+    background-color: $blue400;
+    background-image: none;
   }
 }
 .fa-menu-box.add {
   background-image: url(../assets/c_bg_favorite_add.svg);
   background-position: center;
   background-repeat: no-repeat;
-  &:hover{
-    background-color: $blue300;
+  &:hover {
+    background-color: $blue400;
   }
 }
 /* modal */
@@ -689,59 +689,8 @@ body {
   }
 }
 
-/* 셀렉트 */
-.selectBox {
-  width: 300px;
-  position: relative;
 
-  &.disable .label {
-    border: 1px solid $colors_line;
-    color: $font_color_20;
-    background: $gray100 url(../assets/ic_dropdown_arrow_down_disabled.svg) no-repeat 96% center;
-    &:hover {
-      border: 1px solid $colors_line;
-    }
-  }
-  .label {
-    width: 100%;
-    text-align: left;
-    border: 1px solid $colors_line;
-    height: 38px;
-    border-radius: 4px;
-    padding: 0 48px 0 16px;
-    color: $font_color_80;
-    background: $white url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat 96% center;
-    @include text_overflow;
 
-    &:hover {
-      border: 1px solid $gray400;
-    }
-    &.active {
-      border: 1px solid $navy;
-    }
-  }
-  .optionList {
-    width: 100%;
-    border: 1px solid $navy;
-    background-color: $white;
-    border-radius: 4px;
-    height: 190px;
-    overflow-y: auto;
-    position: absolute;
-    top: 46px;
-    display: none;
-
-    .optionItem {
-      padding: 8px 16px 10px 16px;
-      @include text_overflow;
-      &:hover {
-        background-color: $colors_main_10;
-        color: $colors_font;
-        font-weight: 600;
-      }
-    }
-  }
-}
 
 .chk-sel {
   .chk-box {
@@ -912,4 +861,36 @@ body {
       }
     }
   }
+
+}
+
+.tab {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid $gray600;
+  padding:0 10px;
+  &-menu {
+    padding: 0 10px 6px 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: $font_color_80;
+
+    @include flex_center;
+    cursor: pointer;
+
+    &.active{
+      font-size: 15px;
+      font-weight: bold;
+      color:$colors_font;
+      border-bottom: 2px solid $colors_main;
+    }
+  }
+
+  &-content{
+    display: none;
+    &.active{
+      display: block;
+    }
+  }
+
 }
