@@ -65,7 +65,7 @@ $(document).click(function (e) {
   });
 
   /* 셀렉트 박스 옵션 선택 */
-  $("body").on("click", "ul li", function () {
+  $("body").on("click", "ul li.optionItem", function () {
     const text = $(this).html();
     $(".label").html(text);
     $(".optionList").slideToggle();
@@ -128,5 +128,20 @@ $("#modal-background, .close").on('click',function(){
   $("#modal-background").fadeOut(300);
   $(".modal-con").fadeOut(300);  
   $('body').css('overflow', 'overlay');
+});
+//--------------------------------------------------------
+
+//------------------ tab --------------------------
+$(function () {
+  const li = $(".tab .tab-menu");
+  li.click(function () {
+    const tabId = $(this).attr("data-tab");
+
+    li.removeClass("active");
+    $(".tab-content").removeClass("active");
+
+    $(this).addClass("active");
+    $("#" + tabId).addClass("active");
+  });
 });
 //--------------------------------------------------------
