@@ -1,34 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/style.css">
-  <title>공지사항</title>
-</head>
-<body>
-  <div class="header-wrapper">
-    <div class="header-main-menubar">
-      <div class="header-logo">
-          <img>
-      </div>
-      <ul class="main-menu"></ul>
-      <div class="header-button">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>공지사항</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
           <button class="menu-button">로그아웃</button>
           <button class="menu-button">정보수정</button>
+        </div>
       </div>
+      <div class="header-sub-menubar"></div>
     </div>
-    <div class="header-sub-menubar"></div>
-  </div> 
-  <div class="main notice-main">
+    <div class="main notice-main">
       <div class="common-box common-body">
-          <div class="sub-menu-wrapper">
-            <div class="sub-menu-title">
-                <img src="../../assets/common.png" alt="">서비스관리
-            </div>
-            <ul class="sub-menu">
-              <!-- <li class="three-depth">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/common.png" alt="" />서비스관리</div>
+          <ul class="sub-menu">
+            <!-- <li class="three-depth">
                 <details>
                   <summary>회원관리 <div class="ic-lnb-arrow"></div></summary>
                   <ul>
@@ -49,122 +47,128 @@
               <li>OTV</li>
               <li>양방향</li>
               <li>단가관리</li> -->
-            </ul>
-          </div>
-          <div class="contents-wrapper">
-            <div class="content-title">공지사항</div>
-            <div class="search-wrapper">
-              <div class="search-top">
-                <div class="content-sub-title">조회조건설정</div>                
-                <button class="btn-white">조회</button>                
-              </div>
-              <div class="search-edit-box">
-                <div class="search-edit-detail">                    
-                  <div class="input-wrapper">
-                    <div class="input-title">제목</div>
-                    <!-- <div class="input-group">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">공지사항</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>
+              <!-- <button class="btn-white">조회</button>                 -->
+            </div>
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">제목</div>
+                  <!-- <div class="input-group">
                       <input type="text" class="input_text">  
                     </div> -->
-                    <input type="text" />
-                  </div>                                               
-                </div>                  
-                <div class="search-edit-detail">                                      
-                  <div class="input-wrapper">
-                    <div class="input-title">본문</div>
-                    <!-- <div class="input-group">
-                      <input type="text" class="input-text">  
-                    </div> -->           
-                    <input type="text" value=""/>         
-                  </div>                     										           
-                </div>                  
-              </div>              
-            </div>
-            <div class="table-wrapper">
-              <div class="table-top">
-                <div class="table-top-count">
-                  <div class="table-total-count">
-                    전체<span>1,256</span>
-                  </div>                    
-                  <div class="table-view-count">
-                    <div class="selectBox">
-                      <button class="label">10</button>
-                      <ul class="optionList">
-                        <li class="optionItem">10</li>
-                        <li class="optionItem">20</li>
-                        <li class="optionItem">30</li>
-                        <li class="optionItem">50</li>
-                        <li class="optionItem">100</li>                                                
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="table-top-buttons">                                        
-                  <button class="btn-register"><img src="" >등록</button>
+                  <input type="text" />
                 </div>
               </div>
-              <table class="jb-table">		
-                <colgroup>                     
-                  <col style="width:15%">                     
-                  <col> 
-                  <col style="width:10%">                     
-                  <col style="width:20%">                     
-                  <col style="width:20%">                                                            
-                </colgroup>
-                <thead>
-                  <tr>											
-                    <th>순번</th>
-                    <th>제목</th>
-                    <th>첨부파일</th>
-                    <th>조회수</th>											
-                    <th>일자</th>											
-                  </tr>
-                </thead>
-                <tbody class="table-body">										
-                </tbody>
-              </table>
-              <ul class="pagination">
-                <li><a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt=""></a></li>
-                <li><a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt=""></a></li>
-                <li><a href="#" class="num">1</a></li>
-                <li><a href="#" class="num active">2</a></li>
-                <li><a href="#" class="num">3</a></li>
-                <li><a href="#" class="num">4</a></li>
-                <li><a href="#" class="num">5</a></li>
-                <li><a href="#" class="num">6</a></li>
-                <li><a href="#" class="num">7</a></li>
-                <li><a href="#" class="num">8</a></li>
-                <li><a href="#" class="num">9</a></li>
-                <li><a href="#" class="num">10</a></li>
-                <li><a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt=""></a></li>
-                <li><a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt=""></a></li>
-              </ul>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">본문</div>
+                  <!-- <div class="input-group">
+                      <input type="text" class="input-text">  
+                    </div> -->
+                  <input type="text" value="" />
+                </div>
+              </div>
             </div>
+            <div class="search-bottom"><button class="btn-white">조회</button></div>
           </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="selectBox">
+                    <button class="label">10</button>
+                    <ul class="optionList">
+                      <li class="optionItem">10</li>
+                      <li class="optionItem">20</li>
+                      <li class="optionItem">30</li>
+                      <li class="optionItem">50</li>
+                      <li class="optionItem">100</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="table-top-buttons">
+                <button class="btn-register"><img src="" />등록</button>
+              </div>
+            </div>
+            <table class="jb-table">
+              <colgroup>
+                <col style="width: 15%" />
+                <col />
+                <col style="width: 10%" />
+                <col style="width: 20%" />
+                <col style="width: 20%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>순번</th>
+                  <th>제목</th>
+                  <th>첨부파일</th>
+                  <th>조회수</th>
+                  <th>일자</th>
+                </tr>
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-  </div>  
-  <div class="footer-wrapper">
-    <p>(주)케이티 대표이사 구현모 경기도 성남시 분당구 불정로 90 (정자동) 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 사업자정보확인</p>
-    <p>Copyright© 2022 KT Corp. All rights reserved.</p>
-  </div>
-  <script src="../../scripts/jquery-3.6.0.min.js"></script>
-  <script src="../../scripts/script.js"></script>
-  <script>
-    loadMainMenu(10);
-    loadSubMenu('10',5);
-    loadLnb(10,5,0); 
-    
-    const arrTable = Array(10).fill(["425","오픈을 축하드립니다.","attach","12","2022-02-10"]);    
-    const table = document.querySelector('.table-body');
-    arrTable.map(data => addRow(table, data, false));    
-    $(".btn-register").on('click',function(){
-      location.href = "notice_detail.html";
-    })
-    $(".table-body td:nth-child(1)").on('click',function(){
-      location.href = "notice_detail.html";
-    })
-    $(".table-body td:nth-child(2)").on('click',function(){
-      location.href = "notice_detail.html";
-    })    
-  </script>
-</body>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 경기도 성남시 분당구 불정로 90 (정자동) 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 사업자정보확인</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(10);
+      loadSubMenu("10", 5);
+      loadLnb(10, 5, 0);
+
+      const arrTable = Array(10).fill(["425", "오픈을 축하드립니다.", "attach", "12", "2022-02-10"]);
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow(table, data, false));
+      $(".btn-register").on("click", function () {
+        location.href = "notice_detail.html";
+      });
+      $(".table-body td:nth-child(1)").on("click", function () {
+        location.href = "notice_detail.html";
+      });
+      $(".table-body td:nth-child(2)").on("click", function () {
+        location.href = "notice_detail.html";
+      });
+    </script>
+  </body>
 </html>
