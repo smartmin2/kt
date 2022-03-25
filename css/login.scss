@@ -504,6 +504,9 @@ body {
         background-color: $colors_box;
         font-size: 14px;
         color: $navy;
+        &:hover{
+          background-color:$blue300;
+        }
 
         .notice-box-title {
           font-weight: bold;
@@ -551,22 +554,32 @@ body {
   align-items: center;
   width: 120px;
   height: 120px;
+  padding:10px;
   border-radius: 14px;
   border: solid 2px $colors_box;
   font-size: 15px;
   font-weight: 500;
   color: $navy;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .fa-menu-box.selected {
   background-image: url(../assets/c_bg_favorite_default.png);
   border: none;
+  &:hover{
+    border: solid 2px $colors_box;
+    background-color: $blue300;
+    background-image:none;
+  }
 }
 .fa-menu-box.add {
   background-image: url(../assets/c_bg_favorite_add.svg);
   background-position: center;
   background-repeat: no-repeat;
+  &:hover{
+    background-color: $blue300;
+  }
 }
 /* modal */
 .modal-main {
