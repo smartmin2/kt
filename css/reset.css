@@ -39,7 +39,7 @@ footer, header, hgroup, menu, nav, section {
 }
 html { line-height: 1.5; -webkit-text-size-adjust: 100%; -moz-tab-size: 4; tab-size: 4; font-family: "Noto Sans KR", sans-serif; height: 100%; } 
 body { margin: 0; line-height: inherit; font-size: 14px; height: 100%; } 
-ol, ul {
+ol, ul, details, summary {
 	list-style: none;
 }
 blockquote, q {

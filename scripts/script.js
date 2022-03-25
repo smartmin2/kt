@@ -1,9 +1,191 @@
+
+  const mainMenu = [{id: 1, name:'소재', link:''},
+                {id: 2, name:'캠페인관리', link:''},
+                {id: 3, name:'영업', link:''},
+                {id: 4, name:'카테고리', link:''},
+                {id: 5, name:'인벤토리', link:''},
+                {id: 6, name:'정산', link:''},
+                {id: 7, name:'편성', link:''},
+                {id: 8, name:'리포트', link:''},
+                {id: 9, name:'통계', link:''},
+                {id: 10, name:'서비스관리', link:''},
+                {id: 11, name:'시스템관리', link:'/pages/system/user.html'}];
+
+  const subMenu = {
+    1 : [{id: 1, name:'OTV 소재가공', link: '', 
+          folder: [{name:'소재가공 (+소재 다운로드)', link:''},
+                   {name:'소재업종', link:''},
+                   {name:'들러리 소재 관리', link:''}]}, 
+         {id: 2, name:'OTV', link:'', 
+          folder: [{name:'동영상', link:''},
+                   {name:'중복소재노출관리', link:''},
+                   {name:'LiveAD 송출영상', link:''}]}],
+    2 : [{id: 1, name:'매체플래너', link: '', folder: []},
+         {id: 2, name:'제안관리', link:'', folder: []},
+         {id: 3, name:'캠페인', link: '', folder: [{name:'', link:''}]},
+         {id: 4, name:'청약 관리', link:'', folder: [{name:'', link:''}]},
+         {id: 5, name:'캠페인 추가 서비스', link:'', folder: [{name:'', link:''}]}],
+    3 : [{id: 1, name:'영업권관리', link:'', folder: []},
+         {id: 2, name:'연간광고주관리', link:'', folder: []},
+         {id: 3, name:'영업진행현황 관리', link:'', folder: []},
+         {id: 4, name:'영업권관리 영업사별 조회', link:'', folder: []},
+         {id: 5, name:'연간광고주 현황', link:'', folder: []}],
+    4 : [{id: 1, name:'통합카테고리관리', link:'', folder: []},
+         {id: 2, name:'통합원천카테고리맵핑', link:'', folder: []},
+         {id: 3, name:'광고불가카테고리', link:'', folder: []},
+         {id: 4, name:'광고제외카테고리', link:'', folder: []},
+         {id: 5, name:'광고제한시간관리', link:'', folder: []},
+         {id: 6, name:'통합원천광고노출비율', link:'', folder: []},
+         {id: 7, name:'통합카테고리Slot관리', link:'', folder: []},
+         {id: 8, name:'통합카테고리그룹관리', link:'', folder: []},
+         {id: 9, name:'캠페인통합카테고리그룹관리', link:'', folder: []},
+         {id: 10, name:'가상그룹관리', link:'', folder: []},         
+         {id: 11, name:'통합카테고리Slot관리(POST)', link:'', folder: []}],
+    5 : [{id: 1, name:'생성', link:'', folder: []},
+         {id: 2, name:'동영상', link:'', folder: [{name:'', link:''}]},
+         {id: 3, name:'양방향', link:'', folder: [{name:'', link:''}]},         
+         {id: 4, name:'LiveAD', link:'', folder: [{name:'', link:''}]}],
+    6 : [{id: 1, name:'명세서', link:'', folder: []},         
+         {id: 2, name:'정산', link:'', folder: [{name:'', link:''}]}],
+    7 : [{id: 1, name:'OTV', link:'', folder: [{name:'', link:''}]},                  
+         {id: 2, name:'홈쇼핑', link:'', folder: [{name:'', link:''}]}],
+    8 : [{id: 1, name:'OTV', link:'', folder: [{name:'', link:''}]},
+         {id: 2, name:'모니터링', link:'', folder: [{name:'', link:''}]},
+         {id: 3, name:'광고노출현황', link:'', folder: [{name:'', link:''}]},         
+         {id: 4, name:'실시간 LiveAD리포트', link:'', folder: []},         
+         {id: 5, name:'LiveAD게재확인리포트', link:'', folder: []}],
+    9 : [{id: 1, name:'통합 대시보드', link:'', folder: [{name:'', link:''}]},
+         {id: 2, name:'매체정보', link:'', folder: [{name:'', link:''}]},
+         {id: 3, name:'운영분석', link:'', folder: [{name:'', link:''}]},         
+         {id: 4, name:'광고 효과 분석', link:'', folder: [{name:'', link:''}]},         
+         {id: 5, name:'타겟 분석', link:'', folder: [{name:'', link:''}]},         
+         {id: 6, name:'가족 구성원 추론', link:'', folder: [{name:'', link:''}]}],
+    10 : [{id: 1, name:'회원관리', link:'', 
+            folder: [{name:'업체관리', link:''},
+                     {name:'대행사 관리', link:''},
+                     {name:'광고주 관리', link:''},
+                     {name:'브랜드 관리', link:''},
+                     {name:'신규광고주', link:''}]},
+         {id: 2, name:'OTV 관리', link:'', 
+            folder: [{name:'동영상', link:''},
+                     {name:'ADQ 2.0', link:''},]},
+         {id: 3, name:'타겟분석', link:'', folder: []},
+         {id: 4, name:'설정', link:'', 
+            folder: [{name:'OTV', link:''},
+                     {name:'양방향', link:''},]},
+         {id: 5, name:'공지사항', link:'/pages/services/notice.html', folder: []},
+         {id: 6, name:'게시판', link:'', folder: []},
+         {id: 7, name:'요구사항 관리', link:'', folder: []},
+         {id: 8, name:'OTV', link:'', folder: [{name:'동영상', link:''}]},
+         {id: 9, name:'양방향', link:'',
+            folder: [{name:'테스트셋탑박스관리', link:''},
+                     {name:'양방향환경설정', link:''},
+                     {name:'양방향DA환경관리', link:''},
+                     {name:'채널망공사설정', link:''}]},         
+         {id: 10, name:'단가관리', link:'', 
+            folder: [{name:'OTV/PrePlay+', link:''},
+                     {name:'단가/할인정보 관리', link:''}]}],    
+    11 : [{id: 1, name:'사용자관리', link:'/pages/system/user.html', folder: []},
+         {id: 2, name:'사용자그룹관리', link:'/pages/system/user-group.html', folder: []},
+         {id: 3, name:'코드관리', link:'/pages/system/code.html', folder: []},
+         {id: 4, name:'메뉴관리', link:'/pages/system/menu.html', folder: []},
+         {id: 5, name:'메일발송리스트', link:'/pages/system/mail-list.html', folder: []},
+         {id: 6, name:'Watch-Dog', link:'/pages/system/watch-dog.html', folder: []}]    
+  }
+
+  //--------------- Menu ------------------------------
+  function loadMainMenu(iActive){
+    var ulMainMenu = document.querySelector('.main-menu');        
+    
+    mainMenu.map((menu, i) =>{
+      var li = document.createElement("li"); 
+      if (iActive > 0 && i == iActive-1 ) li.classList.add('active') ;
+      li.innerHTML = menu.name;
+      ulMainMenu.appendChild(li); 
+    })     
+  }
+
+  function loadSubMenu(sActive,iSub){
+    var divSubMenu = document.querySelector('.header-sub-menubar');        
+      
+    for (const [key, value] of Object.entries(subMenu)) {      
+      var ul = document.createElement("ul");
+      value.map((subitem, i) => {        
+        var li = document.createElement("li");  
+        if (key == sActive && i == iSub-1 ) 
+          li.classList.add('active') ;
+        li.innerHTML = subitem.name;
+        ul.appendChild(li); 
+      });
+      divSubMenu.appendChild(ul);
+    }
+  }
+
+  //Param -> MainMenu, 2depth Menu, 3depth Menu
+  function loadLnb(iMenu,iSubMenu,ithree){
+    var ulMenu = document.querySelector(".sub-menu-wrapper ul.sub-menu");
+
+    subMenu[iMenu].map((menuItem, i)=> {
+      var li = document.createElement("li");
+      
+      if (menuItem.folder.length > 0) {
+        var details = document.createElement("details");
+        var summary = document.createElement("summary");
+        var icDiv = document.createElement("div");
+
+        li.classList.add("three-depth");
+        icDiv.classList.add("ic-lnb-arrow");
+        summary.innerHTML = menuItem.name;
+        summary.appendChild(icDiv);
+        details.appendChild(summary);
+
+        var ulSub = document.createElement("ul");
+
+        menuItem.folder.map((subitem, j) => {
+          LiSub = document.createElement("li");
+          LiSub.innerHTML = subitem.name;
+          if (ithree > 0 && i==iSubMenu-1 && ithree-1 == j)
+            LiSub.classList.add("active");
+          ulSub.appendChild(LiSub);
+        });
+        details.appendChild(ulSub);
+        li.appendChild(details);
+      }
+      else {
+        if (i == iSubMenu-1) {
+          li.classList.add("active");
+        }
+        li.innerHTML = menuItem.name;        
+      }
+      ulMenu.appendChild(li);  
+    });
+  }
+
 $(function () {
+  $(".main-menu li")
+      .on('mouseover', function(){
+        var menuIndex = $(this).index();  
+        $(".header-sub-menubar ul").removeClass('active');
+        $(".header-sub-menubar ul").eq(menuIndex).addClass('active').siblings;
+      })
+      .on('click',function(){
+        var menuIndex = $(this).index();             
+        location.href = mainMenu[menuIndex].link;        
+      })
+    $(".header-wrapper").on('mouseleave', function(){$(".header-sub-menubar ul").removeClass('active');})
+
+  $(".header-sub-menubar ul li").on('click', function(){
+    var menuIndex = $(this).parent().index()+1;
+    var subMenuIndex = $(this).index();    
+    location.href = subMenu[menuIndex][subMenuIndex].link;
+  })
+  //----------------------------------------------------
   // --------- input ------------>>
 
   $("input").focusin("input", function () {
     $(".btn-clear").hide();
     $("input").css("background-size", "inherit");
+
     const btnClear = $(this).parent(".input-wrap").find(".btn-clear");
     if ($(this).val() == "") {
       btnClear.hide();

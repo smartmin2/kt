@@ -25,9 +25,32 @@
   font-weight: 300;
   color: #207245;
       }
+      .main {
+        display: flex;      
+      }
     </style>
   </head>
   <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+            <img>
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+            <button class="menu-button">로그아웃</button>
+            <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="header-sub-menubar"></div>
+    </div> 
+    <div class="main common-box">
+      <div class="sub-menu-wrapper">
+        <div class="sub-menu-title">
+            <img src="../../assets/common.png" alt="">컴포넌트
+        </div>
+        <ul class="sub-menu"></ul>
+      </div>
     <div class="components-wrapper">
       <!--요소 복사는 common_section 부분 제외 해당 요소만 복사할 것-->
 
@@ -93,7 +116,13 @@
       </div>
 
     </div>
+  </div>
     <script src="../scripts/jquery-3.6.0.min.js"></script>
     <script src="../scripts/script.js"></script>
+    <script>
+      loadMainMenu();
+      loadSubMenu();
+      loadLnb(10); 
+    </script>
   </body>
 </html>
