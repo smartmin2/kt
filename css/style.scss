@@ -158,6 +158,8 @@
       }
     }
   }  
+  
+  tbody tr:last-child { border-bottom: none;}
 }
 .box-title {
   display: flex;
@@ -344,18 +346,25 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  .search-edit-box {
+  margin-bottom: 100px;
+  .search-top {
+    height: 24px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .search-edit-box {
+    display: flex;    
     justify-content: space-between;  
     width: 100%;
-    padding: 20px 30px;
+    padding: 20px 50px;
     opacity: 0.7;
     border-radius: 14px;
-    background-color: #f2f7ff;
+    background-color: $colors_box;
 
     .search-edit-detail{
       flex: 1;  
-      display: flex;
+      display: flex;      
       flex-direction: column;  
       gap: 10px;
     }
@@ -368,24 +377,12 @@
   .input-title {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 120px;
-    font-size: 13px;
-    font-weight: bold;    
-    letter-spacing: -0.33px;    
-    color: #586a9b;
+    font-size: 14px;
+    font-weight: bold;        
+    color: $colors_title;
   }
-  // .input-group{
-  //   @include input_box(300px,38px);
-  // }
-
-  // .input-text{
-  //   width: 100%;
-  //   height: 100%;
-  //   padding: 0 16px;
-  //   font-size: 14px;    
-  //   letter-spacing: -0.35px;
-  //   color: rgba(20, 31, 64, 0.83);
-  // }
 
   input[type="text"] {
     width: 300px;

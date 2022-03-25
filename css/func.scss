@@ -5,7 +5,7 @@ $colors_main: #1bc1db;
 $colors_main_10: rgba(27, 192, 218, 0.1);
 $colors_main_light: #cfeaee;
 $colors_font: #00aace;
-$colors_title: #586a9b;
+$colors_title: #5d6f9d;
 
 $white: #fff;
 $black: #221e1f;
@@ -30,6 +30,7 @@ $font_color_80: rgba(20, 31, 64, 0.8);
 
 $blue100:#04a3bb;
 $blue200:#f1f7ff;
+$blue300: #0ea4bc;
 
 $bg_black: rgba(0,0,0,0.1);
 
@@ -71,21 +72,27 @@ $bg_black: rgba(0,0,0,0.1);
   }
 }
 
-@mixin register_button() {
+@mixin common_button($width, $height) {
+  width: $width;
+  height: $height;
   border-radius: 4px;
   background-color: $colors_main;
-  font-size: 14px;
-  letter-spacing: -0.35px;
-  text-align: center;
+  font-size: 14px;  
   color: #fff;
   @include flex_center();
-  gap: 10px;
+  gap: 10px;  
+}
 
-  img {
-    content: url("../assets/register.png");
-    width: 14px;
-    height: 14px;
-  }
+@mixin white_button($width, $height) {
+  width: $width;
+  height: $height;
+  border-radius: 4px;
+  background-color: $white;
+  font-size: 14px;  
+  color: $black100;
+  border: 1px solid $colors_line;
+  @include flex_center();
+  gap: 10px;  
 }
 
 @mixin animation($delay, $duration, $name) {
