@@ -447,18 +447,24 @@ button.menu-button {
     .setting-table-title {
       display: flex;
       align-items: center;
-      width: 126px;
-      padding: 20px 30px;
+      width: 164px;
+      padding: 30px;
       height: 100%;
       background-color: $colors_box;
       color: $font_color;
       font-size: 13px;
+
+      .btn-up, .btn-down{
+        margin-left: 25px;
+      }
     }
 
     .setting-table-content {
       flex: 1;
       padding: 20px;
       font-size: 13px;
+      color: $font_color;
+      
           }
     input[type="text"] {
       width: 100%;
@@ -717,6 +723,18 @@ textarea {
 .btn-white {
   @include white_button(100px, 38px);
 }
+
+.btn-up {
+  background: url(../assets/ic_dropdown_arrow_up_default.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+}
+.btn-down {
+  background: url(../assets/ic_dropdown_arrow_down_default.svg) no-repeat center;
+  width: 20px;
+  height: 20px;
+}
+
 /*********** icon ***********/
 
 
