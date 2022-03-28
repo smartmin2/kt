@@ -1,5 +1,5 @@
 
-  const mainMenu = [{id: 1, name:'소재', link:''},
+  const mainMenu = [{id: 1, name:'소재', link:'/pages/material/processing.html'},
                 {id: 2, name:'캠페인관리', link:''},
                 {id: 3, name:'영업', link:''},
                 {id: 4, name:'카테고리', link:''},
@@ -7,13 +7,13 @@
                 {id: 6, name:'정산', link:''},
                 {id: 7, name:'편성', link:''},
                 {id: 8, name:'리포트', link:''},
-                {id: 9, name:'통계', link:''},
+                {id: 9, name:'통계', link:'/pages/statistics/integration.html'},
                 {id: 10, name:'서비스관리', link:''},
                 {id: 11, name:'시스템관리', link:'/pages/system/user.html'}];
 
   const subMenu = {
     1 : [{id: 1, name:'OTV 소재가공', link: '', 
-            folder: [{name:'소재가공 (+소재 다운로드)', link:''},
+            folder: [{name:'소재가공 (+소재 다운로드)', link:'/pages/material/processing.html'},
                      {name:'소재업종', link:''},
                      {name:'들러리 소재 관리', link:''}]}, 
          {id: 2, name:'OTV', link:'', 
@@ -102,15 +102,15 @@
          {id: 4, name:'실시간 LiveAD리포트', link:'', folder: []},         
          {id: 5, name:'LiveAD게재확인리포트', link:'', folder: []}],
     9 : [{id: 1, name:'통합 대시보드', link:'', 
-            folder: [{name:'통합분석', link:''},
-                     {name:'매출총괄', link:''},
-                     {name:'상품별상세', link:''},
-                     {name:'영업채널상세', link:''},
-                     {name:'재원및판매율', link:''},
-                     {name:'광고주분석', link:''},
-                     {name:'광고주TOP10', link:''},
-                     {name:'광고누적순위', link:''},
-                     {name:'인벤토리', link:''}]},
+            folder: [{name:'통합분석', link:'/pages/statistics/integration.html'},
+                     {name:'매출총괄', link:'/pages/statistics/sales_manager.html'},
+                     {name:'상품별상세', link:'/pages/statistics/product_detail.html'},
+                     {name:'영업채널상세', link:'/pages/statistics/sales_channel.html'},
+                     {name:'재원및판매율', link:'/pages/statistics/sales_rate.html'},
+                     {name:'광고주분석', link:'/pages/statistics/advertiser.html'},
+                     {name:'광고주TOP10', link:'/pages/statistics/advertiser_top.html'},
+                     {name:'광고누적순위', link:'/pages/statistics/advertising_rank.html'},
+                     {name:'인벤토리', link:'/pages/statistics/inventory.html'}]},
          {id: 2, name:'매체정보', link:'', folder: [{name:'OTV', link:''}]},
          {id: 3, name:'운영분석', link:'', folder: [{name:'매출현황', link:''}]},         
          {id: 4, name:'광고 효과 분석', link:'', 
@@ -154,7 +154,7 @@
          {id: 6, name:'Watch-Dog', link:'/pages/system/watch-dog.html', folder: []}]    
   }
 
-  //--------------- Menu ------------------------------
+  //--------------- Menu Load ------------------------------
   function loadMainMenu(iActive){
     var ulMainMenu = document.querySelector('.main-menu');        
     
@@ -221,8 +221,9 @@
       ulMenu.appendChild(li);  
     });
   }
-
+//--------------------------------------------------------------
 $(function () {
+//------- Menu Event ---------------------------------------
   $(".main-menu li")
       .on('mouseover', function(){
         var menuIndex = $(this).index();  
