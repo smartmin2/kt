@@ -297,24 +297,23 @@ $(document).click(function (e) {
 
   /* 셀렉트박스 보이게 하기 */
 
-  $("body").on("click", ".label", function () {
-    if($(".selectBox").hasClass("disable")){
-      $(".optionList").slideUp();
-      $(".label").removeClass("active");
-    }else{
-      $(".optionList").slideToggle();
-      $(".label").toggleClass("active");
-    }
-    
-  });
+$(".label").on("click", function () {
+  if ($(".selectBox").hasClass("disable")) {
+    $(this).siblings(".optionList").slideUp();
+    $(this).removeClass("active");
+  } else {
+    $(this).siblings(".optionList").slideToggle();
+    $(this).toggleClass("active");
+  }
+});
 
-  /* 셀렉트 박스 옵션 선택 */
-  $("body").on("click", "ul li.optionItem", function () {
-    const text = $(this).html();
-    $(".label").html(text);
-    $(".optionList").slideToggle();
-    $(".label").removeClass("active");
-  });
+/* 셀렉트 박스 옵션 선택 */
+$("body").on("click", "ul li.optionItem", function () {
+  const text = $(this).html();
+  $(this).parents().siblings(".label").html(text);
+  $(this).parents(".optionList").slideToggle();
+  $(".label").removeClass("active");
+});
 
   /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
   $("body").on("click", function (e) {
@@ -361,11 +360,8 @@ function addRow(table, tbData, isCheckbox) {
 //------------------ Modal --------------------------
 $(".fa-menu-box, .modal-open").on('click',function(){
   $("#modal-background").fadeIn(300);
-  $(".modal-con")
-    .css("display", "flex")
-    .hide()
-    .fadeIn();  
-  $('body').css('overflow', 'hidden');
+  $(".modal-con").css("display", "flex").hide().fadeIn();
+  $("body").css("overflow", "hidden");
 });
 
 $("#modal-background, .close").on('click',function(){
@@ -388,4 +384,25 @@ $(function () {
     $("#" + tabId).addClass("active");
   });
 });
+//--------------------------------------------------------
+
+//------------------ toggle btn --------------------------
+$(".btn-toggle").on("click", function () {
+  const tg = $(".toggle-wrap").find(".btn-toggle");
+  if ($(this).hasClass("active")) {
+    $(this).removeClass("active");
+  } else {
+    tg.removeClass("active");
+    $(this).addClass("active");
+  }
+});
+
+$(".whether").on("click", function () {
+  if ($(this).hasClass("active")) {
+    // $(this).html("사용")
+    $(this).parents(".row").siblings(".whether-table").css("display", "flex");
+  } else {
+    // $(this).html("미사용");
+    $(this).parents(".row").siblings(".whether-table").css("display", "none");
+  }
 //--------------------------------------------------------
