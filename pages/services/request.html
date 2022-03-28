@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/login.css" />
-    <title>공지사항</title>
+    <title>요구사항관리</title>
   </head>
   <body>
     <div class="header-wrapper">
@@ -21,13 +21,13 @@
         </div>
       </div>
       <div class="header-sub-menubar"></div>
-    </div> 
+    </div>
     <div class="location">
       <div>홈</div>
       <div>서비스관리</div>
-      <div>공지사항</div>
+      <div>요구사항관리</div>
     </div>
-    <div class="main notice-main">
+    <div class="main request-main">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">서비스관리</div>
@@ -56,33 +56,111 @@
           </ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">공지사항</div>
+          <div class="content-title">요구사항관리</div>
           <div class="search-wrapper">
             <div class="search-top">
               <div class="content-sub-title">조회조건설정</div>
-              <!-- <button class="btn-white">조회</button>                 -->
             </div>
             <div class="search-edit-box">
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">제목</div>
-                  <!-- <div class="input-group">
-                      <input type="text" class="input_text">  
-                    </div> -->
+                  <div class="input-title">접수일</div>
                   <input type="text" />
                 </div>
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">본문</div>
-                  <!-- <div class="input-group">
-                      <input type="text" class="input-text">  
-                    </div> -->
+                  <div class="input-title">요구사항 ID</div>
                   <input type="text" value="" />
                 </div>
               </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">요청구분</div>
+                  <div class="selectBox">
+                    <button class="label">전체</button>
+                    <ul class="optionList">
+                      <li class="optionItem">전체</li>
+                      <li class="optionItem">문의</li>
+                      <li class="optionItem">개발요청</li>
+                      <li class="optionItem">자료요청</li>
+                      <li class="optionItem">데이터보정</li>
+                      <li class="optionItem">서비스요청</li>
+                      <li class="optionItem">운영대행</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">진행단계</div>
+                  <div class="selectBox">
+                    <button class="label">전체</button>
+                    <ul class="optionList">
+                      <li class="optionItem">전체</li>
+                      <li class="optionItem">임시저장</li>
+                      <li class="optionItem">문의접수</li>
+                      <li class="optionItem">보완요청</li>
+                      <li class="optionItem">BM승인</li>
+                      <li class="optionItem">개발총괄승인</li>
+                      <li class="optionItem">요구사항관리자승인</li>
+                      <li class="optionItem">담당자처리중</li>
+                      <li class="optionItem">담당자반려</li>
+                      <li class="optionItem">완료</li>
+                      <li class="optionItem">BM반려</li>
+                      <li class="optionItem">개발총괄반려</li>
+                      <li class="optionItem">요구사항관리자반려</li>
+                      <li class="optionItem">운영대행승인</li>
+                      <li class="optionItem">운영대행반려</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">제목</div>
+                  <input type="text" value="" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">업무</div>
+                  <div class="selectBox">
+                    <button class="label">전체</button>
+                    <ul class="optionList">
+                      <li class="optionItem">전체</li>
+                      <li class="optionItem">운영</li>
+                      <li class="optionItem">분석</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">요청자/담당자</div>
+                  <input type="text" value="" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">서비스</div>
+                  <div class="selectBox">
+                    <button class="label">전체</button>
+                    <ul class="optionList">
+                      <li class="optionItem">전체</li>
+                      <li class="optionItem">공통</li>
+                      <li class="optionItem">OTV(Olleh TV)</li>   
+                      <li class="optionItem">OTN(Olleh TV Now)</li>   
+                      <li class="optionItem">OAD(Olleh AD)</li>   
+                      <li class="optionItem">DS(Digital Signage)</li>   
+                      <li class="optionItem">DC(Digital Cinema)</li>   
+                      <li class="optionItem">기가지니</li>   
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="search-bottom"><button class="btn-register">조회</button></div>
+            <div class="search-bottom"><button class="btn-rec-agree">조회</button></div>
           </div>
           <div class="table-wrapper">
             <div class="table-top">
@@ -107,19 +185,33 @@
             </div>
             <table class="jb-table">
               <colgroup>
-                <col style="width: 5%" />
+                <col style="width: 3%" />
                 <col />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
+                <col style="width: 8.5%" />
               </colgroup>
               <thead>
                 <tr>
-                  <th>순번</th>
+                  <th><input type="checkbox" name="" id=""></th>
+                  <th>요구사항 ID</th>
+                  <th>요청구분</th>
+                  <th>서비스구분</th>
+                  <th>진행단계</th>
                   <th>제목</th>
-                  <th>첨부파일</th>
-                  <th>조회수</th>
-                  <th>일자</th>
+                  <th>접수일</th>
+                  <th>처리요청일</th>
+                  <th>업무구분</th>
+                  <th>요청자</th>
+                  <th>영업사</th>
+                  <th>담당자</th>
                 </tr>
               </thead>
               <tbody class="table-body"></tbody>
@@ -163,7 +255,7 @@
       loadSubMenu("10", 5);
       loadLnb(10, 5, 0);
 
-      const arrTable = Array(10).fill(["1", "디즈니_킹스맨: 퍼스트 에이전트_논T_22년 3월 25일(금)", "attach", "123,456", "2022-02-10"]);
+      const arrTable = Array(10).fill(["1", "DM202202001", "문의", "PrePlay", "문의접수", "제목","2022-02-10", "-", "-", "웹기획", "KTDS", "-"]);
       const table = document.querySelector(".table-body");
       arrTable.map((data) => addRow(table, data, false));
       $(".btn-register").on("click", function () {

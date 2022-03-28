@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
+    <title>공지사항</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="header-sub-menubar"></div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>서비스관리</div>
+      <div>공지사항</div>
+    </div>
+    <div class="main notice-modify">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title">서비스관리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">공지사항</div>
+          <div class="content-body">
+            <form action="" method="post">
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">작성자</div>
+                  <div class="setting-table-content">관리자</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title ic-title-nece">제목</div>
+                  <div class="setting-table-content">
+                    <input type="text" />
+                  </div>
+                </div>
+                <div class="row double-cont">
+                  <div class="setting-table-title">첨부파일</div>
+                  <div class="setting-table-content">
+                    <div class="att-txt ic-att"><span class="btn-download"></span>Eventwinner.pdf<button class="btn-delete"></button></div>
+                    <div class="choose-file">
+                      <input type="text" placeholder="선택된 파일이 없습니다." />
+                      <!-- <button type="file" class="btn-gray">파일선택</button> -->
+                      <input type="file" id="file">
+                      <label for="file" class="btn-gray">파일선택</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row setting-table-editor">
+                  <div class="setting-table-title ic-title-nece">본문</div>
+                  <div class="setting-table-content">
+                    [내용안내]<br />
+                      텍스트 영역
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">CP 정산관리</div>
+                  <div class="setting-table-content">
+                    <button type="button" class="btn-toggle">사용</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">VACAS 노출</div>
+                  <div class="setting-table-content">
+                    <div class="toggle-wrap">
+                      <button type="button" class="btn-toggle">미노출</button>
+                      <button type="button" class="btn-toggle">노출</button>
+                      <button type="button" class="btn-toggle">동시</button>
+                      <div class="toggle-wrap sub">
+                        <button type="button" class="btn-toggle">로그인</button>
+                        <button type="button" class="btn-toggle">공지사항</button>
+                        <button type="button" class="btn-toggle">ALL</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">팝업 여부</div>
+                  <div class="setting-table-content">
+                    <button type="button" class="btn-toggle whether">사용</button>
+                  </div>
+                </div>
+                <div class="row whether-table">
+                  <div class="setting-table-title">기간</div>
+                  <div class="setting-table-content">
+                 <input type="date" name="" id="">
+                 <input type="date" name="" id="">
+                  </div>
+                </div>
+              </div>
+              <div class="submit-btn-group">
+                <button type="button" class="btn-common">저장</button>
+                <button type="button" class="btn-white">취소</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu();
+      loadSubMenu();
+      loadLnb(10);
+    </script>
+    <script></script>
+  </body>
+</html>

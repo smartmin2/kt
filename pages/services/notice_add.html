@@ -21,13 +21,13 @@
         </div>
       </div>
       <div class="header-sub-menubar"></div>
-    </div> 
+    </div>
     <div class="location">
       <div>홈</div>
       <div>서비스관리</div>
       <div>공지사항</div>
     </div>
-    <div class="main notice-detail">
+    <div class="main notice-modify">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">서비스관리</div>
@@ -43,49 +43,69 @@
                   <div class="setting-table-content">관리자</div>
                 </div>
                 <div class="row">
-                  <div class="setting-table-title">제목</div>
-                  <div class="setting-table-content">OTV Live TV AD 상품소개서_21</div>
+                  <div class="setting-table-title ic-title-nece">제목</div>
+                  <div class="setting-table-content">
+                    <input type="text" />
+                  </div>
                 </div>
                 <div class="row">
                   <div class="setting-table-title">첨부파일</div>
                   <div class="setting-table-content">
-                    <div class="att-txt ic-att"><span class="btn-download"></span> Eventwinner.pdf</div>
+                    <div class="choose-file">
+                      <input type="text" placeholder="선택된 파일이 없습니다." />
+                      <!-- <button type="file" class="btn-gray">파일선택</button> -->
+                      <input type="file" id="file" />
+                      <label for="file" class="btn-gray">파일선택</label>
+                    </div>
                   </div>
                 </div>
                 <div class="row setting-table-editor">
-                  <div class="setting-table-title">본문</div>
+                  <div class="setting-table-title ic-title-nece">본문</div>
                   <div class="setting-table-content">
-                    <div class="editor-cont-wrap">
-                      <div class="setting-table-img">이미지 영역</div>
-                      <div class="setting-table-txt">
-                        [내용안내]<br />
-                        텍스트 영역
+                    [내용안내]<br />
+                    텍스트 영역
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">CP 정산관리</div>
+                  <div class="setting-table-content">
+                    <button type="button" class="btn-toggle">사용</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">VACAS 노출</div>
+                  <div class="setting-table-content">
+                    <div class="toggle-wrap">
+                      <button type="button" class="btn-toggle">미노출</button>
+                      <button type="button" class="btn-toggle">노출</button>
+                      <button type="button" class="btn-toggle">동시</button>
+                      <div class="toggle-wrap sub">
+                        <button type="button" class="btn-toggle">로그인</button>
+                        <button type="button" class="btn-toggle">공지사항</button>
+                        <button type="button" class="btn-toggle">ALL</button>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="setting-table-title">팝업 여부</div>
+                  <div class="setting-table-content">
+                    <button type="button" class="btn-toggle whether">사용</button>
+                  </div>
+                </div>
+                <div class="row whether-table">
+                  <div class="setting-table-title">기간</div>
+                  <div class="setting-table-content">
+                    <input type="date" name="" id="" />
+                    <input type="date" name="" id="" />
+                  </div>
+                </div>
               </div>
               <div class="submit-btn-group">
-                <button type="button" class="btn-white">목록</button>
-                <button type="button" class="btn-white">삭제</button>
-                <button type="button" class="btn-common">수정</button>
-          
+                <button type="button" class="btn-common">저장</button>
+                <button type="button" class="btn-white">취소</button>
               </div>
             </form>
-          </div>
-          <div class="setting-table list-table">
-            <div class="row">
-              <div class="setting-table-title">이전글</div>
-              <div class="setting-table-content">
-                <a href="">[안내]안내 사항입니다.</a>
-              </div>
-            </div>
-            <div class="row">
-              <div class="setting-table-title">다음글</div>
-              <div class="setting-table-content">
-                <a href="">개인정보보호법 시행에 따른 정보제공 동의 절차 안내(첨부수정)</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
