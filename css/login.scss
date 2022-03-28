@@ -735,6 +735,126 @@ body {
     }
   }
 }
+
+/********************* services **********************/
+.submit-btn-group {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+/**** setting-table  ****/
+
+/**** notice ****/
+.notice-modify {
+  .setting-table {
+    margin-bottom: 20px;
+
+    .row {
+      &:first-child {
+        border-top: 1px solid #dcdfe4;
+      }
+      .setting-table-content {
+        input[type="text"] {
+          height: 30px;
+          width: 200px;
+        }
+      }
+      &.double-cont {
+        min-height: 120px;
+        .setting-table-title {
+          min-height: 120px;
+        }
+        .setting-table-content {
+          display: block;
+          padding: 0;
+          > div {
+            padding: 0 20px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $gray600;
+            &:last-child {
+              border-bottom: 0;
+            }
+          }
+          .att-txt {
+            padding: 0 45px;
+            span {
+              left: 20px;
+            }
+          }
+        }
+      }
+      &.whether-table {
+        display: none;
+      }
+    }
+    &.list-table {
+      .row {
+        min-height: 40px;
+      }
+      .setting-table-title {
+        padding: 10px 24px;
+      }
+      .setting-table-content {
+        padding: 10px 24px;
+      }
+    }
+  }
+}
+
+/**** request ****/
+.request-main {
+  .search-edit-detail {
+    .selectBox {
+      width: 300px;
+    }
+  }
+
+  .jb-table {
+    td:nth-child(6) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+}
+.request-detail{
+  .row {
+    &.service-cont {
+      height: 100px;
+      .setting-table-content{
+       flex-flow: column;
+       align-items: flex-start;
+       gap:10px;
+        padding:20px;
+      }
+    }
+  }
+}
+.request-add{
+  .setting-table-content {
+    input[type="text"] {
+      height: 30px;
+      width: 200px;
+    }
+  }
+}
+
+/**** bulletinboard ****/
+.btboard-add,
+.btboard-modify,
+.btboard-reply {
+  
+  .setting-table-content {
+    input[type="text"] {
+      height: 30px;
+      width: 200px;
+    }
+  }
+}
+
 /* 버튼 */
 
 .btn-rec-blue {
@@ -892,5 +1012,8 @@ body {
       display: block;
     }
   }
+}
 
+input[type="file"] {
+  display: none;
 }
