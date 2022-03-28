@@ -404,5 +404,5 @@ $(".whether").on("click", function () {
   } else {
     // $(this).html("미사용");
     $(this).parents(".row").siblings(".whether-table").css("display", "none");
-  }
+  }})
 //--------------------------------------------------------
