@@ -12,7 +12,7 @@
                 {id: 11, name:'시스템관리', link:'/pages/system/user.html'}];
 
   const subMenu = {
-    1 : [{id: 1, name:'OTV 소재가공', link: '', 
+    1 : [{id: 1, name:'OTV 소재가공', link: '/pages/material/processing.html', 
             folder: [{name:'소재가공 (+소재 다운로드)', link:'/pages/material/processing.html'},
                      {name:'소재업종', link:''},
                      {name:'들러리 소재 관리', link:''}]}, 
@@ -135,15 +135,15 @@
             folder: [{name:'OTV', link:''},
                      {name:'양방향', link:''},]},
          {id: 5, name:'공지사항', link:'/pages/services/notice.html', folder: []},
-         {id: 6, name:'게시판', link:'', folder: []},
-         {id: 7, name:'요구사항 관리', link:'', folder: []},
+         {id: 6, name:'게시판', link:'/pages/services/board.html', folder: []},
+         {id: 7, name:'요구사항 관리', link:'/pages/services/request.html', folder: []},
          {id: 8, name:'OTV', link:'', folder: [{name:'동영상', link:''}]},
-         {id: 9, name:'양방향', link:'',
-            folder: [{name:'테스트셋탑박스관리', link:''},
-                     {name:'양방향환경설정', link:''},
-                     {name:'양방향DA환경관리', link:''},
-                     {name:'채널망공사설정', link:''}]},         
-         {id: 10, name:'단가관리', link:'', 
+        //  {id: 9, name:'양방향', link:'',
+        //     folder: [{name:'테스트셋탑박스관리', link:''},
+        //              {name:'양방향환경설정', link:''},
+        //              {name:'양방향DA환경관리', link:''},
+        //              {name:'채널망공사설정', link:''}]},         
+         {id: 9, name:'단가관리', link:'', 
             folder: [{name:'OTV/PrePlay+', link:''},
                      {name:'단가/할인정보 관리', link:''}]}],    
     11 : [{id: 1, name:'사용자관리', link:'/pages/system/user.html', folder: []},
@@ -240,6 +240,19 @@ $(function () {
     var menuIndex = $(this).parent().index()+1;
     var subMenuIndex = $(this).index();    
     location.href = subMenu[menuIndex][subMenuIndex].link;
+  })
+
+  $("ul.sub-menu li").on("click", function(){
+    var mainMenuName = $(".sub-menu-title")[0].innerText;
+    var iMain = mainMenu.findIndex(x => x.name == mainMenuName)+1;
+
+    if ($(this).hasClass("three-depth")) {
+
+    } else {
+      var subMenuName =  $(this)[0].innerText;
+      var strLink = subMenu[iMain].find(x => x.name == subMenuName).link;
+      location.href = strLink;
+    }
   })
   //----------------------------------------------------
   // --------- input ------------>>
@@ -426,3 +439,52 @@ $(".whether").on("click", function () {
     $(this).parents(".row").siblings(".whether-table").css("display", "none");
   }})
 //--------------------------------------------------------
+
+$(".btn-select-group .btn-select").on("click", function(){
+  $(this).addClass('active').siblings().removeClass('active');
+});
+
+$(".radio-group label").on("click", function(){
+  $ckradio = $(this).prev();
+  var tagId = $ckradio.attr('id');
+  switch (tagId) {
+    case "rd1-1":
+      if ($("#rd2-1").is(":checked")) {
+        $(".row:nth-child(n+4):nth-child(-n+9)").css("display", "flex");      
+      } else if ($("#rd2-3").is(":checked")) {
+        $(".row").eq(3).css("display", "flex");
+        $(".row").eq(4).css("display", "flex");
+        $(".row").eq(5).css("display", "none");
+        $(".row").eq(6).css("display", "flex");
+        $(".row").eq(7).css("display", "none");
+        $(".row").eq(8).css("display", "flex");
+      }
+      break;
+    case "rd1-2":
+      if ($("#rd2-1").is(":checked")) {
+        $(".row").eq(3).css("display", "flex");
+        $(".row").eq(4).css("display", "flex");
+        $(".row").eq(5).css("display", "none");
+        $(".row").eq(6).css("display", "flex");
+        $(".row").eq(7).css("display", "none");
+        $(".row").eq(8).css("display", "flex");
+      } else if ($("#rd2-2").is(":checked")) {
+        $(".row").eq(3).css("display", "flex");
+        $(".row").eq(4).css("display", "flex");
+        $(".row").eq(5).css("display", "none");
+        $(".row").eq(6).css("display", "flex");
+        $(".row").eq(7).css("display", "none");
+        $(".row").eq(8).css("display", "flex");
+      } else if ($("#rd2-3").is(":checked")) {
+        $(".row").eq(3).css("display", "flex");
+        $(".row").eq(4).css("display", "flex");
+        $(".row").eq(5).css("display", "none");
+        $(".row").eq(6).css("display", "flex");
+        $(".row").eq(7).css("display", "none");
+        $(".row").eq(8).css("display", "flex");
+      }
+        break;
+    default:
+      break;
+  }
+})

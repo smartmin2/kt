@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>템플릿</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="header-sub-menubar"></div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>소재</div>
+    <div>OTV 소재가공</div>
+    <div>소재가공(+소재 다운로드)</div>
+  </div>
+  <div class="main processing-add-main">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                소재
+            </div>
+            <ul class="sub-menu"></ul>
+        </div>        
+        <div class="contents-wrapper">
+          <div class="content-title">소재가공</div>
+          <!-- <form action="" method="post">          -->
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title">요청자명</div>
+                <div class="setting-table-content">홍길동</div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">CP명*</div>
+                <div class="setting-table-content">
+                  <div class="selectBox">
+                    <button class="label">선택하세요</button>
+                    <ul class="optionList">
+                      <li class="optionItem">CP1</li>
+                      <li class="optionItem">CP2</li>
+                      <li class="optionItem">CP3</li>                        
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">업종</div>
+                <div class="setting-table-content">CP명 상용광고를 선택했을 경우에만 업종을 선택할 수 있습니다
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">배포구분</div>
+                <div class="setting-table-content">
+                  <div class="radio-group">
+                    <input type="radio" id="rd1-1" name="radio-1" value="1"> <label for="rd1-1">&nbsp;PrepPlay</label>
+                  </div>     
+                  <div class="radio-group">
+                    <input type="radio" id="rd1-2" name="radio-1" value="2"> <label for="rd1-2">&nbsp;OAP</label>
+                  </div>                
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">서비스</div>
+                <div class="setting-table-content">
+                  <div class="radio-group">
+                    <input type="radio" id="rd2-1" name="radio-2" value="1"> <label for="rd2-1">&nbsp;VOD</label>
+                  </div>     
+                  <div class="radio-group">
+                    <input type="radio" id="rd2-2" name="radio-2" value="2"> <label for="rd2-2">&nbsp;LiveAD</label>
+                  </div>       
+                  <div class="radio-group">
+                    <input type="radio" id="rd2-3" name="radio-2" value="3"> <label for="rd2-3">&nbsp;MovieIntro</label>
+                  </div>               
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">소재구분</div>
+                <div class="setting-table-content">
+                  <div class="radio-group">
+                    <input type="radio" id="rd3-1" name="radio-3" value="1"> <label for="rd3-1">&nbsp;일반</label>
+                  </div>     
+                  <div class="radio-group">
+                    <input type="radio" id="rd3-2" name="radio-3" value="2"> <label for="rd3-2">&nbsp;큐톤필러</label>
+                  </div>               
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">소재가공관리</div>
+                <div class="setting-table-content">
+                  <div class="radio-group">
+                    <input type="radio" id="rd4-1" name="radio-4" value="1"> <label for="rd4-1">&nbsp;파일업로드</label>
+                  </div>     
+                  <div class="radio-group">
+                    <input type="radio" id="rd4-2" name="radio-4" value="2"> <label for="rd4-2">&nbsp;기존영상</label>
+                  </div>                 
+                  <div class="radio-group">
+                    <input type="radio" id="rd4-3" name="radio-4" value="3"> <label for="rd4-3">&nbsp;이메일전달</label>
+                  </div>     
+                  <div class="radio-group">
+                    <input type="radio" id="rd4-4" name="radio-4" value="4"> <label for="rd4-4">&nbsp;임시등록</label>
+                  </div>                 
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">플랫폼 구분</div>
+                <div class="setting-table-content">
+                  <div class="btn-select-group">
+                    <button class="btn-select active">ICOD</button>
+                    <button class="btn-select">DNP</button>
+                    <button class="btn-select">OTN</button>
+                  </div>                       
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">음질구분</div>
+                <div class="setting-table-content">
+                  <div class="radio-group">
+                    <input type="radio" id="rd5-1" name="radio-5" value="1"> <label for="rd5-1">&nbsp;일반</label>
+                  </div>     
+                  <div class="radio-group">
+                    <input type="radio" id="rd5-2" name="radio-5" value="2"> <label for="rd5-2">&nbsp;5.1CH</label>
+                  </div>               
+                </div>
+              </div>
+              <!-- <div class="row">
+                <div class="setting-table-title">OTM 화질</div>
+                <div class="setting-table-content">
+                  <div class="selectBox">
+                    <button class="label">선택하세요</button>
+                    <ul class="optionList">
+                      <li class="optionItem">OTM1</li>
+                      <li class="optionItem">OTM2</li>
+                      <li class="optionItem">OTM3</li>                        
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+              <div class="row">
+                <div class="setting-table-title">소재명*</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                </div>
+              </div>              
+              <div class="row">
+                <div class="setting-table-title">소재길이(초)*</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">요청구분</div>
+                <div class="setting-table-content">
+                  신규
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">소재파일*</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-common">파일선택</button>
+                </div>
+              </div>
+              <div class="row setting-table-editor">
+                <div class="setting-table-title">내용</div>
+                <div class="setting-table-content">
+                  <textarea name="" id="" cols="30" rows="5"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="submit-btn-group">              
+              <button type="button" class="btn-common">저장</button>        
+              <button type="button" class="btn-white">취소</button>
+            </div>
+          <!-- </form> -->
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(1);
+      loadSubMenu("1", 1);
+      loadLnb(1, 1, 1);     
+    </script>
+  </body>
+</html>
