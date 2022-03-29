@@ -396,12 +396,18 @@ $(function () {
 
 //------------------ toggle btn --------------------------
 $(".btn-toggle").on("click", function () {
-  const tg = $(".toggle-wrap").find(".btn-toggle");
+  const tg = $(this).parent(".toggle-wrap").find(".btn-toggle");
   if ($(this).hasClass("active")) {
     $(this).removeClass("active");
   } else {
     tg.removeClass("active");
     $(this).addClass("active");
+  }
+
+  if ($(".request-sv").hasClass("active")) {
+    $(".request-sv-row").css("display", "flex");
+  }else {
+    $(".request-sv-row").css("display", "none");
   }
 });
 
