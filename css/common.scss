@@ -26,7 +26,6 @@ input[type="password"]::-ms-input-placeholder {
   color: $font_color_50;
 }
 
-
 input[type="checkbox"] {
   appearance: none;
   position: relative;
@@ -115,7 +114,6 @@ select {
     top: 46px;
     display: none;
     @include scrollbar("V");
-
 
     .optionItem {
       padding: 8px 16px;
@@ -219,8 +217,8 @@ select {
     width: 100%;
     height: 27px;
     background-color: $blue300;
-    font-size: 12px; 
-    font-weight: 300;   
+    font-size: 12px;
+    font-weight: 300;
     color: #fff;
 
     ul {
@@ -229,45 +227,45 @@ select {
       justify-content: center;
       gap: 20px;
 
-      &.active {        
-        display: flex; 
+      &.active {
+        display: flex;
       }
       &:nth-child(1) {
-        padding-left: 530px;       
+        padding-left: 530px;
       }
       &:nth-child(2) {
-        padding-left: 600px;       
+        padding-left: 600px;
       }
       &:nth-child(3) {
-        padding-left: 700px;       
+        padding-left: 700px;
       }
       &:nth-child(4) {
-        padding-left: 300px;       
+        padding-left: 300px;
       }
       &:nth-child(5) {
-        padding-left: 860px;       
+        padding-left: 860px;
       }
       &:nth-child(6) {
-        padding-left: 950px;       
+        padding-left: 950px;
       }
       &:nth-child(7) {
-        padding-left: 1020px;       
+        padding-left: 1020px;
       }
       &:nth-child(8) {
-        padding-left: 1080px;       
+        padding-left: 1080px;
       }
       &:nth-child(9) {
-        padding-left: 1160px;       
+        padding-left: 1160px;
       }
       &:nth-child(10) {
-        padding-left: 1000px;       
+        padding-left: 1000px;
       }
       &:nth-child(11) {
-        padding-left: 1100px;       
+        padding-left: 1100px;
       }
       li {
         cursor: pointer;
-        &.active{
+        &.active {
           font-weight: bold;
         }
       }
@@ -279,25 +277,29 @@ select {
 }
 .ic-arrow-r {
   content: url("../assets/c_ic_title_arrow_right.png");
-  width: 24px; height: 24px; 
+  width: 24px;
+  height: 24px;
   cursor: pointer;
-  // background-image: url(../assets/c_ic_title_arrow_right.png); 
+  // background-image: url(../assets/c_ic_title_arrow_right.png);
   // background-position: center left; background-repeat: no-repeat; background-size: 11px;
 }
 .ic-arrow-up {
   content: url("../assets/c_ic_lnb_arrow_up.svg");
-  width: 20px; height: 20px; 
+  width: 20px;
+  height: 20px;
   cursor: pointer;
-  // background-image: url(../assets/c_ic_title_arrow_right.png); 
+  // background-image: url(../assets/c_ic_title_arrow_right.png);
   // background-position: center left; background-repeat: no-repeat; background-size: 11px;
 }
 .ic-arrow-d {
   content: url("../assets/c_ic_dropdown_arrow_down_default.svg");
-  width: 20px; height: 20px; 
+  width: 20px;
+  height: 20px;
 }
 .ic-modal-close {
   content: url("../assets/c_ic_popup_delete.svg");
-  width: 24px; height: 24px; 
+  width: 24px;
+  height: 24px;
   cursor: pointer;
 }
 .img-round-nav {
@@ -321,7 +323,6 @@ button.menu-button {
 }
 
 .location {
-
   display: flex;
   align-items: center;
   gap: 20px;
@@ -353,21 +354,21 @@ button.menu-button {
   justify-content: space-between;
 }
 
-.sub-menu-wrapper { 
+.sub-menu-wrapper {
   border-right: 1px solid #e6e8ea;
   width: 240px;
-  
-  .sub-menu-title {  
+
+  .sub-menu-title {
     padding: 30px;
     display: flex;
     align-items: center;
     gap: 15px;
     font-size: 22px;
-    font-weight: bold;  
+    font-weight: bold;
     color: #00aace;
   }
- 
-   ul.sub-menu {
+
+  ul.sub-menu {
     li {
       display: flex;
       flex-direction: column;
@@ -375,17 +376,17 @@ button.menu-button {
       height: 48px;
       padding: 0 30px;
       font-size: 14px;
-      font-weight: 500;       
+      font-weight: 500;
       color: $font_color;
       cursor: pointer;
 
-      &.active{
-       //  position: relative;
+      &.active {
+        //  position: relative;
         background-color: $colors_main_10;
         border-right: 2px solid $colors_main;
         color: $colors_font;
       }
-      &.three-depth{        
+      &.three-depth {
         height: 100%;
         padding: 0;
       }
@@ -393,7 +394,8 @@ button.menu-button {
       details[open] summary {
         .ic-lnb-arrow {
           content: url("../assets/c_ic_lnb_arrow_up.svg");
-          width: 24px; height: 24px; 
+          width: 24px;
+          height: 24px;
           cursor: pointer;
         }
       }
@@ -405,7 +407,8 @@ button.menu-button {
         padding: 0 15px 0 30px;
         .ic-lnb-arrow {
           content: url("../assets/c_ic_lnb_arrow_down.svg");
-          width: 24px; height: 24px; 
+          width: 24px;
+          height: 24px;
           cursor: pointer;
         }
       }
@@ -414,26 +417,25 @@ button.menu-button {
           height: 40px;
           font-weight: 300;
           padding: 0 15px 0 50px;
-          &.active{
+          &.active {
             font-weight: bold;
-           background-color: $blue600;
-           border-right: 2px solid $colors_main;
-           color: $colors_font;
-          } 
+            background-color: $blue600;
+            border-right: 2px solid $colors_main;
+            color: $colors_font;
+          }
         }
       }
     }
-   }
- }
+  }
+}
 
- .contents-wrapper {
+.contents-wrapper {
   flex: 1;
   padding: 30px 40px 20px;
   display: flex;
   flex-direction: column;
 
-  
-  .content-title {  
+  .content-title {
     font-size: 18px;
     font-weight: bold;
     color: $blue500;
@@ -455,7 +457,7 @@ button.menu-button {
 .setting-table {
   width: 100%;
   // border-radius: 8px;
-  overflow: hidden;  
+  overflow: hidden;
   &.list-table {
     .row {
       min-height: 40px;
@@ -466,7 +468,6 @@ button.menu-button {
         padding: 10px 24px;
       }
     }
-    
   }
   .row {
     display: flex;
@@ -497,9 +498,7 @@ button.menu-button {
             left: 20px;
           }
         }
-      
       }
-   
     }
     .setting-table-title {
       display: flex;
@@ -512,7 +511,8 @@ button.menu-button {
       font-size: 14px;
       font-weight: 500;
 
-      .btn-up, .btn-down{
+      .btn-up,
+      .btn-down {
         margin-left: 25px;
       }
     }
@@ -547,6 +547,7 @@ button.menu-button {
       .choose-file {
         gap: 10px;
         display: flex;
+        align-items: center;
       }
       .selectBox {
         width: 300px;
@@ -556,10 +557,10 @@ button.menu-button {
         font-size: 13px;
         margin-left: 10px;
       }
-      .date-wrap{
+      .date-wrap {
         display: flex;
         align-items: center;
-        gap:10px;
+        gap: 10px;
       }
     }
     &.setting-table-editor {
@@ -586,7 +587,7 @@ button.menu-button {
       padding: 0 16px;
 
       color: $font_color_80;
-  
+
       &:hover {
         border: 1px solid $gray400;
       }
@@ -598,30 +599,29 @@ button.menu-button {
         border: 1px solid $font_color;
       }
     }
-    input[type="date"]{
+    input[type="date"] {
       height: 30px;
     }
   }
 }
 
-
 table.jb-table {
   width: 100%;
   thead {
-    height: 30px;    
+    height: 30px;
     background-color: $colors_box;
     font-size: 13px;
     font-weight: bold;
     letter-spacing: -0.33px;
     color: $colors_box_title;
 
-    tr {      
+    tr {
       th {
         vertical-align: middle;
-        &:first-child{
+        &:first-child {
           border-radius: 10px 0 0 10px;
         }
-        &:last-child{
+        &:last-child {
           border-radius: 0 10px 10px 0;
         }
       }
@@ -638,31 +638,31 @@ table.jb-table {
         font-size: 14px;
         letter-spacing: -0.35px;
         color: $font_color;
-      }      
+      }
     }
   }
 }
 
 ul.pagination {
-  @include flex_center;  
+  @include flex_center;
   height: 32px;
   font-size: 13px;
-  font-weight: 500;  
+  font-weight: 500;
   letter-spacing: -0.33px;
   text-align: center;
   color: #556076;
 
-  li a {         
+  li a {
     @include flex_center;
     width: 32px;
-    height: 32px;            
+    height: 32px;
     border-radius: 32px;
 
     &.active {
       background-color: $colors_main;
       color: white;
       border-radius: 32px;
-    }    
+    }
   }
 }
 
@@ -890,7 +890,13 @@ textarea {
   font-size: 14px;
   color: $white;
 }
-
+.btn-add {
+  background: #000 url(../assets/ico_plus.png) no-repeat center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-size: 60%;
+}
 /*********** icon ***********/
 .ic-title-nece {
   &::after {
@@ -941,23 +947,27 @@ textarea {
   }
 }
 
-
-#modal-background{
-  display:none;
-  position:fixed; 
-  width:100%; height:100%;
-  top:0; left:0; 
-  background:rgba(0,0,0,0.3);
+#modal-background {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
-.modal-con{
-  display:none;
-  position:fixed;
-  top:50%; left:50%;
-  transform: translate(-50%,-50%);
-  background:#fff;
+.modal-con {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
 }
 
-.height-auto { height: 100% !important;}
+.height-auto {
+  height: 100% !important;
+}
 
 .footer-wrapper {
   display: flex;
@@ -978,21 +988,21 @@ textarea {
 //   position: fixed;
 //   left: 0;
 //   top: 0;
-//   background-color: rgba(0, 0, 0, 0.7); z-index: 1000; 
-//   display: none; 
+//   background-color: rgba(0, 0, 0, 0.7); z-index: 1000;
+//   display: none;
 //   align-items: center;
-//   justify-content: center; 
+//   justify-content: center;
 // }
 // .modal-background.active {
 //   display: flex;
 // }
-// .modal-content { 
-//   width: 100%; max-width: 560px; height: 100%; max-height: 100%; 
-//   padding: 18px; border-radius: 0px; 
-//   box-shadow: 0px 3px 15px 0 rgba(25, 71, 186, 0.05); 
-//   background-color: #fff; 
+// .modal-content {
+//   width: 100%; max-width: 560px; height: 100%; max-height: 100%;
+//   padding: 18px; border-radius: 0px;
+//   box-shadow: 0px 3px 15px 0 rgba(25, 71, 186, 0.05);
+//   background-color: #fff;
 //   display: flex;
 //   align-items: center;
 //   justify-content: center;
-//   flex-direction: column; 
+//   flex-direction: column;
 // }

@@ -305,9 +305,7 @@
 
 .notice-main,.btboard-main{
   .jb-table {
-    td:nth-child(1) {      
-      cursor: pointer;
-  }    
+
     td:nth-child(2) {
         text-align: left;
         cursor: pointer;
@@ -572,6 +570,18 @@
     }
   }
 }
+.notice-add {
+  .setting-table {
+    .row {
+      .choose-file {
+        align-items: center;
+        input[type="text"] {
+          width: auto;
+        }
+      }
+    }
+  }
+}
 
 // bulletinboard
 .btboard-modify {
@@ -591,6 +601,14 @@
 .btboard-add {
   .setting-table {
     .row {
+      .choose-file{
+       align-items: center;
+
+        width:100%;
+        input[type="text"]{
+          width:200px;
+        }
+      }
       &.setting-table-editor {
         .setting-table-content {
           padding: 0 20px;
@@ -605,6 +623,14 @@
 .btboard-reply {
   .setting-table {
     .row {
+      .choose-file{
+        align-items: center;
+ 
+         width:100%;
+         input[type="text"]{
+           width:200px;
+         }
+       }
       &.setting-table-editor {
         .setting-table-content {
           padding: 0 20px;
@@ -658,3 +684,4 @@
 }
 
 //------------------------------------------------
+
