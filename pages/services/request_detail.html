@@ -79,7 +79,7 @@
                 </div>
               </div>
               <div class="submit-btn-group">
-                <button type="button" class="btn-common">확인</button>
+                <button type="button" class="btn-common" id="btn-list">확인</button>
                 <button type="button" class="btn-white">수정</button>
               </div>
             </form>
@@ -97,6 +97,10 @@
       loadMainMenu();
       loadSubMenu();
       loadLnb(10);
+
+      $("#btn-list").on("click", function () {
+        location.href = "request.html";
+      });
     </script>
     <script></script>
   </body>

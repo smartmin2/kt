@@ -66,10 +66,10 @@
                 </div>
               </div>
               <div class="submit-btn-group">
-                <button type="button" class="btn-white">답글</button>
-                <button type="button" class="btn-white">목록</button>
+                <button type="button" class="btn-white" id="btn-reply">답글</button>
+                <button type="button" class="btn-white" id="btn-list">목록</button>
                 <button type="button" class="btn-white">삭제</button>
-                <button type="button" class="btn-common">수정</button>
+                <button type="button" class="btn-common" id="btn-modify">수정</button>
               </div>
             </form>
           </div>
@@ -100,6 +100,18 @@
       loadMainMenu();
       loadSubMenu();
       loadLnb(10);
+
+      $("#btn-reply").on("click", function () {
+        location.href = "bulletinboard_reply.html";
+      });
+
+      $("#btn-list").on("click", function () {
+        location.href = "bulletinboard.html";
+      });
+
+      $("#btn-modify").on("click", function () {
+        location.href = "bulletinboard_modify.html";
+      });
     </script>
     <script></script>
   </body>

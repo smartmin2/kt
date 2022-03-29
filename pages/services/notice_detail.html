@@ -66,9 +66,9 @@
                 </div>
               </div>
               <div class="submit-btn-group">
-                <button type="button" class="btn-white">목록</button>
+                <button type="button" class="btn-white" id="btn-list">목록</button>
                 <button type="button" class="btn-white">삭제</button>
-                <button type="button" class="btn-common">수정</button>
+                <button type="button" class="btn-common" id="btn-modify">수정</button>
           
               </div>
             </form>
@@ -100,6 +100,13 @@
       loadMainMenu();
       loadSubMenu();
       loadLnb(10);
+
+      $("#btn-list").on("click", function () {
+        location.href = "notice.html";
+      });
+      $("#btn-modify").on("click", function () {
+        location.href = "notice_modify.html";
+      });
     </script>
     <script></script>
   </body>

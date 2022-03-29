@@ -180,6 +180,7 @@
                 </div>
               </div>
               <div class="table-top-buttons">
+                <button class="btn-excel"><img>엑셀다운로드</button>         
                 <button class="btn-register"><img src="" />등록</button>
               </div>
             </div>
@@ -255,18 +256,17 @@
       loadSubMenu("10", 5);
       loadLnb(10, 5, 0);
 
-      const arrTable = Array(10).fill(["1", "DM202202001", "문의", "PrePlay", "문의접수", "제목","2022-02-10", "-", "-", "웹기획", "KTDS", "-"]);
+      const arrTable = Array(10).fill(["DM202202001", "문의", "PrePlay", "문의접수", "제목","2022-02-10", "-", "-", "웹기획", "KTDS", "-"]);
       const table = document.querySelector(".table-body");
-      arrTable.map((data) => addRow(table, data, false));
+      arrTable.map((data) => addRow(table, data, true));
+
       $(".btn-register").on("click", function () {
-        location.href = "notice_detail.html";
+        location.href = "request_add.html";
       });
-      $(".table-body td:nth-child(1)").on("click", function () {
-        location.href = "notice_detail.html";
+      $(".table-body td:nth-child(6)").on("click", function () {
+        location.href = "request_detail.html";
       });
-      $(".table-body td:nth-child(2)").on("click", function () {
-        location.href = "notice_detail.html";
-      });
+
     </script>
   </body>
 </html>
