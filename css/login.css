@@ -152,7 +152,6 @@ body { margin: 0 auto; }
 /**** notice ****/
 .notice-modify .setting-table { margin-bottom: 20px; }
 .notice-modify .setting-table .row:first-child { border-top: 1px solid #dcdfe4; }
-.notice-modify .setting-table .row .setting-table-content input[type="text"] { height: 30px; width: 200px; }
 .notice-modify .setting-table .row.double-cont { min-height: 120px; }
 .notice-modify .setting-table .row.double-cont .setting-table-title { min-height: 120px; }
 .notice-modify .setting-table .row.double-cont .setting-table-content { display: block; padding: 0; }
@@ -172,11 +171,7 @@ body { margin: 0 auto; }
 .request-detail .row.service-cont { height: 100px; }
 .request-detail .row.service-cont .setting-table-content { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; gap: 10px; padding: 20px; }
 
-.request-add .setting-table-content input[type="text"] { height: 30px; width: 200px; }
-
 /**** bulletinboard ****/
-.btboard-add .setting-table-content input[type="text"], .btboard-modify .setting-table-content input[type="text"], .btboard-reply .setting-table-content input[type="text"] { height: 30px; width: 200px; }
-
 /* 버튼 */
 .btn-rec-blue { height: 26px; padding: 0 8px; border-radius: 5px; background-color: #04a3bb; color: #fff; font-size: 13px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 

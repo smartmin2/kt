@@ -125,8 +125,6 @@ button.menu-button { height: 26px; border-radius: 5px; background-color: #04a3bb
 .setting-table .row .setting-table-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; width: 164px; padding: 20px 24px; height: 100%; background-color: #f1f7ff; color: #586a9b; font-size: 14px; font-weight: 500; }
 .setting-table .row .setting-table-title .btn-up, .setting-table .row .setting-table-title .btn-down { margin-left: 25px; }
 .setting-table .row .setting-table-content { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 0 20px; font-size: 13px; color: #141f40; height: 100%; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.setting-table .row .setting-table-content .setting-table-img { height: 200px; margin-bottom: 20px; background-color: #bcbfc7; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
-.setting-table .row .setting-table-content .setting-table-txt { height: 200px; }
 .setting-table .row .setting-table-content .toggle-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
 .setting-table .row .setting-table-content .toggle-wrap.sub { display: none; border-left: 1px solid #e6e8ea; padding-left: 10px; }
 .setting-table .row .setting-table-content .choose-file { gap: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; }
@@ -140,13 +138,14 @@ button.menu-button { height: 26px; border-radius: 5px; background-color: #04a3bb
 .setting-table .row.setting-table-editor .setting-table-content::-webkit-scrollbar-thumb { width: 6px; border-radius: 6px; background: #b6bdc1; }
 .setting-table .row.setting-table-editor .original-txt { padding-top: 10px; }
 .setting-table .row.setting-table-editor .editor-cont-wrap { width: 100%; }
-.setting-table .row input[type="text"] { width: 100%; height: 36px; border: 1px solid #bcbfc7; border-radius: 4px; background-color: #fff; padding: 0 16px; color: rgba(20, 31, 64, 0.8); }
+.setting-table .row input[type="text"] { width: 100%; height: 30px; border: 1px solid #bcbfc7; border-radius: 4px; background-color: #fff; padding: 0 16px; color: rgba(20, 31, 64, 0.8); }
 .setting-table .row input[type="text"]:hover { border: 1px solid #8c8c8c; }
 .setting-table .row input[type="text"]::-webkit-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 .setting-table .row input[type="text"]:-ms-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 .setting-table .row input[type="text"]::-ms-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 .setting-table .row input[type="text"]::placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 .setting-table .row input[type="text"]:focus { border: 1px solid #141f40; }
+.setting-table .row input[type="date"] { height: 30px; }
 
 table.jb-table { width: 100%; }
 table.jb-table thead { height: 30px; background-color: #f1f7ff; font-size: 13px; font-weight: bold; letter-spacing: -0.33px; color: #586a9b; }
@@ -164,15 +163,11 @@ ul.pagination { display: -webkit-box; display: -ms-flexbox; display: flex; -webk
 ul.pagination li a { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 32px; height: 32px; border-radius: 32px; }
 ul.pagination li a.active { background-color: #1bc1db; color: white; border-radius: 32px; }
 
-.input-date-group { display: -webkit-box; display: -ms-flexbox; display: flex; width: 300px; height: 38px; border-radius: 4px; }
+.input-date-group { display: -webkit-box; display: -ms-flexbox; display: flex; width: 300px; height: 30px; border-radius: 4px; }
 .input-date-group span { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 20px; }
 .input-date-group input[type="date"] { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
 
 input[type="date"] { position: relative; height: 100%; padding-left: 16px; border-radius: 4px; border: solid 1px #bcbfc7; background-color: #fff; font-size: 14px; letter-spacing: -0.35px; text-align: left; color: rgba(20, 31, 64, 0.83); }
-
-input[type="date"]::-webkit-clear-button, input[type="date"]::-webkit-inner-spin-button { display: none; }
-
-input[type="date"]::-webkit-calendar-picker-indicator { background: transparent; z-index: 1; }
 
 textarea { width: 100%; border-radius: 4px; border: 1px solid #bcbfc7; padding: 16px; color: rgba(20, 31, 64, 0.8); }
 textarea::-webkit-input-placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
@@ -219,6 +214,8 @@ textarea::placeholder { opacity: 1; color: rgba(20, 31, 64, 0.5); }
 
 .btn-toggle { width: 100px; height: 30px; border-radius: 4px; border: solid 1px #e6e8ea; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 13px; color: #282a3f; }
 .btn-toggle.active { border: solid 1px #00aace; color: #00aace; font-weight: bold; }
+
+.btn-rec-agree { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100px; height: 38px; border-radius: 4px; background-color: #1bc1db; font-size: 14px; color: #fff; }
 
 /*********** icon ***********/
 .ic-title-nece::after { content: "*"; padding-left: 2px; color: #d06062; font-size: 14px; font-weight: 500; }

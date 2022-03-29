@@ -525,15 +525,15 @@ button.menu-button {
       height: 100%;
       display: flex;
       align-items: center;
-      .setting-table-img {
-        height: 200px;
-        margin-bottom: 20px;
-        background-color: #bcbfc7;
-        @include flex_center;
-      }
-      .setting-table-txt {
-        height: 200px;
-      }
+      // .setting-table-img {
+      //   height: 200px;
+      //   margin-bottom: 20px;
+      //   background-color: #bcbfc7;
+      //   @include flex_center;
+      // }
+      // .setting-table-txt {
+      //   height: 200px;
+      // }
       .toggle-wrap {
         display: flex;
         align-items: center;
@@ -579,7 +579,7 @@ button.menu-button {
 
     input[type="text"] {
       width: 100%;
-      height: 36px;
+      height: 30px;
       border: 1px solid $gray200;
       border-radius: 4px;
       background-color: $white;
@@ -597,6 +597,9 @@ button.menu-button {
       &:focus {
         border: 1px solid $font_color;
       }
+    }
+    input[type="date"]{
+      height: 30px;
     }
   }
 }
@@ -714,15 +717,16 @@ input[type="date"] {
   text-align: left;
   color: rgba(20, 31, 64, 0.83);
 }
+// --------------------------------------------input date 디자인 나오기 전까지만 주석 처리
 
-input[type="date"]::-webkit-clear-button,
-input[type="date"]::-webkit-inner-spin-button {
-  display: none;
-}
-input[type="date"]::-webkit-calendar-picker-indicator {
-  background: transparent;
-  z-index: 1;
-}
+// input[type="date"]::-webkit-clear-button,
+// input[type="date"]::-webkit-inner-spin-button {
+//   display: none;
+// }
+// input[type="date"]::-webkit-calendar-picker-indicator {
+//   background: transparent;
+//   z-index: 1;
+// }
 
 textarea {
   width: 100%;
@@ -875,6 +879,16 @@ textarea {
     color: $colors_font;
     font-weight: bold;
   }
+}
+.btn-rec-agree {
+  @include flex_center;
+  width: 100px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: $colors_main;
+
+  font-size: 14px;
+  color: $white;
 }
 
 /*********** icon ***********/

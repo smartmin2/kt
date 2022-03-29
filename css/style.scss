@@ -373,6 +373,23 @@
       display: flex;      
       flex-direction: column;  
       gap: 10px;
+
+      .selectBox {
+        .label {
+          height: 30px;
+        }
+        .optionList {
+          top: 38px;
+        }
+      }
+
+      input[type="text"] {
+        height: 30px;
+      }
+
+      .date-wrap {
+        height: 30px;
+      }
     }
   }
   .search-bottom{
@@ -502,8 +519,8 @@
   }
 }
 
-//------- 소재----------------------------------
-//---소재가공---------------
+//------- ----------------------------------
+//------------------
 .processing-main {
   .search-wrapper {
     margin-bottom: 50px;
@@ -535,4 +552,109 @@
     }
   }
 }
+//------------------------------------------------
+
+//------- service ----------------------------------
+// notice
+.notice-modify {
+  .setting-table {
+    .row {
+      &.setting-table-editor {
+        .setting-table-content {
+          padding: 0 20px;
+        }
+      }
+      .choose-file {
+        input[type="text"] {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+// bulletinboard
+.btboard-modify {
+  .setting-table {
+    .row {
+      .choose-file {
+        input[type="text"] {
+          width: auto;
+        }
+      }
+      &.whether-table {
+        display: none;
+      }
+    }
+  }
+}
+.btboard-add {
+  .setting-table {
+    .row {
+      &.setting-table-editor {
+        .setting-table-content {
+          padding: 0 20px;
+        }
+      }
+      &.whether-table {
+        display: none;
+      }
+    }
+  }
+}
+.btboard-reply {
+  .setting-table {
+    .row {
+      &.setting-table-editor {
+        .setting-table-content {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+// request
+
+.request-main {
+  .input-wrapper {
+    .date-wrap {
+      width: 300px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+.request-add {
+  .setting-table {
+    .row {
+      &.setting-table-editor {
+        .setting-table-content {
+          padding: 0 20px;
+        }
+      }
+      &.request-sv-row {
+        height: 100px;
+        display: none;
+      }
+      .setting-table-content {
+        .service-item {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+        }
+      }
+      .label{
+        height: 30px;
+      }
+    }
+  }
+}
+
+.request-detail{
+.content-sub-title{
+  margin-bottom: 15px;
+}
+}
+
 //------------------------------------------------
