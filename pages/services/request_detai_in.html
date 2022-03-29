@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/login.css" />
-    <title>게시판</title>
+    <title>요구사항관리</title>
   </head>
   <body>
     <div class="header-wrapper">
@@ -25,56 +25,60 @@
     <div class="location">
       <div>홈</div>
       <div>서비스관리</div>
-      <div>게시판</div>
+      <div>요구사항관리</div>
     </div>
-    <div class="main btboard-reply">
+    <div class="main request-detail">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">서비스관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">게시판</div>
+          <div class="content-title">요구사항관리</div>
           <div class="content-body">
             <form action="" method="post">
               <div class="setting-table">
                 <div class="row">
-                  <div class="setting-table-title">작성자</div>
-                  <div class="setting-table-content">관리자</div>
+                  <div class="setting-table-title">요구사항 ID</div>
+                  <div class="setting-table-content">DM202202002</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title ic-title-nece">요청구분</div>
+                  <div class="setting-table-content">서비스요청</div>
                 </div>
                 <div class="row">
                   <div class="setting-table-title ic-title-nece">제목</div>
+                  <div class="setting-table-content">셋탑그룹 등록 요청의 건</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">요청자</div>
+                  <div class="setting-table-content">다스미디어</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title ic-title-nece">서비스 선택</div>
+                  <div class="setting-table-content">서비스</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">서비스</div>
                   <div class="setting-table-content">
-                    <input type="text" />
+                    <div>Olleh TV : Preplay+, PPL-POP, Ending Q</div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="setting-table-title">첨부파일</div>
-                  <div class="setting-table-content">
-                    <div class="choose-file">
-                      <input type="text" placeholder="선택된 파일이 없습니다." />
-                      <input type="file" id="file" />
-                      <label for="file" class="btn-gray">파일선택</label>
-                    </div>
-                  </div>
+                  <div class="setting-table-title">업무적용 희망일</div>
+                  <div class="setting-table-content">2022-03-04</div>
                 </div>
                 <div class="row setting-table-editor">
-                  <div class="setting-table-title ic-title-nece">본문</div>
-                  <div class="setting-table-content">
-                    <textarea name="" id="" cols="30" rows="20"> 
-                      ----------- 원문 -----------
-                      파일업로드테스트
-                      
-                      2022-03-28
-                      
-                    </textarea>
-                  
-                  </div>
+                  <div class="setting-table-title ic-title-nece">요청내용</div>
+                  <div class="setting-table-content">요청 내용이 표시됩니다.</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">요청목적</div>
+                  <div class="setting-table-content">4월 청약</div>
                 </div>
               </div>
               <div class="submit-btn-group">
-                <button type="button" class="btn-common">저장</button>
-                <button type="button" class="btn-white">취소</button>
+                <button type="button" class="btn-common" id="btn-list">목록</button>
               </div>
             </form>
           </div>
@@ -91,6 +95,10 @@
       loadMainMenu();
       loadSubMenu();
       loadLnb(10);
+
+      $("#btn-list").on("click", function () {
+        location.href = "request.html";
+      });
     </script>
     <script></script>
   </body>
