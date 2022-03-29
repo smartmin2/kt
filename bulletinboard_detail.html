@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
+    <title>게시판</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="header-sub-menubar"></div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>서비스관리</div>
+      <div>게시판</div>
+    </div>
+    <div class="main btboard-detail">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title">서비스관리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">게시판</div>
+          <div class="content-body">
+            <form action="" method="post">
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">작성자</div>
+                  <div class="setting-table-content">관리자</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">제목</div>
+                  <div class="setting-table-content">OTV Live TV AD 상품소개서_21</div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">첨부파일</div>
+                  <div class="setting-table-content">
+                    <div class="att-txt ic-att"><span class="btn-download"></span> Eventwinner.pdf</div>
+                  </div>
+                </div>
+                <div class="row setting-table-editor">
+                  <div class="setting-table-title">본문</div>
+                  <div class="setting-table-content">
+                    <div class="editor-cont-wrap">
+                      <div class="setting-table-txt">
+                        [내용안내]<br />
+                        텍스트 영역
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="submit-btn-group">
+                <button type="button" class="btn-white" id="btn-reply">답글</button>
+                <button type="button" class="btn-white" id="btn-list">목록</button>
+                <button type="button" class="btn-white">삭제</button>
+                <button type="button" class="btn-common" id="btn-modify">수정</button>
+              </div>
+            </form>
+          </div>
+          <div class="setting-table list-table">
+            <div class="row">
+              <div class="setting-table-title">이전글</div>
+              <div class="setting-table-content">
+                <a href="">[안내]안내 사항입니다.</a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">다음글</div>
+              <div class="setting-table-content">
+                <a href="">개인정보보호법 시행에 따른 정보제공 동의 절차 안내(첨부수정)</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu();
+      loadSubMenu();
+      loadLnb(10);
+
+      $("#btn-reply").on("click", function () {
+        location.href = "bulletinboard_reply.html";
+      });
+
+      $("#btn-list").on("click", function () {
+        location.href = "bulletinboard.html";
+      });
+
+      $("#btn-modify").on("click", function () {
+        location.href = "bulletinboard_modify.html";
+      });
+    </script>
+    <script></script>
+  </body>
+</html>
