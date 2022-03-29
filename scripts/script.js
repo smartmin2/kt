@@ -409,6 +409,12 @@ $(".btn-toggle").on("click", function () {
   }else {
     $(".request-sv-row").css("display", "none");
   }
+
+  if ($(".open").hasClass("active")) {
+    $(".sub").css("display", "flex");
+  } else {
+    $(".sub").css("display", "none");
+  }
 });
 
 $(".whether").on("click", function () {
