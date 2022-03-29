@@ -294,35 +294,43 @@ $(document).click(function (e) {
 });
 
  // --------- select ------------>>
+/* 셀렉트박스 보이게 하기 */
+  $(".selectBox > .label").on("click", function (){
+    const elLabel = $(this);
+    const elSelectBox = $(this).parent();
+    const elOption = $(this).next();
 
-  /* 셀렉트박스 보이게 하기 */
+    $('.selectBox').find('.optionList').not(elOption).hide();
+    $('.selectBox').find('.label').not(elLabel).removeClass("active");
 
-$(".label").on("click", function () {
-  if ($(".selectBox").hasClass("disable")) {
-    $(this).siblings(".optionList").slideUp();
-    $(this).removeClass("active");
-  } else {
-    $(this).siblings(".optionList").slideToggle();
-    $(this).toggleClass("active");
-  }
-});
+    if (elSelectBox.hasClass("disable")){
+      elOption.slideUp();
+      elLabel.removeClass("active");
+    } else {
+      elOption.slideToggle();
+      elLabel.toggleClass("active");
+    }
+  });
 
 /* 셀렉트 박스 옵션 선택 */
-$("body").on("click", "ul li.optionItem", function () {
-  const text = $(this).html();
-  $(this).parents().siblings(".label").html(text);
-  $(this).parents(".optionList").slideToggle();
-  $(".label").removeClass("active");
-});
+  $("ul li.optionItem").on("click", function (){
+    var elLabel = $(this).parent().prev();
+    var elOption = $(this).parent();
+
+    elLabel.html($(this).html());
+    elOption.slideToggle();
+    elLabel.removeClass("active");
+  });
 
   /* 셀렉트 박스 이외 선택시 보이지 않게 하기 */
   $("body").on("click", function (e) {
-    if ($(".optionList").css("display") == "block") {
-      if ($(".selectBox").has(e.target).length == 0) {
-        $(".optionList").hide();
-        $(".label").removeClass("active");
-      }
-    }
+    var elTarget = $(e.target);    
+    var cntActive = $(".label.active").length;
+    
+    if(cntActive > 0 && !elTarget.hasClass("label")) {       
+      $(".optionList").hide();
+      $(".label").removeClass("active");
+    }    
   });
 
   // <<--------- select ------------

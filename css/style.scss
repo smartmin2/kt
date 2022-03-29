@@ -480,3 +480,59 @@
     }
   }
 }
+
+.search-wrapper {  
+  .search-table-box {
+    display: flex;
+    flex-direction: column;    
+    gap: 11px;
+    padding: 20px 50px;
+    border-radius: 14px;
+    background-color: $colors_box;
+
+    .row {
+      display: flex;    
+      justify-content: space-between;  
+      width: 100%;
+  
+      .search-table-detail {
+        flex: 1;                          
+      }      
+    }
+  }
+}
+
+//------- 소재----------------------------------
+//---소재가공---------------
+.processing-main {
+  .search-wrapper {
+    margin-bottom: 50px;
+
+    .search-table-detail {
+      .input-wrapper {      
+        .input-title { width: 115px; justify-content: start; }
+        .selectBox { width: 300px;        
+          .label { height: 30px; }
+          .optionList { top: 38px; z-index: 1; }
+        }
+        &.multi {
+          .input-detail {  display: flex;  gap: 10px;
+            .selectBox{ width: 140px; }
+          }
+        }
+      }
+    }
+  }
+  table.jb-table{
+    .table-body tr td{
+
+      &:nth-child(16){
+        display: flex;
+        button {
+          width: auto;        
+        }
+      }      
+    }
+  }
+}
+//------------------------------------------------
