@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="../../css/login.css" />
-    <title>공지사항</title>
+    <title>게시판</title>
   </head>
   <body>
     <div class="header-wrapper">
@@ -25,16 +25,16 @@
     <div class="location">
       <div>홈</div>
       <div>서비스관리</div>
-      <div>공지사항</div>
+      <div>게시판</div>
     </div>
-    <div class="main notice-modify">
+    <div class="main board-reply">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">서비스관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">공지사항</div>
+          <div class="content-title">게시판</div>
           <div class="content-body">
             <form action="" method="post">
               <div class="setting-table">
@@ -48,22 +48,10 @@
                     <input type="text" />
                   </div>
                 </div>
-                <div class="row choose-row">
+                <div class="row">
                   <div class="setting-table-title">첨부파일</div>
                   <div class="setting-table-content">
                     <div class="choose-file">
-                      <input type="text" placeholder="선택된 파일이 없습니다." />
-                      <input type="file" id="file" />
-                      <label for="file" class="btn-gray">파일선택</label>
-                      <button type="button" class="btn-add"></button>
-                    </div>
-                    <div class="choose-file2">
-                      <input type="text" placeholder="선택된 파일이 없습니다." />
-                      <input type="file" id="file" />
-                      <label for="file" class="btn-gray">파일선택</label>
-                      <button type="button" class="btn-add"></button>
-                    </div>
-                    <div class="choose-file2">
                       <input type="text" placeholder="선택된 파일이 없습니다." />
                       <input type="file" id="file" />
                       <label for="file" class="btn-gray">파일선택</label>
@@ -74,43 +62,16 @@
                 <div class="row setting-table-editor">
                   <div class="setting-table-title ic-title-nece">본문</div>
                   <div class="setting-table-content">
-                    <textarea name="" id="" cols="30" rows="20"></textarea>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="setting-table-title">CP 정산관리</div>
-                  <div class="setting-table-content">
-                    <button type="button" class="btn-toggle">사용</button>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="setting-table-title">VACAS 노출</div>
-                  <div class="setting-table-content">
-                    <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">미노출</button>
-                      <button type="button" class="btn-toggle open">노출</button>
-                      <button type="button" class="btn-toggle open">동시</button>
-                      <div class="toggle-wrap sub">
-                        <button type="button" class="btn-toggle">로그인</button>
-                        <button type="button" class="btn-toggle">공지사항</button>
-                        <button type="button" class="btn-toggle">ALL</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="setting-table-title">팝업 여부</div>
-                  <div class="setting-table-content">
-                    <button type="button" class="btn-toggle whether">사용</button>
-                  </div>
-                </div>
-                <div class="row whether-table">
-                  <div class="setting-table-title">기간</div>
-                  <div class="setting-table-content">
-                    <div class="date-wrap">
-                      <input type="date" name="" id="" /> ~
-                      <input type="date" name="" id="" />
-                    </div>
+                    <textarea name="" id="" cols="30" rows="20"> 
+
+                      
+----------- 원문 -----------
+파일업로드테스트
+                      
+2022-03-28
+                      
+                    </textarea>
+                  
                   </div>
                 </div>
               </div>
@@ -133,10 +94,6 @@
       loadMainMenu();
       loadSubMenu();
       loadLnb(10);
-
-      $(".add").click(function(){
-
-      })
     </script>
     <script></script>
   </body>
