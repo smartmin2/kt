@@ -425,6 +425,38 @@
   height: 86px;
 }
 
+.modal-progress {
+  width: 724px;
+  height: 206px;
+  padding: 20px 32px;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.modal-progress .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 26px;
+}
+
+.modal-progress .modal-body {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.modal-progress .modal-bottom {
+  height: 86px;
+}
+
 .notice-main .jb-table td:nth-child(2),
 .board-main .jb-table td:nth-child(2) {
   text-align: left;
@@ -811,23 +843,28 @@
   padding: 2px 10px;
 }
 
-.processing-detail-main .row.setting-table-editor {
+.processing-detail-main .row.setting-table-editor, .processing-add .row.setting-table-editor {
   height: 171.5px;
 }
 
-.processing-detail-main .row.setting-table-editor .setting-table-title {
+.processing-detail-main .row.setting-table-editor .setting-table-title, .processing-add .row.setting-table-editor .setting-table-title {
   height: 100%;
 }
 
-.processing-detail-main .setting-table-content {
+.processing-detail-main .setting-table-content, .processing-add .setting-table-content {
   gap: 20px;
 }
 
-.processing-detail-main .setting-table-content .selectBox {
+.processing-detail-main .setting-table-content .menu-button, .processing-add .setting-table-content .menu-button {
+  width: 80px;
+  text-align: center;
+}
+
+.processing-detail-main .setting-table-content .selectBox, .processing-add .setting-table-content .selectBox {
   width: 300px;
 }
 
-.processing-detail-main .setting-table-content .selectBox .label {
+.processing-detail-main .setting-table-content .selectBox .label, .processing-add .setting-table-content .selectBox .label {
   height: 30px;
 }
 

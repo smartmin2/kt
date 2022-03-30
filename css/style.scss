@@ -303,6 +303,30 @@
   }
 }
 
+.modal-progress {
+  width: 724px;
+  height: 206px;  
+  padding: 20px 32px;
+  display: none;
+  flex-direction: column;
+
+  .modal-top {
+    display: flex;
+    justify-content: space-between;
+    height: 26px;
+  }
+
+  .modal-body {
+    width: 100%;
+    flex: 1;
+    
+ 
+  }
+  .modal-bottom {
+    height: 86px;
+  }
+}
+
 .notice-main,
 .board-main {
   .jb-table {
@@ -566,7 +590,7 @@
   }
 }
 
-.processing-detail-main {  
+.processing-detail-main, .processing-add {  
   .row.setting-table-editor {
     height: 171.5px;
     .setting-table-title {
@@ -576,6 +600,7 @@
   .setting-table-content {
     gap: 20px;
 
+    .menu-button {width: 80px; text-align: center;}
     .selectBox { width: 300px;        
       .label { height: 30px; }      
     }

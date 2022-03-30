@@ -496,6 +496,11 @@ button.menu-button {
   cursor: pointer;
 }
 
+.sub-menu-wrapper ul.sub-menu li:not(.three-depth):hover {
+  background-color: #43b6e8;
+  color: #fff;
+}
+
 .sub-menu-wrapper ul.sub-menu li.active {
   background-color: rgba(27, 192, 218, 0.1);
   border-right: 2px solid #1bc1db;
@@ -1211,6 +1216,29 @@ textarea::-webkit-scrollbar-thumb {
           justify-content: center;
 }
 
+.btn-select-file {
+  width: 80px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background-color: #7cc2e0;
+  color: #fff;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.btn-select-file:hover {
+  background-color: #43b6e8;
+}
+
 .btn-up {
   background: url(../assets/ic_dropdown_arrow_up_default.svg) no-repeat center;
   width: 20px;
@@ -1271,6 +1299,12 @@ textarea::-webkit-scrollbar-thumb {
   color: #00aace;
 }
 
+.btn-select:hover {
+  border: solid 1px #00aace;
+  color: #00aace;
+  font-weight: bold;
+}
+
 .btn-select-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1297,11 +1331,13 @@ textarea::-webkit-scrollbar-thumb {
 }
 
 .btn-add {
-  background: #000 url(../assets/ico_plus.png) no-repeat center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-size: 60%;
+  background: url(../assets/c_btn_plus_default.svg) no-repeat center;
+  width: 18px;
+  height: 18px;
+}
+
+.btn-add:hover {
+  background: url(../assets/c_btn_plus_hover.svg) no-repeat center;
 }
 
 /*********** icon ***********/

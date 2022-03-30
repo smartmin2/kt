@@ -380,8 +380,12 @@ button.menu-button {
       color: $font_color;
       cursor: pointer;
 
-      &.active {
-        //  position: relative;
+      &:not(.three-depth):hover{
+        background-color: rgb(67,182,232);
+        color: $white;
+      }
+      &.active{
+       //  position: relative;
         background-color: $colors_main_10;
         border-right: 2px solid $colors_main;
         color: $colors_font;
@@ -853,7 +857,19 @@ textarea {
   font-size: 12px;
   @include flex_center;
 }
-
+.btn-select-file {
+  width: 80px;
+  padding: 6px 8px;
+  border-radius: 4px;
+  background-color: rgb(124,194,224);
+  color: $white;
+  font-size: 12px;
+  @include flex_center;
+  &:hover {
+    background-color: rgb(67,182,232);
+  }
+  cursor: pointer;
+}
 .btn-up {
   background: url(../assets/ic_dropdown_arrow_up_default.svg) no-repeat center;
   width: 20px;
@@ -896,6 +912,11 @@ textarea {
     border: solid 1px $colors_font;
     color: $colors_font;
   }
+  &:hover {
+    border: solid 1px $colors_font;
+    color: $colors_font;
+    font-weight: bold;
+  }
 }
 .btn-select-group {
   display: flex;
@@ -913,11 +934,12 @@ textarea {
   color: $white;
 }
 .btn-add {
-  background: #000 url(../assets/ico_plus.png) no-repeat center;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-size: 60%;
+  background: url(../assets/c_btn_plus_default.svg) no-repeat center;
+  width: 18px;
+  height: 18px;
+  &:hover {
+    background: url(../assets/c_btn_plus_hover.svg) no-repeat center;;
+  }
 }
 /*********** icon ***********/
 .ic-title-nece {

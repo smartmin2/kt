@@ -386,9 +386,12 @@ $(".fa-menu-box, .modal-open").on('click',function(){
 });
 
 $("#modal-background, .close").on('click',function(){
+  if ($(this).hasClass("close") || !$(this).next().hasClass('modal-progress'))
+  {
   $("#modal-background").fadeOut(300);
   $(".modal-con").fadeOut(300);  
   $('body').css('overflow', 'overlay');
+  }
 });
 //--------------------------------------------------------
 
