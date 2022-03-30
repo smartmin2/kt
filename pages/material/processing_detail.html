@@ -51,7 +51,7 @@
               </div>
               <div class="row">
                 <div class="setting-table-title">업종</div>
-                <div class="setting-table-content">총 2개의 소재 정보가 존재합니다. <button class="btn-select-file">검색</button>
+                <div class="setting-table-content">총 2개의 소재 정보가 존재합니다. <button class="btn-select-file btn-search">검색</button>
                 </div>
               </div>
               <div class="blank-row"></div>
@@ -106,7 +106,7 @@
                   </div>
                   <div class="file-content">                    
                     <input class="file-name" type="text" value="" placeholder="선택된 파일이 없습니다.">
-                    <button class="btn-select-file">파일선택</button>
+                    <button class="btn-select-file open-progress">파일선택</button>
                     <p>* 최대 업로드 용량은 1024M byte 입니다. MPEG2, MP4, MXF, MOV, MPEG 파일만 업로드 가능합니다.
                     </p>
                   </div>
@@ -132,12 +132,91 @@
       <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
     </div>
+
+    <div id="modal-background"></div>
+    <div class="modal-con modal-progress common-box">      
+      <div class="modal-top">
+        <div class="box-title">진행율</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <span class="progress-value">0%</span>
+        <progress id="progressbar" value="0" max="100"></progress>
+        <div class="file-size">
+          <div class="down-size">54099968</div>/<div class="tot-size">85080561</div>
+        </div>
+      </div>
+      <div class="modal-bottom"><button class="btn-white close">취소</button></div>
+    </div>
+
+    <div class="modal-processing-detail modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">소재별 업종 정보</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <table class="jb-table">
+          <colgroup>
+            <col />
+            <col style="width: 60%" />            
+          </colgroup>
+          <thead>
+            <tr>
+              <th>소재ID</th>
+              <th>업종</th>              
+            </tr>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              <td>ICD20220300000000019</td>
+              <td>서비스 > 서비스 기타 > 서비스 기타</td>
+            </tr>
+            <tr>
+              <td>ICD20220300000000020</td>
+              <td>서비스 > 서비스 기타 > 서비스 기타</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-bottom"><button class="btn-white close">취소</button></div>
+    </div>
+
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
       loadMainMenu(1);
       loadSubMenu("1", 1);
       loadLnb(1, 1, 1);     
+      var progressbar = $('#progressbar'),
+          max = progressbar.attr('max'),
+          time = (1000/max)*5,  
+          value = progressbar.val();
+ 
+      var loading = function() {
+        value += 1;
+        addValue = progressbar.val(value);
+       
+        $('.progress-value').html(value + '%');
+ 
+        if (value == max) {
+          clearInterval(animate);                
+        }
+      };
+ 
+      var animate = setInterval(function() {
+        loading();
+      }, time);
+      
+      $(".open-progress").on("click", function(){     
+        $("#modal-background").fadeIn(300);
+        $(".modal-progress").css("display", "flex").hide().fadeIn();        
+        $("body").css("overflow", "hidden");
+      })
+      $(".btn-search").on("click", function(){     
+        $("#modal-background").fadeIn(300);
+        $(".modal-processing-detail").css("display", "flex").hide().fadeIn();             
+        $("body").css("overflow", "hidden");
+      })
     </script>
   </body>
 </html>

@@ -513,16 +513,6 @@
     text-align: center;
     color: #282a3f;
   }
-  .btn-search {
-    width: 100px;
-    height: 38px;
-    border-radius: 4px;
-    background-color: $colors_main;
-    font-size: 14px;
-    letter-spacing: -0.35px;
-    text-align: center;
-    color: #fff;
-  }
 }
 
 .table-wrapper {
@@ -670,6 +660,11 @@
   .row:nth-child(2) {
     border-top: 1px solid #e6e8ea;
   }
+}
+
+.modal-processing-detail {
+  @include default_modal(645px,276px);
+  display: none;
 }
 
 .processing-detail-main, .processing-add {  

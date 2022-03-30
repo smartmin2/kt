@@ -224,13 +224,13 @@
                 <div class="table-total-count">전체<span>1,256</span></div>
                 <div class="table-view-count">
                   <div class="selectBox">
-                    <button class="label">10</button>
+                    <button class="label">10개</button>
                     <ul class="optionList">
-                      <li class="optionItem">10</li>
-                      <li class="optionItem">20</li>
-                      <li class="optionItem">30</li>
-                      <li class="optionItem">50</li>
-                      <li class="optionItem">100</li>
+                      <li class="optionItem">10개</li>
+                      <li class="optionItem">20개</li>
+                      <li class="optionItem">30개</li>
+                      <li class="optionItem">50개</li>
+                      <li class="optionItem">100개</li>
                     </ul>
                   </div>
                 </div>
@@ -385,7 +385,10 @@
       loadSubMenu("1", 1);
       loadLnb(1, 1, 1);
 
-      const arrTable = Array(10).fill(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","CD","CD"]);
+      const arrTable = Array(8).fill(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","AD","X"]);
+      arrTable.push(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","CD","R"]);
+      arrTable.push(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","A","CD"]);
+      
       const table = document.querySelector(".table-body");
       arrTable.map((data) => addTableRow(table, data, false));
 
@@ -432,7 +435,8 @@
                     break;
                   default:
                     break;
-                }                
+                }  
+                
                 newTD.appendChild(btTD);
               }
             }
@@ -462,7 +466,8 @@
                     break;
                   default:
                     break;
-                }                
+                }         
+                if (strCell.length > 1) btTD.style = "height: 25px;"       
                 newTD.appendChild(btTD);
               }
             }
