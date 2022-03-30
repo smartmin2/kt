@@ -51,9 +51,10 @@
               </div>
               <div class="row">
                 <div class="setting-table-title">업종</div>
-                <div class="setting-table-content">총 2개의 소재 정보가 존재합니다. <button class="menu-button">검색</button>
+                <div class="setting-table-content">총 2개의 소재 정보가 존재합니다. <button class="btn-select-file">검색</button>
                 </div>
               </div>
+              <div class="blank-row"></div>
               <div class="row">
                 <div class="setting-table-title">배포구분</div>
                 <div class="setting-table-content">
@@ -84,23 +85,31 @@
                   해당 없음
                 </div>
               </div>
+              <div class="blank-row"></div>
               <div class="row">
-                <div class="setting-table-title">소재명*</div>
+                <div class="setting-table-title">소재명</div>
                 <div class="setting-table-content">
                   <input type="text" value="0121_LiveAD_닥터큐_30초DFSFSFS">
                 </div>
               </div>              
               <div class="row">
-                <div class="setting-table-title">소재길이(초)*</div>
+                <div class="setting-table-title">소재길이(초)</div>
                 <div class="setting-table-content">
                   <input type="text" value="30">
                 </div>
               </div>
-              <div class="row">
-                <div class="setting-table-title">소재파일*</div>
-                <div class="setting-table-content">
-                  <input type="text" value="">
-                  <button class="btn-select-file">파일선택</button>
+              <div class="row double-row">
+                <div class="setting-table-title">소재파일</div>
+                <div class="setting-table-content h-multi">
+                  <div class="file-content">
+                    <div class="att-txt ic-att"><span class="btn-download"></span> Eventwinner.pdf</div><button class="btn-delete"></button>
+                  </div>
+                  <div class="file-content">                    
+                    <input class="file-name" type="text" value="" placeholder="선택된 파일이 없습니다.">
+                    <button class="btn-select-file">파일선택</button>
+                    <p>* 최대 업로드 용량은 1024M byte 입니다. MPEG2, MP4, MXF, MOV, MPEG 파일만 업로드 가능합니다.
+                    </p>
+                  </div>
                 </div>
               </div>
               <div class="row setting-table-editor">

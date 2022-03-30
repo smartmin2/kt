@@ -168,3 +168,27 @@ $bg_black: rgba(0,0,0,0.1);
     @content;
   }
 }
+
+@mixin default_modal($width, $height) {
+  width: $width;
+  height: $height;
+  padding: 20px 32px 24px;
+  display: flex;
+  flex-direction: column;
+
+  .modal-top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .modal-body {
+    flex: 1;
+    padding: 32px 0 24px;
+  }
+  .modal-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+  }
+}

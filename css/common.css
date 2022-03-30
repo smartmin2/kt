@@ -419,7 +419,7 @@ button.menu-button {
 }
 
 button.menu-button:hover {
-  background-color: #1bc1db;
+  background-color: #167f8f;
 }
 
 .location {
@@ -1054,15 +1054,27 @@ textarea::-webkit-scrollbar-thumb {
   left: 0;
 }
 
-.att-txt .btn-delete {
-  width: 14px;
-  height: 14px;
-  margin-left: 10px;
-  vertical-align: middle;
-  margin-right: 10px;
+/********** button ***********/
+.btn-delete {
+  background: url(../assets/c_btn_delete_default.svg) no-repeat center/cover;
+  width: 22px;
+  height: 22px;
 }
 
-/********** button ***********/
+.btn-delete:hover {
+  background: url(../assets/c_btn_delete_hover.svg) no-repeat center/cover;
+}
+
+.btn-minus {
+  background: url(../assets/c_btn_minus_default.svg) no-repeat center/cover;
+  width: 22px;
+  height: 22px;
+}
+
+.btn-minus:hover {
+  background: url(../assets/c_btn_minus_hover.svg) no-repeat center/cover;
+}
+
 .btn-refresh {
   background: url(../assets/reset.webp) no-repeat center/cover;
   width: 22px;
@@ -1098,17 +1110,11 @@ textarea::-webkit-scrollbar-thumb {
   cursor: pointer;
 }
 
-.btn-delete {
-  width: 24px;
-  height: 24px;
-  background: url(../assets/c_ic_login_delete.svg) no-repeat center;
-  cursor: pointer;
-}
-
 .btn-download {
   width: 20px;
   height: 20px;
   background: url(../assets/c_ic_list_download.svg) no-repeat center;
+  cursor: pointer;
 }
 
 .btn-excel {
@@ -1238,6 +1244,7 @@ textarea::-webkit-scrollbar-thumb {
 
 .btn-select-file {
   width: 80px;
+  height: 30px;
   padding: 6px 8px;
   border-radius: 4px;
   background-color: #7cc2e0;
@@ -1466,6 +1473,12 @@ textarea::-webkit-scrollbar-thumb {
   .footer-wrapper {
     margin: 0 auto;
   }
+}
+
+.blank-row {
+  height: 10px;
+  width: 100%;
+  border-bottom: 1px solid #dcdfe4;
 }
 
 .checkbox-group {

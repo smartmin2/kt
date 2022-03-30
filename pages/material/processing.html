@@ -236,7 +236,7 @@
                 </div>
               </div>
               <div class="table-top-buttons">
-                <button class="btn-white">업종변경</button>
+                <button class="btn-white modal-open">업종변경</button>
                 <button class="btn-common href-new">신규요청</button>
               </div>
             </div>
@@ -317,6 +317,66 @@
       <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
     </div>
+
+    <div id="modal-background"></div>
+    <div class="modal-con modal-processing common-box">      
+      <div class="modal-top">
+        <div class="box-title">업종변경</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">Asset Name</div>
+            <div class="selectBox">
+              <button class="label">0121_경동나비엔_0121_경동나비엔...</button>
+              <ul class="optionList">
+                <li class="optionItem">0329_LiveAD_test_15초</li>
+                <li class="optionItem">PBTV_11월광고_KT_성인_15초</li>
+                <li class="optionItem">1102_상용_영화_퍼펙트 스틸_15세</li>                        
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">업종분류1</div>
+            <div class="selectBox">
+              <button class="label">가정용품</button>
+              <ul class="optionList">
+                <li class="optionItem">업종1</li>
+                <li class="optionItem">업종2</li>
+                <li class="optionItem">업종3</li>                        
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">업종분류2</div>
+            <div class="selectBox">
+              <button class="label">난방기기</button>
+              <ul class="optionList">
+                <li class="optionItem">업종2-1</li>
+                <li class="optionItem">업종2-2</li>
+                <li class="optionItem">업종2-3</li>                        
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">업종분류3</div>
+            <div class="selectBox">
+              <button class="label">보일러</button>
+              <ul class="optionList">
+                <li class="optionItem">업종3-1</li>
+                <li class="optionItem">업종3-2</li>
+                <li class="optionItem">업종3-3</li>                        
+              </ul>
+            </div>
+          </div>        
+        </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/jquery-ui.min.js"></script>
     <script src="../../scripts/script.js"></script>
@@ -325,7 +385,7 @@
       loadSubMenu("1", 1);
       loadLnb(1, 1, 1);
 
-      const arrTable = Array(10).fill(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","CD","R"]);
+      const arrTable = Array(10).fill(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","CD","CD"]);
       const table = document.querySelector(".table-body");
       arrTable.map((data) => addTableRow(table, data, false));
 
@@ -347,7 +407,7 @@
           if (i == 10)
           {      
             var change = document.createElement("button");
-            change.setAttribute("class","btn-download");      
+            change.setAttribute("class","btn-download");               
             newTD.appendChild(change);
           }
           else if (i == 15) {
@@ -360,13 +420,15 @@
                 btTD.setAttribute("class","btn-white");
                 switch (strName) {
                   case 'A':
+                  btTD.classList.add("btn-detail");
                     btTD.innerText = '추가';
                     break;
                   case 'C':
-                    btTD.innerText = '변경';
+                  btTD.classList.add("btn-detail");
+                    btTD.innerText = '수정';
                     break;
                   case 'D':
-                    btTD.innerText = '삭제';
+                    btTD.innerText = '다운';
                     break;
                   default:
                     break;
@@ -388,9 +450,11 @@
                 btTD.setAttribute("class","btn-white");
                 switch (strName) {
                   case 'R':
+                  btTD.classList.add("btn-detail");
                     btTD.innerText = '재가공';
                     break;
                   case 'C':
+                  btTD.classList.add("btn-detail");
                     btTD.innerText = '수정요청';
                     break;
                   case 'D':
@@ -412,7 +476,15 @@
       $(".href-new").on("click",function(){
         location.href = "processing_add.html";
       })
-      
+      $(".btn-detail").on("click",function(){
+        location.href = "processing_detail.html";
+      })
+      $("td .btn-download").on("click", function(){     
+        $("#modal-background").fadeIn(300);
+        $(".modal-con").css("display", "flex").hide().fadeIn();
+        $(".modal-processing").addClass("two");
+        $("body").css("overflow", "hidden");
+      })
     </script>
   </body>
 </html>

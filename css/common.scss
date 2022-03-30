@@ -322,7 +322,8 @@ button.menu-button {
   color: #fff;
 
   &:hover {
-    background-color: $colors_main;
+    background-color: rgb(22, 127, 143)
+    // rgb(124,194,224);
   }
 }
 
@@ -780,15 +781,26 @@ textarea {
     position: absolute;
     left: 0;
   }
-  .btn-delete {
-    width: 14px;
-    height: 14px;
-    margin-left: 10px;
-    vertical-align: middle;
-    margin-right: 10px;
-  }
 }
 /********** button ***********/
+.btn-delete {
+  background: url(../assets/c_btn_delete_default.svg) no-repeat center/cover;
+  width: 22px;
+  height: 22px;
+
+  &:hover {
+    background: url(../assets/c_btn_delete_hover.svg) no-repeat center/cover;
+  }
+}
+.btn-minus {
+  background: url(../assets/c_btn_minus_default.svg) no-repeat center/cover;
+  width: 22px;
+  height: 22px;
+
+  &:hover {
+    background: url(../assets/c_btn_minus_hover.svg) no-repeat center/cover;
+  }
+}
 .btn-refresh {
   background: url(../assets/reset.webp) no-repeat center/cover;
   width: 22px;
@@ -819,16 +831,17 @@ textarea {
   background: url(../assets/c_ic_login_delete.svg) no-repeat center;
   cursor: pointer;
 }
-.btn-delete {
-  width: 24px;
-  height: 24px;
-  background: url(../assets/c_ic_login_delete.svg) no-repeat center;
-  cursor: pointer;
-}
+// .btn-delete {
+//   width: 24px;
+//   height: 24px;
+//   background: url(../assets/c_ic_login_delete.svg) no-repeat center;
+//   cursor: pointer;
+// }
 .btn-download {
   width: 20px;
   height: 20px;
   background: url(../assets/c_ic_list_download.svg) no-repeat center;
+  cursor: pointer;
 }
 .btn-excel {
   padding: 0 10px;
@@ -870,6 +883,7 @@ textarea {
 }
 .btn-select-file {
   width: 80px;
+  height: 30px;
   padding: 6px 8px;
   border-radius: 4px;
   background-color: rgb(124,194,224);
@@ -1040,6 +1054,12 @@ textarea {
 
   font-size: 13px;
   color: #616366;
+}
+
+.blank-row {
+  height: 10px;
+  width: 100%;
+  border-bottom: 1px solid #dcdfe4;
 }
 
 .checkbox-group {

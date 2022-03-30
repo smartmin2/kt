@@ -8,7 +8,7 @@
                 {id: 7, name:'편성', link:''},
                 {id: 8, name:'리포트', link:''},
                 {id: 9, name:'통계', link:'/pages/statistics/integration.html'},
-                {id: 10, name:'서비스 관리', link:''},
+                {id: 10, name:'서비스관리', link:''},
                 {id: 11, name:'시스템 관리', link:'/pages/system/user.html'}];
 
   const subMenu = {
@@ -121,8 +121,8 @@
             folder: [{name:'콘텐츠 매핑', link:''},
                      {name:'임계치 관리', link:''},
                      {name:'분석 적용 관리', link:''}]}],
-    10 : [{id: 1, name:'회원관리', link:'', 
-            folder: [{name:'업체관리', link:''},
+    10 : [{id: 1, name:'회원 관리', link:'', 
+            folder: [{name:'업체 관리', link:''},
                      {name:'대행사 관리', link:''},
                      {name:'광고주 관리', link:''},
                      {name:'브랜드 관리', link:''},
@@ -190,9 +190,9 @@
       var li = document.createElement("li");
       
       if (menuItem.folder.length > 0) {
-        var details = document.createElement("details");
-        var summary = document.createElement("summary");
-        var icDiv = document.createElement("div");
+        var details = document.createElement("details"),
+            summary = document.createElement("summary"),
+            icDiv = document.createElement("div");
 
         li.classList.add("three-depth");
         icDiv.classList.add("ic-lnb-arrow");
@@ -201,6 +201,7 @@
         details.appendChild(summary);
 
         var ulSub = document.createElement("ul");
+        ulSub.classList.add("folder-menu");
 
         menuItem.folder.map((subitem, j) => {
           LiSub = document.createElement("li");
@@ -237,20 +238,26 @@ $(function () {
     $(".header-wrapper").on('mouseleave', function(){$(".header-sub-menubar ul").removeClass('active');})
 
   $(".header-sub-menubar ul li").on('click', function(){
-    var menuIndex = $(this).parent().index()+1;
-    var subMenuIndex = $(this).index();    
+    var menuIndex = $(this).parent().index()+1,
+        subMenuIndex = $(this).index();    
     location.href = subMenu[menuIndex][subMenuIndex].link;
   })
 
   $("ul.sub-menu li").on("click", function(){
-    var mainMenuName = $(".sub-menu-title")[0].innerText;
-    var iMain = mainMenu.findIndex(x => x.name == mainMenuName)+1;
+    var mainMenuName = $(".sub-menu-title")[0].innerText,
+        iMain = mainMenu.findIndex(x => x.name == mainMenuName)+1;
+    
+    if ($(this).hasClass("three-depth")) return;
+    if ($(this).parent().hasClass("folder-menu")) {
+      var subMenuName =  $(this).parent().prev()[0].innerText,
+          folderMenu = subMenu[iMain].find(x => x.name == subMenuName).folder,
+          forderName = $(this)[0].innerText,
+          strLink = folderMenu.find(x => x.name == forderName).link;
 
-    if ($(this).hasClass("three-depth")) {
-
+      location.href = strLink;
     } else {
-      var subMenuName =  $(this)[0].innerText;
-      var strLink = subMenu[iMain].find(x => x.name == subMenuName).link;
+      var subMenuName =  $(this)[0].innerText,
+          strLink = subMenu[iMain].find(x => x.name == subMenuName).link;
       location.href = strLink;
     }
   })
@@ -447,47 +454,3 @@ $(".btn-select-group .btn-select").on("click", function(){
   $(this).addClass('active').siblings().removeClass('active');
 });
 
-$(".radio-group label").on("click", function(){
-  $ckradio = $(this).prev();
-  var tagId = $ckradio.attr('id');
-  switch (tagId) {
-    case "rd1-1":
-      if ($("#rd2-1").is(":checked")) {
-        $(".row:nth-child(n+4):nth-child(-n+9)").css("display", "flex");      
-      } else if ($("#rd2-3").is(":checked")) {
-        $(".row").eq(3).css("display", "flex");
-        $(".row").eq(4).css("display", "flex");
-        $(".row").eq(5).css("display", "none");
-        $(".row").eq(6).css("display", "flex");
-        $(".row").eq(7).css("display", "none");
-        $(".row").eq(8).css("display", "flex");
-      }
-      break;
-    case "rd1-2":
-      if ($("#rd2-1").is(":checked")) {
-        $(".row").eq(3).css("display", "flex");
-        $(".row").eq(4).css("display", "flex");
-        $(".row").eq(5).css("display", "none");
-        $(".row").eq(6).css("display", "flex");
-        $(".row").eq(7).css("display", "none");
-        $(".row").eq(8).css("display", "flex");
-      } else if ($("#rd2-2").is(":checked")) {
-        $(".row").eq(3).css("display", "flex");
-        $(".row").eq(4).css("display", "flex");
-        $(".row").eq(5).css("display", "none");
-        $(".row").eq(6).css("display", "flex");
-        $(".row").eq(7).css("display", "none");
-        $(".row").eq(8).css("display", "flex");
-      } else if ($("#rd2-3").is(":checked")) {
-        $(".row").eq(3).css("display", "flex");
-        $(".row").eq(4).css("display", "flex");
-        $(".row").eq(5).css("display", "none");
-        $(".row").eq(6).css("display", "flex");
-        $(".row").eq(7).css("display", "none");
-        $(".row").eq(8).css("display", "flex");
-      }
-        break;
-    default:
-      break;
-  }
-})
