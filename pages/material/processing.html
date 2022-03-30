@@ -237,7 +237,7 @@
               </div>
               <div class="table-top-buttons">
                 <button class="btn-white">업종변경</button>
-                <button class="btn-common">신규요청</button>
+                <button class="btn-common href-new">신규요청</button>
               </div>
             </div>
             <div class="jb-table-wrapper">
@@ -318,6 +318,7 @@
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
     </div>
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
       loadMainMenu(1);
@@ -408,6 +409,10 @@
         });  
         table.appendChild(tr); 
       }
+      $(".href-new").on("click",function(){
+        location.href = "processing_add.html";
+      })
+      
     </script>
   </body>
 </html>

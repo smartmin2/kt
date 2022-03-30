@@ -17,6 +17,7 @@ $green: #207245;
 $black100: #282a3f;
 $black200: #434c66;
 
+$gray_10: rgba(188,191,199,0.1);
 $gray100: #f9fafd;
 $gray200: #bcbfc7;
 $gray300: #bfc2c8;
@@ -35,6 +36,8 @@ $blue300: #0ea4bc;
 $blue400: #f8fbff;
 $blue500: #35497b;
 $blue600: #e7f9fc;
+
+$green_10: rgba(32,114,69,0.1);
 
 $bg_black: rgba(0,0,0,0.1);
 
@@ -85,6 +88,10 @@ $bg_black: rgba(0,0,0,0.1);
   color: #fff;
   @include flex_center();
   gap: 10px;  
+
+  &:hover {
+    background-color: $blue100;
+  }
 }
 
 @mixin white_button($width, $height) {
@@ -148,4 +155,16 @@ $bg_black: rgba(0,0,0,0.1);
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+@mixin large {
+  @media (min-width: 1920px) {
+    @content;
+  }
+}
+
+@mixin small {
+  @media (max-width: 1919px) {
+    @content;
+  }
 }

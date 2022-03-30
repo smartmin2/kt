@@ -314,12 +314,16 @@ select {
 button.menu-button {
   height: 26px;
   border-radius: 5px;
-  background-color: #04a3bb;
+  background-color: $blue100;
   padding: 0 10px;
 
   font-size: 13px;
   font-weight: 300;
   color: #fff;
+
+  &:hover {
+    background-color: $colors_main;
+  }
 }
 
 .location {
@@ -381,8 +385,8 @@ button.menu-button {
       cursor: pointer;
 
       &:not(.three-depth):hover{
-        background-color: rgb(67,182,232);
-        color: $white;
+        background-color: rgba(27, 192, 218, 0.5);        
+        font-weight: bold;
       }
       &.active{
        //  position: relative;
@@ -830,6 +834,10 @@ textarea {
   padding: 0 10px;
   height: 38px;
   @include excel_button();
+
+  &:hover {
+    background-color: $green_10;
+  }
 }
 
 .btn-register {
@@ -847,6 +855,9 @@ textarea {
 
 .btn-white {
   @include white_button(100px, 38px);
+  &:hover {
+    background-color: $gray_10;
+  }
 }
 .btn-gray {
   width: 80px;
@@ -1019,7 +1030,12 @@ textarea {
   justify-content: center;
   gap: 3px;
 
-  margin: 0 160px;
+  @include large {    
+    margin: 0 160px;
+  }
+  @include small {
+    margin: 0 auto;      
+  }
   padding: 12px 0;
 
   font-size: 13px;

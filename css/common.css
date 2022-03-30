@@ -418,6 +418,10 @@ button.menu-button {
   color: #fff;
 }
 
+button.menu-button:hover {
+  background-color: #1bc1db;
+}
+
 .location {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -497,8 +501,8 @@ button.menu-button {
 }
 
 .sub-menu-wrapper ul.sub-menu li:not(.three-depth):hover {
-  background-color: #43b6e8;
-  color: #fff;
+  background-color: rgba(27, 192, 218, 0.5);
+  font-weight: bold;
 }
 
 .sub-menu-wrapper ul.sub-menu li.active {
@@ -1134,6 +1138,10 @@ textarea::-webkit-scrollbar-thumb {
   height: 17px;
 }
 
+.btn-excel:hover {
+  background-color: rgba(32, 114, 69, 0.1);
+}
+
 .btn-register {
   width: 100px;
   height: 38px;
@@ -1151,6 +1159,10 @@ textarea::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+}
+
+.btn-register:hover {
+  background-color: #04a3bb;
 }
 
 .btn-register img {
@@ -1178,6 +1190,10 @@ textarea::-webkit-scrollbar-thumb {
   gap: 10px;
 }
 
+.btn-common:hover {
+  background-color: #04a3bb;
+}
+
 .btn-white {
   width: 100px;
   height: 38px;
@@ -1196,6 +1212,10 @@ textarea::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
+}
+
+.btn-white:hover {
+  background-color: rgba(188, 191, 199, 0.1);
 }
 
 .btn-gray {
@@ -1431,10 +1451,21 @@ textarea::-webkit-scrollbar-thumb {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 3px;
-  margin: 0 160px;
   padding: 12px 0;
   font-size: 13px;
   color: #616366;
+}
+
+@media (min-width: 1920px) {
+  .footer-wrapper {
+    margin: 0 160px;
+  }
+}
+
+@media (max-width: 1919px) {
+  .footer-wrapper {
+    margin: 0 auto;
+  }
 }
 
 .checkbox-group {
