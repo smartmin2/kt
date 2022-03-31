@@ -563,6 +563,10 @@
           color: $colors_font;
         }
       }
+
+      .input-group {
+        width: 100%;
+      }
     }
 
     .table-top-buttons {
@@ -606,13 +610,13 @@
     .search-table-detail {
       .input-wrapper {      
         .input-title { width: 115px; justify-content: start; }
-        .selectBox { width: 300px;        
-          .label { height: 30px; }
-          .optionList { top: 38px;  }
-        }
+        // .selectBox { width: 300px;        
+        //   .label { height: 30px; }
+        //   .optionList { top: 38px;  }
+        // }
         &.multi {
           .input-detail {  display: flex;  gap: 10px;
-            .selectBox{ width: 140px; }
+            .input-group{ width: 140px; }
           }
         }
       }
@@ -1018,6 +1022,9 @@
 // user-group
 .user-group {
  
+  .tab {
+    margin-bottom: 30px;
+  }
   .table1 {
     tbody tr td {
       &:last-child, &:nth-child(2) {
@@ -1139,6 +1146,28 @@
             height: 30px;
           }
         }
+      }
+    }
+  }
+}
+.campaign-main {
+  .search-wrapper {        
+    .search-table-detail {
+      .input-wrapper {  
+        .input-title { width: 115px; justify-content: start; }
+        .selectBox { width: 300px;        
+          .label { height: 30px; }
+          .optionList { top: 38px;  }          
+        }            
+        &.multi {
+          .input-detail {  display: flex;  gap: 10px; position: relative;
+            .selectBox{ width: 140px; }
+            .checkbox-list {
+              position: absolute;
+              left: 150px;              
+            }
+          }          
+        }        
       }
     }
   }
