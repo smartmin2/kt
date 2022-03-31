@@ -620,6 +620,7 @@
   }
   .jb-table-wrapper {
     width: calc(100vw - 640px);
+    min-width: 1280px;
     overflow: overlay;
 
     @include scrollbar('H');
