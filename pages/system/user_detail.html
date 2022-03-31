@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
+    <title>사용자관리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="header-sub-menubar"></div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>시스템관리</div>
+      <div>사용자관리</div>
+    </div>
+    <div class="main user-detail">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title">시스템관리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">사용자관리</div>
+          <div class="content-body">
+            <!-- <form action="" method="post"> -->
+
+            <div class="content-sub-title">기본정보</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">사용자 ID</div>
+                <div class="setting-table-content">
+                  <input type="text" />
+                  <button type="button" class="btn-rec-teal">비밀번호잠김해제</button>
+                </div>
+              </div>
+              <div class="row other-cont">
+                <div class="setting-table-title">비밀번호 변경</div>
+                <div class="setting-table-content">
+                  <div class="input-wrap-pw">
+                    <input type="password" placeholder="비밀번호를 입력하세요." />
+                    <input type="password" placeholder="비밀번호를 다시 입력하세요." />
+                  </div>
+                  <span class="desc ic-txt-nece">영문 / 숫자 / 특수문자 혼용 8자리 이상 (계정명과 동일, 문자 반복 / 연속 4자리, 이전 패스워드 불가)</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">사용자명</div>
+                <div class="setting-table-content">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">업체</div>
+                <div class="setting-table-content">
+                  <div class="selectBox">
+                    <button class="label">선택하세요.</button>
+                    <ul class="optionList">
+                      <li class="optionItem">전체</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">부서</div>
+                <div class="setting-table-content">
+                  <div class="selectBox">
+                    <button class="label">선택하세요.</button>
+                    <ul class="optionList">
+                      <li class="optionItem">전체</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">이메일</div>
+                <div class="setting-table-content">
+                  <div class="input-wrap-mail">
+                    <input type="text" />@
+                    <input type="text" />
+                  </div>
+                  <div class="selectBox">
+                    <button class="label">직접입력</button>
+                    <ul class="optionList">
+                      <li class="optionItem">직접입력</li>
+                      <li class="optionItem">naver.com</li>
+                      <li class="optionItem">nate.com</li>
+                      <li class="optionItem">hanmail.net</li>
+                      <li class="optionItem">hatmail.com</li>
+                      <li class="optionItem">kt.com</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row other-cont">
+                <div class="setting-table-title ic-title-nece">휴대전화</div>
+                <div class="setting-table-content">
+                  <div>
+                    <input type="text" placeholder="- 없이 숫자만 입력" />
+                  </div>
+                  <span class="desc ic-txt-nece">사용자 요청 정보가 휴대폰으로 전송 되오니 정확한 번호 입력이 필요합니다.</span>
+                </div>
+              </div>
+              <div class="row other-cont">
+                <div class="setting-table-title">일반전화</div>
+                <div class="setting-table-content">
+                  <div>
+                    <input type="text" placeholder="- 없이 숫자만 입력" />
+                  </div>
+                  <span class="desc ic-txt-nece">소속 회사 내 유선 전화번호</span>
+                </div>
+              </div>
+              <div class="row other-cont">
+                <div class="setting-table-title">메모</div>
+                <div class="setting-table-content">
+                  <textarea name="" id="" cols="30" rows="2"></textarea>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-sub-title">부가정보</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">상태</div>
+                <div class="setting-table-content">
+                  <div class="toggle-wrap">
+                    <button type="button" class="btn-toggle">요청</button>
+                    <button type="button" class="btn-toggle">사용중</button>
+                    <button type="button" class="btn-toggle">계정해지</button>
+                    <button type="button" class="btn-toggle">계정삭제</button>
+                  </div>
+                </div>
+              </div>
+              <div class="row other-cont2">
+                <div class="setting-table-title">
+                  <div class="ic-title-nece">소속 사용자 그룹</div>
+                  <span class="ic-noti">
+                    <div class="noti-box">추가하려는 그룹을 더블Click 하시면 추가 됩니다. <br />삭제하려는 그룹을 더블Click 하시면 삭제 됩니다.</div>
+                  </span>
+                </div>
+                <div class="setting-table-content">
+                  <div class="list-box-wrap">
+                    <div class="list-box">
+                      <p>== 모든그룹 ==</p>
+                      <ul>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <button type="button" class="btn-rec-teal">&lt;</button>
+                      <button type="button" class="btn-rec-teal">&gt;</button>
+                    </div>
+                    <div class="list-box">
+                      <p>== 모든그룹 ==</p>
+                      <ul>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content-sub-title">권한정보</div>
+            <div class="setting-table">
+              <div class="row other-cont">
+                <div class="setting-table-title ic-title-nece">분석서비스</div>
+                <div class="setting-table-content">
+                  <div class="toggle-wrap">
+                    <button type="button" class="btn-toggle open">사용</button>
+                    <div class="toggle-wrap sub">
+                      <input type="text" placeholder="IP를 입력하세요" />
+                    </div>
+                  </div>
+                  <span class="desc-red">* 분석 메뉴는 관리자의 승인 후 요청일 기준 익일 오전에 사용이 가능합니다.</span>
+                </div>
+              </div>
+              <div class="row other-cont">
+                <div class="setting-table-title ic-title-nece">KT관리자</div>
+                <div class="setting-table-content">
+                  <div class="toggle-wrap">
+                    <button type="button" class="btn-toggle open">사용</button>
+                    <div class="toggle-wrap sub">
+                      <input type="text" placeholder="IP를 입력하세요" />
+                    </div>
+                  </div>
+                  <span class="desc ic-txt-nece">전체회원 중 1명만 KT관리자가 가능합니다.</span>
+                </div>
+              </div>
+              <div class="row other-cont">
+                <div class="setting-table-title ic-title-nece">AD Core관리</div>
+                <div class="setting-table-content">
+                  <div class="toggle-wrap">
+                    <button type="button" class="btn-toggle open">사용</button>
+                    <div class="toggle-wrap sub">
+                      <input type="text" placeholder="IP를 입력하세요" />
+                    </div>
+                  </div>
+                  <span class="desc ic-txt-nece">청구정산 &gt; CP정산관리 이용하는 사용자에게 적용합니다.</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">상태</div>
+                <div class="setting-table-content">
+                  <div class="toggle-wrap">
+                    <button type="button" class="btn-toggle open">VACAS</button>
+                    <div class="toggle-wrap sub">
+                      <button type="button" class="btn-toggle">관리자</button>
+                      <button type="button" class="btn-toggle">영업사</button>
+                      <button type="button" class="btn-toggle">광고주</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="submit-btn-group">
+              <button type="button" class="btn-white">삭제</button>
+              <button type="button" class="btn-common">저장</button>
+              <button type="button" class="btn-white">취소</button>
+            </div>
+            <!-- </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(10);
+      loadSubMenu("10", 5);
+      loadLnb(10, 5, 0);
+    </script>
+    <script></script>
+  </body>
+</html>

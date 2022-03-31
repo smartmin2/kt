@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
+    <title>사용자그룹 관리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="header-sub-menubar"></div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>시스템관리</div>
+      <div>사용자그룹 관리</div>
+    </div>
+    <div class="main menu-group-add">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title">시스템관리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">사용자그룹 관리</div>
+          <div class="content-body">
+            <!-- <form action="" method="post"> -->
+
+            <div class="content-sub-title">메뉴권한 그룹</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">그룹명</div>
+                <div class="setting-table-content">
+                  <input type="text" />
+                  <div class="btn-rec-teal">중복검사</div>
+                  <span class="desc">* 메뉴권한 그룹</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">설명</div>
+                <div class="setting-table-content">
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="row other-cont2">
+                <div class="setting-table-title">
+                  <div class="ic-title-nece">소속 사용자 그룹</div>
+                  <span class="ic-noti">
+                    <div class="noti-box">추가하려는 그룹을 더블Click 하시면 추가 됩니다. <br />삭제하려는 그룹을 더블Click 하시면 삭제 됩니다.</div>
+                  </span>
+                </div>
+                <div class="setting-table-content">
+                  <div class="list-box-wrap">
+                    <div class="list-box">
+                      <p>== 모든 사용자 ==</p>
+                      <ul>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <button type="button" class="btn-rec-teal">&lt;</button>
+                      <button type="button" class="btn-rec-teal">&gt;</button>
+                    </div>
+                    <div class="list-box">
+                      <p>== 선택 사용자 ==</p>
+                      <ul>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                        <li>그룹명</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="submit-btn-group">
+              <button type="button" class="btn-common">저장</button>
+              <button type="button" class="btn-white">취소</button>
+            </div>
+            <!-- </form> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(10);
+      loadSubMenu("10", 5);
+      loadLnb(10, 5, 0);
+    </script>
+    <script></script>
+  </body>
+</html>

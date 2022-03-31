@@ -65,7 +65,7 @@
         </ul>
       </div>
     </div>
-    <div class="main notice-main">
+    <div class="main user-group">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">시스템관리</div>
@@ -83,32 +83,25 @@
         <div class="contents-wrapper">
           <div class="content-title">사용자그룹 관리</div>
           <ul class="tab">
-            <li class="tab-menu" data-tab="tab01">메뉴권한 그룹</li>
-            <li class="tab-menu active" data-tab="tab02">승인권한 그룹</li>
+            <li class="tab-menu active" data-tab="tab01">메뉴권한 그룹</li>
+            <li class="tab-menu" data-tab="tab02">승인권한 그룹</li>
           </ul>
-          <div class="tab-content" id="tab01"></div>
-          <div class="tab-content active" id="tab02">
+          <div class="tab-content active" id="tab01">
             <div class="table-wrapper">
               <div class="table-top">
                 <div class="table-top-count">
                   <div class="table-total-count">전체<span>1,256</span></div>
                   <div class="table-view-count">
                     <div class="selectBox">
-                      <button class="label">10</button>
+                      <button class="label">10개</button>
                       <ul class="optionList">
-                        <li class="optionItem">10</li>
-                        <li class="optionItem">20</li>
-                        <li class="optionItem">30</li>
-                        <li class="optionItem">50</li>
-                        <li class="optionItem">100</li>
+                        <li class="optionItem">10개</li>
+                        <li class="optionItem">20개</li>
+                        <li class="optionItem">30개</li>
+                        <li class="optionItem">50개</li>
+                        <li class="optionItem">100개</li>
                       </ul>
                     </div>
-                    <!-- <select>
-                          <option value="">10개</option>
-                          <option value="">20개</option>
-                          <option value="">50개</option>
-                          <option value="">100개</option>
-                        </select> -->
                   </div>
                 </div>
                 <div class="table-top-buttons">
@@ -116,11 +109,83 @@
                   <button class="btn-register"><img src="" />등록</button>
                 </div>
               </div>
-              <table class="jb-table">
+              <table class="jb-table table1">
                 <colgroup>
                   <col style="width: 1%" />
                   <col />
+                  <col style="width: 10%" />
                   <col style="width: 15%" />
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" /></th>
+                    <th>그룹명</th>
+                    <th>등록자</th>
+                    <th>등록일</th>
+                    <th>최종수정자</th>
+                    <th>최종수정일</th>
+                    <th>관리</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body"></tbody>
+              </table>
+              <ul class="pagination">
+                <li>
+                  <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                </li>
+                <li><a href="#" class="num">1</a></li>
+                <li><a href="#" class="num active">2</a></li>
+                <li><a href="#" class="num">3</a></li>
+                <li><a href="#" class="num">4</a></li>
+                <li><a href="#" class="num">5</a></li>
+                <li><a href="#" class="num">6</a></li>
+                <li><a href="#" class="num">7</a></li>
+                <li><a href="#" class="num">8</a></li>
+                <li><a href="#" class="num">9</a></li>
+                <li><a href="#" class="num">10</a></li>
+                <li>
+                  <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content" id="tab02">
+            <div class="table-wrapper">
+              <div class="table-top">
+                <div class="table-top-count">
+                  <div class="table-total-count">전체<span>1,256</span></div>
+                  <div class="table-view-count">
+                    <div class="selectBox">
+                      <button class="label">10개</button>
+                      <ul class="optionList">
+                        <li class="optionItem">10개</li>
+                        <li class="optionItem">20개</li>
+                        <li class="optionItem">30개</li>
+                        <li class="optionItem">50개</li>
+                        <li class="optionItem">100개</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-top-buttons">
+                  <button class="btn-white">삭제</button>
+                  <button class="btn-register"><img src="" />등록</button>
+                </div>
+              </div>
+              <table class="jb-table table2">
+                <colgroup>
+                  <col style="width: 1%" />
+                  <col />
+                  <col style="width: 10%" />
                   <col style="width: 15%" />
                   <col style="width: 15%" />
                   <col style="width: 15%" />
@@ -174,17 +239,19 @@
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
-      const arrTable = Array(10).fill(["attach", "기가니지 가가지니 청약승인그룹", "홍길동", "2021-08-18", "홍길동", "2022-02-10"]);
-      const table = document.querySelector(".table-body");
-      arrTable.map((data) => addRow(table, data, false));
-      $(".btn-register").on("click", function () {
-        location.href = "notice_detail.html";
+      const arrTable1 = Array(15).fill([ "광고 불가 그룹 관리", "홍길동", "2021-08-18", "홍길동", "2022-02-10","메뉴권한"]);
+      const arrTable2 = Array(15).fill([ "기가니지 가가지니 청약승인그룹", "홍길동", "2021-08-18", "홍길동", "2022-02-10"]);
+      const table1 = document.querySelector(".table1 .table-body");
+      const table2 = document.querySelector(".table2 .table-body");
+      arrTable1.map((data) => addRow(table1, data, true));
+      arrTable2.map((data) => addRow(table2, data, true));
+
+    
+      $("#tab01 .btn-register").on("click", function () {
+        location.href = "menu_group_add.html";
       });
-      $(".table-body td:nth-child(1)").on("click", function () {
-        location.href = "notice_detail.html";
-      });
-      $(".table-body td:nth-child(2)").on("click", function () {
-        location.href = "notice_detail.html";
+      $(".table1 td:nth-child(2)").on("click", function () {
+        location.href = "menu_group_detail.html";
       });
 
     
