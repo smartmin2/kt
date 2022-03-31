@@ -496,6 +496,28 @@
       border: 1px solid $font_color;
     }
   }
+
+  ul.checkbox-list {
+    width: 300px;
+    height: 30px;    
+    border: 1px solid $gray200;
+    border-radius: 4px;
+    background-color: $white;
+    &:hover {
+      border: 1px solid $gray400;
+    }
+    &:focus {
+      border: 1px solid $font_color;
+    }
+    @include scrollbar('V');
+    // @include scrollbar('H');
+    li {
+      display: flex;
+      align-items: center;  
+      gap: 5px;
+      padding: 3px 16px;    
+    }
+  }
 }
 
 .search-btns {
@@ -625,6 +647,7 @@
             // width: 50px; 
             height: 30px;  
             padding: 2px 10px;        
+            margin: 5px 0;
           }
         }      
       }
@@ -648,6 +671,10 @@
       .label {
         height: 30px;
       }
+      .optionList {
+        width: calc(100% - 40px);
+        z-index: 100;
+      }
     }
   }
 }
@@ -668,7 +695,7 @@
 }
 
 .processing-detail-main, .processing-add {  
-  .row.setting-table-editor {
+  .row.setting-table-editor {    
     height: 171.5px;
     .setting-table-title {
       height: 100%;
@@ -874,3 +901,25 @@
 
 //------------------------------------------------
 
+.campaign-main {
+  .search-wrapper {        
+    .search-table-detail {
+      .input-wrapper {  
+        .input-title { width: 115px; justify-content: start; }
+        .selectBox { width: 300px;        
+          .label { height: 30px; }
+          .optionList { top: 38px;  }          
+        }            
+        &.multi {
+          .input-detail {  display: flex;  gap: 10px; position: relative;
+            .selectBox{ width: 140px; }
+            .checkbox-list {
+              position: absolute;
+              left: 150px;              
+            }
+          }          
+        }        
+      }
+    }
+  }
+}

@@ -95,8 +95,9 @@ $bg_black: rgba(0,0,0,0.1);
 }
 
 @mixin white_button($width, $height) {
-  width: $width;
+  min-width: $width;
   height: $height;
+  padding: 0 10px;
   border-radius: 4px;
   background-color: $white;
   font-size: 14px;  

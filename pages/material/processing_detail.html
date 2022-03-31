@@ -105,24 +105,27 @@
                     <div class="att-txt ic-att"><span class="btn-download"></span> Eventwinner.pdf</div><button class="btn-delete"></button>
                   </div>
                   <div class="file-content">                    
-                    <input class="file-name" type="text" value="" placeholder="선택된 파일이 없습니다.">
-                    <button class="btn-select-file open-progress">파일선택</button>
-                    <p>* 최대 업로드 용량은 1024M byte 입니다. MPEG2, MP4, MXF, MOV, MPEG 파일만 업로드 가능합니다.
-                    </p>
+                    <div class="filebox">  <!-- ProgressBar 모달은 modal-progress 을 호출 -->
+                      <input class="upload-name" value="" disabled="disabled" placeholder="선택된 파일이 없습니다"> 
+                      <label for="ex_filename">파일선택</label> 
+                      <input type="file" id="ex_filename" class="upload-hidden"> </div>                                    
+                      <p>* 최대 업로드 용량은 1024M byte 입니다. MPEG2, MP4, MXF, MOV, MPEG 파일만 업로드 가능합니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="row setting-table-editor">
+                  <div class="setting-table-title">내용</div>
+                  <div class="setting-table-content">
+                    <textarea name="" id="" cols="30" rows="5">김정화 01026609255 22년1월21일
+                    </textarea>
                   </div>
                 </div>
               </div>
-              <div class="row setting-table-editor">
-                <div class="setting-table-title">내용</div>
-                <div class="setting-table-content">
-                  <textarea name="" id="" cols="30" rows="5">김정화 01026609255 22년1월21일
-                  </textarea>
-                </div>
+              <div class="submit-btn-group">              
+                <button type="button" class="btn-common">저장</button>        
+                <button type="button" class="btn-white">취소</button>
               </div>
-            </div>
-            <div class="submit-btn-group">              
-              <button type="button" class="btn-common">저장</button>        
-              <button type="button" class="btn-white">취소</button>
             </div>
           <!-- </form> -->
         </div>

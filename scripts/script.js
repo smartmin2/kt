@@ -20,21 +20,22 @@
             folder: [{name:'동영상', link:''},
                      {name:'중복소재 노출관리', link:''},
                      {name:'LiveAD 송출영상', link:''}]}],
-    2 : [{id: 1, name:'매체플래너', link: '', folder: []},
-         {id: 2, name:'제안관리', link:'', folder: []},
-         {id: 3, name:'캠페인', link: '', 
+    2 : [
+      // {id: 1, name:'매체플래너', link: '', folder: []},
+    //      {id: 2, name:'제안관리', link:'', folder: []},
+         {id: 1, name:'캠페인', link: '/pages/contract/campaign.html', 
             folder: [{name:'캠페인 등록', link:''},
-                     {name:'캠페인 조회/승인', link:''},
+                     {name:'캠페인 조회/승인', link:'/pages/contract/campaign.html'},
                      {name:'청약조회/승인', link:''},
                      {name:'모니터링(모니터링 청약)', link:''}]},
-         {id: 4, name:'청약 관리', link:'', 
+         {id: 2, name:'청약 관리', link:'', 
             folder: [{name:'DEFAULT 광고 관리', link:''},
                      {name:'포스트 디폴트 광고관리', link:''},
                      {name:'구매요청', link:''},
                      {name:'큐톤 필러 광고 관리', link:''},
                      {name:'모니터링(모니터링 청약)', link:''}]},
-         {id: 5, name:'캠페인 추가 서비스', link:'', 
-            folder: [{name:'D동영상(->VOD)', link:''},                   
+         {id: 3, name:'캠페인 추가 서비스', link:'', 
+            folder: [{name:'동영상', link:''},                   
                      {name:'양방향', link:''},
                      {name:'LiveAD 노출비율관리', link:''},
                      {name:'Preplay우선순위관리', link:''}]}],
@@ -347,10 +348,14 @@ $(document).click(function (e) {
     var elTarget = $(e.target);    
     var cntActive = $(".label.active").length;
     
-    if(cntActive > 0 && !elTarget.hasClass("label")) {       
-      $(".optionList").hide();
+    if(!elTarget.hasClass("optionItem") && !elTarget.hasClass("label")) {       
+      $(".optionList").hide();      
       $(".label").removeClass("active");
-    }    
+
+      if($(e.target).parents('.checkbox-list').length < 1){   
+        $(".checkbox-list").css("height",'30px');        
+      }  
+    }      
   });
 
   // <<--------- select ------------
@@ -453,4 +458,19 @@ $(".whether").on("click", function () {
 $(".btn-select-group .btn-select").on("click", function(){
   $(this).addClass('active').siblings().removeClass('active');
 });
+
+var fileTarget = $('.filebox .upload-hidden'); fileTarget.on('change', function(){ 
+  // 값이 변경되면 
+  if(window.FileReader){ 
+    // modern browser 
+    var filename = $(this)[0].files[0].name; 
+  } else { 
+      // old IE 
+      var filename = $(this).val().split('/').pop().split('\\').pop(); 
+      // 파일명만 추출 
+    } 
+    // 추출한 파일명 삽입 
+    $(this).siblings('.upload-name').val(filename); 
+  });
+
 

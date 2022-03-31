@@ -701,6 +701,50 @@
   border: 1px solid #141f40;
 }
 
+.input-wrapper ul.checkbox-list {
+  width: 300px;
+  height: 30px;
+  border: 1px solid #bcbfc7;
+  border-radius: 4px;
+  background-color: #fff;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.input-wrapper ul.checkbox-list:hover {
+  border: 1px solid #8c8c8c;
+}
+
+.input-wrapper ul.checkbox-list:focus {
+  border: 1px solid #141f40;
+}
+
+.input-wrapper ul.checkbox-list::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.input-wrapper ul.checkbox-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.input-wrapper ul.checkbox-list::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.input-wrapper ul.checkbox-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5px;
+  padding: 3px 16px;
+}
+
 .search-btns {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -904,6 +948,7 @@
 .processing-main table.jb-table .table-body tr td:nth-child(17) button {
   height: 30px;
   padding: 2px 10px;
+  margin: 5px 0;
 }
 
 .modal-processing {
@@ -964,6 +1009,11 @@
 
 .modal-processing .row .selectBox .label {
   height: 30px;
+}
+
+.modal-processing .row .selectBox .optionList {
+  width: calc(100% - 40px);
+  z-index: 100;
 }
 
 .modal-processing.two {
@@ -1217,5 +1267,41 @@
 
 .request-detail .content-sub-title {
   margin-bottom: 15px;
+}
+
+.campaign-main .search-wrapper .search-table-detail .input-wrapper .input-title {
+  width: 115px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.campaign-main .search-wrapper .search-table-detail .input-wrapper .selectBox {
+  width: 300px;
+}
+
+.campaign-main .search-wrapper .search-table-detail .input-wrapper .selectBox .label {
+  height: 30px;
+}
+
+.campaign-main .search-wrapper .search-table-detail .input-wrapper .selectBox .optionList {
+  top: 38px;
+}
+
+.campaign-main .search-wrapper .search-table-detail .input-wrapper.multi .input-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.campaign-main .search-wrapper .search-table-detail .input-wrapper.multi .input-detail .selectBox {
+  width: 140px;
+}
+
+.campaign-main .search-wrapper .search-table-detail .input-wrapper.multi .input-detail .checkbox-list {
+  position: absolute;
+  left: 150px;
 }
 /*# sourceMappingURL=style.css.map */
