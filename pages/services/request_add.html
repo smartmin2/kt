@@ -39,88 +39,92 @@
           <div class="content-title">요구사항관리</div>
           <div class="content-body">
             <!-- <form action="" method="post"> -->
-              <div class="setting-table">
-                <div class="row">
-                  <div class="setting-table-title ic-title-nece">요청구분</div>
-                  <div class="setting-table-content">
-                    <div class="input-group">
-                      <select>
-                        <option value="">문의</option>
-                        <option value="">개발요청</option>
-                        <option value="">자료요청</option>                                                              
-                        <option value="">데이터보정</option>                                                              
-                        <option value="">운영대행</option>                                                              
-                        <option value="">VOC</option>                                                              
-                        <option value="">장애</option>                                                              
-                      </select>
-                    </div>                       
-                    <span class="desc ic-txt-nece">Like 모수/인벤토리 추출은 자료요청, 셋탑그룹 등록은 서비스요청으로 접수 바랍니다. </span>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">요청구분</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select>
+                      <option value="">문의</option>
+                      <option value="">개발요청</option>
+                      <option value="">자료요청</option>
+                      <option value="">데이터보정</option>
+                      <option value="">운영대행</option>
+                      <option value="">VOC</option>
+                      <option value="">장애</option>
+                    </select>
                   </div>
+                  <span class="desc ic-txt-nece">Like 모수/인벤토리 추출은 자료요청, 셋탑그룹 등록은 서비스요청으로 접수 바랍니다. </span>
                 </div>
-                <div class="row">
-                  <div class="setting-table-title ic-title-nece">제목</div>
-                  <div class="setting-table-content">
-                    <input type="text" />
-                  </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">제목</div>
+                <div class="setting-table-content">
+                  <input type="text" />
                 </div>
-                <div class="row">
-                  <div class="setting-table-title">요청자</div>
-                  <div class="setting-table-content">홍길동</div>
-                </div>
-                <div class="row">
-                  <div class="setting-table-title ic-title-nece">서비스 선택</div>
-                  <div class="setting-table-content">
-                    <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle request-sv">서비스</button>
-                      <button type="button" class="btn-toggle">공통</button>
-                    </div>
-                  </div>
-                </div>
-                <div class="row request-sv-row">
-                  <div class="setting-table-title ic-title-nece">서비스</div>
-                  <div class="setting-table-content">
-                    <ul class="service-item">
-                      <li><button type="button" class="btn-toggle">Olleh TV 전체</button></li>
-                      <li><button type="button" class="btn-toggle">PrePlay</button></li>
-                      <li><button type="button" class="btn-toggle">MidPlay</button></li>
-                      <li><button type="button" class="btn-toggle">HomePlay</button></li>
-                      <li><button type="button" class="btn-toggle">Preplay+</button></li>
-                      <li><button type="button" class="btn-toggle">Preplay Q</button></li>
-                      <li><button type="button" class="btn-toggle">AD Q</button></li>
-                      <li><button type="button" class="btn-toggle">Time Q</button></li>
-                      <li><button type="button" class="btn-toggle">Channel Q</button></li>
-                      <li><button type="button" class="btn-toggle">Music Q</button></li>
-                      <li><button type="button" class="btn-toggle">PPL-POP</button></li>
-                      <li><button type="button" class="btn-toggle">Ending Q</button></li>
-                      <li><button type="button" class="btn-toggle">PostPlay</button></li>
-                      <li><button type="button" class="btn-toggle">PostPlay Q</button></li>
-                      <li><button type="button" class="btn-toggle">AD-network</button></li>
-                      <li><button type="button" class="btn-toggle">브랜드관</button></li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="setting-table-title">첨부파일</div>
-                  <div class="setting-table-content">
-                    <div class="choose-file">
-                      <input type="text" placeholder="선택된 파일이 없습니다." />
-                      <input type="file" id="file" />
-                      <label for="file" class="btn-select-file">파일선택</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="row setting-table-editor">
-                  <div class="setting-table-title ic-title-nece">본문</div>
-                  <div class="setting-table-content">
-                    <textarea name="" id="" cols="30" rows="20"></textarea>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">요청자</div>
+                <div class="setting-table-content">홍길동</div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">서비스 선택</div>
+                <div class="setting-table-content">
+                  <div class="toggle-wrap">
+                    <button type="button" class="btn-toggle request-sv">서비스</button>
+                    <button type="button" class="btn-toggle">공통</button>
                   </div>
                 </div>
               </div>
-              <div class="submit-btn-group">
-                <button type="button" class="btn-common">임시저장</button>
-                <button type="button" class="btn-common">결제요청</button>
-                <button type="button" class="btn-white">취소</button>
+              <div class="row request-sv-row">
+                <div class="setting-table-title ic-title-nece">서비스</div>
+                <div class="setting-table-content">
+                  <ul class="service-item">
+                    <li><button type="button" class="btn-toggle">Olleh TV 전체</button></li>
+                    <li><button type="button" class="btn-toggle">PrePlay</button></li>
+                    <li><button type="button" class="btn-toggle">MidPlay</button></li>
+                    <li><button type="button" class="btn-toggle">HomePlay</button></li>
+                    <li><button type="button" class="btn-toggle">Preplay+</button></li>
+                    <li><button type="button" class="btn-toggle">Preplay Q</button></li>
+                    <li><button type="button" class="btn-toggle">AD Q</button></li>
+                    <li><button type="button" class="btn-toggle">Time Q</button></li>
+                    <li><button type="button" class="btn-toggle">Channel Q</button></li>
+                    <li><button type="button" class="btn-toggle">Music Q</button></li>
+                    <li><button type="button" class="btn-toggle">PPL-POP</button></li>
+                    <li><button type="button" class="btn-toggle">Ending Q</button></li>
+                    <li><button type="button" class="btn-toggle">PostPlay</button></li>
+                    <li><button type="button" class="btn-toggle">PostPlay Q</button></li>
+                    <li><button type="button" class="btn-toggle">AD-network</button></li>
+                    <li><button type="button" class="btn-toggle">브랜드관</button></li>
+                  </ul>
+                </div>
               </div>
+              <div class="row">
+                <div class="setting-table-title">첨부파일</div>
+                <div class="setting-table-content">
+                  <div class="choose-file">
+                    <div class="filebox">
+                      <!-- ProgressBar 모달은 modal-progress 을 호출 -->
+                      <input class="upload-name" value="" disabled="disabled" placeholder="선택된 파일이 없습니다" />
+                      <label for="ex_filename">파일선택</label>
+                      <input type="file" id="ex_filename" class="upload-hidden" />
+                      <span class="desc">* 첨부파일당 최대 업로드 용량은 10M byte 입니다. </span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row setting-table-editor">
+                <div class="setting-table-title ic-title-nece">본문</div>
+                <div class="setting-table-content">
+                  <textarea name="" id="" cols="30" rows="20"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="submit-btn-group">
+              <button type="button" class="btn-common">임시저장</button>
+              <button type="button" class="btn-common">결제요청</button>
+              <button type="button" class="btn-white">취소</button>
+            </div>
             <!-- </form> -->
           </div>
         </div>

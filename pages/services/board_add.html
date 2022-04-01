@@ -54,10 +54,13 @@
                   <div class="setting-table-title">첨부파일</div>
                   <div class="setting-table-content">
                     <div class="choose-file">
-                      <input type="text" placeholder="선택된 파일이 없습니다." />
-                      <input type="file" id="file" />
-                      <label for="file" class="btn-select-file">파일선택</label>
-                      <button type="button" class="btn-add"></button>
+                      <div class="filebox">
+                        <input class="upload-name" value="" disabled="disabled" placeholder="선택된 파일이 없습니다" />
+                        <label for="ex_filename">파일선택</label>
+                        <input type="file" id="ex_filename" class="upload-hidden" />
+                        <button type="button" class="btn-add"></button>
+                        <span class="desc">* 첨부파일당 최대 업로드 용량은 10M byte 입니다. </span>
+                      </div>
                     </div>
                   </div>
                 </div>
