@@ -5,8 +5,7 @@
 }
 
 body {
-  background-color: $colors_background;
-  min-width: 1920px;
+  background-color: $colors_background;  
   overflow: overlay;
 }
 :root {
@@ -167,14 +166,22 @@ input[type="checkbox"] {
 }
 
 .header-wrapper {
+  background-color: $colors_main;
+
   .header-main-menubar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    justify-content: space-between;    
     height: 70px;
-    padding: 0 160px;
-    background-color: $colors_main;
+    
+    @include large {    
+      // width: 100%;
+      margin: 0 160px;
+    }
+    @include small {
+      margin: 0 auto; 
+      width: 1600px;     
+    }
 
     .header-logo {
       img {
@@ -308,6 +315,14 @@ input[type="checkbox"] {
 }
 
 .common-body {
+
+  @include large {    
+    margin: 0 160px;
+  }
+  @include small {
+    margin: 0 auto; 
+    width: 1600px;     
+  }
   display: flex;
   justify-content: space-between;
 }
@@ -332,7 +347,13 @@ button.menu-button {
   display: flex;
   align-items: center;
   gap: 20px;
-  margin: 0 160px;
+  @include large {    
+    margin: 0 160px;
+  }
+  @include small {
+    margin: 0 auto; 
+    width: 1600px;     
+  }  
   margin-top: 12px;
   color: $font_color_50;
   font-size: 12px;
@@ -353,11 +374,6 @@ button.menu-button {
       padding-top: 2px;
     }
   }
-}
-
-.common-body {
-  display: flex;
-  justify-content: space-between;
 }
 
 .sub-menu-wrapper {
@@ -460,7 +476,7 @@ button.menu-button {
 }
 
 .main {
-  padding: 0 160px;
+  // padding: 0 160px;
   margin-top: 15px;
 }
 
