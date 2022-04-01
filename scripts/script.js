@@ -441,10 +441,13 @@ $(".btn-toggle").on("click", function () {
     $(".request-sv-row").css("display", "none");
   }
 
-  if ($(".open").hasClass("active")) {
-    $(".sub").css("display", "flex");
-  } else {
-    $(".sub").css("display", "none");
+  if ($(this).hasClass("open")) {
+    const sub = $(this).parent(".toggle-wrap").find(".sub");
+    if ($(this).hasClass("active")) {
+      sub.css("display", "flex");
+    } else {
+      sub.css("display", "none");
+    }
   }
 });
 
