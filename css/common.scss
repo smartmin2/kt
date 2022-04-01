@@ -218,7 +218,19 @@ input[type="checkbox"] {
       gap: 6px;
     }
   }
+  .sub-menu-wrapper { 
+    width: 100%;
+    background-color: $blue300;
+  }
   .header-sub-menubar {
+    @include large {    
+      // width: 100%;
+      margin: 0 160px;
+    }
+    @include small {
+      margin: 0 auto; 
+      width: 1600px;     
+    }
     display: flex;
     align-items: center;
     // justify-content: center;
@@ -239,37 +251,37 @@ input[type="checkbox"] {
         display: flex;
       }
       &:nth-child(1) {
-        padding-left: 530px;
+        padding-left: 370px;
       }
       &:nth-child(2) {
-        padding-left: 600px;
+        padding-left: 440px;
       }
       &:nth-child(3) {
-        padding-left: 700px;
+        padding-left: 540px;
       }
       &:nth-child(4) {
-        padding-left: 300px;
+        padding-left: 140px;
       }
       &:nth-child(5) {
-        padding-left: 860px;
+        padding-left: 700px;
       }
       &:nth-child(6) {
-        padding-left: 950px;
+        padding-left: 790px;
       }
       &:nth-child(7) {
-        padding-left: 1020px;
+        padding-left: 860px;
       }
       &:nth-child(8) {
-        padding-left: 1080px;
+        padding-left: 920px;
       }
       &:nth-child(9) {
-        padding-left: 1160px;
-      }
-      &:nth-child(10) {
         padding-left: 1000px;
       }
+      &:nth-child(10) {
+        padding-left: 840px;
+      }
       &:nth-child(11) {
-        padding-left: 1100px;
+        padding-left: 940px;
       }
       li {
         cursor: pointer;
