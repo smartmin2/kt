@@ -167,7 +167,7 @@ input[type="checkbox"] {
 
 .header-wrapper {
   background-color: $colors_main;
-
+  min-width: 1600px;
   .header-main-menubar {
     display: flex;
     align-items: center;

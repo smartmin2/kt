@@ -676,17 +676,8 @@
       height: 60px;
       padding: 0 24px;
     }
-    .selectBox {
-      flex: 1;
-      padding: 0 20px;
-
-      .label {
-        height: 30px;
-      }
-      .optionList {
-        width: calc(100% - 40px);
-        z-index: 100;
-      }
+    .input-group {
+      margin:0 24px;
     }
   }
 }

@@ -231,6 +231,7 @@ input[type="checkbox"]:checked::before {
 
 .header-wrapper {
   background-color: #1bc1db;
+  min-width: 1600px;
 }
 
 .header-wrapper .header-main-menubar {
