@@ -149,7 +149,7 @@
 
             <div class="submit-btn-group">
               <button type="button" class="btn-common">저장</button>
-              <button type="button" class="btn-white">취소</button>
+              <button type="button" class="btn-white btn-list">취소</button>
             </div>
             <!-- </form> -->
           </div>
@@ -166,6 +166,10 @@
       loadMainMenu(10);
       loadSubMenu("10", 5);
       loadLnb(10, 5, 0);
+
+      $(".btn-list").on("click", function () {
+        location.href = "user_group.html";
+      });
     </script>
     <script></script>
   </body>

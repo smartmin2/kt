@@ -247,7 +247,7 @@
             <div class="submit-btn-group">
               <button type="button" class="btn-white">삭제</button>
               <button type="button" class="btn-common">저장</button>
-              <button type="button" class="btn-white">취소</button>
+              <button type="button" class="btn-white btn-list">취소</button>
             </div>
             <!-- </form> -->
           </div>
@@ -261,9 +261,13 @@
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
-      loadMainMenu(10);
-      loadSubMenu("10", 5);
-      loadLnb(10, 5, 0);
+      loadMainMenu(11);
+      loadSubMenu("11", 1);
+      loadLnb(11, 1, 0);
+
+      $(".btn-list").on("click", function () {
+        location.href = "user.html";
+      });
     </script>
     <script></script>
   </body>
