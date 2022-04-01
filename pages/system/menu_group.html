@@ -1,737 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../css/style.css">
-  <link rel="stylesheet" href="../../css/login.css">
-  <title>사용자그룹 관리</title>
-</head>
-<body>
-  <div class="header-wrapper">
-    <div class="header-main-menubar">
-      <div class="header-logo">
-        <img />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link rel="stylesheet" href="../../css/login.css" />
+    <title>사용자그룹 관리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
       </div>
-      <ul class="main-menu"></ul>
-      <div class="header-button">
-        <button class="menu-button">로그아웃</button>
-        <button class="menu-button">정보수정</button>
-      </div>
+      <div class="header-sub-menubar"></div>
     </div>
-    <div class="header-sub-menubar"></div>
-  </div>
-  <div class="location">
-    <div>홈</div>
-    <div>시스템관리</div>
-    <div>사용자그룹 관리</div>
-  </div>
-  <div class="main menu-group">
+    <div class="location">
+      <div>홈</div>
+      <div>시스템관리</div>
+      <div>사용자그룹 관리</div>
+    </div>
+    <div class="main menu-group">
       <div class="common-box common-body">
-          <div class="sub-menu-wrapper">
-            <div class="sub-menu-title">
-                소재
-            </div>
-            <ul class="sub-menu">
-          </ul>
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title">소재</div>
+          <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">사용자그룹 관리</div>
-          <div class="table-wrapper">
-            <div class="table-top">
-              <div class="table-top-count">
-                
+          <div class="content-body">
+            <div class="content-title">사용자그룹 관리</div>
+            <div class="table-wrapper">
+              <div class="table-top">
+                <div class="table-top-count"></div>
+                <div class="table-top-buttons">
+                  <button class="btn-toggle">자동 바인딩 사용</button>
+                  <button class="btn-toggle">상위 메뉴권한 적용</button>
+                </div>
               </div>
-              <div class="table-top-buttons">
-                <button class="btn-toggle">자동 바인딩 사용</button>
-                <button class="btn-toggle">상위 메뉴권한 적용</button>
+              <div class="jb-table-wrapper">
+                <table class="jb-table">
+                  <colgroup>
+                    <col style="width: 164px" />
+                    <col style="width: 230px" />
+                    <col style="width: 700px" />
+                    <col style="width: 187px" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>항목</th>
+                      <th>메뉴</th>
+                      <th colspan="2">권한</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr class="title">
+                      <td rowspan="19">
+                        운영메뉴
+                        <p class="desc">광고불가<br />그룹관리</p>
+                      </td>
+                      <td>시스템관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 요구사항관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 사용자관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 사용자그룹 관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 코드관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 메뉴관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 공지사항</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 게시판</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="title">
+                      <td>기준정보</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>환경설정</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>소재</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>영업</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>카테고리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>인벤토리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>계약</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>편성</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>청구정산</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>리포트</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>프로세스</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                  </tbody>
+                  <tbody class="table-body">
+                    <tr class="title">
+                      <td rowspan="19">
+                        분석메뉴
+                        <p class="desc">광고불가<br />그룹관리</p>
+                      </td>
+                      <td>매체분석</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 요구사항관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 사용자관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 사용자그룹 관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 코드관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 메뉴관리</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 공지사항</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="hide">
+                      <td>- 게시판</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap sub">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr class="title">
+                      <td>운영분석</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>광고효과분석</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>영업정보</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                    <tr class="title">
+                      <td>분석</td>
+                      <td>
+                        <div class="toggle-wrap">
+                          <button type="button" class="btn-toggle">권한없음</button>
+                          <button type="button" class="btn-toggle">읽기권한</button>
+                          <button type="button" class="btn-toggle">전체권한</button>
+                          <div class="toggle-wrap">
+                            <div class="input-group">
+                              <select>
+                                <option value="">시스템 관리자</option>
+                                <option value="">영업사 관리자</option>
+                                <option value="">영업사 팀장</option>
+                                <option value="">사용자 선택</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </td>
+                      <td class="detail-open">세부설정</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
             </div>
-            <div class="jb-table-wrapper">
-              <table class="jb-table">
-                <colgroup>
-                  <col style="width: 164px" />
-                  <col style="width: 230px" />
-                  <col style="width: 700px" />
-                  <col style="width: 187px" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th>항목</th>
-                    <th>메뉴</th>
-                    <th colspan="2">권한</th>
-                  </tr>
-                </thead>
-                <tbody class="table-body">
-                  <tr class="title">
-                    <td rowspan="19">운영메뉴 <p class="desc">광고불가<br>그룹관리</p></td>
-                    <td>시스템관리</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="hide">
-                    <td>- 요구사항관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 사용자관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 사용자그룹 관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 코드관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 메뉴관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 공지사항</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 게시판</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="title">
-                    <td>기준정보</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>환경설정</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>소재</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>영업</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>카테고리</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>인벤토리</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>계약</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>편성</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>청구정산</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>리포트</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>프로세스</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                </tbody>
-                <tbody class="table-body">
-                  <tr class="title">
-                    <td rowspan="19">분석메뉴 <p class="desc">광고불가<br>그룹관리</p></td>
-                    <td>매체분석</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="hide">
-                    <td>- 요구사항관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 사용자관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 사용자그룹 관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 코드관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 메뉴관리</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 공지사항</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="hide">
-                    <td>- 게시판</td>
-                    <td>                      
-                      <div class="toggle-wrap">
-                      <button type="button" class="btn-toggle">권한없음</button>
-                      <button type="button" class="btn-toggle">읽기권한</button>
-                      <button type="button" class="btn-toggle">전체권한</button>
-                      <div class="toggle-wrap sub">
-                        <div class="selectBox">
-                          <button class="label">시스템 관리자</button>
-                          <ul class="optionList">
-                            <li class="optionItem">영업사 관리자</li>
-                            <li class="optionItem">영업사 팀장</li>
-                            <li class="optionItem">사용자 선택</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    </td>
-                  </tr>
-                  <tr class="title">
-                    <td>운영분석</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>광고효과분석</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>영업정보</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                  <tr class="title">
-                    <td>분석</td>
-                    <td>  
-                        <div class="toggle-wrap">
-                        <button type="button" class="btn-toggle">권한없음</button>
-                        <button type="button" class="btn-toggle">읽기권한</button>
-                        <button type="button" class="btn-toggle">전체권한</button>
-                        <div class="toggle-wrap">
-                          <div class="selectBox">
-                            <button class="label">시스템 관리자</button>
-                            <ul class="optionList">
-                              <li class="optionItem">영업사 관리자</li>
-                              <li class="optionItem">영업사 팀장</li>
-                              <li class="optionItem">사용자 선택</li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </td>
-                    <td class="detail-open">세부설정</td>                         
-                  </tr>
-                </tbody>
-              </table>
+            <div class="submit-btn-group">
+              <button type="button" class="btn-common">저장</button>
+              <button type="button" class="btn-white btn-list">취소</button>
             </div>
-            <ul class="pagination">
-              <li>
-                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
-              </li>
-              <li><a href="#" class="num">1</a></li>
-              <li><a href="#" class="num active">2</a></li>
-              <li><a href="#" class="num">3</a></li>
-              <li><a href="#" class="num">4</a></li>
-              <li><a href="#" class="num">5</a></li>
-              <li><a href="#" class="num">6</a></li>
-              <li><a href="#" class="num">7</a></li>
-              <li><a href="#" class="num">8</a></li>
-              <li><a href="#" class="num">9</a></li>
-              <li><a href="#" class="num">10</a></li>
-              <li>
-                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -745,13 +728,13 @@
     <script src="../../scripts/jquery-ui.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
-     loadMainMenu(11);
+      loadMainMenu(11);
       loadSubMenu("11", 2);
       loadLnb(11, 2, 0);
 
-      $('.detail-open').on('click',function(){
-        $(this).parent().nextUntil('.title').toggleClass('hide');
-      });    
+      $(".detail-open").on("click", function () {
+        $(this).parent().nextUntil(".title").toggleClass("hide");
+      });
     </script>
   </body>
 </html>
