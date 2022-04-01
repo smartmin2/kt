@@ -218,7 +218,7 @@ input[type="checkbox"] {
       gap: 6px;
     }
   }
-  .sub-menu-wrapper { 
+  .forlder-menu-wrapper { 
     width: 100%;
     background-color: $blue300;
   }
@@ -356,6 +356,7 @@ button.menu-button {
 }
 
 .location {
+  height: 35px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -489,7 +490,7 @@ button.menu-button {
 
 .main {
   // padding: 0 160px;
-  margin-top: 15px;
+  // margin-top: 15px;
 }
 
 .setting-table {

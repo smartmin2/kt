@@ -301,7 +301,7 @@ input[type="checkbox"]:checked::before {
   gap: 6px;
 }
 
-.header-wrapper .sub-menu-wrapper {
+.header-wrapper .forlder-menu-wrapper {
   width: 100%;
   background-color: #0ea4bc;
 }
@@ -475,6 +475,7 @@ button.menu-button:hover {
 }
 
 .location {
+  height: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -637,10 +638,6 @@ button.menu-button:hover {
   font-size: 16px;
   font-weight: bold;
   color: #35497b;
-}
-
-.main {
-  margin-top: 15px;
 }
 
 .setting-table {
