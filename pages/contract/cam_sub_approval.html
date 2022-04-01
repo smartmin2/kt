@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>캠페인</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>캠페인 관리</div>
+    <div>캠페인</div>
+    <div>캠페인 청약승인</div>
+  </div>
+  <div class="main cam-sub-approval">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                캠페인 관리
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">캠페인 청약승인</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">집행기간</div>                    
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">광고주</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+              </div>              
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">캠페인명</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">영업사</div>    
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">SD</option>
+                        <option value="">HD</option>                        
+                        <option value="">ASP</option>                        
+                        <option value="">UHD</option>                        
+                        <option value="">FHD</option>                                                
+                      </select>
+                    </div>                                     
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">대행사</div>                    
+                    <input type="text" value="" />    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper multi">
+                    <div class="input-title">서비스</div>   
+                    <div class="input-detail">
+                      <div class="input-group width-140">
+                        <select class="service-select">
+                          <option value="">전체</option>
+                          <option value="">Olleh TV</option>
+                          <option value="">Olleh TV Mobile</option>                        
+                          <option value="">DS</option>                        
+                          <option value="">Digital Cinema</option>                        
+                          <option value="">기가지니</option>                                                
+                        </select>
+                      </div>            
+                      <ul class="checkbox-list">
+                        <li><input type="checkbox">전체</li>
+                        <li><input type="checkbox">서비스1</li>
+                        <li><input type="checkbox">서비스2</li>
+                        <li><input type="checkbox">서비스3</li>
+                        <li><input type="checkbox">서비스4</li>
+                        <li><input type="checkbox">서비스5</li>
+                        <li><input type="checkbox">서비스6</li>
+                        <li><input type="checkbox">서비스7</li>
+                        <li><input type="checkbox">서비스8</li>
+                        <li><input type="checkbox">서비스9</li>
+                        <li><input type="checkbox">서비스10</li>
+                      </ul>       
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <ul class="tab">
+            <li class="tab-menu active" data-tab="tab01">캠페인 승인 대상 목록</li>
+            <li class="tab-menu" data-tab="tab02">청약신청 목록</li>
+          </ul>
+          <div class="tab-content active" id="tab01">
+            <div class="table-wrapper">                            
+                <table class="jb-table">
+                  <colgroup>                  
+                    <col style="width: 3%" />
+                    <col style="width: 9%" />
+                    <col style="width: 9%" />
+                    <col style="width: 9%" />
+                    <col style="width: 25%" />
+                    <col style="width: 8%" />
+                    <col style="width: 10%" />
+                    <col style="width: 9%" />
+                    <col style="width: 6%" />
+                    <col style="width: 7%" />                
+                  </colgroup>
+                  <thead>
+                    <tr> 
+                      <th><input type="checkbox"></th>                   
+                      <th>광고주</th>
+                      <th>대행사</th>                    
+                      <th>영업사</th>
+                      <th>캠페인명</th>
+                      <th>금액(원)</th>                      
+                      <th>기간</th>
+                      <th>보장노출(량)</th>                                      
+                      <th>보너스노출(량)</th>
+                      <th>변경내역</th>
+                    </tr>                  
+                </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td><input type="checkbox"></td>                   
+                      <td>구KT</td>
+                      <td></td>
+                      <td>(주)나스미디어</td>
+                      <td>UHD3.0 Biz올인원 KT기술단 검증</td>
+                      <td></td>
+                      <td>2021-01-20 ~ 2022-06-30</td>
+                      <td>200,000</td>
+                      <td>10,000</td>                      
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox"></td>                   
+                      <td>구KT</td>
+                      <td></td>
+                      <td>(주)나스미디어</td>
+                      <td>UHD3.0 Biz올인원 KT기술단 검증</td>
+                      <td></td>
+                      <td>2021-01-20 ~ 2022-06-30</td>
+                      <td>300,000</td>
+                      <td>20,000</td>                      
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>              
+            </div>                         
+          </div>
+          <div class="tab-content" id="tab02">
+            <div class="table-wrapper">              
+              <div class="jb-table-wrapper">
+                <table class="jb-table">
+                  <colgroup>        
+                    <col style="width: 3%" />
+                    <col style="width: 9%" />
+                    <col style="width: 9%" />
+                    <col style="width: 9%" />
+                    <col style="width: 20%" />
+                    <col style="width: 9%" />
+                    <col style="width: 6%" />
+                    <col style="width: 4%" />
+                    <col style="width: 4%" />
+                    <col style="width: 4%" />
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />
+                    <col style="width: 4%" />
+                    <col style="width: 4%" />
+                    <col style="width: 4%" />
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                
+                    <col style="width: 4%" />                                    
+                  </colgroup>
+                  <thead>
+                    <tr> 
+                      <th><input type="checkbox"></th>                   
+                      <th>광고주</th>
+                      <th>대행사</th>                    
+                      <th>영업사</th>
+                      <th>캠페인명</th>
+                      <th>금액(원)</th>
+                      <th>기간</th>
+                      <th>서비스</th>
+                      <th>상세금액</th>
+                      <th>독점유무</th>
+                      <th>지역타게팅</th>
+                      <th>시간타게팅</th>
+                      <th>요일타게팅</th>
+                      <th>유료타게팅</th>
+                      <th>처음/이어보기타게팅</th>
+                      <th>카테고리</th>
+                      <th>초수</th>
+                      <th>단가</th>
+                      <th>보장노출(량)</th>
+                      <th>보너스노출(량)</th>
+                      <th>개런티노출(량)</th>
+                      <th>보너스율</th>
+                      <th>청약(량))</th>
+                      <th>애니메이션</th>                                      
+                      <th>청약건수</th>
+                    </tr>                  
+                </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td><input type="checkbox"></td>
+                      <td>구KT</td>
+                      <td></td>
+                      <td>(주)나스미디어</td>
+                      <td>UHD3.0 Biz올인원 KT기술단 검증</td>
+                      <td></td>
+                      <td>2021-01-20 ~ 2022-06-30</td>
+                      <td>300,000</td>
+                      <td>20,000</td>                      
+                      <td></td>
+                      <td>구KT</td>
+                      <td></td>
+                      <td>(주)나스미디어</td>
+                      <td>검증</td>
+                      <td></td>
+                      <td></td>
+                      <td>300,000</td>
+                      <td>20,000</td>                      
+                      <td>10,000</td>
+                      <td>10,000</td>
+                      <td>10,000</td>
+                      <td>12%</td>
+                      <td>10,000</td>
+                      <td>300,000</td>
+                      <td>20,000</td>        
+                    </tr>                    
+                  </tbody>
+                </table>
+              </div>
+            </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(2);
+      loadSubMenu("2", 1);
+      loadLnb(2, 1, 4);
+
+      $(".service-select").on("click",function(){
+        $(".checkbox-list").animate({height:'225px'},'fast');
+      })
+    </script>
+  </body>
+</html>

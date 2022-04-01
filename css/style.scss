@@ -1904,10 +1904,7 @@
           .input-detail {
             display: flex;
             gap: 10px;
-            position: relative;
-            .selectBox {
-              width: 140px;
-            }
+            position: relative;            
             .checkbox-list {
               position: absolute;
               left: 150px;
@@ -1918,8 +1915,78 @@
     }
   }
 }
-//------------------------------------------------------
 
+.cam-sub-inquiry {
+  .multi {
+    .input-detail {
+      display: flex;
+      gap: 10px;
+      position: relative;            
+      .checkbox-list {
+        position: absolute;
+        left: 150px;
+      }
+    }
+  }
+
+  .tab-content {
+    margin-bottom: 20px;
+  }
+   .jb-table tbody tr{
+      height: 60px ;
+      line-height: 1.8;
+      td {
+          &:nth-child(7) {
+            text-align:center;
+            .btn-rec-teal {
+              display: inline;
+              width: 100px;
+              padding: 3px 10px;          
+            }
+          }
+        }
+
+      &:nth-child(5) {text-align: right;}
+      &:nth-child(6) {text-align: right;}
+      &:nth-child(9) {text-align: right;}
+    }
+  
+
+  strong {
+    &.green { color: green;}
+    &.blue { color: blue;}
+    &.red { color: red;}
+  }
+}
+
+.cam-sub-approval {
+  .multi {
+    .input-detail {
+      display: flex;
+      gap: 10px;
+      position: relative;            
+      .checkbox-list {
+        position: absolute;
+        left: 150px;
+      }
+    }
+  }
+  .tab-content {
+    margin-bottom: 20px;
+  }
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;  
+    padding-bottom: 10px;  
+
+    @include scrollbar("H");
+  
+    table.jb-table {
+      min-width: 2400px;      
+    }
+  }
+}
 //--------------------inventory----------------------------
 table.jb-table thead.double{
   height: 60px;
