@@ -1064,43 +1064,53 @@
   gap: 10px;
 }
 
-.processing-detail-main .row.setting-table-editor, .processing-add .row.setting-table-editor {
+.processing-detail-main .row.setting-table-editor,
+.processing-add .row.setting-table-editor {
   height: 171.5px;
 }
 
-.processing-detail-main .row.setting-table-editor .setting-table-title, .processing-add .row.setting-table-editor .setting-table-title {
+.processing-detail-main .row.setting-table-editor .setting-table-title,
+.processing-add .row.setting-table-editor .setting-table-title {
   height: 100%;
 }
 
-.processing-detail-main .row.double-row, .processing-add .row.double-row {
+.processing-detail-main .row.double-row,
+.processing-add .row.double-row {
   height: 132px;
 }
 
-.processing-detail-main .row.double-row .setting-table-title, .processing-add .row.double-row .setting-table-title {
+.processing-detail-main .row.double-row .setting-table-title,
+.processing-add .row.double-row .setting-table-title {
   height: 100%;
 }
 
-.processing-detail-main .row.double-row .setting-table-content, .processing-add .row.double-row .setting-table-content {
+.processing-detail-main .row.double-row .setting-table-content,
+.processing-add .row.double-row .setting-table-content {
   padding: 0;
 }
 
-.processing-detail-main .setting-table-content, .processing-add .setting-table-content {
+.processing-detail-main .setting-table-content,
+.processing-add .setting-table-content {
   gap: 10px;
 }
 
-.processing-detail-main .setting-table-content input[type="text"].file-name, .processing-add .setting-table-content input[type="text"].file-name {
+.processing-detail-main .setting-table-content input[type="text"].file-name,
+.processing-add .setting-table-content input[type="text"].file-name {
   width: 500px;
 }
 
-.processing-detail-main .setting-table-content .selectBox, .processing-add .setting-table-content .selectBox {
+.processing-detail-main .setting-table-content .selectBox,
+.processing-add .setting-table-content .selectBox {
   width: 300px;
 }
 
-.processing-detail-main .setting-table-content .selectBox .label, .processing-add .setting-table-content .selectBox .label {
+.processing-detail-main .setting-table-content .selectBox .label,
+.processing-add .setting-table-content .selectBox .label {
   height: 30px;
 }
 
-.processing-detail-main .setting-table-content.h-multi, .processing-add .setting-table-content.h-multi {
+.processing-detail-main .setting-table-content.h-multi,
+.processing-add .setting-table-content.h-multi {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1110,7 +1120,8 @@
           flex-direction: column;
 }
 
-.processing-detail-main .setting-table-content.h-multi .file-content, .processing-add .setting-table-content.h-multi .file-content {
+.processing-detail-main .setting-table-content.h-multi .file-content,
+.processing-add .setting-table-content.h-multi .file-content {
   width: 100%;
   padding: 0 20px;
   -webkit-box-flex: 1;
@@ -1126,15 +1137,18 @@
   min-height: 60px;
 }
 
-.processing-detail-main .setting-table-content.h-multi .file-content:first-child, .processing-add .setting-table-content.h-multi .file-content:first-child {
+.processing-detail-main .setting-table-content.h-multi .file-content:first-child,
+.processing-add .setting-table-content.h-multi .file-content:first-child {
   border-bottom: 1px solid #e6e8ea;
 }
 
-.processing-detail-main .input-w140, .processing-add .input-w140 {
+.processing-detail-main .input-w140,
+.processing-add .input-w140 {
   width: 140px;
 }
 
-.processing-detail-main .input-w100p, .processing-add .input-w100p {
+.processing-detail-main .input-w100p,
+.processing-add .input-w100p {
   width: 100%;
 }
 
