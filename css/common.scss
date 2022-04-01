@@ -945,7 +945,7 @@ textarea {
   &:hover {
     border: solid 1px $colors_font;
     color: $colors_font;
-    font-weight: bold;
+    // font-weight: bold;
   }
 }
 .btn-select-group {
@@ -1281,4 +1281,5 @@ select {
 
    
   }
-}
+}  
+.width-140 {width: 140px;}

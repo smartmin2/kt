@@ -208,7 +208,10 @@
           LiSub = document.createElement("li");
           LiSub.innerHTML = subitem.name;
           if (ithree > 0 && i==iSubMenu-1 && ithree-1 == j)
+          {
             LiSub.classList.add("active");
+            details.open = true;
+          }
           ulSub.appendChild(LiSub);
         });
         details.appendChild(ulSub);
