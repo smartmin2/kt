@@ -1883,6 +1883,17 @@
     }
   }
 }
+.multi {
+  .input-detail {
+    display: flex;
+    gap: 10px;
+    position: relative;            
+    .checkbox-list {
+      position: absolute;
+      left: 150px;
+    }
+  }
+}
 .campaign-main {
   .search-wrapper {
     .search-table-detail {
@@ -1900,35 +1911,12 @@
             top: 38px;
           }
         }
-        &.multi {
-          .input-detail {
-            display: flex;
-            gap: 10px;
-            position: relative;            
-            .checkbox-list {
-              position: absolute;
-              left: 150px;
-            }
-          }
-        }
       }
     }
   }
 }
 
 .cam-sub-inquiry {
-  .multi {
-    .input-detail {
-      display: flex;
-      gap: 10px;
-      position: relative;            
-      .checkbox-list {
-        position: absolute;
-        left: 150px;
-      }
-    }
-  }
-
   .tab-content {
     margin-bottom: 20px;
   }
@@ -1950,27 +1938,9 @@
       &:nth-child(6) {text-align: right;}
       &:nth-child(9) {text-align: right;}
     }
-  
-
-  strong {
-    &.green { color: green;}
-    &.blue { color: blue;}
-    &.red { color: red;}
-  }
 }
 
 .cam-sub-approval {
-  .multi {
-    .input-detail {
-      display: flex;
-      gap: 10px;
-      position: relative;            
-      .checkbox-list {
-        position: absolute;
-        left: 150px;
-      }
-    }
-  }
   .tab-content {
     margin-bottom: 20px;
   }

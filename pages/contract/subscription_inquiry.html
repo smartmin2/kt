@@ -27,9 +27,9 @@
     <div>홈</div>
     <div>캠페인 관리</div>
     <div>캠페인</div>
-    <div>캠페인 청약승인</div>
+    <div>청약 조회</div>
   </div>
-  <div class="main cam-sub-approval">
+  <div class="main subscription-inquiry">
       <div class="common-box common-body">
           <div class="sub-menu-wrapper">
             <div class="sub-menu-title">
@@ -39,7 +39,7 @@
           </ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">캠페인 청약승인</div>
+          <div class="content-title">청약 조회</div>
           <div class="search-wrapper">
             <div class="search-top">
               <div class="content-sub-title">조회조건설정</div>              
@@ -124,6 +124,34 @@
                   </div> 
                 </div>
               </div>
+              <div class="row">                
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">승인상태</div>    
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="01">예약요청</option>
+                        <option value="02">승인요청</option>
+                        <option value="03">청약반려</option>
+                        <option value="04">청약승인</option>
+                        <option value="05">중간종료</option>
+                        <option value="06">삭제</option>
+                        <option value="07">1차승인</option>
+                        <option value="08">중지</option>
+                        <option value="15">중간종료요청</option>
+                        <option value="16">삭제요청</option>
+                        <option value="12">재승인요청</option>
+                        <option value="17">삭제요청승인</option>
+                        <option value="13">재승인반려</option>
+                        <option value="18">즉시종료요청</option>
+                        <option value="19">즉시종료</option>
+                        <option value="11">기간변경요청</option>
+                      </select>
+                    </div>                                     
+                  </div> 
+                </div>
+              </div>
             </div>
             <div class="search-bottom"><button class="btn-common">조회</button></div>
           </div>
@@ -131,159 +159,132 @@
             승인&nbsp;<strong class="green">305</strong> 건,&nbsp;미승인&nbsp;<strong class="blue">305</strong> 건&nbsp;/&nbsp;전체&nbsp;<strong class="red">0</strong>건
           </div>
           <ul class="tab">
-            <li class="tab-menu active" data-tab="tab01">캠페인 승인 대상 목록</li>
+            <li class="tab-menu active" data-tab="tab01">오버부킹 목록</li>
             <li class="tab-menu" data-tab="tab02">청약신청 목록</li>
           </ul>
           <div class="tab-content active" id="tab01">
             <div class="table-wrapper">                            
                 <table class="jb-table">
                   <colgroup>                  
-                    <col style="width: 3%" />
                     <col style="width: 9%" />
                     <col style="width: 9%" />
-                    <col style="width: 9%" />
-                    <col style="width: 25%" />
+                    <col style="width: 11%" />
+                    <col/>
                     <col style="width: 8%" />
+                    <col style="width: 8%" />
+                    <col style="width: 5%" />
                     <col style="width: 10%" />
                     <col style="width: 9%" />
                     <col style="width: 6%" />
                     <col style="width: 7%" />                
                   </colgroup>
                   <thead>
-                    <tr> 
-                      <th><input type="checkbox"></th>                   
+                    <tr>                    
                       <th>광고주</th>
                       <th>대행사</th>                    
                       <th>영업사</th>
                       <th>캠페인명</th>
-                      <th>금액(원)</th>                      
+                      <th>금액(원)</th>
+                      <th>보너스노출(량)</th>
+                      <th>서비스</th>
+                      <th>청약명</th>
                       <th>기간</th>
                       <th>보장노출(량)</th>                                      
-                      <th>보너스노출(량)</th>
-                      <th>변경내역</th>
+                      <th>승인</th>
                     </tr>                  
                 </thead>
                   <tbody class="table-body">
                     <tr>
-                      <td><input type="checkbox"></td>                   
                       <td>구KT</td>
                       <td></td>
                       <td>(주)나스미디어</td>
                       <td>UHD3.0 Biz올인원 KT기술단 검증</td>
                       <td></td>
-                      <td>2021-01-20 ~ 2022-06-30</td>
                       <td>200,000</td>
-                      <td>10,000</td>                      
-                      <td></td>
+                      <td>Pause</td>
+                      <td>KBS > 예능 </td>
+                      <td>2021-01-20 ~ 2022-06-30</td>
+                      <td>10,000</td>
+                      <td>청약승인</td>
                     </tr>
                     <tr>
-                      <td><input type="checkbox"></td>                   
                       <td>구KT</td>
                       <td></td>
                       <td>(주)나스미디어</td>
                       <td>UHD3.0 Biz올인원 KT기술단 검증</td>
-                      <td></td>
+                      <td>30,000</td>
+                      <td>200,000</td>
+                      <td>Pause</td>
+                      <td>KBS > 예능</td>
                       <td>2021-01-20 ~ 2022-06-30</td>
-                      <td>300,000</td>
-                      <td>20,000</td>                      
-                      <td></td>
+                      <td>10,000,000</td>
+                      <td>전체승인</td>
                     </tr>
                   </tbody>
                 </table>              
             </div>                         
           </div>
           <div class="tab-content" id="tab02">
-            <div class="table-wrapper">              
-              <div class="jb-table-wrapper">
+            <div class="table-wrapper">                            
                 <table class="jb-table">
-                  <colgroup>        
-                    <col style="width: 3%" />
+                  <colgroup>                  
                     <col style="width: 9%" />
                     <col style="width: 9%" />
-                    <col style="width: 9%" />
-                    <col style="width: 20%" />
+                    <col style="width: 11%" />
+                    <col/>
+                    <col style="width: 8%" />
+                    <col style="width: 8%" />
+                    <col style="width: 5%" />
+                    <col style="width: 10%" />
                     <col style="width: 9%" />
                     <col style="width: 6%" />
-                    <col style="width: 4%" />
-                    <col style="width: 4%" />
-                    <col style="width: 4%" />
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />
-                    <col style="width: 4%" />
-                    <col style="width: 4%" />
-                    <col style="width: 4%" />
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                
-                    <col style="width: 4%" />                                    
+                    <col style="width: 7%" />                
                   </colgroup>
                   <thead>
-                    <tr> 
-                      <th><input type="checkbox"></th>                   
+                    <tr>                    
                       <th>광고주</th>
                       <th>대행사</th>                    
                       <th>영업사</th>
                       <th>캠페인명</th>
                       <th>금액(원)</th>
-                      <th>기간</th>
-                      <th>서비스</th>
-                      <th>상세금액</th>
-                      <th>독점유무</th>
-                      <th>지역타게팅</th>
-                      <th>시간타게팅</th>
-                      <th>요일타게팅</th>
-                      <th>유료타게팅</th>
-                      <th>처음/이어보기타게팅</th>
-                      <th>카테고리</th>
-                      <th>초수</th>
-                      <th>단가</th>
-                      <th>보장노출(량)</th>
                       <th>보너스노출(량)</th>
-                      <th>개런티노출(량)</th>
-                      <th>보너스율</th>
-                      <th>청약(량))</th>
-                      <th>애니메이션</th>                                      
-                      <th>청약건수</th>
+                      <th>서비스</th>
+                      <th>청약명</th>
+                      <th>기간</th>
+                      <th>보장노출(량)</th>                                      
+                      <th>승인</th>
                     </tr>                  
                 </thead>
                   <tbody class="table-body">
                     <tr>
-                      <td><input type="checkbox"></td>
+                      <td>구KT</td>
+                      <td></td>
+                      <td>현대자동차</td>
+                      <td>UHD3.0 Biz올인원 KT기술단 검증</td>
+                      <td></td>
+                      <td>200,000</td>
+                      <td>Pause</td>
+                      <td>KBS > 예능 </td>
+                      <td>2021-01-20 ~ 2022-06-30</td>
+                      <td>10,000</td>
+                      <td>청약승인</td>
+                    </tr>
+                    <tr>
                       <td>구KT</td>
                       <td></td>
                       <td>(주)나스미디어</td>
                       <td>UHD3.0 Biz올인원 KT기술단 검증</td>
-                      <td></td>
+                      <td>30,000</td>
+                      <td>200,000</td>
+                      <td>Pause</td>
+                      <td>KBS > 예능</td>
                       <td>2021-01-20 ~ 2022-06-30</td>
-                      <td>300,000</td>
-                      <td>20,000</td>                      
-                      <td></td>
-                      <td>구KT</td>
-                      <td></td>
-                      <td>(주)나스미디어</td>
-                      <td>검증</td>
-                      <td></td>
-                      <td></td>
-                      <td>300,000</td>
-                      <td>20,000</td>                      
-                      <td>10,000</td>
-                      <td>10,000</td>
-                      <td>10,000</td>
-                      <td>12%</td>
-                      <td>10,000</td>
-                      <td>300,000</td>
-                      <td>20,000</td>        
-                    </tr>                    
+                      <td>10,000,000</td>
+                      <td>전체승인</td>
+                    </tr>
                   </tbody>
-                </table>
-              </div>
-            </div> 
+                </table>              
+            </div>   
           </div>
         </div>
       </div>
@@ -299,7 +300,7 @@
     <script>
       loadMainMenu(2);
       loadSubMenu("2", 1);
-      loadLnb(2, 1, 4);
+      loadLnb(2, 1, 5);
 
       $(".service-select").on("click",function(){
         $(".checkbox-list").animate({height:'225px'},'fast');

@@ -2520,6 +2520,19 @@
   width: 200px;
 }
 
+.multi .input-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.multi .input-detail .checkbox-list {
+  position: absolute;
+  left: 150px;
+}
+
 .campaign-main .search-wrapper .search-table-detail .input-wrapper .input-title {
   width: 115px;
   -webkit-box-pack: start;
@@ -2537,32 +2550,6 @@
 
 .campaign-main .search-wrapper .search-table-detail .input-wrapper .selectBox .optionList {
   top: 38px;
-}
-
-.campaign-main .search-wrapper .search-table-detail .input-wrapper.multi .input-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  position: relative;
-}
-
-.campaign-main .search-wrapper .search-table-detail .input-wrapper.multi .input-detail .checkbox-list {
-  position: absolute;
-  left: 150px;
-}
-
-.cam-sub-inquiry .multi .input-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  position: relative;
-}
-
-.cam-sub-inquiry .multi .input-detail .checkbox-list {
-  position: absolute;
-  left: 150px;
 }
 
 .cam-sub-inquiry .tab-content {
@@ -2594,31 +2581,6 @@
 
 .cam-sub-inquiry .jb-table tbody tr:nth-child(9) {
   text-align: right;
-}
-
-.cam-sub-inquiry strong.green {
-  color: green;
-}
-
-.cam-sub-inquiry strong.blue {
-  color: blue;
-}
-
-.cam-sub-inquiry strong.red {
-  color: red;
-}
-
-.cam-sub-approval .multi .input-detail {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-  position: relative;
-}
-
-.cam-sub-approval .multi .input-detail .checkbox-list {
-  position: absolute;
-  left: 150px;
 }
 
 .cam-sub-approval .tab-content {

@@ -1382,6 +1382,7 @@ textarea::-webkit-scrollbar-thumb {
   font-size: 14px;
   text-align: center;
   color: #282a3f;
+  background-color: #fff;
 }
 
 .btn-select.active {
@@ -1824,6 +1825,35 @@ select {
 
 .list-box-wrap .btn-rec-teal:first-child {
   margin-bottom: 15px;
+}
+
+strong.green {
+  color: green;
+}
+
+strong.blue {
+  color: blue;
+}
+
+strong.red {
+  color: red;
+}
+
+.info_line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #f1f7ff;
+  font-size: 15px;
+  color: #586a9b;
 }
 
 .width-140 {

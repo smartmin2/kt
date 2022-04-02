@@ -965,6 +965,7 @@ textarea {
   font-size: 14px; 
   text-align: center;
   color: $black100;
+  background-color: #fff;
 
   &.active {
     border: solid 1px $colors_font;
@@ -1311,4 +1312,23 @@ select {
    
   }
 }  
+
+strong {
+  &.green { color: green;}
+  &.blue { color: blue;}
+  &.red { color: red;}
+}
+
+.info_line {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #f1f7ff;
+  font-size: 15px;  
+  color: #586a9b;  
+}
 .width-140 {width: 140px;}
