@@ -415,8 +415,7 @@ button.menu-button {
       cursor: pointer;
 
       &:not(.three-depth):hover{
-        background-color: rgba(27, 192, 218, 0.5);        
-        font-weight: bold;
+        color: $colors_font;
       }
       &.active{
        //  position: relative;
@@ -766,7 +765,7 @@ textarea {
   }
   @include scrollbar('H');
 }
-input:after {
+input[type=date]:after {
   position: absolute;
   top: 50%;
   right: 10px;

@@ -557,8 +557,7 @@ button.menu-button:hover {
 }
 
 .sub-menu-wrapper ul.sub-menu li:not(.three-depth):hover {
-  background-color: rgba(27, 192, 218, 0.5);
-  font-weight: bold;
+  color: #00aace;
 }
 
 .sub-menu-wrapper ul.sub-menu li.active {
@@ -1056,7 +1055,7 @@ textarea::-webkit-scrollbar-thumb {
   background: #b6bdc1;
 }
 
-input:after {
+input[type=date]:after {
   position: absolute;
   top: 50%;
   right: 10px;

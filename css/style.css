@@ -2573,6 +2573,10 @@
   padding: 3px 10px;
 }
 
+.cam-sub-inquiry .jb-table tbody tr td:nth-child(7) .btn-rec-teal span {
+  color: #fff;
+}
+
 .cam-sub-inquiry .jb-table tbody tr:nth-child(5) {
   text-align: right;
 }
@@ -3167,45 +3171,6 @@
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-}
-
-.modal-installment .modal-body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 10px;
-}
-
-.modal-installment .modal-body .modal-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
-}
-
-.modal-installment .modal-body .modal-content input[type=date] {
-  width: 142px;
-  height: 30px;
-}
-
-.modal-installment .modal-body .modal-content .modal-content-title {
-  width: 150px;
-  height: 30px;
-  padding: 5px 12px 6px;
-  border-radius: 10px;
-  background-color: #f1f7ff;
-  font-size: 13px;
-  font-weight: bold;
-  line-height: 1.31;
-  text-align: center;
-  color: #586a9b;
 }
 
 table.jb-table thead.double {
