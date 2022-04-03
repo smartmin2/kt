@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>캠페인</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>캠페인 관리</div>
+    <div>캠페인</div>
+    <div>캠페인</div>
+  </div>
+  <div class="main campaign-add">
+    <div class="common-box common-body">
+      <div class="sub-menu-wrapper">
+        <div class="sub-menu-title">
+            캠페인 관리
+        </div>
+        <ul class="sub-menu">
+        </ul>
+      </div>
+      <div class="contents-wrapper">
+        <div class="content-title">캠페인 등록</div>
+        <!-- 캠페인 기본 정보 -->
+        <div class="content-block default"> 
+          <div class="content-top">캠페인 기본 정보 <div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">캠페인명</div>
+                  <div class="setting-table-content">YYYY년MM월_광고주_브랜드<input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">광고주/브랜드</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">광고주1</option>
+                        <option value="">광고주2</option>
+                        <option value="">광고주3</option>                                                              
+                      </select>
+                    </div>        
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">영업사</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">영업사1</option>
+                        <option value="">영업사2</option>
+                        <option value="">영업사3</option>                                                              
+                      </select>
+                    </div>        
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">대행사</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">대행사1</option>
+                        <option value="">대행사2</option>
+                        <option value="">대행사3</option>                                                              
+                      </select>
+                    </div>        
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">캠페인 기간</div>
+                  <div class="setting-table-content">2022-01-06 ~ 2022-01-06 ( 하단 BM/서비스 입력 전체 기간)</div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">캠페인 금액</div>
+                  <div class="setting-table-content">0원</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">업체명</div>
+                  <div class="setting-table-content">㈜메조미디어</div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">사업자번호</div>
+                  <div class="setting-table-content">23532495</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청구방식</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">광고주 청구</option>
+                        <option value="">영업사 청구</option>                        
+                      </select>
+                    </div>      
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">영업유형</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">KT단독</option>
+                        <option value="">KT공동</option>
+                        <option value="">영업사단독</option>                                                              
+                      </select>
+                    </div>      
+                  </div>
+                </div>
+              </div>
+              <div class="row">               
+                <div class="setting-table-title">계약서 첨부</div>
+                <div class="setting-table-content">
+                  <div class="filebox"> 
+                    <input class="upload-name" value="" disabled="disabled" placeholder="선택된 파일이 없습니다"> 
+                    <label for="ex_filename">파일선택</label> 
+                    <input type="file" id="ex_filename" class="upload-hidden"> 
+                  </div>                                                        
+                </div>                
+              </div>
+              <div class="blank-row"></div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">기본금액</div>
+                  <div class="setting-table-content">1,000,000</div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">매출기준월</div>
+                  <div class="setting-table-content"><input type="date" value="2021-02-10"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">금액</div>
+                <div class="setting-table-content">
+                  <div>· 선취금 : 0원 · 영업 수수료 : 400,000원</div>
+                  <div>· 실 청구금액<input type="text" class="width-168">원&nbsp&nbsp&nbsp&nbsp&nbsp · 분납횟수 <input type="text" class="width-85"><button class="btn-rec-teal">분납정보</button></div>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">부가 서비스 비</div>
+                  <div class="setting-table-content">0</div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">선취 유형</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">해당없음</option>
+                        <option value="">유형1</option>
+                        <option value="">유형2</option>                                                              
+                      </select>
+                    </div>      
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">제작금액</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">영업 수수료</div>
+                  <div class="setting-table-content">기본<input type="text" value="">% <div class="divider-v"></div>특별<input type="text" value=""></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">결제수단</div>
+                <div class="setting-table-content">
+                  현금<input type="text" value="">현금지급일<input type="date" value="2021-02-10"> <div class="divider-v"></div>어음<input type="text" value="">어음만기일<input type="date" value="2021-02-10"><div class="divider-v"></div>현물금액<input type="text" value="">현물내역<input type="text" value="">
+                </div>                
+              </div>
+              <div class="row">                
+                  <div class="setting-table-title">메모</div>
+                  <div class="setting-table-content"><textarea name="" id="" cols="30"></textarea></div>                
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- PrePlay -->
+        <div class="content-block preplay">
+          <div class="content-top">청약1:PrePlay<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">지역할증 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">지역할증1</option>
+                        <option value="">지역할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">유료할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">유료할증1</option>
+                        <option value="">유료할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">요일할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">요일할증1</option>
+                        <option value="">요일할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">시간할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">시간할증1</option>
+                        <option value="">시간할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">처음/이어보기 할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">처음/이어보기 할증1</option>
+                        <option value="">처음/이어보기 할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">카테고리 할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">카테고리 할증1</option>
+                        <option value="">카테고리 할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">Like 할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">Like 할증1</option>
+                        <option value="">Like 할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">독점유무</div>
+                  <div class="setting-table-content">
+                    <div class="btn-radio-group">
+                      <input type="radio" id="rd1" name="rd-grp" checked><label for="rd1">유</label>                
+                      <input type="radio" id="rd2" name="rd-grp"><label for="rd2">무</label>                
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- HomePlay -->
+        <div class="content-block homeplay">
+          <div class="content-top">청약2:HomePlay<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                    /
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              HomePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- PrePlay+ -->
+        <div class="content-block preplay-p">
+          <div class="content-top">청약3:PrePlay+<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">                
+                <div class="setting-table-title">독점유무</div>
+                <div class="setting-table-content">
+                  <div class="btn-radio-group">
+                    <input type="radio" id="rd1" name="rd-grp" checked><label for="rd1">유</label>                
+                    <input type="radio" id="rd2" name="rd-grp"><label for="rd2">무</label>                
+                  </div>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                    /
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay+ 상세
+            </div>  
+          </div>
+        </div>
+        <!-- PrePlayS -->
+        <div class="content-block preplay-s">
+          <div class="content-top">청약4:PrePlayS<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">지역할증 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">지역할증1</option>
+                        <option value="">지역할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">유료할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">유료할증1</option>
+                        <option value="">유료할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">요일할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">요일할증1</option>
+                        <option value="">요일할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">시간할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">시간할증1</option>
+                        <option value="">시간할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">처음/이어보기 할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">처음/이어보기 할증1</option>
+                        <option value="">처음/이어보기 할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">카테고리 할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">카테고리 할증1</option>
+                        <option value="">카테고리 할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">                
+                <div class="setting-table-title">Like 할증</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select>
+                      <option value="">선택하세요</option>
+                      <option value="">Like 할증1</option>
+                      <option value="">Like 할증2</option>                                                              
+                    </select>
+                  </div>   
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- PrePlayQ -->
+        <div class="content-block preplay-q">
+          <div class="content-top">청약5:PrePlay Q<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- PrePlay+Q -->
+        <div class="content-block preplay-pq">
+          <div class="content-top">청약6:PrePlay+ Q<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- AD Q -->
+        <div class="content-block ad-q">
+          <div class="content-top">청약7:AD Q<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- Pause -->
+        <div class="content-block pause">
+          <div class="content-top">청약8:Pause<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- Time Q -->
+        <div class="content-block time-q">
+          <div class="content-top">청약9:Time Q<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- Ending Q -->
+        <div class="content-block ending-q">
+          <div class="content-top">청약10:Ending Q<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- HomeShot -->
+        <div class="content-block homeshot">
+          <div class="content-top">청약11:HomeShot<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">                
+                <div class="setting-table-title ic-title-nece">광고타입</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select>
+                      <option value="">선택하세요</option>
+                      <option value="">광고타입1</option>
+                      <option value="">광고타입2</option>                                                              
+                    </select>
+                  </div>  
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- MovieIntro -->
+        <div class="content-block movieintro">
+          <div class="content-top">청약12:MovieIntro<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+        <!-- Channel Q -->
+        <div class="content-block channel-q">
+          <div class="content-top">청약13:Channel Q<div class="ic-open-arrow"></div></div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail">            
+            <div class="setting-table">
+              PrePlay 상세
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <div id="modal-background"></div>
+    <div class="modal-campaign-main modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">서비스 선택</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="modal-content-wrapper">
+          <div class="modal-sub-title">동영상</div>
+          <div class="btn-check-group">            
+              <input type="checkbox" id="ck1"><label for="ck1">PrePlay</label>            
+              <input type="checkbox" id="ck2"><label for="ck2">HomePlay</label>
+              <input type="checkbox" id="ck3"><label for="ck3">HomeShot</label>
+              <input type="checkbox" id="ck4"><label for="ck4">PrePlay+</label>
+              <input type="checkbox" id="ck5"><label for="ck5">PostPlay</label>
+              <input type="checkbox" id="ck6"><label for="ck6">Time Q</label>
+              <input type="checkbox" id="ck7"><label for="ck7">PrePlayS</label>
+              <input type="checkbox" id="ck8"><label for="ck8">AD Q</label>
+              <input type="checkbox" id="ck9"><label for="ck9">MovieIntro</label>
+              <input type="checkbox" id="ck10"><label for="ck10">PrePlay Q</label>
+              <input type="checkbox" id="ck11"><label for="ck11">Pause</label>
+              <input type="checkbox" id="ck12"><label for="ck12">Channel Q</label>
+            <div class="row"></div>
+          </div>
+        </div>
+        <div class="modal-content-wrapper">
+          <div class="modal-sub-title">채널상품(LiveAD)</div>
+          <div class="modal-content">
+            <div class="pkg-block">
+              <div class="pkg-title">기본 패키지</div>
+              <div class="btn-radio-group">
+                <input type="radio" id="rd1" name="rd-pkg" checked><label for="rd1">베이직</label>
+                <input type="radio" id="rd2" name="rd-pkg"><label for="rd2">프리미엄 30</label>
+                <input type="radio" id="rd3" name="rd-pkg"><label for="rd3">브랜드<br>
+                  프리미엄30</label>
+                <input type="radio" id="rd4" name="rd-pkg"><label for="rd4">바로광고<br>
+                  (베이직)</label>
+                <input type="radio" id="rd5" name="rd-pkg"><label for="rd5">바로광고<br>
+                  (프리미엄30)</label>
+              </div>
+            </div>  
+            <div class="pkg-block">
+              <div class="pkg-title">스페셜 패키지</div>
+              <div class="btn-radio-group">
+                <input type="radio" id="rd6" name="rd-pkg" checked><label for="rd6">나이트 프리미엄</label>
+                <input type="radio" id="rd7" name="rd-pkg"><label for="rd7">키즈/애니</label>
+                <input type="radio" id="rd8" name="rd-pkg" checked><label for="rd8">바로광고<br>
+                  (나이트 프리미엄)</label>                
+              </div>
+            </div>  
+            <div class="pkg-block">
+              <div class="pkg-title">소상공인 패키지</div>
+              <div class="btn-radio-group">
+                <input type="radio" id="rd9" name="rd-pkg" checked><label for="rd9">베이직</label>                
+              </div>
+            </div>    
+            <div class="pkg-block">
+              <div class="pkg-title">LIKE 패키지</div>
+              <div class="btn-radio-group">
+                <input type="radio" id="rd10" name="rd-pkg" checked><label for="rd10">채널 선택</label>                
+              </div>
+            </div>                  
+          </div>                    
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-installment modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">분납정보</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(2);
+      loadSubMenu("2", 1);
+      loadLnb(2, 1, 1);
+
+      $(".content-top").on("click",function(){
+        $(this).toggleClass("open");
+      })
+    </script>
+</body>
+</html>

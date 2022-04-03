@@ -826,51 +826,6 @@ button.menu-button:hover {
   width: 100%;
 }
 
-.setting-table .row input[type="text"],
-.setting-table .row input[type="password"] {
-  width: 100%;
-  height: 30px;
-  border: 1px solid #bcbfc7;
-  border-radius: 4px;
-  background-color: #fff;
-  padding: 0 16px;
-  color: rgba(20, 31, 64, 0.8);
-}
-
-.setting-table .row input[type="text"]:hover,
-.setting-table .row input[type="password"]:hover {
-  border: 1px solid #8c8c8c;
-}
-
-.setting-table .row input[type="text"]::-webkit-input-placeholder,
-.setting-table .row input[type="password"]::-webkit-input-placeholder {
-  opacity: 1;
-  color: rgba(20, 31, 64, 0.5);
-}
-
-.setting-table .row input[type="text"]:-ms-input-placeholder,
-.setting-table .row input[type="password"]:-ms-input-placeholder {
-  opacity: 1;
-  color: rgba(20, 31, 64, 0.5);
-}
-
-.setting-table .row input[type="text"]::-ms-input-placeholder,
-.setting-table .row input[type="password"]::-ms-input-placeholder {
-  opacity: 1;
-  color: rgba(20, 31, 64, 0.5);
-}
-
-.setting-table .row input[type="text"]::placeholder,
-.setting-table .row input[type="password"]::placeholder {
-  opacity: 1;
-  color: rgba(20, 31, 64, 0.5);
-}
-
-.setting-table .row input[type="text"]:focus,
-.setting-table .row input[type="password"]:focus {
-  border: 1px solid #141f40;
-}
-
 .setting-table .row input[type="date"] {
   height: 30px;
 }
@@ -953,45 +908,6 @@ ul.pagination li a.active {
   border-radius: 32px;
 }
 
-ul.pagination {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 32px;
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: -0.33px;
-  text-align: center;
-  color: #556076;
-}
-
-ul.pagination li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 32px;
-}
-
-ul.pagination li a.active {
-  background-color: #1bc1db;
-  color: white;
-  border-radius: 32px;
-}
-
 .input-date-group {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1020,7 +936,7 @@ ul.pagination li a.active {
           flex: 1;
 }
 
-input[type="date"] {
+input[type=date], input[type=month] {
   position: relative;
   height: 100%;
   padding-left: 16px;
@@ -1033,12 +949,64 @@ input[type="date"] {
   color: rgba(20, 31, 64, 0.83);
 }
 
-input[type="date"]::-webkit-clear-button,
-input[type="date"]::-webkit-inner-spin-button {
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  height: 30px;
+  border: 1px solid #bcbfc7;
+  border-radius: 4px;
+  background-color: #fff;
+  padding: 0 16px;
+  color: rgba(20, 31, 64, 0.8);
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+  border: 1px solid #8c8c8c;
+}
+
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder {
+  opacity: 1;
+  color: rgba(20, 31, 64, 0.5);
+}
+
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder {
+  opacity: 1;
+  color: rgba(20, 31, 64, 0.5);
+}
+
+input[type="text"]::-ms-input-placeholder,
+input[type="password"]::-ms-input-placeholder {
+  opacity: 1;
+  color: rgba(20, 31, 64, 0.5);
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+  opacity: 1;
+  color: rgba(20, 31, 64, 0.5);
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+  border: 1px solid #141f40;
+}
+
+input[type=date], input[type=month] {
+  height: 30px;
+}
+
+input[type=date]::-webkit-clear-button,
+input[type=date]::-webkit-inner-spin-button,
+input[type=month]::-webkit-clear-button,
+input[type=month]::-webkit-inner-spin-button {
   display: none;
 }
 
-input[type="date"]::-webkit-calendar-picker-indicator {
+input[type=date]::-webkit-calendar-picker-indicator,
+input[type=month]::-webkit-calendar-picker-indicator {
   background: transparent;
   z-index: 1;
 }
@@ -1088,7 +1056,7 @@ textarea::-webkit-scrollbar-thumb {
   background: #b6bdc1;
 }
 
-.input-date-group input:after {
+input:after {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -1400,6 +1368,51 @@ textarea::-webkit-scrollbar-thumb {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+}
+
+.btn-check-group > input[type="checkbox"] {
+  display: none;
+}
+
+.btn-check-group > input[type="checkbox"] + label {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  padding: 4px 12px 6px;
+  border-radius: 4px;
+  border: 1px solid #e6e8ea;
+  font-size: 14px;
+  text-align: center;
+  color: #282a3f;
+  cursor: pointer;
+  background: #fff;
+}
+
+.btn-check-group > input[type="checkbox"]:checked + label {
+  border: 1px solid #00aace;
+  color: #00aace;
+}
+
+.btn-radio-group > input[type="radio"] {
+  display: none;
+}
+
+.btn-radio-group > input[type="radio"] + label {
+  width: 100px;
+  display: inline-block;
+  padding: 4px 12px 6px;
+  border-radius: 4px;
+  border: 1px solid #e6e8ea;
+  font-size: 14px;
+  text-align: center;
+  color: #282a3f;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn-radio-group > input[type="radio"]:checked + label {
+  border: 1px solid #00aace;
+  color: #00aace;
 }
 
 .btn-rec-agree {

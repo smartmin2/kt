@@ -22,7 +22,7 @@
                      {name:'LiveAD 송출영상', link:''}]}],
     2 : [      
          {id: 1, name:'캠페인', link: '/pages/contract/campaign.html', 
-            folder: [{name:'캠페인 등록', link:''},
+            folder: [{name:'캠페인', link:'/pages/contract/campaign.html'},
                      {name:'임시저장 캠페인', link:'/pages/contract/cam_temp_storage.html'},
                      {name:'캠페인 청약조회', link:'/pages/contract/cam_sub_inquiry.html'},
                      {name:'캠페인 청약승인', link:'/pages/contract/cam_sub_approval.html'},
@@ -149,7 +149,7 @@
             folder: [{name:'OTV/PrePlay+', link:''},
                      {name:'단가/할인정보 관리', link:''}]}],    
     11 : [{id: 1, name:'사용자 관리', link:'/pages/system/user.html', folder: []},
-         {id: 2, name:'사용자 그룹관리', link:'/pages/system/user-group.html', folder: []},
+         {id: 2, name:'사용자 그룹관리', link:'/pages/system/user_group.html', folder: []},
          {id: 3, name:'코드 관리', link:'/pages/system/code.html', folder: []},
          {id: 4, name:'메뉴 관리', link:'/pages/system/menu.html', folder: []},
          {id: 5, name:'메일 발송리스트', link:'/pages/system/mail-list.html', folder: []},
