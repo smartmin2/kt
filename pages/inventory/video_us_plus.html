@@ -29,7 +29,7 @@
       <div>동영상</div>
       <div>사용현황</div>
     </div>
-    <div class="main video-us">
+    <div class="main video-us-plus">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">인벤토리</div>
@@ -59,7 +59,7 @@
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">인벤토리 기준월</div>
+                  <div class="input-title">편성월</div>
                   <div class="input-group">
                     <select>
                       <option value="">2022년 02월</option>
@@ -69,19 +69,22 @@
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">일자</div>
-                  <div class="input-date-group">
-                    <input type="date" value="2022-02-01" />
-                    <span>~</span>
-                    <input type="date" value="2022-02-01" />
+                  <div class="input-title">조회구분</div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">일자별</option>
+                      <option value="">프로그램별</option>
+                    </select>
                   </div>
                 </div>
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">데이터 범위</div>
-                  <div class="button-group">
-                    <button class="btn-toggle">추가청약해제</button>
+                  <div class="input-title">영업사</div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">전체</option>
+                    </select>
                   </div>
                 </div>
               </div>
@@ -101,31 +104,72 @@
             </div>
             <table class="jb-table">
               <colgroup>
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
+                <col />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
+                <col style="width: 2.9%" />
               </colgroup>
-              <thead class="double">
+              <thead>
                 <tr>
-                  <th rowspan="2">1D</th>
-                  <th rowspan="2">2D</th>
-                  <th colspan="3">iCOD</th>
-                  <th colspan="3">Total</th>
-                  <th rowspan="2">청약비율</th>
-                </tr>
-                <tr>
-                  <th>사용량</th>
-                  <th>잔여량</th>
-                  <th>총 인벤토리량</th>
-                  <th>용량</th>
-                  <th>잔여량</th>
-                  <th>총 인벤토리량</th>
+                  <th>프로그램명</th>
+                  <th class="satday">01</th>
+                  <th class="sunday">02</th>
+                  <th>03</th>
+                  <th>04</th>
+                  <th>05</th>
+                  <th>06</th>
+                  <th>07</th>
+                  <th class="satday">08</th>
+                  <th class="sunday">10</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th class="satday">15</th>
+                  <th class="sunday">16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>19</th>
+                  <th>20</th>
+                  <th>21</th>
+                  <th class="satday">22</th>
+                  <th class="sunday">23</th>
+                  <th>24</th>
+                  <th>25</th>
+                  <th>26</th>
+                  <th>27</th>
+                  <th>28</th>
+                  <th class="satday">29</th>
+                  <th class="sunday">30</th>
+                  <th>31</th>
                 </tr>
               </thead>
               <tbody class="table-body"></tbody>
@@ -157,6 +201,7 @@
           </div>
         </div>
       </div>
+      <div class="detail-box">1등분/테스트캠페인122101/462,420원/(주)KT</div>
     </div>
     <div class="footer-wrapper">
       <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
@@ -169,12 +214,40 @@
       loadSubMenu("5", 2);
       loadLnb(5, 2, 2);
 
-      const arrTable = Array(10).fill(["KBS", "예능", "1,000", "1,000", "2,000", "1,000", "1,000", "2,000", "3,30%"]);
-      arrTable.push(["합계", "합계", "36,036", "20,079,274", "20,115,310", "36,036","20,079,274","20,115,310","0.18%"]);
+      const arrTable = Array(10).fill(["런닝맨", "1", "1", "1", "1", "1", "1", "1", "1", "", "", "1", "1", "", "", "1", "1", "1", "1", "1", "", "", "", "", "", "", "", "", "", "", "", ""]);
       const table = document.querySelector(".table-body");
       arrTable.map((data) => addRow(table, data, false));
 
 
+        $("td").mouseover(function (e) {
+          var sWidth = window.innerWidth;
+          var sHeight = window.innerHeight;
+
+          var oWidth = $(".detail-box").width();
+          var oHeight = $(".detail-box").height();
+
+          // 레이어가 나타날 위치를 셋팅한다.
+          var divLeft = e.clientX + 0 ;
+          var divTop = e.clientY + 120;
+
+          // 레이어가 화면 크기를 벗어나면 위치를 바꾸어 배치한다.
+          if (divLeft + oWidth > sWidth) divLeft -= oWidth;
+          if (divTop + oHeight > sHeight) divTop -= oHeight;
+
+          // 레이어 위치를 바꾸었더니 상단기준점(0,0) 밖으로 벗어난다면 상단기준점(0,0)에 배치하자.
+          if (divLeft < 0) divLeft = 0;
+          if (divTop < 0) divTop = 0;
+
+          $(".detail-box").css({
+              top: divTop,
+              left: divLeft,
+              position: "absolute",
+            }).show();
+
+        });
+        $("td").mouseout(function () {
+          $(".detail-box").hide();
+        })
     </script>
   </body>
 </html>
