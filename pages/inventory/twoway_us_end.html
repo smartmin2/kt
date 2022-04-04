@@ -29,7 +29,7 @@
       <div>양방향</div>
       <div>사용현황</div>
     </div>
-    <div class="main video-us">
+    <div class="main twoway-us">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">인벤토리</div>
@@ -49,7 +49,7 @@
                     <select onchange="location.href=this.value">
                       <option>전체</option>
                       <option value="twoway_us_ad.html">AD Q</option>
-                      <option value="twoway_us_end.html">Ending Q</option>
+                      <option value="twoway_us_end.html" selected>Ending Q</option>
                       <option value="twoway_us_time.html">Time Q</option>
                       <option value="twoway_us_cn.html">Channer Q</option>
                       <option value="twoway_us_ps.html">Pause</option>
@@ -93,7 +93,7 @@
                 <div class="input-wrapper">
                   <div class="input-title">데이터 범위</div>
                   <div class="button-group">
-                    <button class="btn-toggle">추가청약해제</button>
+                    <button class="btn-toggle chg active">추가청약사용</button>
                   </div>
                 </div>
               </div>
@@ -105,7 +105,7 @@
           <div class="table-wrapper">
             <div class="table-top">
               <div class="table-top-count">
-          
+             
               </div>
               <div class="table-top-buttons">
                 <button class="btn-excel"><img />엑셀다운로드</button>
@@ -113,14 +113,13 @@
             </div>
             <table class="jb-table">
               <colgroup>
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-             
+                <col />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
               </colgroup>
               <thead class="double">
                 <tr>
@@ -137,32 +136,101 @@
                   <th>인벤토리</th>
                 </tr>
               </thead>
-              <tbody class="table-body"></tbody>
+              <tbody class="table-body">
+                <tr>
+                  <td>합계</td>
+                  <td>합계</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>100.0%</td>
+                </tr>
+                <tr>
+                  <td rowspan="4">KBS</td>
+                  <td>예능</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr>
+                  <td>예능</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr>
+                  <td>예능</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr class="sub-total">
+                  <td>소계</td>
+                  <td>2,000</td>
+                  <td>1,000</td>
+                  <td>1,000</td>
+                  <td>2,000</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr>
+                  <td rowspan="4">MBC</td>
+                  <td>예능</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr>
+                  <td>예능</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr>
+                  <td>예능</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr class="sub-total">
+                  <td>소계</td>
+                  <td>2,000</td>
+                  <td>1,000</td>
+                  <td>1,000</td>
+                  <td>2,000</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">EBS</td>
+                  <td>예능</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>3.03%</td>
+                </tr>
+                <tr class="sub-total">
+                  <td>소계</td>
+                  <td>2,000</td>
+                  <td>1,000</td>
+                  <td>1,000</td>
+                  <td>2,000</td>
+                  <td>3.03%</td>
+                </tr>
+              </tbody>
             </table>
-            <ul class="pagination">
-              <li>
-                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
-              </li>
-              <li><a href="#" class="num">1</a></li>
-              <li><a href="#" class="num active">2</a></li>
-              <li><a href="#" class="num">3</a></li>
-              <li><a href="#" class="num">4</a></li>
-              <li><a href="#" class="num">5</a></li>
-              <li><a href="#" class="num">6</a></li>
-              <li><a href="#" class="num">7</a></li>
-              <li><a href="#" class="num">8</a></li>
-              <li><a href="#" class="num">9</a></li>
-              <li><a href="#" class="num">10</a></li>
-              <li>
-                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -177,11 +245,6 @@
       loadMainMenu(5);
       loadSubMenu("5", 3);
       loadLnb(5, 3, 2);
-
-      const arrTable = Array(10).fill(["KBS", "예능", "1,000", "1,000", "2,000", "1,000",  "3,30%"]);
-      arrTable.push(["합계", "합계", "36,036", "20,079,274", "20,115,310", "36,036","0.18%"]);
-      const table = document.querySelector(".table-body");
-      arrTable.map((data) => addRow(table, data, false));
 
     </script>
   </body>

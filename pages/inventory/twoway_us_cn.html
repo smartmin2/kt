@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>인벤토리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>인벤토리</div>
+      <div>양방향</div>
+      <div>사용현황</div>
+    </div>
+    <div class="main twoway-us">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title">인벤토리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">사용현황</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>
+            </div>
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">항목</div>
+                  <div class="input-group">
+                    <select onchange="location.href=this.value">
+                      <option>전체</option>
+                      <option value="twoway_us_ad.html">AD Q</option>
+                      <option value="twoway_us_end.html">Ending Q</option>
+                      <option value="twoway_us_time.html" >Time Q</option>
+                      <option value="twoway_us_cn.html" selected>Channer Q</option>
+                      <option value="twoway_us_ps.html">Pause</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">일자</div>
+                  <div class="input-date-group">
+                    <input type="date" value="2022-02-01" />
+                    <span>~</span>
+                    <input type="date" value="2022-02-01" />
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">채널</div>
+                  <div class="input-group">
+                    <select>
+                      <option>가요TV</option>
+                      <option>놀티비(128)</option>
+                      <option>디원</option>
+                      <option>부동산TV</option>
+                      <option>서울신문STV</option>
+                      <option>선댄스 채널</option>
+                      <option>스마트교육방송</option>
+                      <option>애니맥스</option>
+                      <option>육아방송</option>
+                      <option>투이버스</option>
+                      <option>팍스TV</option>
+                      <option>Asia TV</option>
+                      <option>Baby TV</option>
+                      <option>BBC Knowledge</option>
+                      <option>Cbeebies</option>
+                      <option>Disney Channel</option>
+                      <option>FSTV</option>
+                      <option>GTV</option>
+                      <option>HistoryHD</option>
+                      <option>IPSN</option>
+                      <option>JEI English TV</option>
+                      <option>MPLEX</option>
+                      <option>MTN</option>
+                      <option>OTV24</option>
+                      <option>Tooniverse</option>
+                      <option>TV5MONDE</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom">
+              <button class="btn-common">조회</button>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <span class="ic-noti"></span>
+              </div>
+              <div class="table-top-buttons">
+                <button class="btn-excel"><img />엑셀다운로드</button>
+              </div>
+            </div>
+            <table class="jb-table">
+              <colgroup>
+                <col />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+              </colgroup>
+              <thead class="double">
+                <tr>
+                  <th rowspan="2">날짜/시간</th>
+                  <th>00시</th>
+                  <th>01시</th>
+                  <th>02시</th>
+                  <th>03시</th>
+                  <th>04시</th>
+                  <th>05시</th>
+                  <th>06시</th>
+                  <th>07시</th>
+                  <th>08시</th>
+                  <th>09시</th>
+                  <th>10시</th>
+                  <th>11시</th>
+                  <th rowspan="2">합계</th>
+                </tr>
+                <tr>
+                  <th>12시</th>
+                  <th>13시</th>
+                  <th>14시</th>
+                  <th>15시</th>
+                  <th>16시</th>
+                  <th>17시</th>
+                  <th>18시</th>
+                  <th>19시</th>
+                  <th>20시</th>
+                  <th>21시</th>
+                  <th>22시</th>
+                  <th>23시</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td rowspan="2">2022-02-02</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td rowspan="2">2022-01-22</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(5);
+      loadSubMenu("5", 3);
+      loadLnb(5, 3, 2);
+    </script>
+  </body>
+</html>

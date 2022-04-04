@@ -26,10 +26,10 @@
     <div class="location">
       <div>홈</div>
       <div>인벤토리</div>
-      <div>양방향</div>
+      <div>Live AD</div>
       <div>사용현황</div>
     </div>
-    <div class="main twoway-us">
+    <div class="main livead-us">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">인벤토리</div>
@@ -39,53 +39,36 @@
           <div class="content-title">사용현황</div>
           <div class="search-wrapper">
             <div class="search-top">
-              <div class="content-sub-title">조회조건설정</div>
+              <div class="content-sub-title">사용현황 OTV/채널</div>
             </div>
             <div class="search-edit-box">
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">항목</div>
-                  <div class="input-group">
-                    <select onchange="location.href=this.value">
-                      <option>전체</option>
-                      <option value="twoway_us_ad.html" selected>AD Q</option>
-                      <option value="twoway_us_end.html">Ending Q</option>
-                      <option value="twoway_us_time.html">Time Q</option>
-                      <option value="twoway_us_cn.html">Channer Q</option>
-                      <option value="twoway_us_ps.html">Pause</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="search-edit-detail">
-                <div class="input-wrapper">
-                  <div class="input-title">편성월</div>
+                  <div class="input-title">인벤토리 기준월</div>
                   <div class="input-group">
                     <select>
-                      <option value="">2022년 02월</option>
+                      <option>2022년 02월</option>
                     </select>
                   </div>
                 </div>
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">조회 구분</div>
+                  <div class="input-title">조회구분</div>
+                  <div class="toggle-wrap">
+                    <button type="button" class="btn-toggle">채널</button>
+                    <button type="button" class="btn-toggle">지역</button>
+                    <button type="button" class="btn-toggle">시간대</button>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">영업사</div>
                   <div class="input-group">
                     <select>
-                      <option value="">카테고리별</option>
-                      <option value="">지역별</option>
-                      <option value="">시간대별</option>
+                      <option value="">전체</option>
                     </select>
-                  </div>
-                </div>
-              </div>
-              <div class="search-edit-detail">
-                <div class="input-wrapper">
-                  <div class="input-title">일자</div>
-                  <div class="input-date-group">
-                    <input type="date" value="2022-02-01" />
-                    <span>~</span>
-                    <input type="date" value="2022-02-01" />
                   </div>
                 </div>
               </div>
@@ -93,7 +76,7 @@
                 <div class="input-wrapper">
                   <div class="input-title">데이터 범위</div>
                   <div class="button-group">
-                    <button class="btn-toggle chg active">추가청약사용</button>
+                    <button class="btn-toggle chg1 active">추가노출선택</button>
                   </div>
                 </div>
               </div>
@@ -104,9 +87,7 @@
           </div>
           <div class="table-wrapper">
             <div class="table-top">
-              <div class="table-top-count">
-             
-              </div>
+              <div class="table-top-count"></div>
               <div class="table-top-buttons">
                 <button class="btn-excel"><img />엑셀다운로드</button>
               </div>
@@ -245,7 +226,6 @@
       loadMainMenu(5);
       loadSubMenu("5", 3);
       loadLnb(5, 3, 2);
-
     </script>
   </body>
 </html>

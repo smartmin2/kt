@@ -26,10 +26,10 @@
     <div class="location">
       <div>홈</div>
       <div>인벤토리</div>
-      <div>동영상</div>
+      <div>양방향</div>
       <div>사용현황</div>
     </div>
-    <div class="main video-us">
+    <div class="main twoway-us">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">인벤토리</div>
@@ -44,25 +44,15 @@
             <div class="search-edit-box">
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">서비스</div>
+                  <div class="input-title">항목</div>
                   <div class="input-group">
                     <select onchange="location.href=this.value">
                       <option>전체</option>
-                      <option value="video_us.html">PrePlay</option>
-                      <option value="video_us_plus.html">PrePlay+</option>
-                      <option value="video_us_s.html">PrePlayS</option>
-                      <option value="video_us_pp.html">PostPlay</option>
-                      <option value="video_us_mi.html">MovieIntro</option>
-                    </select>
-                  </div>
-                </div>
-              </div>
-              <div class="search-edit-detail">
-                <div class="input-wrapper">
-                  <div class="input-title">인벤토리 기준월</div>
-                  <div class="input-group">
-                    <select>
-                      <option value="">2022년 02월</option>
+                      <option value="twoway_us_ad.html">AD Q</option>
+                      <option value="twoway_us_end.html">Ending Q</option>
+                      <option value="twoway_us_time.html" selected>Time Q</option>
+                      <option value="twoway_us_cn.html">Channer Q</option>
+                      <option value="twoway_us_ps.html">Pause</option>
                     </select>
                   </div>
                 </div>
@@ -77,14 +67,6 @@
                   </div>
                 </div>
               </div>
-              <div class="search-edit-detail">
-                <div class="input-wrapper">
-                  <div class="input-title">데이터 범위</div>
-                  <div class="button-group">
-                    <button class="btn-toggle chg active">추가청약사용</button>
-                  </div>
-                </div>
-              </div>
             </div>
             <div class="search-bottom">
               <button class="btn-common">조회</button>
@@ -93,7 +75,7 @@
           <div class="table-wrapper">
             <div class="table-top">
               <div class="table-top-count">
-                <div class="table-total-count">CPM :<span>20,300</span></div>
+                <span class="ic-noti"></span>
               </div>
               <div class="table-top-buttons">
                 <button class="btn-excel"><img />엑셀다운로드</button>
@@ -101,115 +83,115 @@
             </div>
             <table class="jb-table">
               <colgroup>
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
-                <col style="width: 11.111%" />
+                <col />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />
               </colgroup>
               <thead class="double">
                 <tr>
-                  <th rowspan="2">1D</th>
-                  <th rowspan="2">2D</th>
-                  <th colspan="3">iCOD</th>
-                  <th colspan="3">Total</th>
-                  <th rowspan="2">청약비율</th>
+                  <th rowspan="2">날짜/시간</th>
+                  <th>00시</th>
+                  <th>01시</th>
+                  <th>02시</th>
+                  <th>03시</th>
+                  <th>04시</th>
+                  <th>05시</th>
+                  <th>06시</th>
+                  <th>07시</th>
+                  <th>08시</th>
+                  <th>09시</th>
+                  <th>10시</th>
+                  <th>11시</th>
+                  <th rowspan="2">합계</th>
                 </tr>
                 <tr>
-                  <th>사용량</th>
-                  <th>잔여량</th>
-                  <th>총 인벤토리량</th>
-                  <th>용량</th>
-                  <th>잔여량</th>
-                  <th>총 인벤토리량</th>
+                  <th>12시</th>
+                  <th>13시</th>
+                  <th>14시</th>
+                  <th>15시</th>
+                  <th>16시</th>
+                  <th>17시</th>
+                  <th>18시</th>
+                  <th>19시</th>
+                  <th>20시</th>
+                  <th>21시</th>
+                  <th>22시</th>
+                  <th>23시</th>
                 </tr>
               </thead>
               <tbody class="table-body">
                 <tr>
-                  <td rowspan="7">영화</td>
-                  <td>인기TOP10</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>0%</td>
+                  <td rowspan="2">2022-02-02</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
                 </tr>
                 <tr>
-                  <td>인기TOP10</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>0%</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
                 </tr>
                 <tr>
-                  <td>인기TOP10</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>0%</td>
+                  <td rowspan="2">2022-01-22</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
                 </tr>
                 <tr>
-                  <td>인기TOP10</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>0%</td>
-                </tr>
-                <tr>
-                  <td>인기TOP10</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>0%</td>
-                </tr>
-                <tr>
-                  <td>인기TOP10</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>0%</td>
-                </tr>
-                <tr class="sub-total">
-                  <td>소계</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>1,000</td>
-                  <td>1,000</td>
-                  <td>2,000</td>
-                  <td>0%</td>
-                </tr>
-                <tr class="total">
-                  <td>합계</td>
-                  <td>합계</td>
-                  <td>36,306</td>
-                  <td>20,115,310</td>
-                  <td>20,079,274</td>
-                  <td>36,036</td>
-                  <td>20,075,247</td>
-                  <td>20,115,310</td>
-                  <td>0.18%</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td></td>
                 </tr>
               </tbody>
             </table>
@@ -249,11 +231,8 @@
     <script src="../../scripts/script.js"></script>
     <script>
       loadMainMenu(5);
-      loadSubMenu("5", 2);
-      loadLnb(5, 2, 2);
-
-
-
+      loadSubMenu("5", 3);
+      loadLnb(5, 3, 2);
     </script>
   </body>
 </html>
