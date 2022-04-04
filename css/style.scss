@@ -2196,14 +2196,144 @@
       }
     }
   }
-  .modal-installment {
-    display: flex;
-    @include default_modal(auto,auto);
-    .modal-body {            
-      
-      
+.modal-installment {
+  display: none;
+  @include default_modal(600px, auto);
+  .modal-body {
+    .table-body {
+      input {
+        width: 126px;
+      }
+      span {
+        margin-left: 5px;
+      }
     }
   }
+}
+.modal-material-sel {
+  display: none;
+  @include default_modal(750px, auto);
+  .modal-body {
+    .table-body {
+      td {
+        &:nth-child(3) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.modal-material-two {
+  display: none;
+  @include default_modal(1000px, auto);
+  .modal-body {
+    .table-body {
+      td {
+        &:nth-child(2) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.modal-cont-list {
+  display: none;
+  @include default_modal(1000px, auto);
+  .modal-body {
+    .table-body {
+      td {
+        &:nth-child(2) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.modal-twoway-list {
+  display: none;
+  @include default_modal(auto, auto);
+  .modal-body {
+    .table-body {
+      td {
+        &:nth-child(3) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.modal-stb-sel {
+  display: none;
+  @include default_modal(auto, auto);
+  .modal-body {
+    .list-box-wrap {
+      .list-box {
+        width: 100%;
+        padding: 20px;
+      }
+    }
+  }
+}
+.modal-adcate-sel {
+  display: none;
+  @include default_modal(700px, auto);
+}
+.modal-icod-cate {
+  display: none;
+  @include default_modal(auto, auto);
+  .tree-box{
+    border: 1px solid #ddd;
+    padding:10px;
+  }
+}
+.modal-brand {
+  display: none;
+  @include default_modal(800px, auto);
+  .modal-body {
+    .table-body {
+      td {
+        &:nth-child(2) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.modal-agency {
+  display: none;
+  @include default_modal(800px, auto);
+  .modal-body {
+    .table-body {
+      td {
+        &:nth-child(3) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.modal-sales {
+  display: none;
+  @include default_modal(800px, auto);
+  .modal-body {
+    .table-body {
+      td {
+        &:nth-child(3),
+        &:nth-child(4) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
 //--------------------inventory----------------------------
 table.jb-table thead.double{
   height: 60px;
@@ -2230,6 +2360,54 @@ table.jb-table thead.double{
       background-color: $white;
     }
   }
+  .jb-table {
+    .sub-total,
+    .total {
+      background-color: $colors_box;
+    }
+  }
+}
+
+// video-us-plus
+.video-us-plus {
+  .jb-table {
+    th.satday {
+      color: $red;
+    }
+    th.sunday {
+      color: $colors_font;
+    }
+    td {
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(9),
+      &:nth-child(10),
+      &:nth-child(16),
+      &:nth-child(17),
+      &:nth-child(23),
+      &:nth-child(24),
+      &:nth-child(30),
+      &:nth-child(31) {
+        background-color: $colors_box;
+      }
+    }
+  }
+  .detail-box {
+  
+    display: none;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    padding: 10px;
+    border: 1px solid #bcbfc7;
+    background-color: #fff;
+    font-size: 12px;
+    color: #141f40;
+    font-weight: normal;
+    border-radius: 4px;
+    border-top-left-radius: 0px;
+  }
+
 }
 
 //------------------------------------------------------
