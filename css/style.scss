@@ -4,15 +4,19 @@
 
 /************ admin main ***************/
 .admin-main {
-  padding: 42px 0;
-  width: 100%;
-  min-width: 1600px;
-  max-width: 1600px;
+  @include large {    
+    margin: 0 160px;
+    min-width: 1600px;
+  }
+  @include small {
+    margin: 0 auto; 
+    width: 1600px;     
+  }
+  padding: 42px 0;  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 222px 310px 310px 310px 390px;
   gap: 10px;
-  margin: 0 auto;
 
   .item:nth-child(1) {
     grid-column: 1 / 3;
@@ -890,11 +894,16 @@
 
 /********************* user-main **********************/
 .user-main {
-  padding: 42px 0;
-  width: 100%;
-  min-width: 1600px;
-  max-width: 1600px;
-  margin: 0 auto;
+  @include large {    
+    margin: 0 160px;
+    min-width: 1600px;
+  }
+  @include small {
+    margin: 0 auto; 
+    width: 1600px;     
+  }
+
+  padding: 42px 0;  
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 222px 310px 148px 230px;
@@ -1306,7 +1315,7 @@
       padding: 0 24px;
     }
     .input-group {
-      margin: 0 24px;
+      margin:0 24px;
     }
   }
 }

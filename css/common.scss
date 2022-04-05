@@ -321,6 +321,12 @@ input[type="checkbox"] {
   height: 24px;
   cursor: pointer;
 }
+.ic-q-mark {
+  content: url("../assets/14_ic_info_q_mark.png");
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
 .img-round-nav {
   content: url("../assets/round-nav.png");
 }
@@ -705,7 +711,7 @@ ul.pagination {
 input[type=date],input[type=month] {
   position: relative;
   height: 100%;
-  padding-left: 16px;
+  padding-left: 10px;
   border-radius: 4px;
   border: solid 1px $colors_line;
   background-color: $white;
@@ -1028,6 +1034,34 @@ input[type=date]:after {
   color: $white;
 }
 .btn-rec-teal {
+  @include flex_center;
+  padding: 0 8px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: $teal;
+
+  font-size: 12px;
+  color: $white;
+  &:hover {
+    background-color: $colors_main;
+  }
+}
+.btn-rec-teal-52 {
+  width: 52px;
+  @include flex_center;
+  padding: 0 8px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: $teal;
+
+  font-size: 12px;
+  color: $white;
+  &:hover {
+    background-color: $colors_main;
+  }
+}
+.btn-rec-teal-86 {
+  width: 86px;
   @include flex_center;
   padding: 0 8px;
   height: 30px;
