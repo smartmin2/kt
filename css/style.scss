@@ -2928,6 +2928,9 @@ table.jb-table thead.double {
   height: 60px;
   tr {
     &:first-child {
+      th:nth-child(3){
+        border-right:10px solid transparent;
+      }
     }
     &:last-child {
       border-top: 1px solid rgba(136, 170, 215, 0.3%);
@@ -2948,9 +2951,11 @@ table.jb-table thead.double {
     }
   }
   .jb-table {
-    .sub-total,
+    .sub-total{
+      background-color: $sub_total;
+    }
     .total {
-      background-color: $colors_box;
+      background-color: $total;
     }
   }
 }
@@ -2975,7 +2980,7 @@ table.jb-table thead.double {
       &:nth-child(24),
       &:nth-child(30),
       &:nth-child(31) {
-        background-color: $colors_box;
+        background-color: $sub_total;
       }
     }
   }
@@ -3005,9 +3010,11 @@ table.jb-table thead.double {
     }
   }
   .jb-table {
-    .sub-total,
+    .sub-total{
+      background-color: $sub_total;
+    }
     .total {
-      background-color: $colors_box;
+      background-color: $total;
     }
   }
   .noti-box {
@@ -3061,9 +3068,11 @@ table.jb-table thead.double {
     }
   }
   .jb-table {
-    .sub-total,
+    .sub-total{
+      background-color: $sub_total;
+    }
     .total {
-      background-color: $colors_box;
+      background-color: $total;
     }
   }
   .toggle-wrap {
