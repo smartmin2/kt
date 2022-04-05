@@ -625,7 +625,8 @@ table.jb-table thead.double tr:last-child th { border-radius: 0; }
 
 .video-us .button-group { width: 300px; height: 30px; }
 .video-us .button-group .btn-toggle { background-color: #fff; }
-.video-us .jb-table .sub-total, .video-us .jb-table .total { background-color: #f1f7ff; }
+.video-us .jb-table .sub-total { background-color: #f1f7ff; }
+.video-us .jb-table .total { background-color: #ddecff; }
 
 .video-us-plus .jb-table th.satday { color: #d06062; }
 .video-us-plus .jb-table th.sunday { color: #00aace; }
@@ -634,7 +635,8 @@ table.jb-table thead.double tr:last-child th { border-radius: 0; }
 
 .twoway-us .button-group { width: 300px; height: 30px; }
 .twoway-us .button-group .btn-toggle { background-color: #fff; }
-.twoway-us .jb-table .sub-total, .twoway-us .jb-table .total { background-color: #f1f7ff; }
+.twoway-us .jb-table .sub-total { background-color: #f1f7ff; }
+.twoway-us .jb-table .total { background-color: #ddecff; }
 .twoway-us .noti-box { width: 330px; height: auto; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 20px; }
 .twoway-us .noti-box-title { font-size: 14px; font-weight: bold; color: #141f40; }
 .twoway-us .noti-box ul { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 20px; }
@@ -643,7 +645,8 @@ table.jb-table thead.double tr:last-child th { border-radius: 0; }
 
 .livead-us .button-group { width: 300px; height: 30px; }
 .livead-us .button-group .btn-toggle { background-color: #fff; }
-.livead-us .jb-table .sub-total, .livead-us .jb-table .total { background-color: #f1f7ff; }
+.livead-us .jb-table .sub-total { background-color: #f1f7ff; }
+.livead-us .jb-table .total { background-color: #ddecff; }
 .livead-us .toggle-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 10px; }
 .livead-us .toggle-wrap .btn-toggle { background-color: #fff; }
 

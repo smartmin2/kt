@@ -2532,9 +2532,11 @@ table.jb-table thead.double {
     }
   }
   .jb-table {
-    .sub-total,
-    .total {
+    .sub-total{
       background-color: $colors_box;
+    }
+    .total {
+      background-color: $total;
     }
   }
 }
@@ -2589,9 +2591,11 @@ table.jb-table thead.double {
     }
   }
   .jb-table {
-    .sub-total,
-    .total {
+    .sub-total{
       background-color: $colors_box;
+    }
+    .total {
+      background-color: $total;
     }
   }
   .noti-box {
@@ -2645,9 +2649,11 @@ table.jb-table thead.double {
     }
   }
   .jb-table {
-    .sub-total,
-    .total {
+    .sub-total{
       background-color: $colors_box;
+    }
+    .total {
+      background-color: $total;
     }
   }
   .toggle-wrap {
