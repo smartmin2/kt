@@ -928,11 +928,12 @@ input[type=date]:after {
   width: 20px;
   height: 20px;
 }
-.btn-toggle {
+.btn-toggle, .btn-subscp, .btn-expo {
   width: 100px;
   height: 30px;
   border-radius: 4px;
   border: solid 1px $gray600;
+  background-color: $white;
   @include flex_center;
 
   font-size: 13px;
