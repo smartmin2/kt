@@ -26,17 +26,17 @@
     <div class="location">
       <div>홈</div>
       <div>리포트</div>
-      <div>모니터링</div>
+      <div>광고노출현황</div>
       <div>LiveAD 청약현황</div>
     </div>
-    <div class="main monitoring">
+    <div class="main exposure">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title">리포트</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">LiveAD 청약현황</div>
+          <div class="content-title">노출현황(LiveAD)</div>
           <div class="search-wrapper">
             <div class="search-top">
               <div class="content-sub-title">조회조건 설정</div>
@@ -68,8 +68,20 @@
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
+                  <div class="input-title">캠페인 명</div>
+                  <input type="text" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
                   <div class="input-title">종료된 캠페인</div>
                   <div class="button-group"><button class="btn-notin active">미포함선택</button> <span class="desc">(금일기준)</span></div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">청약/캠페인 <br />종요일 비교</div>
+                  <div class="button-group"><button class="btn-endate active">종료일다름 선택</button> <span class="desc">(금일기준)</span></div>
                 </div>
               </div>
             </div>
@@ -94,7 +106,7 @@
                 </div>
               </div>
               <div class="table-top-buttons">
-                <button class="btn-excel"><img />엑셀다운로드</button>
+                <button class="btn-white">삭제</button>
               </div>
             </div>
             <table class="jb-table">
@@ -106,7 +118,7 @@
                 <col style="width: 8%" />
                 <col style="width: 8%" />
                 <col style="width: 8%" />
-                <col  />
+                <col />
                 <col style="width: 10%" />
                 <col style="width: 10%" />
               </colgroup>
@@ -124,9 +136,7 @@
                   <th>특이사항</th>
                 </tr>
               </thead>
-              <tbody class="table-body">
-
-              </tbody>
+              <tbody class="table-body"></tbody>
             </table>
             <ul class="pagination">
               <li>
@@ -164,8 +174,8 @@
     <script src="../../scripts/script.js"></script>
     <script>
       loadMainMenu(8);
-      loadSubMenu("8", 2);
-      loadLnb(8, 2, 1);
+      loadSubMenu("8", 3);
+      loadLnb(8, 3, 1);
 
       const arrTable = Array(5).fill(["CM202201000003", "멀티기간멀티소재3동타게팅_현대자동차_기본패키지_베이직", "2022-01-03", "2022-01-03", "2022-01-03", "2022-01-03", "예약요청", "1207_LiveAD_테스트001_15초", "ICD20211200000000017", "소재가공필요"]);
       const table = document.querySelector(".table-body");
@@ -176,6 +186,13 @@
           $(this).removeClass("active").html("미포함해제");
         } else {
           $(this).addClass("active").html("미포함선택");
+        }
+      });
+      $(".btn-endate").on("click", function () {
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active").html("종료일다름 해제");
+        } else {
+          $(this).addClass("active").html("종료일다름 선택");
         }
       });
     </script>
