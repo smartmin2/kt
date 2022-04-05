@@ -928,7 +928,7 @@ input[type=date]:after {
   width: 20px;
   height: 20px;
 }
-.btn-toggle, .btn-subscp, .btn-expo {
+.btn-toggle, .btn-subscp, .btn-expo, .btn-notin, .btn-endate {
   width: 100px;
   height: 30px;
   border-radius: 4px;
@@ -1111,7 +1111,7 @@ input[type=date]:after {
   position: relative;
   &:hover{
     .noti-box{
-      display: block;
+      display: flex;
     }
    
   }
@@ -1123,7 +1123,7 @@ input[type=date]:after {
 
     width: 300px;
     height: 60px;
-    padding: 10px;
+    padding: 10px 20px;
     border: 1px solid $colors_line;
     background-color: $white;
     font-size: 12px;

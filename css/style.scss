@@ -4,15 +4,15 @@
 
 /************ admin main ***************/
 .admin-main {
-  @include large {    
+  @include large {
     margin: 0 160px;
     min-width: 1600px;
   }
   @include small {
-    margin: 0 auto; 
-    width: 1600px;     
+    margin: 0 auto;
+    width: 1600px;
   }
-  padding: 42px 0;  
+  padding: 42px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 222px 310px 310px 310px 390px;
@@ -471,6 +471,7 @@
 
 .input-wrapper {
   display: flex;
+
   gap: 20px;
   .input-title {
     display: flex;
@@ -894,16 +895,16 @@
 
 /********************* user-main **********************/
 .user-main {
-  @include large {    
+  @include large {
     margin: 0 160px;
     min-width: 1600px;
   }
   @include small {
-    margin: 0 auto; 
-    width: 1600px;     
+    margin: 0 auto;
+    width: 1600px;
   }
 
-  padding: 42px 0;  
+  padding: 42px 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 222px 310px 148px 230px;
@@ -1315,7 +1316,7 @@
       padding: 0 24px;
     }
     .input-group {
-      margin:0 24px;
+      margin: 0 24px;
     }
   }
 }
@@ -1775,10 +1776,6 @@
   }
 }
 
-//menu-group-detail
-
-.menu-group-detail {
-}
 // menu-group-add
 .menu-group-add,
 .menu-group-detail {
@@ -1869,6 +1866,114 @@
   }
 }
 
+//code-main
+.code-main {
+  table.jb-table {
+    tbody tr td {
+      &:nth-child(3) {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+//code-detail
+.code-detail {
+  .setting-table {
+    margin-bottom: 30px;
+  }
+  .table-bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  table.jb-table {
+    tbody tr td {
+      &:nth-child(2) {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal-code-add {
+  @include default_modal(600px, auto);
+  display: none;
+}
+.modal-codedetail-add {
+  @include default_modal(600px, auto);
+  display: none;
+}
+.modal-codedetail-add02 {
+  @include default_modal(600px, auto);
+  display: none;
+  .setting-table-content {
+    gap: 10px;
+    .btn-rec-teal {
+      width: 60px;
+    }
+    .input-group {
+      width: 100%;
+    }
+  }
+}
+.modal-codedetail-dt {
+  @include default_modal(600px, auto);
+  display: none;
+}
+.modal-codedetail-dt02 {
+  @include default_modal(600px, auto);
+  display: none;
+  .setting-table-content {
+    gap: 10px;
+    .btn-rec-teal {
+      width: 60px;
+    }
+    .input-group {
+      width: 100%;
+    }
+  }
+}
+.modal-order-chg {
+  @include default_modal(auto, auto);
+  display: none;
+  .order-chg-bottom {
+    display: flex;
+    gap: 5px;
+    margin-top: 10px;
+    button {
+      padding: 0;
+      width: 25px;
+      height: 25px;
+      &:first-child {
+        transform: rotate(0.25turn);
+      }
+      &:last-child {
+        transform: rotate(0.25turn);
+      }
+    }
+  }
+}
+
+.modal-code-search {
+  @include default_modal(auto, auto);
+  display: none;
+  .content-sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: $blue500;
+  }
+  table.jb-table {
+    tbody tr td {
+      &:nth-child(2) {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+//------------------------------------------------
 //appr-group-add
 .appr-group-add,
 .appr-group-detail {
@@ -2489,6 +2594,44 @@ table.jb-table thead.double {
       background-color: $colors_box;
     }
   }
+  .noti-box {
+    width: 330px;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+    &-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #141f40;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      li {
+        &:first-child {
+          &::before {
+            content: "";
+            width: 20px;
+            height: 10px;
+            background-color: #f5aa88;
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+        &:last-child {
+          &::before {
+            content: "";
+            width: 20px;
+            height: 10px;
+            background-color: $teal;
+            display: inline-block;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
 }
 
 // livead-us
@@ -2515,6 +2658,8 @@ table.jb-table thead.double {
     }
   }
 }
+//------------------------------------------------------
+//----------------------report--------------------------------
 
 // monitoring
 .monitoring {
@@ -2528,9 +2673,27 @@ table.jb-table thead.double {
       color: #9f9f9f;
       font-size: 13px;
     }
+  }
+}
+
+//exposure
+.exposure {
+  .button-group {
+    width: 300px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    .desc {
+      color: #9f9f9f;
+      font-size: 13px;
+    }
     .btn-toggle {
       background-color: $white;
     }
+  }
+  .input-wrapper {
+    align-items: center;
   }
 }
 //------------------------------------------------------
