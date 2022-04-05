@@ -47,8 +47,7 @@
                   <div class="input-title">서비스</div>
                   <div class="input-group">
                     <select onchange="location.href=this.value">
-                      <option>전체</option>
-                      <option value="video_us.html">PrePlay</option>
+                      <option value="video_us.html" selected>PrePlay</option>
                       <option value="video_us_plus.html">PrePlay+</option>
                       <option value="video_us_s.html">PrePlayS</option>
                       <option value="video_us_pp.html">PostPlay</option>
@@ -94,7 +93,7 @@
                 <div class="input-wrapper">
                   <div class="input-title">데이터 범위</div>
                   <div class="button-group">
-                    <button class="btn-toggle chg active">추가청약사용</button>
+                    <button class="btn-subscp active">추가청약사용</button>
                   </div>
                 </div>
               </div>
@@ -248,30 +247,6 @@
                 </tr>
               </tbody>
             </table>
-            <ul class="pagination">
-              <li>
-                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
-              </li>
-              <li><a href="#" class="num">1</a></li>
-              <li><a href="#" class="num active">2</a></li>
-              <li><a href="#" class="num">3</a></li>
-              <li><a href="#" class="num">4</a></li>
-              <li><a href="#" class="num">5</a></li>
-              <li><a href="#" class="num">6</a></li>
-              <li><a href="#" class="num">7</a></li>
-              <li><a href="#" class="num">8</a></li>
-              <li><a href="#" class="num">9</a></li>
-              <li><a href="#" class="num">10</a></li>
-              <li>
-                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
@@ -286,8 +261,14 @@
       loadMainMenu(5);
       loadSubMenu("5", 2);
       loadLnb(5, 2, 2);
-
-
+      
+      $(".btn-subscp").on("click", function () {
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active").html("추가청약해제");
+        } else {
+          $(this).addClass("active").html("추가청약사용");
+        }
+      });
     </script>
   </body>
 </html>

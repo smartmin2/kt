@@ -93,7 +93,7 @@
                 <div class="input-wrapper">
                   <div class="input-title">데이터 범위</div>
                   <div class="button-group">
-                    <button class="btn-toggle chg active">추가청약사용</button>
+                    <button class="btn-subscp active">추가청약사용</button>
                   </div>
                 </div>
               </div>
@@ -104,9 +104,7 @@
           </div>
           <div class="table-wrapper">
             <div class="table-top">
-              <div class="table-top-count">
-             
-              </div>
+              <div class="table-top-count"></div>
               <div class="table-top-buttons">
                 <button class="btn-excel"><img />엑셀다운로드</button>
               </div>
@@ -246,6 +244,13 @@
       loadSubMenu("5", 3);
       loadLnb(5, 3, 2);
 
+      $(".btn-subscp").on("click", function () {
+        if ($(this).hasClass("active")) {
+          $(this).removeClass("active").html("추가청약해제");
+        } else {
+          $(this).addClass("active").html("추가청약사용");
+        }
+      });
     </script>
   </body>
 </html>
