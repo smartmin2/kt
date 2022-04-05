@@ -450,14 +450,6 @@ $(".btn-toggle").on("click", function () {
       sub.css("display", "none");
     }
   }
-
-  // if ($(".chg").hasClass("active")) {
-  //   $(this).html("추가청약사용");
-  // } else {
-  //   $(this).html("추가청약해제");
-  // }
-
-
 });
 
 $(".whether").on("click", function () {
