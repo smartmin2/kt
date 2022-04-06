@@ -198,3 +198,8 @@ $bg_black: rgba(0,0,0,0.1);
     gap: 10px;
   }
 }
+
+@mixin setting_table_height($height){
+  height: $height;
+  .setting-table-title {height: ($height)-1px;}
+}

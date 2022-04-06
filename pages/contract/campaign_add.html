@@ -365,7 +365,7 @@
               <button class="btn-common">선택 초기화</button>
             </div>            
           </div>
-          <div class="content-info-detail">            
+          <div class="content-info-detail preplay-detail">            
             <div class="setting-table">
               <div class="row-block">
                 <div class="col-block">
@@ -861,7 +861,7 @@
           </div>
           <div class="content-info-detail">            
             <div class="setting-table">
-              HomePlay 상세
+              <!-- HomePlay 상세 -->
             </div>  
           </div>
         </div>
@@ -965,12 +965,90 @@
           </div>
           <div class="content-info-detail">            
             <div class="setting-table">
-              PrePlay+ 상세
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">서비스</div>
+                    <div class="setting-table-content">PrePlay+</div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">프로그램</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <input type="text" name="" id="">
+                      <button class="btn-rec-teal-52">선택</button>
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">보장노출</div>
+                  <div class="setting-table-content">
+                    <div class="input-group width-104">
+                      <select>
+                        <option value="">15초</option>
+                        <option value="">20초</option>
+                        <option value="">30초</option>                                                              
+                        <option value="">60초</option>                                                              
+                        <option value="">90초</option>                                                              
+                        <option value="">120초</option>                                                              
+                      </select>
+                    </div>   
+                    <div class="input-group width-104">
+                      <select>                          
+                        <option value="">게런티</option>
+                        <option value="">추가노출</option>                                                              
+                      </select>
+                    </div>   
+                    <input type="text" value="" class="width-75">
+                    <div class="just-text">잔여노출량:1,669</div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">프로그램 단가(원)
+                  </div>
+                  <div class="setting-table-content">
+                    <input type="text" name="" id="">
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">유/무료 타게팅</div>
+                  <div class="setting-table-content">
+                    <div class="btn-select-group">
+                      <button class="btn-select">전체</button>
+                      <button class="btn-select">유료</button>
+                      <button class="btn-select">무료</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">5.1ch 타게팅</div>
+                  <div class="setting-table-content">
+                    <div class="btn-select-group">
+                      <button class="btn-select">일반</button>
+                      <button class="btn-select active">5.1CH</button>
+                    </div>
+                  </div>     
+                </div>
+              </div>
             </div>  
           </div>
         </div>
         <!-- PrePlayS -->
-        <div class="content-block preplay-s">          
+        <div class="content-block preplay-s preplay">          
           <div class="content-top">
             <div class="top-left">청약4:PrePlayS    
               <div class="btn-group">
@@ -1134,9 +1212,408 @@
               <button class="btn-common">선택 초기화</button>
             </div>            
           </div>
-          <div class="content-info-detail">            
+          <div class="content-info-detail preplay-detail">            
             <div class="setting-table">
-              PrePlay 상세
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">서비스</div>
+                    <div class="setting-table-content">PrePlayS</div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">보장노출</div>
+                    <div class="setting-table-content">
+                      <div class="input-group width-104">
+                        <select>
+                          <option value="">15초</option>
+                          <option value="">20초</option>
+                          <option value="">30초</option>                                                              
+                          <option value="">60초</option>                                                              
+                          <option value="">90초</option>                                                              
+                          <option value="">120초</option>                                                              
+                        </select>
+                      </div>   
+                      <div class="input-group width-104">
+                        <select>                          
+                          <option value="">게런티</option>
+                          <option value="">추가노출</option>                                                              
+                        </select>
+                      </div>   
+                      <input type="text" value="" class="width-75">
+                      <div class="just-text">잔여노출량:1,669</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">시청등급</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">
+                        <button class="btn-select active">전체</button>
+                        <button class="btn-select">일반</button>                      
+                        <button class="btn-select">7세이상</button>                      
+                        <button class="btn-select">12세이상</button>                      
+                        <button class="btn-select">15세이상</button>                      
+                        <button class="btn-select">19세이상</button>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title flex-col">카테고리
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="ck5-2" name="check5" value="2"> <label for="ck5-2">&nbsp;그룹</label>
+                      </div>   
+                      <button class="btn-rec-teal">청약간소화</button>
+                    </div>
+                    <div class="setting-table-content flex-col">
+                      <div class="input-group">
+                        <select>
+                          <option value="">KBS</option>
+                          <option value="">카테고리1</option>
+                          <option value="">카테고리2</option>                                                              
+                        </select>
+                      </div>
+                      <div class="btn-check-group box-scroll-v">            
+                        <input type="checkbox" id="ck-catg1" checked><label for="ck-catg1">예능</label>            
+                        <input type="checkbox" id="ck-catg2"><label for="ck-catg2">드라마</label>
+                        <input type="checkbox" id="ck-catg3"><label for="ck-catg3">시사</label>                          
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">기간</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="btn-select-group">
+                      <button class="btn-select">주중</button>
+                      <button class="btn-select active">주말</button>
+                    </div>
+                    <div class="multi-group no-gap">
+                      <input type="date" name="" id="" class="width-132" value="2022-02-14">~
+                      <input type="date" name="" id="" class="width-132" value="2022-02-14">
+                      <div class="just-text">비율</div>
+                      <input type="text" name="" id="" class="width-40">%
+                      <button class="btn-rec-teal-52">추가</button>
+                    </div>
+                    <div class="divider-h"></div>
+                    <button class="btn-rec-teal-52">삭제</button>
+                    <div class="cam-table-wrapper">
+                      <table class="jb-table">
+                        <colgroup>
+                          <col style="width: 4%" />
+                          <col style="width: 86%"/>
+                          <col style="width: 10%" />                          
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>기간</th>
+                            <th>비율</th>                            
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>22-06-09 ~ 2022-07-01</td>
+                            <td>50</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>22-06-09 ~ 2022-07-01</td>
+                            <td>50</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">시간대</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <button class="btn-rec-teal-86">전체</button>
+                      <button class="btn-rec-teal-86">00~06시</button>
+                      <button class="btn-rec-teal-86">07~21시</button>
+                      <button class="btn-rec-teal-86">22~23시</button>
+                    </div>
+                    <div class="multi-group">
+                      <button class="btn-rec-teal-86">주류광고</button>
+                      <button class="btn-rec-teal-86">고열량광고</button>
+                    </div>
+                    <div class="multi-group">
+                      <div class="input-group width-94">
+                        <select name="" id="" class="sl-hours">
+                          <option value="">00시</option>                        
+                        </select>
+                      </div>
+                      ~
+                      <div class="input-group width-94">
+                        <select name="" id="" class="sl-hours">
+                          <option value="">23시</option>                        
+                        </select>
+                      </div>
+                      <button class="btn-rec-teal-52">추가</button>
+                    </div>
+                    <div class="divider-h"></div>
+                    <button class="btn-rec-teal-52">삭제</button>
+                    <div class="cam-table-wrapper">
+                      <table class="jb-table">
+                        <colgroup>
+                          <col style="width: 4%" />
+                          <col />                        
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>시간대</th>                          
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>00시~04시</td>                          
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>                          
+                            <td>06시~10시</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">5.1ch 타게팅</div>
+                  <div class="setting-table-content">
+                    <div class="btn-select-group">
+                      <button class="btn-select">일반</button>
+                      <button class="btn-select active">5.1CH</button>
+                    </div>
+                  </div>     
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">제한시간(분)</div>
+                  <div class="setting-table-content">
+                    <input type="text" name="" id="" class="width-200">
+                  </div>     
+                </div>
+              </div>
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title">유/무료 타게팅</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">
+                        <button class="btn-select">전체</button>
+                        <button class="btn-select">유료</button>
+                        <button class="btn-select">무료</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title">처음/이어보기</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">
+                        <button class="btn-select">전체</button>
+                        <button class="btn-select">처음</button>
+                        <button class="btn-select">이어보기</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title">지역</div>
+                    <div class="setting-table-content flex-col">
+                      <div class="multi-group">
+                        <button class="btn-rec-teal-52">선택</button>
+                        <button class="btn-rec-teal-52">삭제</button>
+                      </div>
+                      <div class="cam-table-wrapper">
+                        <table class="jb-table">
+                          <colgroup>
+                            <col style="width: 4%" />
+                            <col />                        
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th><input type="checkbox" name="" id=""></th>
+                              <th>지역</th>                          
+                            </tr>
+                          </thead>
+                          <tbody class="table-body">
+                            <tr>
+                              <td><input type="checkbox" name="" id=""></td>                          
+                              <td>경기도</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" name="" id=""></td>                          
+                              <td>서울특별시</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">프로그램</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <input type="text" name="" id="">
+                      <button class="btn-rec-teal-52">선택</button>
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">콘텐츠</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <input type="text" name="" id="">
+                      <button class="btn-rec-teal-52">선택</button>
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">STB 그룹</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <input type="text" name="" id="">
+                      <button class="btn-rec-teal-52">선택</button>
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell"></div>
+              </div>
+              <div class="row">
+                <div class="col-block">
+                  <div class="col-block-title">무료처음</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>2번 SLOOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>3번 SLOOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>4번 SLOOT</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>   
+                <div class="col-block">
+                  <div class="col-block-title">무료 이어보기</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>2번 SLOOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>3번 SLOOT</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>    
+                <div class="col-block">
+                  <div class="col-block-title">유료 처음</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>                        
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>    
+                <div class="col-block">
+                  <div class="col-block-title">유료 이어보기</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>2번 SLOOT</td>
+                        </tr>                        
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>                 
+              </div>
             </div>  
           </div>
         </div>
@@ -1340,7 +1817,7 @@
           </div>
         </div>
         <!-- PrePlay+Q -->
-        <div class="content-block preplay-pq">          
+        <div class="content-block preplay-pq preplay-q">          
           <div class="content-top">
             <div class="top-left">청약6:PrePlay+ Q    
               <div class="btn-group">
@@ -1414,9 +1891,127 @@
               <button class="btn-common">선택 초기화</button>
             </div>            
           </div>
-          <div class="content-info-detail">            
+          <div class="content-info-detail">   
             <div class="setting-table">
-              PrePlay 상세
+              <div class="row">                
+                <div class="setting-table-title ic-title-nece">서비스</div>
+                <div class="setting-table-content">PrePlay+ Q</div>                
+              </div>
+              <div class="row">
+                <div class="table-wrapper">
+                  <div class="table-top">
+                    <div class="table-top-count">
+                      <div class="table-total-count">전체<span>1,256</span></div>
+                      <div class="table-view-count">
+                        <div class="input-group">
+                          <select>
+                            <option value="">10개</option>
+                            <option value="">20개</option>
+                            <option value="">30개</option>                                           
+                            <option value="">50개</option>                                           
+                            <option value="">100개</option>                                                
+                          </select>
+                        </div>   
+                      </div>
+                    </div>
+                    <div class="just-text">
+                      ※1번 구좌에 청약한 PrePlay Q 광고 청약이 가능합니다.
+                    </div>
+                  </div>              
+                  <table class="jb-table">
+                    <colgroup>
+                      <col />
+                      <col style="width: 4%" />
+                      <col style="width: 6%" />
+                      <col style="width: 5%" />
+                      <col style="width: 4%" />
+                      <col style="width: 4%" />
+                      <col style="width: 6%" />
+                      <col style="width: 4%" />
+                      <col style="width: 6%" />
+                      <col style="width: 6%" />
+                      <col style="width: 5%" />
+                      <col style="width: 5%" />
+                      <col style="width: 5%" />
+                      <col style="width: 7%" />
+                      <col style="width: 7%" />
+                      <col style="width: 8%" />
+                      <col style="width: 6%" />
+                    </colgroup>
+                    <thead>
+                      <tr>
+                        <th>Asset Name</th>
+                        <th>서비스</th>
+                        <th>AssetID</th>
+                        <th>청약</th>
+                        <th>광고초수(초)</th>
+                        <th>음질</th>
+                        <th>화질</th>
+                        <th>배포구분</th>
+                        <th>진행상태</th>
+                        <th>광고구분</th>
+                        <th>업종</th>
+                        <th>소재구분</th>
+                        <th>삭제예정</th>
+                        <th>날짜</th>
+                        <th>가공실전송</th>
+                        <th>소재파일</th>
+                        <th>관리</th>
+                      </tr>
+                    </thead>
+                    <tbody class="table-body">
+                      <tr>
+                        <td colspan="17">데이터가 없습니다</td>
+                      </tr>
+                    </tbody>
+                  </table>                                                
+                </div>            
+              </div>            
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">기간</div>
+                    <div class="setting-table-content">
+                      <input type="date" name="" id="">~<input type="date" name="" id="">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title">게런티/추가노출</div>
+                    <div class="setting-table-content">
+                      게런티 잔여노출량 : 1,000 추가 잔여노출량 : 0
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">소재구분</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">                                    
+                        <button class="btn-select">일반소재</button>
+                        <button class="btn-select active">웹소재</button>
+                      </div>
+                      <div class="input-group width-200">
+                        <select>
+                          <option value="">일반제작</option>
+                          <option value="">일반제작1</option>
+                          <option value="">일반제작2</option>                                                              
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">SMS 전송</div>
+                  <div class="setting-table-content flex-col">
+                    <button class="btn-rec-teal-86">SMS 전송</button>
+                    <input type="text" name="" id="" class="width-200">
+                    <div class="just-text">※ 이벤트 참여 시에 SMS를 전송합니다.<br> 
+                      (이벤트 로그 첫번째 값을 발송 번호로 사용합니다.)</div>
+                  </div>
+                </div>
+              </div>
             </div>  
           </div>
         </div>
@@ -2161,7 +2756,158 @@
           </div>
           <div class="content-info-detail">            
             <div class="setting-table">
-              PrePlay 상세
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">서비스</div>
+                  <div class="setting-table-content">
+                    Time Q
+                    <div class="btn-select-group">
+                      <div class="btn-select">유료</div>
+                      <div class="btn-select">무료</div>
+                      <div class="btn-select">전체</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">보장/추가노출</div>
+                  <div class="setting-table-content"> 
+                    <div class="input-group width-104">
+                      <select>                                                  
+                        <option value="">게런티</option>
+                        <option value="">추가노출</option>                                                              
+                      </select>
+                    </div>   
+                    <input type="text" value="" class="width-75">
+                    <div class="just-text">잔여노출량:1,669</div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">                  
+                  <div class="setting-table-title ic-title-nece">기간</div>
+                  <div class="setting-table-content">
+                    <input type="date" name="" id="" value="2022-04-01">~<input type="date" name="" id="" value="2022-04-01">
+                  </div>
+                </div>
+                <div class="cell">                  
+                  <div class="setting-table-title">예상송출횟수</div>
+                  <div class="setting-table-content">
+                    주말SA: 0회 주말A: 0회 주중SA: 1회 주중A: 0회
+                  </div>
+                </div>
+              </div>
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title">소재/<br>
+                      청약시간
+                      </div>
+                    <div class="setting-table-content">
+                      <div class="input-group width-75">
+                        <select name="" id="">
+                          <option value="">15초</option>
+                          <option value="">20초</option>
+                          <option value="">30초</option>
+                          <option value="">60초</option>
+                          <option value="">90초</option>
+                          <option value="">120초</option>
+                        </select>                        
+                      </div>
+                      <input type="checkbox" name="" id="#ck-dinput"><label for="ck-dinput">직접입력</label>
+                      <div class="input-group width-75">
+                        <select name="" id="">
+                          <option value="">00시</option>
+                          <option value="">01시</option>
+                          <option value="">02시</option>
+                          <option value="">03시</option>
+                          <option value="">04시</option>
+                          <option value="">05시</option>
+                        </select>                        
+                      </div>
+                      <div class="input-group width-75">
+                        <select name="" id="">
+                          <option value="">00시</option>
+                          <option value="">01시</option>
+                          <option value="">02시</option>
+                          <option value="">03시</option>
+                          <option value="">04시</option>
+                          <option value="">05시</option>
+                        </select>                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title">청약송출횟수</div>
+                    <div class="setting-table-content">
+                      주말SA: 0회 주말A: 0회 주중SA: 1회 주중A: 0회
+                    </div>
+                  </div>                  
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">소재구분</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">                                    
+                        <button class="btn-select">일반소재</button>
+                        <button class="btn-select active">웹소재</button>
+                      </div>
+                      <div class="input-group width-200">
+                        <select>
+                          <option value="">일반제작</option>
+                          <option value="">일반제작1</option>
+                          <option value="">일반제작2</option>                                                              
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>     
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">SMS 전송</div>
+                  <div class="setting-table-content flex-col">
+                    <button class="btn-rec-teal-86">SMS 전송</button>
+                    <input type="text" name="" id="" class="width-200">
+                    <div class="just-text">※ 이벤트 참여 시에 SMS를 전송합니다.<br> 
+                      (이벤트 로그 첫번째 값을 발송 번호로 사용합니다.)</div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">STB 그룹</div>
+                    <div class="setting-table-content">
+                      <div class="multi-group">
+                        <input type="text" name="" id="">
+                        <button class="btn-rec-teal-52">선택</button>
+                        <button class="btn-rec-teal-52">삭제</button>
+                      </div>
+                    </div>
+                </div>
+              </div>      
+              <div class="row flex-col">
+                <div>청약진행 
+                  <span class="ic-noti">
+                    <div class="noti-box">
+                      <div class="noti-box-title">범례</div>
+                      <ul>
+                        <li class="asd">청약한 시간대</li>
+                        <li>청약가능 시간대</li>
+                        <li>청약된 시간대</li>
+                        <li>현재 캠페인이 청약한 시간대</li>
+                      </ul>
+                    </div>
+                  </span>
+                </div>                
+                <div class="table-wrapper">
+                  <table class="jb-table time-table">
+                    <colgroup>                                            
+                    </colgroup>
+                    <thead>                      
+                    </thead>
+                    <tbody class="table-body">
+                    </tbody>
+                  </table>   
+                </div>
+              </div>   
             </div>  
           </div>
         </div>
@@ -2242,7 +2988,235 @@
           </div>
           <div class="content-info-detail">            
             <div class="setting-table">
-              PrePlay 상세
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">서비스</div>
+                    <div class="setting-table-content">
+                      Ending Q 
+                      <div class="btn-select-group">
+                        <div class="btn-select">유료</div>
+                        <div class="btn-select">무료</div>
+                        <div class="btn-select">전체</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">기간</div>
+                    <div class="setting-table-content">
+                      <div class="multi-group">
+                        <input type="date" name="" id="" value="2022-04-01">~
+                        <input type="date" name="" id="" value="2022-04-01">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">카테고리</div>
+                    <div class="setting-table-content flex-col">
+                      <div class="input-group">
+                        <select>
+                          <option value="">KBS</option>
+                          <option value="">카테고리1</option>
+                          <option value="">카테고리2</option>                                                              
+                        </select>
+                      </div>
+                      <div class="btn-check-group box-scroll-v">            
+                        <input type="checkbox" id="ck-catg1" checked><label for="ck-catg1">예능</label>            
+                        <input type="checkbox" id="ck-catg2"><label for="ck-catg2">드라마</label>
+                        <input type="checkbox" id="ck-catg3"><label for="ck-catg3">시사</label>                                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">보장노출</div>
+                    <div class="setting-table-content">
+                      <div class="input-group width-104">
+                        <select>
+                          <option value="">15초</option>
+                          <option value="">20초</option>
+                          <option value="">30초</option>                                                              
+                          <option value="">60초</option>                                                              
+                          <option value="">90초</option>                                                              
+                          <option value="">120초</option>                                                              
+                        </select>
+                      </div>   
+                      <div class="input-group width-104">
+                        <select>                          
+                          <option value="">게런티</option>
+                          <option value="">추가노출</option>                                                              
+                        </select>
+                      </div>   
+                      <input type="text" value="" class="width-75">
+                      <div class="just-text">잔여노출량:1,669</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title">프로그램</div>
+                    <div class="setting-table-content">
+                      <div class="multi-group">
+                        <input type="text" name="" id="">
+                        <button class="btn-rec-teal-52">선택</button>
+                        <button class="btn-rec-teal-52">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title">콘텐츠</div>
+                    <div class="setting-table-content">
+                      <div class="multi-group">
+                        <input type="text" name="" id="">
+                        <button class="btn-rec-teal-52">선택</button>
+                        <button class="btn-rec-teal-52">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">시청등급</div>
+                    <div class="setting-table-content">
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="">전체</option>
+                          <option value="">일반</option>
+                          <option value="">7세이상</option>
+                          <option value="">12세이상</option>
+                          <option value="">15세이상</option>
+                          <option value="">19세이상</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title  ic-title-nece">종료전</div>
+                    <div class="setting-table-content">                      
+                        <input type="text" name="" id="">                                              
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">시간대</div>
+                      <div class="setting-table-content flex-col">
+                        <div class="multi-group">
+                          <button class="btn-rec-teal-86">전체</button>
+                          <button class="btn-rec-teal-86">00~06시</button>
+                          <button class="btn-rec-teal-86">07~21시</button>
+                          <button class="btn-rec-teal-86">22~23시</button>
+                        </div>                      
+                        <div class="multi-group">
+                          <div class="input-group width-94">
+                            <select name="" id="" class="sl-hours">
+                              <option value="">00시</option>                        
+                            </select>
+                          </div>
+                          ~
+                          <div class="input-group width-94">
+                            <select name="" id="" class="sl-hours">
+                              <option value="">23시</option>                        
+                            </select>
+                          </div>
+                          <button class="btn-rec-teal-52">추가</button>
+                        </div>
+                        <div class="divider-h"></div>
+                        <button class="btn-rec-teal-52">삭제</button>
+                        <div class="cam-table-wrapper">
+                          <table class="jb-table">
+                            <colgroup>
+                              <col style="width: 4%" />
+                              <col />                        
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th><input type="checkbox" name="" id=""></th>
+                                <th>시간대</th>                          
+                              </tr>
+                            </thead>
+                            <tbody class="table-body">
+                              <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>00시~04시</td>                          
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox" name="" id=""></td>                          
+                                <td>06시~10시</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">소재구분</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">                                    
+                        <button class="btn-select">일반소재</button>
+                        <button class="btn-select active">웹소재</button>
+                      </div>
+                      <div class="input-group width-200">
+                        <select>
+                          <option value="">일반제작</option>
+                          <option value="">일반제작1</option>
+                          <option value="">일반제작2</option>                                                              
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">SMS 전송</div>
+                    <div class="setting-table-content flex-col">
+                      <button class="btn-rec-teal-86">SMS 전송</button>
+                      <input type="text">
+                      <div class="just-text">※이벤트 참여 시에 SMS를 전송합니다.<br>
+                        (이벤트 로그 첫번째 값을 발송 번호로 사용합니다.)
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">지역</div>
+                      <div class="setting-table-content flex-col">
+                        <div class="multi-group">
+                          <button class="btn-rec-teal-52">선택</button>                          
+                          <button class="btn-rec-teal-52">삭제</button>
+                        </div>                        
+                        <div class="cam-table-wrapper">
+                          <table class="jb-table">
+                            <colgroup>
+                              <col style="width: 4%" />
+                              <col />                        
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th><input type="checkbox" name="" id=""></th>
+                                <th>지역</th>                          
+                              </tr>
+                            </thead>
+                            <tbody class="table-body">
+                              <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>경기도</td>                          
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox" name="" id=""></td>                          
+                                <td>서울특별시</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>         
             </div>  
           </div>
         </div>
@@ -2321,7 +3295,177 @@
           </div>
           <div class="content-info-detail">            
             <div class="setting-table">
-              PrePlay 상세
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">서비스</div>
+                  <div class="setting-table-content">HomeShot</div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">광고타입</div>
+                  <div class="setting-table-content">콘텐츠</div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">                  
+                  <div class="setting-table-title ic-title-nece">기간</div>
+                  <div class="setting-table-content">
+                    <input type="date" name="" id="">~<input type="date" name="" id="">
+                  </div>
+                </div>
+                <div class="cell">                  
+                  <div class="setting-table-title ic-title-nece">구좌</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">1구좌</option>
+                        <option value="">3구좌</option>
+                        <option value="">5구좌</option>                                                              
+                        <option value="">7구좌</option>                                                              
+                        <option value="">9구좌</option>                                                              
+                        <option value="">10구좌</option>                                                              
+                        <option value="">11구좌</option>                                                              
+                        <option value="">12구좌</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">소재구분</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">                                    
+                        <button class="btn-select">일반소재</button>
+                        <button class="btn-select active">웹소재</button>
+                      </div>
+                      <div class="input-group width-200">
+                        <select>
+                          <option value="">일반제작</option>
+                          <option value="">일반제작1</option>
+                          <option value="">일반제작2</option>                                                              
+                        </select>
+                      </div>
+                    </div>
+                  </div>   
+                  <div class="row">
+                    <div class="setting-table-title">STB 그룹</div>
+                    <div class="setting-table-content">
+                      <div class="multi-group">
+                        <input type="text" name="" id="">
+                        <button class="btn-rec-teal-52">선택</button>
+                        <button class="btn-rec-teal-52">삭제</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title">이동 정보</div>
+                    <div class="setting-table-content">
+                      <div class="input-group">
+                        <select>
+                          <option value="">카테고리</option>
+                          <option value="">시리즈</option>
+                          <option value="">콘텐츠</option>                                                              
+                          <option value="">멀티캐스트 양방향</option>                                                              
+                          <option value="">유니캐스트 양방향</option>                                                              
+                          <option value="">웹뷰</option>                                                              
+                          <option value="">BOMAPP 이동</option>                                                              
+                          <option value="">이동없음</option>                                                              
+                        </select>
+                      </div>                         
+                    </div>
+                  </div>               
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">시간대</div>
+                      <div class="setting-table-content flex-col">
+                        <div class="multi-group">
+                          <button class="btn-rec-teal-86">전체</button>
+                          <button class="btn-rec-teal-86">00~06시</button>
+                          <button class="btn-rec-teal-86">07~21시</button>
+                          <button class="btn-rec-teal-86">22~23시</button>
+                        </div>                      
+                        <div class="multi-group">
+                          <div class="input-group width-94">
+                            <select name="" id="" class="sl-hours">
+                              <option value="">00시</option>                        
+                            </select>
+                          </div>
+                          ~
+                          <div class="input-group width-94">
+                            <select name="" id="" class="sl-hours">
+                              <option value="">23시</option>                        
+                            </select>
+                          </div>
+                          <button class="btn-rec-teal-52">추가</button>
+                        </div>
+                        <div class="divider-h"></div>
+                        <button class="btn-rec-teal-52">삭제</button>
+                        <div class="cam-table-wrapper">
+                          <table class="jb-table">
+                            <colgroup>
+                              <col style="width: 4%" />
+                              <col />                        
+                            </colgroup>
+                            <thead>
+                              <tr>
+                                <th><input type="checkbox" name="" id=""></th>
+                                <th>시간대</th>                          
+                              </tr>
+                            </thead>
+                            <tbody class="table-body">
+                              <tr>
+                                <td><input type="checkbox" name="" id=""></td>
+                                <td>00시~04시</td>                          
+                              </tr>
+                              <tr>
+                                <td><input type="checkbox" name="" id=""></td>                          
+                                <td>06시~10시</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">지역</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <button class="btn-rec-teal-52">선택</button>                          
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>                        
+                    <div class="cam-table-wrapper">
+                      <table class="jb-table">
+                        <colgroup>
+                          <col style="width: 4%" />
+                          <col />                        
+                        </colgroup>
+                        <thead>
+                            <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>지역</th>                          
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>경기도</td>                          
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>                          
+                            <td>서울특별시</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>                
+                </div>
+                <div class="cell"></div>
+              </div>
             </div>  
           </div>
         </div>
@@ -2510,10 +3654,558 @@
             </div>  
           </div>
         </div>
+        <!-- PostPlay -->
+        <div class="content-block preplay-s preplay">          
+          <div class="content-top">
+            <div class="top-left">청약13:PostPlay    
+              <div class="btn-group">
+                <div class="btn-white">삭제</div>
+                <div class="btn-white">상품변경</div>
+              </div>           
+            </div>            
+            <div class="ic-open-arrow"></div>
+          </div>
+          <div class="content-info">
+            <div class="setting-table">
+              <div class="row">                
+                <div class="setting-table-title">소재추가</div>
+                <div class="setting-table-content">
+                  <input type="text" value="">
+                  <button class="btn-rec-teal-86">소재선택</button>
+                </div>                
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">청약명</div>
+                  <div class="setting-table-content"><input type="text" value=""></div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">청약기간</div>
+                  <div class="setting-table-content">
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">단가요소 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">단가요소1</option>
+                        <option value="">단가요소2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">계약금액(총 매출)</div>
+                  <div class="setting-table-content">
+                    <input type="text" value="">(VAT별도)
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">지역할증 </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">지역할증1</option>
+                        <option value="">지역할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">유료할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">유료할증1</option>
+                        <option value="">유료할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">요일할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">요일할증1</option>
+                        <option value="">요일할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">시간할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">시간할증1</option>
+                        <option value="">시간할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">처음/이어보기 할증</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select>
+                        <option value="">선택하세요</option>
+                        <option value="">처음/이어보기 할증1</option>
+                        <option value="">처음/이어보기 할증2</option>                                                              
+                      </select>
+                    </div>   
+                  </div>
+                </div>
+                <div class="cell">                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">보장노출/보너스노출</div>
+                  <div class="setting-table-content">
+                    <input type="text">/<input type="text">/<input type="text">보너스율<input type="text">
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">단가</div>
+                  <div class="setting-table-content">
+                    노출당 단가<input type="text">원 / 실단가 <input type="text">원
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="setting-table-bottom">
+              <button class="btn-common">선택 초기화</button>
+            </div>            
+          </div>
+          <div class="content-info-detail preplay-detail">            
+            <div class="setting-table">
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">서비스</div>
+                    <div class="setting-table-content">PostPlay</div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">보장노출</div>
+                    <div class="setting-table-content">
+                      <div class="input-group width-104">
+                        <select>
+                          <option value="">15초</option>
+                          <option value="">20초</option>
+                          <option value="">30초</option>                                                              
+                          <option value="">60초</option>                                                              
+                          <option value="">90초</option>                                                              
+                          <option value="">120초</option>                                                              
+                        </select>
+                      </div>   
+                      <div class="input-group width-104">
+                        <select>                          
+                          <option value="">게런티</option>
+                          <option value="">추가노출</option>                                                              
+                        </select>
+                      </div>   
+                      <input type="text" value="" class="width-75">
+                      <div class="just-text">잔여노출량:1,669</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title ic-title-nece">시청등급</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">
+                        <button class="btn-select active">전체</button>
+                        <button class="btn-select">일반</button>                      
+                        <button class="btn-select">7세이상</button>                      
+                        <button class="btn-select">12세이상</button>                      
+                        <button class="btn-select">15세이상</button>                      
+                        <button class="btn-select">19세이상</button>                      
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title flex-col">카테고리
+                      <div class="checkbox-group">
+                        <input type="checkbox" id="ck5-2" name="check5" value="2"> <label for="ck5-2">&nbsp;그룹</label>
+                      </div>   
+                      <button class="btn-rec-teal">청약간소화</button>
+                    </div>
+                    <div class="setting-table-content flex-col">
+                      <div class="input-group">
+                        <select>
+                          <option value="">KBS</option>
+                          <option value="">카테고리1</option>
+                          <option value="">카테고리2</option>                                                              
+                        </select>
+                      </div>
+                      <div class="btn-check-group box-scroll-v">            
+                        <input type="checkbox" id="ck-catg1" checked><label for="ck-catg1">예능</label>            
+                        <input type="checkbox" id="ck-catg2"><label for="ck-catg2">드라마</label>
+                        <input type="checkbox" id="ck-catg3"><label for="ck-catg3">시사</label>                          
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">기간</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="btn-select-group">
+                      <button class="btn-select">주중</button>
+                      <button class="btn-select active">주말</button>
+                    </div>
+                    <div class="multi-group no-gap">
+                      <input type="date" name="" id="" class="width-132" value="2022-02-14">~
+                      <input type="date" name="" id="" class="width-132" value="2022-02-14">
+                      <div class="just-text">비율</div>
+                      <input type="text" name="" id="" class="width-40">%
+                      <button class="btn-rec-teal-52">추가</button>
+                    </div>
+                    <div class="divider-h"></div>
+                    <button class="btn-rec-teal-52">삭제</button>
+                    <div class="cam-table-wrapper">
+                      <table class="jb-table">
+                        <colgroup>
+                          <col style="width: 4%" />
+                          <col style="width: 86%"/>
+                          <col style="width: 10%" />                          
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>기간</th>
+                            <th>비율</th>                            
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>22-06-09 ~ 2022-07-01</td>
+                            <td>50</td>
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>22-06-09 ~ 2022-07-01</td>
+                            <td>50</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title ic-title-nece">시간대</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <button class="btn-rec-teal-86">전체</button>
+                      <button class="btn-rec-teal-86">00~06시</button>
+                      <button class="btn-rec-teal-86">07~21시</button>
+                      <button class="btn-rec-teal-86">22~23시</button>
+                    </div>
+                    <div class="multi-group">
+                      <button class="btn-rec-teal-86">주류광고</button>
+                      <button class="btn-rec-teal-86">고열량광고</button>
+                    </div>
+                    <div class="multi-group">
+                      <div class="input-group width-94">
+                        <select name="" id="" class="sl-hours">
+                          <option value="">00시</option>                        
+                        </select>
+                      </div>
+                      ~
+                      <div class="input-group width-94">
+                        <select name="" id="" class="sl-hours">
+                          <option value="">23시</option>                        
+                        </select>
+                      </div>
+                      <button class="btn-rec-teal-52">추가</button>
+                    </div>
+                    <div class="divider-h"></div>
+                    <button class="btn-rec-teal-52">삭제</button>
+                    <div class="cam-table-wrapper">
+                      <table class="jb-table">
+                        <colgroup>
+                          <col style="width: 4%" />
+                          <col />                        
+                        </colgroup>
+                        <thead>
+                          <tr>
+                            <th><input type="checkbox" name="" id=""></th>
+                            <th>시간대</th>                          
+                          </tr>
+                        </thead>
+                        <tbody class="table-body">
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>00시~04시</td>                          
+                          </tr>
+                          <tr>
+                            <td><input type="checkbox" name="" id=""></td>                          
+                            <td>06시~10시</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">5.1ch 타게팅</div>
+                  <div class="setting-table-content">
+                    <div class="btn-select-group">
+                      <button class="btn-select">일반</button>
+                      <button class="btn-select active">5.1CH</button>
+                    </div>
+                  </div>     
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">제한시간(분)</div>
+                  <div class="setting-table-content">
+                    <input type="text" name="" id="" class="width-200">
+                  </div>     
+                </div>
+              </div>
+              <div class="row-block">
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title">유/무료 타게팅</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">
+                        <button class="btn-select">전체</button>
+                        <button class="btn-select">유료</button>
+                        <button class="btn-select">무료</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="setting-table-title">처음/이어보기</div>
+                    <div class="setting-table-content">
+                      <div class="btn-select-group">
+                        <button class="btn-select">전체</button>
+                        <button class="btn-select">처음</button>
+                        <button class="btn-select">이어보기</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-block">
+                  <div class="row">
+                    <div class="setting-table-title">지역</div>
+                    <div class="setting-table-content flex-col">
+                      <div class="multi-group">
+                        <button class="btn-rec-teal-52">선택</button>
+                        <button class="btn-rec-teal-52">삭제</button>
+                      </div>
+                      <div class="cam-table-wrapper">
+                        <table class="jb-table">
+                          <colgroup>
+                            <col style="width: 4%" />
+                            <col />                        
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th><input type="checkbox" name="" id=""></th>
+                              <th>지역</th>                          
+                            </tr>
+                          </thead>
+                          <tbody class="table-body">
+                            <tr>
+                              <td><input type="checkbox" name="" id=""></td>                          
+                              <td>경기도</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" name="" id=""></td>                          
+                              <td>서울특별시</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">프로그램</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <input type="text" name="" id="">
+                      <button class="btn-rec-teal-52">선택</button>
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell">
+                  <div class="setting-table-title">콘텐츠</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <input type="text" name="" id="">
+                      <button class="btn-rec-teal-52">선택</button>
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="cell">
+                  <div class="setting-table-title">STB 그룹</div>
+                  <div class="setting-table-content flex-col">
+                    <div class="multi-group">
+                      <input type="text" name="" id="">
+                      <button class="btn-rec-teal-52">선택</button>
+                      <button class="btn-rec-teal-52">삭제</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="cell"></div>
+              </div>
+              <div class="row">
+                <div class="col-block">
+                  <div class="col-block-title">무료처음</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>2번 SLOOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>3번 SLOOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>4번 SLOOT</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>   
+                <div class="col-block">
+                  <div class="col-block-title">무료 이어보기</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>2번 SLOOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>3번 SLOOT</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>    
+                <div class="col-block">
+                  <div class="col-block-title">유료 처음</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>                        
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>    
+                <div class="col-block">
+                  <div class="col-block-title">유료 이어보기</div>
+                  <div class="cam-table-wrapper">
+                    <table class="jb-table">
+                      <colgroup>
+                        <col style="width: 4%" />
+                        <col />                        
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th><input type="checkbox" name="" id=""></th>
+                          <th>전체</th>                          
+                        </tr>
+                      </thead>
+                      <tbody class="table-body">
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>1번 SLOT</td>
+                        </tr>
+                        <tr>
+                          <td><input type="checkbox" name="" id=""></td>                          
+                          <td>2번 SLOOT</td>
+                        </tr>                        
+                      </tbody>
+                    </table>
+                  </div>                  
+                </div>                 
+              </div>
+            </div>  
+          </div>
+        </div>
         <!-- Channel Q -->
         <div class="content-block channel-q">          
           <div class="content-top">
-            <div class="top-left">청약13:Channel Q
+            <div class="top-left">청약14:Channel Q
               <div class="btn-group">
                 <div class="btn-white">삭제</div>
                 <div class="btn-white">상품변경</div>
@@ -2725,7 +4417,7 @@
         <!-- LiveAD -->
         <div class="content-block livead">          
           <div class="content-top">
-            <div class="top-left">청약14:LiveAD
+            <div class="top-left">청약15:LiveAD
               <div class="btn-group">
                 <div class="btn-white">삭제</div>
                 <div class="btn-white">상품변경</div>
@@ -2899,60 +4591,222 @@
                     <li class="tab-menu active" data-tab="tab01">옵션없음</li>
                     <li class="tab-menu menu2" data-tab="tab02">지역옵션(할증 +~60%)</li>
                   </ul>
-                  <div class="sub-info-cnt">
-                    총 셋탑수 0 (지역 : 0, 세그먼트 : 0) <div class="divider-v"></div>
-                    할증 0% (지역할증 + 0% <div class="divider-v"></div>세그먼트할증 +0%)
+                  <div class="tab-content active" id="tab01">
+                    <div class="sub-info-cnt">
+                      총 셋탑수 0 (지역 : 0, 세그먼트 : 0) <div class="divider-v"></div>
+                      할증 0% (지역할증 + 0% <div class="divider-v"></div>세그먼트할증 +0%)
+                    </div>
                   </div>
-                  <div class="tab-content active" id="tab01"></div>
-                  <div class="tab-content" id="tab02"></div>
+                  <div class="tab-content" id="tab02">
+                    <div class="tab-content-main">
+                      <div class="tab-col">
+                        <div class="tab-content-title">시/도/광역시</div>
+                        <div class="tab-content-box">  
+                          <div class="flex-row">
+                            <input type="checkbox" name="" id="ck-region1-1"><label for="ck-region1-1">서울특별시 145,000</label>
+                          </div>                
+                          <div class="flex-row">                          
+                            <input type="checkbox" name="" id="ck-region1-2"><label for="ck-region1-2">대전광역시 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-3"><label for="ck-region1-3">울산광역시 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-4"><label for="ck-region1-4">세종특별자치시 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-5"><label for="ck-region1-5">대전광역시 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-6"><label for="ck-region1-6">울산광역시 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-7"><label for="ck-region1-7">부산광역시 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-8"><label for="ck-region1-8">경기도 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-9"><label for="ck-region1-9">강원도 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-10"><label for="ck-region1-10">충청북도 145,000</label>
+                          </div>                
+                          <div class="flex-row">   
+                            <input type="checkbox" name="" id="ck-region1-11"><label for="ck-region1-11">충청남도 145,000</label>
+                          </div>
+                        </div>
+                      </div>     
+                      <div class="tab-col">
+                        <div class="tab-content-title">시/군/구</div>
+                        <div class="tab-content-box">
+                          <div class="flex-between">
+                            <input type="checkbox" name="" id="ck-region2-1"><label for="ck-region2-1">강남구 145,000</label>
+                            <div class="extra-mark">+60%</div>
+                          </div>                        
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-2"><label for="ck-region2-2">강서구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-3"><label for="ck-region2-3">구로구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-4"><label for="ck-region2-4">노원구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-5"><label for="ck-region2-5">도봉구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-6"><label for="ck-region2-6">강남구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-7"><label for="ck-region2-7">관악구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-8"><label for="ck-region2-8">서대문구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-9"><label for="ck-region2-9">마포구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-10"><label for="ck-region2-10">강북구 145,000</label>
+                          </div>                
+                          <div class="flex-row"> 
+                            <input type="checkbox" name="" id="ck-region2-11"><label for="ck-region2-11">성북구 145,000</label>
+                          </div>                                        
+                        </div>
+                      </div>    
+                      <div class="tab-col">
+                        <div class="tab-content-title">시/군/구</div>
+                        <div class="tab-content-box">
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-1"><label for="ck-region3-1">강남구 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-2"><label for="ck-region3-2">대전광역시 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-3"><label for="ck-region3-3">울산광역시 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-4"><label for="ck-region3-4">세종특별자치시 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-5"><label for="ck-region3-5">대전광역시 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-6"><label for="ck-region3-6">울산광역시 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-7"><label for="ck-region3-7">부산광역시 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-between">
+                            <div class="flex-row">
+                              <input type="checkbox" name="" id="ck-region3-8"><label for="ck-region3-8">경기도 145,000</label>
+                            </div>
+                            <div class="extra-mark">+60%</div>
+                          </div> 
+                          <div class="flex-row">
+                            <input type="checkbox" name="" id="ck-region3-9"><label for="ck-region3-9">강원도 145,000</label>
+                          </div>
+                          <div class="flex-row">
+                            <input type="checkbox" name="" id="ck-region3-10"><label for="ck-region3-10">충청북도 145,000</label>
+                          </div>
+                          <div class="flex-row">
+                            <input type="checkbox" name="" id="ck-region3-11"><label for="ck-region3-10">충청남도 145,000</label>
+                          </div>
+                        </div>
+                      </div>                                                        
+                    </div>
+                    <div class="tab-content-info">
+                      시/도/광역시 할증 : 20%, 시/군/구 할증 : 40%, 청약과열지구 및 하위 지역할증 : 60%
+                    </div>
+                    <div class="tab-content-select-box">
+                      <div class="setting-table">
+                        <div class="row">
+                          <div class="setting-table-title">선택항목</div>
+                          <div class="setting-table-content">
+                            <button class="btn-rec-teal-86">전체삭제</button>
+                            <div class="selected-items">
+                              <div class="selected-item">세종특별자치시 1,222,222 &nbsp;<div class="btn-delete"></div></div>
+                              <div class="selected-item">충청남도 1,222,222 &nbsp;<div class="btn-delete"></div></div>                              
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>                
               </div>
               <div class="row">
                 <div class="setting-table-title">집행정보</div>
                 <div class="setting-table-content">
-                  <div class="item-title">기본단가 (원)</div>
-                  <div class="item-content"></div>
-                  <div class="item-title">기본노출수</div>
-                  <div class="item-content"></div>
-                  <div class="item-title">할증</div>
-                  <div class="item-content"></div>
-                  <div class="item-title">보너스</div>
-                  <div class="item-content">
-                    <div class="bonus-data">
-                      <div class="bonus-data-title">특별보너스</div>
-                      <div class="bonus-data-1">100%</div>
-                      <div class="bonus-data-2">0</div>
-                    </div>                    
-                    <div class="bonus-data">
-                      <div class="bonus-data-title">월단위볼륨보너스</div>
-                      <div class="bonus-data-1">0%</div>
-                      <div class="bonus-data-2">0</div>
-                    </div>                  
-                    <div class="bonus-data">
-                      <div class="bonus-data-title">신규(재집행)광고주</div>
-                      <div class="bonus-data-1">20%</div>
-                      <div class="bonus-data-2">0</div>
-                    </div>                  
-                    <div class="bonus-data">
-                      <div class="bonus-data-title">장기(연속)집행광고주</div>
-                      <div class="bonus-data-1">100%</div>
-                      <div class="bonus-data-2">0</div>
-                    </div>                  
-                    <div class="bonus-data">
-                      <div class="bonus-data-title">사용자보너스</div>
-                      <div class="bonus-data-1">100%</div>
-                      <div class="bonus-data-2">0</div>
-                    </div>                  
-                    <div class="bonus-data">
-                      <div class="bonus-data-title">소상공인 혜택 노출수</div>
-                      <div class="bonus-data-1">100%</div>
-                      <div class="bonus-data-2">0</div>
-                    </div>                  
+                  <div class="grid-container">
+                    <div class="item-title">기본단가 (원)</div>
+                    <div class="item-content"></div>
+                    <div class="item-title">기본노출수</div>
+                    <div class="item-content"></div>
+                    <div class="item-title">할증</div>
+                    <div class="item-content"></div>
+                    <div class="item-title">보너스</div>
+                    <div class="item-content">
+                      <div class="bonus-data">
+                        <div class="bonus-data-title">특별보너스</div>
+                        <div class="bonus-data-1">100%</div>
+                        <div class="bonus-data-2">0</div>
+                      </div>                    
+                      <div class="bonus-data">
+                        <div class="bonus-data-title">월단위볼륨보너스</div>
+                        <div class="bonus-data-1">0%</div>
+                        <div class="bonus-data-2">0</div>
+                      </div>                  
+                      <div class="bonus-data">
+                        <div class="bonus-data-title">신규(재집행)광고주</div>
+                        <div class="bonus-data-1">20%</div>
+                        <div class="bonus-data-2">0</div>
+                      </div>                  
+                      <div class="bonus-data">
+                        <div class="bonus-data-title">장기(연속)집행광고주</div>
+                        <div class="bonus-data-1">100%</div>
+                        <div class="bonus-data-2">0</div>
+                      </div>                  
+                      <div class="bonus-data">
+                        <div class="bonus-data-title">사용자보너스</div>
+                        <div class="bonus-data-1">100%</div>
+                        <div class="bonus-data-2">0</div>
+                      </div>                  
+                      <div class="bonus-data">
+                        <div class="bonus-data-title">소상공인 혜택 노출수</div>
+                        <div class="bonus-data-1">100%</div>
+                        <div class="bonus-data-2">0</div>
+                      </div>                  
+                    </div>
+                    <div class="item-title">평균단가 (원)</div>
+                    <div class="item-content"></div>
+                    <div class="item-title">목표노출량</div>
+                    <div class="item-content"></div>
                   </div>
-                  <div class="item-title">평균단가 (원)</div>
-                  <div class="item-content"></div>
-                  <div class="item-title">목표노출량</div>
-                  <div class="item-content"></div>
                 </div>
               </div>   
               <div class="row">
@@ -3898,6 +5752,126 @@
         <button class="btn-white close">취소</button>
       </div>
     </div>
+    <div class="modal-stb-grp modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">STB 그룹</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">
+          <div class="search-edit-box">
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">STB 그룹</div>
+                <input type="text" />
+              </div>
+              <div class="input-wrapper">
+                <div class="input-title">SA_ID</div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+              <div class="table-view-count">
+                <div class="input-group">
+                  <select>
+                    <option value="">10개</option>
+                    <option value="">20개</option>
+                    <option value="">30개</option>
+                    <option value="">50개</option>
+                    <option value="">100개</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="jb-table table7">
+            <colgroup>              
+              <col style="width: 50%" />
+              <col style="width: 50%" />              
+            </colgroup>
+            <thead>              
+              <th>STB 그룹</th>
+              <th>SA_ID 개수</th>
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+              <tr>
+                <td>20211202 미르의전설 VOD</td>
+                <td>6000625</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
 
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/jquery-ui.min.js"></script>
@@ -4007,6 +5981,75 @@
         });
       }
 	  
+    //time-q Table 
+    const timeTable = document.querySelector(".time-table"),
+          timeColGroup = timeTable.querySelector("colgroup"),
+          timeThead = timeTable.querySelector("thead"),
+          timeTbody = timeTable.querySelector("tbody");
+    
+    function addColGroup() {
+      var col1 = document.createElement("col");
+      var col2 = document.createElement("col");
+
+      col1.width = "110px";      
+      col2.width = "60px";
+      timeColGroup.appendChild(col1);
+      timeColGroup.appendChild(col2);
+
+      for(var i=0; i<48; i++){
+        var col = document.createElement("col");
+        col.width = "30px";     
+        timeColGroup.appendChild(col);
+      }
+    }
+    function zero(n, num_length) {
+	    n = n + '';
+	    return n.length >= num_length ? n : new Array(num_length - n.length + 1).join('0') + n;
+    }
+    function addThead() {
+      var tr = document.createElement("tr");
+
+      var th1 = document.createElement("th");
+      var th2 = document.createElement("th");
+
+      th1.innerText  = "날짜";      
+      th2.innerText = "주중/일";
+      tr.appendChild(th1);
+      tr.appendChild(th2);
+
+      for(var i=0; i<24; i++){
+        var th = document.createElement("th");
+        th.colSpan = 2;
+        th.innerText = zero(i, 2);
+        tr.appendChild(th);
+      }
+      timeThead.appendChild(tr);
+    }
+    function addTRow(rowData){
+      tr = document.createElement("tr");
+      
+      td1 = document.createElement("td");
+      td1.innerText = rowData[0];
+      td2 = document.createElement("td");
+      td2.innerText = rowData[1];
+      tr.appendChild(td1);
+      tr.appendChild(td2);
+      for(var i=0; i<48; i++){
+        var td = document.createElement("td");
+        if (i%4==0) td.style.background = "#f5aa88"
+        else if (i%4==1) td.style.background = "#7cc2e0"
+        else if (i%4==2) td.style.background = "#b8b6ff"
+        else td.style.background = "#2ea64e";
+        tr.appendChild(td);        
+      }
+      timeTbody.appendChild(tr);
+    }
+    
+    addColGroup();
+    addThead();
+    const arrTData = [["2021-02-21", "주중"],["2021-02-22", "주중"],["2021-02-23", "주중"],["2021-02-24", "주중"],["2021-02-25", "주중"]];
+    arrTData.map((data) => addTRow(data));
+
 	  $("#ck-settime").on("change",function(){
         if ($(this).is(":checked")) {
           $(".dis-time").css("display","none");
@@ -4020,6 +6063,17 @@
     $(".ic-open-arrow").on("click",function(){
       var tarParent = $(this).parent(".content-top");
       tarParent.toggleClass("open");
+    })
+
+    $(".tab-menu").on("click",function(){      
+      if ($(this).hasClass("menu2")) {        
+        $(".option-h").css("height", "650px");
+        $(".option-h > .setting-table-title").css("height","648px");
+      }
+      else {
+        $(".option-h").css("height", "90px");
+        $(".option-h > .setting-table-title").css("height","88px");
+      }
     })
     </script>
   </body>
