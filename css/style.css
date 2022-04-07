@@ -3163,6 +3163,11 @@
   top: 38px;
 }
 
+.campaign-main .jb-table tbody tr td:nth-child(6) {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .cam-sub-inquiry .tab-content {
   margin-bottom: 20px;
 }

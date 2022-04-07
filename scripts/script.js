@@ -314,9 +314,11 @@ $(document).click(function (e) {
 
   // <<--------- input ------------
 
-   
-  
 });
+
+$(".go-cam-list").on("click",function(){
+ location.href = "campaign.html";
+}) 
 
  // --------- select ------------>>
 /* 셀렉트박스 보이게 하기 */
