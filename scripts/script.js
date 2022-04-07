@@ -155,7 +155,7 @@
          {id: 5, name:'메일 발송리스트', link:'/pages/system/mail-list.html', folder: []},
          {id: 6, name:'Watch-Dog', link:'/pages/system/watch-dog.html', folder: []}]    
   }
-
+  const root = "/kt"
   //--------------- Menu Load ------------------------------
   function loadMainMenu(iActive){
     var ulMainMenu = document.querySelector('.main-menu');        
@@ -238,14 +238,14 @@ $(function () {
       })
       .on('click',function(){
         var menuIndex = $(this).index();             
-        location.href = mainMenu[menuIndex].link;        
+        location.href = root + mainMenu[menuIndex].link;        
       })
     $(".header-wrapper").on('mouseleave', function(){$(".header-sub-menubar ul").removeClass('active');})
 
   $(".header-sub-menubar ul li").on('click', function(){
     var menuIndex = $(this).parent().index()+1,
         subMenuIndex = $(this).index();    
-    location.href = subMenu[menuIndex][subMenuIndex].link;
+    location.href = root + subMenu[menuIndex][subMenuIndex].link;
   })
 
   $("ul.sub-menu li").on("click", function(){
@@ -257,12 +257,12 @@ $(function () {
       var subMenuName =  $(this).parent().prev()[0].innerText,
           folderMenu = subMenu[iMain].find(x => x.name == subMenuName).folder,
           forderName = $(this)[0].innerText,
-          strLink = folderMenu.find(x => x.name == forderName).link;
+          strLink = root + folderMenu.find(x => x.name == forderName).link;
 
       location.href = strLink;
     } else {
       var subMenuName =  $(this)[0].innerText,
-          strLink = subMenu[iMain].find(x => x.name == subMenuName).link;
+          strLink = root + subMenu[iMain].find(x => x.name == subMenuName).link;
       location.href = strLink;
     }
   })
