@@ -155,7 +155,8 @@
          {id: 5, name:'메일 발송리스트', link:'/pages/system/mail-list.html', folder: []},
          {id: 6, name:'Watch-Dog', link:'/pages/system/watch-dog.html', folder: []}]    
   }
-  const root = "/kt"
+  const root = window.location.href.substring(0,window.location.href.indexOf("/pages"));
+  
   //--------------- Menu Load ------------------------------
   function loadMainMenu(iActive){
     var ulMainMenu = document.querySelector('.main-menu');        
