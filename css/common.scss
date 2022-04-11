@@ -522,7 +522,7 @@ button.menu-button {
       .setting-table-title {
         min-height: 120px;
       }
-      .setting-table-content {
+       >.setting-table-content {
         display: block;
         padding: 0;
         > div {
@@ -583,7 +583,9 @@ button.menu-button {
         display: flex;
         align-items: center;
         gap: 10px;
-        &.sub {
+    
+    
+        &.sub, &.sub1 {
           display: none;
           border-left: 1px solid $gray600;
           padding-left: 10px;
@@ -770,7 +772,7 @@ textarea {
     opacity: 1;
     color: $font_color_50;
   }
-  @include scrollbar('H');
+  @include scrollbar('V');
 }
 input[type=date]:after {
   position: absolute;
@@ -929,7 +931,7 @@ input[type=date]:after {
   width: 20px;
   height: 20px;
 }
-.btn-toggle, .btn-subscp, .btn-expo, .btn-notin, .btn-endate {
+.btn-toggle, .btn-subscp, .btn-expo, .btn-notin, .btn-endate, .btn-open {
   width: 100px;
   height: 30px;
   border-radius: 4px;
@@ -1334,6 +1336,41 @@ select {
       font-size: 15px;
       color: $colors_font;
       border-bottom: 2px solid $colors_main;
+    }
+  }
+
+  &-content {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+}
+
+//tab02
+.tab02 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  margin-bottom: 30px;
+ 
+  &-menu {
+    width:200px;
+    height: 80px;
+    padding:0 15px 0 95px;
+    font-size: 15px;
+    text-align: center;
+    color: $font_color_80;
+    background: url(../assets/08_img_preplay.svg) no-repeat center;
+
+    @include flex_center;
+    
+    cursor: pointer;
+
+    &.active {
+      font-size: 15px;
+      color: $colors_font;
     }
   }
 
