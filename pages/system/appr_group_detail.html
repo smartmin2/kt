@@ -31,7 +31,7 @@
     <div class="main appr-group-detail">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
-          <div class="sub-menu-title">시스템관리</div>
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14">시스템관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
@@ -89,12 +89,12 @@
               <div class="row">
                 <div class="setting-table-title ic-title-nece">그룹명</div>
                 <div class="setting-table-content">
-                  <input type="text" placeholder="기가지니 청약 승인 그룹" disabled>
+                  <input type="text" value="기가지니 청약 승인 그룹" >
                 </div>
               </div><div class="row">
                 <div class="setting-table-title ic-title-nece">설명</div>
                 <div class="setting-table-content">
-                  <input type="text" placeholder="기가지니 청약 승인 그룹"/>
+                  <input type="text" value="기가지니 청약 승인 그룹"/>
                 </div>
               </div>
               <div class="row other-cont2">
@@ -147,7 +147,7 @@
 
             <div class="submit-btn-group">
               <button type="button" class="btn-common">저장</button>
-              <button type="button" class="btn-white">취소</button>
+              <button type="button" class="btn-white btn-list">취소</button>
             </div>
             <!-- </form> -->
           </div>
@@ -164,6 +164,10 @@
       loadMainMenu(10);
       loadSubMenu("10", 5);
       loadLnb(10, 5, 0);
+
+      $(".btn-list").on("click", function () {
+        location.href = "user_group.html";
+      });
     </script>
     <script></script>
   </body>

@@ -31,7 +31,7 @@
     <div class="main user-detail">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
-          <div class="sub-menu-title">시스템관리</div>
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14">시스템관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
@@ -44,7 +44,7 @@
               <div class="row">
                 <div class="setting-table-title ic-title-nece">사용자 ID</div>
                 <div class="setting-table-content">
-                  <input type="text" />
+                  <input type="text" value="Hong***" disabled />
                   <button type="button" class="btn-rec-teal">비밀번호잠김해제</button>
                 </div>
               </div>
@@ -61,7 +61,7 @@
               <div class="row">
                 <div class="setting-table-title ic-title-nece">사용자명</div>
                 <div class="setting-table-content">
-                  <input type="text" />
+                  <input type="text" value="김주*" />
                 </div>
               </div>
               <div class="row">
@@ -196,7 +196,7 @@
                 <div class="setting-table-title ic-title-nece">분석서비스</div>
                 <div class="setting-table-content">
                   <div class="toggle-wrap">
-                    <button type="button" class="btn-toggle open">사용</button>
+                    <button type="button" class="btn-open">사용</button>
                     <div class="toggle-wrap sub">
                       <input type="text" placeholder="IP를 입력하세요" />
                     </div>
@@ -226,7 +226,7 @@
                 <div class="setting-table-title">상태</div>
                 <div class="setting-table-content">
                   <div class="toggle-wrap">
-                    <button type="button" class="btn-toggle open">VACAS</button>
+                    <button type="button" class="btn-open">VACAS</button>
                     <div class="toggle-wrap sub">
                       <button type="button" class="btn-toggle">관리자</button>
                       <button type="button" class="btn-toggle">영업사</button>
@@ -259,6 +259,15 @@
 
       $(".btn-list").on("click", function () {
         location.href = "user.html";
+      });
+
+      $(".btn-open").click(function () {
+        $(this).toggleClass("active");
+        if ($(this).hasClass("active")) {
+          $(this).siblings(".toggle-wrap.sub").css("display", "flex");
+        } else {
+          $(this).siblings(".toggle-wrap.sub").css("display", "none");
+        }
       });
     </script>
     <script></script>

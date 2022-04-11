@@ -31,7 +31,7 @@
     <div class="main menu-group">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
-          <div class="sub-menu-title">소재</div>
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14">시스템관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
@@ -84,7 +84,9 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td>
+                        <button type="button" class="btn-rec-teal detail-open">세부설정</button>
+                      </td>
                     </tr>
                     <tr class="hide">
                       <td>- 요구사항관리</td>
@@ -245,7 +247,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>환경설정</td>
@@ -266,7 +268,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>소재</td>
@@ -287,7 +289,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>영업</td>
@@ -308,7 +310,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>카테고리</td>
@@ -329,7 +331,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>인벤토리</td>
@@ -350,7 +352,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>계약</td>
@@ -371,7 +373,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>편성</td>
@@ -392,7 +394,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>청구정산</td>
@@ -413,7 +415,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>리포트</td>
@@ -434,7 +436,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>프로세스</td>
@@ -455,7 +457,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                   </tbody>
                   <tbody class="table-body">
@@ -482,7 +484,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="hide">
                       <td>- 요구사항관리</td>
@@ -643,7 +645,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>광고효과분석</td>
@@ -664,7 +666,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>영업정보</td>
@@ -685,7 +687,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                     <tr class="title">
                       <td>분석</td>
@@ -706,7 +708,7 @@
                           </div>
                         </div>
                       </td>
-                      <td class="detail-open">세부설정</td>
+                      <td><button class="btn-rec-teal detail-open">세부설정</button></td>
                     </tr>
                   </tbody>
                 </table>
@@ -734,7 +736,11 @@
       loadLnb(11, 2, 0);
 
       $(".detail-open").on("click", function () {
-        $(this).parent().nextUntil(".title").toggleClass("hide");
+        $(this).parents(".title").nextUntil(".title").toggleClass("hide");
+      });
+
+      $(".btn-list").on("click", function () {
+        location.href = "user_group.html";
       });
     </script>
   </body>

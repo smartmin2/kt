@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>사용자그룹 관리</title>
+    <title>시스템관리</title>
   </head>
   <body>
     <div class="header-wrapper">
@@ -26,19 +26,19 @@
     <div class="location">
       <div>홈</div>
       <div>시스템관리</div>
-      <div>사용자그룹 관리</div>
+      <div>메뉴관리</div>
     </div>
-    <div class="main user-group">
+    <div class="main menu-mm">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14">시스템관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">사용자그룹 관리</div>
+          <div class="content-title">메뉴관리</div>
           <ul class="tab">
-            <li class="tab-menu active" data-tab="tab01">메뉴권한 그룹</li>
-            <li class="tab-menu" data-tab="tab02">승인권한 그룹</li>
+            <li class="tab-menu active" data-tab="tab01">광고운영</li>
+            <li class="tab-menu" data-tab="tab02">광고분석</li>
           </ul>
           <div class="tab-content active" id="tab01">
             <div class="table-wrapper">
@@ -55,38 +55,20 @@
                         <option value="">100개</option>
                       </select>
                     </div>
-                    <!-- <select>
-                          <option value="">10개</option>
-                          <option value="">20개</option>
-                          <option value="">50개</option>
-                          <option value="">100개</option>
-                        </select> -->
                   </div>
-                </div>
-                <div class="table-top-buttons">
-                  <button class="btn-white">삭제</button>
-                  <button class="btn-register"><img src="" />등록</button>
                 </div>
               </div>
               <table class="jb-table table1">
                 <colgroup>
-                  <col style="width: 1%" />
-                  <col />
-                  <col style="width: 10%" />
-                  <col style="width: 15%" />
-                  <col style="width: 10%" />
-                  <col style="width: 15%" />
-                  <col style="width: 15%" />
+                  <col style="width: 33.3333%" />
+                  <col style="width: 33.3333%" />
+                  <col style="width: 33.3333%" />
                 </colgroup>
                 <thead>
                   <tr>
-                    <th><input type="checkbox" /></th>
-                    <th>그룹명</th>
-                    <th>등록자</th>
-                    <th>등록일</th>
-                    <th>최종수정자</th>
-                    <th>최종수정일</th>
-                    <th>관리</th>
+                    <th>메뉴유형</th>
+                    <th>메뉴명</th>
+                    <th>일자</th>
                   </tr>
                 </thead>
                 <tbody class="table-body"></tbody>
@@ -134,28 +116,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="table-top-buttons">
-                  <button class="btn-white">삭제</button>
-                  <button class="btn-register"><img src="" />등록</button>
-                </div>
               </div>
               <table class="jb-table table2">
                 <colgroup>
-                  <col style="width: 1%" />
-                  <col />
-                  <col style="width: 10%" />
-                  <col style="width: 15%" />
-                  <col style="width: 15%" />
-                  <col style="width: 15%" />
+                  <col style="width: 33.3333%" />
+                  <col style="width: 33.3333%" />
+                  <col style="width: 33.3333%" />
                 </colgroup>
                 <thead>
                   <tr>
-                    <th><input type="checkbox" /></th>
-                    <th>그룹명</th>
-                    <th>등록자</th>
-                    <th>등록일</th>
-                    <th>최종수정자</th>
-                    <th>최종수정일</th>
+                    <th>메뉴유형</th>
+                    <th>메뉴명</th>
+                    <th>일자</th>
                   </tr>
                 </thead>
                 <tbody class="table-body"></tbody>
@@ -197,31 +169,24 @@
     <script src="../../scripts/script.js"></script>
     <script>
       loadMainMenu(11);
-      loadSubMenu("11", 2);
-      loadLnb(11, 2, 0);
+      loadSubMenu("11", 4);
+      loadLnb(11, 4, 1);
 
-      const arrTable1 = Array(15).fill(["광고 불가 그룹 관리", "홍길동", "2021-08-18", "홍길동", "2022-02-10", "메뉴권한"]);
-      const arrTable2 = Array(15).fill(["기가니지 가가지니 청약승인그룹", "홍길동", "2021-08-18", "홍길동", "2022-02-10"]);
+      const arrTable1 = Array(15).fill(["메뉴", "시스템관리",  "2022-02-10"]);
+      const arrTable2 = Array(15).fill(["메뉴", "매체정보",  "2022-02-10"]);
       const table1 = document.querySelector(".table1 .table-body");
       const table2 = document.querySelector(".table2 .table-body");
-      arrTable1.map((data) => addRow(table1, data, true));
-      arrTable2.map((data) => addRow(table2, data, true));
+      arrTable1.map((data) => addRow(table1, data, false));
+      arrTable2.map((data) => addRow(table2, data, false));
 
-      $("#tab01 .btn-register").on("click", function () {
-        location.href = "menu_group_add.html";
-      });
+
       $(".table1 td:nth-child(2)").on("click", function () {
-        location.href = "menu_group_detail.html";
-      });
-      $(".table1 td:nth-child(7)").on("click", function () {
-        location.href = "menu_group.html";
+        location.href = "adoperate.html";
       });
       $(".table2 td:nth-child(2)").on("click", function () {
-        location.href = "appr_group_detail.html";
+        location.href = "adanalysis.html";
       });
-      $("#tab02 .btn-register").on("click", function () {
-        location.href = "appr_group_add.html";
-      });
+    
     
     </script>
   </body>

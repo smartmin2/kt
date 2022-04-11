@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>시스템 관리</title>
+    <title>시스템관리</title>
   </head>
   <body>
     <div class="header-wrapper">
@@ -26,44 +26,16 @@
     <div class="location">
       <div>홈</div>
       <div>시스템관리</div>
-      <div>코드관리</div>
+      <div>메뉴관리</div>
     </div>
-    <div class="main code-main">
+    <div class="main adop-detail">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14">시스템관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">코드관리</div>
-          <div class="search-wrapper">
-            <div class="search-top">
-              <div class="content-sub-title">조회조건 설정</div>
-            </div>
-            <div class="search-edit-box">
-              <div class="search-edit-detail">
-                <div class="input-wrapper">
-                  <div class="input-title">코드그룹 설명</div>
-                  <input type="text" />
-                </div>
-              </div>
-              <div class="search-edit-detail">
-                <div class="input-wrapper">
-                  <div class="input-title">코드그룹명</div>
-                  <input type="text" />
-                </div>
-              </div>
-              <div class="search-edit-detail">
-                <div class="input-wrapper">
-                  <div class="input-title">코드그룹 ID</div>
-                  <input type="text" />
-                </div>
-              </div>
-            </div>
-            <div class="search-bottom">
-              <button class="btn-common">조회</button>
-            </div>
-          </div>
+          <div class="content-title">메뉴관리</div>
           <div class="table-wrapper">
             <div class="table-top">
               <div class="table-top-count">
@@ -81,28 +53,34 @@
                 </div>
               </div>
               <div class="table-top-buttons">
+                <button class="btn-white modal-open">순서변경</button>
                 <button class="btn-white">삭제</button>
-                <button class="btn-register modal-open"><img src="" />등록</button>
               </div>
             </div>
-            <table class="jb-table">
+            <table class="jb-table table">
               <colgroup>
-                <col style="width: 1%" />
-                <col style="width: 20%" />
+                <col style="width: 5%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
                 <col />
-                <col style="width: 20%" />
-                <col style="width: 20%" />
+                <col />
+                <col style="width: 10%" />
               </colgroup>
               <thead>
                 <tr>
                   <th><input type="checkbox" /></th>
-                  <th>코드그룹 ID</th>
-                  <th>코드그룹 설명</th>
-                  <th>코드그룹 명</th>
+                  <th>메뉴ID</th>
+                  <th>메뉴타입</th>
+                  <th>상위메뉴</th>
+                  <th>메뉴명</th>
+                  <th>URL</th>
                   <th>일자</th>
                 </tr>
               </thead>
-              <tbody class="table-body"></tbody>
+              <tbody class="table-body">
+            
+              </tbody>
             </table>
             <ul class="pagination">
               <li>
@@ -132,60 +110,58 @@
         </div>
       </div>
     </div>
+    <div class="modal-order-chg modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">순서변경</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+       <div class="list-box-wrap">
+         <div class="list-box">
+          <p>== 항목을 선택하여 주세요. ==</p>
+          <ul>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+            <li>test</li>
+          </ul>
+         </div>
+       </div>
+       <div class="order-chg-bottom">
+        <button type="button" class="btn-rec-teal">&lt;</button>
+        <button type="button" class="btn-rec-teal">&gt;</button>
+      </div>
+      </div>
+   
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
     <div class="footer-wrapper">
       <p>(주)케이티 대표이사 구현모 경기도 성남시 분당구 불정로 90 (정자동) 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 사업자정보확인</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
     </div>
-
-    <div class="modal-code-add modal-con common-box">
-      <div class="modal-top">
-        <div class="box-title">등록</div>
-        <div class="ic-modal-close close"></div>
-      </div>
-      <div class="modal-body">
-        <div class="setting-table">
-          <div class="row">
-            <div class="setting-table-title">코드그룹 ID</div>
-            <div class="setting-table-content">
-             CODM123
-            </div>
-          </div>
-          <div class="row">
-            <div class="setting-table-title ic-title-nece">코드그룹 설명</div>
-            <div class="setting-table-content">
-              <input type="text" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="setting-table-title ic-title-nece">코드그룹명</div>
-            <div class="setting-table-content">
-              <input type="text" />
-            </div>
-          </div>
-        </div>
-        </div>
-        <div class="modal-bottom">
-          <button class="btn-common">저장</button>
-          <button class="btn-white close">취소</button>
-        </div>
-      </div>
-    </div>
-
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
       loadMainMenu(11);
-      loadSubMenu("11", 3);
-      loadLnb(11, 3, 1);
+      loadSubMenu("11", 4);
+      loadLnb(11, 4, 1);
 
-      const arrTable = Array(15).fill(["CD01345", "라이프스타일유형코드", "LFSTL_TYP_CD", "2021-08-18",]);
-      const table = document.querySelector(".table-body");
+      const arrTable = Array(15).fill(["ME00002", "메뉴", "사용자관리", "사용자관리 조회(목록)","/TAP/COM/Com_UserMngm_ListForm.aspx", "2022-02-10"]);
+      const table = document.querySelector(".table .table-body");
       arrTable.map((data) => addRow(table, data, true));
 
-      $(".table-body td:nth-child(3)").on("click", function () {
-        location.href = "code_detail.html";
+      $(".table td:nth-child(5)").on("click", function () {
+        location.href = "adop_detail_modify.html";
       });
-    
     </script>
   </body>
 </html>
