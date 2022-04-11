@@ -97,10 +97,10 @@
             folder: [{name:'LIVE통계조회', link:''},
                      {name:'Input Log 조회', link:''},
                      {name:'청약진행현황', link:''}]},
-         {id: 2, name:'모니터링', link:'', folder: [{name:'LiveAD 청약현황', link:''}]},
+    { id: 2, name: "모니터링", link: "", folder: [{ name: "LiveAD 청약현황", link: "/pages/report/monitoring.html" }] },
          {id: 3, name:'광고노출현황', link:'', 
-            folder: [{name:'노출현황(LiveAD)', link:''},
-                     {name:'노출현황(동영상)', link:''}]},         
+        { name: "노출현황(LiveAD)", link: "/pages/report/exposure_ad.html" },
+        { name: "노출현황(동영상)", link: "/kt/pages/report/exposure_mov.html" },
          {id: 4, name:'실시간 LiveAD리포트', link:'', folder: []},         
          {id: 5, name:'LiveAD게재 확인리포트', link:'', folder: []}],
     9 : [{id: 1, name:'통합 대시보드', link:'', 
@@ -151,9 +151,9 @@
     11 : [{id: 1, name:'사용자 관리', link:'/pages/system/user.html', folder: []},
          {id: 2, name:'사용자 그룹관리', link:'/pages/system/user_group.html', folder: []},
          {id: 3, name:'코드 관리', link:'/pages/system/code.html', folder: []},
-         {id: 4, name:'메뉴 관리', link:'/pages/system/menu.html', folder: []},
-         {id: 5, name:'메일 발송리스트', link:'/pages/system/mail-list.html', folder: []},
-         {id: 6, name:'Watch-Dog', link:'/pages/system/watch-dog.html', folder: []}]    
+    { id: 4, name: "메뉴 관리", link: "/pages/system/menu_mm.html", folder: [] },
+    { id: 5, name: "메일 발송리스트", link: "/pages/system/mail_list.html", folder: [] },
+    { id: 6, name: "Watch-Dog", link: "/pages/system/watchdog.html", folder: [] },
   }
   const root = window.location.href.substring(0,window.location.href.indexOf("/pages"));
   
@@ -427,6 +427,19 @@ $(function () {
     $("#" + tabId).addClass("active");
   });
 });
+
+$(function () {
+  const li = $(".tab02 .tab02-menu");
+  li.click(function () {
+    const tabId = $(this).attr("data-tab");
+
+    li.removeClass("active");
+    $(".tab02-content").removeClass("active");
+
+    $(this).addClass("active");
+    $("#" + tabId).addClass("active");
+  });
+});
 //--------------------------------------------------------
 
 //------------------ toggle btn --------------------------
@@ -445,13 +458,17 @@ $(".btn-toggle").on("click", function () {
     $(".request-sv-row").css("display", "none");
   }
 
+  const sub = $(this).parent(".toggle-wrap").find(".sub");
+  const sub1 = $(this).parent(".toggle-wrap").find(".sub1");
   if ($(this).hasClass("open")) {
-    const sub = $(this).parent(".toggle-wrap").find(".sub");
-    if ($(this).hasClass("active")) {
-      sub.css("display", "flex");
-    } else {
-      sub.css("display", "none");
-    }
+    sub.css("display", "flex");
+    sub1.css("display", "none");
+  } else if ($(this).hasClass("open1")) {
+    sub1.css("display", "flex");
+    sub.css("display", "none");
+  } else {
+    sub.css("display", "none");
+    sub1.css("display", "none");
   }
 });
 
