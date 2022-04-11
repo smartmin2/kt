@@ -98,7 +98,7 @@
                      {name:'Input Log 조회', link:''},
                      {name:'청약진행현황', link:''}]},
     { id: 2, name: "모니터링", link: "", folder: [{ name: "LiveAD 청약현황", link: "/pages/report/monitoring.html" }] },
-         {id: 3, name:'광고노출현황', link:'', 
+         {id: 3, name:'광고노출현황', link:'', },
         { name: "노출현황(LiveAD)", link: "/pages/report/exposure_ad.html" },
         { name: "노출현황(동영상)", link: "/kt/pages/report/exposure_mov.html" },
          {id: 4, name:'실시간 LiveAD리포트', link:'', folder: []},         
@@ -154,7 +154,7 @@
     { id: 4, name: "메뉴 관리", link: "/pages/system/menu_mm.html", folder: [] },
     { id: 5, name: "메일 발송리스트", link: "/pages/system/mail_list.html", folder: [] },
     { id: 6, name: "Watch-Dog", link: "/pages/system/watchdog.html", folder: [] },
-  }
+     ]}
   const root = window.location.href.substring(0,window.location.href.indexOf("/pages"));
   
   //--------------- Menu Load ------------------------------
