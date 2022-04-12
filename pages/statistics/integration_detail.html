@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>통계</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>통계</div>
+    <div>통합 대시보드</div>
+    <div>통합통계</div>
+  </div>
+  <div class="main integration-detail1">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                통계
+            </div>
+            <ul class="sub-menu"></ul>
+        </div>        
+        <div class="contents-wrapper">
+          <div class="content-title">통계상세</div>
+          <div class="button-group">
+            <div class="btn-white btn-data-download">데이터 다운로드</div>
+            <div class="btn-white btn-report">LiveAD 집행보고서</div>
+            <div class="btn-white btn-url">광고주 URL 발송</div>
+            <div class="btn-white btn-url-list">광고주 URL 발송 내역</div>
+          </div>
+          <!-- class detail1, detail2(아이디,계약기간,총계약금액만 display) 로 구분 개발시 class 추가 삭제로 처리 -->
+          <div class="setting-table detail1">
+            <div class="row">
+              <div class="setting-table-title">광고주/브랜드</div>
+              <div class="setting-table-content">구KT / QOOK</div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">아이디</div>
+              <div class="setting-table-content">10421</div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">광고기간</div>
+              <div class="setting-table-content">2021-11-19 ~ 2021-12-31 (약 7주)</div>
+            </div>            
+            <div class="row">
+              <div class="setting-table-title">영업사</div>
+              <div class="setting-table-content">KTDS</div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">상품명</div>
+              <div class="setting-table-content">[기본패키지]베이직</div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">총 계약금액</div>
+              <div class="setting-table-content">500,000</div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">쳥약명</div>
+              <div class="setting-table-content"><a href="subscription_detail.html">테스트11190928_QOOK_기본패키지_베이직</a></div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">옵션</div>
+              <div class="setting-table-content">전국</div>
+            </div>                          
+          </div>
+          <ul class="tab">
+            <li class="tab-menu active" data-tab="tab01">요약</li>
+            <li class="tab-menu" data-tab="tab02">채널</li>
+            <li class="tab-menu" data-tab="tab03">일자</li>
+            <li class="tab-menu" data-tab="tab04">지역</li>
+            <li class="tab-menu" data-tab="tab05">Reach/Frequency</li>
+          </ul>
+          <div class="tab-content active" id="tab01">   
+            <!-- class detail1, detail2 로 구분 개발시 active 추가, 삭제로 처리 -->
+            <div class="detail1">
+              <div class="content-sub-title">요약정보</div>
+              <div class="content-info">
+                <div class="info-box">
+                  <div class="info-line1"><img src="../../assets/14_ico_analysis_01.png" alt=""></div>
+                  <div class="info-line2">
+                    <div class="info-line-title">총달성율</div>
+                    <div class="info-line-data">0%</div>
+                  </div>
+                  <div class="info-line3">경과일 : 81일 / 43일, 경과율 : 188.4%</div>
+                </div>
+                <div class="info-box">
+                  <div class="info-line1"><img src="../../assets/14_ico_analysis_02.png" alt=""></div>
+                  <div class="info-line2">
+                    <div class="info-line-title">총노출수</div>
+                    <div class="info-line-data">0건</div>
+                  </div>
+                  <div class="info-line3"></div>
+                </div>
+                <div class="info-box">
+                  <div class="info-line1"><img src="../../assets/14_ico_analysis_03.png" alt=""></div>
+                  <div class="info-line2">
+                    <div class="info-line-title">시청가구수</div>
+                    <div class="info-line-data">0건</div>
+                  </div>
+                  <div class="info-line3"></div>
+                </div>
+                <div class="info-box">
+                  <div class="info-text">REACH 1+</div>
+                  <div class="info-text">REACH 2+</div>
+                  <div class="info-text">REACH 3+</div>
+                </div>
+              </div>
+              <div class="table-wrapper">             
+                <table class="jb-table">              
+                  <thead>
+                    <tr>                    
+                      <th rowspan="2" style="width: 12%">광고송출횟수</th>
+                      <th rowspan="2" style="width: 10%">시청가구수</th>
+                      <th rowspan="2" style="width: 12%">완전시청가구수</th>
+                      <th rowspan="2" style="width: 12%">제안 CPV(원)</th>
+                      <th colspan="3" class="bottom-line">Rech (%)</th>
+                      <th rowspan="2" style="width: 12%">Frequency (회)</th>
+                      <th rowspan="2" style="width: 12%">총가구수</th>
+                    </tr>                  
+                    <tr>
+                      <th style="width: 10%">1+</th>
+                      <th style="width: 10%">2+</th>
+                      <th style="width: 10%">3+</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>5</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>                    
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+              <div class="content-sub-title">소재목록</div>
+              <div class="table-wrapper">  
+                <div class="table-top">
+                  <div class="table-top-count">
+                    <div class="table-total-count">전체<span>1,256</span></div>
+                  </div>                
+                </div>                
+                <table class="jb-table">
+                  <colgroup>                  
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                    <col />
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                    <col style="width: 5%" />
+                    <col style="width: 8%" />
+                    <col style="width: 8%" />
+                    <col style="width: 6%" />
+                    <col style="width: 10%" />
+                  </colgroup>
+                  <thead>
+                    <tr>                    
+                      <th>NO</th>
+                      <th>ID</th>                    
+                      <th>소재</th>
+                      <th>지역</th>
+                      <th>초</th>
+                      <th>단가</th>
+                      <th>목표노출</th>
+                      <th>노출(조회일 기준<br> 1시간단위)</th>
+                      <th>달성률 (%)</th>
+                      <th>기간</th>
+                    </tr>                  
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td>1</td>
+                      <td>CD20211100000000365</td>
+                      <td>1117_LiveAD_ktbaroad_503_테스트 소재_20211117_15초</td>
+                      <td>Text</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>100,000</td>
+                      <td>0</td>
+                      <td>0.00</td>
+                      <td>2021-11-19 ~ 2021-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>CD20211100000000365</td>
+                      <td>1117_LiveAD_ktbaroad_503_테스트 소재_20211117_15초</td>
+                      <td>Text</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>100,000</td>
+                      <td>0</td>
+                      <td>0.00</td>
+                      <td>2021-11-19 ~ 2021-12-31</td>
+                    </tr>
+                    <tr>
+                      <td>1</td>
+                      <td>CD20211100000000365</td>
+                      <td>1117_LiveAD_ktbaroad_503_테스트 소재_20211117_15초</td>
+                      <td>Text</td>
+                      <td>15</td>
+                      <td>5</td>
+                      <td>100,000</td>
+                      <td>0</td>
+                      <td>0.00</td>
+                      <td>2021-11-19 ~ 2021-12-31</td>
+                    </tr>
+                    <tr>
+                      <td colspan="6" class="tot-td">합계</td>                                        
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>   
+            </div>         
+            <div class="detail2 active">
+              <div class="table-wrapper">             
+                <table class="jb-table">              
+                  <thead>
+                    <tr>    
+                      <th rowspan="2" style="width: 5%">No.</th>                
+                      <th rowspan="2" style="width: 11%">광고송출횟수</th>
+                      <th rowspan="2" style="width: 9%">시청가구수</th>
+                      <th rowspan="2" style="width: 11%">완전시청가구수</th>
+                      <th rowspan="2" style="width: 11%">제안 CPV(원)</th>
+                      <th colspan="3" class="bottom-line">Rech (%)</th>
+                      <th rowspan="2" style="width: 11%">Frequency (회)</th>
+                      <th rowspan="2" style="width: 11%">총가구수</th>
+                      <th rowspan="2" style="width: 9%">상세</th>
+                    </tr>                  
+                    <tr>
+                      <th style="width: 8%">1+</th>
+                      <th style="width: 8%">2+</th>
+                      <th style="width: 8%">3+</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td>1</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>0</td>                    
+                      <td>0</td>                    
+                      <td class="btn-detail"></td>                    
+                    </tr>
+                    <tr class="table-detail">
+                      <td colspan="11">
+                        <div class="detail-box">
+                          <p>총 달성율 : 0 %  | 경과일 :2048일/2915914일, 경과율 : <span>0.1%</span></p>
+                          <p> 누적 노출수/총 목표노출수 : 0/0</p>
+                          <p>캠페인 : DUMMY 광고 관리 더미 캠페인 <button class="btn-rec-teal">청약 상세 보기</button> </p>
+                        </div>                        
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>0</td>                    
+                      <td>0</td>                    
+                      <td class="btn-detail"></td>                    
+                    </tr>
+                    <tr class="table-detail">
+                      <td colspan="11">
+                        <div class="detail-box">
+                          <p>총 달성율 : 0 %  | 경과일 :2048일/2915914일, 경과율 : <span>0.1%</span></p>
+                          <p> 누적 노출수/총 목표노출수 : 0/0</p>
+                          <p>캠페인 : DUMMY 광고 관리 더미 캠페인 <button class="btn-rec-teal">청약 상세 보기</button> </p>
+                        </div>                        
+                      </td>                      
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div> 
+              <div class="content-sub-title">청약정보</div>
+              <div class="table-wrapper">  
+                <div class="table-top">
+                  <div class="table-top-count">
+                    <div class="table-total-count">전체<span>1,256</span></div>
+                  </div>   
+                  <div class="table-top-buttons">
+                    <button class="btn-excel"><img src="" alt="">엑셀 다운로드</button>                  
+                  </div>             
+                </div>     
+                <div class="jb-table-wrapper">
+                  <table class="jb-table">
+                    <colgroup>                  
+                      <col style="width: 5%" />
+                      <col style="width: 15%" />                    
+                      <col style="width: 8%" />
+                      <col style="width: 8%" />
+                      <col style="width: 8%" />
+                      <col style="width: 8%" />
+                      <col style="width: 5%" />
+                      <col style="width: 5%" />
+                      <col style="width: 8%" />
+                      <col style="width: 8%" />
+                      <col style="width: 6%" />
+                      <col style="width: 8%" />
+                      <col style="width: 10%" />
+                    </colgroup>
+                    <thead>
+                      <tr>                    
+                        <th>NO</th>
+                        <th>캠페인</th>                    
+                        <th>광고주</th>
+                        <th>브랜드</th>
+                        <th>상품</th>
+                        <th>옵션</th>
+                        <th>단가</th>                                                
+                        <th>초</th>
+                        <th>계약금(원)</th>
+                        <th>목표노출</th>
+                        <th>노출</th>
+                        <th>달성률(%)</th>
+                        <th>기간</th>
+                      </tr>                  
+                  </thead>
+                    <tbody class="table-body">
+                      <tr>
+                        <td>1</td>
+                        <td>일기간단일소재전국_현대자동차_기본패키지_베이직</td>
+                        <td>현대자동차(주)</td>
+                        <td>현대자동차</td>
+                        <td>[기본패키지]베이직</td>
+                        <td>옵션 없음</td>
+                        <td>5</td>
+                        <td>15</td>
+                        <td>1,000,000</td>
+                        <td>200,588</td>
+                        <td>0</td>
+                        <td>0.00</td>
+                        <td>2021-11-19 ~ 2021-12-31</td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td colspan="8" class="tot-td">합계</td>
+                        <td>21,000,000</td>
+                        <td>4,287,235</td>
+                        <td>0</td>
+                        <td>0.00</td>
+                        <td>2021-11-19 ~ 2021-12-31</td>
+                      </tr>                      
+                    </tbody>
+                  </table>
+                </div>
+              </div>  
+            </div>
+          </div>
+          <div class="tab-content" id="tab02">
+            <div class="input-group">
+              <select>
+                <option value="">채널 그룹 전체</option>
+                <option value="">종교</option>
+                <option value="">종합편성</option>
+                <option value="">지상파</option>
+                <option value="">지상파 MPP</option>
+                <option value="">홈쇼핑</option>
+                <option value="">CJE&M</option>
+                <option value="">드라마/예능</option>
+                <option value="">보도</option>
+                <option value="">스포츠 골프</option>
+                <option value="">스포츠 종합</option>
+                <option value="">영화</option>
+                <option value="">기타</option>
+                <option value="">유아/애니</option>
+                <option value="">음악</option>
+                <option value="">정보/교육</option>              
+              </select>
+            </div>     
+            <div class="chart-wrapper">          
+              <canvas id="myChart1"></canvas>          
+            </div>
+            <div class="button-group">
+              <button class="btn-excel"><img>엑셀 다운로드</button>
+            </div>
+            <div class="table-wrapper">               
+              <table class="jb-table">
+                <colgroup>                  
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />                  
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />                  
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th>카테고리</th>
+                    <th>채널</th>                    
+                    <th>목표노출</th>
+                    <th>진행노출</th>                    
+                    <th>달성률 (%)</th>
+                    <th>완전시청</th>
+                  </tr>                  
+              </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td rowspan="3">드라마/예능</td>
+                    <td>드라마H</td>
+                    <td>0</td>
+                    <td>320,109</td>
+                    <td>32010900</td>
+                    <td>3,190</td>
+                  </tr>
+                  <tr>
+                    <td>동아TV</td>
+                    <td>0</td>
+                    <td>466,020</td>
+                    <td>4660200</td>
+                    <td>2,076</td>
+                  </tr>
+                  <tr>
+                    <td>MBC 에브리원</td>
+                    <td>113,867</td>
+                    <td>2,528,651</td>
+                    <td>2220.7</td>
+                    <td>129,130</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">보도</td>
+                    <td>BMT_752</td>
+                    <td>0</td>
+                    <td>4,104</td>
+                    <td>410400</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>보도2</td>
+                    <td>0</td>
+                    <td>466,020</td>
+                    <td>4660200</td>
+                    <td>2,076</td>
+                  </tr>
+                  <tr>
+                    <td>보도3</td>
+                    <td>113,867</td>
+                    <td>2,528,651</td>
+                    <td>2220.7</td>
+                    <td>129,130</td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="tot-td">합계</td>                                        
+                    <td>4,271,742</td>
+                    <td>108,618,543</td>
+                    <td>2,542.72</td>
+                    <td>4,063,795</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-content" id="tab03">
+            <div class="chart-wrapper">          
+              <canvas id="myChart2"></canvas>          
+            </div>
+            <div class="chart-wrapper">          
+              <canvas id="myChart3"></canvas>          
+            </div>
+            <div class="button-group">
+              <button class="btn-white btn-mul-mat">멀티소재</button>
+              <button class="btn-excel"><img src="" alt="">엑셀 다운로드</button>
+            </div>
+            <div class="table-wrapper">             
+              <table class="jb-table">              
+                <thead>                  
+                  <th style="width: 15%">일자</th>
+                  <th style="width: 15%">목표노출</th>
+                  <th style="width: 15%">진행노출</th>
+                  <th style="width: 20%">달성률(%)</th>
+                  <th style="width: 15%">완전시청</th>
+                  <th style="width: 20%">시청가구</th>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>20210202</td>
+                    <td>0</td>
+                    <td>960,718</td>
+                    <td>96,071,800.00</td>
+                    <td>5,379</td>
+                    <td>405,375</td>                                        
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="tot-td">합계</td>
+                    <td>0</td>
+                    <td>4,271,742</td>
+                    <td>108,618,543</td>
+                    <td>2,542.72</td>
+                    <td>4,063,795</td>
+                  </tr>                  
+                </tbody>
+              </table>
+            </div> 
+          </div>
+          <div class="tab-content" id="tab04">
+            <div class="chart-wrapper">          
+              <canvas id="myChart4"  style="display:none"></canvas>   
+              <div class="no-data">집계 데이타가 존재 하지 않습니다</div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab05">
+            <div class="input-date-group">
+              <input type="date" value="2021-02-10">
+              <span>~</span>
+              <input type="date" value="2021-02-10">
+            </div>
+            <div class="chart-wrapper">          
+              <canvas id="myChart5" style="display:none"></canvas>          
+              <div class="no-data">집계 데이타가 존재 하지 않습니다</div>
+            </div>
+            <div class="table-wrapper">  
+              <div class="table-top">
+                <div class="table-top-count">                  
+                </div>                
+                <div class="table-top-buttons">
+                  <button class="btn-excel">엑셀 다운로드</button>                  
+                </div>
+              </div>                
+              <table class="jb-table">
+                <colgroup>                                   
+                  <col style="width: 15%" />
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 25%" />                  
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th>일자</th>
+                    <th>Reach1+(%)</th>                    
+                    <th>Reach2+(%)</th>
+                    <th>Reach3+(%)</th>
+                    <th>Frequency</th>                    
+                  </tr>                  
+              </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td colspan="5">데이타가 없습니다.</td>                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>  
+          </div>
+          <div class="content-bottom">
+            <button class="btn-common go-integ-list">목록</button>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="footer-wrapper">
+    <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+    <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+  </div>
+
+    <div id="modal-background"></div>
+    <div class="modal-con common-box modal-mul-mat">
+      <div class="modal-top">
+        <div class="box-title">멀티소재</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="table-wrapper">  
+          <div class="table-top">
+            <div class="table-top-count">                  
+            </div>                
+            <div class="table-top-buttons">
+              <button class="btn-excel">엑셀 다운로드</button>                  
+            </div>
+          </div>                
+          <table class="jb-table">
+            <colgroup>                                   
+              <col style="width: 20%" />
+              <col style="width: 35%" />
+              <col style="width: 20%" />
+              <col style="width: 25%" />              
+            </colgroup>
+            <thead>              
+              <th>일자</th>
+              <th>소재명</th>                    
+              <th>진행노출</th>
+              <th>완전시청</th>              
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td rowspan="3">20200201</td>
+                <td>191014_스터디캐슬(월성점)</td>
+                <td>1,555</td>
+                <td>5,379</td>
+              </tr>
+              <tr>
+                <td>191014_스터디캐슬(월성점)</td>
+                <td>1,555</td>
+                <td>5,379</td>
+              </tr>
+              <tr>
+                <td>191014_스터디캐슬(월성점)</td>
+                <td>1,555</td>
+                <td>5,379</td>
+              </tr>
+              <tr>
+                <td rowspan="2">20200201</td>
+                <td>191014_스터디캐슬(월성점)</td>
+                <td>1,555</td>
+                <td>5,379</td>
+              </tr>
+              <tr>
+                <td>191014_스터디캐슬(월성점)</td>
+                <td>1,555</td>
+                <td>5,379</td>
+              </tr>
+              <tr>
+                <td colspan="2" class="tot-td">합계</td>
+                <td class="tot-td">111,354,669</td>
+                <td class="tot-td">2,542.72</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>  
+      </div>
+      <div class="modal-bottom"><button class="btn-white close">취소</button></div>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/chart.min.js"></script>  
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(9);
+      loadSubMenu("9", 1);
+      loadLnb(9, 1, 1);    
+
+      $(".go-integ-list").on("click",function(){
+        location.href = "integration.html";
+      })
+      $(".btn-detail").on("click",function(){
+        $(this).toggleClass("open");
+        $(this).parent().next(".table-detail").toggleClass("open");
+      })
+      $(".btn-mul-mat").on("click", function(){
+        $("#modal-background").fadeIn(300);
+        $(".modal-mul-mat").css("display", "flex").hide().fadeIn();        
+        $("body").css("overflow", "hidden");
+      })
+      // chart data and options
+      let chartData1 = {        
+          labels: ['연합뉴스TV', 'YTN', 'tvN','OCN', 'Sky ENT', 'TV조선','채널CGV', 'JTBC', '채널A','Sky Drama', 'Test Channel', 'MBN','MBC 에브리원', 'O tvN','SBS funE','Mnet','SBS 플러스','JTBC2','OTV844','MBC 드라마넷','tvN STORY','KBS joy','KBS drama','수퍼액션','드라마큐브'],
+          datasets: [
+              {              
+                  label: '노출',
+                  yAxisID: 'y',
+                  data: [13000000, 12000000, 6000000, 5800000, 4200000, 4000000, 3000000, 2900000, 2800000, 2700000, 2600000, 2500000, 2400000, 2300000, 2200000, 2100000, 2000000, 1900000, 1800000, 1700000, 1600000, 1500000, 1400000, 1300000, 1100000],
+                  backgroundColor: [
+                      '#9adde8',          
+                  ],
+                  borderWidth: 1,
+                  barThickness: 30,
+                  order: 2
+              },           
+              {
+                  label: '완전시청',
+                  yAxisID: 'y-line',
+                  type: 'line',
+                  data: [5, 4, 3, 4, 0, 4, 5, 3, 4, 0, 4, 5, 3, 4, 0, 4, 5, 3, 4, 0, 0, 0, 0, 0, 0],
+                  backgroundColor: [
+                      '#fdb60e'                
+                  ],   
+                  borderColor: ['#fdb60e'],             
+                  borderWidth: 2,  
+                  tension: 0.5,                                              
+                  order: 1
+              }
+          ]
+      }
+      let chartOptions1 = {
+        plugins: {
+              legend: {
+                  display: true,
+                  position: 'bottom',                
+                  align: 'center',
+                  labels: {
+                    boxWidth: 14,
+                  }
+              }
+          },
+          maintainAspectRatio: false,
+          responsive:true,        
+          scales: {
+              x: {            
+                  grid: {
+                      display: false
+                  }
+              },
+              'y': {
+                  type: 'linear',
+                  position: 'left',
+                  ticks: {                
+                    min: 0,
+                    max: 14000000,
+                    stepSize : 2000000,
+                    fontSize : 10,					              
+                  },    
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '시청수'
+                  },        
+              },            
+              'y-line': {
+                  display:false
+              }
+          }
+      }
+
+      let ctx1 = document.getElementById('myChart1').getContext('2d');
+      let chart1 = new Chart(ctx1, {
+          type: 'bar',
+          data: chartData1,
+          options: chartOptions1
+      })
+    
+      let chartData2 = {        
+          labels: ['20220201','20220202','20220203','20220204','20220205','20220206','20220207','20220208','20220209','20220210','20220211','20220212','20220213','20220214','20220215','20220216','20220217','20220218','20220219','20220220','20220221','20220222','20220223','20220224','20220225','20220226','20220227','20220228','20220301'],
+          datasets: [
+              {              
+                  label: '일자별 달성률',
+                  yAxisID: 'y-left',
+                  data: [],
+                  backgroundColor: [
+                      '#9adde8',          
+                  ],
+                  borderWidth: 1,
+                  barThickness: 16,                  
+              }
+          ]
+      }
+      let chartOptions2 = {
+        plugins: {
+              legend: {
+                  display: false,
+                  position: 'bottom',                
+                  align: 'center',
+                  labels: {
+                    boxWidth: 14,
+                  }
+              }
+          },
+          maintainAspectRatio: false,
+          responsive:true,        
+          scales: {
+              x: {            
+                  grid: {
+                      display: false
+                  }
+              },
+              'y-left': {
+                  type: 'linear',
+                  position: 'left',
+                  ticks: {                
+                    min: 0,
+                    max: 1,
+                    stepSize : 0.1,
+                    fontSize : 10,					              
+                  },    
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '달성률'
+                  },        
+              }              
+          }
+      }
+      let ctx2 = document.getElementById('myChart2').getContext('2d');
+      let chart2 = new Chart(ctx2, {
+          type: 'bar',
+          data: chartData2,
+          options: chartOptions2
+      })
+
+      let chartData3 = {        
+          labels: ['20220201','20220202','20220203','20220204','20220205','20220206','20220207','20220208','20220209','20220210','20220211','20220212','20220213','20220214','20220215','20220216','20220217','20220218','20220219','20220220','20220221','20220222','20220223','20220224','20220225','20220226','20220227','20220228','20220301'],
+          datasets: [
+              {              
+                  label: '노출',
+                  yAxisID: 'y-left',
+                  data: [1400, 250, 200, 100, 100, 100, 100, 100, 100, 100, 0, 0, 0, 0, 0, 0],
+                  backgroundColor: [
+                      '#9adde8',          
+                  ],
+                  borderWidth: 1,
+                  barThickness: 16,
+                  order: 2
+              },
+              {
+                  label: '시청가구수',
+                  yAxisID: 'y-right',
+                  data: [14, 2, 1, 2, 2, 2, 2, 1, 1, 0.5, 0, 0, 0, 0, 0, 0],
+                  backgroundColor: [
+                      '#c6acff'                
+                  ],
+                  borderWidth: 1,
+                  barThickness: 16,
+                  order: 3
+              },
+              {
+                  label: '완전시청',
+                  yAxisID: 'y-line',
+                  type: 'line',
+                  data: [500, 0, 200, 800, 550],
+                  backgroundColor: [
+                      '#fdb60e'                
+                  ],   
+                  borderColor: ['#fdb60e'],             
+                  borderWidth: 2,  
+                  tension: 0.5,                                              
+
+                  order: 1
+              }
+          ]
+      }
+      let chartOptions3 = {
+        plugins: {
+              legend: {
+                  display: false,
+                  position: 'top',                
+                  align: 'end',
+                  labels: {
+                    boxWidth: 14,
+                  }
+              }
+          },
+          maintainAspectRatio: false,
+          responsive:true,        
+          scales: {
+              x: {            
+                  grid: {
+                      display: false
+                  }
+              },
+              'y-left': {
+                  type: 'linear',
+                  position: 'left',
+                  ticks: {                
+                    min: 0,
+                    max: 4000000,
+                    stepSize : 500000,
+                    fontSize : 10,					              
+                  },    
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '시청수'
+                  },        
+              },
+              'y-right': {
+                  type: 'linear',
+                  position: 'right',
+                  ticks: {                
+                    min: 0,
+                    max: 24,
+                    stepSize : 6,
+                    fontSize : 10,					
+                  },
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '단위(℃)'
+                  },    
+              },
+              'y-line': {
+                  display:false
+              }
+          }
+      }
+      let ctx3 = document.getElementById('myChart3').getContext('2d');
+      let chart3 = new Chart(ctx3, {
+          type: 'bar',
+          data: chartData3,
+          options: chartOptions3
+      })
+      let ctx4 = document.getElementById('myChart4').getContext('2d');
+      let chart4 = new Chart(ctx4, {
+          type: 'bar',
+          data: chartData2,
+          options: chartOptions2
+      })
+      let ctx5 = document.getElementById('myChart5').getContext('2d');
+      let chart5 = new Chart(ctx5, {
+          type: 'bar',
+          data: chartData2,
+          options: chartOptions2
+      })
+    </script>
+  </body>
+</html>

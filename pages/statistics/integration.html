@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>통계</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>통계</div>
+    <div>통합 대시보드</div>
+    <div>통합통계</div>
+  </div>
+  <div class="main integration-main">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                통계
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">통합통계</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">기간</div>   
+                    <div class="input-group width-140">
+                      <select>
+                        <option value="">광고기간</option>
+                        <option value="">등록일</option>                                                 
+                      </select>
+                    </div>                       
+                    <div class="input-date-group">
+                      <input type="date" value="2022-02-10">
+                      <span>~</span>
+                      <input type="date" value="2022-02-10">
+                    </div>
+                  </div>                  
+                </div>
+              </div>              
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">광고주</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">브랜드</div>                    
+                    <input type="text" value="" />    
+                  </div>                  
+                </div>                
+              </div>
+              <div class="row">                
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">상품</div>    
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">[기본패키지]베이직</option>
+                        <option value="">[기본패키지]프리미엄30</option>                        
+                        <option value="">[기본패키지]브랜드 프리미엄30</option>                        
+                        <option value="">[스페셜패키지]나이트 프리미엄</option>                        
+                        <option value="">[스페셜패키지]키즈/애니</option>                                                
+                        <option value="">[소상공인패키지]베이직</option>                                                
+                        <option value="">[LIKE패키지]베이직</option>
+                        <option value="">[LIKE패키지]프리미엄30</option>
+                        <option value="">[독점패키지]1구좌 고정상품</option>
+                        <option value="">[LIKE패키지]채널선택</option>
+                        <option value="">[기본패키지]바로광고(베이직)</option>
+                        <option value="">[기본패키지]바로광고(프리미엄30)</option>
+                        <option value="">[기본패키지]바로광고(나이트 프리미엄)</option>
+                      </select>
+                    </div>                                     
+                  </div> 
+                </div> 
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">소재</div>                    
+                    <input type="text" value="" />    
+                  </div>                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">청약명</div>                    
+                    <input type="text" value="" />    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">영업사</div>    
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">SD</option>
+                        <option value="">HD</option>                        
+                        <option value="">ASP</option>                        
+                        <option value="">UHD</option>                        
+                        <option value="">FHD</option>                                                
+                      </select>
+                    </div>                                     
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                        
+                      <option value="">50개</option>                        
+                      <option value="">100개</option>                                              
+                    </select>
+                  </div>                      
+                </div>
+              </div>
+              <div class="table-top-buttons">                
+                <button class="btn-excel"><img>엑셀다운로드</button>              
+                <button class="btn-white">삭제</button>
+                <button class="btn-register width-140"><img src="" >통합통계 추가</button>
+              </div>
+            </div>
+            <div class="jb-table-wrapper">
+            <table class="jb-table">
+              <colgroup>
+                <col style="width: 2%" />
+                <col style="width: 5%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col />
+                <col style="width: 12%" />
+                <col style="width: 7%" />
+                <col style="width: 3%" />
+                <col style="width: 5%" />
+                <col style="width: 12%" />
+                <col style="width: 6%" />                
+                <col style="width: 8%" />                
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><input type="checkbox"></th>
+                  <th scope="col">ID</th>
+                  <th scope="col">광고주</th>
+                  <th scope="col">브랜드</th>
+                  <th scope="col">영업사</th>
+                  <th scope="col">청약명</th>
+                  <th scope="col">상품</th>
+                  <th scope="col">계약금(원)</th>
+                  <th scope="col">노출량</th>
+                  <th scope="col">달성률(%)</th>                                                      
+                  <th scope="col">광고기간</th>
+                  <th scope="col">상태</th>
+                  <th scope="col">등록일</th>
+                </tr>
+            </thead>
+              <tbody class="table-body"></tbody>
+            </table>
+          </div>
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 대표이사 구현모 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <div id="modal-background"></div>
+    <div class="modal-con modal-integration-add common-box">      
+      <div class="modal-top">
+        <div class="box-title">통합통계 추가</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+              <div class="table-view-count">
+                <div class="input-group">
+                  <select>
+                    <option value="">10개</option>
+                    <option value="">20개</option>
+                    <option value="">30개</option>                        
+                    <option value="">50개</option>                        
+                    <option value="">100개</option>                                              
+                  </select>
+                </div>                      
+              </div>
+            </div>
+          </div>          
+          <table class="jb-table modal-table1">
+            <colgroup>              
+              <col style="width: 5%" />
+              <col />              
+              <col style="width: 9%" />
+              <col style="width: 15%" />              
+              <col style="width: 7%" />
+              <col style="width: 7%" />
+              <col style="width: 10%" />
+              <col style="width: 15%" />              
+            </colgroup>
+            <thead>
+              <tr>                
+                <th scope="col">No.</th>                
+                <th scope="col">청약명</th>
+                <th scope="col">브랜드명</th>
+                <th scope="col">상품</th>
+                <th scope="col">청약금(원)</th>
+                <th scope="col">목표노출량</th>                                                                      
+                <th scope="col">상태</th>
+                <th scope="col">기간</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td>1000</td>
+                <td>테스트112901_올레KT_스페셜패키지_나이트 프리미엄</td>
+                <td>(주)KT</td>
+                <td>[스페셜패키지]나이트 프리미엄</td>
+                <td>10,000,000</td>
+                <td>0</td>
+                <td>청약승인</td>
+                <td>2021-11-29 ~ 2021-12-31</td>
+              </tr>
+            </tbody>
+          </table>        
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">생성</button>
+        <button class="btn-white close">닫기</button>
+      </div>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(9);
+      loadSubMenu("9", 1);
+      loadLnb(9, 1, 1);
+
+      const arrTable = Array(10).fill(["10427", "현대자동차(주)", "현대자동차", "(주)KT", "중간종료_현대자동차_스페셜패키지_키즈/애니", "[스페셜패키지]키즈/애니","10,000,000","0","0.00","2022-01-18~2022-01-31","중간종료","2022-01-18"]);            
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow(table, data, true));
+            
+      $(".btn-register").on("click",function(){
+        $("#modal-background").fadeIn(300);
+        $(".modal-integration-add").css("display", "flex").hide().fadeIn();        
+        $("body").css("overflow", "hidden");
+      })
+      
+      $("tbody.table-body tr td:nth-child(2)").on("click",function(){
+        location.href = "integration_detail.html"; //or integration_detail2.html
+      })
+    </script>
+  </body>
+</html>
