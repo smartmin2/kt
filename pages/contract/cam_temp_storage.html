@@ -27,7 +27,7 @@
     <div>홈</div>
     <div>캠페인 관리</div>
     <div>캠페인</div>
-    <div>임시저장 캠페인</div>
+    <div>캠페인 큐시트</div>
   </div>
   <div class="main campaign-temp-storage">
       <div class="common-box common-body">
@@ -39,7 +39,7 @@
           </ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">임시저장 캠페인</div>
+          <div class="content-title">캠페인 큐시트</div>
           <div class="search-wrapper">
             <div class="search-top">
               <div class="content-sub-title">조회조건설정</div>              
@@ -111,6 +111,7 @@
                 <col style="width: 10%" />
                 <col style="width: 15%" />
                 <col style="width: 6%" />            
+                <col style="width: 5%" />            
               </colgroup>
               <thead>
                 <tr>                  
@@ -122,6 +123,7 @@
                   <th>총금액(원)</th>
                   <th>집행일자</th>
                   <th>서비스</th>
+                  <th>다운로드</th>
             </thead>
             <tbody class="table-body">
               <tr>
@@ -133,6 +135,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -143,6 +146,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -153,6 +157,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -163,6 +168,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -173,6 +179,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -183,6 +190,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -193,6 +201,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -203,6 +212,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -213,6 +223,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
               <tr>
                 <td>디즈니코리아</td>
@@ -223,6 +234,7 @@
                 <td>20,000,000</td>
                 <td>2202.01.03 ~ 2202.02.28</td>
                 <td>PP</td>
+                <td><button class="btn-download"></button></td>
               </tr>
             </tbody>
             </table>
@@ -268,9 +280,9 @@
       loadSubMenu("2", 1);
       loadLnb(2, 1, 2);
 
-      const arrTable = Array(10).fill(["디즈니코리아", "광고주직거래", "킹스맨퍼스트에이전트", "(주)나스미디어", "디즈니 킹스맨 퍼스트에이전트 22년 3월", "20,000,000","2202.01.03 ~ 2202.02.28","PP"]);            
-      const table = document.querySelector(".table-body");
-      arrTable.map((data) => addRow(table, data, false));      
+      // const arrTable = Array(10).fill(["디즈니코리아", "광고주직거래", "킹스맨퍼스트에이전트", "(주)나스미디어", "디즈니 킹스맨 퍼스트에이전트 22년 3월", "20,000,000","2202.01.03 ~ 2202.02.28","PP"]);            
+      // const table = document.querySelector(".table-body");
+      // arrTable.map((data) => addRow(table, data, false));      
     </script>
   </body>
 </html>

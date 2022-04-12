@@ -165,43 +165,45 @@
               </div>
             </div>
             <div class="jb-table-wrapper">
-            <table class="jb-table">
-              <colgroup>
-                <col style="width: 2%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col />
-                <col style="width: 6%" />
-                <col style="width: 10%" />
-                <col style="width: 3%" />
-                <col style="width: 10%" />
-                <col style="width: 5%" />
-                <col style="width: 6%" />                
-              </colgroup>
-              <thead>
-                <tr>
-                  <th rowspan="2" scope="col"><input type="checkbox"></th>
-                  <th rowspan="2" scope="col">광고주</th>
-                  <th rowspan="2" scope="col">대행사</th>
-                  <th rowspan="2" scope="col">브랜드</th>
-                  <th rowspan="2" scope="col">영업사</th>
-                  <th rowspan="2" scope="col">캠페인명</th>
-                  <th rowspan="2" scope="col">총금액(원)</th>
-                  <th rowspan="2" scope="col">집행일자</th>
-                  <th scope="col" colspan="3">노출량</th>
-                  <th rowspan="2" scope="col">상태</th>                                      
-                </tr>
-                <tr>
-                  <th scope="col">서비스</th>
-                  <th scope="col">게런티(보너스율)</th>
-                  <th scope="col">추가노출량</th>
-                </tr>
-            </thead>
-              <tbody class="table-body"></tbody>
-            </table>
-          </div>
+              <table class="jb-table">
+                <colgroup>
+                  <col style="width: 2%" />
+                  <col style="width: 9%" />
+                  <col style="width: 9%" />
+                  <col style="width: 9%" />
+                  <col style="width: 9%" />
+                  <col />
+                  <col style="width: 6%" />
+                  <col style="width: 9%" />
+                  <col style="width: 3%" />
+                  <col style="width: 9%" />
+                  <col style="width: 4%" />
+                  <col style="width: 8%" />
+                  <col style="width: 5%" />                
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th rowspan="2" scope="col"><input type="checkbox"></th>
+                    <th rowspan="2" scope="col">광고주</th>
+                    <th rowspan="2" scope="col">대행사</th>
+                    <th rowspan="2" scope="col">브랜드</th>
+                    <th rowspan="2" scope="col">영업사</th>
+                    <th rowspan="2" scope="col">캠페인명</th>
+                    <th rowspan="2" scope="col">총금액(원)</th>
+                    <th rowspan="2" scope="col">집행일자</th>
+                    <th scope="col" colspan="3" class="bottom-line">노출량</th>
+                    <th rowspan="2" scope="col">다운로드</th>                                      
+                    <th rowspan="2" scope="col">상태</th>                                      
+                  </tr>
+                  <tr>
+                    <th scope="col">서비스</th>
+                    <th scope="col">게런티(보너스율)</th>
+                    <th scope="col">추가노출량</th>
+                  </tr>
+              </thead>
+                <tbody class="table-body"></tbody>
+              </table>
+            </div>
             <ul class="pagination">
               <li>
                 <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
@@ -236,61 +238,118 @@
     </div>
 
     <div id="modal-background"></div>
-    <div class="modal-con modal-processing common-box">      
+    <div class="modal-con modal-integ common-box">      
       <div class="modal-top">
-        <div class="box-title">업종변경</div>
+        <div class="box-title">통합통계 추가</div>
         <div class="ic-modal-close close"></div>
       </div>
       <div class="modal-body">
-        <div class="setting-table">
-          <div class="row">
-            <div class="setting-table-title">Asset Name</div>
-            <div class="selectBox">
-              <button class="label">0121_경동나비엔_0121_경동나비엔...</button>
-              <ul class="optionList">
-                <li class="optionItem">0329_LiveAD_test_15초</li>
-                <li class="optionItem">PBTV_11월광고_KT_성인_15초</li>
-                <li class="optionItem">1102_상용_영화_퍼펙트 스틸_15세</li>                        
-              </ul>
+        <div class="search-wrapper">          
+          <div class="search-edit-box">
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">소재명</div>
+                <div>0102_염소본가_LGT_30초</div>
+              </div>
+              <div class="input-wrapper">
+                <div class="input-title">프로그램명</div>
+                <input type="text" />
+              </div>
+            </div>            
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">채널명</div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>          
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                                           
+                      <option value="">50개</option>                                           
+                      <option value="">100개</option>                                                
+                    </select>
+                  </div>   
+                </div>
             </div>
           </div>
-          <div class="row">
-            <div class="setting-table-title">업종분류1</div>
-            <div class="selectBox">
-              <button class="label">가정용품</button>
-              <ul class="optionList">
-                <li class="optionItem">업종1</li>
-                <li class="optionItem">업종2</li>
-                <li class="optionItem">업종3</li>                        
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="setting-table-title">업종분류2</div>
-            <div class="selectBox">
-              <button class="label">난방기기</button>
-              <ul class="optionList">
-                <li class="optionItem">업종2-1</li>
-                <li class="optionItem">업종2-2</li>
-                <li class="optionItem">업종2-3</li>                        
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="setting-table-title">업종분류3</div>
-            <div class="selectBox">
-              <button class="label">보일러</button>
-              <ul class="optionList">
-                <li class="optionItem">업종3-1</li>
-                <li class="optionItem">업종3-2</li>
-                <li class="optionItem">업종3-3</li>                        
-              </ul>
-            </div>
-          </div>        
+          <table class="jb-table table1">
+            <colgroup>              
+              <col style="width: 15%" />              
+              <col style="width: 15%" />
+              <col />
+              <col style="width: 30%" />
+              <col style="width: 12%" />
+              <col style="width: 10%" />
+            </colgroup>
+            <thead>
+              <th>현재채널</th>
+              <th>첨부</th>
+              <th>프로그램</th>
+              <th>소재</th>
+              <th>녹화일</th>
+              <th>다운로드</th>
+            </thead>
+            <tbody class="modal-table-body"></tbody>
+          </table>
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div class="modal-bottom">
-        <button class="btn-common">저장</button>
+      <div class="modal-bottom">        
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-con modal-cam-report common-box">      
+      <div class="modal-top">
+        <div class="box-title">집행보고서 기간조회</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">          
+          <div class="search-edit-box">                          
+                <div class="input-title">기간</div>                
+                <div class="input-date-group">
+                  <input type="date" name="" id="" value="2022-01-31">
+                  <span>~</span>
+                  <input type="date" name="" id="" value="2022-02-14">
+                </div>              
+          </div>                    
+        </div>
+      </div>
+      <div class="modal-bottom"> 
+        <button class="btn-white">LiveAD 집행보고서 조회</button>       
         <button class="btn-white close">취소</button>
       </div>
     </div>
@@ -303,14 +362,60 @@
       loadSubMenu("2", 1);
       loadLnb(2, 1, 1);
 
-      const arrTable = Array(10).fill(["현대자동차(주)", "광고주직거래", "현대자동차", "(주)KT", "	멀티기간멀티소재3동타게팅_현대자동차_기본패키지_베이직", "10,000,000","220103 ~ 220228","CHP","3,400,000  (70%)	","0","승인"]);            
+      const arrTable = Array(10).fill(["현대자동차(주)", "광고주직거래", "현대자동차", "(주)KT", "	멀티기간멀티소재3동타게팅_현대자동차_기본패키지_베이직", "10,000,000","220103 ~ 220228","CHP","3,400,000  (70%)	","0","","승인"]);            
       const table = document.querySelector(".table-body");
-      arrTable.map((data) => addRow(table, data, true));
+      arrTable.map((data) => addRow1(table, data, true));
 
-      $("td .btn-download").on("click", function(){     
+      function addRow1(table, tbData, isCheckbox) {    
+        var tr = document.createElement("tr");
+
+        if (isCheckbox) {
+          var input = document.createElement("input");
+          var ckTD=document.createElement("td");
+
+          input.setAttribute("type","checkbox");
+          input.setAttribute("class","table_body_check");
+          ckTD.appendChild(input);
+          tr.appendChild(ckTD);
+        }
+        
+        tbData.map((cell,i) => {        
+          var newTD = document.createElement("td"); 
+          if (i == 10)
+          {      
+            var cueSheet = document.createElement("div");
+            var report = document.createElement("div");
+            var monitor = document.createElement("div");
+            cueSheet.setAttribute("class","link-cue-sheet");      
+            report.setAttribute("class","link-report");
+            monitor.setAttribute("class","link-monitor");
+            cueSheet.innerText = "큐시트";
+            report.innerText = "분석리포트";
+            monitor.innerText = "모니터링";
+            newTD.appendChild(cueSheet);
+            newTD.appendChild(report);
+            newTD.appendChild(monitor);
+          }
+          else newTD.innerText = cell;
+          
+          tr.appendChild(newTD);    
+        });  
+        table.appendChild(tr); 
+      }
+
+      const arrModalTable = Array(10).fill(["서울TV","첨부없음","","0102_염소본가_LGT_30","2022-01-04","attach"]);            
+      const modalTable = document.querySelector(".modal-table-body");
+      arrModalTable.map((data) => addRow(modalTable, data, false));
+
+      $(".link-monitor").on("click", function(){     
         $("#modal-background").fadeIn(300);
-        $(".modal-con").css("display", "flex").hide().fadeIn();
-        $(".modal-processing").addClass("two");
+        $(".modal-integ").css("display", "flex").hide().fadeIn();        
+        $("body").css("overflow", "hidden");
+      })
+
+      $(".link-report").on("click", function(){     
+        $("#modal-background").fadeIn(300);
+        $(".modal-cam-report").css("display", "flex").hide().fadeIn();        
         $("body").css("overflow", "hidden");
       })
 

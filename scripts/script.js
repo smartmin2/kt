@@ -1,6 +1,6 @@
 
   const mainMenu = [{id: 1, name:'소재', link:'/pages/material/processing.html'},
-                {id: 2, name:'캠페인 관리', link:''},
+                {id: 2, name:'캠페인 관리', link:'/pages/contract/campaign.html'},
                 {id: 3, name:'영업', link:''},
                 {id: 4, name:'카테고리', link:''},
                 {id: 5, name:'인벤토리', link:''},
@@ -23,7 +23,7 @@
     2 : [      
          {id: 1, name:'캠페인', link: '/pages/contract/campaign.html', 
             folder: [{name:'캠페인', link:'/pages/contract/campaign.html'},
-                     {name:'임시저장 캠페인', link:'/pages/contract/cam_temp_storage.html'},
+                     {name:'캠페인 큐시트', link:'/pages/contract/cam_temp_storage.html'},
                      {name:'캠페인 청약조회', link:'/pages/contract/cam_sub_inquiry.html'},
                      {name:'캠페인 청약승인', link:'/pages/contract/cam_sub_approval.html'},
                      {name:'청약 조회', link:'/pages/contract/subscription_inquiry.html'},
@@ -104,7 +104,7 @@
          {id: 4, name:'실시간 LiveAD리포트', link:'', folder: []},         
          {id: 5, name:'LiveAD게재 확인리포트', link:'', folder: []}],
     9 : [{id: 1, name:'통합 대시보드', link:'', 
-            folder: [{name:'통합분석', link:'/pages/statistics/integration.html'},
+            folder: [{name:'통합통계', link:'/pages/statistics/integration.html'},
                      {name:'매출총괄', link:'/pages/statistics/sales_manager.html'},
                      {name:'상품별 상세', link:'/pages/statistics/product_detail.html'},
                      {name:'영업채널상세', link:'/pages/statistics/sales_channel.html'},
