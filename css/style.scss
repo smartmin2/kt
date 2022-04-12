@@ -2716,9 +2716,7 @@
   .jb-table tbody tr td:nth-child(6) {cursor: pointer;text-decoration: underline;}
   .link-cue-sheet, .link-report, .link-monitor {cursor: pointer;text-decoration: underline;}
 }
-.modal-campaign-main {
 
-}
 .modal-integ {
   @include default_modal(900px, auto);
   display: none;
@@ -3826,7 +3824,31 @@
   }
 
 .modal-campaign-main {
-  @include default_modal(724px, 691px);
+  @include default_modal(auto, auto);
+  display: none;
+
+  .modal-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    .btn-select-video, .btn-select-channel {
+      width: 200px;
+      height: 200px;    
+      background-color: $colors_box;
+      border-radius: 14px;
+      font-size: 18px;
+      font-weight: 500;      
+      line-height: 0.47;      
+      color: #018ddd;
+
+      @include flex_center;
+      cursor: pointer;
+    }
+  }
+}
+.modal-cam-main-video, .modal-cam-main-channel {
+  @include default_modal(724px, auto);
   display: none;
 
   .modal-body {

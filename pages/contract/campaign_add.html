@@ -4817,10 +4817,10 @@
     </div>
 
     <div id="modal-background"></div>
-    <div class="modal-campaign-main modal-con common-box">
+    <div class="modal-cam-main-video modal-con common-box">
       <div class="modal-top">
         <div class="box-title">서비스 선택</div>
-        <div class="ic-modal-close close"></div>
+        <div class="ic-modal-close btn-close"></div>
       </div>
       <div class="modal-body">
         <div class="modal-content-wrapper">
@@ -4841,6 +4841,19 @@
             <div class="row"></div>
           </div>
         </div>
+      </div>
+      <div class="modal-bottom">
+        <!-- 개발시 btn-common 의 close 는 삭제해야함 -->
+        <button class="btn-common close">저장</button>
+        <button class="btn-white btn-close">취소</button>
+      </div>
+    </div>
+    <div class="modal-cam-main-channel modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">서비스 선택</div>
+        <div class="ic-modal-close btn-close"></div>
+      </div>
+      <div class="modal-body">
         <div class="modal-content-wrapper">
           <div class="modal-sub-title">채널상품(LiveAD)</div>
           <div class="modal-content">
@@ -4881,11 +4894,21 @@
           </div>                    
         </div>
       </div>
-      <div class="modal-bottom">
-        <!-- 개발시 btn-common 의 close 는 삭제해야함 -->
+      <div class="modal-bottom">   
+        <!-- 개발시 btn-common 의 close 는 삭제해야함 -->     
         <button class="btn-common close">저장</button>
-        <button class="btn-white close">취소</button>
+        <button class="btn-white btn-close">취소</button>
       </div>
+    </div>
+    <div class="modal-campaign-main modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">서비스 선택</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="btn-select-video">동영상</div>
+        <div class="btn-select-channel">채널상품(LiveAD)</div>
+      </div>      
     </div>
     <div class="modal-installment modal-con common-box">
       <div class="modal-top">
@@ -6002,7 +6025,19 @@
     $("#modal-background").fadeIn(100);
     $(".modal-campaign-main").css("display", "flex").hide().fadeIn();
     $("body").css("overflow", "hidden");
+    $(".btn-close").on("click",function(){
+      $(this).parent().parent().fadeOut();
+      $(".modal-campaign-main").css("display", "flex").fadeIn();
+    })
 
+    $(".btn-select-video").on("click",function(){
+      $(".modal-campaign-main").css("display", "flex").fadeOut();
+      $(".modal-cam-main-video").fadeIn(200);
+    })
+    $(".btn-select-channel").on("click",function(){
+      $(".modal-campaign-main").css("display", "flex").fadeOut();
+      $(".modal-cam-main-channel").fadeIn(200);
+    })
 	  $("#ck-settime").on("change",function(){
         if ($(this).is(":checked")) {
           $(".dis-time").css("display","none");
