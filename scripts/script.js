@@ -123,7 +123,7 @@
             folder: [{name:'콘텐츠 매핑', link:''},
                      {name:'임계치 관리', link:''},
                      {name:'분석 적용 관리', link:''}]}],
-    10 : [{id: 1, name:'회원 관리', link:'/pages/services/company.htm', 
+    10 : [{id: 1, name:'회원 관리', link:'/pages/services/company.html', 
       folder: [
         { name: "업체 관리", link: "/pages/services/company.html" },
         { name: "대행사 관리", link: "/pages/services/agency.html" },
