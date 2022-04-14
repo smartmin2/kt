@@ -845,6 +845,10 @@
       const table2 = document.querySelector(".table2 .table-body");
       arrTable2.map((data) => addRow(table2, data, false));
 
+      $(".btn-white.list").on("click", function () {
+        location.href="advertiser.html"
+      });
+
       $("#tab02 .btn-register").on("click", function () {
         $(".modal-pnm-add").show();
       });
