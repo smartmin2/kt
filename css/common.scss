@@ -330,6 +330,12 @@ input[type="checkbox"] {
 .img-round-nav {
   content: url("../assets/round-nav.png");
 }
+.ic-dot {
+  width: 4px;
+  height: 4px;  
+  border-radius: 2px;
+  background-color: #141f40;  
+}
 
 .common-body {
 
@@ -697,6 +703,7 @@ ul.pagination {
 
 .input-date-group {
   display: flex;
+  align-items: center;
   width: 300px;
   height: 30px;
   border-radius: 4px;
@@ -973,6 +980,7 @@ input[type=date]:after {
 .btn-select-group {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .btn-check-group {
@@ -1445,6 +1453,7 @@ strong {
 .width-85 {width: 85px;}
 .width-168 {width: 168px;}
 .width-200 {width: 200px;}
+.width-220 {width: 220px;}
 .width-104 {width: 104px;}
 .width-75 {width: 75px;}
 .width-94 {width: 94px;}

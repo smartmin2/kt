@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>통계</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>통계</div>
+    <div>통합 대시보드</div>
+    <div>인벤토리</div>
+  </div>
+  <div class="main inventory-main">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                통계
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">인벤토리</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">인벤토리 기준월</div>                   
+                    <div class="input-date-group">
+                      <input type="date" value="2022-02-10">                      
+                    </div>
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">영업사</div>    
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">SD</option>
+                        <option value="">HD</option>                        
+                        <option value="">ASP</option>                        
+                        <option value="">UHD</option>                        
+                        <option value="">FHD</option>                                                
+                      </select>
+                    </div>                                     
+                  </div> 
+                </div>
+              </div>              
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <ul class="tab">
+            <li class="tab-menu active" data-tab="tab01">채널별</li>
+            <li class="tab-menu menu2" data-tab="tab02">지역별</li>
+          </ul>
+          <div class="tab-content active" id="tab01">
+            <div class="chart-wrapper">          
+              <canvas id="myChart1"></canvas>          
+            </div>
+            <div class="button-group">
+              <button class="btn-excel"><img>엑셀 다운로드</button>
+            </div>
+            <div class="table-wrapper">               
+              <table class="jb-table">
+                <colgroup>                  
+                  <col style="width: 15%" />
+                  <col style="width: 20%" />                  
+                  <col style="width: 20%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />                  
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th>구분</th>
+                    <th>채널명</th>                    
+                    <th>사용량</th>
+                    <th>잔여량</th>                    
+                    <th>총인벤토리</th>
+                    <th>청약비율</th>
+                  </tr>                  
+              </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>프리미엄30</td>
+                    <td>MBC 드라마넷</td>
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>0.7%</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td colspan="2" class="tot-td">합계</td>                                        
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>0.7%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-content" id="tab02">
+            <div class="chart-wrapper">          
+              <canvas id="myChart2"></canvas>          
+            </div>
+            <div class="button-group">
+              <button class="btn-excel"><img>엑셀 다운로드</button>
+            </div>
+            <div class="table-wrapper">               
+              <table class="jb-table">
+                <colgroup>                  
+                  <col style="width: 25%" />                  
+                  <col style="width: 20%" />                  
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 15%" />                  
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th>지역명</th>                    
+                    <th>사용량</th>
+                    <th>잔여량</th>                    
+                    <th>총인벤토리</th>
+                    <th>청약비율</th>
+                  </tr>                  
+              </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>서울특별시</td>                    
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>0.7%</td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                    <td></td>
+                  </tr>
+                  <tr>                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>                    
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td class="tot-td">합계</td>                                        
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>80,080</td>
+                    <td>0.7%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/chart.min.js"></script>  
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(9);
+      loadSubMenu("9", 1);
+      loadLnb(9, 1, 9);      
+      
+      // chart data and options
+      let chartData1 = {        
+          labels: ['프리미엄30', '베이직(프리미엄 30 제외)', '키즈/애니','모니터링채널'],
+          datasets: [
+              {              
+                  label: '잔여 인벤토리',
+                  yAxisID: 'y-left',
+                  data: [475000000, 150000000, 25000000, 30000000, 10000000],
+                  backgroundColor: [
+                      '#9adde8',          
+                  ],
+                  borderWidth: 1,
+                  barThickness: 100,
+                  order: 1
+              },
+              {
+                  label: '사용 인벤토리',
+                  yAxisID: 'y-right',
+                  data: [5000000, 0, 0, 0],
+                  backgroundColor: [
+                      '#c6acff'                
+                  ],
+                  borderWidth: 1,
+                  barThickness: 100,
+                  order: 2
+              }
+          ]
+      }
+      let chartOptions1 = {
+        plugins: {
+              legend: {
+                  display: true,
+                  position: 'bottom',                
+                  align: 'center',
+                  labels: {
+                    boxWidth: 14,
+                  }
+              }
+          },
+          maintainAspectRatio: false,
+          responsive:true,        
+          scales: {
+              x: {            
+                  grid: {
+                      display: false
+                  }
+              },
+              'y-left': {
+                  type: 'linear',
+                  position: 'left',
+                  ticks: {                
+                    min: 0,
+                    max: 500000000,
+                    stepSize : 50000000,
+                    fontSize : 10,					              
+                  },    
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '채널별 인벤토리 사용현황'
+                  },        
+              },
+              'y-right': {
+                  type: 'linear',
+                  position: 'right',
+                  ticks: {                
+                    min: 0,
+                    max: 0,
+                    stepSize : 500000000,
+                    fontSize : 10,					
+                  },
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '채널별 인벤토리 사용현황'
+                  },    
+              }
+          }
+      }
+
+      let ctx1 = document.getElementById('myChart1').getContext('2d');
+      let chart1 = new Chart(ctx1, {
+          type: 'bar',
+          data: chartData1,
+          options: chartOptions1
+      })
+
+      let chartData2 = {        
+          labels: ['서울특별시', '부산광역시', '대구광역시','인천광역시', '광주광역시', '대전광역시','울산광역시', '세종특별자치시', '경기도','강원도', '충청북도', '충청남도','전라북도','전라남도','경상북도','경상남도','제주특별자치도','합계'],
+          datasets: [
+              {              
+                  label: '잔여 인벤토리',
+                  yAxisID: 'y-left',
+                  data: [100000000, 40000000, 20000000, 30000000, 10000000, 10000000, 10000000, 5000000, 200000000, 50000000, 30000000, 50000000, 30000000, 30000000, 40000000, 50000000, 20000000, 700000000],
+                  backgroundColor: [
+                      '#9adde8',          
+                  ],
+                  borderWidth: 1,
+                  barThickness: 30,
+                  order: 1
+              },
+              {
+                  label: '사용 인벤토리',
+                  yAxisID: 'y-right',
+                  data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+                  backgroundColor: [
+                      '#c6acff'                
+                  ],
+                  borderWidth: 1,
+                  barThickness: 30,
+                  order: 2
+              }
+          ]
+      }
+      let chartOptions2 = {
+        plugins: {
+              legend: {
+                  display: true,
+                  position: 'bottom',                
+                  align: 'center',
+                  labels: {
+                    boxWidth: 14,
+                  }
+              }
+          },
+          maintainAspectRatio: false,
+          responsive:true,        
+          scales: {
+              x: {            
+                  grid: {
+                      display: false
+                  }
+              },
+              'y-left': {
+                  type: 'linear',
+                  position: 'left',
+                  ticks: {                
+                    min: 0,
+                    max: 700000000,
+                    stepSize : 100000000,
+                    fontSize : 10,					              
+                  },    
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '지역별 인벤토리 사용현황'
+                  },        
+              },
+              'y-right': {
+                  type: 'linear',
+                  position: 'right',
+                  ticks: {                
+                    min: 0,
+                    max: 24,
+                    stepSize : 6,
+                    fontSize : 10,					
+                  },
+                  title: {
+                    display: false,
+                    align: 'end',                         
+                    text: '지역별 인벤토리 사용현황'
+                  },    
+              }
+          }
+      }
+
+      let ctx2 = document.getElementById('myChart2').getContext('2d');
+      let chart2 = new Chart(ctx2, {
+          type: 'bar',
+          data: chartData2,
+          options: chartOptions2
+      })
+
+
+    </script>
+  </body>
+</html>

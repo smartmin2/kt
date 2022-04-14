@@ -445,6 +445,13 @@ input[type="checkbox"]:checked::before {
   content: url("../assets/round-nav.png");
 }
 
+.ic-dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #141f40;
+}
+
 .common-body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -919,6 +926,9 @@ ul.pagination li a.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 300px;
   height: 30px;
   border-radius: 4px;
@@ -1377,6 +1387,8 @@ input[type=date]:after {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .btn-check-group > input[type="checkbox"] {
@@ -1995,6 +2007,10 @@ strong.red {
 
 .width-200 {
   width: 200px;
+}
+
+.width-220 {
+  width: 220px;
 }
 
 .width-104 {
