@@ -1,0 +1,17 @@
+<svg data-name="13_ic_normal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="wnq1c4drpa">
+            <path data-name="사각형 414" style="fill:none" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 312" style="clip-path:url(#wnq1c4drpa)" transform="translate(4 4)">
+        <circle data-name="타원 14" cx="8" cy="8" r="8" style="fill:#fff"/>
+        <circle data-name="타원 18" cx="8" cy="8" r="8" style="fill:#84c7f9"/>
+    </g>
+    <g data-name="그룹 335" style="clip-path:url(#wnq1c4drpa)">
+        <g data-name="타원 16" transform="translate(7 7)" style="stroke:#fff;stroke-width:2px;fill:none">
+            <circle cx="5" cy="5" r="5" style="stroke:none"/>
+            <circle cx="5" cy="5" r="4" style="fill:none"/>
+        </g>
+    </g>
+</svg>

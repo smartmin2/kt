@@ -1,0 +1,11 @@
+<svg data-name="13_ic_possible" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="c55xnhk27a">
+            <path data-name="사각형 423" style="fill:none" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 335" style="clip-path:url(#c55xnhk27a)">
+        <circle data-name="타원 15" cx="8" cy="8" r="8" transform="translate(4 4)" style="fill:#b8b6ff"/>
+        <path data-name="패스 298" d="m7.5 15.334 3.838 3.833 4.868-6.362" transform="translate(1 -4.334)" style="stroke:#fff;stroke-linecap:round;stroke-linejoin:round;stroke-width:3px;fill:none"/>
+    </g>
+</svg>

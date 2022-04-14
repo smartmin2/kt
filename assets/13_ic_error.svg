@@ -1,0 +1,13 @@
+<svg data-name="13_ic_error" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="sypnt0iura">
+            <path data-name="사각형 295" style="fill:none" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 303">
+        <g data-name="그룹 302" style="clip-path:url(#sypnt0iura)">
+            <path data-name="패스 260" d="M17.945 19.872H6.055a3.051 3.051 0 0 1-2.616-4.619l5.945-9.917a3.05 3.05 0 0 1 5.232 0l5.945 9.917a3.051 3.051 0 0 1-2.616 4.619" transform="translate(0 .147)" style="fill:#f5aa88"/>
+        </g>
+    </g>
+    <text data-name="!" transform="translate(8.926 17.073)" style="fill:#fff;font-size:13.476px;font-family:NotoSans-Bold,Noto Sans;font-weight:700"><tspan x="0" y="0">!</tspan></text>
+</svg>
