@@ -429,7 +429,7 @@
 .agency-detail .setting-table .row .setting-table-content .input-wrap-mail { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; font-size: 13px; font-weight: bold; color: #bcbfc7; }
 .agency-detail .setting-table .row input[type="text"], .agency-detail .setting-table .row input[type="password"] { width: 200px; }
 
-.advertiser table.jb-table tbody tr td:nth-child(1) { text-decoration: underline; cursor: pointer; }
+.advertiser-main table.jb-table tbody tr td:nth-child(1) { text-decoration: underline; cursor: pointer; }
 
 .advertiser-add .content-sub-title, .advertiser-detail .content-sub-title { margin-bottom: 20px; }
 .advertiser-add .setting-table .row .label, .advertiser-detail .setting-table .row .label { height: 30px; }
