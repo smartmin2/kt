@@ -8,7 +8,7 @@
                 {id: 7, name:'편성', link:''},
                 {id: 8, name:'리포트', link:''},
                 {id: 9, name:'통계', link:'/pages/statistics/integration.html'},
-                {id: 10, name:'서비스관리', link:''},
+                {id: 10, name:'서비스관리', link:'/pages/services/company.html'},
                 {id: 11, name:'시스템 관리', link:'/pages/system/user.html'}];
 
   const subMenu = {
@@ -123,7 +123,7 @@
             folder: [{name:'콘텐츠 매핑', link:''},
                      {name:'임계치 관리', link:''},
                      {name:'분석 적용 관리', link:''}]}],
-    10 : [{id: 1, name:'회원 관리', link:'', 
+    10 : [{id: 1, name:'회원 관리', link:'/pages/services/company.htm', 
       folder: [
         { name: "업체 관리", link: "/pages/services/company.html" },
         { name: "대행사 관리", link: "/pages/services/agency.html" },
