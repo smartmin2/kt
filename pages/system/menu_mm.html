@@ -31,7 +31,7 @@
     <div class="main menu-mm">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
-          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14">시스템관리</div>
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14" />시스템관리</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
@@ -162,7 +162,7 @@
       </div>
     </div>
     <div class="footer-wrapper">
-      <p>(주)케이티 대표이사 구현모 경기도 성남시 분당구 불정로 90 (정자동) 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 사업자정보확인</p>
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
     </div>
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
@@ -172,13 +172,12 @@
       loadSubMenu("11", 4);
       loadLnb(11, 4, 1);
 
-      const arrTable1 = Array(15).fill(["메뉴", "시스템관리",  "2022-02-10"]);
-      const arrTable2 = Array(15).fill(["메뉴", "매체정보",  "2022-02-10"]);
+      const arrTable1 = Array(15).fill(["메뉴", "시스템관리", "2022-02-10"]);
+      const arrTable2 = Array(15).fill(["메뉴", "매체정보", "2022-02-10"]);
       const table1 = document.querySelector(".table1 .table-body");
       const table2 = document.querySelector(".table2 .table-body");
       arrTable1.map((data) => addRow(table1, data, false));
       arrTable2.map((data) => addRow(table2, data, false));
-
 
       $(".table1 td:nth-child(2)").on("click", function () {
         location.href = "adoperate.html";
@@ -186,8 +185,6 @@
       $(".table2 td:nth-child(2)").on("click", function () {
         location.href = "adanalysis.html";
       });
-    
-    
     </script>
   </body>
 </html>
