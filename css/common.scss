@@ -1051,7 +1051,7 @@ input[type=date]:after {
   height: 30px;
   border-radius: 4px;
   background-color: $teal;
-
+  min-width: 50px;
   font-size: 12px;
   color: $white;
   &:hover {
@@ -1142,9 +1142,34 @@ input[type=date]:after {
     font-weight: normal;
     border-radius: 4px;
     border-top-left-radius: 0px;
-
   }
 }
+
+@each $info in normal, possible, error, warning {
+  .ic-#{$info} {
+    @include flex_center;
+    font-size: 14px;
+    &::before {
+      content: url(../assets/13_ic_#{$info}.svg);
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+    }
+  }
+}
+.ic-normal {
+  color: #018ddd;
+}
+.ic-possible {
+  color: #8f69d5;
+}
+.ic-error {
+  color: #f67347;
+}
+.ic-warning {
+  color: #eb5050;
+}
+
 /*********** components ***********/
 
 /* components html*/
@@ -1460,3 +1485,80 @@ strong {
 .width-86 {width: 86px;}
 .width-132 {width: 132px;}
 .width-40 {width: 40px;}
+//info-wrapper
+
+.info-wrapper {
+  margin-bottom: 30px;
+  @each $info in normal, possible, error, warning {
+    .info-#{$info} {
+      background: url(../assets/13_img_#{$info}_bg.svg) no-repeat center;
+      width: 312px;
+      height: 100px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      padding: 0 30px;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    li {
+      &.info-normal {
+        p {
+          color: #018ddd;
+        }
+      }
+      &.info-possible {
+        p {
+          color: #8f69d5;
+        }
+      }
+      &.info-error {
+        p {
+          color: #f67347;
+        }
+      }
+      &.info-warning {
+        p {
+          color: #eb5050;
+        }
+      }
+      text-align: right;
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: $colors_box_title;
+      }
+      p {
+        font-size: 26px;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+// tree-box
+.tree-box {
+  border: 1px solid #ddd;
+  padding: 10px;
+  .jstree-leaf {
+    padding-left: 10px;
+  }
+}
+
+.bg {
+  &-red {
+    background-color: $table_bg_red;
+  }
+  &-blue {
+    background-color: $table_bg_blue;
+  }
+  &-purple {
+    background-color: $table_bg_purple;
+  }
+  &-green {
+    background-color: $table_bg_green;
+  }
+}

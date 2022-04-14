@@ -45,6 +45,11 @@ $green_10: rgba(32,114,69,0.1);
 
 $bg_black: rgba(0,0,0,0.1);
 
+$table_bg_red:#f5aa88;
+$table_bg_blue:#7cc2e0;
+$table_bg_purple:#b8b6ff;
+$table_bg_green:#2ea64e;
+
 // text input box : width, height
 @mixin input_box($width, $height) {
   width: $width;

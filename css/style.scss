@@ -2156,6 +2156,515 @@
     margin-bottom: 10px;
   }
 }
+
+//channel
+.channel {
+  table.jb-table tbody tr td {
+    &:nth-child(3) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.modal-channel-add,
+.modal-channel-detail {
+  @include default_modal(600px, auto);
+  display: none;
+}
+
+//channel-group
+.channel-group {
+  table.jb-table tbody tr td {
+    &:nth-child(2) {
+      div {
+        @include flex_center;
+        gap: 10px;
+        button {
+          width: 50px;
+        }
+      }
+
+      span {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.modal-cngroup-modify {
+  @include default_modal(auto, auto);
+  display: none;
+}
+
+//channel-group-ep
+.channel-group-ep {
+  .search-edit-detail {
+    &.other {
+      .input-content {
+        flex-flow: column;
+        div {
+          &:first-child {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+          }
+          &.toggle-wrap-ck {
+            display: none;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//channel-excel
+.channel-excel {
+  .table-top-buttons {
+    .btn-common {
+      width: auto;
+      padding: 0 10px;
+    }
+  }
+}
+.modal-cnexcel-upload {
+  @include default_modal(auto, auto);
+  display: none;
+}
+
+//stb
+.stb {
+  table.jb-table tbody tr td {
+    &:nth-child(3) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .table-top-buttons {
+    .btn-common {
+      width: auto;
+      padding: 0 10px;
+    }
+  }
+}
+.modal-stb-detail,
+.modal-stb-add {
+  @include default_modal(600px, auto);
+  display: none;
+  .setting-table .row {
+    &.other {
+      height: 150px;
+    }
+  }
+  .content-sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #35497b;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .btn-add,
+    .btn-minus {
+      width: 20px;
+      height: 20px;
+      background-size: auto;
+    }
+  }
+}
+.modal-stbexcel-upload {
+  @include default_modal(auto, auto);
+  display: none;
+}
+
+// contents
+.contents {
+  .input-content {
+    &.double {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .input-group {
+        width: 140px;
+      }
+    }
+  }
+}
+.modal-contents-add {
+  @include default_modal(auto, auto);
+  display: none;
+
+  .row.other {
+    height: 190px;
+  }
+  .table-wrapper {
+    width: 100%;
+  }
+  .table-top-buttons {
+    button {
+      width: 50px;
+    }
+  }
+}
+.modal-contents-select {
+  @include default_modal(1000px, auto);
+  display: none;
+  .table-bottom {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  .content-sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #35497b;
+  }
+  .input-content {
+    &.double {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .input-group {
+        width: 140px;
+      }
+    }
+  }
+}
+
+//inte-map
+.inte-map {
+  table.jb-table tbody {
+    tr {
+      height: 60px;
+      td {
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+        }
+        .btn-rec-teal {
+          width: 50px;
+        }
+      }
+    }
+  }
+}
+.modal-channel-select {
+  @include default_modal(300px, auto);
+  display: none;
+}
+
+//cam-inte-add
+.cam-inte-add {
+  .row.other {
+    height: 150px;
+
+    .table-wrapper {
+      width: 100%;
+    }
+  }
+}
+
+.modal-cam-check {
+  @include default_modal(auto, auto);
+  display: none;
+
+  .content-sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #35497b;
+  }
+}
+
+//twoway-stb
+.twoway-stb {
+  .table-top-buttons {
+    .btn-common {
+      width: auto;
+      padding: 0 10px;
+    }
+  }
+}
+.modal-twostb-add {
+  @include default_modal(600px, auto);
+  display: none;
+  .setting-table .row {
+    &.other {
+      height: 150px;
+    }
+  }
+  .content-sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #35497b;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .btn-add,
+    .btn-minus {
+      width: 20px;
+      height: 20px;
+      background-size: auto;
+    }
+  }
+}
+.modal-twostb-exupload {
+  @include default_modal(auto, auto);
+  display: none;
+}
+
+//twoway-cont
+.twoway-cont {
+  .table-top-buttons {
+    .btn-common {
+      width: auto;
+      padding: 0 10px;
+    }
+  }
+  .input-content {
+    &.double {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .input-group {
+        width: 140px;
+      }
+    }
+  }
+}
+
+.modal-twocont-add {
+  @include default_modal(auto, auto);
+  display: none;
+  .cell {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  .setting-table-content {
+    input[type="text"] {
+      width: 300px;
+    }
+  }
+
+  .row.other {
+    height: 150px;
+  }
+  .table-wrapper {
+    width: 100%;
+  }
+  .table-bottom-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+  }
+  .table-top-buttons {
+    button {
+      width: 50px;
+    }
+  }
+}
+
+//homeshot
+.homeshot {
+  .table-bottom-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+}
+
+//homeshot-add
+.homeshot-add {
+  .table-bottom-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  .toggle-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  table.jb-table tbody tr td {
+    &:nth-child(2) {
+      text-align: left;
+      color: $gray300;
+    }
+  }
+}
+
+//stb-model
+.stb-model {
+  table.jb-table tbody tr td {
+    &:nth-child(2) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.modal-stbmodel-add,
+.modal-stbmodel-detail {
+  @include default_modal(570px, auto);
+  display: none;
+}
+
+//no-ad
+.no-ad {
+  .input-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &.double {
+      .input-group {
+        width: 140px;
+      }
+    }
+  }
+}
+
+.no-ad-add {
+  .table-wrapper {
+    width: 100%;
+  }
+  .row.other {
+    height: 150px;
+  }
+}
+.modal-noad-prosel,
+.modal-noad-contsel,
+.modal-noad-matsel {
+  @include default_modal(auto, auto);
+  display: none;
+  .content-sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: #35497b;
+  }
+  .table-bottom {
+    @include flex_center;
+  }
+  .input-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    &.double {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .input-group {
+        width: 140px;
+      }
+    }
+  }
+}
+
+//quiz
+.quiz {
+  table.jb-table tbody tr td {
+    &:nth-child(3) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.quiz-add {
+  .content-sub-title {
+    margin-bottom: 20px;
+  }
+  .ic-noti .noti-box {
+    height: auto;
+    width: 500px;
+  }
+  .row {
+    &.hide {
+      display: none;
+    }
+    &.other {
+      height: 100px;
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+//privacy
+.privacy {
+  table.jb-table tbody tr td {
+    &:nth-child(3),
+    &:nth-child(6) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.modal-privacy-add,
+.modal-privacy-modify,
+.modal-privacy-list,
+.modal-privacy-listadd {
+  @include default_modal(auto, auto);
+  display: none;
+}
+
+// modal-address
+.modal-address {
+  @include default_modal(900px, auto);
+  display: none;
+  span{
+    font-size: 13px;
+    color:$gray500;
+    display: block;
+    margin-bottom: 10px;
+  }
+  table.jb-table tbody tr td {
+    &:nth-child(2){
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+  .input-group{
+    width:200px;
+  }
+  #tab01{
+    .setting-table-content {
+      text-decoration: underline;
+      cursor: pointer;
+    justify-content: center;
+    }
+  }
+  .setting-table-bottom {
+    @include flex_center;
+    margin-bottom: 20px;
+  }
+  .row {
+    &.address {
+      flex-flow: column;
+      .setting-table-title {
+        width: 100%;
+        justify-content: center;
+      }
+      .setting-table-content {
+        padding: 20px;
+        width:100%;
+      }
+    
+    }
+  }
+}
 //------------------------------------------------
 
 //--------------------system----------------------------
