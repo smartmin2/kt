@@ -100,11 +100,9 @@
                       <div class="input-group width-140">
                         <select class="service-select">
                           <option value="">전체</option>
-                          <option value="">Olleh TV</option>
-                          <option value="">Olleh TV Mobile</option>                        
-                          <option value="">DS</option>                        
-                          <option value="">Digital Cinema</option>                        
-                          <option value="">기가지니</option>                                                
+                          <option value="">VOD</option>
+                          <option value="">LiveAD</option>                        
+                          <option value="">Display</option>                                           
                         </select>
                       </div>            
                       <ul class="checkbox-list">
@@ -355,7 +353,7 @@
     <script>
       loadMainMenu(2);
       loadSubMenu("2", 1);
-      loadLnb(2, 1, 6);
+      loadLnb(2, 1, 6, 0);
 
       $(".service-select").on("click",function(){
         $(".checkbox-list").animate({height:'225px'},'fast');

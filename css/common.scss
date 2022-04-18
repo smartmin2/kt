@@ -439,7 +439,17 @@ button.menu-button {
         height: 100%;
         padding: 0;
       }
-
+      &.four-depth {
+        height: 100%;
+        details {
+          summary {
+            padding: 0;
+          }
+          ul li {
+            padding: 0 30px;
+          }
+        }
+      }
       details[open] summary {
         .ic-lnb-arrow {
           content: url("../assets/c_ic_lnb_arrow_up.svg");
@@ -751,6 +761,9 @@ input[type="password"] {
   }
   &:focus {
     border: 1px solid $font_color;
+  }
+  &:disabled {
+    background-color: $gray100;
   }
 }
 input[type=date],input[type=month] {
@@ -1142,6 +1155,7 @@ input[type=date]:after {
     font-weight: normal;
     border-radius: 4px;
     border-top-left-radius: 0px;
+        z-index: 100;
   }
 }
 

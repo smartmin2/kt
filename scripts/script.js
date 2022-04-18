@@ -17,7 +17,10 @@
                      {name:'소재업종', link:''},
                      {name:'들러리 소재 관리', link:''}]}, 
          {id: 2, name:'OTV', link:'', 
-            folder: [{name:'동영상', link:''},
+            folder: [{name:'동영상', link:'', 
+                      folder:[{name:'ICOD',link:''},
+                              {name:'연속광고불가 소재그룹관리',link:''},
+                              {name:'삭제예정 소재관리',link:''}]},
                      {name:'중복소재 노출관리', link:''},
                      {name:'LiveAD 송출영상', link:''}]}],
     2 : [      
@@ -81,9 +84,25 @@
                      {name:'OTV 정산', link:''},
                      {name:'광고집행내역', link:''}]}],
     7 : [{id: 1, name:'OTV', link:'', 
-            folder: [{name:'상용광고 편성관리', link:''},
-                     {name:'광고관리', link:''},
-                     {name:'이력관리', link:''},
+            folder: [{name:'상용광고 편성관리', link:'',
+                      folder:[{name:'VOD 편성',link:''},
+                              {name:'LiveAD 편성',link:''},
+                              {name:'HomePlay 편성',link:''},
+                              {name:'LiveAD 편성요청관리',link:''}]},
+                     {name:'광고관리', link:'',
+                     folder:[{name:'ICOD',link:''},                             
+                             {name:'LiveAD',link:''}]},
+                     {name:'이력관리', link:'',
+                     folder:[{name:'ICOD',link:''},
+                             {name:'편성표 비교',link:''},
+                             {name:'편성표 결과',link:''},
+                             {name:'편성표 결과 상세',link:''},
+                             {name:'LiveAD',link:''},
+                             {name:'LiveAD 편성표 비교',link:''},
+                             {name:'LiveAD 편성 결과',link:''},
+                             {name:'LiveAD 편성 상세',link:''},
+                             {name:'큐시그널 편성 모니터',link:''},
+                             {name:'큐시그널 인벤토리 추이',link:''}]},
                      {name:'소재미매핑광고', link:''},
                      {name:'편성시간관리', link:''}]},
          {id: 2, name:'홈쇼핑', link:'', 
@@ -133,21 +152,39 @@
       ],
     },
          {id: 2, name:'OTV 관리', link:'', 
-            folder: [{name:'동영상', link:''},
-                     {name:'ADQ 2.0', link:''},]},
+            folder: [{name:'동영상', link:'', 
+                        folder: [{name:'채널정보관리',link:''},
+                                 {name:'채널그룹엑셀업로드',link:''},
+                                 {name:'STB 그룹 관리',link:''},
+                                 {name:'콘텐츠 그룹설정',link:''},
+                                 {name:'통합원천채널매핑',link:''},
+                                 {name:'통합채널그룹관리',link:''},
+                                 {name:'캠페인통합채널그룹관리',link:''},
+                                 {name:'양방향 STB 그룹관리',link:''},
+                                 {name:'양방향 콘텐츠 그룹설정',link:''},
+                                 {name:'홈샷 구좌 수 관리',link:''},
+                                 {name:'홈샷 구좌 현황',link:''},
+                                 {name:'STB 모델 관리',link:''},                                 
+                                 {name:'광고불가 그룹 관리',link:''}]
+                       },
+                     {name:'ADQ 2.0', link:'', 
+                        folder: [{name:'설문/퀴즈관리',link:''},
+                                 {name:'설문/퀴즈현황',link:''},
+                                 {name:'개인정보 입력 관리',link:''}]
+                     }]
+           },
          {id: 3, name:'타겟분석', link:'', folder: []},
          {id: 4, name:'설정', link:'', 
-            folder: [{name:'OTV', link:''},
-                     {name:'양방향', link:''},]},
+            folder: [{name:'OTV', link:'', folder: [{name:'동영상',link:''}]},
+                     {name:'양방향', link:'', 
+                        folder: [{name:'테스트셋탑박스관리', link:''},
+                                 {name:'양방향설정', link:''},
+                                 {name:'양방향DA환경관리', link:''},
+                                 {name:'채널망공사설정', link:''}]}]},
          {id: 5, name:'공지사항', link:'/pages/services/notice.html', folder: []},
          {id: 6, name:'게시판', link:'/pages/services/board.html', folder: []},
          {id: 7, name:'요구사항 관리', link:'/pages/services/request.html', folder: []},
          {id: 8, name:'OTV', link:'', folder: [{name:'동영상', link:''}]},
-        //  {id: 9, name:'양방향', link:'',
-        //     folder: [{name:'테스트셋탑박스관리', link:''},
-        //              {name:'양방향환경설정', link:''},
-        //              {name:'양방향DA환경관리', link:''},
-        //              {name:'채널망공사설정', link:''}]},         
          {id: 9, name:'단가관리', link:'', 
             folder: [{name:'OTV/PrePlay+', link:''},
                      {name:'단가/할인정보 관리', link:''}]}],    
@@ -188,13 +225,14 @@
     }
   }
 
-  //Param -> MainMenu, 2depth Menu, 3depth Menu
-  function loadLnb(iMenu,iSubMenu,ithree){
+  //Param -> MainMenu, 2depth Menu, 3depth Menu, 4depth Menu
+  function loadLnb(iMenu,iSubMenu,ithree,ifour){
     var ulMenu = document.querySelector(".sub-menu-wrapper ul.sub-menu");
 
     subMenu[iMenu].map((menuItem, i)=> {
       var li = document.createElement("li");
       
+      // 3depth 
       if (menuItem.folder.length > 0) {
         var details = document.createElement("details"),
             summary = document.createElement("summary"),
@@ -210,19 +248,41 @@
         ulSub.classList.add("folder-menu");
 
         menuItem.folder.map((subitem, j) => {
-          LiSub = document.createElement("li");
-          LiSub.innerHTML = subitem.name;
-          if (ithree > 0 && i==iSubMenu-1 && ithree-1 == j)
-          {
+          var LiSub = document.createElement("li");
+          // LiSub.innerHTML = subitem.name;
+          //4depth
+          if (subitem.folder != null) {
+            var fourDetails = document.createElement("details"),
+                fourSummary = document.createElement("summary");            
+            
+            LiSub.classList.add("four-depth");        
+            fourSummary.innerHTML = subitem.name;            
+            fourDetails.appendChild(fourSummary);
+
+            var fourUl = document.createElement("ul");
+            fourUl.classList.add("two-folder-menu");
+
+            subitem.folder.map((fourItem, k) => {
+              var fourLi = document.createElement("li");
+              fourLi.innerHTML = fourItem.name;
+              fourUl.appendChild(fourLi);
+            });
+            fourDetails.appendChild(fourUl);
+            LiSub.appendChild(fourDetails);
+          }
+          //3depth active
+          else if (ithree > 0 && i==iSubMenu-1 && ithree-1 == j) {
+            LiSub.innerHTML = subitem.name;
             LiSub.classList.add("active");
             details.open = true;
           }
+          else LiSub.innerHTML = subitem.name;
           ulSub.appendChild(LiSub);
         });
         details.appendChild(ulSub);
         li.appendChild(details);
       }
-      else {
+      else { // 2depth
         if (i == iSubMenu-1) {
           li.classList.add("active");
         }
@@ -234,7 +294,7 @@
 //--------------------------------------------------------------
 $(function () {
 //------- Menu Event ---------------------------------------
-  $(".main-menu li")
+  $(".main-menu > li")
       .on('mouseover', function(){
         var menuIndex = $(this).index();  
         $(".header-sub-menubar ul").removeClass('active');
@@ -246,7 +306,7 @@ $(function () {
       })
     $(".header-wrapper").on('mouseleave', function(){$(".header-sub-menubar ul").removeClass('active');})
 
-  $(".header-sub-menubar ul li").on('click', function(){
+  $(".header-sub-menubar > ul > li").on('click', function(){
     var menuIndex = $(this).parent().index()+1,
         subMenuIndex = $(this).index();    
     location.href = root + subMenu[menuIndex][subMenuIndex].link;
@@ -256,7 +316,7 @@ $(function () {
     var mainMenuName = $(".sub-menu-title")[0].innerText,
         iMain = mainMenu.findIndex(x => x.name == mainMenuName)+1;
     
-    if ($(this).hasClass("three-depth")) return;
+    if ($(this).hasClass("three-depth") || $(this).hasClass("four-depth")) return;    
     if ($(this).parent().hasClass("folder-menu")) {
       var subMenuName =  $(this).parent().prev()[0].innerText,
           folderMenu = subMenu[iMain].find(x => x.name == subMenuName).folder,
@@ -264,6 +324,8 @@ $(function () {
           strLink = root + folderMenu.find(x => x.name == forderName).link;
 
       location.href = strLink;
+    } else if ($(this).parent().hasClass("two-folder-menu")) {
+
     } else {
       var subMenuName =  $(this)[0].innerText,
           strLink = root + subMenu[iMain].find(x => x.name == subMenuName).link;
