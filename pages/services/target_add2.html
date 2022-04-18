@@ -130,11 +130,12 @@
         if (maxAppend >= 5) return;
         $(this).parents(".content-row").append(" <div class='content-condi'><div class='input-group'><select><option>회선정보</option></select></div><button class='btn-rec-teal delete'>부가정보 삭제</button><div> ");
         maxAppend++;
+        $(".content-row").parents(".row.double");
       });
 
-      $(".btn-rec-teal.delete").click(function () {
-        alert("ddddd");
-        $(this).parents(".content-condi:last-child").remove();
+      $(".content-row").on("click",".btn-rec-teal.delete",function () {
+        $(this).parents(".content-condi").remove();
+        maxAppend--;
       });
     </script>
     <script></script>
