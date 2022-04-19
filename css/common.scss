@@ -435,21 +435,6 @@ button.menu-button {
         border-right: 2px solid $colors_main;
         color: $colors_font;
       }
-      &.three-depth {
-        height: 100%;
-        padding: 0;
-      }
-      &.four-depth {
-        height: 100%;
-        details {
-          summary {
-            padding: 0;
-          }
-          ul li {
-            padding: 0 30px;
-          }
-        }
-      }
       details[open] summary {
         .ic-lnb-arrow {
           content: url("../assets/c_ic_lnb_arrow_up.svg");
@@ -475,12 +460,76 @@ button.menu-button {
         li {
           height: 40px;
           font-weight: 300;
-          padding: 0 15px 0 50px;
+          padding: 0 15px 0 40px;
           &.active {
             font-weight: bold;
             background-color: $blue600;
             border-right: 2px solid $colors_main;
             color: $colors_font;
+          }
+        }
+      }
+      &.three-depth {
+        height: 100%;
+        padding: 0;
+        details ul.folder-menu {
+          border-top: 1px solid $gray600;
+          border-bottom: 1px solid $gray600;
+          li {
+            font-size: 12px;
+            font-weight: normal;            
+            line-height: 1.25;                        
+            color: $font_color;         
+            &.active{
+              //  position: relative;
+              background-color: $colors_main_10;
+              border-right: 2px solid $colors_main;
+              color: $colors_font;
+            }     
+            &:hover{
+              color: $colors_font;
+            }              
+          }
+        }
+      }
+      &.four-depth {
+        height: 100%;        
+        &.open {
+          background-color: #fafeff;
+        }
+        details {
+          summary {
+            padding: 0;
+            .ic-lnb-arrow {
+              content: url("../assets/c_ic_lnb_plus.svg");
+              width: 20px;
+              height: 20px;
+              cursor: pointer;
+            }
+          }
+          ul li {
+            padding: 0 10px;
+          }
+          ul.two-folder-menu {
+            li {
+              height: 40px;
+              border-left: 1px solid $gray600;
+
+              &.active {
+                font-weight: bold;
+                border-left: 1px solid $colors_main;
+                border-right: none;
+                background-color: #fafeff;
+              }
+            }
+          }
+        }
+        details[open] summary {
+          .ic-lnb-arrow {
+            content: url("../assets/c_ic_lnb_minus.svg");
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
           }
         }
       }
@@ -1215,7 +1264,7 @@ input[type=date]:after {
   }
 }
 
-#modal-background {
+#modal-background, #modal-background2 {
   display: none;
   position: fixed;
   width: 100%;
@@ -1224,7 +1273,11 @@ input[type=date]:after {
   left: 0;
   background: rgba(0, 0, 0, 0.3);
 }
-.modal-con {
+#modal-background {z-index: 1;}
+.modal-con {z-index: 2;}
+#modal-background2 {z-index: 3;}
+.modal-con2 {z-index: 4;}
+.modal-con, .modal-con2 {
   display: none;
   position: fixed;
   top: 50%;

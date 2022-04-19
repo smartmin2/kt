@@ -580,23 +580,6 @@ button.menu-button:hover {
   color: #00aace;
 }
 
-.sub-menu-wrapper ul.sub-menu li.three-depth {
-  height: 100%;
-  padding: 0;
-}
-
-.sub-menu-wrapper ul.sub-menu li.four-depth {
-  height: 100%;
-}
-
-.sub-menu-wrapper ul.sub-menu li.four-depth details summary {
-  padding: 0;
-}
-
-.sub-menu-wrapper ul.sub-menu li.four-depth details ul li {
-  padding: 0 30px;
-}
-
 .sub-menu-wrapper ul.sub-menu li details[open] summary .ic-lnb-arrow {
   content: url("../assets/c_ic_lnb_arrow_up.svg");
   width: 24px;
@@ -628,7 +611,7 @@ button.menu-button:hover {
 .sub-menu-wrapper ul.sub-menu li ul li {
   height: 40px;
   font-weight: 300;
-  padding: 0 15px 0 50px;
+  padding: 0 15px 0 40px;
 }
 
 .sub-menu-wrapper ul.sub-menu li ul li.active {
@@ -636,6 +619,75 @@ button.menu-button:hover {
   background-color: #e7f9fc;
   border-right: 2px solid #1bc1db;
   color: #00aace;
+}
+
+.sub-menu-wrapper ul.sub-menu li.three-depth {
+  height: 100%;
+  padding: 0;
+}
+
+.sub-menu-wrapper ul.sub-menu li.three-depth details ul.folder-menu {
+  border-top: 1px solid #e6e8ea;
+  border-bottom: 1px solid #e6e8ea;
+}
+
+.sub-menu-wrapper ul.sub-menu li.three-depth details ul.folder-menu li {
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 1.25;
+  color: #141f40;
+}
+
+.sub-menu-wrapper ul.sub-menu li.three-depth details ul.folder-menu li.active {
+  background-color: rgba(27, 192, 218, 0.1);
+  border-right: 2px solid #1bc1db;
+  color: #00aace;
+}
+
+.sub-menu-wrapper ul.sub-menu li.three-depth details ul.folder-menu li:hover {
+  color: #00aace;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth {
+  height: 100%;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth.open {
+  background-color: #fafeff;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth details summary {
+  padding: 0;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth details summary .ic-lnb-arrow {
+  content: url("../assets/c_ic_lnb_plus.svg");
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth details ul li {
+  padding: 0 10px;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth details ul.two-folder-menu li {
+  height: 40px;
+  border-left: 1px solid #e6e8ea;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth details ul.two-folder-menu li.active {
+  font-weight: bold;
+  border-left: 1px solid #1bc1db;
+  border-right: none;
+  background-color: #fafeff;
+}
+
+.sub-menu-wrapper ul.sub-menu li.four-depth details[open] summary .ic-lnb-arrow {
+  content: url("../assets/c_ic_lnb_minus.svg");
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
 }
 
 .contents-wrapper {
@@ -1733,7 +1785,7 @@ input[type=date]:after {
   max-width: 300px;
 }
 
-#modal-background {
+#modal-background, #modal-background2 {
   display: none;
   position: fixed;
   width: 100%;
@@ -1743,7 +1795,23 @@ input[type=date]:after {
   background: rgba(0, 0, 0, 0.3);
 }
 
+#modal-background {
+  z-index: 1;
+}
+
 .modal-con {
+  z-index: 2;
+}
+
+#modal-background2 {
+  z-index: 3;
+}
+
+.modal-con2 {
+  z-index: 4;
+}
+
+.modal-con, .modal-con2 {
   display: none;
   position: fixed;
   top: 50%;

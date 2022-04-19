@@ -253,10 +253,13 @@
           //4depth
           if (subitem.folder != null) {
             var fourDetails = document.createElement("details"),
-                fourSummary = document.createElement("summary");            
+                fourSummary = document.createElement("summary"),
+                fourIcDiv = document.createElement("div");            
             
-            LiSub.classList.add("four-depth");        
-            fourSummary.innerHTML = subitem.name;            
+            LiSub.classList.add("four-depth");
+            fourIcDiv.classList.add("ic-lnb-arrow");        
+            fourSummary.innerHTML = subitem.name;    
+            fourSummary.appendChild(fourIcDiv);        
             fourDetails.appendChild(fourSummary);
 
             var fourUl = document.createElement("ul");
@@ -266,9 +269,19 @@
               var fourLi = document.createElement("li");
               fourLi.innerHTML = fourItem.name;
               fourUl.appendChild(fourLi);
+
+              if (ifour > 0 && ifour-1 == k) {
+                fourLi.classList.add("active");
+                fourDetails.open = true;
+                LiSub.classList.add("open");
+              }
             });
             fourDetails.appendChild(fourUl);
             LiSub.appendChild(fourDetails);
+
+            if (ithree > 0 && i==iSubMenu-1 && ithree-1 == j) {              
+              details.open = true;              
+            }              
           }
           //3depth active
           else if (ithree > 0 && i==iSubMenu-1 && ithree-1 == j) {
@@ -385,7 +398,9 @@ $(document).click(function (e) {
 $(".go-cam-list").on("click",function(){
  location.href = "campaign.html";
 }) 
-
+$(".go-cam-add").on("click",function(){
+  location.href = "campaign_add.html";
+ }) 
  // --------- select ------------>>
 /* 셀렉트박스 보이게 하기 */
   $(".selectBox > .label").on("click", function (){
@@ -470,11 +485,19 @@ $(".fa-menu-box, .modal-open").on('click',function(){
 });
 
 $("#modal-background, .close").on('click',function(){
+  if ($("#modal-background2").css("display") == "block") return;
   if ($(this).hasClass("close") || !$(this).next().hasClass('modal-progress'))
   {
-  $("#modal-background").fadeOut(300);
-  $(".modal-con").fadeOut(300);  
-  $('body').css('overflow', 'overlay');
+    $("#modal-background").fadeOut(300);
+    $(".modal-con").fadeOut(300);  
+    $('body').css('overflow', 'overlay');
+  }
+});
+$("#modal-background2, .close").on('click',function(){
+  if ($(this).hasClass("close"))
+  {
+    $("#modal-background2").fadeOut(300); 
+    $(".modal-con2").fadeOut(300);     
   }
 });
 //--------------------------------------------------------
