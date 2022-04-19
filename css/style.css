@@ -6193,6 +6193,41 @@
           flex: 1;
 }
 
+.campaign-add .content-block.preplay .content-info .setting-table #ck-free + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-free + label::after {
+  content: "무료";
+}
+
+.campaign-add .content-block.preplay .content-info .setting-table #ck-free:checked + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-free:checked + label::after {
+  content: "유료";
+}
+
+.campaign-add .content-block.preplay .content-info .setting-table #ck-monopoly + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-monopoly + label::after {
+  content: "독점무";
+}
+
+.campaign-add .content-block.preplay .content-info .setting-table #ck-monopoly:checked + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-monopoly:checked + label::after {
+  content: "독점유";
+}
+
+.campaign-add .content-block.preplay .content-info .setting-table .setting-table-content:nth-child(6), .campaign-detail .content-block.preplay .content-info .setting-table .setting-table-content:nth-child(6) {
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+}
+
+.campaign-add .content-block.preplay .content-info .setting-table .setting-table-content:nth-child(6) .btn-check-group, .campaign-detail .content-block.preplay .content-info .setting-table .setting-table-content:nth-child(6) .btn-check-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.campaign-add .content-block.preplay .content-info .setting-table .setting-table-content:nth-child(6) .multi-group, .campaign-detail .content-block.preplay .content-info .setting-table .setting-table-content:nth-child(6) .multi-group {
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+}
+
 .campaign-add .content-block.preplay .preplay-detail .setting-table .row:last-child, .campaign-detail .content-block.preplay .preplay-detail .setting-table .row:last-child {
   grid-column: span 4;
   padding: 20px;

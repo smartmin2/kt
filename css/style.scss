@@ -3724,7 +3724,18 @@
     .row-block{display: flex;}  
     .row-block > .col-block, .cell {flex: 1;}
     //---- PrePlay ------------------------     
-    &.preplay {      
+    &.preplay {  
+      .content-info .setting-table{
+        #ck-free + label::after{content:"무료";}
+        #ck-free:checked + label::after{content:"유료";}
+        #ck-monopoly + label::after{content:"독점무";}
+        #ck-monopoly:checked + label::after{content:"독점유";}
+        .setting-table-content:nth-child(6) {
+          align-items: initial;
+          .btn-check-group { display: flex; gap: 10px;}
+          .multi-group {justify-content: initial;}
+        }
+      }
       .preplay-detail .setting-table {                        
         .row:last-child {
           grid-column: span 4;
