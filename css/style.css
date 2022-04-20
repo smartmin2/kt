@@ -6193,19 +6193,19 @@
           flex: 1;
 }
 
-.campaign-add .content-block.preplay .content-info .setting-table #ck-free + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-free + label::after {
+.campaign-add .content-block.preplay .content-info .setting-table .ck-free + label::after, .campaign-detail .content-block.preplay .content-info .setting-table .ck-free + label::after {
   content: "무료";
 }
 
-.campaign-add .content-block.preplay .content-info .setting-table #ck-free:checked + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-free:checked + label::after {
+.campaign-add .content-block.preplay .content-info .setting-table .ck-free:checked + label::after, .campaign-detail .content-block.preplay .content-info .setting-table .ck-free:checked + label::after {
   content: "유료";
 }
 
-.campaign-add .content-block.preplay .content-info .setting-table #ck-monopoly + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-monopoly + label::after {
+.campaign-add .content-block.preplay .content-info .setting-table .ck-monopoly + label::after, .campaign-detail .content-block.preplay .content-info .setting-table .ck-monopoly + label::after {
   content: "독점무";
 }
 
-.campaign-add .content-block.preplay .content-info .setting-table #ck-monopoly:checked + label::after, .campaign-detail .content-block.preplay .content-info .setting-table #ck-monopoly:checked + label::after {
+.campaign-add .content-block.preplay .content-info .setting-table .ck-monopoly:checked + label::after, .campaign-detail .content-block.preplay .content-info .setting-table .ck-monopoly:checked + label::after {
   content: "독점유";
 }
 
