@@ -10035,4 +10035,141 @@ table.jb-table thead.double tr:last-child th {
           justify-content: flex-end;
   margin-bottom: 20px;
 }
+
+.otv-billing .table-top {
+  margin-top: 30px;
+}
+
+.otv-billing .jb-table-wrapper {
+  width: calc(100vw - 640px);
+  min-width: 1280px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.otv-billing .jb-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+  display: inline;
+}
+
+.otv-billing .jb-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.otv-billing .jb-table-wrapper::-webkit-scrollbar-thumb {
+  height: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.otv-billing .jb-table-wrapper table.jb-table {
+  min-width: 3600px;
+}
+
+.otv-billing .jb-table-wrapper table.jb-table .charge-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 5px 0;
+}
+
+.otv-billing .jb-table-wrapper table.jb-table .charge-box input[type=text] {
+  width: 50px;
+  height: 25px;
+  padding: 0 7px;
+  text-align: right;
+}
+
+.otv-billing .jb-table-wrapper table.jb-table .charge-box .btn-rec-teal {
+  height: 25px;
+}
+
+.otv-billing .jb-table-wrapper table.jb-table tbody.table-body tr:last-child {
+  background-color: #f1f7ff;
+}
+
+.ad-list .jb-table-wrapper {
+  width: calc(100vw - 640px);
+  min-width: 1280px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.ad-list .jb-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+  display: inline;
+}
+
+.ad-list .jb-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ad-list .jb-table-wrapper::-webkit-scrollbar-thumb {
+  height: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.ad-list .jb-table-wrapper table.jb-table {
+  min-width: 4000px;
+}
+
+.ad-summary ul.tab {
+  border-bottom: none;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.ad-summary ul.tab li.tab-menu {
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: initial;
+      -ms-flex-pack: initial;
+          justify-content: initial;
+  width: 200px;
+  height: 50px;
+  padding: 0 20px;
+  border-radius: 4px;
+  border: solid 1px #dde9fc;
+  background-color: #f9fbff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.06;
+  color: #586a9b;
+}
+
+.ad-summary ul.tab li.tab-menu img {
+  content: url(../assets/09_ic_tv_default.svg);
+}
+
+.ad-summary ul.tab li.tab-menu.active {
+  border: solid 2px #daf0ff;
+  background-color: #ecf6ff;
+  color: #018ddd;
+}
+
+.ad-summary ul.tab li.tab-menu.active img {
+  content: url(../assets/09_ic_tv_select.svg);
+}
+
+.ad-summary .tab-content {
+  min-height: 150px;
+}
 /*# sourceMappingURL=style.css.map */
