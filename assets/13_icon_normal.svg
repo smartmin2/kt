@@ -1,0 +1,15 @@
+<svg data-name="13_icon_normal" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="lvvinpeb6a">
+            <path data-name="사각형 414" style="fill:none" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 312" style="clip-path:url(#lvvinpeb6a)">
+        <rect data-name="사각형 547" width="13" height="16" rx="2" transform="translate(6 4)" style="fill:#f6c482"/>
+        <g data-name="그룹 653" transform="translate(-12174 -8084)">
+            <rect data-name="사각형 548" width="7" height="2" rx="1" transform="translate(12183 8091)" style="fill:#fff"/>
+            <rect data-name="사각형 549" width="7" height="2" rx="1" transform="translate(12183 8095)" style="fill:#fff"/>
+            <rect data-name="사각형 550" width="7" height="2" rx="1" transform="translate(12183 8099)" style="fill:#fff"/>
+        </g>
+    </g>
+</svg>

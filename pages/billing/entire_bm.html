@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>정산</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>정산</div>
+    <div>정산</div>    
+    <div>전체 BM</div>
+  </div>
+  <div class="main entire-bm">
+    <div class="common-box common-body">
+      <div class="sub-menu-wrapper">
+        <div class="sub-menu-title">
+            정산
+        </div>
+        <ul class="sub-menu"></ul>
+      </div>
+      <div class="contents-wrapper">
+        <div class="content-title">전체 BM</div>
+        <div class="search-wrapper">
+          <div class="search-top">
+            <div class="content-sub-title">조회조건설정</div>              
+          </div>                        
+          <div class="search-table-box">
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">BM</div>                    
+                  <div class="btn-radio-group">
+                    <input type="radio" id="rd-bm1" name="rd-bm" value="1" checked><label for="rd-bm1">VOD</label>
+                    <input type="radio" id="rd-bm2" name="rd-bm" value="2"><label for="rd-bm2">LiveAD</label>
+                    <input type="radio" id="rd-bm3" name="rd-bm" value="3"><label for="rd-bm3">양방향</label>                      
+                  </div>
+                </div>                  
+              </div>
+            </div>              
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">서비스</div>                    
+                  <div class="btn-check-group service1">
+                    <input type="checkbox" name="" id="ck-service1"><label for="ck-service1">PrePlay</label>
+                    <input type="checkbox" name="" id="ck-service2"><label for="ck-service2">PrePlay+</label>
+                    <input type="checkbox" name="" id="ck-service3"><label for="ck-service3">PrePlayS</label>
+                    <input type="checkbox" name="" id="ck-service4"><label for="ck-service4">PostPlay</label>                      
+                  </div>
+                  <div class="btn-check-group service2">
+                    <input type="checkbox" name="" id="ck-service5"><label for="ck-service5">LiveAD 상품</label>                    
+                  </div>
+                  <div class="btn-check-group service3">
+                    <input type="checkbox" name="" id="ck-service6"><label for="ck-service6">AD Q</label>
+                    <input type="checkbox" name="" id="ck-service7"><label for="ck-service7">Ending Q</label>
+                    <input type="checkbox" name="" id="ck-service8"><label for="ck-service8">Time Q</label>
+                    <input type="checkbox" name="" id="ck-service9"><label for="ck-service9">Channel Q</label>                      
+                    <input type="checkbox" name="" id="ck-service10"><label for="ck-service10">Pause</label>                      
+                  </div>
+                </div>                  
+              </div>
+            </div>
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">정산기준월</div>                    
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10">
+                    <span>~</span>
+                    <input type="date" value="2021-02-10">
+                  </div>
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">캠페인명</div>                    
+                  <input type="text" name="" id="">
+                </div>                  
+              </div>
+            </div>
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper multi">
+                  <div class="input-title">지역 타게팅 여부</div>   
+                  <div class="input-group width-140">
+                    <select class="service-select">
+                      <option value="">전체</option>
+                      <option value="">지역1</option>
+                      <option value="">지역2</option>                        
+                      <option value="">지역3</option>                                           
+                    </select>
+                  </div>                 
+                </div> 
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper multi">
+                  <div class="input-title">업체</div>   
+                  <div class="input-group width-140">
+                    <select class="service-select">
+                      <option value="">전체</option>
+                      <option value="">업체1</option>
+                      <option value="">업체2</option>                        
+                      <option value="">업체3</option>                                           
+                    </select>
+                  </div>                                                       
+                </div> 
+              </div>
+            </div>
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">광고주</div>                    
+                  <input type="text" name="" id="">
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">대행사</div>                    
+                  <input type="text" name="" id="">
+                </div>                  
+              </div>
+            </div>
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+              <div class="table-view-count">
+                <div class="input-group">
+                  <select>
+                    <option value="">10개</option>
+                    <option value="">20개</option>
+                    <option value="">30개</option>                        
+                    <option value="">50개</option>                        
+                    <option value="">100개</option>                                              
+                  </select>
+                </div>                      
+              </div>
+            </div>
+            <div class="table-top-buttons">                
+              <button class="btn-excel"><img>엑셀다운로드</button>                              
+            </div>
+          </div>
+          <div class="jb-table-wrapper">
+            <table class="jb-table">
+              <colgroup>                  
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />                
+                <col />                  
+                <col style="width: 7%" />
+                <col style="width: 4%" />
+                <col style="width: 4%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 4%" />                
+                <col style="width: 4%" />                
+                <col style="width: 4%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 4%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                
+                <col style="width: 3%" />                                
+              </colgroup>
+              <thead>
+                <tr>                                      
+                  <th rowspan="2" scope="col">광고주</th>
+                  <th rowspan="2" scope="col">대행사</th>
+                  <th rowspan="2" scope="col">영업사</th>
+                  <th rowspan="2" scope="col">캠페인명</th>
+                  <th rowspan="2" scope="col">캠페인기간</th>
+                  <th rowspan="2" scope="col">캠페인금액(원)</th>
+                  <th rowspan="2" scope="col">정산기준월</th>
+                  <th rowspan="2" scope="col">판매유형</th>                                                      
+                  <th rowspan="2" scope="col">분납횟수</th>
+                  <th rowspan="2" scope="col">서비스금액(원)</th>
+                  <th colspan="3" scope="col" class="bottom-line">선취비율</th>
+                  <th rowspan="2" scope="col">선취금액(원)</th>
+                  <th colspan="3" scope="col" class="bottom-line">서비스별 집행금액</th>
+                  <th rowspan="2" scope="col">정산금액(원)</th>
+                  <th colspan="3" scope="col" class="bottom-line">수수료 유형</th>
+                  <th rowspan="2" scope="col">수수료금액(원)</th>
+                  <th rowspan="2" scope="col">지불구분<br>(현금/어음)</th>
+                  <th rowspan="2" scope="col">어음만료일자</th>
+                  <th rowspan="2" scope="col">현물금액(원)</th>
+                </tr>
+                <tr>
+                  <th scope="col">영업사</th>
+                  <th scope="col">대행사</th>
+                  <th scope="col">공동투자</th>
+                  <th scope="col">BM</th>
+                  <th scope="col">서비스</th>
+                  <th scope="col">집행금액(원)</th>
+                  <th scope="col">일반</th>
+                  <th scope="col">특별</th>
+                  <th scope="col">대행사</th>
+                </tr>
+            </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td>영업사 청구</td>
+                  <td>(주)광인기업</td>                  
+                  <td>(주)KT</td>
+                  <td>테스트 청약_미소다컴_기본패키지_베이직</td>
+                  <td>2022-02-01~2022-02-14</td>
+                  <td>광고비</td>
+                  <td>2022-01</td>
+                  <td>1/1</td>
+                  <td>10,000,000</td>
+                  <td>발행대기</td>
+                  <td></td>
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                  <td></td>                  
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(6);
+      loadSubMenu("6", 2);
+      loadLnb(6, 2, 1, 0);
+
+      $("input[name='rd-bm']:radio").change(function () {      
+        var selVal = this.value;
+           
+        $("[class^='btn-check-group service']").css("display","none");
+        $('.service'+ selVal).css("display","flex");
+      });
+    </script>
+  </body>
+</html>

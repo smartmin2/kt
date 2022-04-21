@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>소재</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>소재</div>
+    <div>OTV 소재가공</div>
+    <div>들러리 소재 관리</div>
+  </div>
+  <div class="main usher-mat-add">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                소재
+            </div>
+            <ul class="sub-menu"></ul>
+        </div>        
+        <div class="contents-wrapper">
+          <div class="content-title">들러리 소재 등록</div>          
+          <div class="setting-grid">
+            <div class="setting-grid-title ic-title-nece">서비스</div>
+            <div class="setting-grid-content span-3">LiveAD</div>
+            <div class="setting-grid-title ic-title-nece">채널/시간대 선택</div>
+            <div class="setting-grid-content span-3 flex-col">
+              <div class="multi-group flex-row">
+                <button class="btn-rec-teal-52 btn-channel-time">선택</button>
+                <button class="btn-rec-teal-52">삭제</button>
+              </div>              
+              <table class="jb-table">
+                <colgroup>                  
+                  <col style="width: 4%" />
+                  <col style="width: 56%" />
+                  <col style="width: 40%"/>                        
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>채널명</th>
+                    <th>시간대</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td><input type="checkbox" name="" id=""></td>                          
+                    <td>드라마큐브</td>
+                    <td>07~23</td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="" id=""></td>                          
+                    <td>드라마큐브</td>
+                    <td>07~23</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="setting-grid-title ic-title-nece">보장 노출</div>
+            <div class="setting-grid-content span-3 flex-col">
+              <div class="multi-group flex-row">
+                <div class="input-group">
+                  <select>
+                    <option value="">15초</option>
+                    <option value="">30초</option>
+                    <option value="">60초이하</option>
+                  </select>
+                </div> 
+                <div class="input-group">
+                  <select>
+                    <option value="">게런티</option>
+                    <option value="">추가노출</option>
+                  </select>
+                </div> 
+              </div>
+              <div class="multi-group flex-row">
+                보장노출량:<input type="text" name="" id="">
+              </div>
+              <span>보장노출량은 1000이하로 입력해주세요!</span>
+            </div>
+            <div class="setting-grid-title ic-title-nece">기간</div>
+            <div class="setting-grid-content flex-col span-3">
+              <div class="btn-select-group">
+                <button class="btn-select">주중</button>
+                <button class="btn-select active">주말</button>
+              </div>
+              <div class="multi-group no-gap flex-row">
+                <div class="input-date-group">
+                  <input type="date" name="" id="" class="width-132" value="2022-02-14">
+                  <span>~</span>
+                  <input type="date" name="" id="" class="width-132" value="2022-02-14">
+                </div>
+                <div class="just-text">비율</div>
+                <input type="text" name="" id="" class="width-40">%
+                <button class="btn-rec-teal-52">추가</button>
+              </div>
+              <div class="divider-h"></div>
+              <button class="btn-rec-teal-52">삭제</button>
+              <!-- <div class="cam-table-wrapper"> -->
+                <table class="jb-table">
+                  <colgroup>
+                    <col style="width: 4%" />
+                    <col style="width: 56%"/>
+                    <col style="width: 40%" />                          
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name="" id=""></th>
+                      <th>기간</th>
+                      <th>비율</th>                            
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td><input type="checkbox" name="" id=""></td>
+                      <td>22-06-09 ~ 2022-07-01</td>
+                      <td>50</td>
+                    </tr>
+                    <tr>
+                      <td><input type="checkbox" name="" id=""></td>
+                      <td>22-06-09 ~ 2022-07-01</td>
+                      <td>50</td>
+                    </tr>
+                  </tbody>
+                </table>
+              <!-- </div> -->
+            </div>
+            <div class="setting-grid-title  ic-title-nece">소재</div>    
+            <div class="setting-grid-content span-3 flex-col">
+              <div class="content-row">
+                <div class="multi-group flex-row">
+                  <input type="text" name="" id="">
+                  <button class="btn-rec-teal-52 btn-sel-icod">선택</button>
+                  <button class="btn-rec-teal-52">삭제</button>   
+                  <div class="just-text">비율:</div>                   
+                  <input type="text" name="" id="">%
+                  <button class="btn-add"></button>                  
+                </div>
+              </div>
+              <div class="content-row">
+                <div class="multi-group flex-row">
+                  <input type="text" name="" id="">
+                  <button class="btn-rec-teal-52 btn-sel-icod">선택</button>
+                  <button class="btn-rec-teal-52">삭제</button>   
+                  <div class="just-text">비율:</div>                   
+                  <input type="text" name="" id="">%
+                  <button class="btn-minus"></button>                  
+                </div>
+              </div>
+            </div>
+            <div class="setting-grid-title">처음/마지막</div>
+            <div class="setting-grid-content span-3">
+              <div class="btn-select-group">
+                <button class="btn-select">전체</button>
+                <button class="btn-select active">처음</button>
+                <button class="btn-select">마지막</button>
+              </div>
+            </div>
+            <div class="setting-grid-title ic-title-nece">지역</div>
+            <div class="setting-grid-content span-3 flex-col">
+              <div class="multi-group flex-row">
+                <button class="btn-rec-teal-52 region-sel">선택</button>
+                <button class="btn-rec-teal-52">삭제</button>
+              </div>              
+              <table class="jb-table">
+                <colgroup>                  
+                  <col style="width: 4%" />
+                  <col style="width: 56%" />                  
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>지역</th>                    
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td><input type="checkbox" name="" id=""></td>                          
+                    <td>경기도</td>                    
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="" id=""></td>                          
+                    <td>서울특별시</td>                    
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="submit-btn-group">              
+            <button type="button" class="btn-common">저장</button>        
+            <button type="button" class="btn-white btn-cancel">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>  
+
+    <div id="modal-background"></div>    
+    <div id="modal-background2"></div>    
+    <div class="modal-icod-list common-box modal-con">
+      <div class="modal-top">
+        <div class="box-title">ICOD 광고 소재 목록</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">                    
+          <div class="search-table-box">
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">Asset Name</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">Asset ID</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+            </div>     
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title ic-title-nece">기간</div>                    
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10">
+                    <span>~</span>
+                    <input type="date" value="2021-02-10">
+                  </div>
+                </div>                  
+              </div> 
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">영업사</div>  
+                  <div class="input-group">
+                    <select>
+                      <option value="">전체</option>
+                      <option value="">영업사1</option>                      
+                      <option value="">영업사2</option>                      
+                      <option value="">영업사3</option>                      
+                    </select>
+                  </div>                               
+                </div>               
+              </div>                  
+            </div>   
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">배포구분</div>  
+                  <div class="input-group">
+                    <select>
+                      <option value="">전체</option>
+                      <option value="">PrePlay</option>                      
+                    </select>
+                  </div>                               
+                </div>               
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">상용/프로모션 구분</div>  
+                  <div class="input-group">
+                    <select>
+                      <option value="">전체</option>
+                      <option value="">상용</option>
+                      <option value="">프로모션</option>                        
+                    </select>
+                  </div>                               
+                </div>                
+              </div>
+            </div>    
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">광고초수</div>  
+                  <div class="input-group">
+                    <select>
+                      <option value="">15초</option>
+                      <option value="">20초</option>
+                      <option value="">30초</option>                                                              
+                      <option value="">60초</option>                                                              
+                      <option value="">90초</option>                                                              
+                      <option value="">120초</option>                                                              
+                    </select>
+                  </div>                               
+                </div>               
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">일반/5.1</div>  
+                  <div class="input-group">
+                    <select>
+                      <option value="">전체</option>
+                      <option value="">일반</option>
+                      <option value="">5.1CH</option>                                           
+                    </select>
+                  </div>                               
+                </div>                
+              </div>
+            </div>               
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>     
+        <span class="ic-noti">
+          <div class="noti-box">ICOD 소재 정보 (최대 10개월까지 조회 가능)</div>
+        </span>   
+        <table class="jb-table">
+          <colgroup>                
+            <col />
+            <col style="width: 11%" />
+            <col style="width: 8%" />
+            <col style="width: 8%" />                
+            <col style="width: 7%" />
+            <col style="width: 8%" />
+            <col style="width: 8%" />            
+            <col style="width: 11%" />                            
+          </colgroup>
+          <thead>              
+            <th>Asset Name</th>
+            <th>Asset ID</th>
+            <th>Time(mm:ss)</th>
+            <th>광고초수</th>            
+            <th>음질</th>
+            <th>배포구분</th>
+            <th>광고구분</th>
+            <th>날짜</th>                      
+          </thead>
+          <tbody class="table-body">            
+            <tr style="display: none"><td colspan="10" class="no-data" >데이타가 존재 하지 않습니다</td></tr>
+            <tr>
+              <td>0222_ktbaroad_544_LiveAD테스트(개발서버)_15초</td>
+              <td>ICD20220200000000040</td>
+              <td>15</td>
+              <td>15</td>
+              <td>일반</td>
+              <td>PrePlay</td>
+              <td>상용</td>
+              <td>2022-02-26</td>
+            </tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            <tr><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+          </tbody>
+        </table>   
+        <ul class="pagination">
+          <li>
+            <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+          </li>
+          <li><a href="#" class="num">1</a></li>
+          <li><a href="#" class="num active">2</a></li>
+          <li><a href="#" class="num">3</a></li>
+          <li><a href="#" class="num">4</a></li>
+          <li><a href="#" class="num">5</a></li>
+          <li><a href="#" class="num">6</a></li>
+          <li><a href="#" class="num">7</a></li>
+          <li><a href="#" class="num">8</a></li>
+          <li><a href="#" class="num">9</a></li>
+          <li><a href="#" class="num">10</a></li>
+          <li>
+            <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+          </li>
+        </ul>    
+      </div>
+      <div class="modal-bottom">      
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-channel-time common-box modal-con">
+      <div class="modal-top">
+        <div class="box-title">채널 시간대 선택</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">                    
+          <div class="search-table-box">
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">채널 그룹</div>                    
+                  <div class="input-group">
+                    <select>
+                      <option value="">선택</option>
+                      <option value="">채널 그룹1</option>                      
+                      <option value="">채널 그룹2</option>                      
+                      <option value="">채널 그룹3</option>                      
+                    </select>
+                  </div>  
+                </div>                  
+              </div>              
+            </div>              
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>             
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-title">
+              채널 시간대 지정 <span>선택된 채널수 : 0개</span>
+            </div>
+            <div class="table-top-buttons">                                            
+              <button class="btn-common btn-channel-add">그룹등록</button>
+            </div>
+          </div>        
+          <div class="jb-table-wrapper">            
+            <table class="jb-table">
+              <colgroup>
+                <col style="width: 10%" />
+                <col style="width: 6%" />
+                <col style="width: 3.5%" />              
+              </colgroup>
+              <thead>
+                <tr>                
+                  <th rowspan="2">채널</th>                
+                  <th colspan="25">
+                    <div class="th-box">
+                      <div class="th-name">시간대</div>                    
+                      <div class="button-group">
+                        <button class="btn-rec-teal">주류광고</button>
+                        <button class="btn-rec-teal">고열량광고</button>
+                      </div>
+                    </div>
+                  </th>                                  
+                </tr>
+                <tr>
+                  <th>All</th>
+                  <th>00</th>
+                  <th>01</th>
+                  <th>02</th>
+                  <th>03</th>
+                  <th>04</th>
+                  <th>05</th>
+                  <th>06</th>
+                  <th>07</th>
+                  <th>08</th>
+                  <th>09</th>
+                  <th>10</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>19</th>
+                  <th>20</th>
+                  <th>21</th>
+                  <th>22</th>
+                  <th>23</th>                
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td>MBC ON</td>
+                  <td class="bg-red"></td><td class="bg-red"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>GTV</td>
+                  <td></td><td></td><td></td><td></td><td class="bg-red"></td><td class="bg-red"></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>SBS MTV</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td class="bg-red"></td><td class="bg-red"></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>MBC M</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td class="bg-red"></td><td class="bg-red"></td>
+                </tr>
+                <tr>
+                  <td>채널J</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td class="bg-red"></td><td class="bg-red"></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>동아TV</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td class="bg-red"></td>
+                  <td class="bg-red"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>디원</td>
+                  <td></td><td class="bg-red"></td><td></td><td></td><td class="bg-red"></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>마운틴TV</td>
+                  <td></td><td></td><td class="bg-red"></td><td class="bg-red"></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>FTV</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td class="bg-red"></td><td class="bg-red"></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>History</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td class="bg-red"></td><td class="bg-red"></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>이데일리TV</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>서울경제TV</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>리빙TV</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>MBC Every</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>OLIFE</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>JTBC</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>MBN</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+                <tr>
+                  <td>스크린</td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                  <td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>    
+        </div> 
+      </div>
+      <div class="modal-bottom">      
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-con2 modal-channel-time-add common-box">      
+      <div class="modal-top">
+        <div class="box-title">채널 그룹 등록</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">채널 그룹명</div>
+            <div class="setting-table-content">
+              <input type="text">
+            </div>
+          </div>        
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(1);
+      loadSubMenu("1", 1);
+      loadLnb(1, 1, 3, 0);     
+     
+      $(".btn-cancel").on("click",function(){
+        location.href = "usher_mat_mng.html";
+      })
+      $(".btn-sel-icod").on("click",function(){
+        $("#modal-background").fadeIn(100);
+        $(".modal-icod-list").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      })
+      $(".btn-channel-time").on("click",function(){
+        $("#modal-background").fadeIn(100);
+        $(".modal-channel-time").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      })  
+      $(".btn-channel-add").on("click",function(){
+        $("#modal-background2").fadeIn(100);
+        $(".modal-channel-time-add").css("display", "flex").hide().fadeIn();      
+      })  
+    </script>
+  </body>
+</html>

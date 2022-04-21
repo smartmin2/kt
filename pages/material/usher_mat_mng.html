@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>소재</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>소재</div>
+    <div>OTV 소재가공</div>
+    <div>들러리 소재 관리</div>
+  </div>
+  <div class="main usher-mat-mng">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                소재
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">들러리 소재 관리</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">기간</div>                    
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">채널</div>                        
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">채널1</option>
+                        <option value="">채널2</option>
+                        <option value="">채널3</option>                        
+                      </select>
+                    </div>    
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">소재명</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">소재ID</div>                    
+                      <input type="text" value="" />                    
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                                           
+                      <option value="">50개</option>                                           
+                      <option value="">100개</option>                                                
+                    </select>
+                  </div>   
+                </div>
+              </div>
+              <div class="table-top-buttons">                
+                <button class="btn-excel"><img>엑셀다운로드</button>
+                <button class="btn-white btn-mat-batch">소재일괄변경</button>
+                <button class="btn-white">삭제</button>
+                <button class="btn-register"><img>들러리 소재 등록</button>
+              </div>
+            </div>            
+            <table class="jb-table">
+              <colgroup>
+                <col style="width: 2%" />
+                <col style="width: 11%" />
+                <col style="width: 9%" />
+                <col style="width: 5%" />
+                <col style="width: 15%" />
+                <col style="width: 6%" />
+                <col />
+                <col style="width: 6%" />
+                <col style="width: 6%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><input type="checkbox" name="" id=""></th>                  
+                  <th>채널</th>
+                  <th>기간</th>
+                  <th>시간대</th>                  
+                  <th>지역</th>                  
+                  <th>보장노출</th>
+                  <th>ICOD 소재 <button class="btn-rec-teal">선택</button></th>                  
+                  <th>처음/마지막</th>
+                  <th>상태</th>
+                </tr>
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>          
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <div id="modal-background"></div>
+    <div id="modal-background2"></div>
+    <div class="modal-mat-batch common-box modal-con">
+      <div class="modal-top">
+        <div class="box-title">소재 일괄 변경</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="body-title">Step.1 변경 소재 선택
+          <p>※현재 캠페인 소재 중에서 변경 해야 하는 소재를 선택 하세요.( 기간이 지난 청약의 소재는 제외 )</p>
+        </div>
+        <table class="jb-table mat-batch-table1">
+          <colgroup>                
+            <col />
+            <col style="width: 10%" />
+            <col style="width: 9%" />
+            <col style="width: 7%" />                
+            <col style="width: 6%" />
+            <col style="width: 6%" />
+            <col style="width: 7%" />
+            <col style="width: 6%" />
+            <col style="width: 11%" />                
+            <col style="width: 7%" />                               
+          </colgroup>
+          <thead>              
+            <th>Asset Name</th>
+            <th>Asset ID</th>
+            <th>가공상태</th>
+            <th>플랫폼</th>
+            <th>화질</th>
+            <th>음질</th>
+            <th>Time</th>
+            <th>광고구분</th>
+            <th>등록날짜</th>          
+            <th>선택</th>
+          </thead>
+          <tbody class="table-body"></tbody>
+        </table>  
+        <div class="body-title">Step.2 변경 가능 소재 조회
+          <p>※설정 된 조회 조건을 확인 후, 변경 할 소재명을 입력 하신 후 조회버튼을 클릭 하시기 바랍니다.</p>
+        </div>
+        <div class="search-wrapper">                    
+          <div class="search-table-box">
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">소재명</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title ic-title-nece">기간</div>                    
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10">
+                    <span>~</span>
+                    <input type="date" value="2021-02-10">
+                  </div>
+                </div>                  
+              </div>
+            </div>     
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">조회 조건</div>                    
+                  <div>플랫폼:ICOD 음질:일반 소재 길이:30초</div>
+                </div>                  
+              </div>
+            </div>               
+          </div>
+          <div class="search-bottom"><button class="btn-common">변경 가능 소재 조회</button></div>
+        </div>
+        <div class="body-title">Step.3 변경 가능 소재 목록
+          <p>※조회 된 소재 중에서 변경 할 소재의 소재 변경 버튼을 클릭 하시기 바랍니다.(기간이 지난 청약 소재 변경 제외 )</p>
+        </div>
+        <table class="jb-table mat-batch-table2">
+          <colgroup>                
+            <col />
+            <col style="width: 9%" />
+            <col style="width: 9%" />
+            <col style="width: 7%" />                
+            <col style="width: 6%" />
+            <col style="width: 6%" />
+            <col style="width: 7%" />
+            <col style="width: 6%" />
+            <col style="width: 11%" />                
+            <col style="width: 10%" />                               
+          </colgroup>
+          <thead>              
+            <th>Asset Name</th>
+            <th>Asset ID</th>
+            <th>가공상태</th>
+            <th>플랫폼</th>
+            <th>화질</th>
+            <th>음질</th>
+            <th>Time</th>
+            <th>광고구분</th>
+            <th>등록날짜</th>          
+            <th>선택</th>
+          </thead>
+          <tbody class="table-body"></tbody>
+        </table>       
+      </div>
+      <div class="modal-bottom">      
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-change-mat modal-con2 common-box">
+      <div class="modal-top">
+        <div class="box-title">소재 일괄변경</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="body-title">소재를 일괄 변경하시겠습니까?
+          <p>변경 전 : 0222_LiveAD_글로리아의여정_kt_30초</p>
+          <p>변경 후 : 0222_LiveAD_엘프_kt_30초</p>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-white close">취소</button>
+        <button class="btn-common">확인</button>
+      </div>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(1);
+      loadSubMenu("1", 1);
+      loadLnb(1, 1, 3, 0);
+
+      const arrTable = Array(10).fill(["screen golf zone", "2022-02-09 ~ 2022-02-16","0/2,8/10/12/14,15/17/20,22", "서울특별시 등 총 17개 지역", "25","1105_pp_바디프랜드_더현대_서울_15초","전체","진행중"]);            
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow(table, data, true));
+      
+      const arrBatch1 = Array(6).fill(["0222_LiveAD_글로리아의여정_kt_30초", "M64L20RRSGL150000100", "배포완료", "ICOD", "HD", "일반","30초","상용","2021-02-22","선택"]);      
+      const batchTable1 = document.querySelector(".mat-batch-table1 .table-body");
+      arrBatch1.map((data, i) => addBatchTableRow(batchTable1, data, i));
+      const arrBatch2 = Array(6).fill(["0222_LiveAD_엘프_kt_30초", "M64L20RRSGL150000100", "배포완료", "ICOD", "HD", "일반","30초","상용","2021-02-22","소재변경"]);      
+      const batchTable2 = document.querySelector(".mat-batch-table2 .table-body");
+      arrBatch2.map((data, i) => addBatchTableRow(batchTable2, data, i));
+
+      function addBatchTableRow(table, tbData, seq) {    
+        var tr = document.createElement("tr");        
+        
+        tbData.map((cell,i) => {        
+          var newTD = document.createElement("td"); 
+          if (i == 9) {            
+            var btTD = document.createElement("button");
+            btTD.setAttribute("class","btn-rec-teal");
+            if (cell == "소재변경") btTD.classList.add("btn-mat-change");
+            btTD.innerText = cell;
+            newTD.appendChild(btTD);                    
+          }          
+          else newTD.innerText = cell;
+          tr.appendChild(newTD);    
+        });  
+        table.appendChild(tr); 
+      }
+
+    $(".btn-mat-batch").on("click",function(){
+      $("#modal-background").fadeIn(100);
+      $(".modal-mat-batch").css("display", "flex").hide().fadeIn();
+      $("body").css("overflow", "hidden");
+    })  
+    $(".btn-mat-change").on("click",function(){
+      $("#modal-background2").fadeIn(100);
+      $(".modal-change-mat").css("display", "flex").hide().fadeIn();      
+    })  
+    $(".btn-register").on("click",function(){
+      location.href = "usher_mat_add.html";
+    })
+  </script>
+  </body>
+</html>

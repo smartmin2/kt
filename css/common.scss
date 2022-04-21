@@ -889,8 +889,8 @@ input[type=date]:after {
 }
 .btn-minus {
   background: url(../assets/c_btn_minus_default.svg) no-repeat center/cover;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
 
   &:hover {
     background: url(../assets/c_btn_minus_hover.svg) no-repeat center/cover;
@@ -936,6 +936,12 @@ input[type=date]:after {
   width: 20px;
   height: 20px;
   background: url(../assets/c_ic_list_download.svg) no-repeat center;
+  cursor: pointer;
+}
+.btn-spec {
+  width: 20px;
+  height: 20px;
+  background: url(../assets/13_icon_normal.svg) no-repeat center;
   cursor: pointer;
 }
 .btn-excel {
@@ -1646,4 +1652,42 @@ strong {
       border: 1px solid $navy;
     }
 }
+}
+.setting-grid {
+  display: grid;
+  grid-template-columns: 170px 1fr 170px 1fr;     
+  grid-auto-flow: row;
+  border-top: 1px solid $gray600;
+  .setting-grid-title {
+    background: $colors_box;
+    border-bottom: 1px solid $gray600;
+    min-height: 60px;
+    
+    display: flex;
+    align-items: center;      
+    padding: 20px 24px;          
+    background-color: $colors_box;
+    color: $colors_box_title;
+    font-size: 14px;
+    font-weight: 500;    
+  }
+  .setting-grid-content {
+    border-bottom: 1px solid $gray600;
+    min-height: 60px;                    
+    
+    padding: 15px 20px;
+    font-size: 13px;
+    color: $font_color;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .row {
+    grid-column: span 4;
+  }
+  .span-3 {grid-column: span 3;}
+  .flex-col {display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 10px;}
+  .flex-row{display: flex; gap: 10px; align-items: center;}
+  margin-bottom: 20px;
 }

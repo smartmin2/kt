@@ -50,9 +50,9 @@
                 <div class="input-wrapper">
                   <div class="input-title">BM</div>                    
                   <div class="btn-radio-group">
-                    <input type="radio" id="rd-bm1" name="rd-bm" checked><label for="rd-bm1">VOD</label>
-                    <input type="radio" id="rd-bm2" name="rd-bm"><label for="rd-bm2">LiveAD</label>
-                    <input type="radio" id="rd-bm3" name="rd-bm"><label for="rd-bm3">양방향</label>                      
+                    <input type="radio" id="rd-bm1" name="rd-bm" value="1" checked><label for="rd-bm1">VOD</label>
+                    <input type="radio" id="rd-bm2" name="rd-bm" value="2"><label for="rd-bm2">LiveAD</label>
+                    <input type="radio" id="rd-bm3" name="rd-bm" value="3"><label for="rd-bm3">양방향</label>                      
                   </div>
                 </div>                  
               </div>
@@ -61,11 +61,21 @@
               <div class="search-table-detail">
                 <div class="input-wrapper">
                   <div class="input-title">서비스</div>                    
-                  <div class="btn-check-group">
+                  <div class="btn-check-group service1">
                     <input type="checkbox" name="" id="ck-service1"><label for="ck-service1">PrePlay</label>
                     <input type="checkbox" name="" id="ck-service2"><label for="ck-service2">PrePlay+</label>
                     <input type="checkbox" name="" id="ck-service3"><label for="ck-service3">PrePlayS</label>
                     <input type="checkbox" name="" id="ck-service4"><label for="ck-service4">PostPlay</label>                      
+                  </div>
+                  <div class="btn-check-group service2">
+                    <input type="checkbox" name="" id="ck-service5"><label for="ck-service5">LiveAD 상품</label>                    
+                  </div>
+                  <div class="btn-check-group service3">
+                    <input type="checkbox" name="" id="ck-service6"><label for="ck-service6">AD Q</label>
+                    <input type="checkbox" name="" id="ck-service7"><label for="ck-service7">Ending Q</label>
+                    <input type="checkbox" name="" id="ck-service8"><label for="ck-service8">Time Q</label>
+                    <input type="checkbox" name="" id="ck-service9"><label for="ck-service9">Channel Q</label>                      
+                    <input type="checkbox" name="" id="ck-service10"><label for="ck-service10">Pause</label>                      
                   </div>
                 </div>                  
               </div>
@@ -404,6 +414,12 @@
       loadSubMenu("6", 2);
       loadLnb(6, 2, 2, 0);
 
+      $("input[name='rd-bm']:radio").change(function () {      
+        var selVal = this.value;
+           
+        $("[class^='btn-check-group service']").css("display","none");
+        $('.service'+ selVal).css("display","flex");
+      });
     </script>
 </body>
 </html>

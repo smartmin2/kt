@@ -1244,7 +1244,7 @@
 
 //------- 소재----------------------------------
 //---소재가공---------------
-.processing-main {
+.processing-main, .material-industry {
   .search-wrapper {
     margin-bottom: 50px;
 
@@ -1257,10 +1257,6 @@
           width: 115px;
           justify-content: start;
         }
-        // .selectBox { width: 300px;
-        //   .label { height: 30px; }
-        //   .optionList { top: 38px;  }
-        // }
         &.multi {
           .input-detail {
             display: flex;
@@ -1280,7 +1276,7 @@
 
     @include scrollbar("H");
   }
-  table.jb-table {
+  &.processing-main table.jb-table {
     min-width: 1500px;
 
     .table-body tr {
@@ -1305,6 +1301,20 @@
             padding: 2px 10px;
             margin: 5px 0;
           }
+        }
+      }
+    }
+  }
+  &.material-industry table.jb-table {
+    width: 1280px;
+    .table-body tr {
+      td {
+        &:nth-child(7){
+          display: flex;
+          gap: 10px;
+          justify-content: center;
+          align-items: center;
+          padding: 5px 0;
         }
       }
     }
@@ -1395,6 +1405,84 @@
   .input-w100p {
     width: 100%;
   }
+}
+.usher-mat-mng {
+  .btn-register {width: 150px;}
+  table.jb-table {
+    thead tr th:nth-child(7) {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      padding: 5px 0;
+      .btn-rec-teal {height: 20px;}
+    }
+  }
+}
+.usher-mat-add {
+  .setting-grid .setting-grid-content {
+    input[type=text] {width: 200px;}
+    .input-group { width: 150px;}
+
+    &:nth-child(6) {
+      span { color: red; }
+    }
+    &:nth-child(10) {
+      padding: 0;
+      gap: 0;
+      .content-row { 
+        height: 50px; 
+        padding: 0 20px; 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        &:not(:last-child) { border-bottom: 1px solid $gray600;}
+      }
+    }
+  }
+}
+.modal-icod-list {
+  @include default_modal(1050px,auto);
+  display: none;
+  max-height: 1000px;
+  .search-table-box {
+    padding: 20px 45px;
+    .input-title { width: 112px; }
+  }
+  .noti-box { height: 40px; }
+  table tbody tr td:not(.no-data):first-child {text-decoration: underline; cursor: pointer;}
+  ul.pagination { margin-top: 20px;}
+}
+.modal-channel-time {
+  @include default_modal(1600px,auto);
+  display: none;
+  max-height: 900px;  
+  .table-top-title {
+    span {color:#00aace;padding-left: 20px;}
+  }
+  .table-wrapper {
+    width: 1500px;
+    .jb-table-wrapper {    
+      max-height: 500px;
+      overflow: overlay;
+      padding-bottom: 10px;
+  
+      @include scrollbar("V");
+  
+      table.jb-table {
+        height: 900px;        
+      }
+    }
+  }
+  .th-box {
+    display: flex;
+    justify-content: space-between;
+    .th-name {flex:1;@include flex_center;}
+    .button-group {display: flex;justify-content: flex-end;gap: 10px;padding-right: 20px;}
+  }
+}
+.modal-channel-time-add {
+  @include default_modal(500px, 250px);
+  display: none;
 }
 //------------------------------------------------
 
@@ -4803,22 +4891,23 @@
             line-height: 1.31;
             color: $colors_box_title;
           }
+          & > .btn-check-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            input[type="checkbox"] + label {
+              width: 132px;
+              height: auto;
+              line-height: 1.21;
+            }
+          }
         }
       }
-      .btn-check-group {
+      & > .btn-check-group {
         display: flex;
         flex-wrap: wrap;
         gap: 12px;
-      }
-      .btn-radio-group {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        input[type="radio"] + label {
-          width: 132px;
-          line-height: 1.21;
-        }
-      }
+      }      
     }
   }
 }
@@ -5857,8 +5946,48 @@ table.jb-table thead.double {
 }
 //----------------------------------------
 //--- 정산 -------------------------------
+.specification-main {
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 1600px;
+
+      tbody tr td {
+        &:nth-child(4),&:nth-child(5) {
+          text-decoration: underline;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.entire-bm {
+  .table-top {margin-top: 30px;}
+  .btn-radio-group {display: flex; gap: 10px;}
+  .btn-check-group {display: flex; gap: 10px;}
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 2500px;      
+    }
+  }
+  .service2, .service3 {display: none;}
+}
 .otv-billing {
   .table-top {margin-top: 30px;}
+  .btn-radio-group {display: flex; gap: 10px;}
+  .btn-check-group {display: flex; gap: 10px;}
+  .service2, .service3 {display: none;}
   .jb-table-wrapper {
     width: calc(100vw - 640px);
     min-width: 1280px;
@@ -5929,5 +6058,18 @@ table.jb-table thead.double {
     }  
   }
   .tab-content {min-height: 150px;}
+}
+.modal-detail-billing {
+  @include default_modal (600px, auto);
+  display: none;
+}
+.modal-acc-statement {
+  @include default_modal (auto, auto);
+  display: none;
+  .body-box {
+    width: 1000px;
+    height: 600px;
+    background-color: $colors_box;
+  }
 }
 //----------------------------------------
