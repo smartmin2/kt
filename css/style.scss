@@ -2689,12 +2689,16 @@
     }
     .row {
       &.double {
-        height: 100px;
+        height: 100%;
+        background-color: #f1f7ff;
         .setting-table-content {
           flex-flow: column;
           align-items: initial;
           padding: 0;
-          gap:0;
+          gap: 0;
+        }
+        .setting-table-content {
+          background-color: #fff;
         }
         .content-row {
           .content-condi{
@@ -2710,7 +2714,7 @@
           height: 100%;
           width: 100%;
           border-top: 1px solid #e6e8ea;
-          padding: 0 20px;
+          padding: 16px 20px;
 
           &:first-child {
             border-top: 0;
@@ -2822,6 +2826,12 @@
     font-weight: bold;
     color: #35497b;
   }
+  table.jb-table tbody tr td {
+    &:nth-child(2) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
 }
 .modal-search-cam {
   @include default_modal(900px, auto);
@@ -2873,6 +2883,256 @@
       td{
         &.title-td{
           background-color: $colors_box;
+        }
+      }
+    }
+  }
+}
+
+.setotv {
+  .input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  td .btn-rec-teal {
+    display: none;
+  }
+}
+.settw-stbox {
+  table.jb-table tbody tr td {
+    &:nth-child(2) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.modal-settw-add,
+.modal-settw-modify {
+  @include default_modal(auto, auto);
+  display: none;
+}
+.settw-twoway {
+  .input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  td .btn-rec-teal {
+    display: none;
+  }
+}
+//settw-da
+.settw-da {
+  .filebox {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    label {
+      text-align: center;
+      margin-left: 0;
+    }
+    .upload-name {
+      height: 30px;
+    }
+    .desc {
+      margin-left: 0;
+    }
+  }
+}
+//.settw-channel
+.settw-channel {
+  table.jb-table tbody tr td {
+    &:nth-child(4) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.settw-channel-add,
+.settw-channel-detail {
+  input[type="text"],
+  input[type="date"] {
+    width: 300px;
+  }
+
+  .row.title {
+    > .setting-table-title {
+      width: 82px;
+      height: 331px;
+    }
+    .row.other {
+      &:last-child {
+        border-bottom: 0;
+      }
+      .setting-table-title {
+        width: 82px;
+      }
+      .setting-table-content {
+        padding: 0 20px;
+      }
+    }
+    .setting-table-content {
+      flex-flow: column;
+      align-items: initial;
+      padding: 0;
+      gap: 0;
+    }
+  }
+  .jb-table {
+    margin-bottom: 20px;
+    tr {
+      th {
+        &:first-child {
+          border-radius: 0;
+        }
+        &:last-child {
+          border-radius: 0;
+        }
+      }
+      td {
+        &.title-td {
+          background-color: $colors_box;
+        }
+      }
+    }
+  }
+}
+.modal-settw-search {
+  @include default_modal(auto, auto);
+  display: none;
+
+  .content-sub-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: $blue500;
+  }
+}
+
+//discount-_info
+.discount-info {
+  .input-wrapper {
+    .input-group {
+      width: 140px;
+    }
+  }
+  table.table tbody tr td {
+    &:nth-child(2) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.modal-discount-add01,
+.modal-discount-add02,
+.modal-discount-add03 {
+  @include default_modal(auto, auto);
+  display: none;
+}
+.modal-region-select {
+  @include default_modal(900px, auto);
+  display: none;
+  .row {
+    justify-content: space-between;
+    .cell {
+      flex: 1;
+      display: flex;
+      align-items: center;
+    }
+  }
+  details {
+    background-color: $colors_box;
+
+    summary {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 10px 20px;
+      .flex-box {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      &.open {
+        .ic-open-arrow {
+          content: url("../assets/c_ic_dropdown_arrow_up_default.svg");
+          object-fit: none;
+          width: 30px;
+          height: 30px;
+          cursor: pointer;
+        }
+      }
+      .ic-open-arrow {
+        content: url("../assets/c_ic_dropdown_arrow_down_default.svg");
+        object-fit: none;
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        border: 1px solid #bcbfc7;
+        background-color: #fff;
+        cursor: pointer;
+      }
+    }
+    .detail-cont {
+      background-color: $white;
+      padding: 10px 20px;
+      display: flex;
+      gap: 10px 20px;
+      flex-wrap: wrap;
+    }
+  }
+  .detail-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 34px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #434c66;
+    input[type="checkbox"] {
+      & + label {
+        font-weight: 300;
+      }
+      // &:checked + label {
+      //   font-weight: 500;
+      // }
+    }
+  }
+  .region-box {
+    p {
+      font-size: 16px;
+      font-weight: bold;
+      color: #35497b;
+      margin: 20px 0 10px;
+    }
+    .region-sel-box {
+      border: 1px solid $colors_line;
+      border-radius: 5px;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px 20px;
+    }
+  }
+}
+.unitprice-op {
+  table.jb-table thead.double {
+    tr {
+      &:first-child {
+        th {
+          &:last-child {
+            border-bottom-right-radius: 0;
+          }
+        }
+      }
+      &:last-child {
+        border-top: 1px solid rgba(136, 170, 215, 0.3%);
+        th {
+          &:last-child{
+            border-bottom-right-radius: 10px;
+          }
+         
         }
       }
     }
@@ -4949,13 +5209,17 @@ table.jb-table thead.double {
   @include default_modal(1200px, auto);
 
   .modal-body {
+    overflow: inherit;
     .tab {
       &-content {
       }
       &-box {
+        height: 500px;
         border-radius: 14px;
         border: solid 2px $colors_box;
         padding: 20px 40px;
+        margin-bottom: 20px;
+        @include scrollbar("V");
 
         &-title {
           font-size: 18px;
