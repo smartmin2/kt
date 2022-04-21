@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>서비스관리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>서비스관리</div>
+      <div>OTV관리</div>
+      <div>동영상</div>
+      <div>통합채널그룹관리</div>
+    </div>
+    <div class="main inte-channel-add">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_13.svg" alt="ic-13">서비스관리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">통합채널그룹관리</div>
+          <div class="setting-table">
+            <div class="row">
+              <div class="setting-table-title">그룹명</div>
+              <div class="setting-table-content">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">광고주/브랜드</div>
+              <div class="setting-table-content">
+                <div class="input-group">
+                  <select name="" id="">
+                    <option value="">헤럴드동아TV</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="submit-btn-group">
+            <button type="button" class="btn-common">추가</button>
+          </div>
+          <div class="setting-table">
+            <div class="row">
+              <div class="setting-table-title">그룹 멤버 채널</div>
+              <div class="setting-table-content">
+                <button type="button" class="btn-toggle">헤를드동아TV</button>
+              </div>
+            </div>
+          </div>
+          <div class="submit-btn-group">
+            <button type="button" class="btn-common">저장</button>
+            <button type="button" class="btn-white list">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/jstree.min.js"></script>
+    <script>
+      loadMainMenu(10);
+      loadSubMenu("10", 2);
+      loadLnb(10, 2, 1,6);
+
+
+      $(".btn-white.list").on("click", function () {
+        location.href = "inte_channel.html";
+      });
+    </script>
+  </body>
+</html>
