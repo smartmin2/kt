@@ -790,6 +790,7 @@ input[type=date],input[type=month] {
   color: rgba(20, 31, 64, 0.83);
 }
 
+input[type="number"],
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -857,6 +858,9 @@ input[type=date]:after {
 
 .red {
   color: $red;
+}
+.red2 {
+  color: #eb5050;
 }
 
 .att-txt {
