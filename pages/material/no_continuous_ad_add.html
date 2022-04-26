@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>소재</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>소재</div>
+    <div>OTV</div>
+    <div>동영상</div>
+    <div>연속광고불가 소재그룹관리</div>
+  </div>
+  <div class="main no-continuous-ad-add">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                소재
+            </div>
+            <ul class="sub-menu"></ul>
+        </div>        
+        <div class="contents-wrapper">
+          <div class="content-title">연속광고불가 소재그룹관리</div>          
+          <div class="setting-grid">
+            <div class="setting-grid-title ic-title-nece">소재그룹명</div>
+            <div class="setting-grid-content span-3"><input type="text" name="" id=""></div>
+            <div class="setting-grid-title ic-title-nece">소재</div>
+            <div class="setting-grid-content span-3 flex-col">
+              <div class="multi-group flex-row">
+                <button class="btn-rec-teal-52 btn-sel-mat">선택</button>
+                <button class="btn-rec-teal-52">삭제</button>
+              </div>              
+              <table class="jb-table">
+                <colgroup>                  
+                  <col style="width: 4%" />
+                  <col />
+                  <col style="width: 20%"/>
+                  <col style="width: 20%"/>
+                  <col style="width: 20%"/>
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th><input type="checkbox" name="" id=""></th>
+                    <th>Asset Name</th>
+                    <th>AssetID</th>
+                    <th>소재구분</th>
+                    <th>음질구분</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td><input type="checkbox" name="" id=""></td>                          
+                    <td>0222_LiveAD_엘프_kt_30초</td>
+                    <td>M64M1</td>
+                    <td>ICOD</td>
+                    <td>일반</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="setting-grid-title">적용범위</div>
+            <div class="setting-grid-content span-3">
+              <div class="btn-check-group">
+                <div class="btn-check">VOD광고</div>
+                <div class="btn-check">채널광고</div>
+              </div>
+            </div>
+          </div>
+          <div class="submit-btn-group">              
+            <button type="button" class="btn-common">저장</button>        
+            <button type="button" class="btn-white btn-cancel">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>  
+
+    <div id="modal-background"></div>    
+    <div id="modal-background2"></div>    
+    <div class="modal-icod-list common-box modal-con">
+      <div class="modal-top">
+        <div class="box-title">소재 선택</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">                    
+          <div class="search-table-box">
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">소재그룹명</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">Asset ID</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+            </div>     
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title ic-title-nece">기간</div>                    
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10">
+                    <span>~</span>
+                    <input type="date" value="2021-02-10">
+                  </div>
+                </div>                  
+              </div> 
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">캠페인명</div>  
+                  <input type="text" value="" />                             
+                </div>               
+              </div>                  
+            </div>               
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>     
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+              <div class="table-view-count">
+                <div class="input-group">
+                  <select>
+                    <option value="">10개</option>
+                    <option value="">20개</option>
+                    <option value="">30개</option>                                           
+                    <option value="">50개</option>                                           
+                    <option value="">100개</option>                                                
+                  </select>
+                </div>   
+              </div>
+            </div>
+          </div>
+          <table class="jb-table">
+            <colgroup>                              
+              <col style="width: 4%" />
+              <col style="width: 17%" />
+              <col style="width: 12%" />
+              <col style="width: 15%" />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 10%" />
+              <col style="width: 12%" />
+            </colgroup>
+            <thead>         
+              <th><input type="checkbox" name="" id=""></th>     
+              <th>Asset Name</th>
+              <th>Asset ID</th>
+              <th>소재구분</th>
+              <th>소재길이</th>                          
+              <th>배포구분</th>
+              <th>광고구분</th>
+              <th>음질구분</th>
+              <th>날짜</th>                      
+            </thead>
+            <tbody class="table-body">            
+              <!-- <tr style="display: none"><td colspan="10" class="no-data" >데이타가 존재 하지 않습니다</td></tr> -->
+              <tr>
+                <td><input type="checkbox"></td>
+                <td>0222_ktbaroad_544_LiveAD테스트(개발서버)_15초</td>
+                <td>M64M1</td>
+                <td>ICOD</td>
+                <td>15</td>                
+                <td>PrePlay</td>
+                <td></td>
+                <td>일반</td>
+                <td>2022-02-26</td>
+              </tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+              <tr><td><input type="checkbox"></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+            </tbody>
+          </table>   
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>    
+        </div>      
+      </div>
+      <div class="modal-bottom">      
+        <button class="btn-common">추가</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(1);
+      loadSubMenu("1", 2);
+      loadLnb(1, 2, 1, 2);     
+     
+      $(".btn-cancel").on("click",function(){
+        location.href = "no_continuous_ad.html";
+      })
+      $(".btn-sel-mat").on("click",function(){
+        $("#modal-background").fadeIn(100);
+        $(".modal-icod-list").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      })      
+    </script>
+  </body>
+</html>

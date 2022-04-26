@@ -163,37 +163,6 @@
                     </div>                                 
                   </div>                  
                 </div>
-                <div class="search-table-detail">
-                  <div class="input-wrapper multi">
-                    <div class="input-title">업종</div>      
-                    <div class="input-detail">
-                      <div class="input-group">
-                        <select>
-                          <option value="">전체</option>
-                          <option value="">업종1</option>
-                          <option value="">업종2</option>                                           
-                          <option value="">업종3</option>                                           
-                        </select>
-                      </div>    
-                      <div class="input-group">
-                        <select>
-                          <option value="">전체</option>
-                          <option value="">업종1</option>
-                          <option value="">업종2</option>                                           
-                          <option value="">업종3</option>                                           
-                        </select>
-                      </div>    
-                      <div class="input-group">
-                        <select>
-                          <option value="">전체</option>
-                          <option value="">업종1</option>
-                          <option value="">업종2</option>                                           
-                          <option value="">업종3</option>                                                
-                        </select>
-                      </div>    
-                    </div>              
-                  </div> 
-                </div>
               </div>
               <div class="row">
                 <div class="search-table-detail">
@@ -227,29 +196,27 @@
                   </div>   
                 </div>
               </div>
-              <div class="table-top-buttons">
-                <button class="btn-white modal-open">업종변경</button>
+              <div class="table-top-buttons">                
                 <button class="btn-common href-new">신규요청</button>
               </div>
             </div>
             <div class="jb-table-wrapper">
             <table class="jb-table">
               <colgroup>
-                <col />
+                <col style="width: 9%" />
                 <col style="width: 4%" />
                 <col style="width: 6%" />
                 <col style="width: 5%" />
                 <col style="width: 4%" />
-                <col style="width: 4%" />
+                <col style="width: 5%" />
                 <col style="width: 6%" />
                 <col style="width: 4%" />
-                <col style="width: 6%" />
-                <col style="width: 6%" />
+                <col style="width: 8%" />
+                <col style="width: 6%" />                
                 <col style="width: 5%" />
                 <col style="width: 5%" />
-                <col style="width: 5%" />
-                <col style="width: 7%" />
-                <col style="width: 7%" />
+                <col style="width: 10%" />
+                <col style="width: 9%" />
                 <col style="width: 8%" />
                 <col style="width: 6%" />
               </colgroup>
@@ -264,8 +231,7 @@
                   <th>화질</th>
                   <th>배포구분</th>
                   <th>진행상태</th>
-                  <th>광고구분</th>
-                  <th>업종</th>
+                  <th>광고구분</th>                  
                   <th>소재구분</th>
                   <th>삭제예정</th>
                   <th>날짜</th>
@@ -378,9 +344,9 @@
       loadSubMenu("1", 1);
       loadLnb(1, 1, 1, 0);
 
-      const arrTable = Array(8).fill(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","AD","X"]);
-      arrTable.push(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","CD","R"]);
-      arrTable.push(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","변경","일반","","2022-03-23","전송완료","A","CD"]);
+      const arrTable = Array(8).fill(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","일반","","2022-03-23","전송완료","AD","X"]);
+      arrTable.push(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","일반","","2022-03-23","전송완료","CD","R"]);
+      arrTable.push(["0124 LiveA", "LiveAD", "M64LB00XSGL150000100", "청약", "30", "일반","HD","PrePlay","배포완료","상용","일반","","2022-03-23","전송완료","A","CD"]);
       
       const table = document.querySelector(".table-body");
       arrTable.map((data) => addTableRow(table, data, false));
@@ -400,13 +366,11 @@
         
         tbData.map((cell,i) => {        
           var newTD = document.createElement("td"); 
-          if (i == 10)
-          {      
-            var change = document.createElement("button");
-            change.setAttribute("class","btn-download");               
-            newTD.appendChild(change);
+          if (i == 0) {
+            newTD.classList.add("href-detail");
+            newTD.innerText = cell;
           }
-          else if (i == 15) {
+          else if (i == 14) {
             var strCell = String(cell);
             for (var j=0; j < strCell.length;j++){
               var strName = strCell.substr(j,1);
@@ -434,7 +398,7 @@
               }
             }
           }
-          else if (i == 16) {
+          else if (i == 15) {
             var strCell = String(cell);
             for (var j=0; j < strCell.length;j++){
               var strName = strCell.substr(j,1);
@@ -474,7 +438,7 @@
       $(".href-new").on("click",function(){
         location.href = "processing_add.html";
       })
-      $(".btn-detail").on("click",function(){
+      $(".href-detail").on("click",function(){
         location.href = "processing_detail.html";
       })
       $("td .btn-download").on("click", function(){     

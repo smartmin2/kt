@@ -14,15 +14,15 @@
   const subMenu = {
     1 : [{id: 1, name:'OTV 소재가공', link: '/pages/material/processing.html', 
             folder: [{name:'소재가공 (+소재 다운로드)', link:'/pages/material/processing.html'},
-                     {name:'소재업종', link:'/pages/material/material_industry.html'},
+                    //  {name:'소재업종', link:'/pages/material/material_industry.html'},
                      {name:'들러리 소재 관리', link:'/pages/material/usher_mat_mng.html'}]}, 
          {id: 2, name:'OTV', link:'', 
             folder: [{name:'동영상', link:'', 
-                      folder:[{name:'ICOD',link:''},
-                              {name:'연속광고불가 소재그룹관리',link:''},
-                              {name:'삭제예정 소재관리',link:''}]},
-                     {name:'중복소재 노출관리', link:''},
-                     {name:'LiveAD 송출영상', link:''}]}],
+                      folder:[{name:'소재',link:'/pages/material/video_material.html'},
+                              {name:'연속광고불가 소재그룹관리',link:'/pages/material/no_continuous_ad.html'},
+                              {name:'삭제예정 소재관리',link:'/pages/material/to_be_deleted.html'}]},
+                     {name:'중복소재 노출관리', link:'/pages/material/duplicate_material.html'},
+                     {name:'LiveAD 송출영상', link:'/pages/material/material_livead.html'}]}],
     2 : [      
          {id: 1, name:'캠페인', link: '/pages/contract/campaign.html', 
             folder: [{name:'캠페인', link:'/pages/contract/campaign.html'},
@@ -338,7 +338,14 @@ $(function () {
 
       location.href = strLink;
     } else if ($(this).parent().hasClass("two-folder-menu")) {
+      var threeMenuName = $(this).parent().prev()[0].innerText,
+          subMenuName = $(this).parent().parent().parent().parent().prev()[0].innerText,
+          iSubMenu = subMenu[iMain].findIndex(x => x.name == subMenuName),
+          forderName = $(this)[0].innerText,
+          fourMenuLink = subMenu[iMain][iSubMenu].folder.find(x=>x.name == threeMenuName).folder.find(x=>x.name == forderName).link;
+      strLink = root + fourMenuLink;
 
+      location.href = strLink;
     } else {
       var subMenuName =  $(this)[0].innerText,
           strLink = root + subMenu[iMain].find(x => x.name == subMenuName).link;
@@ -570,9 +577,14 @@ $(".whether").on("click", function () {
   }})
 //--------------------------------------------------------
 
+// 라디오를 버튼으로 
 $(".btn-select-group .btn-select").on("click", function(){
   $(this).addClass('active').siblings().removeClass('active');
 });
+//체크박스를 버튼으로
+$(".btn-check-group .btn-check").on("click", function(){
+  $(this).toggleClass("active");
+})
 
 var fileTarget = $('.filebox .upload-hidden'); fileTarget.on('change', function(){ 
   // 값이 변경되면 

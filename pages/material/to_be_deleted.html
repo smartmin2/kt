@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>소재</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>소재</div>
+    <div>OTV</div>
+    <div>동영상</div>
+    <div>삭제예정 소재관리</div>
+  </div>
+  <div class="main to-be-deleted">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                소재
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">삭제예정 소재관리</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">Asset Name</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">AssetID</div>                    
+                      <input type="text" value="" />                    
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">삭제예정일</div>                    
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">상용/프로모션 구분</div>  
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">상용</option>
+                        <option value="">프로모션</option>                        
+                      </select>
+                    </div>                               
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">광고초수</div>  
+                    <div class="input-group">
+                      <select>
+                        <option value="">15초</option>
+                        <option value="">20초</option>
+                        <option value="">25초</option>
+                        <option value="">30초</option>                                                              
+                        <option value="">40초</option>
+                        <option value="">45초</option>
+                        <option value="">60초</option>
+                        <option value="">90초</option>                                                              
+                        <option value="">120초</option>                                                              
+                      </select>
+                    </div>                               
+                  </div> 
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">화질</div>  
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">SD</option>
+                        <option value="">HD</option>                        
+                        <option value="">ASP</option>                        
+                        <option value="">UHD</option>                        
+                        <option value="">FHD</option>                        
+                      </select>
+                    </div>                               
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">음질</div>  
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">일반</option>
+                        <option value="">5.1CH</option>                                           
+                      </select>
+                    </div>                     
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">배포구분</div>  
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">PrePlay</option>
+                        <option value="">OAP</option>
+                        <option value="">OAP_ICOD</option>
+                      </select>
+                    </div>                               
+                  </div>               
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">서비스</div>    
+                    <div class="input-group">
+                      <select>
+                        <option value="" selected>전체</option>
+                        <option value="">VOD</option>
+                        <option value="">LiveAD</option>
+                        <option value="">MovieIntro</option>                        
+                      </select>
+                    </div>                                     
+                  </div> 
+                </div> 
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                                           
+                      <option value="">50개</option>                                           
+                      <option value="">100개</option>                                                
+                    </select>
+                  </div>   
+                </div>
+              </div>              
+              <div class="table-top-buttons">                
+                <button class="btn-excel"><img>엑셀다운로드</button>
+              </div>
+            </div>      
+            <div class="jb-table-wrapper">
+              <table class="jb-table">
+                <colgroup>
+                  <col style="width: 15%" />
+                  <col style="width: 11%" />
+                  <col />
+                  <col style="width: 5%" />
+                  <col style="width: 5%" />
+                  <col style="width: 7%" />                
+                  <col style="width: 5%" />                  
+                  <col style="width: 5%" />                  
+                  <col style="width: 5%" />                  
+                  <col style="width: 5%" />                  
+                  <col style="width: 6%" />                  
+                  <col style="width: 5%" />                  
+                  <col style="width: 7%" />                  
+                </colgroup>
+                <thead>
+                  <tr>                  
+                    <th>Asset Name</th>
+                    <th>삭제예정</th>
+                    <th>캠페인</th>                  
+                    <th>서비스</th>                  
+                    <th>Asset ID(초)</th>
+                    <th>Time(mm:ss)</th>                  
+                    <th>광고초수</th>
+                    <th>음질</th>
+                    <th>화질</th>                  
+                    <th>배포구분</th>
+                    <th>진행상태</th>
+                    <th>광고구분</th>
+                    <th>날짜</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>0222_LiveAD_엘프_kt_30초</td>
+                    <td>삭제예정(2022-02-23)</td>
+                    <td>들러리 소재 관리 캠페인</td>
+                    <td>LiveAD</td>
+                    <td>M64L20RVS</td>
+                    <td>00:30</td>
+                    <td>30초</td>
+                    <td>일반</td>
+                    <td>HD</td>     
+                    <td>PrePlay</td>             
+                    <td>배포완료</td>
+                    <td>상용</td>
+                    <td>2022-01-20</td>
+                  </tr>
+                </tbody>
+              </table>          
+            </div>      
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+   
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(1);
+      loadSubMenu("1", 2);
+      loadLnb(1, 2, 1, 3);
+
+    </script>
+  </body>
+</html>

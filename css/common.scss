@@ -1022,6 +1022,7 @@ input[type=date]:after {
     color: $colors_font;
   }
 }
+
 .btn-select {
   display: flex;
   align-items: center;
@@ -1034,6 +1035,7 @@ input[type=date]:after {
   text-align: center;
   color: $black100;
   background-color: #fff;
+  cursor: pointer;
 
   &.active {
     border: solid 1px $colors_font;
@@ -1043,6 +1045,29 @@ input[type=date]:after {
     border: solid 1px $colors_font;
     color: $colors_font;
     // font-weight: bold;
+  }
+}
+.btn-check-group {
+  display: flex;
+  gap: 10px;
+  .btn-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;  
+    border-radius: 4px;
+    border: solid 1px $gray600;
+    font-size: 14px; 
+    text-align: center;
+    color: $black100;
+    background-color: #fff;
+    cursor: pointer;
+  
+    &.active {
+      border: solid 1px $colors_font;
+      color: $colors_font;
+    }
   }
 }
 .btn-select-group {
