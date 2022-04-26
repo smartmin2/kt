@@ -175,7 +175,7 @@
            },
          {id: 3, name:'타겟분석', link:'/pages/services/target.html', folder: []},
          {id: 4, name:'설정', link:'', 
-            folder: [{name:'OTV', link:'/pages/services/setotv_movie.html', folder: [{name:'동영상',link:''}]},
+            folder: [{name:'OTV', link:'/pages/services/setotv_movie.html', folder: [{name:'동영상',link:'/pages/services/setotv_movie.html'}]},
                      {name:'양방향', link:'/pages/services/settw_stbox.html', 
                         folder: [{name:'테스트셋탑박스관리', link:'/pages/services/settw_stbox.html'},
                                  {name:'양방향설정', link:'/pages/services/settw_twoway.html'},
