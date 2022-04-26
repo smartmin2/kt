@@ -7963,13 +7963,18 @@
   border-bottom: 1px solid #e6e8ea;
 }
 
-.campaign-add .content-block:not(.default), .campaign-detail .content-block:not(.default) {
+.campaign-add .content-block:not(.default):not(.all-the-time):not(.no-edge), .campaign-detail .content-block:not(.default):not(.all-the-time):not(.no-edge) {
   padding: 20px;
   border: 1px solid #2a3d72;
   border-radius: 8px;
 }
 
-.campaign-add .content-block:not(.default) .content-info .setting-table, .campaign-detail .content-block:not(.default) .content-info .setting-table {
+.campaign-add .content-block:not(.default):not(.all-the-time):not(.no-edge) .content-info .setting-table, .campaign-detail .content-block:not(.default):not(.all-the-time):not(.no-edge) .content-info .setting-table {
+  margin-bottom: 0;
+}
+
+.campaign-add .content-block.no-edge, .campaign-detail .content-block.no-edge {
+  padding: 0;
   margin-bottom: 0;
 }
 
@@ -7980,8 +7985,8 @@
 .campaign-add.campaign-detail .grid-container, .campaign-detail.campaign-detail .grid-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 164px 1fr 164px 1fr;
-      grid-template-columns: 164px 1fr 164px 1fr;
+  -ms-grid-columns: 170px 1fr 170px 1fr;
+      grid-template-columns: 170px 1fr 170px 1fr;
   -ms-grid-rows: 60px 60px 1fr 60px;
       grid-template-rows: 60px 60px 1fr 60px;
   margin-bottom: 20px;
@@ -8165,7 +8170,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 164px;
+  width: 170px;
   padding: 20px 24px;
   height: 100%;
   background-color: #f1f7ff;
@@ -8201,8 +8206,8 @@
 }
 
 .campaign-add.campaign-detail .common-body .contents-wrapper .sub-detail-list .jb-table-wrapper, .campaign-detail.campaign-detail .common-body .contents-wrapper .sub-detail-list .jb-table-wrapper {
-  width: calc(100vw - 640px);
-  min-width: 1280px;
+  width: calc(100vw - 680px);
+  min-width: 1240px;
   overflow: overlay;
   overflow-x: auto;
   scroll-behavior: smooth;
