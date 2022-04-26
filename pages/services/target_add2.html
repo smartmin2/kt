@@ -129,23 +129,24 @@
       let maxAppend2 = 1;
  
       $(".content-condi").on("click",".btn-rec-teal.orand",function () {
-        if (maxAppend2 >= 6) return;
+        if (maxAppend2 >= 15) return;
         $(this).parents(".setting-table-content").append("<div class='content-row'><div class='content-condi'><div class='input-group'><select><option>OR</option><option>AND</option></select></div><div class='input-group'><select ><option>회선정보</option></select></div><button class='btn-rec-teal delete2'>OR/AND 삭제</button><button class='btn-rec-teal addi'>부가정보 추가</button></div></div>")
         maxAppend2++;
       });
       $(".setting-table-content").on("click", ".btn-rec-teal.delete2", function () {
         $(this).parents(".content-row").remove();
         maxAppend2--;
+        maxAppend = 1;
       });
 
-      $(".content-condi").on("click",".btn-rec-teal.addi",function () {
-        if (maxAppend >= 6) return;
+      $(".setting-table-content").on("click",".content-row .btn-rec-teal.addi",function () {
+        // if (maxAppend >= 6) return;
         $(this).parents(".content-row").append("<div class='content-condi' style='padding-left:310px;'><div class='input-group'><select><option>회선정보</option></select></div><button class='btn-rec-teal delete'>부가정보 삭제</button><div> ")
-        maxAppend++;
+        // maxAppend++;
       });
-      $(".content-row").on("click", ".btn-rec-teal.delete", function () {
+      $(".setting-table-content").on("click", ".btn-rec-teal.delete", function () {
         $(this).parents(".content-condi").remove();
-        maxAppend--;
+        // maxAppend--;
       });
     </script>
     <script></script>
