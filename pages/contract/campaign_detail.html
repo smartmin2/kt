@@ -45,15 +45,21 @@
           <div class="content-top">캠페인정보</div>          
           <div class="grid-container">
             <div class="item">캠페인명</div>
-            <div class="item">테스트 캠페인_20220201</div>
+            <div class="item">
+              <input type="text" name="" id="" value="테스트 캠페인_20220201" disabled>
+            </div>
             <div class="item">광고주/브랜드</div>
-            <div class="item">구KT/QOOK</div>
+            <div class="item">
+              <input type="text" name="" id="" value="구KT/QOOK" disabled>
+            </div>
             <div class="item">영업사/등록자</div>
-            <div class="item">구KT/QOOK</div>
+            <div class="item">
+              <input type="text" name="" id="" value="KTDS/김민규" disabled>
+            </div>
             <div class="item">대행사</div>
             <div class="item"></div>
             <div class="item">BM 정보</div>
-            <div class="item">
+            <div class="item span-3">
               <table class="jb-table" id="htableService" summary="BM정보별 상세내역 화면입니다.">            
                 <colgroup>
                   <col width="7%"> 
@@ -152,41 +158,20 @@
                   </tr>
                 </tbody>
               </table>
-            </div>            
-            <div class="item">기간</div>
-            <div class="item">2022-02-21 ~ 2022-02-28</div>                        
+            </div>                        
+            <div class="item">캠페인 기간</div>
+            <div class="item">2022-01-06 ~ 2022-01-06 ( 하단 BM/서비스 입력 전체 기간)</div>  
+            <div class="item">캠페인 금액</div>
+            <div class="item">0원</div>              
           </div>
           <div class="btn-group">
             <button class="btn-common btn-send-sms">SMS보내기</button>
             <button class="btn-white">큐시트 출력</button>
             <button class="btn-white go-cam-list">목록</button>
-            <button class="btn-white go-cam-add">수정</button>
+            <button class="btn-white btn-cam-save"></button>
           </div>
         </div>
-        <div class="content-block default all-the-time"> 
-          <div class="content-top">캠페인 기본 정보</div>
-          <div class="content-info">
-            <div class="setting-table">
-              <div class="setting-table-title ic-title-nece">캠페인명</div>
-              <div class="setting-table-content">YYYY년MM월_광고주_브랜드<input type="text" value=""></div>
-              <div class="setting-table-title ic-title-nece">광고주/브랜드</div>
-              <div class="setting-table-content">
-                <input type="text" name="" id="" placeholder="선택하세요" class="brand-sel">         
-              </div>
-              <div class="setting-table-title ic-title-nece">영업사</div>
-              <div class="setting-table-content">
-                <input type="text" name="" id="" placeholder="선택하세요" class="sales-sel">        
-              </div>
-              <div class="setting-table-title">대행사</div>
-              <div class="setting-table-content">
-                <input type="text" name="" id="" placeholder="선택하세요" class="agency-sel">        
-              </div>
-              <div class="setting-table-title">캠페인 기간</div>
-              <div class="setting-table-content">2022-01-06 ~ 2022-01-06 ( 하단 BM/서비스 입력 전체 기간)</div>
-              <div class="setting-table-title">캠페인 금액</div>
-              <div class="setting-table-content">0원</div>              
-            </div>
-          </div>
+        <div class="content-block default all-the-time">           
           <div class="btn-group">          
             <input type="checkbox" id="ck-company-info"><label for="ck-company-info">업체정보</label>            
             <input type="checkbox" id="ck-sub-all"><label for="ck-sub-all">전체청약펼치기</label>          
@@ -260,7 +245,93 @@
             </div>
           </div>
         </div>     
-  
+        <div class="content-block material-list all-the-time">
+          <div class="content-top">청약 현황</div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count"></div>
+              <div class="table-top-buttons">                
+                <!-- <button class="btn-excel"><img>엑셀다운로드</button>               -->
+                <button class="btn-common btn-add-sub">상품 추가</button>
+                <button class="btn-white">삭제</button>
+              </div>
+            </div>            
+            <table class="jb-table">
+              <colgroup>
+                <col style="width: 2%" />
+                <col style="width: 12%" />
+                <col />
+                <col style="width: 15%" />
+                <col style="width: 7%" />                
+                <col style="width: 8%" />
+                <col style="width: 7%" />
+                <col style="width: 8%" />                               
+                <col style="width: 8%" />                               
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><input type="checkbox"></th>
+                  <th>서비스명</th>
+                  <th>소재</th>
+                  <th>기간</th>
+                  <th>타겟팅</th>
+                  <th>청약현황</th>
+                  <th>상태</th>
+                  <th>관리</th>
+                  <th>추가청약</th>
+                </tr>
+            </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td rowspan="2">PREPLAY 15초</td>
+                  <td>
+                    <div class="flex-row">
+                      <div class="just-text"> 0316_LiveAD_장수돌침대XX점 LGHV_30초</div>
+                      <button class="btn-rec-teal program-sel">소재수정</button>
+                    </div>
+                  </td>
+                  <td>2022-03-17~2022-03-24</td>
+                  <td><button class="btn-rec-teal btn-region">지역</button></td>
+                  <td><button class="btn-rec-teal btn-detail-sub">상세확인</button></td>
+                  <td>진행중</td>
+                  <td><button class="btn-rec-teal">중간종료</button></td>
+                  <td rowspan="2"> <button class="btn-rec-teal">추가청약</button></td>
+                </tr>
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>                  
+                  <td>
+                    <div class="flex-row">
+                      <div class="just-text"> 0316_LiveAD_장수돌침대XX점 LGHV_30초</div>
+                      <button class="btn-rec-teal program-sel">소재수정</button>
+                    </div>
+                  </td>
+                  <td>2022-03-17~2022-03-24</td>
+                  <td><button class="btn-rec-teal btn-channel">채널</button></td>
+                  <td><button class="btn-rec-teal btn-detail-sub">상세확인</button></td>
+                  <td>진행예정</td>
+                  <td><button class="btn-rec-teal">수정</button></td>
+                </tr>  
+                <tr>
+                  <td><input type="checkbox" name="" id=""></td>
+                  <td>PREPLAY S 30초</td>
+                  <td>
+                    <div class="flex-row">
+                      <div class="just-text"> 0316_LiveAD_장수돌침대XX점 LGHV_30초</div>
+                      <button class="btn-rec-teal program-sel">소재수정</button>
+                    </div>
+                  </td>
+                  <td>2022-03-17~2022-03-24</td>
+                  <td><button class="btn-rec-teal btn-region">지역</button></td>
+                  <td><button class="btn-rec-teal btn-detail-sub">상세확인</button></td>
+                  <td>진행예정</td>
+                  <td><button class="btn-rec-teal">수정</button></td>
+                  <td> <button class="btn-rec-teal">추가청약</button></td>
+                </tr>              
+              </tbody>
+            </table>          
+          </div>
+        </div>
         <!-- PrePlay -->
         <div class="content-block preplay">
           <div class="content-top">
@@ -3772,216 +3843,6 @@
             <button class="btn-white">취소</button>
           </div>
         </div>
-        <div class="content-block material-list all-the-time">
-          <div class="content-top">소재기준 현황</div>
-          <div class="table-wrapper">
-            <div class="table-top">
-              <div class="table-top-count">
-                <div class="table-total-count">전체<span>1,256</span></div>
-                <div class="table-view-count">
-                  <div class="input-group">
-                    <select>
-                      <option value="">10개</option>
-                      <option value="">20개</option>
-                      <option value="">30개</option>                        
-                      <option value="">50개</option>                        
-                      <option value="">100개</option>                                              
-                    </select>
-                  </div>                      
-                </div>
-              </div>
-              <div class="table-top-buttons">                
-                <button class="btn-excel"><img>엑셀다운로드</button>              
-                <button class="btn-white">삭제</button>
-              </div>
-            </div>            
-            <table class="jb-table">
-              <colgroup>
-                <col style="width: 2%" />
-                <col style="width: 15%" />
-                <col />
-                <col style="width: 15%" />
-                <col style="width: 7%" />                
-                <col style="width: 8%" />
-                <col style="width: 7%" />
-                <col style="width: 8%" />                               
-              </colgroup>
-              <thead>
-                <tr>
-                  <th><input type="checkbox"></th>
-                  <th>청약명</th>
-                  <th>소재</th>
-                  <th>기간</th>
-                  <th>타겟팅</th>
-                  <th>청약현황</th>
-                  <th>상태</th>
-                  <th>관리</th>                                                      
-                </tr>
-            </thead>
-              <tbody class="table-body">
-                <tr>
-                  <td><input type="checkbox" name="" id=""></td>
-                  <td>청약명1</td>
-                  <td>
-                    <div class="flex-row">
-                      <div class="just-text"> 0316_LiveAD_장수돌침대XX점 LGHV_30초</div>
-                      <button class="btn-rec-teal program-sel">소재수정</button>
-                    </div>
-                  </td>
-                  <td>2022-03-17~2022-03-24</td>
-                  <td><button class="btn-rec-teal btn-region">지역</button></td>
-                  <td><button class="btn-rec-teal">상세확인</button></td>
-                  <td>진행중</td>
-                  <td><button class="btn-rec-teal">중간종료</button></td>
-                </tr>
-                <tr>
-                  <td><input type="checkbox" name="" id=""></td>
-                  <td>청약명1</td>
-                  <td>
-                    <div class="flex-row">
-                      <div class="just-text"> 0316_LiveAD_장수돌침대XX점 LGHV_30초</div>
-                      <button class="btn-rec-teal program-sel">소재수정</button>
-                    </div>
-                  </td>
-                  <td>2022-03-17~2022-03-24</td>
-                  <td><button class="btn-rec-teal btn-channel">채널</button></td>
-                  <td><button class="btn-rec-teal">상세확인</button></td>
-                  <td>진행예정</td>
-                  <td><button class="btn-rec-teal">수정</button></td>
-                </tr>
-              </tbody>
-            </table>          
-            <ul class="pagination">
-              <li>
-                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
-              </li>
-              <li><a href="#" class="num">1</a></li>
-              <li><a href="#" class="num active">2</a></li>
-              <li><a href="#" class="num">3</a></li>
-              <li><a href="#" class="num">4</a></li>
-              <li><a href="#" class="num">5</a></li>
-              <li><a href="#" class="num">6</a></li>
-              <li><a href="#" class="num">7</a></li>
-              <li><a href="#" class="num">8</a></li>
-              <li><a href="#" class="num">9</a></li>
-              <li><a href="#" class="num">10</a></li>
-              <li>
-                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="content-block sub-detail-list all-the-time">          
-          <div class="table-wrapper">
-            <div class="table-top">
-              <div class="table-top-count">
-                <div class="table-total-count">전체<span>1,256</span></div>
-                <div class="table-view-count">
-                  <div class="input-group">
-                    <select>
-                      <option value="">10개</option>
-                      <option value="">20개</option>
-                      <option value="">30개</option>                        
-                      <option value="">50개</option>                        
-                      <option value="">100개</option>                                              
-                    </select>
-                  </div>                      
-                </div>
-              </div>
-              <div class="table-top-buttons">                
-                <button class="btn-white btn-mat-batch">소재일괄변경</button>
-                <button class="btn-white btn-auto-resub">자동 재청약</button>
-                <button class="btn-white btn-import-sub">청약불러오기</button>
-                <button class="btn-white btn-detail-sub">청약상세</button>
-                <button class="btn-excel"><img>엑셀다운로드</button>              
-                <button class="btn-white">삭제</button>
-              </div>
-            </div>    
-            <div class="jb-table-wrapper">
-              <table class="jb-table">
-                <colgroup>
-                  <col style="width: 2%" />
-                  <col style="width: 10%" />                  
-                  <col style="width: 8%" />
-                  <col style="width: 6%" />                
-                  <col style="width: 7%" />
-                  <col style="width: 6%" />
-                  <col style="width: 14%" />
-                  <col style="width: 7%" />
-                  <col style="width: 14%" />
-                  <col style="width: 7%" />
-                  <col style="width: 7%" />
-                  <col style="width: 6%" />
-                  <col style="width: 6%" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th><input type="checkbox"></th>
-                    <th>채널</th>
-                    <th>기간</th>
-                    <th>시간대</th>
-                    <th>지역</th>
-                    <th>보장노출</th>
-                    <th>소재</th>
-                    <th>소재구분</th>                                                      
-                    <th>STB그룹</th>
-                    <th>프리퀀시</th>                                                      
-                    <th>노출슬롯</th>
-                    <th>상태</th>
-                    <th>중간종료</th>
-                  </tr>
-              </thead>
-                <tbody class="table-body">
-                  <tr>
-                    <td><input type="checkbox" name="" id=""></td>
-                    <td>SBS</td>
-                    <td>2022-02-27<br>~2022-02-28</td>
-                    <td>0,.1/6.23</td>
-                    <td></td>
-                    <td>56</td>
-                    <td>0316_LiveAD_(30”)</td>
-                    <td>상용</td>
-                    <td>202220321_스토리텔200만</td>
-                    <td>0</td>
-                    <td>중간</td>
-                    <td>진행중</td>
-                    <td><button class="btn-rec-teal">중간종료</button></td>
-                  </tr>                 
-                </tbody>
-              </table>          
-            </div>
-            <ul class="pagination">
-              <li>
-                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
-              </li>
-              <li><a href="#" class="num">1</a></li>
-              <li><a href="#" class="num active">2</a></li>
-              <li><a href="#" class="num">3</a></li>
-              <li><a href="#" class="num">4</a></li>
-              <li><a href="#" class="num">5</a></li>
-              <li><a href="#" class="num">6</a></li>
-              <li><a href="#" class="num">7</a></li>
-              <li><a href="#" class="num">8</a></li>
-              <li><a href="#" class="num">9</a></li>
-              <li><a href="#" class="num">10</a></li>
-              <li>
-                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
-              </li>
-              <li>
-                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   </div>
@@ -4304,126 +4165,112 @@
     <div class="modal-bottom">      
       <button class="btn-white close">취소</button>
     </div>
-  </div>
+  </div>  
   <div class="modal-detail-sub common-box modal-con">
     <div class="modal-top">
       <div class="box-title">청약 상세 조회</div>
       <div class="ic-modal-close close"></div>
     </div>
     <div class="modal-body">
-      <div class="search-wrapper">                    
-        <div class="search-table-box">
-          <div class="row">            
-            <div class="search-table-detail">
-              <div class="input-wrapper">
-                <div class="input-title ic-title-nece">기간</div>                    
-                <div class="input-date-group">
-                  <input type="date" value="2021-02-10">
-                  <span>~</span>
-                  <input type="date" value="2021-02-10">
-                </div>
-              </div>                  
+      <div class="table-wrapper">
+        <div class="table-top">
+          <div class="table-top-count">
+            <div class="table-total-count">전체<span>1,256</span></div>
+            <div class="table-view-count">
+              <div class="input-group">
+                <select>
+                  <option value="">10개</option>
+                  <option value="">20개</option>
+                  <option value="">30개</option>                        
+                  <option value="">50개</option>                        
+                  <option value="">100개</option>                                              
+                </select>
+              </div>                      
             </div>
-          </div>     
-          <div class="row">
-            <div class="search-table-detail">
-              <div class="input-wrapper multi">
-                <div class="input-title ic-title-nece">카테고리</div>                    
-                <div class="input-detail">
-                  <div class="input-group width-140">
-                    <select>
-                      <option value="">카테고리1-1</option>
-                      <option value="">카테고리1-2</option>
-                      <option value="">카테고리1-3</option>                        
-                      <option value="">카테고리1-4</option>                        
-                      <option value="">카테고리1-5</option>                        
-                      <option value="">카테고리1-6</option>                                                
-                    </select>
-                  </div>            
-                  <div class="input-group width-140">
-                    <select>
-                      <option value="">카테고리2-1</option>
-                      <option value="">카테고리2-2</option>
-                      <option value="">카테고리2-3</option>                        
-                      <option value="">카테고리2-4</option>                        
-                      <option value="">카테고리2-5</option>                        
-                      <option value="">카테고리2-6</option>                                                    
-                    </select>
-                  </div>      
-                </div>
-              </div>                  
-            </div>
-          </div>               
+          </div>
+          <div class="table-top-buttons">                            
+            <button class="btn-excel"><img>엑셀다운로드</button>              
+            <button class="btn-white">삭제</button>
+          </div>
+        </div>    
+        <div class="jb-table-wrapper">
+          <table class="jb-table">
+            <colgroup>
+              <col style="width: 2%" />
+              <col style="width: 10%" />                  
+              <col style="width: 8%" />
+              <col style="width: 6%" />                
+              <col style="width: 6%" />
+              <col style="width: 6%" />
+              <col style="width: 14%" />
+              <col style="width: 7%" />
+              <col style="width: 14%" />
+              <col style="width: 7%" />
+              <col style="width: 7%" />
+              <col style="width: 6%" />
+              <col style="width: 7%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th><input type="checkbox"></th>
+                <th>채널</th>
+                <th>기간</th>
+                <th>시간대</th>
+                <th>지역</th>
+                <th>보장노출</th>
+                <th>소재</th>
+                <th>소재구분</th>                                                      
+                <th>STB그룹</th>
+                <th>프리퀀시</th>                                                      
+                <th>노출슬롯</th>
+                <th>상태</th>
+                <th>중간종료</th>
+              </tr>
+          </thead>
+            <tbody class="table-body">
+              <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td>SBS</td>
+                <td>2022-02-27<br>~2022-02-28</td>
+                <td>0,.1/6.23</td>
+                <td></td>
+                <td>56</td>
+                <td>0316_LiveAD_(30”)</td>
+                <td>상용</td>
+                <td>202220321_스토리텔200만</td>
+                <td>0</td>
+                <td>중간</td>
+                <td>진행중</td>
+                <td><button class="btn-rec-teal">중간종료</button></td>
+              </tr>                 
+            </tbody>
+          </table>          
         </div>
-        <div class="search-bottom"><button class="btn-common">조회</button></div>
+        <ul class="pagination">
+          <li>
+            <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+          </li>
+          <li><a href="#" class="num">1</a></li>
+          <li><a href="#" class="num active">2</a></li>
+          <li><a href="#" class="num">3</a></li>
+          <li><a href="#" class="num">4</a></li>
+          <li><a href="#" class="num">5</a></li>
+          <li><a href="#" class="num">6</a></li>
+          <li><a href="#" class="num">7</a></li>
+          <li><a href="#" class="num">8</a></li>
+          <li><a href="#" class="num">9</a></li>
+          <li><a href="#" class="num">10</a></li>
+          <li>
+            <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+          </li>
+        </ul>
       </div>
-      <table class="jb-table">
-        <colgroup>                
-          <col style="width: 25%" />
-          <col style="width: 25%" />
-          <col style="width: 25%" />
-          <col style="width: 25%" />                                          
-        </colgroup>
-        <thead>              
-          <th>서비스</th>
-          <th>카테고리</th>
-          <th>기간</th>
-          <th>보장노출</th>          
-        </thead>
-        <tbody class="table-body">     
-          <tr>
-            <td rowspan="2">PrePlay</td>
-            <td rowspan="2">KBS(119) > 기타(0)</td>
-            <td>2022-02-17</td>
-            <td>1,628</td>            
-          </tr>
-          <tr>
-            <td>소계</td>
-            <td>1,628</td>
-          </tr>  
-          <tr>
-            <td rowspan="2">PrePlay</td>
-            <td rowspan="2">KBS(119) > 기타(0)</td>
-            <td>2022-02-17</td>
-            <td>1,628</td>            
-          </tr>
-          <tr>
-            <td>소계</td>
-            <td>1,628</td>
-          </tr>  
-          <tr>
-            <td rowspan="2">PrePlay</td>
-            <td rowspan="2">KBS(119) > 기타(0)</td>
-            <td>2022-02-17</td>
-            <td>1,628</td>            
-          </tr>
-          <tr>
-            <td>소계</td>
-            <td>1,628</td>
-          </tr>              
-          <tr>
-            <td rowspan="2">PrePlay</td>
-            <td rowspan="2">KBS(119) > 기타(0)</td>
-            <td>2022-02-17</td>
-            <td>1,628</td>            
-          </tr>
-          <tr>
-            <td>소계</td>
-            <td>1,628</td>
-          </tr>  
-          <tr>
-            <td rowspan="2">PrePlay</td>
-            <td rowspan="2">KBS(119) > 기타(0)</td>
-            <td>2022-02-17</td>
-            <td>1,628</td>            
-          </tr>
-          <tr>
-            <td>소계</td>
-            <td>1,628</td>
-          </tr>  
-
-        </tbody>
-      </table>      
     </div>
     <div class="modal-bottom">      
       <button class="btn-white close">취소</button>
@@ -5450,10 +5297,6 @@
       const table5 = document.querySelector(".table5 .table-body");
       arrTable5.map((data) => addRow(table5, data, true));
 
-      // const arrTable6 = Array(6).fill(["BP-210F", "16", "BP 그룹"]);
-      // const table6 = document.querySelector(".table6 .table-body");
-      // arrTable6.map((data) => addRow(table6, data, true));
-
       const arrTable7 = Array(6).fill(["10", "톡스앤필", "(주)비비지네트웍스", "화장품 및 보건용품 > 화장품 및 보건용품 기타 > 화장품 및 보건용품기타"]);
       const table7 = document.querySelector(".table7 .table-body");
       arrTable7.map((data) => addRow(table7, data, false));
@@ -5552,8 +5395,7 @@
         });  
         table.appendChild(tr); 
       }
-
-      // $(".modal-stb-group").css("display","flex");
+      
       $(".default .ic-open-arrow").on("click",function(){
       var tarParent = $(this).parent(".content-top");
       tarParent.toggleClass("open");
@@ -5583,8 +5425,7 @@
       });  
       table.appendChild(tr); 
     }
-
-    // $(".modal-stb-group").css("display","flex");
+    
     $(".default .ic-open-arrow").on("click",function(){
       var tarParent = $(this).parent(".content-top");
       tarParent.toggleClass("open");
@@ -5659,6 +5500,9 @@
     const arrTData = [["2021-02-21", "주중"],["2021-02-22", "주중"],["2021-02-23", "주중"],["2021-02-24", "주중"],["2021-02-25", "주중"]];
     arrTData.map((data) => addTRow(data));
 
+    $(".btn-add-sub").on("click",function(){
+      location.href = "campaign_add.html";
+    })
 
     $(".content-block").addClass("no-edge");
     $("#ck-company-info").on("change",function(){
@@ -5669,19 +5513,16 @@
       }
     })
     $("#ck-sub-all").on("change",function(){
-      if ($(this)[0].checked) {
-        // $(".all-the-time").siblings().not(".all-the-time").children(".content-top").css("display","none");
+      if ($(this)[0].checked) {        
         $(".all-the-time").siblings().not(".all-the-time").children(".content-info").css("display","flex");
         $(".all-the-time").siblings().not(".all-the-time").children(".content-info-detail").css("display","flex");
-        $(".all-the-time").siblings().not(".all-the-time").children(".button-group").css("display","flex");
-        $(".content-block").toggleClass("no-edge");
-      } else {
-        // $(".all-the-time").siblings().not(".all-the-time").children(".content-top").css("display","flex");
+        $(".all-the-time").siblings().not(".all-the-time").children(".button-group").css("display","flex");      
+      } else {        
         $(".all-the-time").siblings().not(".all-the-time").children(".content-info").css("display","none");
         $(".all-the-time").siblings().not(".all-the-time").children(".content-info-detail").css("display","none");
         $(".all-the-time").siblings().not(".all-the-time").children(".button-group").css("display","none");
-        $(".content-block").toggleClass("no-edge");
       }
+      $(".content-block").toggleClass("no-edge");
     })
     $(".btn-send-sms").on("click",function(){      
       $("#modal-background").fadeIn(100);

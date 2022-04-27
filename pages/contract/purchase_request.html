@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>캠페인</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>캠페인 관리</div>
+    <div>청약 관리</div>
+    <div>구매요청</div>
+  </div>
+  <div class="main purchase-request">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                캠페인 관리
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">구매요청</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">캠페인명</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">기간</div>                    
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>
+                  </div>                  
+                </div>             
+              </div>              
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">영업사</div>                    
+                    <div class="input-group">
+                      <select>                        
+                        <option value="" selected>전체</option>
+                        <option value="">영업사1</option>
+                        <option value="">영업사2</option>
+                        <option value="">영업사3</option>
+                        <option value="">영업사4</option>
+                      </select>
+                    </div>                         
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">구매요청자</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">BM/서비스</div> 
+                    <div class="multi-group flex-row">
+                      <div class="input-group width-140">
+                        <select>
+                          <option value="" selected>전체</option>
+                          <option value="">Olleh TV</option>
+                          <option value="">Olleh TV Mobile</option>
+                          <option value="">Olleh AD</option>
+                          <option value="">DS</option>
+                          <option value="">Digital Cinema</option>
+                        </select>                        
+                      </div>     
+                      <div class="input-group width-168">
+                        <select>
+                          <option value="" selected>전체</option>
+                          <option value="">서비스1</option>
+                          <option value="">서비스2</option>
+                          <option value="">서비스3</option>
+                          <option value="">서비스4</option>
+                          <option value="">서비스5</option>
+                        </select>                        
+                      </div>                   
+                    </div>                         
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">승인상태</div>                    
+                    <div class="input-group">
+                      <select>                        
+                        <option value="" selected>전체</option>
+                        <option value="">승인요청</option>
+                        <option value="">승인</option>
+                        <option value="">반려</option>                        
+                      </select>
+                    </div>                         
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                        
+                      <option value="">50개</option>                        
+                      <option value="">100개</option>                                              
+                    </select>
+                  </div>                      
+                </div>
+              </div>   
+              <div class="table-top-buttons">   
+                <button class="btn-excel"><img>엑셀다운로드</button>
+                <button class="btn-white">삭제</button>                
+              </div>           
+            </div>            
+            <table class="jb-table">
+              <colgroup>                
+                <col style="width: 2%" />
+                <col style="width: 20%" />
+                <col style="width: 15%" />
+                <col style="width: 6%" />                
+                <col style="width: 6%" />
+                <col style="width: 10%" />
+                <col style="width: 6%" />
+                <col />                
+              </colgroup>
+              <thead>              
+                <th><input type="checkbox" name="" id=""></th>
+                <th>영업사</th>
+                <th>요청자</th>
+                <th>캠페인명</th>
+                <th>집행일자</th>
+                <th>서비스</th>
+                <th>상태</th>
+                <th>캠페인관리</th>                
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>          
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(2);
+      loadSubMenu("2", 2);
+      loadLnb(2, 2, 3, 0);
+
+      const arrTable = Array(10).fill(["","","","","","",""]);            
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow(table, data, true));
+
+    </script>
+  </body>
+</html>

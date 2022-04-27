@@ -1072,6 +1072,20 @@ input[type=date]:after {
       border: solid 1px $colors_font;
       color: $colors_font;
     }
+    // &:disabled {
+    //   border: solid 1px $colors_line;
+    //   color: $font_color;
+    //   background-color: $gray100;
+    //   cursor: default;
+    // }
+  }
+  &.disable {
+    .btn-check {
+      border: solid 1px $colors_line;
+      color: $font_color;
+      background-color: $gray100;
+      cursor: default;  
+    }
   }
 }
 .btn-select-group {
@@ -1581,6 +1595,7 @@ strong {
 .width-168 {width: 168px;}
 .width-200 {width: 200px;}
 .width-220 {width: 220px;}
+.width-240 {width: 240px;}
 .width-104 {width: 104px;}
 .width-75 {width: 75px;}
 .width-94 {width: 94px;}
@@ -1720,3 +1735,4 @@ strong {
   .flex-row{display: flex; gap: 10px; align-items: center;}
   margin-bottom: 20px;
 }
+.flex-row{display: flex; gap: 10px; align-items: center;}

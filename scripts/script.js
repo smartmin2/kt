@@ -33,16 +33,15 @@
                      {name:'청약 승인', link:'/pages/contract/subscription_approval.html'},
                      {name:'모니터링(모니터링 청약)', link:'/pages/contract/monitor_approval.html'}]},
          {id: 2, name:'청약 관리', link:'', 
-            folder: [{name:'DEFAULT 광고 관리', link:''},
-                     {name:'포스트 디폴트 광고관리', link:''},
-                     {name:'구매요청', link:''},
-                     {name:'큐톤 필러 광고 관리', link:''},
-                     {name:'모니터링(모니터링 청약)', link:''}]},
+            folder: [{name:'DEFAULT 광고 관리', link:'/pages/contract/sub_default_ad.html'},
+                     {name:'포스트 디폴트 광고관리', link:'/pages/contract/sub_postplay_ad.html'},
+                     {name:'구매요청', link:'/pages/contract/purchase_request.html'},
+                     {name:'큐톤 필러 광고 관리', link:'/pages/contract/cuetone_filler_ad.html'},
+                     {name:'모니터링(모니터링 청약)', link:'/pages/contract/sub_monitoring.html'}]},
          {id: 3, name:'캠페인 추가 서비스', link:'', 
             folder: [{name:'동영상', link:''},                   
                      {name:'양방향', link:''},
-                     {name:'LiveAD 노출비율관리', link:''},
-                     {name:'Preplay우선순위관리', link:''}]}],
+                     {name:'LiveAD', link:''}]}],
     3 : [{id: 1, name:'영업권 관리', link:'', folder: []},
          {id: 2, name:'연간 광고주 관리', link:'', folder: []},
          {id: 3, name:'영업 진행 현황 관리', link:'', folder: []},
@@ -404,8 +403,14 @@ $(document).click(function (e) {
 $(".go-cam-list").on("click",function(){
  location.href = "campaign.html";
 }) 
-$(".go-cam-add").on("click",function(){
-  location.href = "campaign_add.html";
+$(".btn-cam-save").on("click",function(){
+  if ($(this).hasClass("modify")) {
+    $(".content-block.cam-info-main input").attr("disabled",true);  
+    $(this).removeClass("modify")
+  } else {
+    $(".content-block.cam-info-main input").attr("disabled",false);  
+    $(this).addClass("modify");
+  }
  }) 
  // --------- select ------------>>
 /* 셀렉트박스 보이게 하기 */

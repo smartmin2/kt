@@ -4055,7 +4055,9 @@
   }
   
   .content-block {  
-    margin-bottom: 40px; 
+    &:not(.cam-info-main){
+      margin-bottom: 40px; 
+    }
     .content-top .top-left {      
       // width: 336px;
       display: flex;
@@ -4706,7 +4708,7 @@
     border-radius: 8px;
     .content-info .setting-table {margin-bottom: 0;}
   }
-  .content-block.no-edge {
+  .content-block.no-edge:not(.default):not(.all-the-time) {
     padding: 0;        
     margin-bottom: 0;
   }
@@ -4715,30 +4717,21 @@
   &.campaign-detail {        
     .grid-container {
       display: grid;
-      grid-template-columns: 170px 1fr 170px 1fr;
-      grid-template-rows: 60px 60px 1fr 60px;
+      grid-template-columns: 170px 1fr 170px 1fr;      
+      grid-auto-flow: row;
       margin-bottom: 20px;
       .item {
         @include flex_center;
         border-bottom: 1px solid $gray600;
+        min-height: 60px;  
         &:nth-child(-n+4) {border-top: 1px solid $gray600;}
         &:nth-child(2),&:nth-child(4),&:nth-child(6),&:nth-child(8) {
           justify-content: flex-start;
-          padding-left: 20px;
+          padding: 0 20px;
         }
         &:nth-child(10) {
-          grid-column: 2 / 5;
-          grid-row: 3 / 4;
           padding: 20px;
-        }
-        &:nth-child(11) {
-          grid-column: 1 / 2;
-          grid-row: 4 / 5;
-        }
-        &:nth-child(12) {
-          grid-column: 2 / 5;
-          grid-row: 4 / 5;
-        }
+        }    
         &:nth-child(odd) {
           background-color: $colors_box;
           color: $colors_box_title;
@@ -4751,6 +4744,20 @@
     .btn-group {display: flex;justify-content: flex-end; gap: 10px;margin: 20px 0;}
 
     .content-block {
+      &.default {
+        margin-bottom: 0;
+      }
+      &.cam-info-main {
+        .btn-cam-save {
+          &:not(.modify):after {
+            content: "캠페인 수정";
+          }
+
+          &.modify:after {
+            content: "캠페인 저장";
+          }
+        }
+      }
       .button-group {        
         display: none;
         flex-direction: row;
@@ -4765,7 +4772,7 @@
     }    
     .content-block.default .content-info-detail {display: none;}
     // .content-block.default .content-top.open ~ .content-info-detail {display: block;}
-    .btn-group { margin-top: 0;margin-bottom: 40px;}
+    .btn-group { margin-top: 0;margin-bottom: 20px;}
     .table-wrapper {padding: 20px;}
     .flex-row{display: flex;gap: 10px;}
     table tbody tr td .btn-rec-teal {height: 25px;display: inline-block;}
@@ -4859,8 +4866,6 @@
   .btn-select-group {flex-wrap : wrap;}
 }
 
-.campaign-detail {
-}
 .modal-mat-batch {
   @include default_modal(1000px, 800px);
   display: none;
@@ -4944,8 +4949,11 @@
   }
 }
 .modal-detail-sub, .modal-stb-group {
-  @include default_modal(800px, auto);
+  @include default_modal(1500px, auto);
   display: none;
+  .table-body tr td:last-child {    
+    padding: 5px 20px;
+  }
 }
 .modal-send-sms {
   @include default_modal(600px, auto);
@@ -5208,6 +5216,36 @@
     background-color: $colors_box;
     margin-bottom: 20px;
   }  
+}
+.sub-default-ad {
+  table.jb-table {
+    thead th:last-child {
+      @include flex_center;
+      gap: 5px;
+
+    }
+  }
+}
+.sub-default-add {
+  .btn-catg-all {width: 168px;}
+}
+.cuetone-filler-ad {
+  table.jb-table {
+    thead th:last-child {
+      @include flex_center;
+      gap: 5px;
+
+    }
+  }
+  .table-body-main {
+    tr td:nth-child(2) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+.cuetone-filler-add {
+  .contents-wrapper .setting-grid .setting-grid-content > input[type=text] {width: 200px;}  
 }
 //--------------------inventory----------------------------
 table.jb-table thead.double {

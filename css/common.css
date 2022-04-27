@@ -1030,6 +1030,7 @@ input[type=date], input[type=month] {
   color: rgba(20, 31, 64, 0.83);
 }
 
+input[type="number"],
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -1041,40 +1042,47 @@ input[type="password"] {
   color: rgba(20, 31, 64, 0.8);
 }
 
+input[type="number"]:hover,
 input[type="text"]:hover,
 input[type="password"]:hover {
   border: 1px solid #8c8c8c;
 }
 
+input[type="number"]::-webkit-input-placeholder,
 input[type="text"]::-webkit-input-placeholder,
 input[type="password"]::-webkit-input-placeholder {
   opacity: 1;
   color: rgba(20, 31, 64, 0.5);
 }
 
+input[type="number"]:-ms-input-placeholder,
 input[type="text"]:-ms-input-placeholder,
 input[type="password"]:-ms-input-placeholder {
   opacity: 1;
   color: rgba(20, 31, 64, 0.5);
 }
 
+input[type="number"]::-ms-input-placeholder,
 input[type="text"]::-ms-input-placeholder,
 input[type="password"]::-ms-input-placeholder {
   opacity: 1;
   color: rgba(20, 31, 64, 0.5);
 }
 
+input[type="number"]::placeholder,
 input[type="text"]::placeholder,
 input[type="password"]::placeholder {
   opacity: 1;
   color: rgba(20, 31, 64, 0.5);
 }
 
+input[type="number"]:focus,
 input[type="text"]:focus,
 input[type="password"]:focus {
   border: 1px solid #141f40;
 }
 
+input[type="number"]:disabled,
 input[type="text"]:disabled,
 input[type="password"]:disabled {
   background-color: #f9fafd;
@@ -1156,6 +1164,10 @@ input[type=date]:after {
 
 .red {
   color: #d06062;
+}
+
+.red2 {
+  color: #eb5050;
 }
 
 .att-txt {
@@ -1490,6 +1502,13 @@ input[type=date]:after {
 .btn-check-group .btn-check.active {
   border: solid 1px #00aace;
   color: #00aace;
+}
+
+.btn-check-group.disable .btn-check {
+  border: solid 1px #bcbfc7;
+  color: #141f40;
+  background-color: #f9fafd;
+  cursor: default;
 }
 
 .btn-select-group {
@@ -2237,6 +2256,10 @@ strong.red {
   width: 220px;
 }
 
+.width-240 {
+  width: 240px;
+}
+
 .width-104 {
   width: 104px;
 }
@@ -2492,6 +2515,16 @@ strong.red {
 }
 
 .setting-grid .flex-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
