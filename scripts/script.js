@@ -58,7 +58,7 @@
          {id: 9, name:'캠페인 통합 카테고리 그룹 관리', link:'', folder: []},
          {id: 10, name:'가상 그룹 관리', link:'', folder: []},         
          {id: 11, name:'통합 카테고리 Slot관리(POST)', link:'', folder: []}],
-    5 : [{id: 1, name:'생성', link:'', folder: []},
+    5 : [{id: 1, name:'생성', link:'/pages/inventory/produce.html', folder: []},
          {id: 2, name:'동영상', link:'', 
             folder: [{name:'예측 및 확정', link:''},
                      {name:'사용 현황', link:'/pages/inventory/video_us.html'},
