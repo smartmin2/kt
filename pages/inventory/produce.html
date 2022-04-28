@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>인벤토리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>인벤토리</div>
+      <div>Live AD</div>
+      <div>사용현황</div>
+    </div>
+    <div class="main produce">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_08.svg" alt="lnb_08" />인벤토리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">생성</div>
+          <ul class="tab">
+            <li class="tab-menu active" data-tab="tab01">카테고리</li>
+            <li class="tab-menu" data-tab="tab02">프로그램</li>
+            <li class="tab-menu" data-tab="tab03">채널</li>
+          </ul>
+          <div class="tab-content active" id="tab01">
+            <div class="content-sub-title">시청횟수 정보 생성</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title">
+                  기준월
+                  <span class="ic-noti">
+                    <div class="noti-box">
+                      시청횟수 자료 요청한 후 5분~10분 소요됩니다.<br />
+                      ( SMS 전송 ) 자료가 준비되지 않은 경우 <br />
+                      운영자에게 문의하여 조치해야 합니다.<br />
+                    </div>
+                  </span>
+                </div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">2022년 12월</option>
+                    </select>
+                  </div>
+                  <button class="btn-rec-teal">시청횟수자료가져오기</button>
+                </div>
+              </div>
+            </div>
+            <div class="search-wrapper">
+              <div class="search-top">
+                <div class="content-sub-title">시청횟수 카테고리 맵핑</div>
+                <button class="btn-white new">신규추가</button>
+              </div>
+              <div class="search-edit-box">
+                <div class="search-edit-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">기준월</div>
+                    <div class="input-group">
+                      <select>
+                        <option>2022년 12월</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-edit-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">카테고리</div>
+                    <div class="input-group">
+                      <select>
+                        <option>전체</option>
+                      </select>
+                    </div>
+                    <span class="desc">즉시출력 (1Depth 미매핑 카테고리 <span class="red">22</span>/50)</span>
+                  </div>
+                </div>
+              </div>
+              <div class="search-bottom">
+                <button class="btn-common">조회</button>
+              </div>
+            </div>
+            <div class="table-wrapper">
+              <div class="table-top">
+                <div class="table-top-count">
+                  <div class="table-total-count">전체<span>1,256</span></div>
+                  <div class="table-view-count">
+                    <div class="input-group">
+                      <select>
+                        <option value="">10개</option>
+                        <option value="">20개</option>
+                        <option value="">30개</option>
+                        <option value="">50개</option>
+                        <option value="">100개</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="table-top-buttons">
+                  <button class="btn-common">삭제</button>
+                </div>
+              </div>
+              <table class="jb-table table">
+                <colgroup>
+                  <col style="width: 5%" />
+                  <col style="width: 8%" />
+                  <col style="width: 8%" />
+                  <col style="width: 8%" />
+                  <col style="width: 8%" />
+                  <col />
+                  <col />
+                  <col style="width: 5%" />
+                  <col style="width: 5%" />
+                  <col style="width: 5%" />
+                  <col style="width: 5%" />
+                  <col style="width: 5%" />
+                  <col style="width: 5%" />
+                  <col style="width: 5%" />
+                </colgroup>
+                <thead class="double">
+                  <tr>
+                    <th rowspan="2"><input type="checkbox" name="" id="" /></th>
+                    <th rowspan="2">Service</th>
+                    <th rowspan="2">1D ID</th>
+                    <th rowspan="2">1D 카테고리명</th>
+                    <th rowspan="2">2D ID</th>
+                    <th rowspan="2">2D 카테고리명</th>
+                    <th rowspan="2">통합카테고리매핑</th>
+                    <th rowspan="2">광고노출수</th>
+                    <th colspan="6">VOD 시청횟수</th>
+                  </tr>
+                  <tr>
+                    <th>Preplay</th>
+                    <th>PreplayS</th>
+                    <th>Postplay</th>
+                    <th>ADQ</th>
+                    <th>MovieIntro</th>
+                    <th>Pause</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td rowspan="4"><input type="checkbox" name="" id="" /></td>
+                    <td rowspan="4">ICOD</td>
+                    <td rowspan="4">0000</td>
+                    <td rowspan="4">Test</td>
+                    <td>0000</td>
+                    <td>1.영상테스트</td>
+                    <td>
+                      <div><button class="btn-white">0000/테스트</button></div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>0000</td>
+                    <td>1.영상테스트</td>
+                    <td>
+                      <div><button class="btn-white">0000/테스트</button></div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>0000</td>
+                    <td>1.영상테스트</td>
+                    <td>
+                      <div><button class="btn-white">0000/테스트</button></div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>0000</td>
+                    <td>1.영상테스트</td>
+                    <td>
+                      <div><button class="btn-white">0000/테스트</button></div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2"><input type="checkbox" name="" id="" /></td>
+                    <td rowspan="2">ICOD</td>
+                    <td rowspan="2">0000</td>
+                    <td rowspan="2">Test</td>
+                    <td>0000</td>
+                    <td>1.영상테스트</td>
+                    <td>
+                      <div><button class="btn-white">0000/테스트</button></div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                  <tr>
+                    <td>0000</td>
+                    <td>1.영상테스트</td>
+                    <td>
+                      <div><button class="btn-white">0000/테스트</button></div>
+                    </td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination">
+                <li>
+                  <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                </li>
+                <li><a href="#" class="num">1</a></li>
+                <li><a href="#" class="num active">2</a></li>
+                <li><a href="#" class="num">3</a></li>
+                <li><a href="#" class="num">4</a></li>
+                <li><a href="#" class="num">5</a></li>
+                <li><a href="#" class="num">6</a></li>
+                <li><a href="#" class="num">7</a></li>
+                <li><a href="#" class="num">8</a></li>
+                <li><a href="#" class="num">9</a></li>
+                <li><a href="#" class="num">10</a></li>
+                <li>
+                  <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-sub-title">인벤토리 기초 데이터 생성</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title">기준월</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">2022년 12월</option>
+                    </select>
+                  </div>
+                  <button class="btn-rec-teal">인벤토리 기초 데이터 생성</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab02">
+            <div class="content-sub-title">시청횟수 정보 생성</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title">
+                  기준월
+                  <span class="ic-noti">
+                    <div class="noti-box">선택한 달의 시청자료를 가져옵니다.</div>
+                  </span>
+                </div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">2022년 12월</option>
+                    </select>
+                  </div>
+                  <button class="btn-rec-teal">시청횟수자료가져오기</button>
+                </div>
+              </div>
+            </div>
+            <div class="search-wrapper">
+              <div class="search-top">
+                <div class="content-sub-title">시청횟수 카테고리 맵핑</div>
+                <button class="btn-white new">신규추가</button>
+              </div>
+            </div>
+            <div class="img-box">
+              <div class="preplay">PrePlay+</div>
+            </div>
+            <ul class="tab02">
+              <li class="tab02-menu active" data-tab="tab04">시리즈</li>
+              <li class="tab02-menu" data-tab="tab05">콘텐츠</li>
+            </ul>
+            <div class="tab02-content active" id="tab04">
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">기준월</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="">2022년 12월</option>
+                      </select>
+                    </div>
+                    <button class="btn-rec-teal">조회</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">시청초수제한</div>
+                  <div class="setting-table-content">
+                    <input type="text" name="" id="" />
+                    <button class="btn-rec-teal">수정</button>
+                  </div>
+                </div>
+              </div>
+              <div class="table-wrapper">
+                <div class="table-top">
+                  <div class="table-top-count"></div>
+                  <div class="table-top-buttons">
+                    <button class="btn-common">삭제</button>
+                  </div>
+                </div>
+                <table class="jb-table table1">
+                  <colgroup>
+                    <col style="width: 5%" />
+                    <col style="width: 20%" />
+                    <col style="width: 20%" />
+                    <col />
+                    <col style="width: 10%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name="" id="" /></th>
+                      <th>구분</th>
+                      <th>카테고리ID</th>
+                      <th>카테고리명</th>
+                      <th>상태</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td rowspan="2" class="bg">제외카테고리</td>
+                      <td>00000000</td>
+                      <td>클라우드DVD관 > HOT&NEW</td>
+                      <td><span class="ic-error">오류</span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td>00000000</td>
+                      <td>클라우드DVD관 > HOT&NEW</td>
+                      <td><span class="ic-error">오류</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <div class="table-top">
+                  <div class="table-top-count">
+                    <span class="desc">아래 카테고리 정보에서 카테고리를 선택하시면 제외 카테고리로 설정 됩니다.</span>
+                  </div>
+                  <div class="table-top-buttons">
+                    <button class="btn-common">삭제</button>
+                  </div>
+                </div>
+                <table class="jb-table table2">
+                  <colgroup>
+                    <col style="width: 5%" />
+                    <col style="width: 12%" />
+                    <col style="width: 8%" />
+                    <col />
+                    <col style="width: 12%" />
+                    <col style="width: 12%" />
+                    <col style="width: 12%" />
+                    <col style="width: 12%" />
+                    <col style="width: 10%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name="" id="" /></th>
+                      <th>프로그램명</th>
+                      <th>프로그램명ID</th>
+                      <th>카테고리 경로</th>
+                      <th>원천 카테고리명</th>
+                      <th>원천 카테고리ID</th>
+                      <th>인벤토리 초수</th>
+                      <th>시청 횟수</th>
+                      <th>상태</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td rowspan="2">꽃피면 달 생각하고</td>
+                      <td rowspan="2">0000</td>
+                      <td class="underline">TV다시보기>KBD>드라마</td>
+                      <td>꽃피면 달 생각하고</td>
+                      <td>00000000</td>
+                      <td>1,000,000</td>
+                      <td>100,000</td>
+                      <td><span class="ic-normal">정상</span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td class="underline">TV다시보기>KBD>드라마</td>
+                      <td>꽃피면 달 생각하고</td>
+                      <td>00000000</td>
+                      <td>1,000,000</td>
+                      <td>100,000</td>
+                      <td><span class="ic-normal">정상</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                  </li>
+                  <li><a href="#" class="num">1</a></li>
+                  <li><a href="#" class="num active">2</a></li>
+                  <li><a href="#" class="num">3</a></li>
+                  <li><a href="#" class="num">4</a></li>
+                  <li><a href="#" class="num">5</a></li>
+                  <li><a href="#" class="num">6</a></li>
+                  <li><a href="#" class="num">7</a></li>
+                  <li><a href="#" class="num">8</a></li>
+                  <li><a href="#" class="num">9</a></li>
+                  <li><a href="#" class="num">10</a></li>
+                  <li>
+                    <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-sub-title">인벤토리 기초 데이터 생성</div>
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">
+                    기준월
+                    <span class="ic-noti">
+                      <div class="noti-box">기초 데이터 생성 완료 후 "인벤토리 관리 > 예측 및 확정" 메뉴를 통해서 생성 된 인벤토리를 확인 후 확정 하시기 바랍니다.</div>
+                    </span>
+                  </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="">2022년 12월</option>
+                      </select>
+                    </div>
+                    <button class="btn-rec-teal">인벤토리 기초 데이터 생성</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab02-content" id="tab05">
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">기준월</div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="">2022년 12월</option>
+                      </select>
+                    </div>
+                    <button class="btn-rec-teal">조회</button>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">시청초수제한</div>
+                  <div class="setting-table-content">
+                    <input type="text" name="" id="" />
+                    <button class="btn-rec-teal">수정</button>
+                  </div>
+                </div>
+              </div>
+              <div class="table-wrapper">
+                <div class="table-top">
+                  <div class="table-top-count"></div>
+                  <div class="table-top-buttons">
+                    <button class="btn-common">삭제</button>
+                  </div>
+                </div>
+                <table class="jb-table table1">
+                  <colgroup>
+                    <col style="width: 5%" />
+                    <col style="width: 20%" />
+                    <col style="width: 20%" />
+                    <col />
+                    <col style="width: 10%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name="" id="" /></th>
+                      <th>구분</th>
+                      <th>카테고리ID</th>
+                      <th>카테고리명</th>
+                      <th>상태</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td rowspan="2" class="bg">제외카테고리</td>
+                      <td>00000000</td>
+                      <td>클라우드DVD관 > HOT&NEW</td>
+                      <td><span class="ic-error">오류</span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td>00000000</td>
+                      <td>클라우드DVD관 > HOT&NEW</td>
+                      <td><span class="ic-error">오류</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="table-wrapper">
+                <div class="table-top">
+                  <div class="table-top-count">
+                    <span class="desc">아래 카테고리 정보에서 카테고리를 선택하시면 제외 카테고리로 설정 됩니다.</span>
+                  </div>
+                  <div class="table-top-buttons">
+                    <button class="btn-common">삭제</button>
+                  </div>
+                </div>
+                <table class="jb-table table2">
+                  <colgroup>
+                    <col style="width: 5%" />
+                    <col style="width: 12%" />
+                    <col style="width: 8%" />
+                    <col />
+                    <col style="width: 12%" />
+                    <col style="width: 12%" />
+                    <col style="width: 12%" />
+                    <col style="width: 12%" />
+                    <col style="width: 10%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th><input type="checkbox" name="" id="" /></th>
+                      <th>프로그램명</th>
+                      <th>프로그램명ID</th>
+                      <th>카테고리 경로</th>
+                      <th>원천 카테고리명</th>
+                      <th>원천 카테고리ID</th>
+                      <th>인벤토리 초수</th>
+                      <th>시청 횟수</th>
+                      <th>상태</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td rowspan="2">꽃피면 달 생각하고</td>
+                      <td rowspan="2">0000</td>
+                      <td class="underline">TV다시보기>KBD>드라마</td>
+                      <td>꽃피면 달 생각하고</td>
+                      <td>00000000</td>
+                      <td>1,000,000</td>
+                      <td>100,000</td>
+                      <td><span class="ic-normal">정상</span></td>
+                    </tr>
+                    <tr>
+                      <td class="bg"><input type="checkbox" name="" id="" /></td>
+                      <td class="underline">TV다시보기>KBD>드라마</td>
+                      <td>꽃피면 달 생각하고</td>
+                      <td>00000000</td>
+                      <td>1,000,000</td>
+                      <td>100,000</td>
+                      <td><span class="ic-normal">정상</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                  </li>
+                  <li><a href="#" class="num">1</a></li>
+                  <li><a href="#" class="num active">2</a></li>
+                  <li><a href="#" class="num">3</a></li>
+                  <li><a href="#" class="num">4</a></li>
+                  <li><a href="#" class="num">5</a></li>
+                  <li><a href="#" class="num">6</a></li>
+                  <li><a href="#" class="num">7</a></li>
+                  <li><a href="#" class="num">8</a></li>
+                  <li><a href="#" class="num">9</a></li>
+                  <li><a href="#" class="num">10</a></li>
+                  <li>
+                    <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-sub-title">인벤토리 기초 데이터 생성</div>
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">
+                    기준월
+                    <span class="ic-noti">
+                      <div class="noti-box">기초 데이터 생성 완료 후 "인벤토리 관리 > 예측 및 확정" 메뉴를 통해서 생성 된 인벤토리를 확인 후 확정 하시기 바랍니다.</div>
+                    </span>
+                  </div>
+                  <div class="setting-table-content">
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="">2022년 12월</option>
+                      </select>
+                    </div>
+                    <button class="btn-rec-teal">인벤토리 기초 데이터 생성</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content" id="tab03">
+            <div class="content-sub-title">시청횟수 정보 생성</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title">기준월</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">2022년 12월</option>
+                    </select>
+                  </div>
+                  <button class="btn-rec-teal">시청횟수자료가져오기</button>
+                </div>
+              </div>
+            </div>
+            <div class="search-wrapper">
+              <div class="search-top">
+                <div class="content-sub-title">시청횟수 카테고리 맵핑</div>
+                <button class="btn-white new">신규추가</button>
+              </div>
+              <div class="search-edit-box">
+                <div class="search-edit-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">기준월</div>
+                    <div class="input-group">
+                      <select>
+                        <option>2022년 12월</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="search-bottom">
+                <button class="btn-common">조회</button>
+              </div>
+            </div>
+            <div class="table-wrapper">
+              <div class="table-top">
+                <div class="table-top-count">
+                  <div class="table-total-count">전체<span>1,256</span></div>
+                  <div class="table-view-count">
+                    <div class="input-group">
+                      <select>
+                        <option value="">10개</option>
+                        <option value="">20개</option>
+                        <option value="">30개</option>
+                        <option value="">50개</option>
+                        <option value="">100개</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <table class="jb-table table5">
+                <colgroup>
+                  <col style="width: 20%" />
+                  <col />
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>채널분류</th>
+                    <th>채널</th>
+                    <th>서비스ID</th>
+                    <th>Cue송출횟수</th>
+                    <th>인벤토리</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>공공/공익/정보</td>
+                    <td>YTN2</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td rowspan="3">뉴스/경제</td>
+                    <td>이데일리TV</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>YTN</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>연합뉴스TV</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>1,000,000</td>
+                  </tr>
+                  <tr>
+                    <td>다큐교양</td>
+                    <td>YTN사이언스</td>
+                    <td>000</td>
+                    <td>000</td>
+                    <td>1,000,000</td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination">
+                <li>
+                  <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                </li>
+                <li><a href="#" class="num">1</a></li>
+                <li><a href="#" class="num active">2</a></li>
+                <li><a href="#" class="num">3</a></li>
+                <li><a href="#" class="num">4</a></li>
+                <li><a href="#" class="num">5</a></li>
+                <li><a href="#" class="num">6</a></li>
+                <li><a href="#" class="num">7</a></li>
+                <li><a href="#" class="num">8</a></li>
+                <li><a href="#" class="num">9</a></li>
+                <li><a href="#" class="num">10</a></li>
+                <li>
+                  <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+            <div class="content-sub-title">인벤토리 기초 데이터 생성</div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title">기준월</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">2022년 12월</option>
+                    </select>
+                  </div>
+                  <button class="btn-rec-teal">인벤토리 기초 데이터 생성</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-category-add modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">카테고리 추가</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">기준월</div>
+            <div class="setting-table-content">2022년 01월</div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">서비스</div>
+            <div class="setting-table-content">
+              <div class="input-group">
+                <select name="" id="">
+                  <option value="">PrePlay</option>
+                  <option value="">PrePlayS</option>
+                  <option value="">ADQ</option>
+                  <option value="">MovieIntro</option>
+                  <option value="">Pause</option>
+                  <option value="">PostPlay</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title ic-title-nece">카테고리</div>
+            <div class="setting-table-content">
+              <input type="text" name="" id="" />
+              <button class="btn-rec-teal search">검색</button>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title ic-title-nece">시청횟수</div>
+            <div class="setting-table-content">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-icod-cate modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">ICOD 카테고리</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">
+          <div class="search-edit-box">
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">카테고리명</div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="tree-box">
+          <div id="tree"></div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-category-modify modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">수정</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row double-cont">
+            <div class="setting-table-title">통합카테고리매핑</div>
+            <div class="setting-table-content">
+              <div class="sub-content other">
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">KBS</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="sub-content">
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">전체</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-program-add modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">시리즈 프로그램 추가</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">구분</div>
+            <div class="setting-table-content">
+              <div class="input-group">
+                <select name="" id="">
+                  <option value="">전체</option>
+                  <option value="">통합시리즈</option>
+                  <option value="">통합콘텐츠</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title ic-title-nece">프로그램명</div>
+            <div class="setting-table-content">
+              <input type="text" name="" id="" />
+            </div>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+              <div class="table-view-count">
+                <div class="input-group">
+                  <select>
+                    <option value="">10개</option>
+                    <option value="">20개</option>
+                    <option value="">30개</option>
+                    <option value="">50개</option>
+                    <option value="">100개</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <table class="jb-table table4">
+            <colgroup>
+              <col style="width: 18%" />
+              <col />
+              <col style="width: 18%" />
+              <col style="width: 18%" />
+              <col style="width: 18%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>구분</th>
+                <th>카테고리</th>
+                <th>프로그램ID</th>
+                <th>프로그램명</th>
+                <th>시리즈명</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+              <tr>
+                <td>통합시리즈</td>
+                <td>VOD카테고리 > TV다시보기 > MBC > 예능 > OPAL이 빛나는 밤</td>
+                <td>90000000012542</td>
+                <td>
+                  <div><button class="btn-white">OPAL이 빛나는 밤</button></div>
+                </td>
+                <td>(소장용) 히나마츠리</td>
+              </tr>
+              <tr>
+                <td>통합시리즈</td>
+                <td>VOD카테고리 > TV다시보기 > MBC > 예능 > OPAL이 빛나는 밤</td>
+                <td>90000000012542</td>
+                <td>
+                  <div><button class="btn-white">OPAL이 빛나는 밤</button></div>
+                </td>
+                <td>(소장용) 히나마츠리</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="setting-table">
+          <div class="row other">
+            <div class="setting-table-title">선택</div>
+            <div class="setting-table-content flex-col">
+              <p>기준월 : <span>2022년 02월</span></p>
+              <p>프로그램 ID : <span>9000000012542</span></p>
+              <p>프로그램명 : <span>OPAL이 빛나는 밤</span></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">시청횟수</div>
+            <div class="setting-table-content">
+              <input type="text" name="" id="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-channel-add modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">채널 추가</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">기준월</div>
+            <div class="setting-table-content">2022년 01월</div>
+          </div>
+          <div class="row other">
+            <div class="setting-table-title">채널분류</div>
+            <div class="setting-table-content">
+              <div class="toggle-wrap">
+                <button class="btn-toggle">CJE&M</button>
+                <button class="btn-toggle">드라마/예능</button>
+                <button class="btn-toggle">보도</button>
+                <button class="btn-toggle">스포츠 골프</button>
+                <button class="btn-toggle">스포츠 종합</button>
+                <button class="btn-toggle">영화</button>
+                <button class="btn-toggle">유아/애니</button>
+                <button class="btn-toggle">음악</button>
+                <button class="btn-toggle">정보/교육</button>
+                <button class="btn-toggle">종교</button>
+                <button class="btn-toggle">종합편성</button>
+                <button class="btn-toggle">지상파</button>
+                <button class="btn-toggle">지상파 MPP</button>
+                <button class="btn-toggle">홈쇼핑</button>
+                <button class="btn-toggle">기타</button>
+              </div>
+            </div>
+          </div>
+          <div class="row other">
+            <div class="setting-table-title">채널명</div>
+            <div class="setting-table-content">
+              <div class="toggle-box">
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+                <button class="btn-toggle">%채널명%</button>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">Cue 송출횟수</div>
+            <div class="setting-table-content">
+              <input type="number" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">인벤토리</div>
+            <div class="setting-table-content">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/jstree.min.js"></script>
+    <script>
+      loadMainMenu(5);
+      loadSubMenu("5", 1);
+      loadLnb(5, 1, 0, 0);
+
+      $("#tab01 .btn-white.new").on("click", function () {
+        $(".modal-category-add").show();
+      });
+      $(".btn-rec-teal.search").on("click", function () {
+        $(".modal-icod-cate").show();
+      });
+      // file tree
+      $("#tree").jstree({
+        core: {
+          data: [
+            {
+              text: "VOD 카테고리",
+              state: {
+                opened: true,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "EBS 교육",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "초등학습",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "TV앱",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+          ],
+        },
+      });
+
+      $(".table td div .btn-white").on("click", function () {
+        $(".modal-category-modify").show();
+      });
+
+      $("#tab02 .btn-white.new").on("click", function () {
+        $(".modal-program-add").show();
+      });
+      $("#tab03 .btn-white.new").on("click", function () {
+        $(".modal-channel-add").show();
+      });
+    </script>
+  </body>
+</html>
