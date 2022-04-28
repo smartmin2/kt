@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>캠페인</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>캠페인 관리</div>
+    <div>캠페인 추가 서비스</div>
+    <div>동영상</div>
+  </div>
+  <div class="main campaign-video">
+    <div class="common-box common-body">
+      <div class="sub-menu-wrapper">
+        <div class="sub-menu-title">
+            캠페인 관리
+        </div>
+        <ul class="sub-menu"></ul>
+      </div>
+      <div class="contents-wrapper">
+        <div class="content-title">동영상</div>
+        <div class="search-wrapper">
+          <div class="search-top">
+            <div class="content-sub-title">조회조건설정</div>              
+          </div>                        
+          <div class="search-table-box">
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">캠페인명</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>          
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">기간</div>                    
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10">
+                    <span>~</span>
+                    <input type="date" value="2021-02-10">
+                  </div>
+                </div>                  
+              </div>                      
+            </div>              
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">광고주</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">영업사</div>                    
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="" selected>전체</option>
+                      <option value="">영업사1</option>
+                      <option value="">영업사2</option>
+                      <option value="">영업사3</option>
+                      <option value="">영업사4</option>
+                      <option value="">영업사5</option>
+                    </select>
+                  </div>
+                </div>   
+              </div>
+            </div>
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">브랜드</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">대행사</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+            </div>
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">서비스</div>                    
+                  <div class="btn-check-group">
+                    <button class="btn-check active">전체</button>
+                    <button class="btn-check">PrePlay</button>
+                    <button class="btn-check">PrePlay+</button>
+                    <button class="btn-check">PrePlayS</button>
+                    <button class="btn-check">MovieIntro</button>
+                    <button class="btn-check">PostPlay+</button>
+                  </div>                           
+                </div>                  
+              </div>
+            </div>
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+              <div class="table-view-count">
+                <div class="input-group">
+                  <select>
+                    <option value="">10개</option>
+                    <option value="">20개</option>
+                    <option value="">30개</option>                        
+                    <option value="">50개</option>                        
+                    <option value="">100개</option>                                              
+                  </select>
+                </div>                      
+              </div>
+            </div>  
+            <div class="table-top-buttons">                
+              <button class="btn-excel"><img>엑셀다운로드</button>
+            </div>            
+          </div>     
+          <div class="jb-table-wrapper">
+            <table class="jb-table">
+              <colgroup>                
+                <col style="width: 5%" />
+                <col style="width: 6%" />
+                <col />
+                <col style="width: 4%" />                
+                <col style="width: 8%" />
+                <col style="width: 2%" />
+                <col style="width: 3%" />
+                <col style="width: 4%" />
+                <col style="width: 8%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 5%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+              </colgroup>
+              <thead>              
+                <tr>
+                  <th rowspan="2">광고주</th>
+                  <th rowspan="2">영업사</th>
+                  <th rowspan="2">캠페인명</th>
+                  <th rowspan="2">총금액</th>
+                  <th rowspan="2">집행일자</th>
+                  <th colspan="3" class="bottom-line">노출량</th>
+                  <th colspan="4" class="bottom-line">
+                    <div class="multi-group flex-row">
+                      노출량관리
+                      <button class="btn-rec-teal">전체적용</button>
+                    </div>
+                  </th>
+                  <th colspan="5" class="bottom-line">송출정보</th>                  
+                </tr>
+                <tr>
+                  <th>서비스</th>
+                  <th>개런티</th>
+                  <th>추가노출량</th>
+                  <th>
+                    <div class="multi-group flex-row">
+                      버퍼비율
+                      <input type="checkbox" name="" id="">
+                      <input type="text" name="" id="">%
+                    </div>
+                    <div class="multi-group flex-row">
+                      <button class="btn-rec-teal">일괄적용</button>
+                      <button class="btn-rec-teal btn-program">프로그램</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="multi-group flex-row">
+                      추가서비스비율
+                      <input type="checkbox" name="" id="">
+                      <input type="text" name="" id="">%                        
+                    </div>
+                    <div class="multi-group">
+                      <button class="btn-rec-teal">일괄적용</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="multi-group flex-row">
+                      추가서비스여부
+                      <input type="checkbox" name="" id="">
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="" selected>ON</option>
+                          <option value="">OFF</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="multi-group">
+                      <button class="btn-rec-teal">일괄적용</button>
+                    </div>
+                  </th>
+                  <th>
+                    <div class="multi-group flex-row">
+                      광고우선순위
+                      <input type="checkbox" name="" id="">
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="">PPFT</option>
+                          <option value="">PPST</option>
+                          <option value="" selected>PPT</option>
+                          <option value="">PP</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="multi-group">
+                      <button class="btn-rec-teal">일괄적용</button>
+                    </div>
+                  </th>
+                  <th>총 달성율</th>
+                  <th>총 노출수</th>
+                  <th>경과일</th>
+                  <th>경과율</th>
+                  <th>진도율</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td>세스코</td>
+                  <td>(주)나스미디어</td>
+                  <td>세스코 22년 2월</td>
+                  <td>30,000,000</td>
+                  <td>220128 ~ 220210</td>
+                  <td>PP</td>
+                  <td>583,334</td>
+                  <td>0</td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <input type="text" name="" id="">%
+                      <button class="btn-rec-teal">적용</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <input type="text" name="" id="">%
+                      <button class="btn-rec-teal">적용</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="" selected>ON</option>
+                          <option value="">OFF</option>
+                        </select>
+                      </div>
+                      <button class="btn-rec-teal">적용</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="">PPFT</option>
+                          <option value="">PPST</option>
+                          <option value="" selected>PPT</option>
+                          <option value="">PP</option>
+                        </select>
+                      </div>
+                      <button class="btn-rec-teal">적용</button>
+                    </div>
+                  </td>
+                  <td>0.6%</td>
+                  <td>0</td>
+                  <td>1일/19일</td>
+                  <td>5.3%</td>
+                  <td>5.3%</td>
+                </tr>
+                <tr>
+                  <td>(주)대력</td>
+                  <td>(주)나스미디어</td>
+                  <td>22년 2월 대력_삼광생와사비</td>
+                  <td>5,000,000</td>
+                  <td>220201 ~ 220228</td>
+                  <td>PP+</td>
+                  <td>233,334</td>
+                  <td>0</td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <input type="text" name="" id="">%
+                    </div>
+                    <div class="multi-group">
+                      <button class="btn-rec-teal">적용</button>
+                      <button class="btn-rec-teal btn-program">프로그램</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <input type="text" name="" id="">%
+                      <button class="btn-rec-teal">적용</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="" selected>ON</option>
+                          <option value="">OFF</option>
+                        </select>
+                      </div>
+                      <button class="btn-rec-teal">적용</button>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="multi-group">
+                      <input type="checkbox" name="" id="">
+                      <div class="input-group">
+                        <select name="" id="">
+                          <option value="">PPFT</option>
+                          <option value="">PPST</option>
+                          <option value="" selected>PPT</option>
+                          <option value="">PP</option>
+                        </select>
+                      </div>
+                      <button class="btn-rec-teal">적용</button>
+                    </div>
+                  </td>
+                  <td>0.6%</td>
+                  <td>0</td>
+                  <td>1일/19일</td>
+                  <td>5.3%</td>
+                  <td>5.3%</td>
+                </tr>
+              </tbody>
+            </table>          
+          </div>       
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>  
+  <div class="footer-wrapper">
+    <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+    <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+  </div>
+
+  <div id="modal-background"></div>
+  <div class="modal-con modal-prog-buffer common-box">      
+    <div class="modal-top">
+      <div class="box-title">프로그램 버퍼비율관리</div>
+      <div class="ic-modal-close close"></div>
+    </div>
+    <div class="modal-body">
+      <div class="table-wrapper">
+        <div class="table-top">
+          <div class="table-top-count">            
+          </div>
+          <div class="table-top-buttons">            
+            <button class="btn-common">등록</button>
+            <button class="btn-white">삭제</button>
+          </div>
+        </div>
+        <table class="jb-table table1">
+          <colgroup>              
+            <col style="width: 4%" />                          
+            <col />          
+            <col style="width: 25%" />
+            <col style="width: 40%" />
+          </colgroup>
+          <thead>
+            <th><input type="checkbox" name="" id=""></th>            
+            <th>프로그램</th>
+            <th>
+              버퍼비율
+              <div class="multi-group">
+                <input type="text" name="" id="">%
+                <button class="btn-rec-teal">적용</button>
+              </div>
+            </th>
+            <th>사용기간
+              <div class="multi-group">
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+                <button class="btn-rec-teal">적용</button>
+              </div>
+            </th>            
+          </thead>
+          <tbody class="modal-table-body">
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>2021 세계테마기행</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>검은태양</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>결혼작사 이혼작곡</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>고스트 닥터</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>골 때리는 그녀들</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>공작도시</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>구해줘! 홈즈</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>국가대표 와이프</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>국민가수</td>
+              <td>
+                <div class="multi-group">
+                  <input type="text" name="" id="">%
+                </div>
+              </td>
+              <td>
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-bottom">        
+      <button class="btn-white close">취소</button>
+    </div>
+  </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(2);
+      loadSubMenu("2", 3);
+      loadLnb(2, 3, 1, 0);
+
+      $(".btn-program").on("click", function(){     
+        $("#modal-background").fadeIn(300);
+        $(".modal-prog-buffer").css("display", "flex").hide().fadeIn();        
+        $("body").css("overflow", "hidden");
+      })
+    </script>
+  </body>
+</html>
