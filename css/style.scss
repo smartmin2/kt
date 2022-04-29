@@ -6018,17 +6018,357 @@ table.jb-table thead.double {
   }
 }
 .modal-bk-add {
-  @include default_modal(auto, auto);
+  @include default_modal(1200px, auto);
+  display: none;
+  .table-top {
+    font-size: 18px;
+    font-weight: bold;
+    color: #35497b;
+  }
+  .table-top-sub {
   display: flex;
-
+    align-items: center;
+    justify-content: space-between;
+  }
+  .table-bottom {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .flex-ct {
+    @include flex_center;
+    gap: 4px;
+  }
   table.table1 tbody tr td {
     padding: 0;
- 
   }
 }
-
-
-
+//video-plusbk-status
+.video-plusbk-status {
+  table.table tbody tr td {
+    &:nth-child(2),
+    &:nth-child(5) {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+}
+.modal-bk-status,
+.modal-bk-program {
+  @include default_modal(auto, auto);
+  display: none;
+}
+//video-plusbk-open
+.video-plusbk-open {
+  .flex-ct {
+    @include flex_center;
+    gap: 4px;
+  }
+  .content-title {
+    &:nth-child(2) {
+      margin-bottom: 10px;
+    }
+  }
+  .submit-btn-group {
+    justify-content: center;
+  }
+  table.table {
+    margin-bottom: 20px;
+    thead {
+      height: 45px;
+    }
+  }
+  th:last-child {
+    input {
+      width: 50px;
+    }
+    .flex-ct {
+      gap: 10px;
+    }
+  }
+  .btn-rec-teal {
+    white-space: nowrap;
+  }
+}
+.modal-bkopen-add {
+  @include default_modal(auto, auto);
+  display: none;
+  .input-date-group {
+    width: 100%;
+    gap: 10px;
+    span {
+      width: auto;
+    }
+    .input-group {
+      width: 80px;
+    }
+  }
+}
+.video-inven-check {
+  .toggle-wrap,
+  .toggle-sub-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .toggle-sub-wrap {
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  .input-title {
+    min-width: 103px;
+  }
+  .search-wrapper .search-edit-box .search-edit-detail {
+    &.flexauto {
+      flex: auto;
+    }
+  }
+  .result-wrap {
+    .content-sub-title {
+      margin-bottom: 20px;
+    }
+    .setting-table {
+      overflow: initial;
+    }
+    .noti-box {
+      height: auto;
+    }
+  }
+}
+//video-booking
+.video-booking {
+  .content-title-span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+    p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #35497b;
+      margin-bottom: 30px;
+    }
+  }
+  .table-wrapper {
+    margin-bottom: 20px;
+  }
+}
+//video-booking-open
+.video-booking-open {
+  .table-wrapper {
+    margin-bottom: 20px;
+    table.jb-table.table thead.double{
+      tr{
+        &:first-child{
+          th{
+            &:first-child{
+              border-bottom-left-radius: 0;
+            }
+            &:last-child{
+              border-bottom-right-radius: 0;
+            }
+          }
+        }
+        &:last-child{
+          th{
+            &:first-child{
+              border-bottom-left-radius: 10px;
+            }
+            &:last-child{
+              border-bottom-right-radius: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .btn-common {
+    width: auto;
+    padding: 0 10px;
+  }
+  .table-top-count {
+    p {
+      font-size: 18px;
+      font-weight: bold;
+      color: #35497b;
+      margin-bottom: 30px;
+    }
+  }
+}
+//twoway-cf
+.twoway-cf {
+.table-wrapper{
+  .content-title{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .noti-box{
+    height: auto;
+  }
+}
+table.jb-table thead.double{
+  height: 70px;
+  tr {
+    &:first-child {
+      height: 30px;
+    }
+    &:last-child {
+      height:40px;
+    }
+  }
+}
+  .table {
+    tr {
+      &:last-child {
+        height: 30px;
+      }
+    }
+  }
+  table.jb-table tbody {
+    tr {
+      height: auto;
+    }
+    td {
+      padding: 8px 15px;
+      &:last-child {
+        .flex-ct {
+          &:first-child {
+            button {
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+  .search-bottom {
+    justify-content: flex-end;
+  }
+  .sub-total {
+    background-color: $sub_total;
+  }
+  .table {
+    margin-bottom: 20px;
+  }
+  .flex-ct {
+    @include flex_center;
+  }
+  .flex-lf {
+    display: flex;
+    align-items: center;
+  }
+  .flex-ct,
+  .flex-lf {
+    gap: 5px;
+    .btn-rec-teal {
+      width: 72px;
+      height: 20px;
+      font-weight: normal;
+    }
+    input[type="number"] {
+      &.w90 {
+        width: 90px;
+        margin-top: 4px;
+      }
+      width: 60px;
+      padding: 0 10px;
+    }
+  }
+}
+///video-pp-inven
+.video-pp-inven{
+  .flex-ct {
+    @include flex_center;
+    gap:5px;
+    input[type="number"] {
+      &.w90 {
+        width: 90px;
+        margin-top: 4px;
+      }
+      width: 60px;
+      padding: 0 10px;
+    }
+  }
+}
+//livead-inven
+.livead-inven{
+  .tab{
+    border-bottom: 0;
+  }
+  .tab-menu{
+    font-size: 13px;
+    &.active{
+      color: #00aace;
+      border-bottom: 1px solid #1bc1db;
+    }
+  }
+  #tab03{
+    .table-wrapper{
+      width:1280px;
+      @include scrollbar("H");
+    }
+  }
+  .btn-toggle{
+    width:auto;
+    padding:0 10px;
+  }
+  .input-title{
+    min-width:103px;
+  }
+  .search-edit-detail{
+    justify-content: center;
+    margin-bottom: 10px;
+    &:nth-child(3){
+      .area-box{
+        display: none;
+      }
+      span{
+        display: inline-block;
+        margin-right: 10px;
+      }
+      .toggle-wrap{
+        &:first-child{
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &:last-child{
+      .toggle-wrap{
+        flex-wrap: wrap;
+        &:first-child{
+          margin-bottom: 10px;
+        }
+        &:last-child{
+          .btn-toggle{
+            width:auto;
+            padding:0 10px;
+          }
+        }
+      }
+    }
+  }
+  .toggle-wrap,
+  .toggle-sub-wrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 300px;
+  }
+ 
+  .toggle-wrapper{
+    flex-flow: column;
+    min-width: 300px;
+  }
+  .toggle-sub-wrap {
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+  // .search-wrapper .search-edit-box .search-edit-detail {
+  //   width:100%;
+  //   flex:auto;
+  // }
+}
 //------------------------------------------------------
 //----------------------report--------------------------------
 
