@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path style="fill:none" d="M0 0h32v32H0z"/>
+    <g transform="translate(1.5 2)">
+        <g data-name="사각형 384" transform="translate(.5)" style="stroke:#1bc1db;stroke-width:1.5px;fill:none">
+            <rect width="28" height="28" rx="4" style="stroke:none"/>
+            <rect x=".75" y=".75" width="26.5" height="26.5" rx="3.25" style="fill:none"/>
+        </g>
+        <path data-name="패스 509" d="M16.5 2.9v26.189" transform="translate(-2 -2)" style="stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+        <path data-name="패스 510" d="M16.5 2.9v26.189" transform="rotate(90 16.5 13.995)" style="stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+        <g data-name="그룹 488">
+            <path data-name="패스 511" d="M9.46 6.246v6" style="stroke-linecap:round;stroke:#1bc1db;stroke-width:1.5px;fill:none" transform="translate(-1.96 -2.246)"/>
+            <path data-name="패스 512" d="M9.46 6.246v6" transform="rotate(90 9.604 7.144)" style="stroke-linecap:round;stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+        </g>
+        <g data-name="그룹 490">
+            <path data-name="패스 517" d="M9.46 6.246v6" transform="rotate(90 9.604 21.144)" style="stroke-linecap:round;stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+        </g>
+        <g data-name="그룹 489">
+            <path data-name="패스 515" d="M9.46 6.246v6" transform="rotate(45 -5.854 12.818)" style="stroke-linecap:round;stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+            <path data-name="패스 514" d="M9.46 6.246v6" transform="rotate(135 6.021 14.778)" style="stroke-linecap:round;stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+        </g>
+        <path data-name="패스 513" d="M9.46 6.246v6" transform="rotate(90 16.604 14.144)" style="stroke-linecap:round;stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+        <rect data-name="사각형 385" width="2" height="2" rx="1" transform="translate(20.5 17.5)" style="fill:#1bc1db"/>
+        <rect data-name="사각형 386" width="2" height="2" rx="1" transform="translate(20.5 22.5)" style="fill:#1bc1db"/>
+    </g>
+</svg>
