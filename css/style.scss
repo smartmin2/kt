@@ -6372,6 +6372,18 @@ table.jb-table thead.double{
 //------------------------------------------------------
 //----------------------report--------------------------------
 
+// live-statistics
+.live-statistics{
+  .content-sub-title{
+    display: flex;
+    align-items: center;
+    gap:5px;
+    .noti-box{
+      width:330px;
+      height: auto;
+    }
+  }
+}
 // monitoring
 .monitoring {
   .button-group {
