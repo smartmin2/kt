@@ -5284,6 +5284,35 @@
       }
     }
   }
+  max-height: 900px;
+  @include scrollbar("V");
+}
+.modal-program-sel {
+  @include default_modal(1050px, auto);
+  display: none;
+  .input-date-group { width: 260px;}
+  input[type=text] {width: 260px;}
+  span {color:blue}
+
+  max-height: 900px;
+  @include scrollbar("V");
+}
+.modal-mat-cate {
+  @include default_modal(1100px, auto);
+  display: none;
+  table.table-mat tbody tr td:last-child {
+    text-decoration: underline;
+    cursor: pointer;
+  } 
+  ul.selected-box {
+    border: 1px solid $gray600;
+    border-radius: 8px;
+    padding: 20px;
+    height: 150px;
+    margin-top: 20px;
+    li { height: 30px;}
+    @include scrollbar("V");    
+  }
 }
 .modal-icod-cate {
   @include default_modal(auto, auto);
@@ -7482,3 +7511,76 @@ table.jb-table thead.double{
   }
 }
 //----------------------------------------
+//---편성----------------------------------
+.organization-vod,.organization-livead {
+  .btn-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .setting-grid-content { grid-column: span 3;}
+}
+.organization-homeplay {
+  #calendar {
+    max-width: 100%;
+    margin: 40px auto;
+  }
+}
+.org-livead-mng {
+  .table-body tr {
+    td {
+      &.btn-detail {
+        text-decoration: underline;
+        cursor: pointer;
+
+        &::after {
+          content: "보기";
+        }
+        &.open::after {
+          content: "접기";
+        }
+      }
+    }
+
+    &.table-detail {
+      display: none;
+      background-color: $gray600;
+      td .detail-box {
+        padding: 15px 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        p {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+          justify-content: center;
+          height: 30px;
+          span {
+            color: red;
+          }
+        }
+      }
+      &.open {
+        display: table-row;
+      }
+    }
+  }
+}
+.modal-sub-request {
+  @include default_modal(1200px, auto);
+  max-height: 900px;
+  display: none;
+  .modal-detail {
+    display: none;
+    .setting-grid-content {grid-column: span 3;}
+  }  
+  input[type=time] {
+    margin-left: 10px;
+    width: 120px;
+  }
+  .table-wrapper {padding: 20px;}
+}
+.ad-mng-livead {}

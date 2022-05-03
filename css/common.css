@@ -1057,7 +1057,7 @@ ul.pagination li a.active {
   width: 130px;
 }
 
-input[type=date], input[type=month] {
+input[type=date], input[type=month], input[type=time] {
   position: relative;
   height: 100%;
   padding-left: 10px;
@@ -1128,7 +1128,7 @@ input[type="password"]:disabled {
   background-color: #f9fafd;
 }
 
-input[type=date], input[type=month] {
+input[type=date], input[type=month], input[type=time] {
   height: 30px;
 }
 

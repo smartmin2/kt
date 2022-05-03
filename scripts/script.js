@@ -268,7 +268,7 @@
               fourLi.innerHTML = fourItem.name;
               fourUl.appendChild(fourLi);
 
-              if (ifour > 0 && ifour-1 == k) {
+              if ((ithree > 0 && i==iSubMenu-1 && ithree-1 == j)&&(ifour > 0 && ifour-1 == k)) {
                 fourLi.classList.add("active");
                 fourDetails.open = true;
                 LiSub.classList.add("open");

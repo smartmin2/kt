@@ -809,7 +809,7 @@ ul.pagination {
   }
 }
 
-input[type=date],input[type=month] {
+input[type=date],input[type=month],input[type=time] {
   position: relative;
   height: 100%;
   padding-left: 10px;
@@ -848,17 +848,18 @@ input[type="password"] {
     background-color: $gray100;
   }
 }
-input[type=date],input[type=month] {
+input[type=date],input[type=month],input[type=time] {
   height: 30px;
 }
 
 input[type=date]::-webkit-clear-button,
 input[type=date]::-webkit-inner-spin-button,
 input[type=month]::-webkit-clear-button, 
-input[type=month]::-webkit-inner-spin-button {
+input[type=month]::-webkit-inner-spin-button{
   display: none;
 }
 input[type=date]::-webkit-calendar-picker-indicator,
+// input[type=time]::-webkit-calendar-picker-indicator,
 input[type=month]::-webkit-calendar-picker-indicator {
   background: transparent;
   z-index: 1;

@@ -1888,6 +1888,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-processing .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-processing .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-processing .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-processing .modal-bottom {
@@ -1954,6 +1971,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-processing-detail .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-processing-detail .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-processing-detail .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-processing-detail .modal-bottom {
@@ -2135,6 +2169,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-icod-list .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-icod-list .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-icod-list .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-icod-list .modal-bottom {
@@ -2201,6 +2252,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-channel-time .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-channel-time .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-channel-time .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-channel-time .modal-bottom {
@@ -2316,6 +2384,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-channel-time-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-channel-time-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-channel-time-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-channel-time-add .modal-bottom {
@@ -2436,6 +2521,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-exposure-batch .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-exposure-batch .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-exposure-batch .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-exposure-batch .modal-bottom {
@@ -3068,6 +3170,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-company-add .modal-body::-webkit-scrollbar,
+.modal-company-detail .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-company-add .modal-body::-webkit-scrollbar-track,
+.modal-company-detail .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-company-add .modal-body::-webkit-scrollbar-thumb,
+.modal-company-detail .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-company-add .modal-bottom,
@@ -3376,6 +3498,29 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-pnm-add .modal-body::-webkit-scrollbar,
+.modal-pnm-detail .modal-body::-webkit-scrollbar,
+.modal-pnm-search .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-pnm-add .modal-body::-webkit-scrollbar-track,
+.modal-pnm-detail .modal-body::-webkit-scrollbar-track,
+.modal-pnm-search .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-pnm-add .modal-body::-webkit-scrollbar-thumb,
+.modal-pnm-detail .modal-body::-webkit-scrollbar-thumb,
+.modal-pnm-search .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-pnm-add .modal-bottom,
@@ -3431,6 +3576,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-aam-add .modal-body::-webkit-scrollbar,
+.modal-aam-detail .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-aam-add .modal-body::-webkit-scrollbar-track,
+.modal-aam-detail .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-aam-add .modal-body::-webkit-scrollbar-thumb,
+.modal-aam-detail .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-aam-add .modal-bottom,
@@ -3587,6 +3752,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-brand-search .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-brand-search .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-brand-search .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-brand-search .modal-bottom {
@@ -3646,6 +3828,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-channel-add .modal-body::-webkit-scrollbar,
+.modal-channel-detail .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-channel-add .modal-body::-webkit-scrollbar-track,
+.modal-channel-detail .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-channel-add .modal-body::-webkit-scrollbar-thumb,
+.modal-channel-detail .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-channel-add .modal-bottom,
@@ -3713,6 +3915,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-cngroup-modify .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-cngroup-modify .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-cngroup-modify .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-cngroup-modify .modal-bottom {
@@ -3790,6 +4009,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-cnexcel-upload .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-cnexcel-upload .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-cnexcel-upload .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-cnexcel-upload .modal-bottom {
@@ -3847,6 +4083,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-stb-detail .modal-body::-webkit-scrollbar,
+.modal-stb-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-stb-detail .modal-body::-webkit-scrollbar-track,
+.modal-stb-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-stb-detail .modal-body::-webkit-scrollbar-thumb,
+.modal-stb-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-stb-detail .modal-bottom,
@@ -3924,6 +4180,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-stbexcel-upload .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-stbexcel-upload .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-stbexcel-upload .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-stbexcel-upload .modal-bottom {
@@ -3982,6 +4255,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-contents-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-contents-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-contents-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-contents-add .modal-bottom {
@@ -4038,6 +4328,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-contents-select .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-contents-select .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-contents-select .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-contents-select .modal-bottom {
@@ -4133,6 +4440,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-channel-select .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-channel-select .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-channel-select .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-channel-select .modal-bottom {
@@ -4185,6 +4509,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-cam-check .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-cam-check .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-cam-check .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-cam-check .modal-bottom {
@@ -4240,6 +4581,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-twostb-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-twostb-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-twostb-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-twostb-add .modal-bottom {
@@ -4311,6 +4669,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-twostb-exupload .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-twostb-exupload .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-twostb-exupload .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-twostb-exupload .modal-bottom {
@@ -4374,6 +4749,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-twocont-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-twocont-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-twocont-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-twocont-add .modal-bottom {
@@ -4499,6 +4891,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-stbmodel-add .modal-body::-webkit-scrollbar,
+.modal-stbmodel-detail .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-stbmodel-add .modal-body::-webkit-scrollbar-track,
+.modal-stbmodel-detail .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-stbmodel-add .modal-body::-webkit-scrollbar-thumb,
+.modal-stbmodel-detail .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-stbmodel-add .modal-bottom,
@@ -4572,6 +4984,29 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-noad-prosel .modal-body::-webkit-scrollbar,
+.modal-noad-contsel .modal-body::-webkit-scrollbar,
+.modal-noad-matsel .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-noad-prosel .modal-body::-webkit-scrollbar-track,
+.modal-noad-contsel .modal-body::-webkit-scrollbar-track,
+.modal-noad-matsel .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-noad-prosel .modal-body::-webkit-scrollbar-thumb,
+.modal-noad-contsel .modal-body::-webkit-scrollbar-thumb,
+.modal-noad-matsel .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-noad-prosel .modal-bottom,
@@ -4710,6 +5145,32 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-privacy-add .modal-body::-webkit-scrollbar,
+.modal-privacy-modify .modal-body::-webkit-scrollbar,
+.modal-privacy-list .modal-body::-webkit-scrollbar,
+.modal-privacy-listadd .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-privacy-add .modal-body::-webkit-scrollbar-track,
+.modal-privacy-modify .modal-body::-webkit-scrollbar-track,
+.modal-privacy-list .modal-body::-webkit-scrollbar-track,
+.modal-privacy-listadd .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-privacy-add .modal-body::-webkit-scrollbar-thumb,
+.modal-privacy-modify .modal-body::-webkit-scrollbar-thumb,
+.modal-privacy-list .modal-body::-webkit-scrollbar-thumb,
+.modal-privacy-listadd .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-privacy-add .modal-bottom,
@@ -4757,6 +5218,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-address .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-address .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-address .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-address .modal-bottom {
@@ -5037,6 +5515,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-search-target .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-search-target .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-search-target .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-search-target .modal-bottom {
@@ -5086,6 +5581,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-search-advertiser .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-search-advertiser .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-search-advertiser .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-search-advertiser .modal-bottom {
@@ -5148,6 +5660,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-search-cam .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-search-cam .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-search-cam .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-search-cam .modal-bottom {
@@ -5270,6 +5799,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-settw-add .modal-body::-webkit-scrollbar,
+.modal-settw-modify .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-settw-add .modal-body::-webkit-scrollbar-track,
+.modal-settw-modify .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-settw-add .modal-body::-webkit-scrollbar-thumb,
+.modal-settw-modify .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-settw-add .modal-bottom,
@@ -5418,6 +5967,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-settw-search .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-settw-search .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-settw-search .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-settw-search .modal-bottom {
@@ -5483,6 +6049,29 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-discount-add01 .modal-body::-webkit-scrollbar,
+.modal-discount-add02 .modal-body::-webkit-scrollbar,
+.modal-discount-add03 .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-discount-add01 .modal-body::-webkit-scrollbar-track,
+.modal-discount-add02 .modal-body::-webkit-scrollbar-track,
+.modal-discount-add03 .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-discount-add01 .modal-body::-webkit-scrollbar-thumb,
+.modal-discount-add02 .modal-body::-webkit-scrollbar-thumb,
+.modal-discount-add03 .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-discount-add01 .modal-bottom,
@@ -5529,6 +6118,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-region-select .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-region-select .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-region-select .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-region-select .modal-bottom {
@@ -5948,6 +6554,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-code-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-code-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-code-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-code-add .modal-bottom {
@@ -5992,6 +6615,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-codedetail-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-codedetail-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-codedetail-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-codedetail-add .modal-bottom {
@@ -6039,6 +6679,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-codedetail-add02 .modal-body::-webkit-scrollbar,
+.modal-codedetail-add03 .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-codedetail-add02 .modal-body::-webkit-scrollbar-track,
+.modal-codedetail-add03 .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-codedetail-add02 .modal-body::-webkit-scrollbar-thumb,
+.modal-codedetail-add03 .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-codedetail-add02 .modal-bottom,
@@ -6099,6 +6759,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-codedetail-dt .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-codedetail-dt .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-codedetail-dt .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-codedetail-dt .modal-bottom {
@@ -6146,6 +6823,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-codedetail-dt02 .modal-body::-webkit-scrollbar,
+.modal-codedetail-dt03 .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-codedetail-dt02 .modal-body::-webkit-scrollbar-track,
+.modal-codedetail-dt03 .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-codedetail-dt02 .modal-body::-webkit-scrollbar-thumb,
+.modal-codedetail-dt03 .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-codedetail-dt02 .modal-bottom,
@@ -6206,6 +6903,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-order-chg .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-order-chg .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-order-chg .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-order-chg .modal-bottom {
@@ -6277,6 +6991,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-code-search .modal-body::-webkit-scrollbar,
+.modal-code-search02 .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-code-search .modal-body::-webkit-scrollbar-track,
+.modal-code-search02 .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-code-search .modal-body::-webkit-scrollbar-thumb,
+.modal-code-search02 .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-code-search .modal-bottom,
@@ -6473,6 +7207,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-view-cont .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-view-cont .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-view-cont .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-view-cont .modal-bottom {
@@ -6636,6 +7387,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-integ .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-integ .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-integ .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-integ .modal-bottom {
@@ -6704,6 +7472,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-report .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-report .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-report .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-report .modal-bottom {
@@ -6758,6 +7543,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-report-result .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-report-result .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-report-result .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-report-result .modal-bottom {
@@ -8506,6 +9308,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-mat-batch .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-mat-batch .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-mat-batch .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-mat-batch .modal-bottom {
@@ -8592,6 +9411,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-change-mat .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-change-mat .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-change-mat .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-change-mat .modal-bottom {
@@ -8659,6 +9495,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-region .modal-body::-webkit-scrollbar, .modal-channel .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-region .modal-body::-webkit-scrollbar-track, .modal-channel .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-region .modal-body::-webkit-scrollbar-thumb, .modal-channel .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-region .modal-bottom, .modal-channel .modal-bottom {
@@ -8714,6 +9567,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-auto-resub .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-auto-resub .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-auto-resub .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-auto-resub .modal-bottom {
@@ -8758,6 +9628,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-import-sub .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-import-sub .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-import-sub .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-import-sub .modal-bottom {
@@ -8849,6 +9736,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-detail-sub .modal-body::-webkit-scrollbar,
+.modal-stb-group .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-detail-sub .modal-body::-webkit-scrollbar-track,
+.modal-stb-group .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-detail-sub .modal-body::-webkit-scrollbar-thumb,
+.modal-stb-group .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-detail-sub .modal-bottom,
@@ -8899,6 +9806,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-send-sms .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-send-sms .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-send-sms .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-send-sms .modal-bottom {
@@ -8978,6 +9902,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-campaign-main .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-campaign-main .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-campaign-main .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-campaign-main .modal-bottom {
@@ -9072,6 +10013,26 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-cam-main-video .modal-body::-webkit-scrollbar,
+.modal-cam-main-channel .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-cam-main-video .modal-body::-webkit-scrollbar-track,
+.modal-cam-main-channel .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-cam-main-video .modal-body::-webkit-scrollbar-thumb,
+.modal-cam-main-channel .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-cam-main-video .modal-bottom,
@@ -9214,6 +10175,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-installment .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-installment .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-installment .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-installment .modal-bottom {
@@ -9266,6 +10244,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-material-sel .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-material-sel .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-material-sel .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-material-sel .modal-bottom {
@@ -9315,6 +10310,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-material-two .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-material-two .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-material-two .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-material-two .modal-bottom {
@@ -9364,6 +10376,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-cont-list .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-cont-list .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-cont-list .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-cont-list .modal-bottom {
@@ -9413,6 +10442,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-twoway-list .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-twoway-list .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-twoway-list .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-twoway-list .modal-bottom {
@@ -9447,6 +10493,9 @@
       -ms-flex-direction: column;
           flex-direction: column;
   display: none;
+  max-height: 900px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
 }
 
 .modal-adcate-sel .modal-top,
@@ -9468,6 +10517,29 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-adcate-sel .modal-body::-webkit-scrollbar,
+.modal-stb-grp .modal-body::-webkit-scrollbar,
+.modal-stb-sel .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-adcate-sel .modal-body::-webkit-scrollbar-track,
+.modal-stb-grp .modal-body::-webkit-scrollbar-track,
+.modal-stb-sel .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-adcate-sel .modal-body::-webkit-scrollbar-thumb,
+.modal-stb-grp .modal-body::-webkit-scrollbar-thumb,
+.modal-stb-sel .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-adcate-sel .modal-bottom,
@@ -9495,6 +10567,213 @@
 .modal-stb-grp.modal-stb-grp table.jb-table tbody tr td:last-child button,
 .modal-stb-sel.modal-stb-grp table.jb-table tbody tr td:last-child button {
   margin: 0 auto;
+}
+
+.modal-adcate-sel::-webkit-scrollbar,
+.modal-stb-grp::-webkit-scrollbar,
+.modal-stb-sel::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-adcate-sel::-webkit-scrollbar-track,
+.modal-stb-grp::-webkit-scrollbar-track,
+.modal-stb-sel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-adcate-sel::-webkit-scrollbar-thumb,
+.modal-stb-grp::-webkit-scrollbar-thumb,
+.modal-stb-sel::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-program-sel {
+  width: 1050px;
+  height: auto;
+  padding: 20px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  max-height: 900px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-program-sel .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-program-sel .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 32px 0 24px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-program-sel .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-program-sel .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-program-sel .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-program-sel .modal-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.modal-program-sel .input-date-group {
+  width: 260px;
+}
+
+.modal-program-sel input[type=text] {
+  width: 260px;
+}
+
+.modal-program-sel span {
+  color: blue;
+}
+
+.modal-program-sel::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-program-sel::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-program-sel::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-mat-cate {
+  width: 1100px;
+  height: auto;
+  padding: 20px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.modal-mat-cate .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-mat-cate .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 32px 0 24px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-mat-cate .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-mat-cate .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-mat-cate .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-mat-cate .modal-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.modal-mat-cate table.table-mat tbody tr td:last-child {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.modal-mat-cate ul.selected-box {
+  border: 1px solid #e6e8ea;
+  border-radius: 8px;
+  padding: 20px;
+  height: 150px;
+  margin-top: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-mat-cate ul.selected-box li {
+  height: 30px;
+}
+
+.modal-mat-cate ul.selected-box::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-mat-cate ul.selected-box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-mat-cate ul.selected-box::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-icod-cate {
@@ -9526,6 +10805,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-icod-cate .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-icod-cate .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-icod-cate .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-icod-cate .modal-bottom {
@@ -9575,6 +10871,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-brand .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-brand .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-brand .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-brand .modal-bottom {
@@ -9624,6 +10937,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-agency .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-agency .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-agency .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-agency .modal-bottom {
@@ -9673,6 +11003,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-sales .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-sales .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-sales .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-sales .modal-bottom {
@@ -9722,6 +11069,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-material-play .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-material-play .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-material-play .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-material-play .modal-bottom {
@@ -9874,6 +11238,23 @@
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-prog-buffer .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-prog-buffer .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-prog-buffer .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-prog-buffer .modal-bottom {
@@ -10365,6 +11746,26 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-category-add .modal-body::-webkit-scrollbar,
+.modal-category-modify .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-category-add .modal-body::-webkit-scrollbar-track,
+.modal-category-modify .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-category-add .modal-body::-webkit-scrollbar-thumb,
+.modal-category-modify .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-category-add .modal-bottom,
@@ -10410,6 +11811,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-program-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-program-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-program-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-program-add .modal-bottom {
@@ -10500,6 +11918,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-channel-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-channel-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-channel-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-channel-add .modal-bottom {
@@ -10656,6 +12091,26 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-policy-add .modal-body::-webkit-scrollbar,
+.modal-inven-dist .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-policy-add .modal-body::-webkit-scrollbar-track,
+.modal-inven-dist .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-policy-add .modal-body::-webkit-scrollbar-thumb,
+.modal-inven-dist .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-policy-add .modal-bottom,
@@ -10714,6 +12169,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-inven-dist2 .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-inven-dist2 .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-inven-dist2 .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-inven-dist2 .modal-bottom {
@@ -10820,6 +12292,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-time-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-time-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-time-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-time-add .modal-bottom {
@@ -10952,6 +12441,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-bk-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-bk-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-bk-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-bk-add .modal-bottom {
@@ -11049,6 +12555,26 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-bk-status .modal-body::-webkit-scrollbar,
+.modal-bk-program .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-bk-status .modal-body::-webkit-scrollbar-track,
+.modal-bk-program .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-bk-status .modal-body::-webkit-scrollbar-thumb,
+.modal-bk-program .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-bk-status .modal-bottom,
@@ -11137,6 +12663,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-bkopen-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-bkopen-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-bkopen-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-bkopen-add .modal-bottom {
@@ -11605,6 +13148,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-login .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-login .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-login .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-login .modal-bottom {
@@ -11730,6 +13290,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-integration-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-integration-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-integration-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-integration-add .modal-bottom {
@@ -11785,6 +13362,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-mul-mat .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-mul-mat .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-mul-mat .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-mul-mat .modal-bottom {
@@ -12145,6 +13739,26 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-url-send .modal-body::-webkit-scrollbar,
+.modal-url-list .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-url-send .modal-body::-webkit-scrollbar-track,
+.modal-url-list .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-url-send .modal-body::-webkit-scrollbar-thumb,
+.modal-url-list .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-url-send .modal-bottom,
@@ -12190,6 +13804,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-url-register .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-url-register .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-url-register .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-url-register .modal-bottom {
@@ -12630,6 +14261,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-slot .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-slot .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-slot .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-slot .modal-bottom {
@@ -12674,6 +14322,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-material-search .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-material-search .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-material-search .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-material-search .modal-bottom {
@@ -12718,6 +14383,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-material-req .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-material-req .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-material-req .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-material-req .modal-bottom {
@@ -13198,6 +14880,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-detail-billing .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-detail-billing .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-detail-billing .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-detail-billing .modal-bottom {
@@ -13242,6 +14941,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-acc-statement .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-acc-statement .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-acc-statement .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-acc-statement .modal-bottom {
@@ -13423,6 +15139,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-execution-status-detail .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-execution-status-detail .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-execution-status-detail .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-execution-status-detail .modal-bottom {
@@ -13663,6 +15396,23 @@ table.jb-table thead.double tr:last-child th {
           flex: 1;
   margin: 32px 0 24px;
   overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-advertiser .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-advertiser .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-advertiser .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
 }
 
 .modal-advertiser .modal-bottom {
@@ -13685,5 +15435,159 @@ table.jb-table thead.double tr:last-child th {
 .modal-advertiser table tbody tr td:nth-child(2) {
   text-decoration: underline;
   cursor: pointer;
+}
+
+.organization-vod .btn-group, .organization-livead .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.organization-vod .setting-grid-content, .organization-livead .setting-grid-content {
+  grid-column: span 3;
+}
+
+.organization-homeplay #calendar {
+  max-width: 100%;
+  margin: 40px auto;
+}
+
+.org-livead-mng .table-body tr td.btn-detail {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.org-livead-mng .table-body tr td.btn-detail::after {
+  content: "보기";
+}
+
+.org-livead-mng .table-body tr td.btn-detail.open::after {
+  content: "접기";
+}
+
+.org-livead-mng .table-body tr.table-detail {
+  display: none;
+  background-color: #e6e8ea;
+}
+
+.org-livead-mng .table-body tr.table-detail td .detail-box {
+  padding: 15px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.org-livead-mng .table-body tr.table-detail td .detail-box p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 30px;
+}
+
+.org-livead-mng .table-body tr.table-detail td .detail-box p span {
+  color: red;
+}
+
+.org-livead-mng .table-body tr.table-detail.open {
+  display: table-row;
+}
+
+.modal-sub-request {
+  width: 1200px;
+  height: auto;
+  padding: 20px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 900px;
+  display: none;
+}
+
+.modal-sub-request .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-sub-request .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 32px 0 24px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-sub-request .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-sub-request .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-sub-request .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-sub-request .modal-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.modal-sub-request .modal-detail {
+  display: none;
+}
+
+.modal-sub-request .modal-detail .setting-grid-content {
+  grid-column: span 3;
+}
+
+.modal-sub-request input[type=time] {
+  margin-left: 10px;
+  width: 120px;
+}
+
+.modal-sub-request .table-wrapper {
+  padding: 20px;
 }
 /*# sourceMappingURL=style.css.map */
