@@ -7279,3 +7279,206 @@ table.jb-table thead.double{
   }
 }
 //----------------------------------------
+//---- 영업 ------------------------------
+.goodwill-mng {
+  .noti-box {
+    width: 600px;
+    height: auto;
+    flex-direction: column; 
+    gap: 20px;   
+    .legend {
+      display: flex;
+      justify-content: space-between;
+      .noti-box-title {
+        width: 60px;
+        font-weight: bold;
+      }
+      ul { 
+        flex: 1;
+        display: flex; 
+        gap: 10px;  
+        li { display: flex; gap: 5px;}
+      }      
+    }
+    &.width-400 {width: 400px;}
+  }
+  .multi-group {
+    display: flex;
+    gap: 5px;
+
+    .btn-attr.minus {
+      background: url(../assets/c_btn_minus_default.svg) no-repeat center/cover;
+      width: 18px;
+      height: 18px;
+    
+      &:hover {
+        background: url(../assets/c_btn_minus_hover.svg) no-repeat center/cover;
+      }
+    }
+    .btn-attr.plus {
+      background: url(../assets/c_btn_plus_default.svg) no-repeat center/cover;
+      width: 18px;
+      height: 18px;
+    
+      &:hover {
+        background: url(../assets/c_btn_plus_hover.svg) no-repeat center/cover;
+      }
+    }
+  }
+  thead tr th:nth-last-child(3){
+    border: 2px solid $font_color;
+    border-bottom: none;
+  }
+  .table-body {
+    tr {
+      td{
+        div {margin: 0 auto;}
+        
+        &:first-child {
+          .multi-group {
+            justify-content: space-between;
+          }
+        }
+        &:nth-last-child(3) {
+          border-right: 2px solid $font_color;
+          border-left: 2px solid $font_color;
+        }
+      }
+      &:last-child td:nth-last-child(3) {
+        border-bottom: 2px solid $font_color;
+      }
+    } 
+  }
+  .bg-red {background: #f59696;}
+  .bg-blue {background: #84c7f9;}
+  .bg-purple {background: #b8b6ff;}
+  .bg-green {background: #9acebb;}
+  .bg-orange {background: #f5aa88;}
+}
+.annual-advertiser {
+  table.jb-table {
+    tbody tr td{
+      &:nth-child(2),&:nth-child(7) {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .multi-group {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+    }
+  }
+}
+.modal-execution-status-detail {
+  @include default_modal(1000px, auto);
+  display: none;
+}
+.annual-advertiser-add {
+  .setting-grid-content {grid-column: span 3;}
+  .btn-group {display: flex;flex-direction: column;gap: 10px;}
+
+  input[type=text] {width: 400px;}
+  input[type=text].per-width {width: 100px;}
+  input[type=text].long-width {width: 800px;}
+
+  .file-content {
+    display: none;
+    &.modify {display: flex;}
+  }
+  .input-group {    
+    select{display: block;}
+    &.modify {      
+      background: $gray100;
+      select{display: none;}
+    } 
+  }
+}
+.business-progress-mng {
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 1500px;
+
+      tbody.table-body tr td:first-child {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.business-progress-add {
+  .setting-title {    
+    height: 100%;
+    display: flex;
+    align-items: flex-end;      
+    font-size: 15px;
+    font-weight: bold;    
+    line-height: 1.13;    
+    color: $font_color;
+  }
+  .btn-group {
+    @include flex_center;
+    margin: 10px 0;
+  }
+  .setting-grid-content {
+    grid-column: span 3;
+    gap: 20px;
+    .content-box {
+      &:first-child {flex-direction: column;}      
+      flex: 1;
+      display: flex;
+      gap: 5px;
+      .data-box {
+        display: flex;
+        gap: 10px;
+
+        .data-box-title {width: 100px;}
+      }
+      &:last-child {
+        justify-content: center;
+        span {width: 50px;text-align: right;}
+      }
+    }
+    input[type=text], input[type=number] {width: 300px;}
+  }
+  .span-1 {grid-column: span 1;}
+
+  .table-wrapper {
+    gap: 10px;
+    margin-bottom: 20px;
+    table.jb-table thead tr:first-child th:last-child {
+      border-radius: 0 10px 0 0;
+    }
+    table.jb-table thead tr:last-child th:last-child {
+      border-radius: 0 0 10px 0;
+    }
+  }
+  .contents-wrapper > .setting-title {
+    margin-bottom: 10px;
+  }
+
+  .modify {
+    display: none;
+  }
+  .setting-grid.page-attr,.setting-title.page-attr {display: none;}
+  .setting-title.modify {display: flex;}
+  .setting-grid.modify {display: grid;}
+}
+.modal-advertiser {
+  @include default_modal(700px,auto);
+  display: none;
+  table { 
+    margin-bottom: 20px;
+    tbody tr td:nth-child(2) {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}
+//----------------------------------------
