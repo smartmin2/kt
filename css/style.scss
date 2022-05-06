@@ -7583,4 +7583,185 @@ table.jb-table thead.double{
   }
   .table-wrapper {padding: 20px;}
 }
-.ad-mng-livead {}
+.his-mng-comparison {
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 1500px;
+    }
+  }
+}
+.his-mng-result {
+  .ck-fail + label::after{content:"해제";}
+  .ck-fail:checked + label::after{content:"선택";}
+  .ck-fail {
+    display: none;
+  }
+  .ck-fail + label {    
+    height: 30px;
+    display: inline-block;
+    padding: 4px 12px 6px;
+    border-radius: 4px;
+    border: 1px solid #bcbfc7;
+    font-size: 14px;
+    text-align: center;
+    color: #282a3f;
+    cursor: pointer;
+    background: #fff;
+  }
+  .ck-fail:checked + label {
+    border: 1px solid $colors_font;
+    color: $colors_font;
+  }
+}
+.his-mng-result-detail {
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 1500px;
+    }
+  }
+  .blue {color:blue;}
+  .green {color:green;}
+}
+.ad-mng-icod {
+  .search-top .btn-group {
+    display: flex;
+    gap: 10px;
+  }
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 1800px;
+    }
+  }
+}
+.modal-livead-period, .modal-icod-period, .modal-icod-copy {
+  @include default_modal(600px, auto);
+  display: none;
+  .setting-grid-content {grid-column: span 3;}
+}
+.modal-promotion-add {
+  @include default_modal(1200px, auto);
+  display: none;
+  // .setting-grid-content {grid-column: span 3;}
+  max-height: 900px;
+
+  .multi-group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    input { width: 150px;}
+    span {
+      width: 60px;
+      text-align: right;
+
+      & + input { width: 400px;}
+    }
+    p {
+      width: 100%;
+      text-align: right;
+    }
+  } 
+  .btn-select-group .btn-select { width: 63px;}
+  
+}
+.his-mng-icod {
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 1800px;
+    }
+  }
+}
+.modal-org-time-add {
+  @include default_modal(600px, auto);
+  display: none;
+
+  .setting-grid-content { grid-column: span 3; }
+  .box-title {
+    &:after {
+      content: "등록";
+    }
+    &.modify::after {
+      content: "수정";
+    }
+  }
+}
+.his-mng-cue-monitor {
+  tbody tr td {
+    padding: 0;
+    &:first-child {    
+      height: 40px;      
+      font-size: 14px;    
+      color: $font_color;
+      text-align: left;
+      vertical-align: middle;
+      &::before {
+        content: url(../assets/ic-channel.svg);
+        margin: 0 2px 0 10px;      
+        vertical-align: middle;
+      }
+    }
+
+    &:not(:first-child) {
+      width: 45px;
+      height: 40px;      
+    }
+  }
+}
+.modal-cue-detail {
+  @include default_modal(1200px, auto);
+  display: none;
+
+  .body-title {
+    font-size: 14px;    
+    color: #35497b;
+
+    span {
+      margin: 0 10px;
+    }
+  }
+  table {
+    margin-top: 20px;
+    tbody tr {
+      border-bottom: none;
+      th, td {
+        vertical-align: middle;
+        width: 8.33%;
+      }
+      th {
+        background-color: #f1f7ff;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: -0.33px;
+        color: #586a9b;       
+      }
+      &:nth-child(3) {height: 20px;}
+      &:nth-child(2),&:last-child {
+        border-bottom: 1px solid $gray600;
+      }
+    }   
+  }
+}

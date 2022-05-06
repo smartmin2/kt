@@ -366,6 +366,12 @@ input[type="checkbox"] {
   width: 16px;
   height: 16px; 
 }
+.ic-channel-point {
+  content: url("../assets/ic-channel-point.svg");
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
 .common-body {
 
   @include large {    

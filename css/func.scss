@@ -183,6 +183,7 @@ $table_bg_green:#2ea64e;
 @mixin default_modal($width, $height) {
   width: $width;
   height: $height;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: flex;
   flex-direction: column;
@@ -196,6 +197,7 @@ $table_bg_green:#2ea64e;
     flex: 1;
     margin: 32px 0 24px;
     overflow: overlay;
+    @include scrollbar("V")   ;
   }
   .modal-bottom {
     display: flex;

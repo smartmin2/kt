@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='../../css/main.min.css' rel='stylesheet' />
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>편성</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>편성</div>
+    <div>OTV</div>
+    <div>상용광고 편성관리</div>    
+    <div>HomePlay 편성</div>
+  </div>
+  <div class="main organization-homeplay">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                편성
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">HomePlay 편성</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title ic-title-nece">집행기간</div>                    
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-22">
+                      <span>~</span>
+                      <input type="date" value="2021-02-22">
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div id='calendar-container'>
+            <div id='calendar'></div>
+          </div>                                  
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                                           
+                      <option value="">50개</option>                                           
+                      <option value="">100개</option>                                                
+                    </select>
+                  </div>   
+                </div>
+              </div>  
+              <div class="table-top-buttons">                
+                <button class="btn-excel"><img>엑셀다운로드</button>                
+              </div>            
+            </div>  
+            <table class="jb-table">
+              <colgroup>
+                <col style="width: 9%" />
+                <col />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 8%" />
+                <col style="width: 8%" />                
+                <col style="width: 12%" />
+                <col style="width: 5%" />
+                <col style="width: 8%" />
+                <col style="width: 7%" />                
+              </colgroup>
+              <thead>
+                <tr>                  
+                  <th>팀</th>
+                  <th>캠페인</th>
+                  <th>광고주</th>
+                  <th>브랜드</th>
+                  <th>시작일</th>
+                  <th>종료일</th>
+                  <th>소재명</th>
+                  <th>소재ID</th>
+                  <th>승인상태</th>
+                  <th>비고</th>                  
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>  
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>  
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>  
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>  
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>  
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>  
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>  
+                <tr>
+                  <td>크로스광고6팀</td>
+                  <td>바디프랜드 22년 1월 15초 유료 영화</td>
+                  <td>주식회사 바디프랜드</td>
+                  <td>바디프랜드</td>                  
+                  <td>2022-01-15</td>
+                  <td>2022-01-31</td>
+                  <td>0114_hp_바디프랜드_모델종합_30초</td>
+                  <td>M64M10F6ADV150000100</td>
+                  <td>청약승인</td>
+                  <td>01-13 소재변경</td>
+                </tr>      
+              </tbody>
+            </table>                      
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>    
+    <script src='../../scripts/main.min.js'></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(7);
+      loadSubMenu("7", 1);
+      loadLnb(7, 1, 1, 3);
+      
+      var initialLocaleCode = 'ko';
+  // var localeSelectorEl = document.getElementById('locale-selector');
+  var calendarEl = document.getElementById('calendar');
+
+  var calendar = new FullCalendar.Calendar(calendarEl, {
+    headerToolbar: {
+      left: 'prev,next today',
+      center: 'title',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+    },
+    locale: initialLocaleCode,
+    buttonIcons: false, // show the prev/next text
+    weekNumbers: true,
+    navLinks: true, // can click day/week names to navigate views
+    editable: true,
+    dayMaxEvents: true, // allow "more" link when too many events
+    buttonText: { today: "오늘", month: "월별", week: "주별", day: "일별", prev: "이전", next: "다음" },
+    events: [
+        {
+          title: 'Business Lunch',
+          start: '2022-05-03T13:00:00',
+          constraint: 'businessHours'
+        },
+        {
+          title: 'Meeting',
+          start: '2022-05-13T11:00:00',
+          constraint: 'availableForMeeting', // defined below
+          color: '#257e4a'
+        },
+        {
+          title: 'Conference',
+          start: '2022-05-18',
+          end: '2020-09-20'
+        },
+        {
+          title: '삼성전자 갤럭시 리마쇼2 22년 2월',
+          start: '2022-05-06T20:00:00'
+        },
+        {
+          title: '달방 송민호 22년 1월',
+          start: '2022-05-24T10:00:00',                    
+        },
+        // areas where "Meeting" must be dropped
+        {
+          groupId: 'availableForMeeting',
+          start: '2022-05-13T10:00:00',
+          end: '2022-05-13T16:00:00',
+          display: 'background'
+        },
+
+        // red areas where no events can be dropped
+        {
+          start: '2022-05-24',
+          end: '2022-05-28',
+          overlap: false,
+          display: 'background',
+          color: '#ff9f89'
+        },
+        {
+          start: '2022-05-06',
+          end: '2022-05-08',
+          overlap: false,
+          display: 'background',
+          color: '#ff9f89'
+        }
+      ]    
+  });
+
+  calendar.render();
+
+  // build the locale selector's options
+  // calendar.getAvailableLocaleCodes().forEach(function(localeCode) {
+  //   var optionEl = document.createElement('option');
+  //   optionEl.value = localeCode;
+  //   optionEl.selected = localeCode == initialLocaleCode;
+  //   optionEl.innerText = localeCode;
+  //   // localeSelectorEl.appendChild(optionEl);
+  // });
+
+
+  </script>
+  </body>
+</html>

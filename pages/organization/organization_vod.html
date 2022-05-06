@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../css/style.css">
+  <title>편성</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>편성</div>
+    <div>OTV</div>
+    <div>상용광고 편성관리</div>    
+    <div>VOD 편성</div>
+  </div>
+  <div class="main organization-vod">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+                편성
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">VOD 편성</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title ic-title-nece">집행기간</div>                    
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-22">
+                      <span>~</span>
+                      <input type="date" value="2021-02-22">
+                    </div>
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title ic-title-nece">영업사</div>                    
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="" selected>전체</option>
+                        <option value="">영업사1</option>
+                        <option value="">영업사2</option>
+                        <option value="">영업사3</option>                      
+                      </select>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title ic-title-nece">소재매핑상태</div>                    
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="" selected>전체</option>
+                        <option value="">매핑</option>
+                        <option value="">미매핑</option>                        
+                      </select>
+                    </div>
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title ic-title-nece">승인상태</div>                    
+                    <div class="input-group">
+                      <select name="" id="">
+                        <option value="" selected>전체</option>
+                        <option value="">승인요청</option>
+                        <option value="">청약승인</option>                        
+                      </select>
+                    </div>
+                  </div>                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title ic-title-nece">소재명</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div class="btn-group">
+            <button class="btn-white">편성하기</button>
+            <button class="btn-white">소재매핑/가공정보(SMS)</button>
+          </div>
+          <div class="setting-grid">
+            <div class="setting-grid-title ic-title-nece">편성선택</div>
+            <div class="setting-grid-content">
+              <div class="btn-select-group">
+                <div class="btn-select active width-168">전체편성(D&P+ICOD)</div>
+                <div class="btn-select">D&P</div>
+                <div class="btn-select">ICOD</div>
+              </div>
+            </div>
+            <div class="setting-grid-title ic-title-nece">청약정보</div>
+            <div class="setting-grid-content flex-col">
+              <p>청약요청 <span>4</span>건, 청약승인 3건 / 총 7건</p>
+              <p>소개 미매핑 <span>4</span>건(승인된 청약에서만 체크함)</p>
+              <p>소개 미가공 <span>4</span>건</p>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                                           
+                      <option value="">50개</option>                                           
+                      <option value="">100개</option>                                                
+                    </select>
+                  </div>   
+                </div>
+              </div>              
+            </div>  
+            <table class="jb-table">
+              <colgroup>
+                <col style="width: 10%" />
+                <col />
+                <col style="width: 6%" />
+                <col style="width: 10%" />
+                <col style="width: 10%" />
+                <col style="width: 6%" />                
+                <col style="width: 12%" />
+                <col style="width: 12%" />
+                <col style="width: 6%" />
+                <col style="width: 7%" />
+                <col style="width: 7%" />                
+              </colgroup>
+              <thead>
+                <tr>                  
+                  <th>영업사</th>
+                  <th>캠페인명</th>
+                  <th>서비스</th>
+                  <th>카테고리</th>
+                  <th>기간</th>
+                  <th>보장노출</th>
+                  <th>D&P소재</th>
+                  <th>ICOD소재</th>
+                  <th>소재설정</th>
+                  <th>소재가공</th>
+                  <th>승인상태</th>                  
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td>(주)KT</td>
+                  <td>테스트캠페인122101</td>
+                  <td>PrePlay</td>
+                  <td>KBS>기타</td>
+                  <td>2021-12-22<br>~2021-12-31</td>
+                  <td>46</td>
+                  <td></td>
+                  <td>1102_영화진흥위원</td>
+                  <td>미매핑</td>
+                  <td>미가공</td>
+                  <td>승인요청</td>
+                </tr>
+                <tr>
+                  <td>(주)KT</td>
+                  <td>테스트캠페인122101</td>
+                  <td>PrePlay</td>
+                  <td>KBS>기타</td>
+                  <td>2021-12-22<br>~2021-12-31</td>
+                  <td>46</td>
+                  <td></td>
+                  <td>1102_영화진흥위원</td>
+                  <td>미매핑</td>
+                  <td>미가공</td>
+                  <td>승인요청</td>
+                </tr> 
+                <tr>
+                  <td>(주)KT</td>
+                  <td>테스트캠페인122101</td>
+                  <td>PrePlay</td>
+                  <td>KBS>기타</td>
+                  <td>2021-12-22<br>~2021-12-31</td>
+                  <td>46</td>
+                  <td></td>
+                  <td>1102_영화진흥위원</td>
+                  <td>미매핑</td>
+                  <td>미가공</td>
+                  <td>승인요청</td>
+                </tr>     
+                <tr>
+                  <td>(주)KT</td>
+                  <td>테스트캠페인122101</td>
+                  <td>PrePlay</td>
+                  <td>KBS>기타</td>
+                  <td>2021-12-22<br>~2021-12-31</td>
+                  <td>46</td>
+                  <td></td>
+                  <td>1102_영화진흥위원</td>
+                  <td>미매핑</td>
+                  <td>미가공</td>
+                  <td>승인요청</td>
+                </tr>    
+                <tr>
+                  <td>(주)KT</td>
+                  <td>테스트캠페인122101</td>
+                  <td>PrePlay</td>
+                  <td>KBS>기타</td>
+                  <td>2021-12-22<br>~2021-12-31</td>
+                  <td>46</td>
+                  <td></td>
+                  <td>1102_영화진흥위원</td>
+                  <td>매핑</td>
+                  <td>가공완료</td>
+                  <td>청약승인</td>
+                </tr>       
+              </tbody>
+            </table>                      
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/jquery-ui.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(7);
+      loadSubMenu("7", 1);
+      loadLnb(7, 1, 1, 1);
+  </script>
+  </body>
+</html>

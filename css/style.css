@@ -1862,6 +1862,7 @@
 .modal-processing {
   width: 569px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1945,6 +1946,7 @@
 .modal-processing-detail {
   width: 645px;
   height: 276px;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2142,6 +2144,7 @@
 .modal-icod-list {
   width: 1050px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2225,6 +2228,7 @@
 .modal-channel-time {
   width: 1600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2358,6 +2362,7 @@
 .modal-channel-time-add {
   width: 500px;
   height: 250px;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2495,6 +2500,7 @@
 .modal-exposure-batch {
   width: 420px;
   height: 310px;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3142,6 +3148,7 @@
 .modal-company-detail {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3468,6 +3475,7 @@
 .modal-pnm-search {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3548,6 +3556,7 @@
 .modal-aam-detail {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3726,6 +3735,7 @@
 .modal-brand-search {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3800,6 +3810,7 @@
 .modal-channel-detail {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3889,6 +3900,7 @@
 .modal-cngroup-modify {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3983,6 +3995,7 @@
 .modal-cnexcel-upload {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4055,6 +4068,7 @@
 .modal-stb-add {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4154,6 +4168,7 @@
 .modal-stbexcel-upload {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4229,6 +4244,7 @@
 .modal-contents-add {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4302,6 +4318,7 @@
 .modal-contents-select {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4414,6 +4431,7 @@
 .modal-channel-select {
   width: 300px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4483,6 +4501,7 @@
 .modal-cam-check {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4555,6 +4574,7 @@
 .modal-twostb-add {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4643,6 +4663,7 @@
 .modal-twostb-exupload {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4723,6 +4744,7 @@
 .modal-twocont-add {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4863,6 +4885,7 @@
 .modal-stbmodel-detail {
   width: 570px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4954,6 +4977,7 @@
 .modal-noad-matsel {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5113,6 +5137,7 @@
 .modal-privacy-listadd {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5192,6 +5217,7 @@
 .modal-address {
   width: 900px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5489,6 +5515,7 @@
 .modal-search-target {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5555,6 +5582,7 @@
 .modal-search-advertiser {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5634,6 +5662,7 @@
 .modal-search-cam {
   width: 900px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5771,6 +5800,7 @@
 .modal-settw-modify {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5941,6 +5971,7 @@
 .modal-settw-search {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6019,6 +6050,7 @@
 .modal-discount-add03 {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6092,6 +6124,7 @@
 .modal-region-select {
   width: 900px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6528,6 +6561,7 @@
 .modal-code-add {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6589,6 +6623,7 @@
 .modal-codedetail-add {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6651,6 +6686,7 @@
 .modal-codedetail-add03 {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6733,6 +6769,7 @@
 .modal-codedetail-dt {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6795,6 +6832,7 @@
 .modal-codedetail-dt03 {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6877,6 +6915,7 @@
 .modal-order-chg {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6963,6 +7002,7 @@
 .modal-code-search02 {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7181,6 +7221,7 @@
 .modal-view-cont {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7361,6 +7402,7 @@
 .modal-integ {
   width: 900px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7446,6 +7488,7 @@
 .modal-report {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7517,6 +7560,7 @@
 .modal-report-result {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9280,6 +9324,7 @@
 .modal-mat-batch {
   width: 1000px;
   height: 800px;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9385,6 +9430,7 @@
 .modal-change-mat {
   width: 400px;
   height: 230px;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9469,6 +9515,7 @@
 .modal-region, .modal-channel {
   width: 500px;
   height: 370px;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9541,6 +9588,7 @@
 .modal-auto-resub {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9602,6 +9650,7 @@
 .modal-import-sub {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9708,6 +9757,7 @@
 .modal-stb-group {
   width: 1500px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9780,6 +9830,7 @@
 .modal-send-sms {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9876,6 +9927,7 @@
 .modal-campaign-main {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9985,6 +10037,7 @@
 .modal-cam-main-channel {
   width: 724px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10149,6 +10202,7 @@
 .modal-installment {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10218,6 +10272,7 @@
 .modal-material-sel {
   width: 750px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10284,6 +10339,7 @@
 .modal-material-two {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10350,6 +10406,7 @@
 .modal-cont-list {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10416,6 +10473,7 @@
 .modal-twoway-list {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10484,6 +10542,7 @@
 .modal-stb-sel {
   width: 700px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10593,6 +10652,7 @@
 .modal-program-sel {
   width: 1050px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10684,6 +10744,7 @@
 .modal-mat-cate {
   width: 1100px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10779,6 +10840,7 @@
 .modal-icod-cate {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10845,6 +10907,7 @@
 .modal-brand {
   width: 800px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10911,6 +10974,7 @@
 .modal-agency {
   width: 800px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10977,6 +11041,7 @@
 .modal-sales {
   width: 800px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11043,6 +11108,7 @@
 .modal-material-play {
   width: 400px;
   height: 450px;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11212,6 +11278,7 @@
 .modal-prog-buffer {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11718,6 +11785,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-category-modify {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11785,6 +11853,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-program-add {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11892,6 +11961,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-channel-add {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12063,6 +12133,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-inven-dist {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12143,6 +12214,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-inven-dist2 {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12266,6 +12338,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-time-add {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12415,6 +12488,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-bk-add {
   width: 1200px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12527,6 +12601,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-bk-program {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12637,6 +12712,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-bkopen-add {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13125,6 +13201,7 @@ table.jb-table thead.double tr:last-child th {
   display: flex;
   width: 1200px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: flex;
   -webkit-box-orient: vertical;
@@ -13264,6 +13341,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-integration-add {
   width: 900px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13336,6 +13414,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-mul-mat {
   width: 900px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13711,6 +13790,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-url-list {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13778,6 +13858,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-url-register {
   width: 720px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14235,6 +14316,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-slot {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14296,6 +14378,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-material-search {
   width: 800px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14357,6 +14440,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-material-req {
   width: 810px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14854,6 +14938,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-detail-billing {
   width: 600px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14915,6 +15000,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-acc-statement {
   width: auto;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15113,6 +15199,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-execution-status-detail {
   width: 1000px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15370,6 +15457,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-advertiser {
   width: 700px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15515,6 +15603,7 @@ table.jb-table thead.double tr:last-child th {
 .modal-sub-request {
   width: 1200px;
   height: auto;
+  max-height: 900px;
   padding: 20px 32px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15589,5 +15678,517 @@ table.jb-table thead.double tr:last-child th {
 
 .modal-sub-request .table-wrapper {
   padding: 20px;
+}
+
+.his-mng-comparison .jb-table-wrapper {
+  width: calc(100vw - 640px);
+  min-width: 1280px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.his-mng-comparison .jb-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+  display: inline;
+}
+
+.his-mng-comparison .jb-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.his-mng-comparison .jb-table-wrapper::-webkit-scrollbar-thumb {
+  height: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.his-mng-comparison .jb-table-wrapper table.jb-table {
+  min-width: 1500px;
+}
+
+.his-mng-result .ck-fail + label::after {
+  content: "해제";
+}
+
+.his-mng-result .ck-fail:checked + label::after {
+  content: "선택";
+}
+
+.his-mng-result .ck-fail {
+  display: none;
+}
+
+.his-mng-result .ck-fail + label {
+  height: 30px;
+  display: inline-block;
+  padding: 4px 12px 6px;
+  border-radius: 4px;
+  border: 1px solid #bcbfc7;
+  font-size: 14px;
+  text-align: center;
+  color: #282a3f;
+  cursor: pointer;
+  background: #fff;
+}
+
+.his-mng-result .ck-fail:checked + label {
+  border: 1px solid #00aace;
+  color: #00aace;
+}
+
+.his-mng-result-detail .jb-table-wrapper {
+  width: calc(100vw - 640px);
+  min-width: 1280px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.his-mng-result-detail .jb-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+  display: inline;
+}
+
+.his-mng-result-detail .jb-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.his-mng-result-detail .jb-table-wrapper::-webkit-scrollbar-thumb {
+  height: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.his-mng-result-detail .jb-table-wrapper table.jb-table {
+  min-width: 1500px;
+}
+
+.his-mng-result-detail .blue {
+  color: blue;
+}
+
+.his-mng-result-detail .green {
+  color: green;
+}
+
+.ad-mng-icod .search-top .btn-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.ad-mng-icod .jb-table-wrapper {
+  width: calc(100vw - 640px);
+  min-width: 1280px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.ad-mng-icod .jb-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+  display: inline;
+}
+
+.ad-mng-icod .jb-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ad-mng-icod .jb-table-wrapper::-webkit-scrollbar-thumb {
+  height: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.ad-mng-icod .jb-table-wrapper table.jb-table {
+  min-width: 1800px;
+}
+
+.modal-livead-period, .modal-icod-period, .modal-icod-copy {
+  width: 600px;
+  height: auto;
+  max-height: 900px;
+  padding: 20px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.modal-livead-period .modal-top, .modal-icod-period .modal-top, .modal-icod-copy .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-livead-period .modal-body, .modal-icod-period .modal-body, .modal-icod-copy .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 32px 0 24px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-livead-period .modal-body::-webkit-scrollbar, .modal-icod-period .modal-body::-webkit-scrollbar, .modal-icod-copy .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-livead-period .modal-body::-webkit-scrollbar-track, .modal-icod-period .modal-body::-webkit-scrollbar-track, .modal-icod-copy .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-livead-period .modal-body::-webkit-scrollbar-thumb, .modal-icod-period .modal-body::-webkit-scrollbar-thumb, .modal-icod-copy .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-livead-period .modal-bottom, .modal-icod-period .modal-bottom, .modal-icod-copy .modal-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.modal-livead-period .setting-grid-content, .modal-icod-period .setting-grid-content, .modal-icod-copy .setting-grid-content {
+  grid-column: span 3;
+}
+
+.modal-promotion-add {
+  width: 1200px;
+  height: auto;
+  max-height: 900px;
+  padding: 20px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+  max-height: 900px;
+}
+
+.modal-promotion-add .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-promotion-add .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 32px 0 24px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-promotion-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-promotion-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-promotion-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-promotion-add .modal-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.modal-promotion-add .multi-group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+
+.modal-promotion-add .multi-group input {
+  width: 150px;
+}
+
+.modal-promotion-add .multi-group span {
+  width: 60px;
+  text-align: right;
+}
+
+.modal-promotion-add .multi-group span + input {
+  width: 400px;
+}
+
+.modal-promotion-add .multi-group p {
+  width: 100%;
+  text-align: right;
+}
+
+.modal-promotion-add .btn-select-group .btn-select {
+  width: 63px;
+}
+
+.his-mng-icod .jb-table-wrapper {
+  width: calc(100vw - 640px);
+  min-width: 1280px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.his-mng-icod .jb-table-wrapper::-webkit-scrollbar {
+  height: 6px;
+  display: inline;
+}
+
+.his-mng-icod .jb-table-wrapper::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.his-mng-icod .jb-table-wrapper::-webkit-scrollbar-thumb {
+  height: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.his-mng-icod .jb-table-wrapper table.jb-table {
+  min-width: 1800px;
+}
+
+.modal-org-time-add {
+  width: 600px;
+  height: auto;
+  max-height: 900px;
+  padding: 20px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.modal-org-time-add .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-org-time-add .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 32px 0 24px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-org-time-add .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-org-time-add .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-org-time-add .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-org-time-add .modal-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.modal-org-time-add .setting-grid-content {
+  grid-column: span 3;
+}
+
+.modal-org-time-add .box-title:after {
+  content: "등록";
+}
+
+.modal-org-time-add .box-title.modify::after {
+  content: "수정";
+}
+
+.his-mng-cue-monitor tbody tr td {
+  padding: 0;
+}
+
+.his-mng-cue-monitor tbody tr td:first-child {
+  height: 40px;
+  font-size: 14px;
+  color: #141f40;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.his-mng-cue-monitor tbody tr td:first-child::before {
+  content: url(../assets/ic-channel.svg);
+  margin: 0 2px 0 10px;
+  vertical-align: middle;
+}
+
+.his-mng-cue-monitor tbody tr td:not(:first-child) {
+  width: 45px;
+  height: 40px;
+}
+
+.modal-cue-detail {
+  width: 1200px;
+  height: auto;
+  max-height: 900px;
+  padding: 20px 32px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.modal-cue-detail .modal-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.modal-cue-detail .modal-body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 32px 0 24px;
+  overflow: overlay;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.modal-cue-detail .modal-body::-webkit-scrollbar {
+  width: 6px;
+  display: inline;
+}
+
+.modal-cue-detail .modal-body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.modal-cue-detail .modal-body::-webkit-scrollbar-thumb {
+  width: 6px;
+  border-radius: 6px;
+  background: #b6bdc1;
+}
+
+.modal-cue-detail .modal-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.modal-cue-detail .body-title {
+  font-size: 14px;
+  color: #35497b;
+}
+
+.modal-cue-detail .body-title span {
+  margin: 0 10px;
+}
+
+.modal-cue-detail table {
+  margin-top: 20px;
+}
+
+.modal-cue-detail table tbody tr {
+  border-bottom: none;
+}
+
+.modal-cue-detail table tbody tr th, .modal-cue-detail table tbody tr td {
+  vertical-align: middle;
+  width: 8.33%;
+}
+
+.modal-cue-detail table tbody tr th {
+  background-color: #f1f7ff;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: -0.33px;
+  color: #586a9b;
+}
+
+.modal-cue-detail table tbody tr:nth-child(3) {
+  height: 20px;
+}
+
+.modal-cue-detail table tbody tr:nth-child(2), .modal-cue-detail table tbody tr:last-child {
+  border-bottom: 1px solid #e6e8ea;
 }
 /*# sourceMappingURL=style.css.map */
