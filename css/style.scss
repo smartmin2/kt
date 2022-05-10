@@ -8138,3 +8138,155 @@ table.jb-table thead.double{
     }   
   }
 }
+.home-org-info {
+  .input-title { width: 110px;}
+  .multi-group { 
+    display: flex; 
+    gap: 5px;
+    input[type=text] {width: 200px;}
+  }
+  .jb-table-wrapper {
+    width: calc(100vw - 640px);
+    min-width: 1280px;
+    overflow: overlay;
+
+    @include scrollbar("H");
+
+    table.jb-table {
+      min-width: 1700px;
+
+      .multi-group {
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+}
+.modal-sel-catg {
+  @include default_modal(500px, auto);
+  display: none;
+  .setting-grid {
+    .setting-grid-title {
+      grid-row: 1 / 5;
+      grid-column: 1 / 2;
+    }
+  }
+}
+.modal-catg-batch {
+  @include default_modal(800px, auto);
+  display: none;
+}
+.keyword-search {
+  table tr td:last-child {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.modal-keyword-detail {
+  @include default_modal(800px, auto);
+  display: none;
+
+  input[type=text] {width: 300px;}
+  .multi-group {
+    display: flex;
+    gap: 5px;
+    .input-group {
+      width: 170px;
+    }
+  }
+  .box-title {
+    &:after {
+      content: "추가";
+    }
+    &.modify::after {
+      content: "수정";
+    }
+  }
+}
+.fa-catg-mapping, .home-channel-mng {
+  .multi-group {
+    display: flex;
+    gap: 5px;
+    .input-group { width: 200px;}
+  }
+  table tr td:nth-child(2) {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+.modal-catg-detail {
+  @include default_modal(600px, auto);
+  display: none;
+
+  input[type=text] {width: 300px;}
+  .multi-group {
+    display: flex;
+    gap: 5px;
+    .input-group {
+      width: 170px;
+    }
+  }
+  .box-title {
+    &:after {
+      content: "추가";
+    }
+    &.modify::after {
+      content: "수정";
+    }
+  }
+}
+.modal-ex-search {
+  @include default_modal(600px, auto);
+  display: none;
+
+  .box-title {
+    &:after {
+      content: "검색제외단어 추가";
+    }
+    &.modify::after {
+      content: "검색제외단어 수정";
+    }
+  }
+  .multi-group {
+    width: 100%;
+    span {display: none;}
+    &.modify span {display: block;}
+  }
+}
+.modal-catg-register {
+  @include default_modal(600px, auto);
+  display: none;
+}
+.home-standard-service {
+  .btn-append {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}
+
+.modal-channel-mng {
+  @include default_modal(800px, auto);
+  display: none;
+
+  .box-title {
+    &:after {
+      content: "홈쇼핑 채널등록";
+    }
+    &.modify::after {
+      content: "홈쇼핑 채널관리";
+    }
+  }
+
+  input[type=text] {width: 300px;}
+  .setting-grid-content:nth-child(8) {
+    input[type=text] {width: 100%;}
+  }
+}
+.solution-container {
+  background: $gray600;
+  width: 100%;
+  height: 600px;
+  border-radius: 4px;
+  @include flex_center;
+  font-size: 18px;
+}
