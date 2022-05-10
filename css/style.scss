@@ -7074,9 +7074,15 @@ table.jb-table thead.double{
       .table-wrapper > table.jb-table {
         .table-body tr {
           td {
-            &.btn-detail {
-              text-decoration: underline;
-              cursor: pointer;
+            &:nth-child(11) {
+              @include flex_center;
+              padding: 5px 0;
+            }
+            .btn-detail {
+              // width: 60px;
+              // cursor: pointer;
+              // font-size: 12px;
+              // color: #fff;
 
               &::after {
                 content: "보기";
@@ -7903,9 +7909,15 @@ table.jb-table thead.double{
 .org-livead-mng {
   .table-body tr {
     td {
-      &.btn-detail {
-        text-decoration: underline;
-        cursor: pointer;
+      &:nth-child(10) {
+        @include flex_center;
+        padding: 5px 0;
+      }
+      .btn-detail {
+        // width: 60px;
+        // cursor: pointer;
+        // font-size: 12px;
+        // color: #fff;
 
         &::after {
           content: "보기";
@@ -7913,7 +7925,7 @@ table.jb-table thead.double{
         &.open::after {
           content: "접기";
         }
-      }
+      }      
     }
 
     &.table-detail {
@@ -8280,6 +8292,12 @@ table.jb-table thead.double{
   input[type=text] {width: 300px;}
   .setting-grid-content:nth-child(8) {
     input[type=text] {width: 100%;}
+  }
+}
+.org-time-mng {
+  table tr td:first-child {
+    text-decoration: underline;
+    cursor: pointer;
   }
 }
 .solution-container {

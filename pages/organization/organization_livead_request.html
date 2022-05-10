@@ -211,7 +211,9 @@
                   <td></td>
                   <td></td>
                   <td>0</td>
-                  <td class="btn-detail"></td>
+                  <td>
+                    <button class="btn-detail btn-rec-teal"></button>                        
+                  </td>
                   <td>최진호</td>
                   <td>2021-08-14</td>
                 </tr>
@@ -590,7 +592,7 @@
 
       $(".btn-detail").on("click",function(){
         $(this).toggleClass("open");
-        $(this).parent().next(".table-detail").toggleClass("open");
+        $(this).parent().parent().next(".table-detail").toggleClass("open");
       })
       $(".btn-org-search").on("click",function(){
         $(".modal-detail").css("display","block");

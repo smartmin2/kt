@@ -14340,16 +14340,24 @@
   border-bottom: 1px solid #e6e8ea;
 }
 
-.integration-detail #tab01 .detail2 .table-wrapper > table.jb-table .table-body tr td.btn-detail {
-  text-decoration: underline;
-  cursor: pointer;
+.integration-detail #tab01 .detail2 .table-wrapper > table.jb-table .table-body tr td:nth-child(11) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
 }
 
-.integration-detail #tab01 .detail2 .table-wrapper > table.jb-table .table-body tr td.btn-detail::after {
+.integration-detail #tab01 .detail2 .table-wrapper > table.jb-table .table-body tr td .btn-detail::after {
   content: "보기";
 }
 
-.integration-detail #tab01 .detail2 .table-wrapper > table.jb-table .table-body tr td.btn-detail.open::after {
+.integration-detail #tab01 .detail2 .table-wrapper > table.jb-table .table-body tr td .btn-detail.open::after {
   content: "접기";
 }
 
@@ -16220,16 +16228,24 @@
   margin: 40px auto;
 }
 
-.org-livead-mng .table-body tr td.btn-detail {
-  text-decoration: underline;
-  cursor: pointer;
+.org-livead-mng .table-body tr td:nth-child(10) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px 0;
 }
 
-.org-livead-mng .table-body tr td.btn-detail::after {
+.org-livead-mng .table-body tr td .btn-detail::after {
   content: "보기";
 }
 
-.org-livead-mng .table-body tr td.btn-detail.open::after {
+.org-livead-mng .table-body tr td .btn-detail.open::after {
   content: "접기";
 }
 
@@ -17467,6 +17483,11 @@
 
 .modal-channel-mng .setting-grid-content:nth-child(8) input[type=text] {
   width: 100%;
+}
+
+.org-time-mng table tr td:first-child {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .solution-container {
