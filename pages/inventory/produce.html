@@ -803,6 +803,7 @@
       </div>
     </div>
     <div id="modal-background"></div>
+    <div id="modal-background2"></div>
     <div class="modal-category-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">카테고리 추가</div>
@@ -849,7 +850,7 @@
         <button class="btn-white close">취소</button>
       </div>
     </div>
-    <div class="modal-icod-cate modal-con common-box">
+    <div class="modal-icod-cate modal-con2 common-box">
       <div class="modal-top">
         <div class="box-title">ICOD 카테고리</div>
         <div class="ic-modal-close close"></div>
@@ -1132,9 +1133,8 @@
         $("body").css("overflow", "hidden");
       });
       $(".btn-rec-teal.search").on("click", function () {
-        $(".modal-icod-cate").show();
-        $("#modal-background").fadeIn(100);
-        $(".modal-limit-add").css("display", "flex").hide().fadeIn();
+        $("#modal-background2").fadeIn(100);
+        $(".modal-icod-cate").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       });
       // file tree
