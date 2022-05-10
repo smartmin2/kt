@@ -194,6 +194,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-channel-select modal-con common-box">
       <div class="modal-top">
         <div class="box-title">채널선택</div>
@@ -258,7 +259,9 @@
       });
 
       $(".btn-rec-teal").on("click", function () {
-        $(".modal-channel-select").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-channel-select").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
     </script>

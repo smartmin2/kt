@@ -173,6 +173,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-stb-detail modal-con common-box">
       <div class="modal-top">
         <div class="box-title">STB 그룹 상세 조회</div>
@@ -345,15 +346,21 @@
       arrTable.map((data) => addRow(table, data, true));
 
       $(".table-body td:nth-child(3)").on("click", function () {
-        $(".modal-stb-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-stb-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-white.upload").on("click", function () {
-        $(".modal-stbexcel-upload").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-stbexcel-upload").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-register").on("click", function () {
-        $(".modal-stb-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-stb-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
    

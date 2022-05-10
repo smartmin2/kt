@@ -267,6 +267,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-discount-add01 modal-con common-box">
       <div class="modal-top">
         <div class="box-title">서비스 단가</div>
@@ -703,16 +704,24 @@
       arrTable2.map((data) => addRow(table2, data, true));
 
       $("#tab01 .btn-register").on("click", function () {
-        $(".modal-discount-add01").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-discount-add01").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       $("#tab02 .btn-register").on("click", function () {
-        $(".modal-discount-add02").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-discount-add02").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       $("#tab02 .btn-rec-teal").on("click", function () {
-        $(".modal-region-select").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-region-select").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       $("#tab03 .btn-register").on("click", function () {
-        $(".modal-discount-add03").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-discount-add03").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".table-body td:nth-child(4)").on("click", function () {

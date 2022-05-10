@@ -161,6 +161,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-twocont-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">콘텐츠 그룹 등록/수정</div>
@@ -412,11 +413,15 @@
 
 
       $(".btn-rec-teal.select").on("click", function () {
-        $(".modal-contents-select").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-contents-select").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-register").on("click", function () {
-        $(".modal-twocont-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-twocont-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

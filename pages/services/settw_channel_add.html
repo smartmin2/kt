@@ -202,6 +202,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-settw-search modal-con common-box">
       <div class="modal-top">
         <div class="box-title">서비스 ID 검색</div>
@@ -296,7 +297,9 @@
       });
 
       $(".btn-rec-teal.search").on("click", function () {
-        $(".modal-settw-search").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-settw-search").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

@@ -121,6 +121,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-address modal-con common-box">
       <div class="modal-top">
         <div class="box-title">주소검색</div>
@@ -250,7 +251,9 @@
       });
 
       $(".btn-address").on("click", function () {
-        $(".modal-address").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-address").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
     <script></script>

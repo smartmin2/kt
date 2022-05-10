@@ -304,6 +304,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-company-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -500,15 +501,21 @@
       });
 
       $(".btn-register").on("click", function () {
-        $(".modal-company-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-company-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".table-body td:nth-child(2)").on("click", function () {
-        $(".modal-company-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-company-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-address").on("click", function () {
-        $(".modal-address").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-address").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
     </script>

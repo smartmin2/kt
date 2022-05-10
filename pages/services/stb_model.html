@@ -133,6 +133,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-stbmodel-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">상세</div>
@@ -232,11 +233,15 @@
       arrTable.map((data) => addRow(table, data, true));
 
       $(".btn-register").on("click", function () {
-        $(".modal-stbmodel-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-stbmodel-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".table-body td:nth-child(2)").on("click", function () {
-        $(".modal-stbmodel-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-stbmodel-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

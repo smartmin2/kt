@@ -136,6 +136,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-privacy-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -338,18 +339,26 @@
       arrTable.map((data) => addRow(table, data, false));
 
       $(".btn-register").on("click", function () {
-        $(".modal-privacy-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-privacy-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".table-body td:nth-child(3)").on("click", function () {
-        $(".modal-privacy-modify").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-privacy-modify").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       $(".table-body td:nth-child(6)").on("click", function () {
-        $(".modal-privacy-list").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-privacy-list").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-common.add").on("click", function () {
-        $(".modal-privacy-listadd").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-privacy-listadd").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

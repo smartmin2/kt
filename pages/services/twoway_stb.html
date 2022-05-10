@@ -147,6 +147,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-twostb-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">양방향 STB그룹 등록</div>
@@ -247,11 +248,15 @@
 
    
       $(".btn-white.upload").on("click", function () {
-        $(".modal-twostb-exupload").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-twostb-exupload").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-register").on("click", function () {
-        $(".modal-twostb-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-twostb-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

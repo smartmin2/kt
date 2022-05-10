@@ -153,7 +153,7 @@
         </div>
       </div>
     </div>
-    
+    <div id="modal-background"></div>
     <div class="modal-noad-prosel modal-con common-box">
       <div class="modal-top">
         <div class="box-title">프로그램 선택</div>
@@ -510,15 +510,21 @@
       arrTable6.map((data) => addRow(table6, data, true));
 
       $(".btn-rec-teal.pro-select").on("click", function () {
-        $(".modal-noad-prosel").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-noad-prosel").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-rec-teal.cont-select").on("click", function () {
-        $(".modal-noad-contsel").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-noad-contsel").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-rec-teal.mat-select").on("click", function () {
-        $(".modal-noad-matsel").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-noad-matsel").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
    

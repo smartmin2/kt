@@ -150,6 +150,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-brand-search modal-con common-box">
       <div class="modal-top">
         <div class="box-title">광고주별 브랜드 검색</div>
@@ -200,7 +201,9 @@
       });
 
       $(".table-body td:nth-child(3)").on("click", function () {
-       $(".modal-brand-search").css("display","flex");
+       $("#modal-background").fadeIn(100);
+        $(".modal-brand-search").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

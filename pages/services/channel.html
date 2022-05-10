@@ -196,6 +196,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-channel-detail modal-con common-box">
       <div class="modal-top">
         <div class="box-title">상세</div>
@@ -388,7 +389,9 @@
       arrTable.map((data) => addRow(table, data, true));
 
       $(".btn-register").on("click", function () {
-        $(".modal-channel-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-channel-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-white.cgroup").on("click", function () {
@@ -396,7 +399,9 @@
       });
 
       $(".table-body td:nth-child(3)").on("click", function () {
-        $(".modal-channel-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-channel-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

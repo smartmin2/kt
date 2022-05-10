@@ -178,6 +178,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-contents-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">콘텐츠 그룹 등록/수정</div>
@@ -416,11 +417,15 @@
       arrTable2.map((data) => addRow(table2, data, true));
 
       $(".btn-rec-teal.select").on("click", function () {
-        $(".modal-contents-select").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-contents-select").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-register").on("click", function () {
-        $(".modal-contents-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-contents-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

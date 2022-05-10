@@ -666,6 +666,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-search-target modal-con common-box">
       <div class="modal-top">
         <div class="box-title">타겟분석 검색</div>
@@ -932,15 +933,21 @@
       arrTable9.map((data) => addRow(table9, data, false));
 
       $(".search-re").on("click", function () {
-        $(".modal-search-target").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-search-target").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".ad-sel").on("click", function () {
-        $(".modal-search-advertiser").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-search-advertiser").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".cam-sel").on("click", function () {
-        $(".modal-search-cam").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-search-cam").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-common.next").on("click", function () {

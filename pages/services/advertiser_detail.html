@@ -423,6 +423,8 @@
         </div>
       </div>
     </div>
+
+    <div id="modal-background"></div>
     <div class="modal-pnm-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -850,23 +852,33 @@
       });
 
       $("#tab02 .btn-register").on("click", function () {
-        $(".modal-pnm-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-pnm-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $("#tab02 .table-body td:nth-child(3)").on("click", function () {
-        $(".modal-pnm-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-pnm-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".search").on("click", function () {
-        $(".modal-pnm-search").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-pnm-search").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $("#tab03 .btn-register").on("click", function () {
-        $(".modal-aam-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-aam-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $("#tab03 .table-body td:nth-child(2)").on("click", function () {
-        $(".modal-aam-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-aam-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-add-input").click(function(){
