@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>신규계정신청</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+   
+    </div>
+    <div class="main live-statistics">
+      <div class="common-box common-body">
+  
+        <div class="contents-wrapper">
+          <div class="content-title">통합광고플랫폼</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">
+               신규가입자 상세정보
+              </div>
+            </div>
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">사용자 ID</div>
+                <div class="setting-table-content">
+                  <input type="text" name="" id=""><button class="btn-rec-teal">중복검사</button><span class="desc">* 최소 6자리 (영문자 및 숫자포함)</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">사용자명</div>
+                <div class="setting-table-content">
+                  <input type="text" name="" id="">
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">업체</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">업체를 선택 하세요.</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">부서</div>
+                <div class="setting-table-content">
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">부서를 선택 하세요.</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">이메일</div>
+                <div class="setting-table-content">
+                  <div class="input-wrap-mail">
+                    <input type="text" />@
+                    <input type="text" />
+                  </div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">직접입력</option>
+                      <option value="">naver.com</option>
+                      <option value="">nate.com</option>
+                      <option value="">hanmail.net</option>
+                      <option value="">hatmail.com</option>
+                      <option value="">kt.com</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">휴대폰번호</div>
+                <div class="setting-table-content">
+                  <input type="text" placeholder="- 없이 숫자만 입력">
+                  <span>* 비밀 번호 등 관련 사용자 요청 정보가 휴대폰으로 전송 되오니 정확한 번호 입력이 필요 합니다.</span>
+                </div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title ic-title-nece">일반전화번호</div>
+                <div class="setting-table-content">
+                  <input type="text" placeholder="- 없이 숫자만 입력">
+                  <span>* 소속 회사 내 유선 전화번호</span>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+        </div>
+      </div>
+    </div>
+    <div class="modal-status-check modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">현황확인</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+         
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(8);
+      loadSubMenu("8", 1);
+      loadLnb(8, 1, 1, 1);
+
+      const arrTable = Array(10).fill(["", "", "", "", "", "", "", "", "", ""]);
+      const table = document.querySelector(".table .table-body");
+      arrTable.map((data) => addRow(table, data, false));
+
+    </script>
+  </body>
+</html>
