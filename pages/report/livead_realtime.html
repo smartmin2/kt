@@ -26,63 +26,69 @@
     <div class="location">
       <div>홈</div>
       <div>리포트</div>
-      <div>OTV 소재가공</div>
-      <div>Live통계조회</div>
+      <div>실시간 LiveAD리포트</div>
     </div>
-    <div class="main live-statistics">
+    <div class="main livead-realtime">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_09.svg" alt="c_ic_lnb_09" />리포트</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">Live통계조회</div>
+          <div class="content-title">실시간 LiveAD리포트</div>
           <div class="search-wrapper">
             <div class="search-top">
-              <div class="content-sub-title">
-                조회조건 설정
-                <span class="ic-noti">
-                  <div class="noti-box">
-                    ! 정확한 셋탑박스명 또는 셋탑박스 ID 입력후 조회하세요.<br />
-                    ! 멀티 셋탑박스 로그 조회 순서 <br />
-                    1. 셋탑박스 ID 칸의 "입력" 버튼 클릭 <br />
-                    2. 열린 입력 창에 셋탑박스 ID 입력 (하나당 한줄 사용) <br />
-                    3. 암호화 실행 버튼 클릭 <br />
-                    4. 조회 버튼 클릭하여 조회 실행<br />
-                  </div>
-                </span>
-              </div>
+              <div class="content-sub-title">조회조건설정</div>
             </div>
             <div class="search-edit-box">
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">셋탑박스명</div>
+                  <div class="input-title">캠페인명</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">기간</div>
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10" />
+                    <span>~</span>
+                    <input type="date" value="2021-02-10" />
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">광고주</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">영업사</div>
                   <div class="input-group">
                     <select name="" id="">
-                      <option value="">선택하세요.</option>
+                      <option value="">전체</option>
                     </select>
                   </div>
                 </div>
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">청약ID</div>
+                  <div class="input-title">브랜드</div>
                   <input type="text" name="" id="" />
                 </div>
               </div>
               <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">셋탑박스 ID</div>
-                  <input type="text" value="11111" />
-                  <button class="btn-rec-teal show">암호화 실행</button>
+                  <div class="input-title">담당자</div>
+                  <input type="text" name="" id="" />
                 </div>
               </div>
-              <div class="search-edit-detail hide">
+              <div class="search-edit-detail">
                 <div class="input-wrapper">
-                  <div class="input-title">입력현황 확인</div>
-                  <input type="text" value="암호화 된 셋탑박스 ID 갯수는 1개 입니다." disabled />
-                  <button class="btn-rec-teal modal-open">현황확인</button>
-                  <button class="btn-rec-teal">삭제</button>
+                  <div class="input-title">대행사</div>
+                  <input type="text" name="" id="" />
                 </div>
               </div>
             </div>
@@ -112,29 +118,34 @@
             </div>
             <table class="jb-table table">
               <colgroup>
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
-                <col style="width: 10%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
+                <col style="width: 9%" />
               </colgroup>
-              <thead>
+              <thead class="double">
                 <tr>
-                  <th>암호화 된 셋탑박스 ID</th>
+                  <th rowspan="2">광고주</th>
+                  <th rowspan="2">대행사</th>
+                  <th rowspan="2">브랜드</th>
+                  <th rowspan="2">영업사</th>
+                  <th rowspan="2">캠페인명</th>
+                  <th rowspan="2">총금액(원)</th>
+                  <th rowspan="2">집행일자</th>
+                  <th colspan="3">노출량</th>
+                  <th rowspan="2">상태</th>
+                </tr>
+                <tr>
                   <th>서비스</th>
-                  <th>콘텐츠명</th>
-                  <th>광고소재명</th>
-                  <th>생성일시</th>
-                  <th>시작일시</th>
-                  <th>종료일시</th>
-                  <th>Appt. Type</th>
-                  <th>셋탑박스명</th>
-                  <th>청약ID</th>
+                  <th>게런티(보너스율)</th>
+                  <th>추가노출량</th>
                 </tr>
               </thead>
               <tbody class="table-body"></tbody>
@@ -167,27 +178,6 @@
         </div>
       </div>
     </div>
-    <div class="modal-status-check modal-con common-box">
-      <div class="modal-top">
-        <div class="box-title">현황확인</div>
-        <div class="ic-modal-close close"></div>
-      </div>
-      <div class="modal-body">
-          <div class="setting-table">
-            <div class="row">
-              <div class="setting-table-title">STB ID</div>
-              <div class="setting-table-content">11111</div>
-            </div>
-            <div class="row">
-              <div class="setting-table-title">ENCRYPT STB ID</div>
-              <div class="setting-table-content">0X8l7PvMeFf3vr6kaTCL4LJYCUPpbROjrZihNnXEv8I=</div>
-            </div>
-          </div>
-      </div>
-      <div class="modal-bottom">
-        <button class="btn-white close">취소</button>
-      </div>
-    </div>
     <div class="footer-wrapper">
       <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
@@ -197,16 +187,11 @@
     <script>
       loadMainMenu(8);
       loadSubMenu("8", 1);
-      loadLnb(8, 1, 1, 1);
+      loadLnb(8, 4, 1, 1);
 
-      const arrTable = Array(10).fill(["","","","","","","","","",""]);
+      const arrTable = Array(10).fill(["핀란디아","LG헬로비전","핀란다아우","(주)에조미디어","22년 1월 필나리디아","1,500,000","2022.01-01~2022.05.13","CHIP","166.67(38%)","0","등록"]);
       const table = document.querySelector(".table .table-body");
       arrTable.map((data) => addRow(table, data, false));
-
-    
-      $(".btn-rec-teal.show").on("click",function(){
-        $(".search-edit-detail.hide").fadeToggle(0);
-      })
     </script>
   </body>
 </html>
