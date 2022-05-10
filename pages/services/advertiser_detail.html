@@ -425,6 +425,7 @@
     </div>
 
     <div id="modal-background"></div>
+    <div id="modal-background2"></div>
     <div class="modal-pnm-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -515,7 +516,7 @@
         </div>
     </div>
 
-    <div class="modal-pnm-search modal-con common-box">
+    <div class="modal-pnm-search modal-con2 common-box">
       <div class="modal-top">
         <div class="box-title">브랜드업종 검색</div>
         <div class="ic-modal-close close"></div>
@@ -864,7 +865,7 @@
       });
 
       $(".search").on("click", function () {
-        $("#modal-background").fadeIn(100);
+        $("#modal-background2").fadeIn(100);
         $(".modal-pnm-search").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       });

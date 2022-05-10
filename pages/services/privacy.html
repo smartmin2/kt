@@ -137,6 +137,7 @@
       </div>
     </div>
     <div id="modal-background"></div>
+    <div id="modal-background2"></div>
     <div class="modal-privacy-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -297,7 +298,7 @@
         <button class="btn-white close">취소</button>
       </div>
     </div>
-    <div class="modal-privacy-listadd modal-con common-box">
+    <div class="modal-privacy-listadd modal-con2 common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
         <div class="ic-modal-close close"></div>
@@ -356,7 +357,7 @@
       });
 
       $(".btn-common.add").on("click", function () {
-        $("#modal-background").fadeIn(100);
+        $("#modal-background2").fadeIn(100);
         $(".modal-privacy-listadd").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       });
