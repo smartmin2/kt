@@ -97,6 +97,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-virtual-detail modal-con common-box">
       <div class="modal-top">
         <div class="box-title">상세</div>
@@ -152,7 +153,9 @@
       arrTable.map((data) => addRow(table, data, true));
 
       $(".table td:nth-child(2)").on("click", function () {
-        $(".modal-virtual-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-virtual-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

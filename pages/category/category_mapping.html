@@ -412,6 +412,8 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
+
     <div class="modal-icod-cate modal-con common-box">
       <div class="modal-top">
         <div class="box-title">ICOD 카테고리</div>
@@ -490,7 +492,9 @@
 
 
       $(".btn-white.cate").on("click", function () {
-        $(".modal-icod-cate").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-icod-cate").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-register").on("click", function () {

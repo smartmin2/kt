@@ -391,6 +391,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-except-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -521,15 +522,21 @@
       arrTable5.map((data) => addRow(table5, data, true));
 
       $(".btn-register").on("click", function () {
-        $(".modal-except-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-except-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-rec-teal.search").on("click", function () {
-        $(".modal-icod-cate").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-icod-cate").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $("table td:nth-child(2)").on("click", function () {
-        $(".modal-except-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-except-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       // file tree

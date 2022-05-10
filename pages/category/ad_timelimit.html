@@ -104,6 +104,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-limit-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -207,15 +208,21 @@
 
 
       $(".btn-register").on("click", function () {
-        $(".modal-limit-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-limit-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $(".btn-rec-teal.search").on("click", function () {
-        $(".modal-icod-cate").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-icod-cate").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $("table td:nth-child(2)").on("click", function () {
-        $(".modal-limit-detail").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-limit-detail").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       // file tree

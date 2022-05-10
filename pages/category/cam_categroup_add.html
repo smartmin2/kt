@@ -151,6 +151,8 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
+
     <div class="modal-categroup-cam modal-con common-box">
       <div class="modal-top">
         <div class="box-title">상세</div>
@@ -235,7 +237,9 @@
       });
 
       $(".btn-rec-teal.select").on("click", function () {
-        $(".modal-categroup-cam").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-categroup-cam").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>
