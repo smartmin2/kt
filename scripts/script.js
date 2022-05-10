@@ -119,9 +119,9 @@
          {id: 2, name: "모니터링", link: "/pages/report/monitoring.html", 
             folder: [{ name: "LiveAD 청약현황", link: "/pages/report/monitoring.html" }] },
          {id: 3, name: "광고노출현황", link: "/pages/report/exposure_ad.html", 
-            folder: [{ name: "노출현황(LiveAD)", link: "/pages/report/exposure_ad.html" },
-                  { name: "노출현황(동영상)", link: "/pages/report/exposure_mov.html" }] },
-         {id: 4, name:'실시간 LiveAD리포트', link:'/pages/report/livead_realtime.html'},         
+            folder: [{ name: "노출현황(LiveAD)", link: "/pages/report/exposure_ad.html"},
+                  { name: "노출현황(동영상)", link: "/pages/report/exposure_mov.html"}]},
+         {id: 4, name:'실시간 LiveAD리포트', link:'/pages/report/livead_realtime.html', folder: []},
          {id: 5, name:'LiveAD게재 확인리포트', link:'/pages/report/post_confirm.html'},
          {id: 6, name:'캠페인현황(LiveAD)', link:'/pages/report/livead_campaign.html'}
         ],
