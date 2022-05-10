@@ -122,8 +122,8 @@
             folder: [{ name: "노출현황(LiveAD)", link: "/pages/report/exposure_ad.html"},
                   { name: "노출현황(동영상)", link: "/pages/report/exposure_mov.html"}]},
          {id: 4, name:'실시간 LiveAD리포트', link:'/pages/report/livead_realtime.html', folder: []},
-         {id: 5, name:'LiveAD게재 확인리포트', link:'/pages/report/post_confirm.html'},
-         {id: 6, name:'캠페인현황(LiveAD)', link:'/pages/report/livead_campaign.html'}
+         {id: 5, name:'LiveAD게재 확인리포트', link:'/pages/report/post_confirm.html', folder: []},
+         {id: 6, name:'캠페인현황(LiveAD)', link:'/pages/report/livead_campaign.html', folder: []}
         ],
     9 : [{id: 1, name:'통합 대시보드', link:'/pages/statistics/integration.html', 
             folder: [{name:'통합통계', link:'/pages/statistics/integration.html'},
