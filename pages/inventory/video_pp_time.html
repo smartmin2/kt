@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>인벤토리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>인벤토리</div>
+      <div>동영상</div>
+      <div>일별시간대 노출가중치</div>
+    </div>
+    <div class="main video-pp-time">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_08.svg" alt="c_ic_lnb_08" /> 인벤토리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">일별시간대 노출가중치</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>
+            </div>
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">기간</div>
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10" />
+                    <span>~</span>
+                    <input type="date" value="2021-02-10" />
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">구분</div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">전체</option>
+                      <option value="">주중</option>
+                      <option value="">주말</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom">
+              <button class="btn-common">조회</button>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>
+                      <option value="">50개</option>
+                      <option value="">100개</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="table-top-buttons">
+                <button class="btn-excel"><img />엑셀다운로드</button>
+                <button class="btn-register">등록</button>
+              </div>
+            </div>
+            <table class="jb-table table">
+              <colgroup>
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col />
+                <col />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+              </colgroup>
+              <thead class="double">
+                <tr>
+                  <th rowspan="2">순번</th>
+                  <th rowspan="2">우선순위</th>
+                  <th rowspan="2">시작일</th>
+                  <th rowspan="2">종료일</th>
+                  <th rowspan="2">구분</th>
+                  <th>00시</th>
+                  <th>01시</th>
+                  <th>02시</th>
+                  <th>03시</th>
+                  <th>04시</th>
+                  <th>05시</th>
+                  <th>06시</th>
+                  <th>07시</th>
+                  <th>08시</th>
+                  <th>09시</th>
+                  <th>10시</th>
+                  <th>11시</th>
+                </tr>
+                <tr>
+                  <th>12시</th>
+                  <th>13시</th>
+                  <th>14시</th>
+                  <th>15시</th>
+                  <th>16시</th>
+                  <th>17시</th>
+                  <th>18시</th>
+                  <th>19시</th>
+                  <th>20시</th>
+                  <th>21시</th>
+                  <th>22시</th>
+                  <th>23시</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td rowspan="2">1</td>
+                  <td rowspan="2">1</td>
+                  <td rowspan="2">2022-02-12</td>
+                  <td rowspan="2">2022-02-12</td>
+                  <td rowspan="2">주중</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td rowspan="2">2</td>
+                  <td rowspan="2">2</td>
+                  <td rowspan="2">2022-02-12</td>
+                  <td rowspan="2">2022-02-12</td>
+                  <td rowspan="2">주중</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                  <td>10</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-time-add modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">등록</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">순번</div>
+            <div class="setting-table-content">2</div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">우선순위</div>
+            <div class="setting-table-content">
+              <input type="text" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">시작일/종료일</div>
+            <div class="setting-table-content">
+              <div class="input-date-group">
+                <input type="date" value="2021-02-10" />
+                <span>~</span>
+                <input type="date" value="2021-02-10" />
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">구분</div>
+            <div class="setting-table-content">
+              <div class="toggle-wrap">
+                <button class="btn-toggle">전체</button>
+                <button class="btn-toggle">주중</button>
+                <button class="btn-toggle">주말</button>
+              </div>
+            </div>
+          </div>
+          <div class="row other-time">
+            <div class="setting-table-title">시간</div>
+            <div class="setting-table-content">
+              <div class="setting-table half">
+                <div class="row">
+                  <div class="setting-table-title">00시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">01시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">02시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">03시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">04시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">05시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">06시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">07시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">08시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">09시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">10시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">11시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+              </div>
+              <div class="setting-table half">
+                <div class="row">
+                  <div class="setting-table-title">12시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">13시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">14시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">15시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">16시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">17시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">18시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">19시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">20시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">21시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">22시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">23시</div>
+                  <div class="setting-table-content"><input type="text" name="" id="" /></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(5);
+      loadSubMenu("5", 2);
+      loadLnb(5, 2, 5, 0);
+
+      
+      $(".btn-register").on("click", function () {
+        $(".modal-time-add").show();
+      });
+    </script>
+  </body>
+</html>

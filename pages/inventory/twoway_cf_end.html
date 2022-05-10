@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>인벤토리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>인벤토리</div>
+      <div>양방향</div>
+      <div>예측 및 확정</div>
+    </div>
+    <div class="main twoway-cf">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_08.svg" alt="c_ic_lnb_08" /> 인벤토리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">예측 및 확정</div>
+          <div class="search-wrapper">
+            <div class="search-top"></div>
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">항목</div>
+                  <div class="input-group">
+                    <select onchange="location.href=this.value">
+                      <option value="twoway_cf_adq.html">AD Q</option>
+                      <option value="twoway_cf_end.html" selected>Ending Q</option>
+                      <option value="twoway_cf_ps.html">pause</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">편성월</div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">2022년 02월</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">상용 광고 정책</div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">21년 2월 ADQ 정책</option>
+                    </select>
+                  </div>
+                  <button class="btn-rec-teal">삭제</button>
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom">
+              <button class="btn-white new">새 정책 작성</button>
+              <button class="btn-common">인벤토리 확정</button>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <div class="content-title">
+              인벤토리 확정 상태: <span class="red2">미확정</span>
+              <span class="ic-noti">
+                <div class="noti-box">인벤토리 미확정 상태에선 인벤토리 조회 메뉴 에서 조회 되지 않습니다 산출기준 : 편성월의 2개월전, 3개월전 VOD 시청횟수</div>
+              </span>
+            </div>
+            <table class="jb-table table">
+              <colgroup>
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+                <col />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+                <col style="width: 14%" />
+              </colgroup>
+              <thead class="double">
+                <tr>
+                  <th rowspan="2">1D</th>
+                  <th rowspan="2">2D</th>
+                  <th colspan="2">시청횟수 조정</th>
+                  <th colspan="2">인벤토리 버퍼</th>
+                  <th rowspan="2">Ending Q 인벤토리</th>
+                </tr>
+                <tr>
+                  <th>시청횟수(AD Q)</th>
+                  <th>
+                    <div class="flex-ct"><input type="number" step="0.1" />% <button class="btn-rec-teal">일괄적용</button></div>
+                  </th>
+                  <th>AD Q 조정횟수</th>
+                  <th>
+                    <div class="flex-ct"><input type="number" step="0.1" />% <button class="btn-rec-teal">일괄적용</button></div>
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td colspan="2">합계</td>
+                  <td>1,000,000</td>
+                  <td>00.00%</td>
+                  <td>1,000,000</td>
+                  <td>100.00%</td>
+                  <td>1,000,000</td>
+                </tr>
+                <tr>
+                  <td rowspan="5">
+                    <div class="flex-ct">
+                      <input type="checkbox" name="" id="c2" />
+                      <label for="c2">KBS</label>
+                    </div>
+                  </td>
+                  <td>
+                    <div class="flex-lf">
+                      <input type="checkbox" name="" id="c3" />
+                      <label for="c3">예능</label>
+                    </div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-lf">
+                      <input type="checkbox" name="" id="c4" />
+                      <label for="c4">드라마</label>
+                    </div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-lf">
+                      <input type="checkbox" name="" id="c5" />
+                      <label for="c5">시사교양</label>
+                    </div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="flex-lf">
+                      <input type="checkbox" name="" id="c6" />
+                      <label for="c6">기타</label>
+                    </div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                  <td>
+                    <div class="flex-ct"><input type="number" name="" id="" /> % <button class="btn-rec-teal">적용</button></div>
+                  </td>
+                  <td>1,000,000</td>
+                </tr>
+                <tr class="sub-total">
+                  <td>소계</td>
+                  <td>5,000,000</td>
+                  <td>100.00%</td>
+                  <td>5,000,000</td>
+                  <td>500.00%</td>
+                  <td>5,000,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(5);
+      loadSubMenu("5", 2);
+      loadLnb(5, 3, 1, 0);
+
+ 
+    </script>
+  </body>
+</html>

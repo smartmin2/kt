@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>인벤토리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>인벤토리</div>
+      <div>동영상</div>
+      <div>PP+ 부킹</div>
+    </div>
+    <div class="main video-plus-bk">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_08.svg" alt="c_ic_lnb_08" /> 인벤토리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">PP+ 부킹</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>
+            </div>
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">인벤토리 기준월</div>
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">2022년 02월</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">영업사</div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">KTDS</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">광고주</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">대행사</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom">
+              <button class="btn-common">조회</button>
+            </div>
+          </div>
+          <div class="content-title">
+            인벤토리 확정 상태: <span class="red2">확정</span>
+            <span class="ic-noti">
+              <div class="noti-box">인벤토리 미확정 상태에선 부킹이 불가능합니다.</div>
+            </span>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count"></div>
+              <div class="table-top-buttons">
+                <button class="btn-excel"><img />엑셀다운로드</button>
+                <button class="btn-white">부킹현황</button>
+                <button class="btn-register" disabled>등록</button>
+              </div>
+            </div>
+            <div class="table-top-sub">
+              <span class="ic-noti">
+                <div class="noti-box">프로그램별 인벤토리와 금액은 15초 기준만 표시됩니다.</div>
+              </span>
+              <p>* <span class="red2">부킹 구좌 수</span>/ 부킹된 구좌 수</p>
+            </div>
+            <table class="jb-table table">
+              <colgroup>
+                <col style="width: 3%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 5%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+                <col style="width: 3%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>프로그램명</th>
+                  <th>인벤토리</th>
+                  <th>금액</th>
+                  <th>구좌수</th>
+                  <th>01</th>
+                  <th>02</th>
+                  <th>03</th>
+                  <th>04</th>
+                  <th>05</th>
+                  <th>06</th>
+                  <th>07</th>
+                  <th>08</th>
+                  <th>09</th>
+                  <th>10</th>
+                  <th>11</th>
+                  <th>12</th>
+                  <th>13</th>
+                  <th>14</th>
+                  <th>15</th>
+                  <th>16</th>
+                  <th>17</th>
+                  <th>18</th>
+                  <th>19</th>
+                  <th>20</th>
+                  <th>21</th>
+                  <th>22</th>
+                  <th>23</th>
+                  <th>합계</th>
+                </tr>
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="noti-wrap">
+          <div class="noti-box">dkdkdkdk</div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-bk-add modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">등록</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="table-wrapper">
+          <div class="table-top">
+           기준월 : 2022년 01월 | KTDS
+          </div>
+          <div class="table-top-sub">
+           <p>&middot; 인벤토리 목록(15초 기준)</p>
+           <p>&middot; 남은 구좌 수</p>
+          </div>
+          <table class="jb-table table1">
+            <colgroup>
+              <col style="width: 2.5%" />
+              <col style="width: 5.3333%" />
+              <col style="width: 5.3333%" />
+              <col style="width: 5.3333%" />
+              <col style="width: 4%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+              <col style="width: 2.5%" />
+            </colgroup>
+            <thead class="double">
+              <tr>
+                <th rowspan="2"><input type="checkbox" name="" id=""></th>
+                <th rowspan="2">프로그램명</th>
+                <th rowspan="2">인벤토리</th>
+                <th rowspan="2">금액</th>
+                <th><div class="flex-ct">ALL<input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+                <th><div class="flex-ct"><input type="checkbox" name="" id=""></div></th>
+              </tr>
+              <tr>
+                <th>구좌수</th>
+                <th>01</th>
+                <th>02</th>
+                <th>03</th>
+                <th>04</th>
+                <th>05</th>
+                <th>06</th>
+                <th>07</th>
+                <th>08</th>
+                <th>09</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+                <th>13</th>
+                <th>14</th>
+                <th>15</th>
+                <th>16</th>
+                <th>17</th>
+                <th>18</th>
+                <th>19</th>
+                <th>20</th>
+                <th>21</th>
+                <th>22</th>
+                <th>23</th>
+                <th>24</th>
+                <th>25</th>
+                <th>26</th>
+                <th>27</th>
+                <th>28</th>
+                <th>29</th>
+                <th>30</th>
+                <th>31</th>
+              </tr>
+            </thead>
+            <tbody class="table-body"></tbody>
+          </table>
+          <div class="table-bottom">
+            <button class="btn-common">추가</button>
+          </div>
+        </div>
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title ic-title-nece">광고주명</div>
+            <div class="setting-table-content">
+              <input type="text" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">대행사명</div>
+            <div class="setting-table-content">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count"></div>
+            <div class="table-top-buttons">
+              <button class="btn-common">삭제</button>
+            </div>
+          </div>
+          <table class="jb-table table2">
+            <colgroup>
+              <col style="width: 5%" />
+              <col style="width: 23%" />
+              <col />
+              <col style="width: 23%" />
+              <col style="width: 23%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th><input type="checkbox" name="" id=""></th>
+                <th>순번</th>
+                <th>프로그램명</th>
+                <th>기간</th>
+                <th>부킹할 구좌 수</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(5);
+      loadSubMenu("5", 2);
+      loadLnb(5, 2, 6, 0);
+
+      const arrTable = Array(10).fill(["런닝맨", "100,000", "100,000", "5", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2",""]);
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow(table, data, false));
+
+      const arrTable1 = Array(5).fill(["런닝맨", "100,000", "100,000", "5", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2", "2/2"]);
+      const table1 = document.querySelector(".table1 .table-body");
+      arrTable1.map((data) => addRow(table1, data, true));
+
+      
+      const arrTable2 = Array(2).fill(["YTN2","000","000",""]);
+      const table2 = document.querySelector(".table2 .table-body");
+      arrTable2.map((data) => addRow(table2, data, true));
+
+
+      $(".btn-register").on("click", function () {
+        $(".modal-bk-add").show();
+      });
+
+      $(".table td").on("click", function () {
+        $(this).toggleClass("active");
+        $(this).css("position", "relative");
+        $(".noti-wrap").toggleClass("active");
+        if ($(".table td").hasClass("active")) {
+          $(".btn-register").attr("disabled", false);
+        } else {
+          $(".btn-register").attr("disabled", true);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>인벤토리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>인벤토리</div>
+      <div>동영상</div>
+      <div>PP+ 부킹 현황</div>
+    </div>
+    <div class="main video_plusbk_status">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_08.svg" alt="c_ic_lnb_08" /> 인벤토리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">PP+ 부킹 현황</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>
+            </div>
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">기준월</div>
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">2022년 02월</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">영업사</div>
+                  <div class="input-group">
+                    <select>
+                      <option value="">전체</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">광고주</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">대행사</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom">
+              <button class="btn-common">조회</button>
+            </div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>
+                      <option value="">50개</option>
+                      <option value="">100개</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="table-top-buttons">
+                <button class="btn-excel"><img />엑셀다운로드</button>
+                <button class="btn-white">삭제</button>
+              </div>
+            </div>
+            <table class="jb-table table">
+              <colgroup>
+                <col sylte="width:5%;" />
+                <col sylte="width:13%;" />
+                <col sylte="width:13%;" />
+                <col  />
+                <col sylte="width:10%;" />
+                <col sylte="width:10%;" />
+                <col sylte="width:10%;" />
+                <col sylte="width:13%;" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th><input type="checkbox" name="" id=""></th>
+                  <th>영업사</th>
+                  <th>광고주</th>
+                  <th>대행사</th>
+                  <th>프로그램수</th>
+                  <th>부킹구좌수</th>
+                  <th>청약구좌수</th>
+                  <th>등록일자</th>
+                </tr>
+              </thead>
+              <tbody class="table-body"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-bk-status modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">부킹현황</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">영업사</div>
+            <div class="setting-table-content">
+              <input type="text" value="나스미디어" disabled />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">광고주</div>
+            <div class="setting-table-content">
+              <input type="text" value="아우디폭스" disabled />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">대행사</div>
+            <div class="setting-table-content">
+              <input type="text" value="옴니콤미디어그룹코리아" disabled />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">프로그램수</div>
+            <div class="setting-table-content">
+              <input type="text" value="1" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">부킹구좌수</div>
+            <div class="setting-table-content">
+              <input type="text" value="1" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">청약구좌수</div>
+            <div class="setting-table-content">
+              <input type="text" value="1" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">등록일자</div>
+            <div class="setting-table-content">
+              2022-02-20
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-bk-program modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">부킹 프로그램</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="table-wrapper">
+          <table class="jb-table table1">
+            <colgroup>
+              <col style="width: 5%" />
+              <col style="width: 13%" />
+              <col style="width: 13%" />
+              <col style="width: 13%" />
+              <col style="width: 13%" />
+              <col style="width: 13%" />
+              <col style="width: 13%" />
+              <col style="width: 13%" />
+            </colgroup>
+            <thead>
+              <tr>
+                <th>번호</th>
+                <th>영업사</th>
+                <th>광고주</th>
+                <th>대행사</th>
+                <th>프로그램명</th>
+                <th>부킹시작일</th>
+                <th>부킹종료일</th>
+                <th>부킹구좌수</th>
+              </tr>
+            </thead>
+            <tbody class="table-body">
+        
+            </tbody>
+          </table>
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script>
+      loadMainMenu(5);
+      loadSubMenu("5", 2);
+      loadLnb(5, 2, 7, 0);
+
+      const arrTable = Array(10).fill(["(주)나스미디어","(주)아우디폭스","옴니콤미디어그룹코리아","1","1","1","2022-02-20"]);
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow(table, data, true));
+
+      const arrTable1 = Array(10).fill(["1","(주)나스미디어","(주)아우디폭스","옴니콤미디어그룹코리아","TV동물농장","2022-02-20","2022-02-20","1"]);
+      const table1 = document.querySelector(".table1 .table-body");
+      arrTable1.map((data) => addRow(table1, data, false));
+
+      $(".table td:nth-child(2)").on("click", function () {
+        $(".modal-bk-status").show();
+      });
+      
+      $(".table td:nth-child(5)").on("click", function () {
+        $(".modal-bk-program").show();
+      });
+    </script>
+  </body>
+</html>
