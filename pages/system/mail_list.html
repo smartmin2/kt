@@ -187,6 +187,7 @@
       <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
     </div>
+    <div id="modal-background"></div>
   <div class="modal-view-cont modal-con common-box">
         <div class="modal-top">
           <div class="box-title">내용보기</div>
@@ -216,7 +217,9 @@
       arrTable.map((data) => addRow(table, data, false));
 
       $(".table-body td:nth-child(6)").on("click", function () {
-        $(".modal-view-cont").css("display","flex");
+        $("#modal-background").fadeIn(100);
+        $(".modal-view-cont").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     
     </script>
