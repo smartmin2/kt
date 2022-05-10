@@ -1564,11 +1564,12 @@ select {
   &-menu {
     width:200px;
     height: 80px;
-    padding:0 15px 0 95px;
     font-size: 15px;
     text-align: center;
     color: $font_color_80;
-    background: url(../assets/08_img_preplay.svg) no-repeat center;
+    border:1px solid #e6e8ea;
+    border-radius: 14px;
+    // background: url(../assets/08_img_preplay.svg) no-repeat center;
 
     @include flex_center;
     
@@ -1577,6 +1578,7 @@ select {
     &.active {
       font-size: 15px;
       color: $colors_font;
+      border:1px solid  $colors_font;
     }
   }
 
