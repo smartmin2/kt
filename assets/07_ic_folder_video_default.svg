@@ -1,0 +1,14 @@
+<svg data-name="07_ic_folder_video_default" xmlns="http://www.w3.org/2000/svg" width="46" height="46" viewBox="0 0 46 46">
+    <defs>
+        <clipPath id="0rflher73a">
+            <path data-name="사각형 533" style="fill:none" d="M0 0h46v46H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="그룹 591" style="clip-path:url(#0rflher73a)">
+        <path data-name="패스 638" d="M7 18.279v-5.961a2.76 2.76 0 0 1 2.76-2.76h6.87a2.761 2.761 0 0 1 2.052.914l.663.738a2.761 2.761 0 0 0 2.052.914h16.016a2.76 2.76 0 0 1 2.76 2.76V22.9H7z" transform="translate(-.56 -.765)" style="fill:#dc9835"/>
+        <path data-name="패스 639" d="M35.757 32.707H11.908a1.839 1.839 0 0 1-1.84-1.84V15.6a1.839 1.839 0 0 1 1.84-1.84h23.849A1.839 1.839 0 0 1 37.6 15.6v15.267a1.839 1.839 0 0 1-1.84 1.84" transform="translate(-.805 -1.1)" style="fill:#ddd"/>
+        <path data-name="패스 640" d="M37.108 34.008H10.3a1.839 1.839 0 0 1-1.84-1.84V16.9a1.839 1.839 0 0 1 1.84-1.84h26.81a1.839 1.839 0 0 1 1.84 1.84v15.268a1.839 1.839 0 0 1-1.84 1.84" transform="translate(-.677 -1.205)" style="fill:#fefffc"/>
+        <path data-name="패스 641" d="M38.735 40.047H8.123a2.76 2.76 0 0 1-2.76-2.76v-17.48a2.76 2.76 0 0 1 2.76-2.76h30.612a2.76 2.76 0 0 1 2.76 2.76v17.48a2.76 2.76 0 0 1-2.76 2.76" transform="translate(-.429 -1.364)" style="fill:#f7c74d"/>
+        <path data-name="패스 642" d="m28 30.1-5.474 3.461a1.123 1.123 0 0 1-1.719-.949V25.69a1.117 1.117 0 0 1 1.719-.949L28 28.2a1.122 1.122 0 0 1 0 1.9" transform="translate(-1.664 -1.965)" style="fill:#fff"/>
+    </g>
+</svg>
