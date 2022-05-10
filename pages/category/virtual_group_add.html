@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>카테고리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>카테고리</div>
+      <div>가상그룹관리</div>
+    </div>
+    <div class="main virtual-group-add">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_09.svg" alt="c_ic_lnb_09" />카테고리</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">가상그룹관리</div>
+          <div class="search-wrapper">
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">가상 그룹명</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">졍렬순서</div>
+                  <input type="text" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">등록</button></div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>
+                      <option value="">50개</option>
+                      <option value="">100개</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="table-top-buttons">
+                <button class="btn-white">삭제</button>
+              </div>
+            </div>
+            <table class="jb-table table">
+              <colgroup>
+                <col style="width: 4%" />
+                <col style="width: 24%" />
+                <col style="width: 24%" />
+                <col style="width: 24%" />
+                <col style="width: 24%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th scope="col"><input type="checkbox" name="" id=""></th>
+                  <th scope="col">그룹명</th>
+                  <th scope="col">그룹ID</th>
+                  <th scope="col">등록일</th>
+                  <th scope="col">정렬순서</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-virtual-detail modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">상세</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">그룹명</div>
+            <div class="setting-table-content">
+              <input type="text" value="TV다시보기"  />
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">그룹ID</div>
+            <div class="setting-table-content">
+              12
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">등록일</div>
+            <div class="setting-table-content">
+             2022-02-02
+            </div>
+          </div>
+          <div class="row">
+            <div class="setting-table-title">정렬순서</div>
+            <div class="setting-table-content">
+              <input type="text" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/jstree.min.js"></script>
+    <script>
+      loadMainMenu(4);
+      loadSubMenu("4", 10);
+      loadLnb(4, 10, 1, 1);
+
+      const arrTable = Array(10).fill(["TV다시보기", "1", "2022-02-02","1"]);
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow(table, data, true));
+
+      $(".table td:nth-child(2)").on("click", function () {
+        $(".modal-virtual-detail").show();
+      });
+    </script>
+  </body>
+</html>

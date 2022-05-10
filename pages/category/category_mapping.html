@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>카테고리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>카테고리</div>
+      <div>통합원천카테고리맵핑</div>
+    </div>
+    <div class="main category-mapping">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_09.svg" alt="c_ic_lnb_09" />리포트</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">통합원천카테고리맵핑</div>
+          <div class="table-wrapper">
+            <table class="jb-table table">
+              <colgroup>
+                <col style="width: 25%" />
+                <col style="width: 25%" />
+                <col style="width: 25%" />
+                <col style="width: 25%" />
+              </colgroup>
+              <thead class="double">
+                <tr>
+                  <th colspan="2" scope="colgroup" class="brt10">OST</th>
+                  <th colspan="2" scope="colgroup">원천채널정보</th>
+                </tr>
+                <tr>
+                  <th>경고</th>
+                  <th>오류</th>
+                  <th>경고</th>
+                  <th>오류</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td>
+                    <span class="ic-warning">0건</span>
+                  </td>
+                  <td>
+                    <span class="ic-error">0건</span>
+                  </td>
+                  <td>
+                    <span class="ic-warning">0건</span>
+                  </td>
+                  <td>
+                    <span class="ic-error">0건</span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <ul class="tab02">
+            <li class="tab02-menu active" data-tab="tab02-1"><span class="ic-video"></span>동영상</li>
+            <li class="tab02-menu" data-tab="tab02-2"><span class="ic-ost"></span>OST 카테고리</li>
+            <li class="tab02-menu" data-tab="tab02-3"><span class="ic-icod"></span>ICOD 카테고리</li>
+          </ul>
+          <div class="tab02-content active" id="tab02-1">
+            <div class="table-wrapper">
+              <div class="table-top">
+                <div class="table-top-count"></div>
+                <div class="table-top-buttons">
+                  <button class="btn-register">일괄매핑</button>
+                </div>
+              </div>
+              <table class="jb-table table1">
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                  <col style="width: 25%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="colgroup" colspan="2">1D 카테고리</th>
+                    <th scope="col">2D 카테고리</th>
+                    <th scope="colgroup" colspan="2">D&P 카테고리</th>
+                    <th scope="col">매핑</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td rowspan="6">119</td>
+                    <td rowspan="6">KBS</td>
+                    <td rowspan="2">143 예능</td>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-normal">정상</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-possible">매핑가능</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">143 예능</td>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-normal">정상</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-error">오류</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination">
+                <li>
+                  <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                </li>
+                <li><a href="#" class="num">1</a></li>
+                <li><a href="#" class="num active">2</a></li>
+                <li><a href="#" class="num">3</a></li>
+                <li><a href="#" class="num">4</a></li>
+                <li><a href="#" class="num">5</a></li>
+                <li><a href="#" class="num">6</a></li>
+                <li><a href="#" class="num">7</a></li>
+                <li><a href="#" class="num">8</a></li>
+                <li><a href="#" class="num">9</a></li>
+                <li><a href="#" class="num">10</a></li>
+                <li>
+                  <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab02-content" id="tab02-2">
+            <div class="table-wrapper">
+              <div class="table-top">
+                <div class="table-top-count"></div>
+                <div class="table-top-buttons">
+                  <button class="btn-register">일괄매핑</button>
+                </div>
+              </div>
+              <table class="jb-table table1">
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                  <col style="width: 25%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="colgroup" colspan="2">1D 카테고리</th>
+                    <th scope="col">2D 카테고리</th>
+                    <th scope="colgroup" colspan="2">D&P 카테고리</th>
+                    <th scope="col">매핑</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td rowspan="6">119</td>
+                    <td rowspan="6">KBS</td>
+                    <td rowspan="2">143 예능</td>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-normal">정상</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-possible">매핑가능</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">143 예능</td>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-normal">정상</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-error">오류</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination">
+                <li>
+                  <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                </li>
+                <li><a href="#" class="num">1</a></li>
+                <li><a href="#" class="num active">2</a></li>
+                <li><a href="#" class="num">3</a></li>
+                <li><a href="#" class="num">4</a></li>
+                <li><a href="#" class="num">5</a></li>
+                <li><a href="#" class="num">6</a></li>
+                <li><a href="#" class="num">7</a></li>
+                <li><a href="#" class="num">8</a></li>
+                <li><a href="#" class="num">9</a></li>
+                <li><a href="#" class="num">10</a></li>
+                <li>
+                  <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab02-content" id="tab02-3">
+            <div class="table-wrapper">
+              <div class="table-top">
+                <div class="table-top-count"></div>
+                <div class="table-top-buttons">
+                  <button class="btn-register">일괄매핑</button>
+                </div>
+              </div>
+              <table class="jb-table table1">
+                <colgroup>
+                  <col style="width: 10%" />
+                  <col style="width: 15%" />
+                  <col style="width: 25%" />
+                  <col style="width: 15%" />
+                  <col style="width: 15%" />
+                  <col style="width: 10%" />
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th scope="colgroup" colspan="2">1D 카테고리</th>
+                    <th scope="col">2D 카테고리</th>
+                    <th scope="colgroup" colspan="2">D&P 카테고리</th>
+                    <th scope="col">매핑</th>
+                  </tr>
+                </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td rowspan="6">119</td>
+                    <td rowspan="6">KBS</td>
+                    <td rowspan="2">143 예능</td>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-normal">정상</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-possible">매핑가능</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowspan="2">143 예능</td>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-normal">정상</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="flex-ct"><button class="btn-white cate">4828 예능</button></div>
+                    </td>
+                    <td>
+                      <div class="flex-ct">
+                        <button class="btn-rec-teal">삭제</button>
+                      </div>
+                    </td>
+                    <td>
+                      <span class="ic-error">오류</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <ul class="pagination">
+                <li>
+                  <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                </li>
+                <li><a href="#" class="num">1</a></li>
+                <li><a href="#" class="num active">2</a></li>
+                <li><a href="#" class="num">3</a></li>
+                <li><a href="#" class="num">4</a></li>
+                <li><a href="#" class="num">5</a></li>
+                <li><a href="#" class="num">6</a></li>
+                <li><a href="#" class="num">7</a></li>
+                <li><a href="#" class="num">8</a></li>
+                <li><a href="#" class="num">9</a></li>
+                <li><a href="#" class="num">10</a></li>
+                <li>
+                  <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                </li>
+                <li>
+                  <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-icod-cate modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">ICOD 카테고리</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">
+          <div class="search-edit-box">
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">카테고리명</div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="tree-box">
+          <div id="tree"></div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/jstree.min.js"></script>
+    <script>
+      loadMainMenu(4);
+      loadSubMenu("4", 2);
+      loadLnb(4, 2, 1, 1);
+           // file tree
+           $("#tree").jstree({
+        core: {
+          data: [
+            {
+              text: "VOD 카테고리",
+              state: {
+                opened: true,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "EBS 교육",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "초등학습",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "TV앱",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+          ],
+        },
+      });
+
+
+      $(".btn-white.cate").on("click", function () {
+        $(".modal-icod-cate").show();
+      });
+
+      $(".btn-register").on("click", function () {
+        location.href = "category_mapping_add.html";
+      });
+      
+    </script>
+  </body>
+</html>

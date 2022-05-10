@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>카테고리</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>카테고리</div>
+      <div>통합원천카테고리맵핑</div>
+    </div>
+    <div class="main category-mapping-add">
+      <div class="common-box common-body">
+        <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_09.svg" alt="c_ic_lnb_09" />리포트</div>
+          <ul class="sub-menu"></ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">통합원천카테고리맵핑</div>
+          <div class="setting-table">
+            <div class="content-sub-title">통합카테고리</div>
+            <div class="row">
+              <div class="setting-table-title">1D 카테고리</div>
+              <div class="setting-table-content">
+                <div class="input-group">
+                  <select name="" id="">
+                    <option value="">KBS</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">2D 카테고리</div>
+              <div class="setting-table-content">
+                <div class="input-group">
+                  <select name="" id="">
+                    <option value="">기타</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="setting-table">
+            <div class="content-sub-title">통합카테고리</div>
+            <div class="row">
+              <div class="setting-table-title">ICOD 카테고리</div>
+              <div class="setting-table-content">
+                <input type="text" name="" id="" />
+                <button class="btn-add"></button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">ICOD 카테고리</div>
+              <div class="setting-table-content">
+                <input type="text" name="" id="" />
+                <button class="btn-minus"></button>
+              </div>
+            </div>
+          </div>
+          <div class="submit-btn-group">
+            <button type="button" class="btn-common">저장</button>
+            <button type="button" class="btn-white list">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-icod-cate modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">ICOD 카테고리</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">
+          <div class="search-edit-box">
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">카테고리명</div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="tree-box">
+          <div id="tree"></div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/jstree.min.js"></script>
+    <script>
+      loadMainMenu(4);
+      loadSubMenu("4", 2);
+      loadLnb(4, 2, 1, 1);
+      // file tree
+      $("#tree").jstree({
+        core: {
+          data: [
+            {
+              text: "VOD 카테고리",
+              state: {
+                opened: true,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "EBS 교육",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "초등학습",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+            {
+              text: "TV앱",
+              state: {
+                opened: false,
+                selected: false,
+              },
+              children: [{ text: "Child 1" }, "Child 2"],
+            },
+          ],
+        },
+      });
+
+      $(".btn-add").on("click", function () {
+        $(".modal-icod-cate").show();
+      });
+      $(".btn-white.list").on("click", function () {
+        location.href = "category_mapping.html";
+      });
+    </script>
+  </body>
+</html>
