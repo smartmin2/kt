@@ -4296,22 +4296,6 @@
       </div>    
     </div>
   </div>
-  <div class="modal-region modal-con common-box">
-    <div class="modal-top">
-      <div class="box-title">지역</div>
-      <div class="ic-modal-close close"></div>
-    </div>
-    <div class="modal-body">
-      <ul class="body-list">
-        <li>서울시 강서구</li>
-        <li>서울시 강남구</li>
-        <li>서울시 강동구</li>
-      </ul>      
-    </div>
-    <div class="modal-bottom">
-      <button class="btn-white close">취소</button>
-    </div>
-  </div>
   <div class="modal-channel modal-con common-box">
     <div class="modal-top">
       <div class="box-title">채널</div>
@@ -5542,7 +5526,7 @@
               <td>Preview</td>
               <td>상용</td>
               <td>2022-09-09</td>
-              <td>선택</td>
+              <td><button class="btn-rec-teal">선택</button></td>
             </tr>
           </tbody>
         </table>
@@ -6137,7 +6121,7 @@
     })  
     $(".btn-region").on("click",function(){
       $("#modal-background").fadeIn(100);
-      $(".modal-region").css("display", "flex").hide().fadeIn();
+      $(".modal-region-select").css("display", "flex").hide().fadeIn();
       $("body").css("overflow", "hidden");
     })  
     $(".btn-channel").on("click",function(){

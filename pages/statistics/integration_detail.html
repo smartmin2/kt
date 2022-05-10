@@ -1079,7 +1079,7 @@
       })
       $(".btn-detail").on("click",function(){
         $(this).toggleClass("open");
-        $(this).parent().next(".table-detail").toggleClass("open");
+        $(this).parent().parent().next(".table-detail").toggleClass("open");
       })
       $(".btn-mul-mat").on("click", function(){
         $("#modal-background").fadeIn(300);

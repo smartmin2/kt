@@ -1566,6 +1566,7 @@
       min-width: 1500px;
     }
   }
+  .input-title { width: 115px;}
 }
 .dupliacate-material {
   tbody tr td {
@@ -5025,7 +5026,7 @@
     }
   }
 }
-.modal-region, .modal-channel {
+.modal-channel {
   @include default_modal (500px, 370px);
   display: none;
   .body-list {
@@ -5301,8 +5302,8 @@
   @include default_modal(1100px, auto);
   display: none;
   table.table-mat tbody tr td:last-child {
-    text-decoration: underline;
-    cursor: pointer;
+    @include flex_center;
+    padding: 5px 0;
   } 
   ul.selected-box {
     border: 1px solid $gray600;
