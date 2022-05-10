@@ -1327,6 +1327,17 @@ input[type=date]:after,input[type=month]:after {
 .ic-warning {
   color: #eb5050;
 }
+@each $tab in video, ost, icod{
+  .ic-#{$tab} {
+    @include flex_center;
+    &::before {
+      content: url(../assets/07_ic_folder_#{$tab}_default.svg);
+      display: inline-block;
+      width: 46px;
+      height: 46px;
+    }
+  }
+}
 
 /*********** components ***********/
 
@@ -1813,4 +1824,32 @@ select[multiple] {
   .flex-row{display: flex; gap: 10px; align-items: center;}
   margin-bottom: 20px;
 }
-.flex-row{display: flex; gap: 10px; align-items: center;}
+.flex-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.flex-ct {
+  @include flex_center;
+  gap: 10px;
+}
+.block{
+  display: block !important;
+}
+// table double
+table.jb-table thead.double {
+  height: 60px;
+  tr {
+    &:first-child {
+      .brt10 {
+        border-right: 10px solid transparent;
+      }
+    }
+    &:last-child {
+      border-top: 1px solid rgba(136, 170, 215, 0.3%);
+      th {
+        border-radius: 0;
+      }
+    }
+  }
+}
