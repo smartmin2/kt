@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path style="fill:none" d="M0 0h32v32H0z"/>
+    <path data-name="다각형 1" d="M6.136 1.481a1 1 0 0 1 1.728 0l5.259 9.019a1 1 0 0 1-.864 1.5H1.741a1 1 0 0 1-.864-1.5z" transform="translate(9 2)" style="stroke:#1bc1db;stroke-width:1.5px;fill:none"/>
+    <g data-name="사각형 383" transform="translate(3 16)" style="stroke:#1bc1db;stroke-width:1.5px;fill:none">
+        <rect width="13" height="13" rx="2" style="stroke:none"/>
+        <rect x=".75" y=".75" width="11.5" height="11.5" rx="1.25" style="fill:none"/>
+    </g>
+    <g data-name="타원 17" transform="translate(17 16)" style="stroke:#1bc1db;stroke-width:1.5px;fill:none">
+        <circle cx="6.5" cy="6.5" r="6.5" style="stroke:none"/>
+        <circle cx="6.5" cy="6.5" r="5.75" style="fill:none"/>
+    </g>
+</svg>

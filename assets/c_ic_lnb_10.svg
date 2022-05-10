@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path style="fill:none" d="M0 0h32v32H0z"/>
+    <path data-name="패스 475" d="M7.914 1.493zm3.395.234a2.507 2.507 0 0 0 2.442 2.24h5.039v4.76H7.912v-7h3.395M12.327 0H7.43a1.407 1.407 0 0 0-1.268 1.514V8.94a1.407 1.407 0 0 0 1.268 1.513h11.843A1.407 1.407 0 0 0 20.54 8.94V3.754a1.407 1.407 0 0 0-1.267-1.514h-5.522a.791.791 0 0 1-.713-.851V.851A.791.791 0 0 0 12.327 0" transform="translate(3.027 2)" style="fill:#1bc1db"/>
+    <path data-name="선 91" transform="translate(16 13.2)" style="stroke:#1bc1db;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none" d="M0 0v11.2"/>
+    <path data-name="패스 476" d="M2.595 20.439v-5.807a1.551 1.551 0 0 1 1.416-1.659h19.114a1.552 1.552 0 0 1 1.416 1.659v5.807" transform="translate(2.433 3.96)" style="stroke:#1bc1db;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.5px;fill:none"/>
+    <path data-name="패스 477" d="M3.72 20.862a.58.58 0 0 1 .583.576v1.369a.58.58 0 0 1-.583.576H2.333a.58.58 0 0 1-.583-.576v-1.37a.58.58 0 0 1 .583-.576zm0-1.727H2.333A2.317 2.317 0 0 0 0 21.437v1.369a2.317 2.317 0 0 0 2.333 2.3H3.72a2.317 2.317 0 0 0 2.333-2.3v-1.369a2.317 2.317 0 0 0-2.333-2.3" transform="translate(2 4.891)" style="fill:#1bc1db"/>
+    <path data-name="패스 478" d="M13.126 20.862a.58.58 0 0 1 .583.576v1.369a.58.58 0 0 1-.583.576h-1.387a.58.58 0 0 1-.583-.576v-1.37a.58.58 0 0 1 .583-.576zm0-1.727h-1.387a2.317 2.317 0 0 0-2.333 2.3v1.369a2.317 2.317 0 0 0 2.333 2.3h1.387a2.317 2.317 0 0 0 2.333-2.3v-1.367a2.317 2.317 0 0 0-2.333-2.3" transform="translate(3.568 4.891)" style="fill:#1bc1db"/>
+    <path data-name="패스 479" d="M22.531 20.862a.58.58 0 0 1 .583.576v1.369a.58.58 0 0 1-.583.576h-1.387a.58.58 0 0 1-.583-.576v-1.37a.58.58 0 0 1 .583-.576zm0-1.727h-1.387a2.317 2.317 0 0 0-2.333 2.3v1.369a2.317 2.317 0 0 0 2.333 2.3h1.387a2.317 2.317 0 0 0 2.333-2.3v-1.367a2.317 2.317 0 0 0-2.333-2.3" transform="translate(5.135 4.891)" style="fill:#1bc1db"/>
+    <path data-name="사각형 380" transform="translate(2 2)" style="fill:none" d="M0 0h28v28H0z"/>
+</svg>

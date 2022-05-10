@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+    <path style="fill:none" d="M0 0h32v32H0z"/>
+    <path data-name="패스 490" d="M254.826 435.742H242.89l.145-.719c.416-2.055 1.716-3.435 3.234-3.435h5.178c1.518 0 2.817 1.38 3.234 3.435z" transform="translate(-232.89 -406.588)" style="stroke-linejoin:round;stroke-width:1.5px;stroke-linecap:round;stroke:#1bc1db;fill:none"/>
+    <g data-name="패스 494" style="fill:none">
+        <path d="M2 0h25a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" style="stroke:none" transform="translate(1.5 3.423)"/>
+        <path d="M2 1.5a.5.5 0 0 0-.5.5v18a.5.5 0 0 0 .5.5h25a.5.5 0 0 0 .5-.5V2a.5.5 0 0 0-.5-.5H2M2 0h25a2 2 0 0 1 2 2v18a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z" style="fill:#1bc1db;stroke:none" transform="translate(1.5 3.423)"/>
+    </g>
+    <path data-name="패스 495" d="M-6436.062-2335.958h28" transform="translate(6438.063 2356.823)" style="stroke:#1bc1db;fill:none"/>
+    <path data-name="패스 496" d="M-6436.062-2335.958h2" transform="translate(6451.063 2358.381)" style="stroke-linecap:round;stroke:#1bc1db;fill:none"/>
+    <path data-name="패스 497" d="m4.2 16.766 2.943-4.42 2.547 2.618 4.02-6.674 5.377 8.992 5.368-9.849" transform="translate(1.29 .941)" style="stroke-linejoin:round;stroke-width:1.5px;stroke-linecap:round;stroke:#1bc1db;fill:none"/>
+    <path data-name="패스 498" d="m20.726 11.4-1.863-4.24-4.216 1.869" transform="translate(6.97 .921)" style="stroke-linejoin:round;stroke-width:1.5px;stroke-linecap:round;stroke:#1bc1db;fill:none"/>
+</svg>
