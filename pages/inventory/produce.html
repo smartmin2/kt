@@ -802,6 +802,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-category-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">카테고리 추가</div>
@@ -1126,10 +1127,15 @@
       loadLnb(5, 1, 0, 0);
 
       $("#tab01 .btn-white.new").on("click", function () {
-        $(".modal-category-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-category-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       $(".btn-rec-teal.search").on("click", function () {
         $(".modal-icod-cate").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-limit-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       // file tree
       $("#tree").jstree({
@@ -1172,14 +1178,20 @@
       });
 
       $(".table td div .btn-white").on("click", function () {
-        $(".modal-category-modify").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-category-modify").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
       $("#tab02 .btn-white.new").on("click", function () {
-        $(".modal-program-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-program-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       $("#tab03 .btn-white.new").on("click", function () {
-        $(".modal-channel-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-channel-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

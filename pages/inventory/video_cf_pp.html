@@ -249,6 +249,8 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
+
     <div class="modal-policy-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">새 정책 생성</div>
@@ -363,10 +365,14 @@
       loadLnb(5, 2, 1, 0);
 
       $(".btn-white.new").on("click", function () {
-        $(".modal-policy-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-policy-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       $(".btn-white.dist").on("click", function () {
-        $(".modal-inven-dist").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-inven-dist").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

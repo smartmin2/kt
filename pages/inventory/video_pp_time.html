@@ -242,6 +242,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-time-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -404,7 +405,9 @@
 
       
       $(".btn-register").on("click", function () {
-        $(".modal-time-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-time-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

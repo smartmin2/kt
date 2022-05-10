@@ -370,6 +370,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-region-select modal-con common-box">
       <div class="modal-top">
         <div class="box-title">지역 선택</div>
@@ -633,7 +634,9 @@
       arrTable2.map((data) => addRow(table2, data, false));
 
       $(".btn-rec-teal.region").on("click", function () {
-        $(".modal-region-select").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-region-select").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

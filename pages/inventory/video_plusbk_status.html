@@ -129,6 +129,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-bk-status modal-con common-box">
       <div class="modal-top">
         <div class="box-title">부킹현황</div>
@@ -270,11 +271,15 @@
       arrTable1.map((data) => addRow(table1, data, false));
 
       $(".table td:nth-child(2)").on("click", function () {
-        $(".modal-bk-status").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-bk-status").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
       
       $(".table td:nth-child(5)").on("click", function () {
-        $(".modal-bk-program").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-bk-program").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
     </script>
   </body>

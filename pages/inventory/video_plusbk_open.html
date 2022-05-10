@@ -243,6 +243,7 @@
         </div>
       </div>
     </div>
+    <div id="modal-background"></div>
     <div class="modal-bkopen-add modal-con common-box">
       <div class="modal-top">
         <div class="box-title">등록</div>
@@ -413,7 +414,9 @@
       loadLnb(5, 2, 7, 0);
 
       $(".btn-register").on("click", function () {
-        $(".modal-bkopen-add").show();
+        $("#modal-background").fadeIn(100);
+        $(".modal-bkopen-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
       });
 
    
