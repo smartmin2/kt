@@ -837,6 +837,8 @@
   <script src="../scripts/chart.min.js"></script>  
   <script src="../scripts/script.js"></script>
   <script>
+
+    
       $(".jb-table.table5 td:nth-child(1)").on("click", function () {
         location.href = "ollehtv_intro.html";
       });
@@ -853,6 +855,9 @@
     arrTable2.map(data => addRow(table2, data, false));    
     arrTable3.map(data => addRow(table3, data, false));    
     arrTable5.map(data => addRow(table5, data, false));   
+    
+    loadMainMenu();
+    loadSubMenu();
     
     $('.notice-box').on('click',function(){
       location.href = '#';
