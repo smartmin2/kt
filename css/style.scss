@@ -6999,6 +6999,7 @@ table.jb-table thead.double{
 .modal-login {
   display: flex;
   @include default_modal(1200px, auto);
+  display: none;
 
   .modal-body {
     overflow: inherit;
@@ -7034,6 +7035,59 @@ table.jb-table thead.double{
     }
   }
 }
+.new-account {
+  .setting-table {
+    background-color: #f1f7ff;
+    &.privacy {
+      .setting-table-title {
+        padding: 9px 24px;
+      }
+      .setting-table-content {
+        flex-flow: column;
+        align-items: flex-start;
+        .privacy-cont {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          &-desc {
+            display: none;
+            p {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+    .setting-table-content {
+      background-color: $white;
+      padding: 20px;
+    }
+  }
+  .setting-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .setting-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #35497b;
+  }
+  input[type="text"] {
+    width: 300px;
+    &.memo {
+      width: 100%;
+    }
+  }
+  .input-wrap-mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #bcbfc7;
+  }
+}
+//------------------------------------------------------
 //----- 통계 ---------------------------
 // integration-main
 .integration-main {

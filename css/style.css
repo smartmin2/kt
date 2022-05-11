@@ -2102,7 +2102,7 @@
 
 .livead-campaign .input-content { width: 300px; }
 
-.modal-login { display: -webkit-box; display: -ms-flexbox; display: flex; width: 1200px; height: auto; max-height: 900px; padding: 20px 32px 24px; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.modal-login { display: -webkit-box; display: -ms-flexbox; display: flex; width: 1200px; height: auto; max-height: 900px; padding: 20px 32px 24px; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: none; }
 .modal-login .modal-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .modal-login .modal-body { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin: 32px 0 24px; overflow: overlay; overflow-x: auto; scroll-behavior: smooth; }
 .modal-login .modal-body::-webkit-scrollbar { width: 6px; display: inline; }
@@ -2117,6 +2117,19 @@
 .modal-login .modal-body .tab-box-title { font-size: 18px; font-weight: bold; color: #141f40; margin-bottom: 20px; }
 .modal-login .modal-body .tab-box-sub { font-size: 14px; font-weight: bold; color: #141f40; margin-bottom: 10px; }
 .modal-login .modal-body .tab-box p { font-size: 13px; color: #141f40; margin-bottom: 30px; }
+
+.new-account .setting-table { background-color: #f1f7ff; }
+.new-account .setting-table.privacy .setting-table-title { padding: 9px 24px; }
+.new-account .setting-table.privacy .setting-table-content { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-flow: column; flex-flow: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.new-account .setting-table.privacy .setting-table-content .privacy-cont { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 100%; }
+.new-account .setting-table.privacy .setting-table-content .privacy-cont-desc { display: none; }
+.new-account .setting-table.privacy .setting-table-content .privacy-cont-desc p { margin-bottom: 10px; }
+.new-account .setting-table .setting-table-content { background-color: #fff; padding: 20px; }
+.new-account .setting-title-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.new-account .setting-title { font-size: 14px; font-weight: 500; color: #35497b; }
+.new-account input[type="text"] { width: 300px; }
+.new-account input[type="text"].memo { width: 100%; }
+.new-account .input-wrap-mail { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; color: #bcbfc7; }
 
 .integration-main .jb-table-wrapper { width: calc(100vw - 640px); min-width: 1280px; overflow: overlay; overflow-x: auto; scroll-behavior: smooth; }
 .integration-main .jb-table-wrapper::-webkit-scrollbar { height: 6px; display: inline; }
