@@ -175,8 +175,8 @@
 .login-wrap .login-box .login-main .btn-ell-blue { margin-bottom: 20px; margin-top: 22px; }
 .login-wrap .login-box .login-main .login-option { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
 .login-wrap .login-box .login-main .login-option .checkbox { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.login-wrap .login-box .login-main .login-option .new-account { color: #141f40; }
-.login-wrap .login-box .login-main .login-option .new-account::after { content: ""; position: absolute; width: 16px; height: 16px; background: url(../assets/ic_arrow_hyperlink_right.svg) no-repeat center center/cover; margin-top: 3px; }
+.login-wrap .login-box .login-main .login-option .new-account-txt { color: #141f40; }
+.login-wrap .login-box .login-main .login-option .new-account-txt::after { content: ""; position: absolute; width: 16px; height: 16px; background: url(../assets/ic_arrow_hyperlink_right.svg) no-repeat center center/cover; margin-top: 3px; }
 .login-wrap .login-box .login-img { position: relative; }
 .login-wrap .login-box .login-img .img-text { position: absolute; bottom: 110px; left: 100px; text-align: center; }
 .login-wrap .login-box .login-img .img-text p:first-child { font-size: 24px; color: #fff; font-weight: 500; margin-bottom: 12px; }

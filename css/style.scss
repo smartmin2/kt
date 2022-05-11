@@ -823,11 +823,11 @@
           display: flex;
         }
 
-        .new-account {
+        .new-account-txt {
           color: $font_color;
         }
 
-        .new-account::after {
+        .new-account-txt::after {
           content: "";
           position: absolute;
           width: 16px;
