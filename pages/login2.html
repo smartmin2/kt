@@ -23,17 +23,6 @@
               <input type="password" class="ic-pw" placeholder="비밀번호를 입력해주세요." />
               <button class="btn-clear"></button>
             </div>
-            <div class="prevention">
-              <div class="pre-img"></div>
-              <div class="pre-icon">
-                <button class="btn-refresh"></button>
-                <button class="btn-speaker"></button>
-              </div>
-              <div class="input-wrap">
-                <input type="text" class="pre-input" placeholder="인증번호 입력" />
-                <button class="btn-clear"></button>
-              </div>
-            </div>
             <span class="red">아이디 혹은 비밀번호가 올바르지 않습니다. 다시 입력해주세요</span>
             <button class="btn-ell-blue">로그인</button>
             <div class="login-option">
@@ -42,6 +31,18 @@
                 <input type="checkbox" name="ck" id="ck" />
                 <label for="ck"><span class="ico"></span>아이디 저장</label>
               </div>
+            </div>
+            <!-- active 삭제하면 display:none  -->
+            <div class="login-certi active">
+              <div class="login-certi-box">
+                  <div class="input-wrap">
+                    <input type="text" placeholder="인증번호를 입력해주세요." />
+                    <button class="btn-clear"></button>
+                  </div>
+                  <button class="btn-certi">인증번호 재발송</button>
+              </div>
+              <span class="red">인증번호를 확인해주세요.</span>
+              <button class="btn-ell-blue">인증번호 확인</button>
             </div>
           </div>
           <div class="login-img">
@@ -602,9 +603,16 @@ Copyright [yyyy] [name of copyright owner] Licensed under the Apache License, Ve
         $(".modal-login").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       })
+   
       $(".btn-register").on("click", function () {
         location.href ="new_account.html"
       });
+
+      if($(".login-certi").hasClass("active")){
+        $(".login-main img").css("margin-bottom","35px");
+      }else{
+        $(".login-main img").css("margin-bottom","71px");
+      }
     </script>
   </body>
 </html>

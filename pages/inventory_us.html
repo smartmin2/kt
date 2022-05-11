@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>인벤토리 사용현황</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>인벤토리 사용현황</div>
+    </div>
+    <div class="main inventory-us">
+      <div class="common-box common-body">
+        <!-- <div class="sub-menu-wrapper">
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_07.svg" alt="c_ic_lnb_07" />카테고리</div>
+          <ul class="sub-menu"></ul>
+        </div> -->
+        <div class="contents-wrapper">
+          <div class="content-title">인벤토리 사용현황</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>
+            </div>
+            <div class="search-edit-box">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">날짜</div>
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10" />
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">영업사</div>
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">선택하세요.</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">조회구분</div>
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">채널별</option>
+                      <option value="">지역별</option>
+                      <option value="">시간대별</option>
+                    </select>
+                  </div>
+                  <div class="input-group">
+                    <select name="" id="">
+                      <option value="">Cue타입전체</option>
+                      <option value="">아날로그</option>
+                      <option value="">디지털</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div class="chart-box">
+            <div class="chart-box-top">
+              <div class="box-title">채널별 인벤토리 사용현황</div>
+              <ul class="legend-box">
+                <li class="legend-item">
+                  <div class="legend-color blue"></div>잔여 인벤토리
+                </li>
+                <li class="legend-item">
+                  <div class="legend-color purple"></div>사용 인벤토리
+                </li>
+              </ul>
+            </div>
+            <canvas id="myChart1"></canvas>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">인벤토리 사용현황</div>
+              </div>
+              <div class="table-top-buttons">
+                <button class="btn-excel"><img />엑셀다운로드</button>
+              </div>
+            </div>
+            <table class="jb-table table">
+              <colgroup>
+                <col style="width: 16%" />
+                <col />
+                <col style="width: 16%" />
+                <col style="width: 16%" />
+                <col style="width: 16%" />
+                <col style="width: 16%" />
+              </colgroup>
+              <thead>
+                <tr>
+                  <th>채널분류</th>
+                  <th>채널</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총 인벤토리</th>
+                  <th>청약비율</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+                <tr>
+                  <td>스포츠 골프</td>
+                  <td>screen golf zone</td>
+                  <td>33,316</td>
+                  <td>2,296,583</td>
+                  <td>2,329,899</td>
+                  <td>1.43%</td>
+                </tr>
+                <tr>
+                  <td>지상파</td>
+                  <td>MBC</td>
+                  <td>33,316</td>
+                  <td>2,296,583</td>
+                  <td>2,329,899</td>
+                  <td>1.43%</td>
+                </tr>
+                <tr class="total">
+                  <td colspan="2">TOTAL</td>
+                  <td>21,343,384</td>
+                  <td>699,620,591</td>
+                  <td>720,963,975</td>
+                  <td>2.96%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../../scripts/script.js"></script>
+    <script src="../../scripts/jstree.min.js"></script>
+    <script src="../scripts/chart.min.js"></script>
+    <script>
+      // 차트
+      var options = {
+        responsive: true,
+        scales: {
+          x: {
+            grid: {
+              display: false,
+            },
+          },
+          y: {
+            type: "linear",
+            ticks: {
+              beginAtZero: true,
+              steps: 10,
+              stepValue: 10,
+              max: 250,
+              
+              callback: function(value, index, ticks) {
+                        return  value +'M';
+                    }
+            },
+            title: {
+              display: false,
+              align: "end",
+              text: "M",
+            },
+          },
+        },
+        // plugins: { legend: false },
+        plugins: {
+          legend: {
+            display: false,
+            position: "top",
+            align: "end",
+            labels: {
+              boxWidth: 0,
+            },
+          },
+        },
+        maintainAspectRatio: false,
+      };
+      var ctx1 = document.getElementById("myChart1").getContext("2d");
+      var myChart1 = new Chart(ctx1, {
+        type: "bar",
+        data: {
+          labels: ["screen golf zone", "KBS N Sports", "SBS Sports", "Asia N", "THE MOVIE", "니켈로디언", "KBS Kids", "BMT_NICK807", "BMT_THEMOV944", "KBS joy", "NQQ", "ONCE", "SBS MTV", "SBS F!L", "MBC", "동아TV", "Drama H", "GTV", "KBS drama", "KBS story", "Sky", "TRENDY", "SBS Biz", "생활체육TV", "COOK"],
+          datasets: [
+            {
+              label: "단위(백만)",
+              data: [5, 25,0,20,30,230,0,8,0,2,3,90,40,0,0,60,10,40,10,10,10,60,10,0,15],
+              backgroundColor: ["#9adde8", "#9adde8"],
+              barThickness: 44,
+            },
+          ],
+        },
+        options: options,
+      });
+    </script>
+  </body>
+</html>
