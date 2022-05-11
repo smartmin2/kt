@@ -772,7 +772,10 @@
 
     .login-main {
       width: 450px;
-      padding: 102px 40px 88px 40px;
+      padding: 0 40px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
       text-align: center;
 
       img {
@@ -896,10 +899,40 @@
       margin-top: 16px;
     }
   }
+  .login-certi {
+    margin-top: 20px;
+    text-align: left;
+    display: none;
+    &.active {
+      display: block;
+    }
+    &-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .input-wrap {
+        input {
+          margin-bottom: 0;
+        }
+      }
+      .btn-certi {
+        width: 80px;
+        padding: 10px;
+        background-color: $blue300;
+        text-align: center;
+        border-radius: 4px;
+        color: $white;
+      }
+    }
+  }
 }
 
 /********************* user-main **********************/
 .user-main {
+  .table5 td:nth-child(1) {
+    cursor: pointer;
+    text-decoration: underline;
+  }
   @include large {
     margin: 0 160px;
     min-width: 1600px;
@@ -1242,6 +1275,118 @@
   }
 }
 
+.ollehtv-intro {
+  table.jb-table tbody tr td:first-child {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+.inventory-us {
+  .table-total-count{
+    font-weight: bold;
+    color: #35497b;
+  }
+  .total {
+    background-color: $total;
+  }
+  .chart-box {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 16px;
+    &-top {
+      height: 38px;
+      display: flex;
+      justify-content: space-between;
+      .box-title {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2a3d72;
+      }
+      .legend-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .legend-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #141f40;
+          .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 4px;
+            &.blue {
+              background-color: #9adde8;
+            }
+            &.purple {
+              background-color: #c6acff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.sales-status{
+  .chart-box {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    gap: 16px;
+    &-top {
+      height: 38px;
+      display: flex;
+      justify-content: space-between;
+      .box-title {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2a3d72;
+      }
+      .legend-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        .legend-item {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 14px;
+          font-weight: bold;
+          color: #141f40;
+          .legend-color {
+            width: 12px;
+            height: 12px;
+            border-radius: 4px;
+            &.blue {
+              background-color: #9adde8;
+            }
+            &.purple {
+              background-color: #c6acff;
+            }
+            &.yellow {
+              background-color: #fdb60e;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-total-count{
+    font-weight: bold;
+    color: #35497b;
+  }
+}
 //------- 소재----------------------------------
 //---소재가공---------------
 .processing-main,
