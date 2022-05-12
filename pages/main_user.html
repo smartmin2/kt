@@ -842,23 +842,24 @@
       $(".jb-table.table5 td:nth-child(1)").on("click", function () {
         location.href = "ollehtv_intro.html";
       });
+
+      loadMainMenu();
+    loadSubMenu();
+   
+    
     //Table
     const arrTable1 = Array(5).fill(["디즈니_킹스맨: 퍼스트 에이전트_논T_22년 2","나스미디어","총 12건 / 승인 0건 / 미승인 12건"]);    
 	  const arrTable2 = Array(5).fill(["디즈니_킹스맨: 퍼스트 에이전트_논T_22년 2","50%","50%","100%"]);    
-    const arrTable3 = Array(5).fill(["요구사항 내용이 표시됩니다. 요구사항 내용이 표시됩니다.","홍길동","KTDS","박담당"]);    
     const arrTable5 = Array(7).fill(["올레 TV 매체소개서 및 정책 제목입니다.","attach","2022-03-05"]);    
     const table1 = document.querySelector('.table1 .table_body');
     const table2 = document.querySelector('.table2 .table_body');
-    const table3 = document.querySelector('.table3 .table_body');
     const table5 = document.querySelector('.table5 .table_body');
     arrTable1.map(data => addRow(table1, data, false));    
     arrTable2.map(data => addRow(table2, data, false));    
-    arrTable3.map(data => addRow(table3, data, false));    
     arrTable5.map(data => addRow(table5, data, false));   
     
-    loadMainMenu();
-    loadSubMenu();
-    
+   
+   
     $('.notice-box').on('click',function(){
       location.href = '#';
     });
