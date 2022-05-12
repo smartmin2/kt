@@ -910,13 +910,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      margin-bottom: 10px;
       .input-wrap {
+        width:240px;
         input {
           margin-bottom: 0;
         }
       }
       .btn-certi {
-        width: 80px;
+        width: 115px;
+        height: 48px;
         padding: 10px;
         background-color: $blue300;
         text-align: center;
@@ -1272,6 +1275,16 @@
   }
   .modal-bottom {
     height: 86px;
+  }
+}
+.modal-alarm{
+  @include default_modal(auto, auto);
+  display: none;
+  .notice-box{
+    line-height:1.8;
+    .notice-box-title{
+      font-weight: bold;
+    }
   }
 }
 
@@ -7224,6 +7237,27 @@ table.jb-table thead.double{
     align-items: center;
     gap: 10px;
     color: #bcbfc7;
+  }
+}
+.changing-info{
+  .setting-table {
+    background-color: #f1f7ff;
+    .setting-table-content {
+      background-color: $white;
+      padding: 20px;
+    }
+    .input-wrap-mail {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      color: #bcbfc7;
+    }
+    input[type="text"] {
+      width: 300px;
+      &.memo {
+        width: 100%;
+      }
+    }
   }
 }
 //------------------------------------------------------

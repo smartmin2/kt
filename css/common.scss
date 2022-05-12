@@ -213,6 +213,11 @@ input[type="checkbox"] {
       }
     }
 
+    .header-button{
+      display:flex;
+      align-items: center;
+      gap:6px;
+    }
     .header-buttons {
       display: flex;
       gap: 6px;
@@ -1243,6 +1248,12 @@ input[type=date]:after,input[type=month]:after {
   &:hover {
     background: url(../assets/c_btn_plus_hover.svg) no-repeat center;
   }
+}
+.btn-bell{
+  background: url(../assets/ic-top-bell.svg) no-repeat center;
+  width: 18px;
+  height: 18px;
+  background-size: contain;
 }
 /*********** icon ***********/
 .ic-title-nece {
