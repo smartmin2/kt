@@ -4749,7 +4749,71 @@
             &.add-material {display: flex; justify-content: flex-end;}  
             &.add-material + div {height: 100px;}                                  
           }
-        }
+
+          .setting-table-content {
+            &.flex-col { align-items: flex-start;}
+            .content-box {
+              width: 900px;
+              display: flex;
+              gap: 10px;
+  
+              .check-wrapper {              
+                width: 50%;
+                .check-title {
+                  height: 30px;
+                  line-height: 30px;
+                  border-radius: 4px;
+                  background: $colors_box;
+                  text-align: center;   
+                  font-weight: bold;                     
+                  color: $colors_box_title;          
+                }
+                .btn-check-group {
+                  height: 170px;
+                  padding: 10px;
+                  display: grid;                  
+                  grid-template-columns: repeat(4, 1fr);              
+                  @include scrollbar("V");
+                  overflow: overlay;
+                }
+              }
+            }
+            table.liketime-table {
+              col {
+                &:first-child {width: 170px;}
+                &:not(:first-child) {width: 40px;}
+              }
+              tbody tr {                  
+                td {
+                  cursor: pointer;
+                  &:first-child {
+                    text-decoration: underline;
+                  }                  
+                }
+                &:nth-child(4n+0) {
+                  .td-check {
+                    background: $table_bg_red;
+                  }
+                }
+                &:nth-child(4n+1) {
+                  td.td-check {
+                    background: $table_bg_blue;
+                  }
+                }
+                &:nth-child(4n+2) {
+                  td.td-check {
+                    background: $table_bg_purple;
+                  }
+                }
+                &:nth-child(4n+3) {
+                  td.td-check {
+                    background: $table_bg_green;
+                  }
+                }
+              } 
+            }
+          } 
+        }        
       }
       .content-info-detail .setting-table{
         .setting-table-title {
@@ -5402,6 +5466,23 @@
     }
   }
 }
+.modal-search-inven {
+  @include default_modal(400px, auto);
+  display: none;
+  .modal-data {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    gap: 10px;
+
+    .data-title {
+      display: flex;
+      padding: 0 10px;
+      width: 100px;
+      justify-content: space-between
+    }
+  }
+}
 // .modal-stb-sel {
 //   @include default_modal(auto, auto);
 //   display: none;
@@ -5506,6 +5587,64 @@
         &:nth-child(4) {
           text-decoration: underline;
           cursor: pointer;
+        }
+      }
+    }
+  }
+}
+.modal-liketg {
+  @include default_modal(1000px, auto);
+  display: none;
+  .table-title {
+    font-size: 16px;
+    font-weight: bold;
+    color: $font_color;
+    p {
+      font-size: 13px;
+      font-weight: normal;
+      span {color: red;}
+    }
+  }
+  ul.tab {margin-bottom: 10px;}
+  .tab-content {
+    @include flex_center;
+    gap: 10px;
+    display: none;
+    &.active { display: flex;}
+
+    .select-title {
+      height: 30px;
+      background: $colors_box;
+      @include flex_center;
+      color: #586a9b;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 4px 4px 0 0;
+    }
+    .multi-select-wrapper {
+      select.select-box {        
+        border: solid 1px $gray600;
+        border-radius: 0 0 4px 4px;
+      }
+    }
+    &:nth-child(3) {
+      .multi-select-wrapper {
+        select.select-box {
+          width: 220px;
+        }
+      }
+    }
+    &:nth-child(4) {
+      .multi-select-wrapper {
+        select.select-box {
+          width: 800px;
+        }
+      }
+    }
+    &:nth-child(5) {
+      .multi-select-wrapper {
+        select.select-box {
+          width: 300px;
         }
       }
     }
