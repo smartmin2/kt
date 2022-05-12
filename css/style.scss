@@ -6816,7 +6816,6 @@
       border-radius: 10px;
       padding:5px 15px;
       margin-bottom: 20px;
-
     }
     p {
       font-size: 15px;
@@ -6862,14 +6861,19 @@
     width: auto;
     padding: 0 10px;
   }
-  .table-top-count {
-    p {
-      font-size: 18px;
-      font-weight: bold;
-      color: #35497b;
-      margin-bottom: 30px;
+  .contents-wrapper {
+    .content-title{
+      &.box{
+        font-size: 15px;
+        background-color: $colors_box;
+        border-radius: 10px;
+        padding:5px 15px;
+        margin-bottom: 0px;
+      }
     }
   }
+ 
+  
 }
 //twoway-cf
 .twoway-cf {
@@ -6878,6 +6882,13 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    &.box{
+      font-size: 15px;
+      background-color: $colors_box;
+      border-radius: 10px;
+      padding:5px 15px;
+      margin-bottom: 0px;
+    }
   }
   .noti-box{
     height: auto;

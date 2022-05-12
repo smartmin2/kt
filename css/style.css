@@ -2078,9 +2078,10 @@
 .video-booking-open .table-wrapper table.jb-table.table thead.double tr:last-child th:first-child { border-bottom-left-radius: 10px; }
 .video-booking-open .table-wrapper table.jb-table.table thead.double tr:last-child th:last-child { border-bottom-right-radius: 10px; }
 .video-booking-open .btn-common { width: auto; padding: 0 10px; }
-.video-booking-open .table-top-count p { font-size: 18px; font-weight: bold; color: #35497b; margin-bottom: 30px; }
+.video-booking-open .contents-wrapper .content-title.box { font-size: 15px; background-color: #f1f7ff; border-radius: 10px; padding: 5px 15px; margin-bottom: 0px; }
 
 .twoway-cf .table-wrapper .content-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin-bottom: 10px; }
+.twoway-cf .table-wrapper .content-title.box { font-size: 15px; background-color: #f1f7ff; border-radius: 10px; padding: 5px 15px; margin-bottom: 0px; }
 .twoway-cf .table-wrapper .noti-box { height: auto; }
 .twoway-cf table.jb-table thead.double { height: 70px; }
 .twoway-cf table.jb-table thead.double tr:first-child { height: 30px; }
