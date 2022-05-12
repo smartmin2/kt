@@ -515,7 +515,7 @@
             <div class="row">
               <div class="setting-table-title ic-title-nece">상품명</div>
               <div class="setting-table-content">
-                <input type="text" value="PrePlay" /><button type="button" class="btn-rec-teal search">검색</button>
+                <input type="text" value="PrePlay" /><button type="button" class="btn-rec-teal">검색</button>
               </div>
             </div>
             <div class="row">
@@ -567,7 +567,7 @@
             <div class="row">
               <div class="setting-table-title">관계코드 그룹명</div>
               <div class="setting-table-content">
-                <input type="text" value="INST_RCGN_CD" /><button type="button" class="btn-rec-teal search02">검색</button>
+                <input type="text" value="INST_RCGN_CD" /><button type="button" class="btn-rec-teal">검색</button>
               </div>
             </div>
             <div class="row">
@@ -630,8 +630,8 @@
            </div>
          </div>
          <div class="order-chg-bottom">
-          <button type="button" class="btn-rec-teal">&lt;</button>
-          <button type="button" class="btn-rec-teal">&gt;</button>
+          <button type="button" class="btn-white left"><img src="../../assets/c_ic_title_arrow_right.svg" alt="arrow"></button>
+          <button type="button" class="btn-white right"><img src="../../assets/c_ic_title_arrow_right.svg" alt="arrow"></button>
         </div>
         </div>
      
@@ -861,10 +861,6 @@
         $("body").css("overflow", "hidden");
       });
     
-      $(".table3 td:nth-child(2)").on("click", function () {
-        $(".modal-codedetail-dt02").show();
-        $(".modal-code-search").hide();
-      });
 
       // 비상품관계코드
 
@@ -883,10 +879,7 @@
         $(".modal-code-search02").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       });
-      $(".table5 td:nth-child(2)").on("click", function () {
-        $(".modal-codedetail-dt03").show();
-        $(".modal-code-search02").hide();
-      });
+    
       
     </script>
   </body>
