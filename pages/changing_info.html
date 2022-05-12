@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>회원정보수정</title>
+  </head>
+  <body>
+    <div class="header-wrapper">
+      <div class="header-main-menubar">
+        <div class="header-logo">
+          <img />
+        </div>
+        <ul class="main-menu"></ul>
+        <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+        </div>
+      </div>
+      <div class="forlder-menu-wrapper">
+        <div class="header-sub-menubar"></div>
+      </div>
+    </div>
+    <div class="location">
+      <div>홈</div>
+      <div>정보수정</div>
+    </div>
+
+    <div class="main changing-info">
+      <div class="common-box common-body">
+        <div class="contents-wrapper">
+          <div class="content-title">정보수정</div>
+          <div class="setting-table">
+            <div class="row">
+              <div class="setting-table-title">사용자 ID</div>
+              <div class="setting-table-content">hong***</div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">비밀번호</div>
+              <div class="setting-table-content">
+                <input type="text" name="" id="" />
+                <span class="desc"> * 영문/숫자/특수문자 혼용 8자리 이상(계정명과 동일, 문자 반복/연속4자리,이전패스워드 불가)</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">비밀번호 확인</div>
+              <div class="setting-table-content">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title ic-title-nece">사용자명</div>
+              <div class="setting-table-content">
+                <input type="text" value="홍길*" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">업체구분</div>
+              <div class="setting-table-content">
+                <input type="text" value="ktds" disabled />
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">부서</div>
+              <div class="setting-table-content">
+                <input type="text" value="미디어플랫폼팀" disabled />
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title ic-title-nece">이메일</div>
+              <div class="setting-table-content">
+                <div class="input-wrap-mail">
+                  <input type="text" value="hong***" />@
+                  <input type="text" value="kt.com" />
+                </div>
+                <div class="input-group">
+                  <select>
+                    <option value="">직접입력</option>
+                    <option value="">naver.com</option>
+                    <option value="">nate.com</option>
+                    <option value="">hanmail.net</option>
+                    <option value="">hatmail.com</option>
+                    <option value="">kt.com</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title ic-title-nece">휴대폰번호</div>
+              <div class="setting-table-content">
+                <input type="text" value="010-00**-0000" />
+                <span class="desc">* 사용자 요청 정보가 휴대폰으로 전송 되오니 정확한 번호 입력이 필요 합니다.</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">일반전화</div>
+              <div class="setting-table-content">
+                <input type="text" placeholder="- 없이 숫자만 입력" />
+                <span class="desc">* 소속 회사 내 유선 전화번호</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title">기타</div>
+              <div class="setting-table-content">
+                <input type="text" class="memo" />
+              </div>
+            </div>
+          </div>
+          <div class="submit-btn-group">
+            <button type="button" class="btn-common">회원탈퇴</button>
+            <button type="button" class="btn-common">저장</button>
+            <button type="button" class="btn-white list" onClick="history.go(-1)">취소</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script>
+   
+      loadMainMenu();
+      loadSubMenu();
+    </script>
+  </body>
+</html>
