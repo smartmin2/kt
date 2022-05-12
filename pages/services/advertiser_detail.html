@@ -70,7 +70,7 @@
                   <div class="setting-table-content">
                     <div>
                       <input type="text" />
-                      <button type="button" class="btn-rec-teal search">검색</button>
+                      <button type="button" class="btn-rec-teal">검색</button>
                     </div>
                     <div class="address"><input type="text" value="서울시 강서구 발산동"/><input type="text" value="121212"/></div>
                   </div>
@@ -885,9 +885,9 @@
       $(".btn-add-input").click(function(){
         $(".add-input").toggleClass("active");
         if($(".add-input").hasClass("active")){
-          $(".other-cont").css("height","110px");
+          $(".modal-aam-add,.modal-aam-detail").find(".other-cont").css("height","110px");
         }else{
-          $(".other-cont").css("height","100%");
+          $(".modal-aam-add,.modal-aam-detail").find(".other-cont").css("height","100%");
         }
       })
     
