@@ -122,7 +122,7 @@
             <div class="submit-btn-group">
               <button type="button" class="btn-common">임시저장</button>
               <button type="button" class="btn-common">결제요청</button>
-              <button type="button" class="btn-white">취소</button>
+              <button type="button" class="btn-white list">취소</button>
             </div>
             <!-- </form> -->
           </div>
@@ -139,6 +139,10 @@
       loadMainMenu(10);
       loadSubMenu("10", 7);
       loadLnb(10, 7, 0, 0);
+
+      $(".btn-white.list").on("click",function(){
+        location.href ="request.html";
+      })
     </script>
     <script></script>
   </body>

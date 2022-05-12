@@ -81,7 +81,7 @@
               </div>
               <div class="submit-btn-group">
                 <button type="button" class="btn-common">저장</button>
-                <button type="button" class="btn-white">취소</button>
+                <button type="button" class="btn-white list">취소</button>
               </div>
             </form>
           </div>
@@ -98,7 +98,13 @@
       loadMainMenu(10);
       loadSubMenu("10", 6);
       loadLnb(10, 6, 0, 0);
+
+      $(".btn-white.list").on("click",function(){
+        location.href ="board.html";
+      })
     </script>
+
+    
     <script></script>
   </body>
 </html>
