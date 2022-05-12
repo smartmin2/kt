@@ -311,7 +311,8 @@ input[type=date]:after, input[type=month]:after { position: absolute; top: 50%; 
 .btn-add { background: url(../assets/c_btn_plus_default.svg) no-repeat center; width: 18px; height: 18px; }
 .btn-add:hover { background: url(../assets/c_btn_plus_hover.svg) no-repeat center; }
 
-.btn-bell { background: url(../assets/ic-top-bell.svg) no-repeat center; width: 18px; height: 18px; background-size: contain; }
+.btn-bell { background: url(../assets/c_ic_login_Notice.svg) no-repeat center; width: 24px; height: 24px; margin-right: 6px; background-size: contain; position: relative; }
+.btn-bell.active::after { content: url(../assets/redball.svg); position: absolute; right: 0; top: -2px; }
 
 /*********** icon ***********/
 .ic-title-nece::after { content: "*"; padding-left: 2px; color: #d06062; font-size: 14px; font-weight: 500; }
