@@ -16,6 +16,7 @@
       <ul class="main-menu">
       </ul>
       <div class="header-button">
+        <button class="btn-bell"></button>
           <button class="menu-button">로그아웃</button>
           <button class="menu-button info">정보수정</button>
       </div>
@@ -28,7 +29,7 @@
     <div class="admin-main">
       <div class="item common-box">
         <div class="item-top">
-          <div class="box-title">자주 찾는 메뉴<div class="ic-arrow-r modal-open"></div></div>               
+          <div class="box-title">자주 찾는 메뉴<div class="ic-arrow-r favorite"></div></div>               
         </div>
         <div class="item-content fa-menu">
           <div class="fa-menu-box selected">소재가공</div>
@@ -961,6 +962,18 @@
       if ($(this).hasClass('modal-open') != false)
         location.href = '#';
     });
+
+    $(".header-button .btn-bell").on("click", function(){
+        $("#modal-background").fadeIn(100);
+        $(".modal-alarm").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      })
+      
+    $(".ic-arrow-r.favorite, .fa-menu-box").on("click", function(){
+        $("#modal-background").fadeIn(100);
+        $(".modal-main").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      })
     
     // 차트
     var options = {

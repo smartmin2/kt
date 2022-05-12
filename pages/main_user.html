@@ -30,7 +30,7 @@
           <div class="item-top">
             <div class="box-title">
               자주 찾는 메뉴
-              <div class="ic-arrow-r modal-open"></div>
+              <div class="ic-arrow-r favorite"></div>
             </div>
           </div>
           <div class="item-content fa-menu">
@@ -884,6 +884,11 @@
       $(".header-button .btn-bell").on("click", function(){
         $("#modal-background").fadeIn(100);
         $(".modal-alarm").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      })
+      $(".ic-arrow-r.favorite, .fa-menu-box").on("click", function(){
+        $("#modal-background").fadeIn(100);
+        $(".modal-main").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       })
 
