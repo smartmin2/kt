@@ -79,7 +79,7 @@
               <button class="btn-common">조회</button>
             </div>
           </div>
-          <div class="content-title">
+          <div class="content-title box">
             인벤토리 확정 상태: <span class="red2">확정</span>
             <span class="ic-noti">
               <div class="noti-box">인벤토리 미확정 상태에선 부킹이 불가능합니다.</div>
@@ -378,11 +378,11 @@
         $("body").css("overflow", "hidden");
       });
 
-      $(".table td").on("click", function () {
+      $(".table td:nth-child(n+5)").on("click", function () {
         $(this).toggleClass("active");
         $(this).css("position", "relative");
         $(".noti-wrap").toggleClass("active");
-        if ($(".table td").hasClass("active")) {
+        if ($(".table td:nth-child(n+5)").hasClass("active")) {
           $(".btn-register").attr("disabled", false);
         } else {
           $(".btn-register").attr("disabled", true);
