@@ -81,7 +81,7 @@
             </div>
           </div>
           <div class="table-wrapper">
-            <div class="content-title">
+            <div class="content-title box">
               인벤토리 확정 상태: <span class="red2">확정</span>
               <span class="ic-noti">
                 <div class="noti-box">산출기준 : 편성월의 2개월전, 3개월전 VOD 시청횟수</div>
@@ -218,6 +218,27 @@
       <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
     </div>
+    <div id="modal-background"></div>
+    <div class="modal-policy-add modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">새 정책 생성</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="setting-table">
+          <div class="row">
+            <div class="setting-table-title">정책 이름</div>
+            <div class="setting-table-content">
+              <input type="text" placeholder="정책 이름을 입력해주세요" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">저장</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
@@ -225,7 +246,11 @@
       loadSubMenu("5", 2);
       loadLnb(5, 3, 1, 0);
 
-   
+      $(".btn-white.new").on("click", function () {
+        $("#modal-background").fadeIn(100);
+        $(".modal-policy-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      });
     </script>
   </body>
 </html>
