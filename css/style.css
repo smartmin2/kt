@@ -1891,6 +1891,7 @@
 .livead-us .toggle-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 10px; }
 .livead-us .toggle-wrap .btn-toggle { background-color: #fff; }
 
+.produce .tab02 .tab02-menu { border: 0; border-radius: 0; }
 .produce .search-top .content-sub-title { margin-bottom: 0; }
 .produce .setting-table { overflow: initial; }
 .produce .content-sub-title { margin-bottom: 20px; }
