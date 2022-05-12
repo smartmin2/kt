@@ -214,9 +214,9 @@
   const root = window.location.href.substring(0,window.location.href.indexOf("/pages"));
   
   //--------------- Menu Load ------------------------------
-  function loadMainMenu(iActive){
+  function loadMainMenu(iActive,iMode){
     var ulMainMenu = document.querySelector('.main-menu');        
-    
+    if (iMode == 1) ulMainMenu.classList.add("user-mode");
     mainMenu.map((menu, i) =>{
       var li = document.createElement("li"); 
       if (iActive > 0 && i == iActive-1 ) li.classList.add('active') ;
