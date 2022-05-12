@@ -507,7 +507,7 @@ function addRow(table, tbData, isCheckbox) {
 }
 //--------------------------------------------------------
 //------------------ Modal --------------------------
-$(".fa-menu-box, .modal-open").on('click',function(){
+$(".modal-open").on('click',function(){
   $("#modal-background").fadeIn(300);
   $(".modal-con").css("display", "flex").hide().fadeIn();
   $("body").css("overflow", "hidden");
