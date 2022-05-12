@@ -2404,6 +2404,7 @@
     margin-bottom: 20px;
   }
   .setting-table {
+    background-color: #f1f7ff;
     .row {
       .label {
         height: 30px;
@@ -2430,6 +2431,8 @@
 
       .setting-table-content {
         gap: 10px;
+        background-color: $white;
+        padding:20px;
         .input-group {
           width: 200px;
         }
@@ -2494,6 +2497,7 @@
   .search {
     width: 50px;
   }
+ 
   .row .cell {
     display: flex;
     align-items: center;
@@ -3846,15 +3850,15 @@
     display: flex;
     gap: 5px;
     margin-top: 10px;
-    button {
+    .btn-white {
       padding: 0;
-      width: 25px;
-      height: 25px;
-      &:first-child {
-        transform: rotate(0.25turn);
+      min-width: 30px;
+      height: 30px;
+     
+      &.left{
+        transform: rotate(0.5turn);
       }
-      &:last-child {
-        transform: rotate(0.25turn);
+      &.right{
       }
     }
   }
