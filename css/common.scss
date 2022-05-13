@@ -758,6 +758,7 @@ table.jb-table {
 
     tr {
       th {
+        height: 30px;
         vertical-align: middle;
         &:first-child {
           border-radius: 10px 0 0 10px;
@@ -1223,6 +1224,20 @@ input[type=date]:after,input[type=month]:after {
     background-color: $colors_main;
   }
 }
+.btn-table-teal {
+  @include flex_center;
+  padding: 0 8px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: $teal;
+  min-width: 60px;
+  font-size: 12px;
+  color: $white;
+  font-weight: normal;
+  &:hover {
+    background-color: $colors_main;
+  }
+}
 .btn-rec-teal-52 {
   width: 52px;
   @include flex_center;
@@ -1670,7 +1685,7 @@ strong {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
   width: 100%;
   height: 30px;
   border-radius: 10px;
@@ -1678,7 +1693,11 @@ strong {
   font-size: 15px;  
   color: #586a9b;  
 }
-.bottom-line {border-bottom: 1px solid $gray600;}
+.bottom-line {  
+  border-left: 10px solid $colors_box;
+  border-right: 10px solid $colors_box ;
+  border-bottom: 1px solid #88aad7;
+}
 .tot-td {background: $colors_box;}
 .width-140 {width: 140px;}
 .width-85 {width: 85px;}
