@@ -918,11 +918,11 @@
           margin-bottom: 0;
         }
       }
-      .btn-certi {
+      .btn-rec-teal {
         width: 115px;
         height: 48px;
         padding: 10px;
-        background-color: $blue300;
+        font-size: 13px;
         text-align: center;
         border-radius: 4px;
         color: $white;
@@ -4865,7 +4865,7 @@
           
           &:nth-child(2) { 
             .tab-content.active {
-              &.region-box {
+              &#tab02 {
                 width: 100%;
                 margin-top: 20px;
                 .tab-content-main {
@@ -6653,12 +6653,13 @@
     }
    
   }
-  .noti-box {
-    height: auto;
+  .table {
+   
   }
   table.table tbody tr td {
     padding: 0;
     cursor: pointer;
+    position:relative;
     &.active {
       background-color: $teal;
     }
@@ -6670,13 +6671,22 @@
     justify-content: space-between;
   }
   .noti-wrap {
+    height: auto;
+      display: none;
     position: absolute;
-    top: 0;
-    left: 0;
-    display: none;
-    &.active {
-      display: block;
-    }
+      width: 300px;
+      padding: 10px 20px;
+      border: 1px solid $colors_line;
+      background-color: $white;
+      font-size: 12px;
+      color: $font_color;
+      font-weight: normal;
+      border-radius: 4px;
+      border-top-left-radius: 0px;
+          z-index: 10;
+  //  &.active{
+  //    display: block;
+  //  }
   }
 }
 .modal-bk-add {
