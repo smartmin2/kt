@@ -192,6 +192,9 @@
       const arrTable = Array(10).fill(["핀란디아","LG헬로비전","핀란다아우","(주)에조미디어","22년 1월 필나리디아","1,500,000","2022.01-01~2022.05.13","CHIP","166.67(38%)","0","등록"]);
       const table = document.querySelector(".table .table-body");
       arrTable.map((data) => addRow(table, data, false));
+      $(".table-body td:nth-child(5)").on("click", function () {
+        location.href = "livead_realtime_detail.html";
+      });
     </script>
   </body>
 </html>
