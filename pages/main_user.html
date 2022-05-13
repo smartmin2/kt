@@ -13,7 +13,6 @@
         <div class="header-logo">
           <img />
         </div>
-        <!-- 사용자는 카테고리, 편성, 시스템관리 삭제 사용해주세요. -->
         <ul class="main-menu"></ul>
         <div class="header-button">
           <button class="btn-bell"></button>
@@ -873,8 +872,9 @@
         location.href = "changing_info.html";
       });
 
-      loadMainMenu(0,1);
-      loadSubMenu();
+      // loadMainMenu(iActive,iMode) -- iMode (0:admin, 1:user)
+      loadMainMenu(0,1); 
+      loadSubMenu("0",0);
 
       $(".notice-box").on("click", function () {
         location.href = "#";
