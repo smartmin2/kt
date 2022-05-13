@@ -1623,8 +1623,9 @@ select, select.select-box {
 
     &.active {
       font-size: 15px;
-      color: $colors_font;
+      color: $white;
       border:1px solid  $colors_font;
+      background-color: $colors_font;
     }
   }
 
