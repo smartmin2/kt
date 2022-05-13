@@ -57,13 +57,13 @@
         </div>
         <div class="login-footer">
           <ul>
-            <li><a href="#">이용약관</a></li>
-            <li><a href="#">법적고지</a></li>
-            <li><a href="#">개인정보 처리방침</a></li>
-            <li><a href="#">청소년보호정책</a></li>
-            <li><a href="#">이메일 무단수집거부</a></li>
-            <li><a href="#">문의/연락처</a></li>
-            <li><a href="#">오픈소스 사용공지</a></li>
+            <li>이용약관</li>
+            <li>법적고지</li>
+            <li>개인정보 처리방침</li>
+            <li>청소년보호정책</li>
+            <li>이메일 무단수집거부</li>
+            <li><a href="mailto:MAIL_ADDRESS">문의/연락처</a></li>
+            <li>오픈소스 사용공지</li>
           </ul>
           <div class="address">
             (주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)<br />
@@ -416,7 +416,7 @@
             </div>
             <div class="tab-content" id="tab05">
               <div class="tab-box">
-                <div class="tab-box-title">본 웹사이트에 게시된 이메일 주소가 전자우편 수집프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 형사 처벌됨을 유념하시기 바랍니다.</div>
+                <div class="tab-box-sub">본 웹사이트에 게시된 이메일 주소가 전자우편 수집프로그램이나 그 밖의 기술적 장치를 이용하여 무단으로 수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 형사 처벌됨을 유념하시기 바랍니다.</div>
               </div>
             </div>
             <!-- <div class="tab-content" id="tab06"></div> -->
@@ -601,6 +601,9 @@ Copyright [yyyy] [name of copyright owner] Licensed under the Apache License, Ve
         $("#modal-background").fadeIn(100);
         $(".modal-login").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
+        const $this = $(this);
+        const $index = $this.index();
+        $('.tab .tab-menu').removeClass('active').eq($index).trigger('click');
       })
       $(".btn-register").on("click", function () {
         location.href ="new_account.html"
