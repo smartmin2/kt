@@ -638,6 +638,11 @@
         $(".modal-region-select").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       });
+
+      $("details").on("click", function () {
+        const sum = $(this).children("summary");
+        sum.toggleClass("open");
+      });
     </script>
   </body>
 </html>
