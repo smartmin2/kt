@@ -3856,6 +3856,9 @@
       min-width: 30px;
       height: 30px;
      
+      img{
+        width:100%;
+      }
       &.left{
         transform: rotate(0.5turn);
       }
