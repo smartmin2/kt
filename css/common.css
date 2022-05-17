@@ -171,7 +171,7 @@ button.menu-button:hover { background-color: #167f8f; }
 .setting-table .row .setting-table-content .choose-file { gap: 10px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 .setting-table .row .setting-table-content .selectBox { width: 300px; }
 .setting-table .row .setting-table-content .desc { color: #9f9f9f; font-size: 13px; margin-left: 10px; }
-.setting-table .row .setting-table-content .desc-red { color: #d06062; }
+.setting-table .row .setting-table-content .desc-red { color: #d06062; margin-left: 10px; }
 .setting-table .row .setting-table-content .date-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
 .setting-table .row.setting-table-editor { height: 461px; }
 .setting-table .row.setting-table-editor .setting-table-content { padding: 20px; overflow-x: auto; scroll-behavior: smooth; }
