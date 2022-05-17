@@ -7772,6 +7772,10 @@
     $("table.liketime-table tbody tr td:not(:first-child)").on("click",function(){
       $(this).toggleClass("td-check");
     })
+    $("details").on("click", function () {
+        const sum = $(this).children("summary");
+        sum.toggleClass("open");
+      });
     </script>
   </body>
 </html>
