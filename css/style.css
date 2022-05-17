@@ -858,7 +858,7 @@
 .modal-address .row.address .setting-table-title { width: 100%; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
 .modal-address .row.address .setting-table-content { padding: 20px; width: 100%; }
 
-.target table.jb-table tbody tr td:nth-child(2) { text-decoration: underline; cursor: pointer; }
+.target table.jb-table tbody tr td.check { text-decoration: underline; cursor: pointer; }
 
 .target-add .btn-common { width: auto; padding: 0 10px; }
 .target-add .setting-table .toggle-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; -ms-flex-wrap: wrap; flex-wrap: wrap; }

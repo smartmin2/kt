@@ -3098,7 +3098,7 @@
 
 .target {
   table.jb-table tbody tr td {
-    &:nth-child(2) {
+    &.check {
       text-decoration: underline;
       cursor: pointer;
     }
