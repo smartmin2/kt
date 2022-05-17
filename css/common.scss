@@ -1283,10 +1283,14 @@ input[type=date]:after,input[type=month]:after {
   position: relative;
   &.active{
     &::after{
-      content: url(../assets/redball.svg);
-     position: absolute;
-     right: 0;
-     top:-2px;
+      content:'';
+      position:absolute;
+      right:0;
+      top:0;
+      width:12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: $red;
     }
   }
 }
