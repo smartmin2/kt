@@ -728,9 +728,8 @@
         location.href = "settw_channel_detail.html";
       });
 
-      $("details").on("click", function () {
-        const sum = $(this).children("summary");
-        sum.toggleClass("open");
+      $("summary").on("click", function () {
+        $(this).toggleClass("open");
       });
   
   
