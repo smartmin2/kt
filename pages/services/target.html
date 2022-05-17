@@ -87,7 +87,7 @@
               <tbody class="table-body">
                 <tr>
                   <td rowspan="2"><input type="checkbox" name="" id=""></td>
-                  <td rowspan="2">JEA 테스트 멀티</td>
+                  <td rowspan="2" class="check">JEA 테스트 멀티</td>
                   <td rowspan="2">JEA 테스트 멀티</td>
                   <td rowspan="2">2022-02-02</td>
                   <td>LiveAD</td>
@@ -149,7 +149,7 @@
         location.href = "target_add.html";
       });
 
-      $(".table-body td:nth-child(2)").on("click", function () {
+      $(".table-body td.check").on("click", function () {
         location.href = "target_check.html";
       });
 
