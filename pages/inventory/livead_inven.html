@@ -639,9 +639,8 @@
         $("body").css("overflow", "hidden");
       });
 
-      $("details").on("click", function () {
-        const sum = $(this).children("summary");
-        sum.toggleClass("open");
+      $("summary").on("click", function () {
+        $(this).toggleClass("open");
       });
     </script>
   </body>
