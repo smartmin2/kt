@@ -509,6 +509,9 @@
     &:focus {
       border: 1px solid $font_color;
     }
+    &:disabled{
+      background-color: #f9fafd;
+    }
   }
 
   ul.checkbox-list {
@@ -2495,6 +2498,9 @@
 .modal-aam-detail {
   @include default_modal(1000px, auto);
   display: none;
+  select[multiple], select.select-box{
+    width:320px;
+  }
   .search {
     width: 50px;
   }
@@ -2518,9 +2524,7 @@
   }
   .other-cont2 {
     height: 295px;
-    .list-box {
-      width: 320px;
-    }
+ 
   }
   .other-cont {
     .cell {
