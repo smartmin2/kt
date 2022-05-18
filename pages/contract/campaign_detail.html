@@ -5500,7 +5500,8 @@
     
     // Modal
     $(".btn-send-sms").on("click",function(){      
-      ModalPopup('send-sms');   
+      // ModalPopup('send-sms');   
+      window.open('../modals/send-sms.html', 'SMS보내기', 'width=600, height=450, scrollbars=yes, resizable=no');
     }) 
     $(".btn-mat-batch").on("click",function(){
       ModalPopup('mat-batch');
