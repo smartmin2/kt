@@ -5188,6 +5188,9 @@
       }
       .content-info, .content-info-detail {
         display: none;
+        .setting-table .setting-table-content.width-60p {
+          input[type=text] {width: 60%;}
+        }
       }
       .default {
         .content-info {

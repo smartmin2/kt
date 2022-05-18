@@ -9662,6 +9662,12 @@
   display: none;
 }
 
+.campaign-add.campaign-detail .common-body .contents-wrapper .content-info .setting-table .setting-table-content.width-60p input[type=text], .campaign-add.campaign-detail .common-body .contents-wrapper .content-info-detail .setting-table .setting-table-content.width-60p input[type=text],
+.campaign-detail.campaign-detail .common-body .contents-wrapper .content-info .setting-table .setting-table-content.width-60p input[type=text],
+.campaign-detail.campaign-detail .common-body .contents-wrapper .content-info-detail .setting-table .setting-table-content.width-60p input[type=text] {
+  width: 60%;
+}
+
 .campaign-add.campaign-detail .common-body .contents-wrapper .default .content-info,
 .campaign-detail.campaign-detail .common-body .contents-wrapper .default .content-info {
   display: -webkit-box;
