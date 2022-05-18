@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="modal-adcate-sel">
+    <div class="modal-top">
+      <div class="box-title">광고 카테고리 선택</div>
+      <div class="ic-modal-close close"></div>
+    </div>
+    <div class="modal-body">
+      <div class="btn-check-group">            
+        <input type="checkbox" id="ck-catg1" checked><label for="ck-catg1">기본</label>            
+        <input type="checkbox" id="ck-catg2"><label for="ck-catg2">드라마</label>
+        <input type="checkbox" id="ck-catg3"><label for="ck-catg3">예능</label>                          
+        <input type="checkbox" id="ck-catg4"><label for="ck-catg4">영화</label>                          
+        <input type="checkbox" id="ck-catg5"><label for="ck-catg5">TV다시보기</label>                          
+      </div>
+      <div class="table-wrapper">
+        <table class="jb-table">
+          <colgroup>
+            <col style="width: 5%" />
+            <col style="width: 25%" />
+            <col style="width: 5%" />
+            <col style="width: 30%" />
+            <col style="width: 5%" />
+            <col style="width: 30%" />
+          </colgroup>
+          <thead>
+            <th colspan="2">가상그룹</th>
+            <th colspan="2">통합카테고리</th>
+            <th colspan="2">통합카테고리</th>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              <td rowspan="3"><input type="checkbox" name="ck1" id="" onclick="selectAll(this)" /></td>
+              <td rowspan="3">TV 다시보기</td>
+              <td><input type="checkbox" name="ck1" id="" /></td>
+              <td>KBS</td>
+              <td><input type="checkbox" name="ck1" id="" /></td>
+              <td>무료드라마</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="ck1" id="" /></td>
+              <td>KBS</td>
+              <td><input type="checkbox" name="ck1" id="" /></td>
+              <td>무료드라마</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="ck1" id="" /></td>
+              <td>KBS</td>
+              <td><input type="checkbox" name="ck1" id="" /></td>
+              <td>무료드라마</td>
+            </tr>
+            <tr>
+              <td rowspan="2"><input type="checkbox" name="ck2" id="" onclick="selectAll2(this)" /></td>
+              <td rowspan="2">영화/시리즈</td>
+              <td><input type="checkbox" name="ck2" id="" /></td>
+              <td>영화</td>
+              <td><input type="checkbox" name="ck2" id="" /></td>
+              <td>외국영화</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="ck2" id="" /></td>
+              <td>영화</td>
+              <td><input type="checkbox" name="ck2" id="" /></td>
+              <td>외국영화</td>
+            </tr>
+            <tr>
+              <td rowspan="3"><input type="checkbox" name="ck3" id="" onclick="selectAll3(this)" /></td>
+              <td rowspan="3">음악/교육/다큐</td>
+              <td><input type="checkbox" name="ck3" id="" /></td>
+              <td>음악</td>
+              <td><input type="checkbox" name="ck3" id="" /></td>
+              <td>최신업데이트</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="ck3" id="" /></td>
+              <td>음악</td>
+              <td><input type="checkbox" name="ck3" id="" /></td>
+              <td>최신업데이트</td>
+            </tr>
+            <tr>
+              <td><input type="checkbox" name="ck3" id="" /></td>
+              <td>음악</td>
+              <td><input type="checkbox" name="ck3" id="" /></td>
+              <td>최신업데이트</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="modal-bottom">
+      <button class="btn-common">저장</button>
+      <button class="btn-white close">취소</button>
+    </div>
+  </div>
+</body>
+</html>

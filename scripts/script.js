@@ -529,6 +529,38 @@ $("#modal-background2, .close").on('click',function(){
     $(".modal-con2").fadeOut(300);     
   }
 });
+
+function ModalPopup(sName){
+  $('#modalDlg').load('../modals/'+sName+'.html .modal-'+sName,function(){
+    $('#modalDlg').show();
+    $("#modal-background").fadeIn(100);   
+    $('.modal-'+sName).show();
+    $("body").css("overflow", "hidden");   
+
+    $(".close").on("click",function(){            
+      if ($("#modal-background2").css("display") == "block") return;            
+      $("#modal-background").fadeOut(300);
+      $(".modal-con").fadeOut(300);  
+      $('body').css('overflow', 'overlay');   
+      $('#modalDlg').hide();         
+    })
+  });      
+  return false;          
+}
+
+function ModalPopup2(sName){
+  $('#modalDlg2').load('../modals/'+sName+'.html .modal-'+sName,function(){
+    $('#modalDlg2').show();
+    $("#modal-background2").fadeIn(100);   
+    $('.modal-'+sName).show();    
+
+    $(".close").on("click",function(){            
+      $("#modal-background2").fadeOut(300); 
+      $(".modal-con2").fadeOut(300);             
+    })
+  });      
+  return false;          
+}
 //--------------------------------------------------------
 
 //------------------ tab --------------------------

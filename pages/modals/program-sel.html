@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="modal-program-sel">
+    <div class="modal-top">
+      <div class="box-title">프로그램 목록</div>
+      <div class="ic-modal-close close"></div>
+    </div>
+    <div class="modal-body">
+      <div class="search-wrapper"> 
+        <div class="search-table-box">
+          <div class="row">
+            <div class="search-table-detail">
+              <div class="input-wrapper">
+                <div class="input-title">캠페인 기간</div>                    
+                2022-05-01~2022-05-31
+              </div>                  
+            </div>
+          </div>                     
+          <div class="row">
+            <div class="search-table-detail">
+              <div class="input-wrapper">
+                <div class="input-title">기간</div>                    
+                <div class="input-date-group">
+                  <input type="date" value="2022-05-01">
+                  <span>~</span>
+                  <input type="date" value="2022-05-31">
+                </div>
+              </div>                  
+            </div>
+            <div class="search-table-detail">  
+              <div class="input-wrapper">
+                <div class="input-title">광고주</div>    
+                <div class="flex-row">
+                  <div class="input-group width-104">
+                    <select>
+                      <option value="">15초</option>
+                      <option value="">20초</option>
+                      <option value="">30초</option>                                                              
+                      <option value="">60초</option>                                                              
+                      <option value="">90초</option>                                                              
+                      <option value="">120초</option>                                                              
+                    </select>
+                  </div>   
+                  <div class="input-group width-104">
+                    <select>                          
+                      <option value="">게런티</option>
+                      <option value="">추가노출</option>                                                              
+                    </select>
+                  </div>   
+                  <span>잔여노출량: 0</span>
+                </div>                
+              </div>                  
+            </div>
+          </div>
+          <div class="row">
+            <div class="search-table-detail">
+              <div class="input-wrapper">
+                <div class="input-title">프로그램명</div>                    
+                <input type="text" value="" />                    
+              </div>                  
+            </div>
+            <div class="search-table-detail">
+              <div class="input-wrapper">
+                <div class="input-title">등분당 금액</div>   
+                <div class="flex-row">
+                  <input type="text" value="" />원 이하
+                </div>                 
+              </div>                  
+            </div>
+          </div>
+        </div>
+        <div class="search-bottom"><button class="btn-common">조회</button></div>
+      </div>
+      <div class="table-wrapper">
+        <div class="table-top">
+          <div class="table-top-count">
+          </div>
+          <div class="table-top-buttons">                
+            <button class="btn-common">프로그램선택</button>
+          </div>
+        </div>
+        <table class="jb-table table-program">
+          <colgroup>
+            <col style="width: 5%" />
+            <col />
+            <col style="width: 10%" />
+            <col style="width: 15%" />
+            <col style="width: 15%" />
+            <col style="width: 10%" />
+          </colgroup>
+          <thead>
+            <th><input type="checkbox" name="" id="" /></th>
+            <th>프로그램</th>
+            <th>등분당 인벤토리</th>
+            <th>금액</th>
+            <th>노출량</th>
+            <th>남은등분수</th>
+          </thead>
+          <tbody class="table-body">
+            <tr>
+              <td><input type="checkbox" name="" id=""></td>
+              <td>나 혼자 산다</td>
+              <td>66,667</td>
+              <td>6,000,000</td>
+              <td>66,667</td>
+              <td>0</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="pagination">
+          <li>
+            <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+          </li>
+          <li><a href="#" class="num">1</a></li>
+          <li><a href="#" class="num active">2</a></li>
+          <li><a href="#" class="num">3</a></li>
+          <li><a href="#" class="num">4</a></li>
+          <li><a href="#" class="num">5</a></li>
+          <li><a href="#" class="num">6</a></li>
+          <li><a href="#" class="num">7</a></li>
+          <li><a href="#" class="num">8</a></li>
+          <li><a href="#" class="num">9</a></li>
+          <li><a href="#" class="num">10</a></li>
+          <li>
+            <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-bottom">        
+      <button class="btn-white close">취소</button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="modal-mat-batch">
+    <div class="modal-top">
+      <div class="box-title">소재 일괄 변경</div>
+      <div class="ic-modal-close close"></div>
+    </div>
+    <div class="modal-body">
+      <div class="body-title">Step.1 변경 소재 선택
+        <p>※현재 캠페인 소재 중에서 변경 해야 하는 소재를 선택 하세요.( 기간이 지난 청약의 소재는 제외 )</p>
+      </div>
+      <table class="jb-table mat-batch-table1">
+        <colgroup>                
+          <col />
+          <col style="width: 10%" />
+          <col style="width: 9%" />
+          <col style="width: 7%" />                
+          <col style="width: 6%" />
+          <col style="width: 6%" />
+          <col style="width: 7%" />
+          <col style="width: 6%" />
+          <col style="width: 11%" />                
+          <col style="width: 7%" />                               
+        </colgroup>
+        <thead>              
+          <th>Asset Name</th>
+          <th>Asset ID</th>
+          <th>가공상태</th>
+          <th>플랫폼</th>
+          <th>화질</th>
+          <th>음질</th>
+          <th>Time</th>
+          <th>광고구분</th>
+          <th>등록날짜</th>          
+          <th>선택</th>
+        </thead>
+        <tbody class="table-body"></tbody>
+      </table>  
+      <div class="body-title">Step.2 변경 가능 소재 조회
+        <p>※설정 된 조회 조건을 확인 후, 변경 할 소재명을 입력 하신 후 조회버튼을 클릭 하시기 바랍니다.</p>
+      </div>
+      <div class="search-wrapper">                    
+        <div class="search-table-box">
+          <div class="row">
+            <div class="search-table-detail">
+              <div class="input-wrapper">
+                <div class="input-title">소재명</div>                    
+                <input type="text" value="" />                    
+              </div>                  
+            </div>
+            <div class="search-table-detail">
+              <div class="input-wrapper">
+                <div class="input-title ic-title-nece">기간</div>                    
+                <div class="input-date-group">
+                  <input type="date" value="2021-02-10">
+                  <span>~</span>
+                  <input type="date" value="2021-02-10">
+                </div>
+              </div>                  
+            </div>
+          </div>     
+          <div class="row">
+            <div class="search-table-detail">
+              <div class="input-wrapper">
+                <div class="input-title">조회 조건</div>                    
+                <div>플랫폼:ICOD 음질:일반 소재 길이:30초</div>
+              </div>                  
+            </div>
+          </div>               
+        </div>
+        <div class="search-bottom"><button class="btn-common">변경 가능 소재 조회</button></div>
+      </div>
+      <div class="body-title">Step.3 변경 가능 소재 목록
+        <p>※조회 된 소재 중에서 변경 할 소재의 소재 변경 버튼을 클릭 하시기 바랍니다.(기간이 지난 청약 소재 변경 제외 )</p>
+      </div>
+      <table class="jb-table mat-batch-table2">
+        <colgroup>                
+          <col />
+          <col style="width: 9%" />
+          <col style="width: 9%" />
+          <col style="width: 7%" />                
+          <col style="width: 6%" />
+          <col style="width: 6%" />
+          <col style="width: 7%" />
+          <col style="width: 6%" />
+          <col style="width: 11%" />                
+          <col style="width: 10%" />                               
+        </colgroup>
+        <thead>              
+          <th>Asset Name</th>
+          <th>Asset ID</th>
+          <th>가공상태</th>
+          <th>플랫폼</th>
+          <th>화질</th>
+          <th>음질</th>
+          <th>Time</th>
+          <th>광고구분</th>
+          <th>등록날짜</th>          
+          <th>선택</th>
+        </thead>
+        <tbody class="table-body"></tbody>
+      </table>       
+    </div>
+    <div class="modal-bottom">      
+      <button class="btn-white close">취소</button>
+    </div>
+  </div>
+</body>
+</html>
