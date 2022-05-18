@@ -5555,6 +5555,7 @@
 .modal-mat-cate {
   @include default_modal(1100px, auto);
   display: none;
+  background-color: #fff;
   table.table-mat tbody tr td:last-child {
     @include flex_center;
     padding: 5px 0;
