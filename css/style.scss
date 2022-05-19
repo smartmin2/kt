@@ -5552,8 +5552,13 @@
   max-height: 900px;
   @include scrollbar("V");
 }
+.modal-test{
+  @include default_modal(auto, auto);
+  display: none;
+  max-height: 1050px;
+}
 .modal-mat-cate {
-  @include default_modal(1100px, auto);
+  @include default_modal(auto, auto);
   display: none;
   background-color: #fff;
   table.table-mat tbody tr td:last-child {
