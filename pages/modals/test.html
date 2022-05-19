@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+  <div class="modal-test">
+    <div class="modal-top">
+      <div class="box-title">test</div>
+      <div class="ic-modal-close close"></div>
+    </div>
+    <div class="modal-body">
+     <iframe src="../modals/mat-cate.html" frameborder="1" width="1050" height="800" style="border: 1px solid #ddd"></iframe>
+    </div>
+    <div class="modal-bottom">      
+      <button class="btn-common">저장</button>  
+      <button class="btn-white close">취소</button>
+    </div> 
+  </div>
+  <script src="../../scripts/jquery-3.6.0.min.js"></script>
+  <script src="../../scripts/jquery-ui.min.js"></script>
+  <script src="../../scripts/script.js"></script>
+  <script>
+    $(".modal-mat-cate").css("display","flex");
+    $(".ic-modal-close").css("display","none");
+    $(".close").on("click",function(){
+      close();
+    })
+    
+
+
+  </script>
+</body>
+</html>
+
