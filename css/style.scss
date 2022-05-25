@@ -4768,81 +4768,19 @@
     &.livead {
       .content-info {
         .setting-table {       
-          .row {            
-            &:nth-child(2) {input[type=text]{width: 200px;}}            
-            &:nth-child(4) {input[type=text]{width: 620px;}}            
-            &.add-material {display: flex; justify-content: flex-end;}  
-            &.add-material + div {height: 100px;}                                  
-          }
-
-          .setting-table-content {
+          .setting-table-content { 
+            &:nth-last-child(3) input[type=text]{width:100%;}           
             &.flex-col { align-items: flex-start;}
-            .content-box {
-              width: 900px;
-              display: flex;
-              gap: 10px;
-  
-              .check-wrapper {              
-                width: 50%;
-                .check-title {
-                  height: 30px;
-                  line-height: 30px;
-                  border-radius: 4px;
-                  background: $colors_box;
-                  text-align: center;   
-                  font-weight: bold;                     
-                  color: $colors_box_title;          
-                }
-                .btn-check-group {
-                  height: 170px;
-                  padding: 10px;
-                  display: grid;                  
-                  grid-template-columns: repeat(4, 1fr);              
-                  @include scrollbar("V");
-                  overflow: overlay;
-                }
-              }
-            }
-            table.liketime-table {
-              col {
-                &:first-child {width: 170px;}
-                &:not(:first-child) {width: 40px;}
-              }
-              tbody tr {                  
-                td {
-                  cursor: pointer;
-                  &:first-child {
-                    text-decoration: underline;
-                  }                  
-                }
-                &:nth-child(4n+0) {
-                  .td-check {
-                    background: $table_bg_red;
-                  }
-                }
-                &:nth-child(4n+1) {
-                  td.td-check {
-                    background: $table_bg_blue;
-                  }
-                }
-                &:nth-child(4n+2) {
-                  td.td-check {
-                    background: $table_bg_purple;
-                  }
-                }
-                &:nth-child(4n+3) {
-                  td.td-check {
-                    background: $table_bg_green;
-                  }
-                }
-              } 
-            }
           } 
         }        
       }
       .content-info-detail .setting-table{
         .setting-table-title {
           &:first-child {span.ic-noti {display: none;}}
+        }
+        .row {
+          &.add-material {display: flex; justify-content: flex-end;}  
+          &.add-material + div {height: 100px;}                       
         }
         .setting-table-content{          
           .tab {border:none; margin:0;
@@ -4870,7 +4808,7 @@
           &.flex-col {display: flex;flex-direction: column;align-items: flex-start;justify-content: flex-start;padding: 15px 20px;}
           .sub-info-cnt {display: flex;align-items: center; height: 20px;}
           
-          &:nth-child(2) { 
+          &:nth-last-child(5) { 
             .tab-content.active {
               &.region-box {
                 width: 100%;
@@ -4963,7 +4901,7 @@
               }
             }
           }
-          &:nth-child(4) {
+          &:nth-last-child(3) {
             padding: 20px;
             width: 100%;
             .grid-container {
@@ -5052,6 +4990,67 @@
                 border-bottom: 1px solid $gray600;
               }
             }
+          }
+
+          .content-box {
+            width: 900px;
+            display: flex;
+            gap: 10px;
+
+            .check-wrapper {              
+              width: 50%;
+              .check-title {
+                height: 30px;
+                line-height: 30px;
+                border-radius: 4px;
+                background: $colors_box;
+                text-align: center;   
+                font-weight: bold;                     
+                color: $colors_box_title;          
+              }
+              .btn-check-group {
+                height: 170px;
+                padding: 10px;
+                display: grid;                  
+                grid-template-columns: repeat(4, 1fr);              
+                @include scrollbar("V");
+                overflow: overlay;
+              }
+            }
+          }
+          table.liketime-table {
+            col {
+              &:first-child {width: 170px;}
+              &:not(:first-child) {width: 40px;}
+            }
+            tbody tr {                  
+              td {
+                cursor: pointer;
+                &:first-child {
+                  text-decoration: underline;
+                }                  
+              }
+              &:nth-child(4n+0) {
+                .td-check {
+                  background: $table_bg_red;
+                }
+              }
+              &:nth-child(4n+1) {
+                td.td-check {
+                  background: $table_bg_blue;
+                }
+              }
+              &:nth-child(4n+2) {
+                td.td-check {
+                  background: $table_bg_purple;
+                }
+              }
+              &:nth-child(4n+3) {
+                td.td-check {
+                  background: $table_bg_green;
+                }
+              }
+            } 
           }
         }
       }
@@ -8749,4 +8748,16 @@ table.jb-table thead.double{
   border-radius: 4px;
   @include flex_center;
   font-size: 18px;
+}
+#modaliFrame {
+  width: auto;
+  height: auto;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 32px 24px;
+  background: #fff;
+  display: none;
+
+  .modal-top {display: flex;justify-content: space-between;}
 }

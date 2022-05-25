@@ -186,7 +186,16 @@
   <!-- Modal Popup -->
   <div id="modal-background"></div>
   <div id="modal-background2"></div>
-  <div id="modalDlg" class="modal-con common-box"></div>    
+  <div id="modalDlg" class="modal-con common-box"></div>   
+  <!-- iFrame Modal Sample -->
+  <div id="modaliFrame" class="modaliFrame modal-con common-box">
+    <div class="modal-top">
+      <div class="box-title"></div>
+      <div class="ic-modal-close close"></div>
+    </div>    
+    <!-- iframe의 id값은 변경하여도 css에 영향이 없음. -->
+    <iframe id="iFrameTest" frameborder="1"></iframe>
+  </div> 
 
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/jquery-ui.min.js"></script>
@@ -198,11 +207,20 @@
       loadLnb(2, 1, 1, 0);
 
     
-    // Modal
+    // iFrame Modal Sample
     $(".btn-test").on("click",function(){      
-      ModalPopup('test');   
-      // window.open('../modals/send-sms.html', 'SMS보내기', 'width=600, height=450, scrollbars=yes, resizable=no');
-    }) 
+      $("#modal-background").fadeIn(100);
+      // iframe으로 띄울 모달의 title 값 변경
+      $("#modaliFrame .box-title")[0].innerHTML = "test";
+      // iframe의 src,width,height 설정 (iframe의 id값은 변경하여도 css에 영향이 없음.)
+      $("#iFrameTest").attr("src", "../modals/mat-cate.html");
+      $("#iFrameTest").attr("width", "1050");
+      $("#iFrameTest").attr("height", "790");
+
+      $("#modaliFrame").css("display", "flex").hide().fadeIn();
+      $("body").css("overflow", "hidden");
+    })     
+
   
     </script>
   </body>
