@@ -64,11 +64,22 @@
                   </div>                  
                 </div>
               </div>              
+              <!-- 220613 추가
+                검색박스가 필요한 곳에
+                 search-box를 넣고,
+                  부모 input-wrapper에 search클래스 추가해주세요. -->
               <div class="row">
                 <div class="search-table-detail">
-                  <div class="input-wrapper">
+                  <div class="input-wrapper search">
                     <div class="input-title">광고주</div>                    
-                    <input type="text" value="" />                    
+                    <input type="text" value="" /> 
+                    <div class="search-box">
+                      <ul>
+                        <li>kt</li>
+                        <li>ktds</li>
+                        <li>ktds</li>
+                      </ul>
+                    </div>                   
                   </div>                  
                 </div>
                 <div class="search-table-detail">
@@ -89,9 +100,16 @@
               </div>
               <div class="row">
                 <div class="search-table-detail">
-                  <div class="input-wrapper">
+                  <div class="input-wrapper search">
                     <div class="input-title">브랜드</div>                    
                     <input type="text" value="" />    
+                    <div class="search-box">
+                      <ul>
+                        <li>kt</li>
+                        <li>ktds</li>
+                        <li>ktds</li>
+                      </ul>
+                    </div>  
                   </div>                  
                 </div>
                 <div class="search-table-detail">
@@ -125,9 +143,16 @@
               </div>
               <div class="row">
                 <div class="search-table-detail">
-                  <div class="input-wrapper">
+                  <div class="input-wrapper search">
                     <div class="input-title">대행사</div>                    
-                    <input type="text" value="" />    
+                    <input type="text" value=""/>    
+                    <div class="search-box">
+                      <ul>
+                        <li>kt</li>
+                        <li>ktds</li>
+                        <li>ktds</li>
+                      </ul>
+                    </div>  
                   </div>                  
                 </div>
                 <div class="search-table-detail">
@@ -445,6 +470,12 @@
         $(".modal-report").fadeOut();
         $(".modal-report-result").fadeIn(200);
       })
+
+      // 220613 추가
+      $(".input-wrapper.search").keyup(function(){
+        $(this).children(".search-box").show();
+      })
+
     </script>
   </body>
 </html>
