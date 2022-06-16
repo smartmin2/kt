@@ -31,14 +31,16 @@
     <div class="main user">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
+      
           <div class="sub-menu-title"><img src="../assets/c_ic_lnb_14.svg" alt="ic-14">시스템관리</div>
           <ul class="sub-menu">
           </ul>
         </div>
+        <button class="btn-lnb"></button>
         <div class="contents-wrapper">
           <div class="content-title">사용자관리</div>
             <iframe
-            src="https://mweb.adat.co.kr/MicroStrategy/tapmart"
+            src="https://mweb.adat.co.kr/MicroStrategy/tapmart/viewMstr.do?documentID=F8B17A584990769C147D1B89B8BAF908&ctype=m&uid=mk2kim&venid=VR0030000&auth=Y"
             width="100%"
             height="800"
             scrolling="auto"
@@ -60,7 +62,15 @@
       loadSubMenu("11", 1);
       loadLnb(11, 1, 0, 0);
 
-   
+      $(".btn-lnb").on("click", function(){
+        $(this).toggleClass("hide");
+        if($(this).hasClass("hide")){
+          $(".sub-menu-wrapper").hide(100);
+        }else{
+          $(".sub-menu-wrapper").show(100);
+        }
+      })
+
 
     </script>
   </body>
