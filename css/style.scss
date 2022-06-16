@@ -9135,3 +9135,17 @@
     justify-content: space-between;
   }
 }
+
+// 220616 lnb toggle button
+.btn-lnb {
+  display: flex;
+  margin-top: 5px;
+  background:url(../assets/arrow.png)no-repeat center/cover;
+  width: 24px;
+  height: 24px;
+  transform: rotate(180deg);
+
+  &.hide{
+    transform: rotate(0);
+  }
+}

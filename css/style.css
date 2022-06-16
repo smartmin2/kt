@@ -2782,4 +2782,8 @@
 
 #modaliFrame { width: auto; height: auto; max-height: 900px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; padding: 20px 32px 24px; background: #fff; display: none; }
 #modaliFrame .modal-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+
+.btn-lnb { display: -webkit-box; display: -ms-flexbox; display: flex; margin-top: 5px; background: url(../assets/arrow.png) no-repeat center/cover; width: 24px; height: 24px; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
+.btn-lnb.hide { -webkit-transform: rotate(0); transform: rotate(0); }
+
 /*# sourceMappingURL=style.css.map */
