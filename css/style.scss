@@ -4167,9 +4167,36 @@
   .link-monitor {
     cursor: pointer;
     text-decoration: underline;
+  }    
+}
+.list-case1 {
+  thead tr:first-child th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: $colors_box;
+  }
+  tbody td:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    background: #fff;
   }
 }
-
+.list-case2 {
+  thead tr:first-child th:last-child {
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    background: $colors_box;
+  }
+  tbody td:last-child {
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    background: #fff;
+  }
+}
 .modal-integ {
   @include default_modal(900px, auto);
   display: none;

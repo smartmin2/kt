@@ -867,8 +867,6 @@ input[type="password"] {
   &:disabled {
     background-color: $gray100;
   }
-
-  &.width-400 {width: 400px;}
 }
 input[type=date],input[type=month],input[type=time] {
   height: 30px;
@@ -924,7 +922,13 @@ input[type=date]:after,input[type=month]:after {
   text-decoration: underline;
   position: relative;
   padding-left: 30px;
-
+  // &::before {
+  //   content: url(../assets/c_ic_list_download.svg);
+  //   width: 24px;
+  //   height: 24px;
+  //   position: absolute;
+  //   left:0;
+  // }
   span {
     position: absolute;
     left: 0;
@@ -982,7 +986,12 @@ input[type=date]:after,input[type=month]:after {
   background: url(../assets/c_ic_login_delete.svg) no-repeat center;
   cursor: pointer;
 }
-
+// .btn-delete {
+//   width: 24px;
+//   height: 24px;
+//   background: url(../assets/c_ic_login_delete.svg) no-repeat center;
+//   cursor: pointer;
+// }
 .btn-download {
   width: 20px;
   height: 20px;
@@ -1095,6 +1104,7 @@ input[type=date]:after,input[type=month]:after {
   &:hover {
     border: solid 1px $colors_font;
     color: $colors_font;
+    // font-weight: bold;
   }
 }
 .btn-check-group {
@@ -1118,7 +1128,12 @@ input[type=date]:after,input[type=month]:after {
       border: solid 1px $colors_font;
       color: $colors_font;
     }
- 
+    // &:disabled {
+    //   border: solid 1px $colors_line;
+    //   color: $font_color;
+    //   background-color: $gray100;
+    //   cursor: default;
+    // }
   }
   &.disable {
     .btn-check {
@@ -1702,7 +1717,6 @@ strong {
 .width-86 {width: 86px;}
 .width-132 {width: 132px;}
 .width-40 {width: 40px;}
-
 //info-wrapper
 
 select[multiple], select.select-box {

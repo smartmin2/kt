@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/style.css">
+  <title>캠페인</title>
+</head>
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+          <img>
+      </div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+          <button class="menu-button">로그아웃</button>
+          <button class="menu-button">정보수정</button>
+      </div>
+    </div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
+    </div>
+  </div> 
+  <div class="location">
+    <div>홈</div>
+    <div>캠페인 관리</div>
+    <div>캠페인</div>
+    <div>캠페인</div>
+  </div>
+  <div class="main campaign-main list-case1">
+      <div class="common-box common-body">
+          <div class="sub-menu-wrapper">
+            <div class="sub-menu-title">
+              <img src="../assets/c_ic_lnb_05.svg" alt="ic-05">
+                캠페인 관리
+            </div>
+            <ul class="sub-menu">
+          </ul>
+        </div>
+        <div class="contents-wrapper">
+          <div class="content-title">캠페인</div>
+          <div class="search-wrapper">
+            <div class="search-top">
+              <div class="content-sub-title">조회조건설정</div>              
+            </div>                        
+            <div class="search-table-box">
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">캠페인명</div>                    
+                    <input type="text" value="" />                    
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">기간</div>                    
+                    <div class="input-date-group">
+                      <input type="date" value="2021-02-10">
+                      <span>~</span>
+                      <input type="date" value="2021-02-10">
+                    </div>
+                  </div>                  
+                </div>
+              </div>              
+              <!-- 220613 추가
+                검색박스가 필요한 곳에
+                 search-box를 넣고,
+                  부모 input-wrapper에 search클래스 추가해주세요. -->
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper search">
+                    <div class="input-title">광고주</div>                    
+                    <input type="text" value="" /> 
+                    <div class="search-box">
+                      <ul>
+                        <li>kt</li>
+                        <li>ktds</li>
+                        <li>ktds</li>
+                      </ul>
+                    </div>                   
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">영업사</div>    
+                    <div class="input-group">
+                      <select>
+                        <option value="">전체</option>
+                        <option value="">SD</option>
+                        <option value="">HD</option>                        
+                        <option value="">ASP</option>                        
+                        <option value="">UHD</option>                        
+                        <option value="">FHD</option>                                                
+                      </select>
+                    </div>                                     
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper search">
+                    <div class="input-title">브랜드</div>                    
+                    <input type="text" value="" />    
+                    <div class="search-box">
+                      <ul>
+                        <li>kt</li>
+                        <li>ktds</li>
+                        <li>ktds</li>
+                      </ul>
+                    </div>  
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper multi">
+                    <div class="input-title">서비스</div>   
+                    <div class="input-detail">
+                      <div class="input-group width-140">
+                        <select class="service-select">
+                          <option value="">전체</option>
+                          <option value="">VOD</option>
+                          <option value="">LiveAD</option>                        
+                          <option value="">Display</option>                                                  
+                        </select>
+                      </div>            
+                      <ul class="checkbox-list">
+                        <li><input type="checkbox">전체</li>
+                        <li><input type="checkbox">서비스1</li>
+                        <li><input type="checkbox">서비스2</li>
+                        <li><input type="checkbox">서비스3</li>
+                        <li><input type="checkbox">서비스4</li>
+                        <li><input type="checkbox">서비스5</li>
+                        <li><input type="checkbox">서비스6</li>
+                        <li><input type="checkbox">서비스7</li>
+                        <li><input type="checkbox">서비스8</li>
+                        <li><input type="checkbox">서비스9</li>
+                        <li><input type="checkbox">서비스10</li>
+                      </ul>       
+                    </div>
+                  </div> 
+                </div>
+              </div>
+              <div class="row">
+                <div class="search-table-detail">
+                  <div class="input-wrapper search">
+                    <div class="input-title">대행사</div>                    
+                    <input type="text" value=""/>    
+                    <div class="search-box">
+                      <ul>
+                        <li>kt</li>
+                        <li>ktds</li>
+                        <li>ktds</li>
+                      </ul>
+                    </div>  
+                  </div>                  
+                </div>
+                <div class="search-table-detail">
+                  <div class="input-wrapper">
+                    <div class="input-title">담당자</div>                    
+                    <input type="text" value="" />    
+                  </div>                  
+                </div>
+              </div>
+            </div>
+            <div class="search-bottom"><button class="btn-common">조회</button></div>
+          </div>
+          <div class="table-wrapper">
+            <div class="table-top">
+              <div class="table-top-count">
+                <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                        
+                      <option value="">50개</option>                        
+                      <option value="">100개</option>                                              
+                    </select>
+                  </div>                      
+                </div>
+              </div>
+              <div class="table-top-buttons">
+                <button class="btn-white">볼륨보너스 설정</button>
+                <button class="btn-excel"><img>엑셀다운로드</button>              
+                <button class="btn-white">삭제</button>
+                <button class="btn-register"><img src="" >등록</button>
+              </div>
+            </div>
+            <div class="jb-table-wrapper">
+              <table class="jb-table">
+                <colgroup>                  
+                  <col />
+                  <col style="width: 9%" />
+                  <col style="width: 9%" />
+                  <col style="width: 9%" />
+                  <col style="width: 9%" />
+                  <col style="width: 6%" />
+                  <col style="width: 9%" />
+                  <col style="width: 3%" />
+                  <col style="width: 9%" />
+                  <col style="width: 4%" />
+                  <col style="width: 8%" />
+                  <col style="width: 5%" />                
+                </colgroup>
+                <thead>
+                  <tr>                   
+                    <th rowspan="2" scope="col">캠페인명</th>
+                    <th rowspan="2" scope="col">광고주</th>
+                    <th rowspan="2" scope="col">대행사</th>
+                    <th rowspan="2" scope="col">브랜드</th>
+                    <th rowspan="2" scope="col">영업사</th>
+                    <th rowspan="2" scope="col">총금액(원)</th>
+                    <th rowspan="2" scope="col">집행일자</th>
+                    <th scope="col" colspan="3" class="bottom-line">노출량</th>
+                    <th rowspan="2" scope="col">다운로드</th>                                      
+                    <th rowspan="2" scope="col">상태</th>                                      
+                  </tr>
+                  <tr>
+                    <th scope="col">서비스</th>
+                    <th scope="col">게런티(보너스율)</th>
+                    <th scope="col">추가노출량</th>
+                  </tr>
+              </thead>
+                <tbody class="table-body"></tbody>
+              </table>
+            </div>
+            <ul class="pagination">
+              <li>
+                <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+              </li>
+              <li><a href="#" class="num">1</a></li>
+              <li><a href="#" class="num active">2</a></li>
+              <li><a href="#" class="num">3</a></li>
+              <li><a href="#" class="num">4</a></li>
+              <li><a href="#" class="num">5</a></li>
+              <li><a href="#" class="num">6</a></li>
+              <li><a href="#" class="num">7</a></li>
+              <li><a href="#" class="num">8</a></li>
+              <li><a href="#" class="num">9</a></li>
+              <li><a href="#" class="num">10</a></li>
+              <li>
+                <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+              </li>
+              <li>
+                <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-wrapper">
+      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    </div>
+
+    <div id="modal-background"></div>
+    <div class="modal-con modal-integ common-box">      
+      <div class="modal-top">
+        <div class="box-title">통합통계 추가</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">          
+          <div class="search-edit-box">
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">소재명</div>
+                <div>0102_염소본가_LGT_30초</div>
+              </div>
+              <div class="input-wrapper">
+                <div class="input-title">프로그램명</div>
+                <input type="text" />
+              </div>
+            </div>            
+            <div class="search-edit-detail">
+              <div class="input-wrapper">
+                <div class="input-title">채널명</div>
+                <input type="text" />
+              </div>
+            </div>
+          </div>          
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            <div class="table-top-count">
+              <div class="table-total-count">전체<span>1,256</span></div>
+                <div class="table-view-count">
+                  <div class="input-group">
+                    <select>
+                      <option value="">10개</option>
+                      <option value="">20개</option>
+                      <option value="">30개</option>                                           
+                      <option value="">50개</option>                                           
+                      <option value="">100개</option>                                                
+                    </select>
+                  </div>   
+                </div>
+            </div>
+          </div>
+          <table class="jb-table table1">
+            <colgroup>              
+              <col style="width: 15%" />              
+              <col style="width: 15%" />
+              <col />
+              <col style="width: 30%" />
+              <col style="width: 12%" />
+              <col style="width: 10%" />
+            </colgroup>
+            <thead>
+              <th>현재채널</th>
+              <th>첨부</th>
+              <th>프로그램</th>
+              <th>소재</th>
+              <th>녹화일</th>
+              <th>다운로드</th>
+            </thead>
+            <tbody class="modal-table-body"></tbody>
+          </table>
+          <ul class="pagination">
+            <li>
+              <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+            </li>
+            <li><a href="#" class="num">1</a></li>
+            <li><a href="#" class="num active">2</a></li>
+            <li><a href="#" class="num">3</a></li>
+            <li><a href="#" class="num">4</a></li>
+            <li><a href="#" class="num">5</a></li>
+            <li><a href="#" class="num">6</a></li>
+            <li><a href="#" class="num">7</a></li>
+            <li><a href="#" class="num">8</a></li>
+            <li><a href="#" class="num">9</a></li>
+            <li><a href="#" class="num">10</a></li>
+            <li>
+              <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+            </li>
+            <li>
+              <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="modal-bottom">        
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-con modal-report common-box">      
+      <div class="modal-top">
+        <div class="box-title">집행보고서 기간조회</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">          
+          <div class="search-edit-box">                          
+                <div class="input-title">기간</div>                
+                <div class="input-date-group">
+                  <input type="date" name="" id="" value="2022-01-31">
+                  <span>~</span>
+                  <input type="date" name="" id="" value="2022-02-14">
+                </div>              
+          </div>                    
+        </div>
+      </div>
+      <div class="modal-bottom"> 
+        <button class="btn-white btn-report-search">LiveAD 집행보고서 조회</button>       
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
+    <div class="modal-con modal-report-result common-box">      
+      <div class="modal-top">
+        <div class="box-title">LiveAD 광고결과 통계 보고서</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="button-group">
+          <div class="btn-excel"><img src="" alt="">엑셀 다운로드</div>
+        </div>
+        <div class="solution-view">집행보고서 결과 화면 솔루션 화면</div>
+      </div>      
+    </div>
+
+    <script src="../scripts/jquery-3.6.0.min.js"></script>
+    <script src="../scripts/jquery-ui.min.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script>
+      loadMainMenu(2);
+      loadSubMenu("2", 1);
+      loadLnb(2, 1, 1, 0);
+
+      const arrTable = Array(10).fill(["	멀티기간멀티소재3동타게팅_현대자동차_기본패키지_베이직", "현대자동차(주)", "광고주직거래", "현대자동차", "(주)KT", "10,000,000","220103 ~ 220228","CHP","3,400,000  (70%)	","0","","승인"]);            
+      const table = document.querySelector(".table-body");
+      arrTable.map((data) => addRow1(table, data, false));
+
+      function addRow1(table, tbData, isCheckbox) {    
+        var tr = document.createElement("tr");
+
+        if (isCheckbox) {
+          var input = document.createElement("input");
+          var ckTD=document.createElement("td");
+
+          input.setAttribute("type","checkbox");
+          input.setAttribute("class","table_body_check");
+          ckTD.appendChild(input);
+          tr.appendChild(ckTD);
+        }
+        
+        tbData.map((cell,i) => {        
+          var newTD = document.createElement("td"); 
+          if (i == 10)
+          {      
+            var cueSheet = document.createElement("div");
+            var report = document.createElement("div");
+            var monitor = document.createElement("div");
+            cueSheet.setAttribute("class","link-cue-sheet");      
+            report.setAttribute("class","link-report");
+            monitor.setAttribute("class","link-monitor");
+            cueSheet.innerText = "큐시트";
+            report.innerText = "분석리포트";
+            monitor.innerText = "모니터링";
+            newTD.appendChild(cueSheet);
+            newTD.appendChild(report);
+            newTD.appendChild(monitor);
+          }
+          else newTD.innerText = cell;
+          
+          tr.appendChild(newTD);    
+        });  
+        table.appendChild(tr); 
+      }
+
+      const arrModalTable = Array(10).fill(["서울TV","첨부없음","","0102_염소본가_LGT_30","2022-01-04","attach"]);            
+      const modalTable = document.querySelector(".modal-table-body");
+      arrModalTable.map((data) => addRow(modalTable, data, false));
+
+      $(".link-monitor").on("click", function(){     
+        $("#modal-background").fadeIn(300);
+        $(".modal-integ").css("display", "flex").hide().fadeIn();        
+        $("body").css("overflow", "hidden");
+      })
+
+      $(".service-select").on("click",function(){
+        $(".checkbox-list").animate({height:'225px'},'fast');
+      })
+
+      $(".btn-register").on("click",function(){
+        location.href = "campaign_add.html"
+      })
+      $("tbody.table-body tr td:nth-child(6)").on("click",function(){
+      location.href = "campaign_detail.html";
+      })
+      
+      $(".link-report").on("click", function(){     
+        $("#modal-background").fadeIn(300);
+        $(".modal-report").css("display", "flex").hide().fadeIn();        
+        $("body").css("overflow", "hidden");
+      })
+
+      $(".btn-report-search").on("click",function(){
+        $(".modal-report").fadeOut();
+        $(".modal-report-result").fadeIn(200);
+      })
+
+      // 220613 추가
+      $(".input-wrapper.search").keyup(function(){
+        $(this).children(".search-box").show();
+      })
+
+    </script>
+  </body>
+</html>
