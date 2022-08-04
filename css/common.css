@@ -55,7 +55,7 @@ input[type="checkbox"]:checked::before { border-radius: 2px; -webkit-transform: 
 .header-wrapper .header-main-menubar .header-logo img { content: url(../assets/logo.png); }
 .header-wrapper .header-main-menubar ul.main-menu { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%; font-size: 16px; font-weight: 300; text-align: center; color: #fff; }
 .header-wrapper .header-main-menubar ul.main-menu li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; height: 100%; padding: 0 15px; cursor: pointer; }
-.header-wrapper .header-main-menubar ul.main-menu li.active { background: #3bb0c4; }
+.header-wrapper .header-main-menubar ul.main-menu li.active { background: #0ea4bc; }
 .header-wrapper .header-main-menubar ul.main-menu.user-mode li:nth-child(4), .header-wrapper .header-main-menubar ul.main-menu.user-mode li:nth-child(7), .header-wrapper .header-main-menubar ul.main-menu.user-mode li:nth-child(11) { display: none; }
 .header-wrapper .header-main-menubar .header-button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 6px; }
 .header-wrapper .header-main-menubar .header-buttons { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 6px; }
