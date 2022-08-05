@@ -208,10 +208,15 @@ input[type="checkbox"] {
         cursor: pointer;
 
         &.active {
-          // font-weight: bold;
-          // border-bottom: 2px solid #fff;
-          background: $colors_main_active;
+          font-weight: bold;
+          &.not-hover {
+            background: #0ea4bc;
+          }
         }
+        
+        &:hover,&.bg-hover {
+          background: $colors_main_active;
+        }        
       }
 
       &.user-mode {
