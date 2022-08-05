@@ -219,7 +219,10 @@
     if (iMode == 1) ulMainMenu.classList.add("user-mode");
     mainMenu.map((menu, i) =>{
       var li = document.createElement("li"); 
-      if (iActive > 0 && i == iActive-1 ) li.classList.add('active') ;
+      if (iActive > 0 && i == iActive-1 ) {
+        li.classList.add('active') ;
+        li.classList.add('not-hover') ;
+      }
       li.innerHTML = menu.name;
       ulMainMenu.appendChild(li); 
     })     
@@ -235,8 +238,9 @@
         if (key == sActive && i == iSub-1 ) 
           li.classList.add('active') ;
         li.innerHTML = subitem.name;
-        ul.appendChild(li); 
+        ul.appendChild(li);         
       });
+      if (key == sActive) ul.classList.add('active') ;
       divSubMenu.appendChild(ul);
     }
   }
@@ -326,20 +330,32 @@ $(function () {
   $(".main-menu > li")
       .on('mouseover', function(){
         var menuIndex = $(this).index();  
+        $("ul.main-menu li.active").removeClass('not-hover');
+        $("ul.main-menu li").removeClass('bg-hover');
+        $(this).addClass('bg-hover');
         $(".header-sub-menubar ul").removeClass('active');
         $(".header-sub-menubar ul").eq(menuIndex).addClass('active').siblings;
-      })
+      })      
       .on('click',function(){
         var menuIndex = $(this).index();             
         location.href = root + mainMenu[menuIndex].link;        
       })
-    $(".header-wrapper").on('mouseleave', function(){$(".header-sub-menubar ul").removeClass('active');})
+    $(".header-wrapper").on('mouseleave', function(){
+      $(".header-sub-menubar ul").removeClass('active');
+      $("ul.main-menu li").removeClass('bg-hover');
+      var activeIdx = $("ul.main-menu li.active").index()+1;
+      $(".header-sub-menubar ul:nth-child("+activeIdx+")").addClass('active');
 
-  $(".header-sub-menubar > ul > li").on('click', function(){
-    var menuIndex = $(this).parent().index()+1,
-        subMenuIndex = $(this).index();    
-    location.href = root + subMenu[menuIndex][subMenuIndex].link;
-  })
+      if ($("ul.main-menu li.active").hasClass('not-hover') == false)
+        $("ul.main-menu li.active").addClass('not-hover');
+    })
+
+  $(".header-sub-menubar > ul > li")
+    .on('click', function(){
+      var menuIndex = $(this).parent().index()+1,
+          subMenuIndex = $(this).index();    
+      location.href = root + subMenu[menuIndex][subMenuIndex].link;
+    })    
 
   $("ul.sub-menu li").on("click", function(){
     var mainMenuName = $(".sub-menu-title")[0].innerText,
