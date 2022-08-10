@@ -2802,4 +2802,10 @@ input[type="text"].p12 { padding: 0 12px; }
 input[type="text"].width-47 { width: 47px; }
 
 .extra-mark { width: 52px; height: 20px; padding: 1px 10px 2px; border-radius: 10px; background-color: #e5751c; font-size: 12px; font-weight: 500; line-height: 1.42; text-align: center; color: #fff; }
+
+.subscrt-manage .jb-table td:nth-child(5) { cursor: pointer; text-decoration: underline; }
+.subscrt-manage .input-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 20px; }
+.subscrt-manage .input-content .input-group { width: 140px; }
+.subscrt-manage .input-content input { width: 140px; }
+
 /*# sourceMappingURL=style.css.map */

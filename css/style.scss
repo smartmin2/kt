@@ -9210,3 +9210,24 @@ input[type="text"] {
     text-align: center;
     color: #fff;
 }
+
+
+.subscrt-manage{
+  .jb-table {
+    td:nth-child(5) {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+  .input-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+      .input-group {
+        width: 140px;
+      }
+      input{
+        width:140px;
+      }
+  }
+}
