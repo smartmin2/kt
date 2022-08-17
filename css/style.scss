@@ -9213,6 +9213,13 @@ input[type="text"] {
 
 
 .subscrt-manage{
+  .setting-table{
+    background-color: #f1f7ff;
+    .row .setting-table-content{
+      background-color: #fff;
+      padding: 21px;
+    }
+  }
   .jb-table {
     td:nth-child(5) {
       cursor: pointer;
