@@ -9219,6 +9219,19 @@ input[type="text"] {
       background-color: #fff;
       padding: 21px;
     }
+    .row.whether-table{
+      .setting-table-content{
+        flex-direction: column;
+        align-items: flex-start;
+        div{
+          display: flex;
+          white-space: nowrap;
+          align-items: center;
+          gap:10px;
+        }
+      }
+   
+    }
   }
   .jb-table {
     td:nth-child(5) {

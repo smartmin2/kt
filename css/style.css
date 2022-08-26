@@ -2805,8 +2805,11 @@ input[type="text"].width-47 { width: 47px; }
 
 .subscrt-manage .setting-table { background-color: #f1f7ff; }
 .subscrt-manage .setting-table .row .setting-table-content { background-color: #fff; padding: 21px; }
+.subscrt-manage .setting-table .row.whether-table .setting-table-content { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.subscrt-manage .setting-table .row.whether-table .setting-table-content div { display: -webkit-box; display: -ms-flexbox; display: flex; white-space: nowrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
 .subscrt-manage .jb-table td:nth-child(5) { cursor: pointer; text-decoration: underline; }
 .subscrt-manage .input-content { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 20px; }
 .subscrt-manage .input-content .input-group { width: 140px; }
 .subscrt-manage .input-content input { width: 140px; }
+
 /*# sourceMappingURL=style.css.map */
