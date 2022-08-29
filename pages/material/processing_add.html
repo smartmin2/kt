@@ -100,7 +100,7 @@
                 <div class="setting-table-content">
                   <div class="btn-select-group">
                     <button class="btn-select active">파일업로드</button>
-                    <button class="btn-select">기존영상</button>
+                    <button class="btn-select video">기존영상</button>
                     <button class="btn-select">이메일전달</button>
                     <button class="btn-select">임시등록</button>
                   </div>                           
@@ -192,6 +192,117 @@
       </div>
       <div class="modal-bottom"><button class="btn-white close">취소</button></div>
     </div>
+    <div class="modal-old-video common-box modal-con">
+      <div class="modal-top">
+        <div class="box-title">소재 파일 검색</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+        <div class="search-wrapper">   
+          <div class="search-top">
+            <div class="content-sub-title">소재 검색</div>              
+          </div>                  
+          <div class="search-table-box">
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">Asset Name</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">AssetID</div>                    
+                  <input type="text" value="" />                    
+                </div>                  
+              </div>
+            </div>  
+            <div class="row">
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">기간</div>                    
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10">
+                    <span>~</span>
+                    <input type="date" value="2021-02-10">
+                  </div>
+                </div>                  
+              </div>
+              <div class="search-table-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">기간</div>                    
+                  <div class="input-group">
+                  <select name="" id="">
+                    <option value="">전체</option>
+                  </select>
+                  </div>
+                </div>                  
+              </div>
+            </div>
+          </div>
+          <div class="search-bottom"><button class="btn-common">조회</button></div>
+        </div>
+        <div class="table-wrapper">
+          <div class="table-top">
+            소재 목록
+          </div>
+        <table class="jb-table table1">
+          <colgroup>                
+            <col />
+            <col style="width: 10%" />
+            <col style="width: 7%" />
+            <col style="width: 5%" />
+            <col style="width: 7%" />
+            <col style="width: 7%" />
+            <col style="width: 7%" />
+            <col style="width: 10%" />
+            <col style="width: 10%" />
+            <col style="width: 6%" />
+          </colgroup>
+          <thead>              
+            <th>Asset Name</th>
+            <th>Asset ID</th>
+            <th>서비스</th>
+            <th>소재길이</th>
+            <th>배포구분</th>
+            <th>광고구분</th>
+            <th>음질구분</th>
+            <th>날짜</th>
+            <th>소재파일등록일</th>
+            <th>선택</th>
+          </thead>
+          <tbody class="table-body"></tbody>
+        </table>      
+        <ul class="pagination">
+          <li>
+            <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+          </li>
+          <li><a href="#" class="num">1</a></li>
+          <li><a href="#" class="num active">2</a></li>
+          <li><a href="#" class="num">3</a></li>
+          <li><a href="#" class="num">4</a></li>
+          <li><a href="#" class="num">5</a></li>
+          <li><a href="#" class="num">6</a></li>
+          <li><a href="#" class="num">7</a></li>
+          <li><a href="#" class="num">8</a></li>
+          <li><a href="#" class="num">9</a></li>
+          <li><a href="#" class="num">10</a></li>
+          <li>
+            <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+          </li>
+          <li>
+            <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+          </li>
+        </ul> 
+        </div>
+      </div>
+      <div class="modal-bottom">      
+        <button class="btn-white close">닫기</button>
+      </div>
+    </div>
 
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
@@ -219,6 +330,16 @@
       var animate = setInterval(function() {
         loading();
       }, time);
+
+      $(".btn-select.video").on("click", function () {
+        $("#modal-background").fadeIn(100);
+        $(".modal-old-video").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      });
+
+      const arrTable = Array(10).fill(["PP_VOD_ICOD_일반_0819_15초","ICD2022080000000041","VOD","15","PrePlay","상용","일반","2022-08-17","2022-08-17","선택"]);            
+      const table = document.querySelector(".table1 .table-body");
+      arrTable.map((data) => addRow(table, data, false));
     </script>
   </body>
 </html>
