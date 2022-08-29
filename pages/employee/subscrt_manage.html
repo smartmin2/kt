@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>임직원 청약관리</title>
+    <title>임직원 청약</title>
   </head>
   <body>
     <div class="header-wrapper">
@@ -31,7 +31,7 @@
     <div class="main subscrt-manage">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
-          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_14.svg" alt="ic-14">임직원 청약</div>
+          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_13.svg" alt="ic-14">임직원 청약</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
@@ -200,20 +200,24 @@
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
-      loadMainMenu(11);
-      loadSubMenu("11", 5);
-      loadLnb(11, 5, 1, 0);
+             loadMainMenu(12);
+      loadSubMenu("12", 2);
+      loadLnb(12, 2, 1, 0);
 
       const arrTable = Array(15).fill(["EMP202208001", "VOD", "완료", "청약신청 제목 입력란", "2022-08-01", "임직원", "소속 팀이름"]);
       const table = document.querySelector(".table-body");
       arrTable.map((data) => addRow(table, data, true));
 
-      $(".table-body td:nth-child(6)").on("click", function () {
-        $("#modal-background").fadeIn(100);
-        $(".modal-view-cont").css("display", "flex").hide().fadeIn();
-        $("body").css("overflow", "hidden");
+      $(".btn-register").on("click", function () {
+        location.href = "subscrt_manage_add.html";
       });
+      $(".btn-white.list").on("click",function(){
+        location.href ="subscrt_manage.html";
+      })
     
+      $(".jb-table td:nth-child(5)").on("click",function(){
+        location.href ="subscrt_manage_detail.html";
+      })
     </script>
   </body>
 </html>

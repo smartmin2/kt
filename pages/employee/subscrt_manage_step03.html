@@ -35,7 +35,7 @@
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">임직원 청약관리 승인</div>
+          <div class="content-title">임직원 청약관리 단계</div>
           <div class="content-body">
             <form action="" method="post">
               <div class="setting-table">
@@ -70,29 +70,43 @@
                   </div>
                 </div>
                 <div class="row setting-table-editor">
-                  <div class="setting-table-title">요청내용</div>
+                  <div class="setting-table-title ic-title-nece">요청내용</div>
                   <div class="setting-table-content">
                     요청 내용 표시
                   </div>
                 </div>
-                <div class="row whether-table">
-                  <div class="setting-table-title ic-title-nece">지원규모</div>
+              </div>
+
+              <div class="content-sub-title">진행 상태</div>
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">진행상태</div>
                   <div class="setting-table-content">
-                      <div><input type="text" placeholder="200,000,000">회</div>
-                      <div><input type="text" placeholder="1">구좌</div>
+                    완료
                   </div>
                 </div>
                 <div class="row">
-                  <div class="setting-table-title">상품</div>
+                  <div class="setting-table-title">처리일시</div>
                   <div class="setting-table-content">
-                    <input type="text" placeholder="승인 or 반려 의견 입력">
+                    2022-08-01
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">승인자/ 접수자</div>
+                  <div class="setting-table-content">
+                    승인담당자 이름 / 접수담당자 이름
+                  </div>
+                </div>
+                <div class="row whether-table">
+                  <div class="setting-table-title">의견</div>
+                  <div class="setting-table-content">
+                 <p>승인의견 > 승인의견 내용 입력란.</p>
+            <p>요건 처리 완료했습니다.</p>
                   </div>
                 </div>
               </div>
               <div class="submit-btn-group">
-                <button type="button" class="btn-register">승인</button>
-                <button type="button" class="btn-common">반려</button>
-                <button type="button" class="btn-white list">취소</button>
+                <button type="button" class="btn-white list">목록</button>
               </div>
             </form>
           </div>
@@ -109,7 +123,7 @@
            loadMainMenu(12);
       loadSubMenu("12", 2);
       loadLnb(12, 2, 1, 0);
-
+      
       $(".btn-white.list").on("click",function(){
         location.href ="subscrt_manage.html";
       })

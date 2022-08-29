@@ -9213,8 +9213,14 @@ input[type="text"] {
 
 
 .subscrt-manage{
+  .contents-wrapper {
+    .content-sub-title{
+      margin-bottom: 20px;
+    }
+  }
   .setting-table{
     background-color: #f1f7ff;
+    
     .row .setting-table-content{
       background-color: #fff;
       padding: 21px;
@@ -9249,5 +9255,16 @@ input[type="text"] {
       input{
         width:140px;
       }
+  }
+}
+.media-guide{
+  .table-wrapper{
+    margin-bottom: 20px;
+  }
+  .contents-wrapper {
+    .content-sub-title{
+      margin-bottom: 20px;
+      
+    }
   }
 }

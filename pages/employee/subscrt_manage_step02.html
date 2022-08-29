@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../css/style.css" />
-    <title>공지사항</title>
+    <title>임직원 청약</title>
   </head>
   <body>
     <div class="header-wrapper">
@@ -28,14 +28,14 @@
       <div>임직원 청약</div>
       <div>임직원 청약관리</div>
     </div>
-    <div class="main notice-modify">
+    <div class="main subscrt-manage">
       <div class="common-box common-body">
         <div class="sub-menu-wrapper">
           <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_13.svg" alt="ic-13">임직원 청약</div>
           <ul class="sub-menu"></ul>
         </div>
         <div class="contents-wrapper">
-          <div class="content-title">임직원 청약관리</div>
+          <div class="content-title">임직원 청약관리 단계</div>
           <div class="content-body">
             <form action="" method="post">
               <div class="setting-table">
@@ -45,7 +45,7 @@
                   제목 표시
                   </div>
                 </div>
-                <div class="row whether-table">
+                <div class="row">
                   <div class="setting-table-title ic-title-nece">기간</div>
                   <div class="setting-table-content">
                     2022-08-01 ~ 2022-08-31
@@ -76,8 +76,37 @@
                   </div>
                 </div>
               </div>
+
+              <div class="content-sub-title">진행 상태</div>
+              <div class="setting-table">
+                <div class="row">
+                  <div class="setting-table-title">진행상태</div>
+                  <div class="setting-table-content">
+                    등록 > 승인 > 접수
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">처리일시</div>
+                  <div class="setting-table-content">
+                    2022-08-01
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="setting-table-title">승인자/ 접수자</div>
+                  <div class="setting-table-content">
+                    승인담당자 이름 / 접수담당자 이름
+                  </div>
+                </div>
+                <div class="row whether-table">
+                  <div class="setting-table-title">의견</div>
+                  <div class="setting-table-content">
+                 <p>승인의견 > 승인의견 내용 표시</p>
+                 <input type="text" placeholder="처리 내용 입력...">
+                  </div>
+                </div>
+              </div>
               <div class="submit-btn-group">
-                <button type="button" class="btn-common">수정</button>
+                <button type="button" class="btn-common">완료</button>
                 <button type="button" class="btn-white list">취소</button>
               </div>
             </form>
@@ -92,12 +121,12 @@
     <script src="../../scripts/jquery-3.6.0.min.js"></script>
     <script src="../../scripts/script.js"></script>
     <script>
-      loadMainMenu(10);
-      loadSubMenu("10", 5);
-      loadLnb(10, 5, 0, 0);
+          loadMainMenu(12);
+      loadSubMenu("12", 2);
+      loadLnb(12, 2, 1, 0);
 
       $(".btn-white.list").on("click",function(){
-        location.href ="notice.html";
+        location.href ="subscrt_manage.html";
       })
     </script>
     <script></script>
