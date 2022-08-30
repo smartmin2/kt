@@ -10,6 +10,7 @@ const mainMenu = [
   { id: 9, name: "통계", link: "/pages/statistics/integration.html" },
   { id: 10, name: "서비스관리", link: "/pages/services/company.html" },
   { id: 11, name: "시스템 관리", link: "/pages/system/user.html" },
+  // 220829
   { id: 12, name: "임직원 청약", link: "/pages/employee/media_guide.html" },
 ];
 
@@ -386,6 +387,7 @@ const subMenu = {
     { id: 5, name: "메일 발송리스트", link: "/pages/system/mail_list.html", folder: [] },
     { id: 6, name: "Watch-Dog", link: "/pages/system/watchdog.html", folder: [] },
   ],
+  // 220829
   12: [
     { id: 1, name: "매체가이드", link: "/pages/employee/media_guide.html", folder: [] },
     { id: 2, name: "임직원 청약", link: "/pages/employee/subscrt_manage.html", folder: [] },
