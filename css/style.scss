@@ -7920,7 +7920,17 @@
   }
 }
 
-.subscription-detail {
+.modal-region-select{
+  .modal-body{
+    .setting-table .row {
+      &.option-h {
+      @include setting_table_height(400px);
+      }
+    }
+  }
+  
+}
+.modal-region-select, .subscription-detail {
   .button-group {
     display: flex;
     justify-content: flex-end;

@@ -2323,60 +2323,63 @@
 .modal-url-register .width-150 { width: 150px; }
 .modal-url-register .width-110 { width: 110px; }
 
-.subscription-detail .button-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; gap: 10px; margin-bottom: 20px; }
-.subscription-detail .content-sub-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; margin-top: 20px; margin-bottom: 10px; }
-.subscription-detail .flex-row { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 10px; }
-.subscription-detail table { margin-bottom: 10px; }
-.subscription-detail .table-box table { width: 100%; border-top: 1px solid #e6e8ea; border-bottom: 1px solid #e6e8ea; border-collapse: collapse; }
-.subscription-detail .table-box table tr { border-top: 1px solid #e6e8ea; border-bottom: 1px solid #e6e8ea; }
-.subscription-detail .table-box table thead { height: 60px; background-color: #f1f7ff; color: #586a9b; font-size: 14px; font-weight: 500; }
-.subscription-detail .table-box table thead th { vertical-align: middle; }
-.subscription-detail .table-box table tbody { min-width: 1280px; }
-.subscription-detail .table-box table tbody tr td { height: 60px; vertical-align: middle; text-align: center; }
-.subscription-detail .table-box table tbody tr td.title-td { background-color: #f1f7ff; color: #586a9b; font-size: 14px; font-weight: 500; }
-.subscription-detail .content-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 10px; }
-.subscription-detail .width-300 { width: 300px; }
-.subscription-detail .table-wrapper, .subscription-detail .table-box, .subscription-detail .setting-table { margin-bottom: 40px; }
-.subscription-detail .setting-table .row { height: 60px; }
-.subscription-detail .setting-table .row .setting-table-title { height: 59px; }
-.subscription-detail .setting-table .row:first-child .setting-table-title { height: 58px; }
-.subscription-detail .setting-table .row .cell { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.subscription-detail .setting-table .row.bonus { height: 282px; }
-.subscription-detail .setting-table .row.bonus .setting-table-title { height: 281px; }
-.subscription-detail .setting-table .row.row-material1 { height: 100px; }
-.subscription-detail .setting-table .row.row-material1 .setting-table-title { height: 98px; }
-.subscription-detail .setting-table .row.option-h { height: 600px; width: 100%; }
-.subscription-detail .setting-table .row.option-h .setting-table-title { height: 599px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content { width: 100%; margin-top: 20px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 20px; width: 100%; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 10px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 30px; border-radius: 10px; background-color: #f1f7ff; font-size: 13px; font-weight: bold; line-height: 1.31; text-align: center; color: #586a9b; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 10px; height: 340px; padding: 10px; border-radius: 4px; border: solid 1px #bcbfc7; background-color: #fff; font-size: 14px; font-weight: normal; line-height: 1.21; color: #434c66; overflow-y: auto; overflow-x: auto; scroll-behavior: smooth; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar { width: 6px; display: inline; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar-track { background: transparent; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar-thumb { width: 6px; border-radius: 6px; background: #b6bdc1; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-between { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-between .extra-mark { width: 52px; height: 20px; padding: 1px 10px 2px; border-radius: 10px; background-color: #e5751c; font-size: 12px; font-weight: 500; line-height: 1.42; text-align: center; color: #fff; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-info { width: 100%; font-weight: normal; line-height: 1.21; text-align: right; color: #d06062; margin-top: 10px; margin-bottom: 20px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box { width: 100%; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row { height: 120px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-title { height: 118px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content { padding: 10px 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; gap: 10px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content .selected-items { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 10px; overflow-y: auto; height: 55px; }
-.subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content .selected-items .selected-item { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.subscription-detail .setting-table .row.d-write { height: 120px; display: none; }
-.subscription-detail .setting-table .row.d-write .setting-table-title { height: 119px; }
-.subscription-detail .setting-table .row .setting-table-content > .table-box { width: 100%; margin-bottom: 0; }
-.subscription-detail .setting-table .row .setting-table-content > .table-box table { margin-bottom: 0; }
-.subscription-detail .setting-table .row .setting-table-content > .table-box table tbody tr td { height: 40px; }
-.subscription-detail .content-body.on-region { display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-.subscription-detail .content-body.on-region .content-sub-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
-.subscription-detail .content-body.on-region .setting-table input[type="text"] { width: 100px; }
-.subscription-detail .content-body.on-region .ic-noti .noti-box { top: -50px; }
-.subscription-detail .button-group.on-region .btn-modify-region { border: 1px solid #00aace; color: #00aace; }
-.subscription-detail .button-group.on-region ~ .content-body.on-region { display: -webkit-box; display: -ms-flexbox; display: flex; }
-.subscription-detail .button-group.on-region ~ .content-body.off-region { display: none; }
+.modal-region-select .modal-body .setting-table .row.option-h { height: 400px; }
+.modal-region-select .modal-body .setting-table .row.option-h .setting-table-title { height: 399px; }
+
+.modal-region-select .button-group, .subscription-detail .button-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; gap: 10px; margin-bottom: 20px; }
+.modal-region-select .content-sub-title, .subscription-detail .content-sub-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; margin-top: 20px; margin-bottom: 10px; }
+.modal-region-select .flex-row, .subscription-detail .flex-row { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 10px; }
+.modal-region-select table, .subscription-detail table { margin-bottom: 10px; }
+.modal-region-select .table-box table, .subscription-detail .table-box table { width: 100%; border-top: 1px solid #e6e8ea; border-bottom: 1px solid #e6e8ea; border-collapse: collapse; }
+.modal-region-select .table-box table tr, .subscription-detail .table-box table tr { border-top: 1px solid #e6e8ea; border-bottom: 1px solid #e6e8ea; }
+.modal-region-select .table-box table thead, .subscription-detail .table-box table thead { height: 60px; background-color: #f1f7ff; color: #586a9b; font-size: 14px; font-weight: 500; }
+.modal-region-select .table-box table thead th, .subscription-detail .table-box table thead th { vertical-align: middle; }
+.modal-region-select .table-box table tbody, .subscription-detail .table-box table tbody { min-width: 1280px; }
+.modal-region-select .table-box table tbody tr td, .subscription-detail .table-box table tbody tr td { height: 60px; vertical-align: middle; text-align: center; }
+.modal-region-select .table-box table tbody tr td.title-td, .subscription-detail .table-box table tbody tr td.title-td { background-color: #f1f7ff; color: #586a9b; font-size: 14px; font-weight: 500; }
+.modal-region-select .content-bottom, .subscription-detail .content-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 10px; }
+.modal-region-select .width-300, .subscription-detail .width-300 { width: 300px; }
+.modal-region-select .table-wrapper, .modal-region-select .table-box, .modal-region-select .setting-table, .subscription-detail .table-wrapper, .subscription-detail .table-box, .subscription-detail .setting-table { margin-bottom: 40px; }
+.modal-region-select .setting-table .row, .subscription-detail .setting-table .row { height: 60px; }
+.modal-region-select .setting-table .row .setting-table-title, .subscription-detail .setting-table .row .setting-table-title { height: 59px; }
+.modal-region-select .setting-table .row:first-child .setting-table-title, .subscription-detail .setting-table .row:first-child .setting-table-title { height: 58px; }
+.modal-region-select .setting-table .row .cell, .subscription-detail .setting-table .row .cell { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.modal-region-select .setting-table .row.bonus, .subscription-detail .setting-table .row.bonus { height: 282px; }
+.modal-region-select .setting-table .row.bonus .setting-table-title, .subscription-detail .setting-table .row.bonus .setting-table-title { height: 281px; }
+.modal-region-select .setting-table .row.row-material1, .subscription-detail .setting-table .row.row-material1 { height: 100px; }
+.modal-region-select .setting-table .row.row-material1 .setting-table-title, .subscription-detail .setting-table .row.row-material1 .setting-table-title { height: 98px; }
+.modal-region-select .setting-table .row.option-h, .subscription-detail .setting-table .row.option-h { height: 600px; width: 100%; }
+.modal-region-select .setting-table .row.option-h .setting-table-title, .subscription-detail .setting-table .row.option-h .setting-table-title { height: 599px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content, .subscription-detail .setting-table .row.option-h .setting-table-content { width: 100%; margin-top: 20px; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 20px; width: 100%; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 10px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-title, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 30px; border-radius: 10px; background-color: #f1f7ff; font-size: 13px; font-weight: bold; line-height: 1.31; text-align: center; color: #586a9b; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; gap: 10px; height: 340px; padding: 10px; border-radius: 4px; border: solid 1px #bcbfc7; background-color: #fff; font-size: 14px; font-weight: normal; line-height: 1.21; color: #434c66; overflow-y: auto; overflow-x: auto; scroll-behavior: smooth; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar { width: 6px; display: inline; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar-track, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar-track { background: transparent; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar-thumb, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box::-webkit-scrollbar-thumb { width: 6px; border-radius: 6px; background: #b6bdc1; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-row, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-row { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-between, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-between { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-between .extra-mark, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-main .tab-col .tab-content-box .flex-between .extra-mark { width: 52px; height: 20px; padding: 1px 10px 2px; border-radius: 10px; background-color: #e5751c; font-size: 12px; font-weight: 500; line-height: 1.42; text-align: center; color: #fff; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-info, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-info { width: 100%; font-weight: normal; line-height: 1.21; text-align: right; color: #d06062; margin-top: 10px; margin-bottom: 20px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-select-box, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box { width: 100%; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row { height: 120px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-title, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-title { height: 118px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content { padding: 10px 20px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; gap: 10px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content .selected-items, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content .selected-items { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; gap: 10px; overflow-y: auto; height: 55px; }
+.modal-region-select .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content .selected-items .selected-item, .subscription-detail .setting-table .row.option-h .setting-table-content .tab-content-select-box .setting-table .row .setting-table-content .selected-items .selected-item { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.modal-region-select .setting-table .row.d-write, .subscription-detail .setting-table .row.d-write { height: 120px; display: none; }
+.modal-region-select .setting-table .row.d-write .setting-table-title, .subscription-detail .setting-table .row.d-write .setting-table-title { height: 119px; }
+.modal-region-select .setting-table .row .setting-table-content > .table-box, .subscription-detail .setting-table .row .setting-table-content > .table-box { width: 100%; margin-bottom: 0; }
+.modal-region-select .setting-table .row .setting-table-content > .table-box table, .subscription-detail .setting-table .row .setting-table-content > .table-box table { margin-bottom: 0; }
+.modal-region-select .setting-table .row .setting-table-content > .table-box table tbody tr td, .subscription-detail .setting-table .row .setting-table-content > .table-box table tbody tr td { height: 40px; }
+.modal-region-select .content-body.on-region, .subscription-detail .content-body.on-region { display: none; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
+.modal-region-select .content-body.on-region .content-sub-title, .subscription-detail .content-body.on-region .content-sub-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.modal-region-select .content-body.on-region .setting-table input[type="text"], .subscription-detail .content-body.on-region .setting-table input[type="text"] { width: 100px; }
+.modal-region-select .content-body.on-region .ic-noti .noti-box, .subscription-detail .content-body.on-region .ic-noti .noti-box { top: -50px; }
+.modal-region-select .button-group.on-region .btn-modify-region, .subscription-detail .button-group.on-region .btn-modify-region { border: 1px solid #00aace; color: #00aace; }
+.modal-region-select .button-group.on-region ~ .content-body.on-region, .subscription-detail .button-group.on-region ~ .content-body.on-region { display: -webkit-box; display: -ms-flexbox; display: flex; }
+.modal-region-select .button-group.on-region ~ .content-body.off-region, .subscription-detail .button-group.on-region ~ .content-body.off-region { display: none; }
 
 .modal-slot { width: auto; height: auto; max-height: 900px; padding: 20px 32px 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: none; }
 .modal-slot .modal-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
