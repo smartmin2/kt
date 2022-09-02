@@ -7315,6 +7315,16 @@
 .livead-inven {
   .tab {
     border-bottom: 0;
+    // 0902
+     li{
+      display: flex; 
+      gap:10px;
+    }
+    &.toggle-wrap{
+      flex-direction: column;
+      align-items: flex-start;
+    }
+ 
   }
   .tab-menu {
     font-size: 13px;

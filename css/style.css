@@ -2140,6 +2140,8 @@
 .video-pp-inven .flex-ct input[type="number"].w90 { width: 90px; margin-top: 4px; }
 
 .livead-inven .tab { border-bottom: 0; }
+.livead-inven .tab li { display: -webkit-box; display: -ms-flexbox; display: flex; gap: 10px; }
+.livead-inven .tab.toggle-wrap { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
 .livead-inven .tab-menu { font-size: 13px; }
 .livead-inven .tab-menu.active { color: #00aace; border-bottom: 1px solid #1bc1db; }
 .livead-inven #tab03 .table-wrapper { width: 1280px; overflow-x: auto; scroll-behavior: smooth; }
