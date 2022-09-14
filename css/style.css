@@ -2043,6 +2043,9 @@
 .modal-time-add .setting-table.half { margin-bottom: 0; }
 .modal-time-add .setting-table.half .row { height: 30px; }
 
+.video-plus-bk .jb-table th.satday { color: #d06062; }
+.video-plus-bk .jb-table th.sunday { color: #00aace; }
+.video-plus-bk .jb-table td:nth-child(5), .video-plus-bk .jb-table td:nth-child(6), .video-plus-bk .jb-table td:nth-child(12), .video-plus-bk .jb-table td:nth-child(13), .video-plus-bk .jb-table td:nth-child(19), .video-plus-bk .jb-table td:nth-child(20), .video-plus-bk .jb-table td:nth-child(26), .video-plus-bk .jb-table td:nth-child(27) { background-color: #e3efff; }
 .video-plus-bk .content-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 5px; }
 .video-plus-bk .content-title.box { background-color: #f1f7ff; border-radius: 10px; padding: 5px 15px; margin-bottom: 10px; }
 .video-plus-bk table.table tbody tr td { padding: 0; cursor: pointer; position: relative; }

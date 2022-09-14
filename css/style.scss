@@ -6975,6 +6975,29 @@
 
 // video-plus-bk
 .video-plus-bk {
+  // 0914 추가
+  .jb-table {
+    th.satday {
+      color: $red;
+    }
+    th.sunday {
+      color: $colors_font;
+    }
+    td {
+      &:nth-child(5),
+      &:nth-child(6),
+      &:nth-child(12),
+      &:nth-child(13),
+      &:nth-child(19),
+      &:nth-child(20),
+      &:nth-child(26),
+      &:nth-child(27) {
+        background-color: $sub_total;
+      }
+    }
+  }
+
+  
   .content-title {
     display: flex;
     align-items: center;
