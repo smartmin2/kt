@@ -87,6 +87,7 @@
             <li class="tab-menu" data-tab="tab03">일자</li>
             <li class="tab-menu" data-tab="tab04">지역</li>
             <li class="tab-menu" data-tab="tab05">Reach/Frequency</li>
+            <li class="tab-menu" data-tab="tab06">Like 패키지</li>
           </ul>
           <div class="tab-content active" id="tab01">   
             <!-- class detail1, detail2 로 구분 개발시 active 추가, 삭제로 처리 -->
@@ -639,8 +640,122 @@
               </table>
             </div>  
           </div>
+          <div class="tab-content" id="tab06">
+            <div class="setting-table">
+              <div class="row">
+                <div class="setting-table-title">타겟팅 모수</div>
+                <div class="setting-table-content">1,013,312</div>
+              </div>
+              <div class="row">
+                <div class="setting-table-title">추출 옵션</div>
+                <div class="setting-table-content">20220519 화물맨 월1500만</div>
+              </div>
+            </div>
+            <div class="chart-wrapper">          
+              <canvas id="myChart6"></canvas>          
+            </div>
+            <div class="table-wrapper">  
+              <div class="table-top">
+                <div class="table-top-count">                  
+                </div>                
+                <div class="table-top-buttons">
+                  <button class="btn-excel"><img>엑셀 다운로드</button>                  
+                </div>
+              </div>                
+              <table class="jb-table">
+                <colgroup>                                   
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />
+                  <col style="width: 20%" />                  
+                </colgroup>
+                <thead>
+                  <tr>                    
+                    <th>일자</th>
+                    <th>노출</th>
+                    <th>시청가구</th>
+                    <th>도달율(%)</th>
+                    <th>Frequency</th>
+                  </tr>                  
+              </thead>
+                <tbody class="table-body">
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                  <tr>
+                    <td>20220901</td>
+                    <td>114,037</td>
+                    <td>84,598</td>
+                    <td>8.35</td>
+                    <td>1.348</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>  
+          </div>
           <div class="content-bottom">
-            <button class="btn-common go-integ-list">목록</button>
+            <button class="btn-common go-integ-list">닫기</button>
           </div>
         </div>
       </div>
@@ -1349,18 +1464,28 @@
           data: chartData3,
           options: chartOptions3
       })
+      
       let ctx4 = document.getElementById('myChart4').getContext('2d');
       let chart4 = new Chart(ctx4, {
           type: 'bar',
           data: chartData2,
           options: chartOptions2
       })
+      
       let ctx5 = document.getElementById('myChart5').getContext('2d');
       let chart5 = new Chart(ctx5, {
           type: 'bar',
           data: chartData2,
           options: chartOptions2
       })
+    
+      let ctx6 = document.getElementById('myChart6').getContext('2d');
+      let chart6 = new Chart(ctx6, {
+          type: 'bar',
+          data: chartData2,
+          options: chartOptions2
+      })
+    
     </script>
   </body>
 </html>
