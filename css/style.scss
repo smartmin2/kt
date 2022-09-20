@@ -7919,6 +7919,9 @@
     @include flex_center;
     height: 320px;
     margin: 30px 0;
+    // 0920
+    padding:0 20px;
+    position: relative;
   }
   .button-group {
     display: flex;
@@ -9315,3 +9318,7 @@ input[type="text"] {
   @include default_modal(1100px, auto);
   display: none;
 }
+
+// 0920
+  .btn-prev{background: url(../../assets/ic-page-next-n.png)no-repeat center;width:14px;height:100px;position: absolute;top:17%;left:0;}
+  .btn-next{background: url(../../assets/ic-page-next-n.png)no-repeat center;width:14px;height:100px;position: absolute;top:17%;right:0;transform: rotate(180deg);}

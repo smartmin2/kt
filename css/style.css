@@ -2305,7 +2305,7 @@
 .integration-detail #tab01 .detail2 .table-wrapper > .jb-table-wrapper::-webkit-scrollbar-thumb { height: 6px; border-radius: 6px; background: #b6bdc1; }
 .integration-detail #tab01 .detail2 .table-wrapper > .jb-table-wrapper > table.jb-table { min-width: 1800px; }
 .integration-detail #tab01 .detail2 .table-wrapper > .jb-table-wrapper > table.jb-table .table-body tr td:nth-child(2) { text-decoration: underline; cursor: pointer; }
-.integration-detail .chart-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 320px; margin: 30px 0; }
+.integration-detail .chart-wrapper { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 320px; margin: 30px 0; padding: 0 20px; position: relative; }
 .integration-detail .button-group { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: end; -ms-flex-pack: end; justify-content: flex-end; gap: 10px; }
 .integration-detail .content-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; margin-top: 20px; }
 
@@ -2831,5 +2831,9 @@ input[type="text"].width-47 { width: 47px; }
 .modal-old-video .modal-body::-webkit-scrollbar-track { background: transparent; }
 .modal-old-video .modal-body::-webkit-scrollbar-thumb { width: 6px; border-radius: 6px; background: #b6bdc1; }
 .modal-old-video .modal-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 10px; }
+
+.btn-prev { background: url(../../assets/ic-page-next-n.png) no-repeat center; width: 14px; height: 100px; position: absolute; top: 17%; left: 0; }
+
+.btn-next { background: url(../../assets/ic-page-next-n.png) no-repeat center; width: 14px; height: 100px; position: absolute; top: 17%; right: 0; -webkit-transform: rotate(180deg); transform: rotate(180deg); }
 
 /*# sourceMappingURL=style.css.map */
