@@ -91,7 +91,7 @@
               <div class="table-top-buttons">
                 <button class="btn-excel"><img />엑셀다운로드</button>
                 <button class="btn-white">부킹현황</button>
-                <button class="btn-register" disabled>등록</button>
+                <button class="btn-register">등록</button>
               </div>
             </div>
             <div class="table-top-sub">
@@ -169,7 +169,11 @@
           </div>
         </div>
         <div class="noti-wrap">
-          <div class="noti-box">2구좌/㈜인크로스/㈜시몬스(청약승인)<br> 1구좌/㈜나스미디어/애플코리아 유한회사(청약승인)<br> 2구좌/㈜나스미디어/애플코리아 유한회사(청약없음)</div>
+          <div class="noti-box">
+            2구좌/㈜인크로스/㈜시몬스(청약승인)<br />
+            1구좌/㈜나스미디어/애플코리아 유한회사(청약승인)<br />
+            2구좌/㈜나스미디어/애플코리아 유한회사(청약없음)
+          </div>
         </div>
       </div>
     </div>
@@ -438,15 +442,48 @@
         $("body").css("overflow", "hidden");
       });
 
+      // 0927
       $(".table td:nth-child(n+5)").on("click", function () {
-        $(this).toggleClass("active");
+        if ($(".table td:nth-child(n+5)").hasClass("active") == false) {
+          $(this).addClass("active");
+        } else {
+          $(".table td:nth-child(n+5)").removeClass("active");
+          $(this).addClass("active");
+        }
         $(this).css("position", "relative");
         $(".noti-wrap").toggleClass("active");
-        if ($(".table td:nth-child(n+5)").hasClass("active")) {
-          $(".btn-register").attr("disabled", false);
-        } else {
-          $(".btn-register").attr("disabled", true);
-        }
+
+        $(document).mouseup(function (e) {
+          var table = $(".table td:nth-child(n+5)");
+          var noti = $(".noti-wrap");
+
+          if (table.has(e.target).length === 0) {
+            table.removeClass("active");
+            noti.removeClass("active");
+          }
+        });
+      });
+
+      $(function () {
+        var isMouseDown = false;
+        $("table.table1 td:nth-child(n+5)")
+          .mousedown(function () {
+            isMouseDown = true;
+            $(this).toggleClass("active");
+            return false; // prevent text selection
+          })
+          .mouseover(function () {
+            if (isMouseDown) {
+              $(this).toggleClass("active");
+            }
+          })
+          .bind("selectstart", function () {
+            return false; // prevent text selection in IE
+          });
+
+        $(document).mouseup(function (e) {
+          isMouseDown = false;
+        });
       });
 
       $(".table td:nth-child(n+5)").click(function (e) {
