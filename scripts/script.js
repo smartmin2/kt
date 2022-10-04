@@ -844,3 +844,14 @@ fileTarget.on("change", function () {
   // 추출한 파일명 삽입
   $(this).siblings(".upload-name").val(filename);
 });
+
+// 221004 체크박스리스트 전체 체크 시 펼침
+$(".checkbox-list .chkAll").on("click", function () {
+  let checked = $(".chkAll").is(":checked");
+
+  if (checked) {
+    $(this).parents(".checkbox-list").css("height", "auto");
+  } else {
+    $(this).parents(".checkbox-list").css("height", "30px");
+  }
+});

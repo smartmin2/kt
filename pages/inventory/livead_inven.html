@@ -105,8 +105,9 @@
                             <option value="">Like채널선택형</option>
                           </select>
                         </div>
+                        <!-- 221001 .chkAll 추가 -->
                         <ul class="checkbox-list">
-                          <li><input type="checkbox">전체</li>
+                          <li><input type="checkbox" class="chkAll">전체</li>
                           <li><input type="checkbox">서비스1</li>
                           <li><input type="checkbox">서비스2</li>
                           <li><input type="checkbox">서비스3</li>
@@ -589,6 +590,8 @@
       $("summary").on("click", function () {
         $(this).toggleClass("open");
       });
+
+    
     </script>
   </body>
 </html>
