@@ -2399,10 +2399,21 @@
 
 //advertiser-main
 .advertiser-main {
+  // 221019
+  .btn-select-group{
+    flex-wrap:nowrap;
+  }
   table.jb-table tbody tr td {
     &:nth-child(1) {
       text-decoration: underline;
       cursor: pointer;
+    }
+    // 221019
+    .btn-gray{
+      height: 20px;
+      width:auto;
+      min-width: 60px;
+      padding: 0 8px;
     }
   }
 }
