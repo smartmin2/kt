@@ -2945,4 +2945,13 @@ input[type="text"].width-47 { width: 47px; }
 
 .ml-196 { margin-left: -196px; }
 
+.modal-manager-add { width: auto; height: auto; max-height: 900px; padding: 20px 32px 24px; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; display: none; }
+.modal-manager-add .modal-top { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; }
+.modal-manager-add .modal-body { -webkit-box-flex: 1; -ms-flex: 1; flex: 1; margin: 32px 0 24px; overflow: overlay; overflow-x: auto; scroll-behavior: smooth; }
+.modal-manager-add .modal-body::-webkit-scrollbar { width: 6px; display: inline; }
+.modal-manager-add .modal-body::-webkit-scrollbar-track { background: transparent; }
+.modal-manager-add .modal-body::-webkit-scrollbar-thumb { width: 6px; border-radius: 6px; background: #b6bdc1; }
+.modal-manager-add .modal-bottom { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; gap: 10px; }
+.modal-manager-add .input-wrap-mail { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; gap: 10px; font-size: 13px; font-weight: bold; color: #bcbfc7; }
+
 /*# sourceMappingURL=style.css.map */

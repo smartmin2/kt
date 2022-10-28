@@ -43,6 +43,8 @@
               <li class="tab-menu" data-tab="tab02">브랜드/제품명 관리</li>
               <li class="tab-menu" data-tab="tab03">연간광고주 관리</li>
               <li class="tab-menu" data-tab="tab04">캠페인 목록</li>
+              <!-- 1028 -->
+              <li class="tab-menu" data-tab="tab05">담당자 정보</li>
             </ul>
             <div class="tab-content active" id="tab01">
               <div class="setting-table">
@@ -416,8 +418,80 @@
                 </ul>
               </div>
             </div>
-
-         
+            <!-- 1028 -->
+            <div class="tab-content" id="tab05">
+              <div class="table-wrapper">
+                <div class="table-top">
+                  <div class="table-top-count">
+                    <div class="table-total-count">전체<span>1,256</span></div>
+                    <div class="table-view-count">
+                      <div class="input-group">
+                        <select>
+                          <option value="">10개</option>
+                          <option value="">20개</option>
+                          <option value="">30개</option>                                                              
+                          <option value="">50개</option>                                                              
+                          <option value="">100개</option>                                                              
+                        </select>
+                      </div>                     
+                    </div>
+                  </div>
+                  <div class="table-top-buttons">                
+                    <button class="btn-register">담당자등록</button>                              
+                    <button class="btn-white">담당자삭제</button>                              
+                  </div>
+                </div>
+                <table class="jb-table table3">
+                  <colgroup>
+                    <col style="width: 5%" />
+                    <col style="width: 16%" />
+                    <col style="width: 16%" />
+                    <col />
+                    <col style="width: 16%" />
+                    <col style="width: 15%" />
+                    <col style="width: 15%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>NO</th>
+                      <th>선택</th>
+                      <th>담당자명</th>
+                      <th>휴대폰번호</th>
+                      <th>이메일</th>
+                      <th>등록자</th>
+                      <th>등록일자</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-body">
+              
+                  </tbody>
+                </table>
+                <ul class="pagination">
+                  <li>
+                    <a href="#" class="first"><img src="../../assets/ico-page-start-n.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="arrow left"><img src="../../assets/ico-page-prev-n.png" alt="" /></a>
+                  </li>
+                  <li><a href="#" class="num">1</a></li>
+                  <li><a href="#" class="num active">2</a></li>
+                  <li><a href="#" class="num">3</a></li>
+                  <li><a href="#" class="num">4</a></li>
+                  <li><a href="#" class="num">5</a></li>
+                  <li><a href="#" class="num">6</a></li>
+                  <li><a href="#" class="num">7</a></li>
+                  <li><a href="#" class="num">8</a></li>
+                  <li><a href="#" class="num">9</a></li>
+                  <li><a href="#" class="num">10</a></li>
+                  <li>
+                    <a href="#" class="arrow right"><img src="../../assets/ico-page-next-s.png" alt="" /></a>
+                  </li>
+                  <li>
+                    <a href="#" class="last"><img src="../../assets/ico-page-end-s.png" alt="" /></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
             <!-- </form> -->
           </div>
         </div>
@@ -820,7 +894,7 @@
           <button class="btn-white close">취소</button>
         </div>
     </div>
-    <div id="modal-background"></div>
+
     <div class="modal-address modal-con common-box">
       <div class="modal-top">
         <div class="box-title">주소검색</div>
@@ -934,6 +1008,59 @@
         <button class="btn-white close">취소</button>
       </div>
     </div>
+
+    <!-- 1028 -->
+    <div class="modal-manager-add modal-con common-box">
+      <div class="modal-top">
+        <div class="box-title">담당자등록</div>
+        <div class="ic-modal-close close"></div>
+      </div>
+      <div class="modal-body">
+          <div class="setting-table">
+            <div class="row">
+              <div class="setting-table-title">광고주</div>
+              <div class="setting-table-content">
+                힌스
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title ic-title-nece">성명</div>
+              <div class="setting-table-content">
+                <input type="text" name="" id="" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title ic-title-nece">휴대폰번호</div>
+              <div class="setting-table-content">
+                <input type="text" placeholder="- 없이 숫자만 입력" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="setting-table-title ic-title-nece">이메일</div>
+              <div class="setting-table-content">
+                <div class="input-wrap-mail">
+                  <input type="text" value="hong***" />@
+                  <input type="text" value="kt.com" />
+                </div>
+                <div class="input-group">
+                  <select>
+                    <option value="">직접입력</option>
+                    <option value="">naver.com</option>
+                    <option value="">nate.com</option>
+                    <option value="">hanmail.net</option>
+                    <option value="">hatmail.com</option>
+                    <option value="">kt.com</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="modal-bottom">
+        <button class="btn-common">등록</button>
+        <button class="btn-white close">취소</button>
+      </div>
+    </div>
     <div class="footer-wrapper">
       <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
       <p>Copyright© 2022 KT Corp. All rights reserved.</p>
@@ -1001,8 +1128,14 @@
         $(".modal-address").css("display", "flex").hide().fadeIn();
         $("body").css("overflow", "hidden");
       });
+
+      // 1028
+      $("#tab05 .btn-register").on("click", function () {
+        $("#modal-background").fadeIn(100);
+        $(".modal-manager-add").css("display", "flex").hide().fadeIn();
+        $("body").css("overflow", "hidden");
+      });
     
     </script>
-    <script></script>
   </body>
 </html>

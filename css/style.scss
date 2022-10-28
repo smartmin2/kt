@@ -2792,6 +2792,7 @@
 
 //advertiser-add
 .advertiser-detail {
+  
   #tab02 {
     table.jb-table tbody tr td {
       &:nth-child(3) {
@@ -2816,6 +2817,7 @@
       gap: 10px;
     }
   }
+
 }
 
 .modal-pnm-add,
@@ -11091,4 +11093,20 @@ input[type="text"] {
 // 1028
 .ml-196{
   margin-left: -196px;
+}
+
+// 1028-2
+.modal-manager-add{
+  @include default_modal(auto, auto);
+  display: none;
+
+  .input-wrap-mail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 13px;
+    font-weight: bold;
+    color: $gray200;
+  }
 }
