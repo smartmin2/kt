@@ -1,88 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../css/style.css" />
-    <title>인벤토리</title>
-  </head>
-  <body>
-    <div class="header-wrapper">
-      <div class="header-main-menubar">
-        <div class="header-logo">
-          <img />
-        </div>
-        <ul class="main-menu"></ul>
-        <div class="header-button">
-          <button class="menu-button">로그아웃</button>
-          <button class="menu-button">정보수정</button>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <title>인벤토리</title>
+</head>
+
+<body>
+  <div class="header-wrapper">
+    <div class="header-main-menubar">
+      <div class="header-logo">
+        <img />
       </div>
-      <div class="forlder-menu-wrapper">
-        <div class="header-sub-menubar"></div>
+      <ul class="main-menu"></ul>
+      <div class="header-button">
+        <button class="menu-button">로그아웃</button>
+        <button class="menu-button">정보수정</button>
       </div>
     </div>
-    <div class="location">
-      <div>홈</div>
-      <div>인벤토리</div>
-      <div>LiveAD</div>
-      <div>LiveAD 인벤토리 조회</div>
+    <div class="forlder-menu-wrapper">
+      <div class="header-sub-menubar"></div>
     </div>
-    <div class="main livead-inven">
-      <div class="common-box common-body">
-        <div class="sub-menu-wrapper">
-          <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_08.svg" alt="c_ic_lnb_08" /> 인벤토리</div>
-          <ul class="sub-menu"></ul>
-        </div>
-        <div class="contents-wrapper">
-          <div class="content-title">LiveAD 인벤토리 조회</div>
-          <div class="search-wrapper">
-            <div class="search-top">
-              <div class="content-sub-title">조회조건설정</div>
-            </div>
-            <div class="search-edit-box">
-              <div class="row">
-                <div class="search-edit-detail">
-                  <div class="input-wrapper">
-                    <div class="input-title">조회기간</div>
-                    <div class="input-date-group">
-                      <input type="date" value="2021-02-10" />
-                      <span>~</span>
-                      <input type="date" value="2021-02-10" />
-                    </div>
-                  </div>
-                </div>
-                <div class="search-edit-detail">
-                  <div class="input-wrapper">
-                    <div class="input-title">소재길이</div>
-                    <div class="toggle-wrap">
-                      <button class="btn-toggle">15초</button>
-                      <button class="btn-toggle">20초</button>
-                      <button class="btn-toggle">30초</button>
-                      <button class="btn-toggle">45초</button>
-                      <button class="btn-toggle">60초</button>
-                      <button class="btn-toggle">90초</button>
-                      <button class="btn-toggle">120초</button>
-                    </div>
+  </div>
+  <div class="location">
+    <div>홈</div>
+    <div>인벤토리</div>
+    <div>LiveAD</div>
+    <div>LiveAD 인벤토리 조회</div>
+  </div>
+  <div class="main livead-inven">
+    <div class="common-box common-body">
+      <div class="sub-menu-wrapper">
+        <div class="sub-menu-title"><img src="../../assets/c_ic_lnb_08.svg" alt="c_ic_lnb_08" /> 인벤토리</div>
+        <ul class="sub-menu"></ul>
+      </div>
+      <div class="contents-wrapper">
+        <div class="content-title">LiveAD 인벤토리 조회</div>
+        <div class="search-wrapper">
+          <div class="search-top">
+            <div class="content-sub-title">조회조건설정</div>
+          </div>
+          <div class="search-edit-box">
+            <!-- 1028 row추가 -->
+            <div class="row">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">조회기간</div>
+                  <div class="input-date-group">
+                    <input type="date" value="2021-02-10" />
+                    <span>~</span>
+                    <input type="date" value="2021-02-10" />
                   </div>
                 </div>
               </div>
-            <div class="row">
-                <div class="search-edit-detail">
-                  <div class="input-wrapper">
-                    <div class="input-title">지역정보</div>
-                    <div class="toggle-wrapper">
-                      <button class="btn-rec-teal region">지역선택</button>
-                      <div class="area-box">
-                        <span>서울시 강서구</span>
-                        <span>서울시 강남구</span>
-                      </div>
-                    </div>
-                   
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">소재길이</div>
+                  <div class="toggle-wrap">
+                    <button class="btn-toggle">15초</button>
+                    <button class="btn-toggle">20초</button>
+                    <button class="btn-toggle">30초</button>
+                    <button class="btn-toggle">45초</button>
+                    <button class="btn-toggle">60초</button>
+                    <button class="btn-toggle">90초</button>
+                    <button class="btn-toggle">120초</button>
                   </div>
                 </div>
-               
+              </div>
+            </div>
+            <div class="row">
+              <div class="search-edit-detail">
+                <div class="input-wrapper">
+                  <div class="input-title">지역정보</div>
+                  <div class="toggle-wrapper">
+                    <button class="btn-rec-teal region">지역선택</button>
+                    <div class="area-box">
+                      <span>서울시 강서구</span>
+                      <span>서울시 강남구</span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
             <div class="row">
               <div class="search-edit-detail">
@@ -91,7 +93,7 @@
                   <div class="toggle-wrapper">
                     <!-- 0902 -->
                     <ul class="toggle-wrap tab">
-                     <li>
+                      <li>
                         <button class="btn-toggle tab-menu" data-tab="tab01">일반상품</button>
                         <div class="input-group">
                           <select name="" id="">
@@ -101,8 +103,8 @@
                             <option value="">2022 키즈/애니채널</option>
                           </select>
                         </div>
-                     </li>
-                     <li>
+                      </li>
+                      <li>
                         <button class="btn-toggle tab-menu" data-tab="tab02">Like상품</button>
                         <div class="input-group">
                           <select name="" id="">
@@ -124,481 +126,482 @@
                           <li><input type="checkbox">서비스8</li>
                           <li><input type="checkbox">서비스9</li>
                           <li><input type="checkbox">서비스10</li>
-                        </ul>       
+                        </ul>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
             </div>
-            </div>
-            <div class="search-bottom">
-              <button class="btn-common">조회</button>
-            </div>
           </div>
-          <div class="tab-content active" id="tab01">
-            <div class="table-wrapper">
-              <table class="jb-table table">
-                <colgroup>
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                </colgroup>
-                <thead class="double">
-                  <tr>
-                    <th rowspan="2" scope="col">상품명</th>
-                    <th rowspan="2" scope="col">채널명</th>
-                    <th colspan="2" scope="colgroup">총 인벤토리</th>
-                    <th colspan="2" scope="colgroup">총 인벤토리</th>
-                    <th colspan="2" scope="colgroup">총 인벤토리</th>
-                  </tr>
-                  <tr>
-                    <th>시간(초)</th>
-                    <th>
-                      시간/소재길이(건)
-                    </th>
-                    <th>시간(초)</th>
-                    <th>
-                      시간/소재길이(건)
-                    </th>
-                    <th>시간(초)</th>
-                    <th>
-                      시간/소재길이(건)
-                    </th>
-                  </tr>
-                </thead>
-                <tbody class="table-body">
-                </tbody>
-              </table>
-            </div>
+          <div class="search-bottom">
+            <button class="btn-common">조회</button>
           </div>
-          <div class="tab-content" id="tab02">
-            <div class="table-wrapper">
-              <table class="jb-table table1">
-                <colgroup>
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                  <col style="width: 12.5%" />
-                </colgroup>
-                <thead class="double">
-                  <tr>
-                    <th rowspan="2" scope="col">상품명</th>
-                    <th rowspan="2" scope="col">채널명</th>
-                    <th colspan="2" scope="colgroup">총 인벤토리</th>
-                    <th colspan="2" scope="colgroup">총 인벤토리</th>
-                    <th colspan="2" scope="colgroup">총 인벤토리</th>
-                  </tr>
-                  <tr>
-                    <th>시간(초)</th>
-                    <th>
-                      시간/소재길이(건)
-                    </th>
-                    <th>시간(초)</th>
-                    <th>
-                      시간/소재길이(건)
-                    </th>
-                    <th>시간(초)</th>
-                    <th>
-                      시간/소재길이(건)
-                    </th>
-                  </tr>
-                </thead>
-                <tbody class="table-body">
-                </tbody>
-              </table>
-            </div>
+        </div>
+        <div class="tab-content active" id="tab01">
+          <div class="table-wrapper">
+            <table class="jb-table table">
+              <colgroup>
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+              </colgroup>
+              <thead class="double">
+                <tr>
+                  <th rowspan="2" scope="col">상품명</th>
+                  <th rowspan="2" scope="col">채널명</th>
+                  <th colspan="2" scope="colgroup">총 인벤토리</th>
+                  <th colspan="2" scope="colgroup">총 인벤토리</th>
+                  <th colspan="2" scope="colgroup">총 인벤토리</th>
+                </tr>
+                <tr>
+                  <th>시간(초)</th>
+                  <th>
+                    시간/소재길이(건)
+                  </th>
+                  <th>시간(초)</th>
+                  <th>
+                    시간/소재길이(건)
+                  </th>
+                  <th>시간(초)</th>
+                  <th>
+                    시간/소재길이(건)
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+              </tbody>
+            </table>
           </div>
-          <div class="tab-content" id="tab03">
-            <div class="table-wrapper">
-              <table class="jb-table table2">
-                <colgroup>
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                  <col style="width: 1.4%" />
-                </colgroup>
-                <thead class="double">
-                  <tr>
-                    <th rowspan="2" scope="col">채널</th>
-                    <th colspan="3" scope="colgroup">00</th>
-                    <th colspan="3" scope="colgroup">01</th>
-                    <th colspan="3" scope="colgroup">02</th>
-                    <th colspan="3" scope="colgroup">03</th>
-                    <th colspan="3" scope="colgroup">04</th>
-                    <th colspan="3" scope="colgroup">05</th>
-                    <th colspan="3" scope="colgroup">06</th>
-                    <th colspan="3" scope="colgroup">07</th>
-                    <th colspan="3" scope="colgroup">08</th>
-                    <th colspan="3" scope="colgroup">09</th>
-                    <th colspan="3" scope="colgroup">10</th>
-                    <th colspan="3" scope="colgroup">11</th>
-                    <th colspan="3" scope="colgroup">12</th>
-                    <th colspan="3" scope="colgroup">13</th>
-                    <th colspan="3" scope="colgroup">14</th>
-                    <th colspan="3" scope="colgroup">15</th>
-                    <th colspan="3" scope="colgroup">16</th>
-                    <th colspan="3" scope="colgroup">17</th>
-                    <th colspan="3" scope="colgroup">18</th>
-                    <th colspan="3" scope="colgroup">19</th>
-                    <th colspan="3" scope="colgroup">20</th>
-                    <th colspan="3" scope="colgroup">21</th>
-                    <th colspan="3" scope="colgroup">22</th>
-                    <th colspan="3" scope="colgroup">23</th>
-                    <th rowspan="2" scope="col">청약비율</th>
-                  </tr>
-                  <tr>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                    <th>사용량</th>
-                    <th>잔여량</th>
-                    <th>총인벤토리량</th>
-                  </tr>
-                </thead>
-                <tbody class="table-body">
-                </tbody>
-              </table>
-            </div>
+        </div>
+        <div class="tab-content" id="tab02">
+          <div class="table-wrapper">
+            <table class="jb-table table1">
+              <colgroup>
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+                <col style="width: 12.5%" />
+              </colgroup>
+              <thead class="double">
+                <tr>
+                  <th rowspan="2" scope="col">상품명</th>
+                  <th rowspan="2" scope="col">채널명</th>
+                  <th colspan="2" scope="colgroup">총 인벤토리</th>
+                  <th colspan="2" scope="colgroup">총 인벤토리</th>
+                  <th colspan="2" scope="colgroup">총 인벤토리</th>
+                </tr>
+                <tr>
+                  <th>시간(초)</th>
+                  <th>
+                    시간/소재길이(건)
+                  </th>
+                  <th>시간(초)</th>
+                  <th>
+                    시간/소재길이(건)
+                  </th>
+                  <th>시간(초)</th>
+                  <th>
+                    시간/소재길이(건)
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="tab-content" id="tab03">
+          <div class="table-wrapper">
+            <table class="jb-table table2">
+              <colgroup>
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+                <col style="width: 1.4%" />
+              </colgroup>
+              <thead class="double">
+                <tr>
+                  <th rowspan="2" scope="col">채널</th>
+                  <th colspan="3" scope="colgroup">00</th>
+                  <th colspan="3" scope="colgroup">01</th>
+                  <th colspan="3" scope="colgroup">02</th>
+                  <th colspan="3" scope="colgroup">03</th>
+                  <th colspan="3" scope="colgroup">04</th>
+                  <th colspan="3" scope="colgroup">05</th>
+                  <th colspan="3" scope="colgroup">06</th>
+                  <th colspan="3" scope="colgroup">07</th>
+                  <th colspan="3" scope="colgroup">08</th>
+                  <th colspan="3" scope="colgroup">09</th>
+                  <th colspan="3" scope="colgroup">10</th>
+                  <th colspan="3" scope="colgroup">11</th>
+                  <th colspan="3" scope="colgroup">12</th>
+                  <th colspan="3" scope="colgroup">13</th>
+                  <th colspan="3" scope="colgroup">14</th>
+                  <th colspan="3" scope="colgroup">15</th>
+                  <th colspan="3" scope="colgroup">16</th>
+                  <th colspan="3" scope="colgroup">17</th>
+                  <th colspan="3" scope="colgroup">18</th>
+                  <th colspan="3" scope="colgroup">19</th>
+                  <th colspan="3" scope="colgroup">20</th>
+                  <th colspan="3" scope="colgroup">21</th>
+                  <th colspan="3" scope="colgroup">22</th>
+                  <th colspan="3" scope="colgroup">23</th>
+                  <th rowspan="2" scope="col">청약비율</th>
+                </tr>
+                <tr>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                  <th>사용량</th>
+                  <th>잔여량</th>
+                  <th>총인벤토리량</th>
+                </tr>
+              </thead>
+              <tbody class="table-body">
+              </tbody>
+            </table>
           </div>
         </div>
       </div>
     </div>
-    <div id="modal-background"></div>
-    <div class="modal-region-select modal-con common-box">
-      <div class="modal-top">
-        <div class="box-title">지역 선택</div>
-        <div class="ic-modal-close close"></div>
-      </div>
-      <div class="modal-body">
-        <!-- 0901 -->
-        <div class="setting-table">
-          <div class="row">
-            <div class="cell">
-              <div class="setting-table-title">지역</div>
-              <div class="setting-table-content">일반 지역</div>
-            </div>
-            <div class="cell">
-              <div class="setting-table-title">기간</div>
-              <div class="setting-table-content">2022-02-10 ~ 2022-02-11</div>
-            </div>
+  </div>
+  <div id="modal-background"></div>
+  <div class="modal-region-select modal-con common-box">
+    <div class="modal-top">
+      <div class="box-title">지역 선택</div>
+      <div class="ic-modal-close close"></div>
+    </div>
+    <div class="modal-body">
+      <!-- 0901 -->
+      <div class="setting-table">
+        <div class="row">
+          <div class="cell">
+            <div class="setting-table-title">지역</div>
+            <div class="setting-table-content">일반 지역</div>
           </div>
-          <div class="row option-h">
-            <div class="setting-table-content">
-              <div class="tab-content-main">
-                <div class="tab-col">
-                  <div class="tab-content-title">시/도/광역시</div>
-                  <div class="tab-content-box">  
-                    <div class="flex-row">
-                      <input type="checkbox" name="" id="ck-region1-1"><label for="ck-region1-0">전체</label>
-                    </div>  
-                    <div class="flex-row">
-                      <input type="checkbox" name="" id="ck-region1-1"><label for="ck-region1-1">서울특별시</label>
-                    </div>                
-                    <div class="flex-row">                          
-                      <input type="checkbox" name="" id="ck-region1-2"><label for="ck-region1-2">대전광역시</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-3"><label for="ck-region1-3">울산광역시</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-4"><label for="ck-region1-4">세종특별자치시</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-5"><label for="ck-region1-5">대전광역시</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-6"><label for="ck-region1-6">울산광역시</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-7"><label for="ck-region1-7">부산광역시</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-8"><label for="ck-region1-8">경기도</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-9"><label for="ck-region1-9">강원도</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-10"><label for="ck-region1-10">충청북도</label>
-                    </div>                
-                    <div class="flex-row">   
-                      <input type="checkbox" name="" id="ck-region1-11"><label for="ck-region1-11">충청남도</label>
-                    </div>
+          <div class="cell">
+            <div class="setting-table-title">기간</div>
+            <div class="setting-table-content">2022-02-10 ~ 2022-02-11</div>
+          </div>
+        </div>
+        <div class="row option-h">
+          <div class="setting-table-content">
+            <div class="tab-content-main">
+              <div class="tab-col">
+                <div class="tab-content-title">시/도/광역시</div>
+                <div class="tab-content-box">
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-1"><label for="ck-region1-0">전체</label>
                   </div>
-                </div>     
-                <div class="tab-col">
-                  <div class="tab-content-title">시/군/구</div>
-                  <div class="tab-content-box">
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-1"><label for="ck-region2-0">전체</label>
-                    </div>
-                      <div class="flex-row"> 
-                        <input type="checkbox" name="" id="ck-region2-1"><label for="ck-region2-1">강남구</label>
-                      </div>
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-2"><label for="ck-region2-2">강서구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-3"><label for="ck-region2-3">구로구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-4"><label for="ck-region2-4">노원구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-5"><label for="ck-region2-5">도봉구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-6"><label for="ck-region2-6">강남구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-7"><label for="ck-region2-7">관악구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-8"><label for="ck-region2-8">서대문구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-9"><label for="ck-region2-9">마포구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-10"><label for="ck-region2-10">강북구</label>
-                    </div>                
-                    <div class="flex-row"> 
-                      <input type="checkbox" name="" id="ck-region2-11"><label for="ck-region2-11">성북구</label>
-                    </div>                                        
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-1"><label for="ck-region1-1">서울특별시</label>
                   </div>
-                </div>    
-                <div class="tab-col">
-                  <div class="tab-content-title">시/군/구</div>
-                  <div class="tab-content-box">
-                    <div class="flex-row">
-                      <input type="checkbox" name="" id="ck-region3-1"><label for="ck-region3-0">전체</label>
-                    </div>
-                      <div class="flex-row">
-                        <input type="checkbox" name="" id="ck-region3-2"><label for="ck-region3-2">대전광역시</label>
-                      </div>
-                      <div class="flex-row">
-                        <input type="checkbox" name="" id="ck-region3-3"><label for="ck-region3-3">울산광역시</label>
-                      </div>
-                      <div class="flex-row">
-                        <input type="checkbox" name="" id="ck-region3-4"><label for="ck-region3-4">세종특별자치시</label>
-                      </div>
-                      <div class="flex-row">
-                        <input type="checkbox" name="" id="ck-region3-5"><label for="ck-region3-5">대전광역시</label>
-                      </div>
-                      <div class="flex-row">
-                        <input type="checkbox" name="" id="ck-region3-6"><label for="ck-region3-6">울산광역시</label>
-                      </div>
-                      <div class="flex-row">
-                        <input type="checkbox" name="" id="ck-region3-7"><label for="ck-region3-7">부산광역시</label>
-                      </div>
-                      <div class="flex-row">
-                        <input type="checkbox" name="" id="ck-region3-8"><label for="ck-region3-8">경기도</label>
-                      </div>
-                    </div> 
-                    <div class="flex-row">
-                      <input type="checkbox" name="" id="ck-region3-9"><label for="ck-region3-9">강원도</label>
-                    </div>
-                    <div class="flex-row">
-                      <input type="checkbox" name="" id="ck-region3-10"><label for="ck-region3-10">충청북도</label>
-                    </div>
-                    <div class="flex-row">
-                      <input type="checkbox" name="" id="ck-region3-11"><label for="ck-region3-10">충청남도</label>
-                    </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-2"><label for="ck-region1-2">대전광역시</label>
                   </div>
-                </div>                                                        
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-3"><label for="ck-region1-3">울산광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-4"><label for="ck-region1-4">세종특별자치시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-5"><label for="ck-region1-5">대전광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-6"><label for="ck-region1-6">울산광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-7"><label for="ck-region1-7">부산광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-8"><label for="ck-region1-8">경기도</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-9"><label for="ck-region1-9">강원도</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-10"><label for="ck-region1-10">충청북도</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region1-11"><label for="ck-region1-11">충청남도</label>
+                  </div>
+                </div>
               </div>
-          </div>
-        </div>
-        
-        <div class="region-box">
-          <p>선택 지역</p>
-          <div class="region-sel-box">
-            <div class="region-item">서울시 강남구</div>
-            <div class="region-item">서울시 은평구</div>
+              <div class="tab-col">
+                <div class="tab-content-title">시/군/구</div>
+                <div class="tab-content-box">
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-1"><label for="ck-region2-0">전체</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-1"><label for="ck-region2-1">강남구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-2"><label for="ck-region2-2">강서구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-3"><label for="ck-region2-3">구로구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-4"><label for="ck-region2-4">노원구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-5"><label for="ck-region2-5">도봉구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-6"><label for="ck-region2-6">강남구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-7"><label for="ck-region2-7">관악구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-8"><label for="ck-region2-8">서대문구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-9"><label for="ck-region2-9">마포구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-10"><label for="ck-region2-10">강북구</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region2-11"><label for="ck-region2-11">성북구</label>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-col">
+                <div class="tab-content-title">시/군/구</div>
+                <div class="tab-content-box">
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-1"><label for="ck-region3-0">전체</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-2"><label for="ck-region3-2">대전광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-3"><label for="ck-region3-3">울산광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-4"><label for="ck-region3-4">세종특별자치시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-5"><label for="ck-region3-5">대전광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-6"><label for="ck-region3-6">울산광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-7"><label for="ck-region3-7">부산광역시</label>
+                  </div>
+                  <div class="flex-row">
+                    <input type="checkbox" name="" id="ck-region3-8"><label for="ck-region3-8">경기도</label>
+                  </div>
+                </div>
+                <div class="flex-row">
+                  <input type="checkbox" name="" id="ck-region3-9"><label for="ck-region3-9">강원도</label>
+                </div>
+                <div class="flex-row">
+                  <input type="checkbox" name="" id="ck-region3-10"><label for="ck-region3-10">충청북도</label>
+                </div>
+                <div class="flex-row">
+                  <input type="checkbox" name="" id="ck-region3-11"><label for="ck-region3-10">충청남도</label>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="modal-bottom">
-        <button class="btn-common">저장</button>
-        <button class="btn-white close">취소</button>
+
+      <div class="region-box">
+        <p>선택 지역</p>
+        <div class="region-sel-box">
+          <div class="region-item">서울시 강남구</div>
+          <div class="region-item">서울시 은평구</div>
+        </div>
       </div>
     </div>
-
-    <div class="footer-wrapper">
-      <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
-      <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+    <div class="modal-bottom">
+      <button class="btn-common">저장</button>
+      <button class="btn-white close">취소</button>
     </div>
-    <script src="../../scripts/jquery-3.6.0.min.js"></script>
-    <script src="../../scripts/script.js"></script>
-    <script>
-      loadMainMenu(5);
-      loadSubMenu("5", 4);
-      loadLnb(5, 4, 2, 0);
-      
-      const arrTable = Array(10).fill(["2022 프리미엄30채널","ONCE","23.222초","8,009,999건","23.222초","8,009,999건","23.222초","8,009,999건"]);
-      const table = document.querySelector(".table .table-body");
-      arrTable.map((data) => addRow(table, data, false));
+  </div>
 
-      const arrTable1 = Array(10).fill(["2022 프리미엄30채널","ONCE","23.222초","8,009,999건","23.222초","8,009,999건","23.222초","8,009,999건"]);
-      const table1 = document.querySelector(".table1 .table-body");
-      arrTable1.map((data) => addRow(table1, data, false));
+  <div class="footer-wrapper">
+    <p>(주)케이티 · 사업자등록번호 : 102-81-42945 통신판매업신고 : 2002-경기성남-0048 · 463-711 경기도 성남시 분당구 불정로 90 (정자동 206번지)</p>
+    <p>Copyright© 2022 KT Corp. All rights reserved.</p>
+  </div>
+  <script src="../../scripts/jquery-3.6.0.min.js"></script>
+  <script src="../../scripts/script.js"></script>
+  <script>
+    loadMainMenu(5);
+    loadSubMenu("5", 4);
+    loadLnb(5, 4, 2, 0);
 
-      const arrTable2 = Array(10).fill(["CBS W","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","1.123","23,232","234,222","7.28%"]);
-      const table2 = document.querySelector(".table2 .table-body");
-      arrTable2.map((data) => addRow(table2, data, false));
+    const arrTable = Array(10).fill(["2022 프리미엄30채널", "ONCE", "23.222초", "8,009,999건", "23.222초", "8,009,999건", "23.222초", "8,009,999건"]);
+    const table = document.querySelector(".table .table-body");
+    arrTable.map((data) => addRow(table, data, false));
 
-      $(".btn-rec-teal.region").on("click", function () {
-        $("#modal-background").fadeIn(100);
-        $(".modal-region-select").css("display", "flex").hide().fadeIn();
-        $("body").css("overflow", "hidden");
-      });
+    const arrTable1 = Array(10).fill(["2022 프리미엄30채널", "ONCE", "23.222초", "8,009,999건", "23.222초", "8,009,999건", "23.222초", "8,009,999건"]);
+    const table1 = document.querySelector(".table1 .table-body");
+    arrTable1.map((data) => addRow(table1, data, false));
 
-      $("summary").on("click", function () {
-        $(this).toggleClass("open");
-      });
+    const arrTable2 = Array(10).fill(["CBS W", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "1.123", "23,232", "234,222", "7.28%"]);
+    const table2 = document.querySelector(".table2 .table-body");
+    arrTable2.map((data) => addRow(table2, data, false));
 
-    
-    </script>
-  </body>
+    $(".btn-rec-teal.region").on("click", function () {
+      $("#modal-background").fadeIn(100);
+      $(".modal-region-select").css("display", "flex").hide().fadeIn();
+      $("body").css("overflow", "hidden");
+    });
+
+    $("summary").on("click", function () {
+      $(this).toggleClass("open");
+    });
+
+
+  </script>
+</body>
+
 </html>
