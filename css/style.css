@@ -10331,6 +10331,10 @@ input[type="text"].width-47 {
         width: 25%;
         color: #5d6e9d; }
 
+.monitor-approval-add .setting-grid .flex-col {
+  width: 100%; }
+.monitor-approval-add .setting-grid .flex-row {
+  width: 100%; }
 .monitor-approval-add .selected-box {
   display: flex;
   align-items: center;
@@ -10351,6 +10355,8 @@ input[type="text"].width-47 {
   display: flex;
   align-items: center;
   justify-content: space-between; }
+  .monitor-approval-add .flex-sb p {
+    white-space: nowrap; }
 .monitor-approval-add .setting-grid-content textarea {
   margin-top: 10px; }
 .monitor-approval-add .setting-grid-content .btn-rec-teal {

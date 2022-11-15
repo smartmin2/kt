@@ -10821,6 +10821,15 @@ input[type="text"] {
 }
 
 .monitor-approval-add {
+  // 221115 .setting-grid 추가
+  .setting-grid {
+    .flex-col{
+      width:100%;
+    }
+    .flex-row{
+      width:100%;
+    }
+  }
   .selected-box {
     display: flex;
     align-items: center;
@@ -10847,6 +10856,10 @@ input[type="text"] {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // 221115 p추가
+    p{
+      white-space: nowrap;
+    }
   }
 
   .setting-grid-content {
