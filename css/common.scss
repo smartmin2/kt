@@ -1730,14 +1730,30 @@ strong {
 .width-40 {width: 40px;}
 //info-wrapper
 
-select[multiple], select.select-box {
+// 221117 ul.select-box , li span, li 추가
+select[multiple], select.select-box, ul.select-box  {
   width: 400px;
   height: 266px;
   padding: 0;
   border-radius: 4px;
   border: solid 1px #bcbfc7;
   background: #fff;  
-  option {
+  li{
+    cursor: pointer;
+    span{
+      &:first-child{
+        width:40%;
+      }
+      &:last-child{
+        width:60%;
+      }
+    }
+    &.active{
+      background-color: $colors_main_10;
+      color: $colors_main;
+    }
+  }
+  li,option {
     padding: 0 15px;
     height: 38px;
     font-size: 14px;

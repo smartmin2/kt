@@ -80,11 +80,11 @@
           </div>
           <div class="setting-grid-title">소재 선택 및 설정</div>
           <div class="setting-grid-content span-3">
-           <div class="flex-row">
+            <div class="flex-row">
               <button class="btn-rec-teal mat-lookup">소재 조회</button>
               <input type="text" name="" id="">
               <input type="text" name="" id="">
-           </div>
+            </div>
           </div>
           <div class="setting-grid-title">채널 선택 및 설정</div>
           <div class="setting-grid-content span-3">
@@ -101,22 +101,38 @@
                 <p>채널수 <strong>0</strong></p>
               </div>
               <div class="selected-box">
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
-                <div class="selected-item">드라마큐브<div class="btn-delete"></div></div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
+                <div class="selected-item">드라마큐브<div class="btn-delete"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -142,7 +158,7 @@
     <div class="modal-body">
       <div class="flex-row"><input type="text" /><button class="btn-rec-teal search">검색</button></div>
       <div class="list-box-wrap">
-        <!-- 221115 multiple삭제할 경우 .select-box추가해주시면 됩니다.-->
+        <!-- 221117 multiple삭제할 경우 .select-box추가해주시면 됩니다.-->
         <select name="" id="" size="10" class="select-box">
           <option>GI2022090000001 상품SEG 2Depth 추출</option>
           <option>GI2022090000001 상품SEG 2Depth 추출</option>
@@ -166,15 +182,17 @@
     <div class="modal-body">
       <div class="flex-row"><input type="text" /><button class="btn-rec-teal search">검색</button></div>
       <div class="list-box-wrap">
-        <select name="" id="" size="10" multiple>
-          <option><span>GI2022090000001</span><span>상품SEG 2Depth 추출 신규요청중</span></option>
-          <option>GI2022090000001 상품SEG 2Depth 추출 신규요청중</option>
-          <option>GI2022090000001 상품SEG 2Depth 추출 신규요청중</option>
-          <option>GI2022090000001 상품SEG 2Depth 추출 신규요청중</option>
-          <option>GI2022090000001 상품SEG 2Depth 추출 신규요청중</option>
-          <option>GI2022090000001 상품SEG 2Depth 추출 신규요청중</option>
-          <option>GI2022090000001 상품SEG 2Depth 추출 신규요청중</option>
-        </select>
+        <!-- 221117 정렬 박스: select option ==> ul li로 변경 -->
+        <ul class="select-box">
+          <li><span>GI2022090000001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+          <li><span>GI2022090000001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+          <li><span>GI2022090001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+          <li><span>GI2022090000001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+          <li><span>GI20220001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+          <li><span>GI2022090000001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+          <li><span>GI2090000001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+          <li><span>GI2022090000001</span><span>상품SEG 2Depth 추출 신규요청중</span></li>
+        </ul>
       </div>
     </div>
     <div class="modal-bottom">
@@ -203,7 +221,18 @@
       $(".modal-mat-lookup").css("display", "block").hide().fadeIn();
       $("body").css("overflow", "hidden");
     })
-  
+
+    // 221117 정렬 select-box
+    const selLi = $("ul.select-box li");
+    selLi.on("click", function () {
+      if (selLi.hasClass("active")) {
+        selLi.removeClass("active");
+        $(this).addClass("active");
+      } else {
+        $(this).addClass("active");
+      }
+    })
+
   </script>
 </body>
 

@@ -95,7 +95,8 @@
                 <button class="btn-white">삭제</button>
               </div>
             </div>
-            <table class="jb-table">
+            <!-- 221117_1 .table 추가 -->
+            <table class="jb-table table">
               <colgroup>
                 <col style="width: 2%" />
                 <col style="width: 10%" />
@@ -158,24 +159,26 @@
       </div>
       <div class="modal-body">
         <div class="setting-table-txt">광고주: 한스</div>
-        <div class="setting-table">
-          <div class="row">
-            <div class="setting-table-title">No</div>
-            <div class="setting-table-content">1</div>
-          </div>
-          <div class="row">
-            <div class="setting-table-title">제품명</div>
-            <div class="setting-table-content">큐거</div>
-          </div>
-          <div class="row">
-            <div class="setting-table-title">설명</div>
-            <div class="setting-table-content">설명 내용이 표출됩니다.</div>
-          </div>
-          <div class="row">
-            <div class="setting-table-title">상태</div>
-            <div class="setting-table-content">승인</div>
-          </div>
-        </div>
+        <!-- 221117_1 table 변경 -->
+        <table class="jb-table table1">
+          <colgroup>
+            <col style="width: 5%" />
+            <col />
+            <col style="width: 26%" />
+            <col style="width: 26%" />
+            <col style="width: 15%" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>브랜드명</th>
+              <th>제품명</th>
+              <th>설명</th>
+              <th>상태</th>
+            </tr>
+          </thead>
+          <tbody class="table-body"></tbody>
+        </table>
       </div>
       <div class="modal-bottom">
         <button class="btn-white close">취소</button>
@@ -192,9 +195,15 @@
       loadSubMenu("10", 1);
       loadLnb(10, 1, 4);
 
+      // 221117_1 .table 추가
       const arrTable = Array(10).fill(["2022-02-02", "(주)애드", "큐거", "큐거", "큐거", "서비스/서비스 기타/서비스 기타", "홍길동", "(주)ㅇㅇㅇ"]);
-      const table = document.querySelector(".table-body");
+      const table = document.querySelector(".table .table-body");
       arrTable.map((data) => addRow(table, data, true));
+
+      // 221117_1 추가
+      const arrTable1 = Array(10).fill(["1","(주)아텍스컨벤션","참포도나무병원","참포도나무병원","미승인"]);
+      const table1 = document.querySelector(".table1 .table-body");
+      arrTable1.map((data) => addRow(table1, data, false));
 
       $(".btn-register").on("click", function () {
         location.href = "advertiser_add.html";
