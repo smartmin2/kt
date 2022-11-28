@@ -10730,4 +10730,38 @@ input[type="text"].width-47 {
     font-weight: bold;
     color: #bcbfc7; }
 
+.modal-chat-lookup {
+  width: auto;
+  height: auto;
+  max-height: 900px;
+  padding: 20px 32px 24px;
+  display: flex;
+  flex-direction: column;
+  display: none; }
+  .modal-chat-lookup .modal-top {
+    display: flex;
+    justify-content: space-between; }
+  .modal-chat-lookup .modal-body {
+    flex: 1;
+    margin: 32px 0 24px;
+    overflow: overlay;
+    overflow-x: auto;
+    scroll-behavior: smooth; }
+    .modal-chat-lookup .modal-body::-webkit-scrollbar {
+      width: 6px;
+      display: inline; }
+    .modal-chat-lookup .modal-body::-webkit-scrollbar-track {
+      background: transparent; }
+    .modal-chat-lookup .modal-body::-webkit-scrollbar-thumb {
+      width: 6px;
+      border-radius: 6px;
+      background: #b6bdc1; }
+  .modal-chat-lookup .modal-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px; }
+  .modal-chat-lookup .list-box-wrap {
+    margin-top: 20px; }
+
 /*# sourceMappingURL=style.css.map */

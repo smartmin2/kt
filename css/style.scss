@@ -11123,3 +11123,13 @@ input[type="text"] {
     color: $gray200;
   }
 }
+
+// 221128 추가
+.modal-chat-lookup {
+  @include default_modal(auto, auto);
+  display: none;
+
+  .list-box-wrap {
+    margin-top: 20px;
+  }
+}
