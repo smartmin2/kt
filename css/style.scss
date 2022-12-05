@@ -10935,13 +10935,18 @@ input[type="text"] {
   @include default_modal(1200px, auto);
   display: none;
 
-  .table2 {
+  // 221205 ~
+  .table3, .table2 {
     input[type="text"] {
       text-align: right;
     }
   }
- 
 
+  .table-wrapper{
+    margin-bottom: 20px;
+  }
+ 
+// ~ 221205 
   .row {
 
     .cell {
