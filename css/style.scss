@@ -11138,3 +11138,154 @@ input[type="text"] {
     margin-top: 20px;
   }
 }
+
+// 230208 추가
+.modal-audienceT {
+  @include default_modal(800px,auto);
+  display: none;
+
+  .btn-check{
+    min-width: 100px;
+    height: 38px;
+    padding: 0 10px;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 14px;  
+    color: #00aace;
+    border: 1px solid #00aace;
+    @include flex_center();
+    gap: 10px; 
+    cursor: pointer; 
+    &:hover {
+      background-color: $gray_10;
+    }
+  }
+  .modal-body {
+
+    .tab-content{
+      max-height: 550px;
+      .tab-content-main {
+        display: flex;
+        gap: 20px;
+        width: 100%;
+  
+        .tab-col {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+  
+          .tab-content-title {
+            @include flex_center;
+            height: 30px;
+            border-radius: 10px;
+            background-color: #f1f7ff;
+            font-size: 13px;
+            font-weight: bold;
+            line-height: 1.31;
+            text-align: center;
+            color: #586a9b;
+          }
+  
+          .tab-content-box {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            height: 300px;
+            padding: 10px;
+            border-radius: 4px;
+            border: solid 1px #bcbfc7;
+            background-color: #fff;
+            font-size: 14px;
+            font-weight: normal;
+            line-height: 1.21;
+            color: #434c66;
+  
+            overflow-y: auto;
+            @include scrollbar("V");
+  
+            .flex-row {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+            }
+  
+            .flex-between {
+              display: flex;
+              justify-content: space-between;
+  
+              .extra-mark {
+                // @include flex_center;
+                width: 52px;
+                height: 20px;
+                padding: 1px 10px 2px;
+                border-radius: 10px;
+                background-color: #e5751c;
+                font-size: 12px;
+                font-weight: 500;
+                line-height: 1.42;
+                text-align: center;
+                color: #fff;
+              }
+            }
+          }
+  
+         
+        }
+      
+      }
+  
+      .tab-content-info {
+        font-weight: normal;
+        line-height: 1.21;
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding-right: 10px;
+      p.import{
+        color: #d06062;
+        margin-bottom: 10px;
+        font-size: 16px;
+      }
+      }
+    }
+    .selected-items {
+      @include scrollbar("V");
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      overflow-y: auto;
+      height: 55px;
+      width: 100%;
+
+      .selected-item {
+        display: flex;
+        gap: 5px;
+        font-weight: 600;
+        span{font-weight: normal;}
+      }
+    }
+
+    .content-sub-title{
+      font-size: 16px;
+      font-weight: bold;
+      color: #35497b;
+      margin-bottom: 20px;
+    }
+    .service-item{
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+
+      .btn-toggle{
+        width: 110px;
+        letter-spacing: -0.7px;
+      }
+    }
+   
+  }
+}
